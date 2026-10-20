@@ -14,6 +14,11 @@ NFL Insights (also called "Paydirt") is Clinton's NFL projection and betting-res
 - **This repo is the rebuild.** Until the rebuilt pipeline publishes, do NOT publish to the site URL from here, because the old daily run overwrites it every morning.
 - `tracker/` (built Oct 19) snapshots the live site's projections before kickoff and grades them against nflverse stats. See `tracker/TICK.md`.
 
+## Next session (agreed Oct 20)
+1. **Daily results updater** (runs from this repo every morning): pull nflverse results, update records/standings, grade pending Record-tab bets (`tools/grade_pending.py`), verify site vs actual results and fix or alert, republish. Schedule it as the daily task.
+2. **Season simulator**: rebuild win totals and division/playoff/#1 seed/conference/Super Bowl odds from the ratings, home-field value and schedule stored in the site's `season` data, plus actual results. Becomes the rebuild's season-sim piece.
+Patched by hand on Oct 20: v150 (Week 6 MNF bets graded), v151 (SF 6-0, WAS 1-4-1 on Season tab; their sim odds still pre-MNF).
+
 ## Clinton's standing rules
 - **Odds:** decimal only. **DraftKings** is the reference book (he also bets FanDuel; FanDuel won't allow INT props in a same-game parlay). Never scrape DK or FanDuel sites.
 - **Odds pulls:** The Odds API, on a 500-credit account, so stay within budget. Pulls are manual on game mornings, and Clinton pastes the URLs. Claude can only fetch Odds API URLs that he pastes as plain text in a message; send them in batches of about 4.
