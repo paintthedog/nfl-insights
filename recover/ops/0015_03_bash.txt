@@ -1,0 +1,2 @@
+=====COMMAND=====
+sed -i 's/ &amp; (d.pos != "QB")\]  # skill players/]/' td_backtest.py &amp;&amp; sed -i 's/print(f"\\nteam-game sum of player lambdas {tg.lam.mean():.2f} vs actual scorers {tg.act.mean():.2f}")/tg2 = p.assign(td=p.rtd + p.ptd).groupby(["game_id", "posteam"]).agg(lam=("lam", "sum"), td=("td", "sum"))\nprint(f"\\nper team-game: sum of player lambdas {tg2.lam.mean():.2f} vs actual TDs {tg2.td.mean():.2f}")/' td_backtest.py &amp;&amp; python td_backtest.py 2&gt;&amp;1 | grep -v Warning | grep -v wls_

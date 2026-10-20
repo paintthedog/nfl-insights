@@ -1,0 +1,51 @@
+PATH: /home/claude/project_week.py
+=====CONTENT=====
+"""Fit on all history through the latest completed week and project the upcoming slate."""
+import sys, numpy as np, pandas as pd
+import int_model as M
+
+SEASON, WEEK = 2026, 4
+# Starter overrides verified against injury news (team -&gt; passer_player_id).
+# Everyone else defaults to the team's most recent starter.
+OVERRIDES = {"TB": "00-0041251"}   # Jalon Daniels (Mayfield dislocated thumb)
+
+pbp, sched = M.load()
+qb, tg, ctx = M.build_tables(pbp, sched)
+
+# ---- upcoming starters
+recent = qb[qb.is_starter].merge(ctx[["game_id", "gameday"]].drop_duplicates(), on="game_id")
+last = recent.sort_values("gameday").groupby("posteam").tail(1).set_index("posteam")
+names = qb.drop_duplicates("passer_player_id").set_index("passer_player_id").name
+games = sched[(sched.season == SEASON) &amp; (sched.week == WEEK)]
+rows = []
+for _, g in games.iterrows():
+    for tm, opp in [(g.away_team, g.home_team), (g.home_team, g.away_team)]:
+        pid = OVERRIDES.get(tm, last.loc[tm, "passer_player_id"])
+        rows.append(dict(game_id=g.game_id, season=SEASON, week=WEEK,
+                         gameday=pd.to_datetime(g.gameday), posteam=tm, defteam=opp,
+                         passer_player_id=pid, name=names[pid]))
+pred_rows = pd.DataFrame(rows)
+
+df = M.prep(M.build_features(qb, tg, ctx, predict_rows=pred_rows))
+hist = df[~df._pred &amp; (df.prior_games &gt;= 1) &amp; df.att.notna() &amp; (df.att &gt;= 10)]
+fut = df[df._pred]
+
+am = M.fit_attempts(hist)
+im = M.fit_ints(hist, am)
+out = M.predict(fut, am, im)
+
+out["fair_over"] = M.american(out.p_int)
+out["fair_under"] = M.american(1 - out.p_int)
+out["qb_int_pct"] = out.qb_int_rate * 100
+out["matchup"] = np.where(out.home == 1, "vs " + out.defteam, "@ " + out.defteam)
+cols = ["name", "posteam", "matchup", "gameday", "exp_margin", "proj_att",
+        "qb_int_pct", "qb_adot", "def_int_rate", "exp_ints", "p_int",
+        "fair_over", "fair_under", "prior_att"]
+res = out[cols].sort_values("p_int", ascending=False).reset_index(drop=True)
+res.to_csv(f"int_props_{SEASON}_wk{WEEK}.csv", index=False)
+
+pd.set_option("display.width", 200)
+print(res.assign(gameday=res.gameday.dt.strftime("%a %m/%d")).round(
+    {"exp_margin": 1, "proj_att": 1, "qb_int_pct": 2, "qb_adot": 1,
+     "def_int_rate": 4, "exp_ints": 2, "p_int": 3, "fair_over": 0, "fair_under": 0}).to_string())
+print("\nINT model coefficients:\n", im.params.round(4))

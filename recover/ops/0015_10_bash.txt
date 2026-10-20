@@ -1,0 +1,38 @@
+=====COMMAND=====
+printf 'name,yes,no,book\nJames Cook,-105,-125,TestBook\nAmon-Ra St. Brown,+110,,TestBook\nNobody Real,+300,,TestBook\n' &gt; td_odds_wk4.csv &amp;&amp; python td_edges.py &amp;&amp; rm td_odds_wk4.csv td_edges_wk4.csv &amp;&amp; cat &gt;&gt; README.md &lt;&lt;'EOF'
+
+---
+
+# Anytime TD scorer model (`td_model.py`)
+
+## Weekly use
+```
+python get_data.py                     # also refresh players/rosters (see below)
+python -c "import nflreadpy as n; n.load_players().write_parquet('data/players.parquet'); n.load_rosters_weekly([2026]).write_parquet('data/rosters_2026.parquet')"
+# edit SEASON, WEEK, QB_OVERRIDES, QUESTIONABLE in td_project.py
+python td_project.py                   # writes td_props_&lt;season&gt;_wk&lt;week&gt;.csv
+# paste prices into td_odds_wk&lt;week&gt;.csv (name,yes,no,book), then:
+python td_edges.py 4
+```
+
+## How it works
+1. **Team:** expected offensive TDs from the Vegas implied team total (Poisson GLM), split rush/pass by the team's recent rush-TD share.
+2. **Player:** share of those TDs from decayed opportunity shares: carries and carries inside the 10 for rushing TDs; targets and red-zone targets for receiving TDs. Position terms cover RBs and TEs. QBs are included for rushing TDs (starters only).
+3. **Team rescale:** each team's listed players are scaled so their expected TDs add up to the team total. That redistributes an injured player's share, but only proportionally across everyone.
+4. P(anytime TD) = 1 − e^(−λ). Offensive TDs only.
+
+## Backtest (walk-forward 2021 – 2026 Wk3, 27,593 player-games)
+| model | Brier | skill vs constant |
+|---|---|---|
+| constant (21.2%) | 0.1670 | 0% |
+| player's own recent TD rate | 0.1582 | 5.3% |
+| **model** | **0.1535** | **8.1%** |
+
+Calibrated within about 1 point from 10% to 70%. Known biases: **QBs run about 2 points high** (rushing TDs cluster, and may be trending down), and fullbacks run low (tiny sample).
+
+## Caveats
+- **Injuries are the whole game here.** The pool drops IR and already-ruled-out players, but Friday designations and game-day inactives aren't in the data yet. Rerun Saturday.
+- **The rescale is crude for big absences.** When a lead back is out, his work goes mostly to the backup RB, not proportionally to the whole team.
+- **Anytime TD books carry heavy margin**, often 6%+ on the Yes side alone, so edges need to be large.
+EOF
+rm -f int_prop_model.zip &amp;&amp; zip -q nfl_prop_models.zip README.md get_data.py int_model.py backtest.py project_week.py edges.py odds_wk4.csv spread_history.py spread_variants.py factor_tests.py factor_tests2.py int_props_2026_wk4.csv int_by_spread.csv edges_wk4.csv td_model.py td_backtest.py td_project.py td_edges.py td_props_2026_wk4.csv &amp;&amp; echo zipped

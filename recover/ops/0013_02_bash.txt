@@ -1,0 +1,16 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("edges.py").read()
+s=s.replace('''m["ev_over"] = m.p_int * dec(m.over) - 1                      # EV per $1 at best price
+m["ev_under"] = (1 - m.p_int) * dec(m.under) - 1''','''# The model has never been tested against market prices, so trust it only halfway:
+# blend 50/50 with the no-vig market number before computing EV.
+BLEND = 0.5
+m["blend_p"] = BLEND * m.p_int + (1 - BLEND) * m.mkt_p
+m["ev_over"] = m.blend_p * dec(m.over) - 1                    # EV per $1 at best price
+m["ev_under"] = (1 - m.blend_p) * dec(m.under) - 1''')
+s=s.replace('"p_int", "mkt_p", "edge_pts",','"p_int", "mkt_p", "blend_p", "edge_pts",')
+s=s.replace('"p_int": 3, "mkt_p": 3,','"p_int": 3, "mkt_p": 3, "blend_p": 3,')
+s=s.replace('["BET", "lean"]','["bet", "lean"]')
+open("edges.py","w").write(s)
+EOF
+python edges.py | head -14

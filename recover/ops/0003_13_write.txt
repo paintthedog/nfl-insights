@@ -1,0 +1,19 @@
+PATH: /home/claude/get_data.py
+=====CONTENT=====
+"""Refresh nflverse play-by-play and schedules into ./data (retries on flaky GitHub downloads)."""
+import os, time
+import nflreadpy as nfl
+
+FIRST, LAST = 2016, 2026
+os.makedirs("data", exist_ok=True)
+for yr in range(FIRST, LAST + 1):
+    f = f"data/pbp_{yr}.parquet"
+    if os.path.exists(f) and yr != LAST:   # always refresh the current season
+        continue
+    for i in range(5):
+        try:
+            nfl.load_pbp([yr]).write_parquet(f); print(yr, "ok"); break
+        except Exception as e:
+            print(yr, "retry", i, str(e)[:80]); time.sleep(5)
+nfl.load_schedules(list(range(FIRST, LAST + 1))).write_parquet("data/sched.parquet")
+print("schedule ok")

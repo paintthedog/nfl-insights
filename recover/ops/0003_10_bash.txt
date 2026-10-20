@@ -1,0 +1,18 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open('int_model.py').read()
+s=s.replace('''    t = tg.merge(gd, on="game_id")
+''','''    t = tg.merge(gd, on="game_id")
+    t["one"] = 1.0
+''')
+s=s.replace('''["db", "press", "att"], TEAM_DECAY)
+    off["off_press_rate"]''','''["db", "press", "att", "one"], TEAM_DECAY)
+    off["off_press_rate"]''')
+s=s.replace('''off["off_att_pg"] = off.prior_att / off.prior_games.clip(lower=1)''','''off["off_att_pg"] = off.prior_att / off.prior_one.replace(0, np.nan)''')
+s=s.replace('''lambda d: decayed_prior(d, "team", "gameday", ["db", "press", "att"], TEAM_DECAY)),
+            ["db", "press", "att"], TEAM_DECAY)''','''lambda d: decayed_prior(d, "team", "gameday", ["db", "press", "att", "one"], TEAM_DECAY)),
+            ["db", "press", "att", "one"], TEAM_DECAY)''')
+s=s.replace('''o["off_att_pg"] = o.prior_att / o.prior_games.clip(lower=1)''','''o["off_att_pg"] = o.prior_att / o.prior_one''')
+open('int_model.py','w').write(s)
+EOF
+grep -n "off_att_pg\|\"one\"" int_model.py; python backtest.py | sed -n '1,12p;/Test games/,$p'

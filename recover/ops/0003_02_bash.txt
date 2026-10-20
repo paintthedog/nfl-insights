@@ -1,0 +1,13 @@
+=====COMMAND=====
+mkdir -p data &amp;&amp; python -c "
+import nflreadpy as nfl, polars as pl, time, os
+for yr in range(2016,2027):
+    f=f'data/pbp_{yr}.parquet'
+    if os.path.exists(f): continue
+    for i in range(5):
+        try:
+            nfl.load_pbp([yr]).write_parquet(f); print(yr,'ok'); break
+        except Exception as e:
+            print(yr,'retry',i,str(e)[:80]); time.sleep(5)
+nfl.load_schedules(list(range(2016,2027))).write_parquet('data/sched.parquet')
+"; ls data

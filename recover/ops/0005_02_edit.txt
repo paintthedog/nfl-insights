@@ -1,0 +1,24 @@
+PATH: /home/claude/project_week.py
+REPLACE_ALL: False
+=====OLD=====
+out["matchup"] = np.where(out.home == 1, "vs " + out.defteam, "@ " + out.defteam)
+cols = ["name", "posteam", "matchup", "gameday", "exp_margin", "proj_att",
+        "qb_int_pct", "qb_adot", "def_int_rate", "exp_ints", "p_int",
+        "fair_over", "fair_under", "prior_att"]
+=====NEW=====
+out["matchup"] = np.where(out.home == 1, "vs " + out.defteam, "@ " + out.defteam)
+
+# Historical reference: how often ANY starter threw 1+ INT at this point spread
+# (2016 on). The model already uses the spread; this shows how far each QB's
+# own profile moves him off a generic QB in the same spot.
+from spread_history import bucket
+h = df[~df._pred &amp; df.att.notna() &amp; (df.att &gt;= 10) &amp; df.exp_margin.notna()]
+hist_by_spread = (h.assign(bucket=bucket(h.exp_margin), hit=(h.ints &gt;= 1))
+                  .groupby("bucket", observed=True).hit.mean())
+out["spread_bucket"] = bucket(out.exp_margin).astype(str)
+out["hist_p_at_spread"] = out.spread_bucket.map(hist_by_spread.rename(index=str))
+out["qb_vs_spread_hist"] = out.p_int - out.hist_p_at_spread
+
+cols = ["name", "posteam", "matchup", "gameday", "exp_margin", "spread_bucket",
+        "hist_p_at_spread", "proj_att", "qb_int_pct", "qb_adot", "def_int_rate",
+        "exp_ints", "p_int", "qb_vs_spread_hist", "fair_over", "fair_under", "prior_att"]

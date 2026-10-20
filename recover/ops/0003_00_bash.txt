@@ -1,0 +1,5 @@
+=====COMMAND=====
+pip install --break-system-packages -q nflreadpy polars pyarrow statsmodels 2&gt;&amp;1 | tail -2; python -c "
+import nflreadpy as nfl
+s=nfl.load_schedules([2026]); print(s.shape); print(s.filter(s['week']==5).select(['game_id','away_team','home_team','spread_line','total_line']).head(20))
+"

@@ -1,0 +1,72 @@
+PATH: /home/claude/td_project.py
+=====CONTENT=====
+"""Project anytime-TD probabilities for the upcoming week."""
+import numpy as np, pandas as pd
+import td_model as T
+
+SEASON, WEEK = 2026, 4
+# Only these QBs are projected (starters, same list as the INT model); backup QBs are dropped.
+QB_OVERRIDES = {"TB": "00-0041251", "CHI": "00-0038416"}   # Jalon Daniels, Tyson Bagent
+MIN_USAGE = 0.04          # decayed carry share + target share needed to be listed
+QUESTIONABLE = ["Justin Jefferson", "Breece Hall"]  # flagged from this week's injury news
+
+pbp, sched, players = T.load()
+pg, team, ctx = T.build_tables(pbp, sched, players)
+
+ros = pd.read_parquet("data/rosters_2026.parquet")
+ros = ros[ros.week == WEEK]
+out_codes = ros.status.isin(["RES", "CUT", "RET", "DEV", "EXE"]) | (ros.status_description_abbr == "I01")
+unavailable = set(ros[out_codes].gsis_id)
+roster_team = ros[~out_codes].drop_duplicates("gsis_id").set_index("gsis_id").team
+
+# starting QBs: each team's latest starter (most attempts) unless overridden
+qbp = pbp[pbp.passer_player_id.notna() &amp; (pbp.pass_attempt == 1)] if "passer_player_id" in pbp else None
+import int_model as M
+ipbp, isched = M.load(); iqb, _, ictx = M.build_tables(ipbp, isched)
+st = iqb[iqb.is_starter].merge(ictx[["game_id", "gameday"]].drop_duplicates(), on="game_id")
+starters = st.sort_values("gameday").groupby("posteam").tail(1).set_index("posteam").passer_player_id.to_dict()
+starters.update(QB_OVERRIDES)
+starter_ids = set(starters.values())
+
+games = sched[(sched.season == SEASON) &amp; (sched.week == WEEK)]
+recent = pg[pg.season == SEASON].sort_values("gameday")
+rows = []
+for _, g in games.iterrows():
+    for tm in (g.away_team, g.home_team):
+        last2 = recent[recent.posteam == tm].game_id.drop_duplicates().tail(2)
+        pool = set(recent[(recent.posteam == tm) &amp; recent.game_id.isin(last2)].pid) | {starters[tm]}
+        for pid in pool:
+            if pid in unavailable or roster_team.get(pid, tm) != tm:
+                continue
+            rows.append(dict(game_id=g.game_id, posteam=tm, pid=pid, gameday=pd.to_datetime(g.gameday),
+                             season=SEASON, week=WEEK))
+pred = pd.DataFrame(rows)
+pos = players.drop_duplicates("gsis_id").set_index("gsis_id")
+pred["pos"] = pred.pid.map(pos.position).fillna("UNK")
+pred["name"] = pred.pid.map(pos.display_name)
+pred = pred[(pred.pos != "QB") | pred.pid.isin(starter_ids)]
+
+d = T.features(pg, team, ctx, predict_rows=pred)
+hist = d[~d._pred]
+tmm = T.fit_team(team)
+mr, mp = T.fit_players(hist, tmm)
+f = T.predict(d[d._pred].copy(), tmm, mr, mp)
+f["usage"] = f.pr_car_sh.fillna(0) + f.pr_tgt_sh.fillna(0)
+f = f[(f.usage &gt;= MIN_USAGE) | (f.pos == "QB")]
+f["name"] = f.pid.map(pos.display_name)
+f["fair_odds"] = T.american(f.p_td)
+f["flag"] = np.where(f.name.isin(QUESTIONABLE), "questionable", "")
+opp = ctx.set_index(["game_id", "team"]).opp
+f["opp"] = [opp.get((g, t)) for g, t in zip(f.game_id, f.posteam)]
+cols = ["name", "pos", "posteam", "opp", "implied", "exp_td", "pr_car", "pr_tgt", "pr_car_sh", "pr_i10_sh",
+        "pr_tgt_sh", "pr_rz_sh", "lam_rush", "lam_rec", "p_td", "fair_odds", "flag"]
+res = f[cols].sort_values("p_td", ascending=False).reset_index(drop=True)
+res.to_csv(f"td_props_{SEASON}_wk{WEEK}.csv", index=False)
+print(f"{len(res)} players projected; team exp TDs range {f.exp_td.min():.2f}-{f.exp_td.max():.2f}")
+print(res.head(30).round({"implied": 1, "exp_td": 2, "pr_car": 1, "pr_tgt": 1, "pr_car_sh": 2, "pr_i10_sh": 2,
+                          "pr_tgt_sh": 2, "pr_rz_sh": 2, "lam_rush": 2, "lam_rec": 2, "p_td": 3, "fair_odds": 0})
+      [["name", "pos", "posteam", "opp", "implied", "pr_car", "pr_tgt", "p_td", "fair_odds", "flag"]].to_string())
+# sanity: expected TDs per team = sum of listed player lambdas vs team model
+chk = f.groupby("posteam").agg(sum_lam=("lam", "sum"), team_exp=("exp_td", "first"))
+print("\nteam check (sum of player lambdas vs team expected TDs), worst 5:")
+print((chk.assign(gap=chk.sum_lam - chk.team_exp).sort_values("gap")).round(2).iloc[[0, 1, 2, -2, -1]])

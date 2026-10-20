@@ -1,0 +1,20 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("README.md").read()
+s=s.replace("""2. **Per-attempt INT rate (Poisson GLM):** trained with actual attempts as exposure. Inputs are the QB's decayed INT rate (shrunk with 600 pseudo-attempts at league average), aDOT,""",
+"""2. **Per-attempt INT rate (Poisson GLM):** trained with actual attempts as exposure. Inputs are the QB's **interception-worthy throw rate** (FTN charting, 2022+, shrunk toward the level implied by his actual INT history, so uncharted QBs fall back to real INTs), the QB's **passes-defensed rate** (breakups on his throws), aDOT,""")
+s=s.replace("| **full model** | **0.2451** | **0.6832** |\n\nAbout 1.9% Brier skill over a constant guess.",
+"| **full model** | **0.2446** | **0.6823** |\n\nAbout 2.1% Brier skill over a constant guess.")
+s=s.replace("## INT rate by point spread", """## Factors tested (walk-forward, `factor_tests.py` / `factor_tests2.py`)
+| factor | verdict |
+|---|---|
+| QB interception-worthy throws (FTN) | **Kept.** Best single upgrade: 2024–26 skill 1.33% → 1.80% |
+| QB passes defensed (breakups on his throws) | **Kept.** Helps in every test |
+| Defense INT rate | Kept, but small. Removing it costs a little; how hard it's shrunk doesn't matter |
+| Defense INTs + breakups ("ballhawk" rate) | Dropped. Worse than INTs alone |
+| Spread buckets / curves | Dropped. Linear spread term is as good |
+
+## INT rate by point spread""")
+open("README.md","w").write(s)
+EOF
+rm -f int_prop_model.zip &amp;&amp; zip -q int_prop_model.zip README.md get_data.py int_model.py backtest.py project_week.py spread_history.py spread_variants.py factor_tests.py factor_tests2.py int_props_2026_wk4.csv int_by_spread.csv &amp;&amp; unzip -l int_prop_model.zip | tail -3

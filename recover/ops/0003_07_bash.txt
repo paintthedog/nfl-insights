@@ -1,0 +1,2 @@
+=====COMMAND=====
+python project_week.py 2&gt;&amp;1 | tail -50

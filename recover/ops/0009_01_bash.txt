@@ -1,0 +1,2 @@
+=====COMMAND=====
+sed -i 's/^NOQB = /S = range(2019, 2027); S2 = range(2024, 2027)\nsub = df[(df.season&gt;=2022)].copy(); sub = sub[(sub.season&lt;2023) | (sub.qb_charted&gt;=150)]\nNOQB = /' factor_tests2.py &amp;&amp; python factor_tests2.py 2&gt;&amp;1 | tail -20

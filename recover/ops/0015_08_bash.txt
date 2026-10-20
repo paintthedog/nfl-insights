@@ -1,0 +1,18 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("td_project.py").read()
+s=s.replace('''f["name"] = f.pid.map(pos.display_name)
+f["fair_odds"]''','''# Players on a team must add up to that team's expected TDs. Rescale each team's pool
+# (this also hands an injured player's share to his teammates, proportionally).
+f["team_scale"] = f.exp_td / f.groupby("posteam").lam.transform("sum")
+f["lam"] = f.lam * f.team_scale
+f["p_td"] = 1 - np.exp(-f.lam)
+f["name"] = f.pid.map(pos.display_name)
+f["fair_odds"]''')
+s=s.replace('''print("\\nteam check (sum of player lambdas vs team expected TDs), worst 5:")
+print((chk.assign(gap=chk.sum_lam - chk.team_exp).sort_values("gap")).round(2).iloc[[0, 1, 2, -2, -1]])''','''print("\\nteams most rescaled (scale &lt; 0.85 or &gt; 1.15 means the pool was thin or crowded):")
+sc = f.groupby("posteam").team_scale.first().sort_values()
+print(sc[(sc &lt; 0.85) | (sc &gt; 1.15)].round(2).to_dict())''')
+open("td_project.py","w").write(s)
+EOF
+python td_project.py 2&gt;&amp;1 | grep -v Warning | grep -v wls_ | sed -n '1,22p;/most rescaled/,$p'

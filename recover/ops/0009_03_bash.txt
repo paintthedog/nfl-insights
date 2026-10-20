@@ -1,0 +1,29 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("get_data.py").read()
+s=s.replace('nfl.load_schedules(', '''for yr in range(2022, LAST + 1):   # FTN charting: interception-worthy throws
+    f = f"data/ftn_{yr}.parquet"
+    if os.path.exists(f) and yr != LAST:
+        continue
+    for i in range(5):
+        try:
+            nfl.load_ftn_charting([yr]).write_parquet(f); print("ftn", yr, "ok"); break
+        except Exception as e:
+            print("ftn", yr, "retry", i, str(e)[:80]); time.sleep(5)
+nfl.load_schedules(''')
+open("get_data.py","w").write(s)
+s=open("project_week.py").read()
+s=s.replace('"qb_int_pct", "qb_adot", "def_int_rate",','"qb_int_pct", "qb_iw_pct", "qb_pd_pct", "qb_adot", "def_int_rate",')
+s=s.replace('out["qb_int_pct"] = out.qb_int_rate * 100','out["qb_int_pct"] = out.qb_int_rate * 100\nout["qb_iw_pct"] = out.qb_iw_rate * 100\nout["qb_pd_pct"] = out.qb_pd_rate * 100')
+s=s.replace('''      [["name", "matchup", "spread_bucket", "hist_p_at_spread", "p_int",''','''      [["name", "matchup", "qb_int_pct", "qb_iw_pct", "qb_pd_pct", "hist_p_at_spread", "p_int",''')
+s=s.replace('"qb_int_pct": 2,','"qb_int_pct": 2, "qb_iw_pct": 2, "qb_pd_pct": 2,')
+open("project_week.py","w").write(s)
+EOF
+cp int_props_2026_wk4.csv /tmp/claude-0/-home-claude/61a3e72b-dbd0-5c34-8049-91e3f7bfb7b5/scratchpad/old_wk4.csv 2&gt;/dev/null || (mkdir -p /tmp/claude-0/-home-claude/61a3e72b-dbd0-5c34-8049-91e3f7bfb7b5/scratchpad &amp;&amp; cp int_props_2026_wk4.csv /tmp/claude-0/-home-claude/61a3e72b-dbd0-5c34-8049-91e3f7bfb7b5/scratchpad/old_wk4.csv)
+python project_week.py 2&gt;&amp;1 | head -34
+python -c "
+import pandas as pd
+o=pd.read_csv('/tmp/claude-0/-home-claude/61a3e72b-dbd0-5c34-8049-91e3f7bfb7b5/scratchpad/old_wk4.csv')[['name','p_int']]
+n=pd.read_csv('int_props_2026_wk4.csv')[['name','p_int']]
+m=o.merge(n,on='name',suffixes=('_old','_new')); m['chg']=m.p_int_new-m.p_int_old
+print(m.sort_values('chg').round(3).iloc[[0,1,2,3,-4,-3,-2,-1]].to_string())"

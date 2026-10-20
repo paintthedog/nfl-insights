@@ -1,0 +1,11 @@
+=====COMMAND=====
+python -c "
+import nflreadpy as nfl, polars as pl, time
+t=time.time()
+p=nfl.load_pbp(list(range(2016,2027)))
+print(p.shape, time.time()-t)
+p.write_parquet('pbp.parquet')
+s=nfl.load_schedules(list(range(2016,2027))); s.write_parquet('sched.parquet')
+print(p.filter(pl.col('season')==2026).select(pl.col('week').max()))
+print([c for c in p.columns if any(k in c for k in ['hit','pressure','air_yards','interception','passer','dropback','wind','temp','roof'])])
+"

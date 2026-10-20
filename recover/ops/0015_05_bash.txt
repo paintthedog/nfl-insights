@@ -1,0 +1,22 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("td_model.py").read()
+s=s.replace('RUSH_X = ["l_car_sh", "l_i10_sh", "l_rtd_sh", "is_qb", "qb_x_car"]','RUSH_X = ["l_car_sh", "l_i10_sh", "l_rtd_sh", "is_qb"]')
+s=s.replace('''    d["qb_x_car"] = d.is_qb * d.l_car_sh   # QB carry share translates to TDs differently (sneaks vs scrambles)
+''','')
+s=s.replace('''    mp = sm.GLM(d.ptd, sm.add_constant(d[REC_X]), family=sm.families.Poisson(), offset=off_p).fit()
+    return mr, mp''','''    mp = sm.GLM(d.ptd, sm.add_constant(d[REC_X]), family=sm.families.Poisson(), offset=off_p).fit()
+    # QB rushing TDs cluster (multi-TD games), so a Poisson mean overstates P(1+).
+    # Learn a QB-only scale on the TRAINING rows so mean P(1+) matches the actual hit rate.
+    qbr = d[d.is_qb == 1]
+    lam = (np.exp(sm.add_constant(qbr[RUSH_X], has_constant="add") @ mr.params) * qbr.exp_td * qbr.rush_share
+           + np.exp(sm.add_constant(qbr[REC_X], has_constant="add") @ mp.params) * qbr.exp_td * (1 - qbr.rush_share))
+    hit = ((qbr.rtd + qbr.ptd) &gt;= 1).mean()
+    grid = np.linspace(0.5, 1.2, 141)
+    mr.qb_scale = grid[np.argmin([abs((1 - np.exp(-c * lam)).mean() - hit) for c in grid])]
+    return mr, mp''')
+s=s.replace('''    d["lam"] = d.lam_rush + d.lam_rec''','''    d["lam"] = np.where(d.is_qb == 1, getattr(mr, "qb_scale", 1.0), 1.0) * (d.lam_rush + d.lam_rec)''')
+open("td_model.py","w").write(s)
+EOF
+sed -i 's/print(tmm.params.round(3).to_dict()); print(mr.params/print("qb_scale", mr.qb_scale); print(tmm.params.round(3).to_dict()); print(mr.params/' td_backtest.py
+python td_backtest.py 2&gt;&amp;1 | grep -v Warning | grep -v wls_

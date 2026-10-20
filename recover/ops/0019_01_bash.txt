@@ -1,0 +1,3 @@
+=====COMMAND=====
+echo '{"CHI": "starter unconfirmed", "TB": "rookie starter"}' &gt; starter_notes.json &amp;&amp; python build_site.py 4 "Sep 30, 4 PM ET" &amp;&amp; node -e "
+const s=require('fs').readFileSync('site/paydirt.html','utf8'); const js=s.split('&lt;script&gt;')[1].split('&lt;/script&gt;')[0]; new Function(js); console.log('script parses ok')" 2&gt;&amp;1 | tail -2

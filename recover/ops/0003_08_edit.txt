@@ -1,0 +1,6 @@
+PATH: /home/claude/int_model.py
+REPLACE_ALL: False
+=====OLD=====
+    q["_pred"] = q["_pred"].fillna(False)
+=====NEW=====
+    q["_pred"] = q["_pred"].fillna(False).astype(bool)

@@ -1,0 +1,2 @@
+=====COMMAND=====
+rm -f variants.py &amp;&amp; zip -q int_prop_model.zip README.md get_data.py int_model.py backtest.py project_week.py int_props_2026_wk4.csv &amp;&amp; unzip -l int_prop_model.zip

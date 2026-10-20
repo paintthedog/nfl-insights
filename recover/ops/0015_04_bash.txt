@@ -1,0 +1,9 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("td_model.py").read()
+s=s.replace('RUSH_X = ["l_car_sh", "l_i10_sh", "l_rtd_sh", "is_qb"]','RUSH_X = ["l_car_sh", "l_i10_sh", "l_rtd_sh", "is_qb", "qb_x_car"]')
+s=s.replace('''    d["pos_TE"] = (d.pos == "TE").astype(int)''','''    d["qb_x_car"] = d.is_qb * d.l_car_sh   # QB carry share translates to TDs differently (sneaks vs scrambles)
+    d["pos_TE"] = (d.pos == "TE").astype(int)''')
+open("td_model.py","w").write(s)
+EOF
+python td_backtest.py 2&gt;&amp;1 | grep -v Warning | grep -v wls_ | sed -n '2p;4,8p;/By position/,$p'

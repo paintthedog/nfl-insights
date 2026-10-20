@@ -1,0 +1,10 @@
+=====COMMAND=====
+python -c "
+import nflreadpy as nfl
+nfl.load_players().write_parquet('data/players.parquet')
+nfl.load_rosters_weekly([2026]).write_parquet('data/rosters_2026.parquet')
+nfl.load_injuries([2026]).write_parquet('data/injuries_2026.parquet')
+import pandas as pd
+p=pd.read_parquet('data/players.parquet'); print(p.columns.tolist()[:25]); print(p.position.value_counts().head(12))
+i=pd.read_parquet('data/injuries_2026.parquet'); print(i.columns.tolist()); print(i[i.week==4].practice_status.value_counts())
+"

@@ -1,0 +1,6 @@
+=====COMMAND=====
+python -c "
+import pandas as pd, int_model as M
+pbp, sched = M.load(); qb, tg, ctx = M.build_tables(pbp, sched)
+print(qb[qb.name=='T.Bagent'].groupby('passer_player_id').agg(att=('att','sum'),ints=('ints','sum'),last=('season','max')))
+" &amp;&amp; sed -i 's/OVERRIDES = {"TB": "00-0041251"}   # Jalon Daniels (Mayfield dislocated thumb)/OVERRIDES = {"TB": "00-0041251",   # Jalon Daniels (Mayfield dislocated thumb)\n             "CHI": "BAGENT_ID"}  # Tyson Bagent (books list him; cleared concussion protocol)/' project_week.py &amp;&amp; grep -n OVERRIDES -A1 project_week.py | head -3

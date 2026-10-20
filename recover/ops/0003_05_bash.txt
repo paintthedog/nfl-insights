@@ -1,0 +1,22 @@
+=====COMMAND=====
+cat &gt; variants.py &lt;&lt;'EOF'
+import numpy as np, pandas as pd, statsmodels.api as sm, int_model as M
+pbp, sched = M.load(); qb, tg, ctx = M.build_tables(pbp, sched)
+base_df = M.prep(M.build_features(qb, tg, ctx))
+base_df = base_df[(base_df.prior_games&gt;=1)&amp;base_df.att.notna()&amp;(base_df.att&gt;=10)]
+base_df["yr"] = base_df.season - 2020
+print("league INT rate by season:", (base_df.groupby('season').ints.sum()/base_df.groupby('season').att.sum()).round(4).to_dict())
+def run(xs, label):
+    M.INT_X = xs
+    tr = base_df[base_df.season&lt;=2023]; te = base_df[base_df.season&gt;=2024].dropna(subset=M.ATT_X+xs[1:])
+    am = M.fit_attempts(tr); im = M.fit_ints(tr, am); t = M.predict(te, am, im)
+    y=(t.ints&gt;=1).astype(int); bc=np.mean((y.mean()-y)**2); b=np.mean((t.p_int-y)**2)
+    print(f"{label:40s} skill {1-b/bc:6.2%}  mean pred {t.p_int.mean():.3f} vs {y.mean():.3f}")
+full = ["log_proj_att","log_qb_rate","qb_adot","qb_exp_low","off_press_rate","def_press_rate","log_def_rate","wind","exp_margin"]
+run(full, "full")
+run(full+["yr"], "full + season trend")
+lean = ["log_proj_att","log_qb_rate","qb_adot","qb_exp_low","log_def_rate","exp_margin","yr"]
+run(lean, "lean (no pressure/wind) + trend")
+run(["log_proj_att","log_qb_rate","qb_adot","qb_exp_low","exp_margin","yr"], "lean, no defense + trend")
+EOF
+python variants.py

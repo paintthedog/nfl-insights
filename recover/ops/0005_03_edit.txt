@@ -1,0 +1,9 @@
+PATH: /home/claude/project_week.py
+REPLACE_ALL: False
+=====OLD=====
+     "def_int_rate": 4, "exp_ints": 2, "p_int": 3, "fair_over": 0, "fair_under": 0}).to_string())
+=====NEW=====
+     "def_int_rate": 4, "exp_ints": 2, "p_int": 3, "fair_over": 0, "fair_under": 0,
+     "hist_p_at_spread": 3, "qb_vs_spread_hist": 3})
+      [["name", "matchup", "spread_bucket", "hist_p_at_spread", "p_int",
+        "qb_vs_spread_hist", "fair_over", "fair_under"]].to_string())

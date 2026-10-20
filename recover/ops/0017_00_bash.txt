@@ -1,0 +1,2 @@
+=====COMMAND=====
+sed -i 's/cols = \["name", "posteam", "matchup", "gameday", "exp_margin", "spread_bucket",/cols = ["name", "passer_player_id", "posteam", "matchup", "gameday", "exp_margin", "spread_bucket",/' project_week.py &amp;&amp; python project_week.py &gt;/dev/null 2&gt;&amp;1 &amp;&amp; python edges.py &gt;/dev/null &amp;&amp; head -c 300 int_props_2026_wk4.csv &amp;&amp; echo &amp;&amp; head -3 td_props_2026_wk4.csv

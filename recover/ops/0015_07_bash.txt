@@ -1,0 +1,2 @@
+=====COMMAND=====
+sed -i '/^qbp = pbp/d' td_project.py &amp;&amp; python td_project.py 2&gt;&amp;1 | grep -v Warning | grep -v wls_

@@ -1,0 +1,8 @@
+=====COMMAND=====
+python - &lt;&lt;'EOF'
+s=open("td_edges.py").read()
+s=s.replace('imp_yes = 1 / dec(m.yes.astype(float))','imp_yes = pd.Series(1 / dec(m.yes.astype(float)), index=m.index)')
+s=s.replace('    imp_no = 1 / dec(m.no.fillna(0).replace(0, np.nan).astype(float))','    no = m.no.astype(float)\n    imp_no = pd.Series(np.where(no.notna(), 1 / dec(no.fillna(-110)), np.nan), index=m.index)')
+open("td_edges.py","w").write(s)
+EOF
+python td_edges.py; rm -f td_odds_wk4.csv td_edges_wk4.csv; grep -c "Anytime TD scorer" README.md

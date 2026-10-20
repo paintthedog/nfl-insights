@@ -1,0 +1,190 @@
+PATH: /home/claude/td_model.py
+=====CONTENT=====
+"""
+Anytime touchdown scorer model.
+
+Two layers:
+  1. TEAM: expected offensive TDs from the Vegas implied team total (Poisson GLM),
+     split into rushing vs receiving TDs by the team's recent rush-TD share.
+  2. PLAYER: each player's share of those TDs from his recent opportunity shares
+     (carries, carries inside the 10, targets, red-zone targets) via two Poisson
+     GLMs (rushing TDs, receiving TDs) with the team's expected TDs as exposure.
+
+P(anytime TD) = 1 - exp(-(rush lambda + rec lambda)). Offensive TDs only
+(return and defensive TDs are ~3% of scores and ignored).
+All priors use only games BEFORE the one being predicted.
+"""
+import glob
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+
+DATA = "data"
+PL_DECAY = 0.80        # per-game decay for player shares (~3-game half-life)
+TEAM_DECAY = 0.90      # team rush-TD share
+EPS = 0.01             # floor inside logs for zero shares
+K_TD_SH = 4.0          # pseudo-TDs shrinking a player's own TD share toward his opportunity share
+RUSH_X = ["l_car_sh", "l_i10_sh", "l_rtd_sh", "is_qb"]
+REC_X = ["l_tgt_sh", "l_rz_sh", "l_ptd_sh", "pos_TE", "pos_RB"]
+
+
+# ---------------------------------------------------------------- load
+def load():
+    cols = ["game_id", "season", "week", "season_type", "posteam", "defteam", "play_type",
+            "yardline_100", "rush_attempt", "pass_attempt", "sack", "qb_kneel",
+            "rusher_player_id", "rusher_player_name", "receiver_player_id",
+            "receiver_player_name", "rush_touchdown", "pass_touchdown", "two_point_attempt"]
+    pbp = pd.concat([pd.read_parquet(f, columns=cols) for f in sorted(glob.glob(f"{DATA}/pbp_*.parquet"))])
+    sched = pd.read_parquet(f"{DATA}/sched.parquet")
+    players = pd.read_parquet(f"{DATA}/players.parquet", columns=["gsis_id", "display_name", "position"])
+    return pbp, sched, players
+
+
+# ---------------------------------------------------------------- tables
+def build_tables(pbp, sched, players):
+    p = pbp[(pbp.two_point_attempt != 1) &amp; pbp.posteam.notna()].copy()
+    car = p[(p.rush_attempt == 1) &amp; p.rusher_player_id.notna() &amp; (p.qb_kneel != 1)]
+    tgt = p[(p.pass_attempt == 1) &amp; (p.sack != 1) &amp; p.receiver_player_id.notna()]
+
+    r = (car.assign(i10=(car.yardline_100 &lt;= 10).astype(int))
+         .groupby(["game_id", "posteam", "rusher_player_id"], as_index=False)
+         .agg(car=("rush_attempt", "size"), i10=("i10", "sum"), rtd=("rush_touchdown", "sum"),
+              name_r=("rusher_player_name", "last"))
+         .rename(columns={"rusher_player_id": "pid"}))
+    t = (tgt.assign(rz=(tgt.yardline_100 &lt;= 20).astype(int))
+         .groupby(["game_id", "posteam", "receiver_player_id"], as_index=False)
+         .agg(tgt=("pass_attempt", "size"), rz=("rz", "sum"), ptd=("pass_touchdown", "sum"),
+              name_t=("receiver_player_name", "last"))
+         .rename(columns={"receiver_player_id": "pid"}))
+    pg = r.merge(t, on=["game_id", "posteam", "pid"], how="outer")
+    for c in ["car", "i10", "rtd", "tgt", "rz", "ptd"]:
+        pg[c] = pg[c].fillna(0)
+    pg["name"] = pg.name_r.fillna(pg.name_t)
+    pg = pg.drop(columns=["name_r", "name_t"])
+
+    team = pg.groupby(["game_id", "posteam"], as_index=False)[["car", "i10", "rtd", "tgt", "rz", "ptd"]].sum()
+    team = team.rename(columns={c: "tm_" + c for c in ["car", "i10", "rtd", "tgt", "rz", "ptd"]})
+    pg = pg.merge(team, on=["game_id", "posteam"])
+    for a, b in [("car", "car"), ("i10", "i10"), ("rtd", "rtd"), ("tgt", "tgt"), ("rz", "rz"), ("ptd", "ptd")]:
+        pg[f"{a}_sh"] = np.where(pg[f"tm_{b}"] &gt; 0, pg[a] / pg[f"tm_{b}"], np.nan)
+
+    pos = players.drop_duplicates("gsis_id").set_index("gsis_id").position
+    pg["pos"] = pg.pid.map(pos).fillna("UNK")
+
+    # game context
+    s = sched[["game_id", "season", "week", "gameday", "home_team", "away_team", "spread_line", "total_line"]]
+    ctx = pd.concat([s.assign(team=s.home_team, opp=s.away_team, home=1, margin=s.spread_line),
+                     s.assign(team=s.away_team, opp=s.home_team, home=0, margin=-s.spread_line)])
+    ctx["implied"] = ctx.total_line / 2 + ctx.margin / 2
+    ctx["gameday"] = pd.to_datetime(ctx.gameday)
+    ctx = ctx[["game_id", "season", "week", "gameday", "team", "opp", "home", "margin", "implied"]]
+    team = team.merge(ctx.rename(columns={"team": "posteam"}), on=["game_id", "posteam"])
+    team["tds"] = team.tm_rtd + team.tm_ptd
+    pg = pg.merge(ctx[["game_id", "team", "gameday", "season", "week"]].rename(columns={"team": "posteam"}),
+                  on=["game_id", "posteam"])
+    return pg, team, ctx
+
+
+def decayed_mean(df, key, cols, decay, date_col="gameday"):
+    """Decayed average of cols over each key's PRIOR rows (NaN-aware). Adds pr_&lt;col&gt;, pr_n."""
+    df = df.sort_values([key, date_col]).copy()
+    vals = {c: df[c].to_numpy(float) for c in cols}
+    out = {c: np.full(len(df), np.nan) for c in cols}
+    n_out = np.zeros(len(df))
+    for _, idx in df.groupby(key).indices.items():
+        num = {c: 0.0 for c in cols}; den = {c: 0.0 for c in cols}; n = 0.0
+        for i in idx:
+            for c in cols:
+                out[c][i] = num[c] / den[c] if den[c] &gt; 0 else np.nan
+            n_out[i] = n
+            for c in cols:
+                v = vals[c][i]
+                num[c] *= decay; den[c] *= decay
+                if not np.isnan(v):
+                    num[c] += v; den[c] += 1
+            n = n * decay + 1
+    for c in cols:
+        df[f"pr_{c}"] = out[c]
+    df["pr_n"] = n_out
+    return df
+
+
+# ---------------------------------------------------------------- features
+def features(pg, team, ctx, predict_rows=None):
+    """predict_rows: (game_id, posteam, pid, name, pos, gameday, season, week) for unplayed games."""
+    # team rush-TD share, decayed &amp; shrunk to league
+    lg_rush_share = team.tm_rtd.sum() / team.tds.sum()
+    tm = decayed_mean(team.assign(one=1.0), "posteam",
+                      ["tm_rtd", "tds", "tds_rate"] if False else ["tm_rtd", "tds"], TEAM_DECAY)
+    tm["rush_share"] = (tm.pr_tm_rtd * tm.pr_n + 3 * lg_rush_share * 1) / (tm.pr_tds * tm.pr_n + 3)
+    tm["rush_share"] = tm.rush_share.fillna(lg_rush_share)
+
+    d = pg.copy()
+    d["_pred"] = False
+    if predict_rows is not None:
+        d = pd.concat([d, predict_rows.assign(_pred=True)], ignore_index=True)
+    share_cols = ["car_sh", "i10_sh", "rtd_sh", "tgt_sh", "rz_sh", "ptd_sh", "car", "tgt"]
+    d = decayed_mean(d, "pid", share_cols, PL_DECAY)
+
+    # shrink a player's TD share toward his opportunity share (TDs are lumpy)
+    d["rtd_sh_s"] = (d.pr_rtd_sh * d.pr_n + K_TD_SH / 4 * d.pr_i10_sh.fillna(d.pr_car_sh)) / (d.pr_n + K_TD_SH / 4)
+    d["ptd_sh_s"] = (d.pr_ptd_sh * d.pr_n + K_TD_SH / 4 * d.pr_rz_sh.fillna(d.pr_tgt_sh)) / (d.pr_n + K_TD_SH / 4)
+    for a, b in [("l_car_sh", "pr_car_sh"), ("l_i10_sh", "pr_i10_sh"), ("l_rtd_sh", "rtd_sh_s"),
+                 ("l_tgt_sh", "pr_tgt_sh"), ("l_rz_sh", "pr_rz_sh"), ("l_ptd_sh", "ptd_sh_s")]:
+        d[a] = np.log(d[b].fillna(0).clip(lower=0) + EPS)
+    d["is_qb"] = (d.pos == "QB").astype(int)
+    d["pos_TE"] = (d.pos == "TE").astype(int)
+    d["pos_RB"] = (d.pos.isin(["RB", "FB"])).astype(int)
+
+    # attach team context + rush share (for future games, roll team state forward)
+    d = d.merge(ctx[["game_id", "team", "implied", "margin"]].rename(columns={"team": "posteam"}),
+                on=["game_id", "posteam"], how="left")
+    hist_rs = tm[["game_id", "posteam", "rush_share"]]
+    d = d.merge(hist_rs, on=["game_id", "posteam"], how="left")
+    if predict_rows is not None:
+        last = tm.sort_values("gameday").groupby("posteam").tail(1).copy()
+        n = last.pr_n * TEAM_DECAY + 1
+        rtd = (last.pr_tm_rtd * last.pr_n * TEAM_DECAY + last.tm_rtd) / n
+        tds = (last.pr_tds * last.pr_n * TEAM_DECAY + last.tds) / n
+        last["rs_next"] = (rtd * n + 3 * lg_rush_share) / (tds * n + 3)
+        m = last.set_index("posteam").rs_next
+        d.loc[d._pred, "rush_share"] = d.loc[d._pred, "posteam"].map(m)
+    return d
+
+
+# ---------------------------------------------------------------- models
+def fit_team(team_hist):
+    tr = team_hist.dropna(subset=["implied"])
+    X = sm.add_constant(np.log(tr[["implied"]].clip(lower=5)))
+    return sm.GLM(tr.tds, X, family=sm.families.Poisson()).fit()
+
+
+def team_exp_td(tm_model, implied):
+    X = sm.add_constant(np.log(pd.DataFrame({"implied": implied}).clip(lower=5)), has_constant="add")
+    return tm_model.predict(X).to_numpy()
+
+
+def fit_players(d, tm_model):
+    d = d.dropna(subset=["implied", "rush_share"]).copy()
+    d = d[d.pr_n &gt;= 1]
+    d["exp_td"] = team_exp_td(tm_model, d.implied)
+    off_r = np.log(d.exp_td * d.rush_share)
+    off_p = np.log(d.exp_td * (1 - d.rush_share))
+    mr = sm.GLM(d.rtd, sm.add_constant(d[RUSH_X]), family=sm.families.Poisson(), offset=off_r).fit()
+    mp = sm.GLM(d.ptd, sm.add_constant(d[REC_X]), family=sm.families.Poisson(), offset=off_p).fit()
+    return mr, mp
+
+
+def predict(d, tm_model, mr, mp):
+    d = d.copy()
+    d["exp_td"] = team_exp_td(tm_model, d.implied)
+    d["lam_rush"] = np.exp(sm.add_constant(d[RUSH_X], has_constant="add") @ mr.params) * d.exp_td * d.rush_share
+    d["lam_rec"] = np.exp(sm.add_constant(d[REC_X], has_constant="add") @ mp.params) * d.exp_td * (1 - d.rush_share)
+    d["lam"] = d.lam_rush + d.lam_rec
+    d["p_td"] = 1 - np.exp(-d.lam)
+    return d
+
+
+def american(p):
+    p = np.clip(p, 1e-6, 1 - 1e-6)
+    return np.where(p &gt;= 0.5, -100 * p / (1 - p), 100 * (1 - p) / p)

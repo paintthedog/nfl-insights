@@ -1,0 +1,91 @@
+PATH: /home/claude/build_site.py
+=====CONTENT=====
+"""Build the Paydirt &amp; Picks page from this week's model outputs.
+Usage: python build_site.py &lt;week&gt; [odds_asof text]
+Reads int_props_2026_wk&lt;week&gt;.csv, edges_wk&lt;week&gt;.csv (optional), td_props_2026_wk&lt;week&gt;.csv.
+Writes site/paydirt.html.
+"""
+import json, os, sys, datetime as dt
+import numpy as np, pandas as pd
+
+SEASON = 2026
+week = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 4
+odds_asof = sys.argv[2] if len(sys.argv) &gt; 2 else "not available"
+
+players = pd.read_parquet("data/players.parquet", columns=["gsis_id", "display_name"]).drop_duplicates("gsis_id")
+full = players.set_index("gsis_id").display_name
+
+# ---------------- INT board
+ip = pd.read_csv(f"int_props_{SEASON}_wk{week}.csv")
+ef = f"edges_wk{week}.csv"
+if os.path.exists(ef):
+    ed = pd.read_csv(ef)[["name", "mkt_p", "side", "price", "book", "ev", "call"]]
+    ip = ip.merge(ed, on="name", how="left")
+else:
+    for c in ["mkt_p", "side", "price", "book", "ev"]:
+        ip[c] = np.nan
+    ip["call"] = "pass"
+ip["call"] = ip.call.fillna("pass")
+notes = {}
+if os.path.exists("starter_notes.json"):
+    notes = json.load(open("starter_notes.json"))
+def nn(x):
+    return None if pd.isna(x) else (float(x) if isinstance(x, (int, float, np.floating, np.integer)) else x)
+int_rows = [dict(
+    full=full.get(r.passer_player_id, r["name"]), team=r.posteam, matchup=r.matchup,
+    day=pd.to_datetime(r.gameday).strftime("%a %b %-d"), p=float(r.p_int), mkt=nn(r.mkt_p),
+    iw=float(r.qb_iw_pct), spread=float(-r.exp_margin), side=nn(r.side), price=nn(r.price), book=nn(r.book),
+    ev=nn(r.ev), call=r.call, note=notes.get(r.posteam, "")) for _, r in ip.iterrows()]
+
+# ---------------- TD board
+tp = pd.read_csv(f"td_props_{SEASON}_wk{week}.csv")
+td_rows = [dict(name=r["name"], pos=r.pos, team=r.posteam, opp=r.opp, implied=float(r.implied), p=float(r.p_td),
+                fair=float(r.fair_odds), car=float(np.nan_to_num(r.pr_car)), tgt=float(np.nan_to_num(r.pr_tgt)),
+                i10=float(np.nan_to_num(r.pr_i10_sh)), rz=float(np.nan_to_num(r.pr_rz_sh)),
+                flag=r.flag if isinstance(r.flag, str) else "") for _, r in tp.iterrows()]
+
+how = """
+&lt;div&gt;
+  &lt;h2&gt;Interceptions&lt;/h2&gt;
+  &lt;p&gt;Projected pass attempts (from the Vegas total, spread and each QB's recent volume) times a per-throw interception rate.
+     That rate comes mostly from how often the QB throws &lt;b&gt;interception-worthy balls&lt;/b&gt; (FTN charting) and how often his passes get
+     broken up, with smaller effects from depth of throw, the opposing defense and game script. Trailing teams throw riskier passes.&lt;/p&gt;
+  &lt;table class="mini"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Backtest, 2024 – 2026 Wk 3&lt;/th&gt;&lt;th class="r"&gt;Brier&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Always guess the average&lt;/td&gt;&lt;td class="r num"&gt;0.2498&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Attempts × league INT rate&lt;/td&gt;&lt;td class="r num"&gt;0.2502&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;This model&lt;/b&gt;&lt;/td&gt;&lt;td class="r num"&gt;&lt;b&gt;0.2446&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+  &lt;p style="margin-top:8px"&gt;About 2% better than guessing the average. Real, but small: nearly every QB lands between 35% and 60%.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h2&gt;Anytime TD&lt;/h2&gt;
+  &lt;p&gt;Expected team touchdowns from the Vegas implied team total, split between rushing and receiving, then shared out by each
+     player's recent carries, carries inside the 10, targets and red-zone targets. Each team's players are scaled to add up to the team total.&lt;/p&gt;
+  &lt;table class="mini"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Backtest, 2021 – 2026 Wk 3&lt;/th&gt;&lt;th class="r"&gt;Brier&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Always guess the average&lt;/td&gt;&lt;td class="r num"&gt;0.1670&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Player's own recent TD rate&lt;/td&gt;&lt;td class="r num"&gt;0.1582&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;This model&lt;/b&gt;&lt;/td&gt;&lt;td class="r num"&gt;&lt;b&gt;0.1535&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+  &lt;p style="margin-top:8px"&gt;About 8% better than guessing the average, and calibrated within a point from 10% to 70%. QBs run about 2 points high.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h2&gt;Before you bet&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Check starters and injury designations. The models assume the listed players play.&lt;/li&gt;
+    &lt;li&gt;Prices on this page are a snapshot. Confirm them at the book; the edge disappears when the line moves.&lt;/li&gt;
+    &lt;li&gt;The market is usually smarter than the model. Calls already blend the two 50/50.&lt;/li&gt;
+    &lt;li&gt;Track results against the closing line, not wins and losses. A few weeks of picks is mostly noise.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h2&gt;Data&lt;/h2&gt;
+  &lt;p&gt;Play-by-play, schedules, rosters and FTN charting from nflverse. Spreads and totals are the lines nflverse records for each game.
+     Every feature uses only games played before the one being projected.&lt;/p&gt;
+&lt;/div&gt;"""
+
+data = dict(season=SEASON, week=week, odds_asof=odds_asof,
+            built=dt.datetime.now().strftime("%b %-d, %Y"),
+            footer="Projections are estimates for entertainment and research. Nothing here is betting advice.",
+            int=int_rows, td=td_rows, how=how)
+html = open("site_template.html").read().replace("/*__DATA__*/null", json.dumps(data, allow_nan=False))
+os.makedirs("site", exist_ok=True)
+open("site/paydirt.html", "w").write(html)
+print(f"site/paydirt.html: {len(int_rows)} QBs, {len(td_rows)} TD players, {len(html)/1024:.0f} KB")

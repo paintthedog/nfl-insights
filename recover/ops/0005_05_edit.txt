@@ -1,0 +1,24 @@
+PATH: /home/claude/README.md
+REPLACE_ALL: False
+=====OLD=====
+## Betting notes
+=====NEW=====
+## INT rate by point spread (2016 – 2026 Wk3, starters with 10+ attempts)
+| spot | starts | P(1+ INT) | INT % of attempts |
+|---|---|---|---|
+| Dog 11+ | 268 | 63.1% | 3.14 |
+| Dog 7–10.5 | 655 | 52.1% | 2.35 |
+| Dog 4–6.5 | 805 | 55.2% | 2.37 |
+| Dog 1–3.5 | 1,021 | 54.7% | 2.47 |
+| Fav 1–3.5 | 1,311 | 49.5% | 2.13 |
+| Fav 4–6.5 | 663 | 47.4% | 1.99 |
+| Fav 7–10.5 | 587 | 42.6% | 1.80 |
+| Fav 11+ | 213 | 45.1% | 1.63 |
+
+Attempts barely change with the spread (about 31–34 per start in every bucket). The effect is almost entirely **per-throw risk**: trailing QBs force throws.
+
+`spread_variants.py` tests whether spread buckets, a squared term, or extra slope past ±10 beat the straight-line spread term in walk-forward testing (2019–2026, 3,952 starts). None did; all scored within 0.0001 Brier. The model keeps the linear term. The projections file includes `hist_p_at_spread` (a generic QB at this spread) and `qb_vs_spread_hist` (how far this QB's profile moves him off it).
+
+**Caution:** in walk-forward testing, the model ran about 4 points light on 11+ point underdogs (60% predicted vs 64% actual, n=201). That could be noise, but lean skeptical on unders for huge dogs.
+
+## Betting notes
