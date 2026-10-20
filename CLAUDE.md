@@ -10,6 +10,7 @@ NFL Insights (also called "Paydirt") is Clinton's NFL projection and betting-res
 ## Status (Oct 20, 2026)
 - The original pipeline was built in a chat that hit its length limit. Its code lives only in that chat's workspace, and the daily 8:52 a.m. ET update still runs there via a chained reminder. **Its code can't be copied out.**
 - **Rebuild plan:** see `SPEC.md`. Full transcript recovery was declined as too costly (Oct 20); a pilot of turns 3–20 is in `recover/`.
+- **Oct 20:** the old daily run fired but failed to publish; treat the old pipeline as dead. Site patched from here (v150: Week 6 Monday night graded via `tools/grade_pending.py`). Rebuild starts Oct 21.
 - **This repo is the rebuild.** Until the rebuilt pipeline publishes, do NOT publish to the site URL from here, because the old daily run overwrites it every morning.
 - `tracker/` (built Oct 19) snapshots the live site's projections before kickoff and grades them against nflverse stats. See `tracker/TICK.md`.
 
