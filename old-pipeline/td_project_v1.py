@@ -1,0 +1,146 @@
+"""Project anytime-TD probabilities for the upcoming week."""
+import numpy as np, pandas as pd
+import td_model as T, injuries as J
+
+SEASON, WEEK = 2026, int(__import__("os").environ.get("NFL_WEEK", 5))
+# Only these QBs are projected (starters, same list as the INT model); backup QBs are dropped.
+import json, os
+QB_OVERRIDES = json.load(open("qb_overrides.json")).get(str(WEEK), {}) if os.path.exists("qb_overrides.json") else {}
+MIN_USAGE = 0.04          # decayed carry share + target share needed to be listed
+QUESTIONABLE = []
+
+pbp, sched, players = T.load()
+pg, team, ctx = T.build_tables(pbp, sched, players)
+
+ros = pd.read_parquet("data/rosters_2026.parquet")
+# each player's most recent roster row (bye-week teams are missing from that week's file, and the current week's file
+# may not exist yet); a game-day inactive tag only counts if it is from THIS week
+ros = ros[ros.week <= WEEK].sort_values("week").drop_duplicates("gsis_id", keep="last")
+CARRY_ROS = not (ros.week == WEEK).any()
+out_codes = ros.status.isin(["RES", "CUT", "RET", "DEV", "EXE"]) | ((ros.status == "INA") & (ros.week == WEEK))      # the "I01" description lags a week (it marks LAST game's inactives), so it is not used
+unavailable = set(ros[out_codes].gsis_id)
+# official injury report: Out / Doubtful are removed from the pool; Questionable is flagged
+inj = pd.read_parquet("data/injuries_2026.parquet")
+_inj_all = inj[inj.season == SEASON]
+inj = _inj_all[_inj_all.week == WEEK]
+# Game statuses arrive team by team (Thursday teams first). A team with statuses this week uses them; every other team
+# carries its last report forward at the measured rate those players return the next game (or the one after, for a look-ahead week).
+_teams_now = set(inj[inj.report_status.notna()].team)
+CARRY_INJ = len(_teams_now) == 0
+q_play, q_lbl = {}, {}
+_cur = inj[inj.team.isin(_teams_now)]
+unavailable |= set(_cur[_cur.report_status.isin(["Out", "Doubtful"])].gsis_id.dropna())
+QUESTIONABLE = list(set(QUESTIONABLE) | set(_cur[_cur.report_status == "Questionable"].full_name.dropna()))
+q_play.update({r.gsis_id: J.p_play(r.practice_status) for r in _cur[_cur.report_status == "Questionable"].itertuples() if isinstance(r.gsis_id, str)})
+listed = set(_cur[~_cur.report_status.isin(["Out", "Doubtful"])].gsis_id.dropna())
+_prev_all = _inj_all[(_inj_all.week < WEEK) & ~_inj_all.team.isin(_teams_now)]
+if len(_prev_all):
+    _lastwk = _prev_all.groupby("team").week.transform("max"); prev = _prev_all[_prev_all.week == _lastwk]
+    _sn = pd.read_parquet("data/snaps.parquet"); _sn = _sn[(_sn.season == SEASON) & (_sn.offense_pct > 0)]
+    _played = set(zip(_sn.week, _sn.gsis_id))
+    _done = int(sched[(sched.season == SEASON) & sched.result.notna()].week.max())       # last completed week
+    _table, _ahead = (J.CARRY, "last") if WEEK - _done <= 1 else (J.CARRY2, "wk %d" % _done)
+    for r in prev.itertuples():
+        if not isinstance(r.gsis_id, str): continue
+        k = "Out" if r.report_status == "Out" else "Doubtful" if r.report_status == "Doubtful" else "Q_sat" if (r.report_status == "Questionable" and (r.week, r.gsis_id) not in _played) else None
+        if k:
+            q_play[r.gsis_id] = _table[k]; q_lbl[r.gsis_id] = J.CARRY_LBL[k].replace("last wk", "wk %d" % int(r.week))
+    listed |= set(prev.gsis_id.dropna())
+# hand-entered injury news (news_wk<week>.json), used until official statuses exist for that team; chances are the measured
+# rates for the nearest report category, never a guess per player
+if os.path.exists(f"news_wk{WEEK}.json"):
+    import re as _re
+    _nm = lambda s: _re.sub(r"[^a-z]", "", _re.sub(r"\b(jr|sr|ii|iii|iv)\b\.?", "", str(s).lower()))
+    _rk = {(r.team, _nm(r.full_name)): r.gsis_id for r in ros.itertuples() if isinstance(r.gsis_id, str)}
+    for _n, _t, _p, _note in json.load(open(f"news_wk{WEEK}.json"))["players"]:
+        _pid = _rk.get((_t, _nm(_n)))
+        if _pid is None: print("news: could not match", _n, _t); continue
+        if _t in _teams_now: continue                      # the team's official report has superseded the news
+        if _p == 0: unavailable.add(_pid)
+        else: q_play[_pid] = _p; q_lbl[_pid] = _note
+roster_team = ros[~out_codes].drop_duplicates("gsis_id").set_index("gsis_id").team
+
+# starting QBs: each team's latest starter (most attempts) unless overridden
+import int_model as M
+ipbp, isched = M.load(); iqb, _, ictx = M.build_tables(ipbp, isched)
+st = iqb[iqb.is_starter].merge(ictx[["game_id", "gameday"]].drop_duplicates(), on="game_id")
+starters = st.sort_values("gameday").groupby("posteam").tail(1).set_index("posteam").passer_player_id.to_dict()
+starters.update(QB_OVERRIDES)
+starter_ids = set(starters.values())
+# an uncertain starting quarterback: he and his backup share the job in the simulation (exactly one of them plays each run)
+QB_BACKUP = {}
+if os.path.exists(f"news_wk{WEEK}.json"):
+    for _t, _u in json.load(open(f"news_wk{WEEK}.json")).get("qb_uncertain", {}).items():
+        _b = _rk.get((_t, _nm(_u["backup"])))
+        if _b is None or _t not in starters or _t in _teams_now: print("qb news: skipped", _t); continue
+        QB_BACKUP[_t] = _b; starter_ids.add(_b)
+        q_play[starters[_t]] = _u["p"]; q_lbl[starters[_t]] = _u["note"]
+        q_play[_b] = 1 - _u["p"]; q_lbl[_b] = "starts if " + players.drop_duplicates("gsis_id").set_index("gsis_id").display_name.get(starters[_t], "the starter").split()[-1] + " sits"
+
+games = sched[(sched.season == SEASON) & (sched.week == WEEK) & sched.result.isna()]   # unplayed games only
+recent = pg[pg.season == SEASON].sort_values("gameday")
+rows = []
+for _, g in games.iterrows():
+    for tm in (g.away_team, g.home_team):
+        tg = recent[recent.posteam == tm]
+        order = tg.game_id.drop_duplicates().tolist(); last2 = order[-2:]
+        pool = set(tg[tg.game_id.isin(last2)].pid) | {starters[tm]} | ({QB_BACKUP[tm]} if tm in QB_BACKUP else set())
+        # returning players: on the active roster, not ruled out, played for this team earlier this season but not in the
+        # last two games - or haven't played yet this season and show up on this week's report as something other than Out
+        back = set(tg.pid) - pool
+        prev = pg[(pg.season == SEASON - 1) & (pg.posteam == tm)]
+        back |= {p for p in set(prev.pid) & listed if roster_team.get(p) == tm} - set(tg.pid)
+        last_seen = tg.groupby("pid").game_id.last().map({gid: i for i, gid in enumerate(order)})
+        for pid in pool | {p for p in back if p in roster_team.index}:
+            if pid in unavailable or roster_team.get(pid, tm) != tm:
+                continue
+            missed = len(order) - 1 - last_seen[pid] if pid in last_seen.index else len(order)
+            rows.append(dict(game_id=g.game_id, posteam=tm, pid=pid, gameday=pd.to_datetime(g.gameday),
+                             season=SEASON, week=WEEK, missed=int(missed)))
+pred = pd.DataFrame(rows)
+pos = players.drop_duplicates("gsis_id").set_index("gsis_id")
+pred["pos"] = pred.pid.map(pos.position).fillna("UNK")
+pred["name"] = pred.pid.map(pos.display_name)
+pred = pred[(pred.pos != "QB") | pred.pid.isin(starter_ids)]
+
+d = T.features(pg, team, ctx, predict_rows=pred)
+hist = d[~d._pred]
+tmm = T.fit_team(team)
+mr, mp = T.fit_players(hist, tmm)
+f = T.predict(d[d._pred].copy(), tmm, mr, mp)
+f["usage"] = f.pr_car_sh.fillna(0) + f.pr_tgt_sh.fillna(0)
+f = f[(f.usage >= MIN_USAGE) | (f.pos == "QB")]
+f["missed"] = f.pid.map(pred.drop_duplicates("pid").set_index("pid").missed).fillna(0)
+f.loc[f.pos == "QB", "missed"] = 0
+f["back_mult"] = f.missed.map(J.back_mult)
+f["p_play"] = f.pid.map(q_play).fillna(1.0)
+avail = f.p_play * f.back_mult            # expected share of his usual role: sits some of the time, eased back in after an absence
+f["lam"] = f.lam * avail; f["lam_rush"] = f.lam_rush * avail; f["lam_rec"] = f.lam_rec * avail
+# Players on a team must add up to that team's expected TDs. Rescale each team's pool
+# (this also hands an injured player's share to his teammates, proportionally).
+f["team_scale"] = f.exp_td / f.groupby("posteam").lam.transform("sum")
+f["lam"] = f.lam * f.team_scale
+f["lam_rush"] = f.lam_rush * f.team_scale * f.qb_mult
+f["lam_rec"] = f.lam_rec * f.team_scale * f.qb_mult
+# lam is now his expected TDs counting the games he sits; when he does play his rate is lam / p_play
+for c in ["lam_rush", "lam_rec"]: f[c] = f[c] / f.p_play
+f["p_td"] = 1 - np.exp(-f.lam / f.p_play)      # shown "if he plays" (books void the bet when a player is inactive)
+f["name"] = f.pid.map(pos.display_name)
+f["fair_odds"] = T.american(f.p_td)
+f["flag"] = np.where(f.p_play < 1, f.pid.map(q_lbl).fillna("Q") + " · " + (f.p_play * 100).round().astype(int).astype(str) + "% to play · numbers assume he plays",
+              np.where(f.name.isin(QUESTIONABLE), "questionable", np.where(f.missed >= 2, "back after " + f.missed.astype(int).astype(str) + " missed", "")))
+opp = ctx.set_index(["game_id", "team"]).opp
+f["opp"] = [opp.get((g, t)) for g, t in zip(f.game_id, f.posteam)]
+cols = ["name", "pid", "game_id", "rush_share", "td_std", "xtd_std", "over_xtd", "pos", "posteam", "opp", "implied", "exp_td", "pr_car", "pr_tgt", "pr_car_sh", "pr_i10_sh",
+        "pr_tgt_sh", "pr_rz_sh", "lam_rush", "lam_rec", "p_td", "fair_odds", "flag", "p_play", "missed", "back_mult"]
+res = f[cols].sort_values("p_td", ascending=False).reset_index(drop=True)
+res.to_csv(f"td_props_{SEASON}_wk{WEEK}.csv", index=False)
+print(f"{len(res)} players projected; team exp TDs range {f.exp_td.min():.2f}-{f.exp_td.max():.2f}")
+print(res.head(30).round({"implied": 1, "exp_td": 2, "pr_car": 1, "pr_tgt": 1, "pr_car_sh": 2, "pr_i10_sh": 2,
+                          "pr_tgt_sh": 2, "pr_rz_sh": 2, "lam_rush": 2, "lam_rec": 2, "p_td": 3, "fair_odds": 0})
+      [["name", "pos", "posteam", "opp", "implied", "pr_car", "pr_tgt", "p_td", "fair_odds", "flag"]].to_string())
+# sanity: expected TDs per team = sum of listed player lambdas vs team model
+chk = f.groupby("posteam").agg(sum_lam=("lam", "sum"), team_exp=("exp_td", "first"))
+print("\nteams most rescaled (scale < 0.85 or > 1.15 means the pool was thin or crowded):")
+sc = f.groupby("posteam").team_scale.first().sort_values()
+print(sc[(sc < 0.85) | (sc > 1.15)].round(2).to_dict())

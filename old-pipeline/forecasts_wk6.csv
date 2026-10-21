@@ -1,0 +1,11 @@
+team,wind,temp,precip,source
+DEN,9,50,25,SI/NFL Weather Oct 15 (gusts 19) - game played
+CLE,8,56,0,MySportsWeather Oct 17 (gusts 12); Covers 7.8
+PHI,5,55,0,MySportsWeather Oct 17 (gusts 10); Covers 9.6
+NE,5,48,0,MySportsWeather Oct 17 (gusts 10); Covers 7.4
+NYG,5,55,0,MySportsWeather Oct 17 (gusts 8); Covers 8.9
+TB,16,77,0,MySportsWeather Oct 17 (gusts 26); Covers 18.3
+LA,2,82,0,MySportsWeather Oct 17 (canopy)
+KC,12,64,0,MySportsWeather Oct 17 (gusts 18)
+GB,10,55,0,MySportsWeather Oct 17 (gusts 23)
+SF,14,64,2,MySportsWeather Oct 17 (gusts 23)

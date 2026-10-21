@@ -1,0 +1,87 @@
+{
+ "asof": "2026-10-05/06 team and beat reports",
+ "qb_notes": {
+  "BAL": "Jackson ankle, uncertain \u00b7 51% to play \u00b7 Huntley if not"
+ },
+ "players": [
+  [
+   "Saquon Barkley",
+   "PHI",
+   0.31,
+   "news: hamstring, week to week"
+  ],
+  [
+   "DeVonta Smith",
+   "PHI",
+   0.31,
+   "news: hamstring, likely out"
+  ],
+  [
+   "Ja'Marr Chase",
+   "CIN",
+   0.69,
+   "news: concussion protocol"
+  ],
+  [
+   "Tee Higgins",
+   "CIN",
+   0.69,
+   "news: adductor, day to day"
+  ],
+  [
+   "Ladd McConkey",
+   "LAC",
+   0.69,
+   "news: foot, day to day"
+  ],
+  [
+   "DJ Moore",
+   "BUF",
+   0.69,
+   "news: shoulder, uncertain"
+  ],
+  [
+   "Mack Hollins",
+   "NE",
+   0.69,
+   "news: calf, uncertain"
+  ],
+  [
+   "Justin Jefferson",
+   "MIN",
+   0.85,
+   "news: ankle, hopeful to play"
+  ],
+  [
+   "Pat Bryant",
+   "DEN",
+   0,
+   "news: ankle, out a few weeks"
+  ],
+  [
+   "Kyle Juszczyk",
+   "SF",
+   0,
+   "news: knee, out 2-3 weeks"
+  ],
+  [
+   "Tank Bigsby",
+   "PHI",
+   0,
+   "news: core surgery, IR"
+  ],
+  [
+   "Tyquan Thornton",
+   "KC",
+   0,
+   "news: ankle, out 12-16 weeks"
+  ]
+ ],
+ "qb_uncertain": {
+  "BAL": {
+   "p": 0.51,
+   "backup": "Tyler Huntley",
+   "note": "news: ankle, uncertain"
+  }
+ }
+}

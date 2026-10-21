@@ -1,0 +1,51 @@
+n,cat,bet,game,price,model_p,ev,news
+1,TD,Jordan Addison anytime TD,MIN_NO,3.55,0.313,0.113,0
+2,TD,Luther Burden III anytime TD,CHI_GB,3.4,0.326,0.109,1
+3,TD,Chris Olave anytime TD,MIN_NO,3.15,0.35,0.103,0
+4,TD,Brock Bowers anytime TD,LV_NE,2.3,0.467,0.074,1
+5,TD,Isaiah Likely anytime TD,NYG_WAS,3.4,0.309,0.049,0
+6,TD,Sam LaPorta anytime TD,DET_ARI,2.8,0.374,0.047,0
+7,TD,Tucker Kraft anytime TD,CHI_GB,3.45,0.302,0.042,1
+8,TD,Colston Loveland anytime TD,CHI_GB,3.35,0.31,0.04,1
+9,TD,Tony Pollard anytime TD,HOU_TEN,3.5,0.292,0.022,0
+10,TD,Michael Wilson anytime TD,DET_ARI,2.75,0.369,0.014,0
+11,TD,Jaxon Smith-Njigba anytime TD,SF_SEA,2.0,0.505,0.011,0
+12,TD,Matthew Golden anytime TD,CHI_GB,3.3,0.304,0.003,1
+13,TD,Brian Robinson Jr. anytime TD,BAL_ATL,3.3,0.3,-0.009,1
+14,TD,Josh Allen anytime TD,BUF_LA,1.87,0.529,-0.011,0
+15,TD,D'Andre Swift anytime TD,CHI_GB,2.15,0.459,-0.014,1
+16,TD,Garrett Wilson anytime TD,CLE_NYJ,2.4,0.41,-0.016,1
+17,TD,Omarion Hampton anytime TD,DEN_LAC,2.7,0.36,-0.029,1
+18,TD,Jacory Croskey-Merritt anytime TD,NYG_WAS,2.45,0.395,-0.033,1
+19,TD,Aaron Jones anytime TD,MIN_NO,1.74,0.55,-0.043,0
+20,TD,Zay Flowers anytime TD,BAL_ATL,3.0,0.319,-0.044,1
+21,TD,Roman Wilson anytime TD,IND_PIT,3.55,0.261,-0.073,1
+22,TD,George Kittle anytime TD,SF_SEA,2.9,0.32,-0.073,0
+23,TD,Christian Watson anytime TD,CHI_GB,2.8,0.33,-0.076,1
+24,TD,Trey McBride anytime TD,DET_ARI,2.15,0.428,-0.079,0
+25,TD,Justin Jefferson anytime TD,MIN_NO,2.8,0.327,-0.086,0
+26,OU,Drake London Under 5.5 rec,BAL_ATL,2.08,0.775,0.612,1
+27,OU,Ollie Gordon II Under 1.5 rec,CIN_MIA,2.38,0.675,0.607,0
+28,OU,Zay Flowers Under 70.5 rec yds,BAL_ATL,1.9,0.804,0.528,1
+29,OU,Nico Collins Under 81.5 rec yds,HOU_TEN,1.88,0.804,0.511,0
+30,OU,Josh Downs Under 4.5 rec,IND_PIT,2.22,0.675,0.499,0
+31,OU,Bhayshul Tuten Under 67.5 rush yds,PHI_JAX,1.88,0.783,0.472,1
+32,OU,Cam Skattebo Under 56.5 rush yds,NYG_WAS,1.9,0.771,0.466,0
+33,OU,Marvin Mims Jr. Over 1.5 rec,DEN_LAC,2.16,0.675,0.458,0
+34,OU,Parker Washington Under 4.5 rec,PHI_JAX,2.01,0.725,0.457,1
+35,OU,Will Shipley Under 2.5 rec,PHI_JAX,1.88,0.775,0.457,1
+36,OU,Mike Evans Under 3.5 rec,SF_SEA,2.28,0.625,0.425,0
+37,OU,Drake Maye Under 230.5 pass yds,LV_NE,1.88,0.755,0.42,1
+38,OU,D'Andre Swift Under 14.5 rec yds,CHI_GB,1.88,0.754,0.418,1
+39,OU,Trey McBride Under 7.5 rec,DET_ARI,2.1,0.675,0.418,0
+40,OU,Tyson Bagent Under 10.5 rush yds,CHI_GB,1.95,0.724,0.411,1
+41,OU,Jaxon Smith-Njigba Under 90.5 rec yds,SF_SEA,1.9,0.742,0.41,0
+42,OU,Christian McCaffrey Under 53.5 rush yds,SF_SEA,1.88,0.739,0.389,0
+43,OU,Troy Franklin Under 19.5 rec yds,DEN_LAC,1.88,0.729,0.371,0
+44,total,Over 37.5 (HOU@TEN),,1.91,0.674,0.287,0
+45,spread,SF +3.0 (SF@SEA),,1.91,0.666,0.272,0
+46,spread,NYG +4.5 (NYG@WAS),,1.91,0.662,0.264,1
+47,total,Over 41.5 (DEN@LAC),,1.91,0.658,0.257,1
+48,total,Over 41.5 (PHI@JAX),,1.91,0.619,0.182,1
+49,spread,CLE +2.5 (CLE@NYJ),,1.91,0.611,0.167,1
+50,total,Over 42.5 (MIN@NO),,1.91,0.604,0.154,0

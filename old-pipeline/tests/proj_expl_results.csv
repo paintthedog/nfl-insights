@@ -1,0 +1,16 @@
+feature,target,n,mae_now,mae_with,change_pct,se_pct,seasons_better
+Player explosive rate (rushing),RB rush_yds,6236,20.401,20.371,-0.14,0.09,5/5
+Player explosive rate (receiving),WR rec_yds,9405,23.121,23.13,0.04,0.04,2/5
+Player explosive rate (receiving),TE rec_yds,4807,16.152,16.122,-0.19,0.08,4/5
+Player explosive rate (receiving),RB rec_yds,6137,11.099,11.101,0.02,0.17,1/5
+QB explosive rate,QB pass_yds,2415,55.479,55.501,0.04,0.04,2/5
+QB explosive rate,WR rec_yds,9405,23.121,23.12,-0.0,0.0,3/5
+Opp explosive passes allowed,QB pass_yds,2415,55.479,55.458,-0.04,0.05,4/5
+Opp explosive passes allowed,WR rec_yds,9405,23.121,23.115,-0.02,0.01,4/5
+Opp explosive passes allowed,TE rec_yds,4807,16.152,16.15,-0.02,0.01,4/5
+Opp explosive runs allowed,RB rush_yds,6236,20.401,20.408,0.03,0.05,1/5
+Garbage-time share of touches,RB car,6226,3.531,3.531,-0.01,0.02,2/5
+Garbage-time share of touches,RB rush_yds,6236,20.401,20.408,0.03,0.01,2/5
+Garbage-time share of touches,WR tgt,9405,2.014,2.015,0.05,0.02,0/5
+Garbage-time share of touches,TE tgt,4807,1.567,1.567,0.0,0.01,3/5
+Garbage-time share of touches,WR rec_yds,9405,23.121,23.131,0.05,0.02,2/5

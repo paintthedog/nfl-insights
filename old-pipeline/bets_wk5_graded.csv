@@ -1,0 +1,51 @@
+n,cat,bet,game,price,model_p,ev,result,actual,pnl
+1,TD,Xavier Hutchinson anytime TD,HOU_TEN,7.5,0.223,0.674,loss,0.0,-1.0
+2,TD,Marvin Mims Jr. anytime TD,DEN_LAC,9.5,0.175,0.667,loss,0.0,-1.0
+3,TD,Konata Mumpfield anytime TD,BUF_LA,8.5,0.171,0.454,loss,0.0,-1.0
+4,TD,Darius Cooper anytime TD,PHI_JAX,5.5,0.244,0.342,win,1.0,4.5
+5,TD,T.J. Hockenson anytime TD,MIN_NO,4.2,0.31,0.303,loss,0.0,-1.0
+6,TD,Dallas Goedert anytime TD,PHI_JAX,4.3,0.293,0.262,loss,0.0,-1.0
+7,TD,Jameis Winston anytime TD,NYG_WAS,10.0,0.126,0.26,loss,0.0,-1.0
+8,TD,Daniel Jones anytime TD,IND_PIT,6.5,0.194,0.259,loss,0.0,-1.0
+9,TD,Makai Lemon anytime TD,PHI_JAX,5.75,0.218,0.255,loss,0.0,-1.0
+10,TD,Tyrone Tracy Jr. anytime TD,NYG_WAS,10.0,0.124,0.243,loss,0.0,-1.0
+11,TD,Michael Mayer anytime TD,LV_NE,4.7,0.263,0.236,loss,0.0,-1.0
+12,TD,Dontayvion Wicks anytime TD,PHI_JAX,4.5,0.271,0.22,loss,0.0,-1.0
+13,TD,Josh Cameron anytime TD,PHI_JAX,8.5,0.142,0.209,loss,0.0,-1.0
+14,TD,Kaytron Allen anytime TD,NYG_WAS,9.0,0.134,0.202,void,,0.0
+15,TD,Kimani Vidal anytime TD,DEN_LAC,6.5,0.185,0.2,win,1.0,5.5
+16,OU,Zay Flowers Under 70.5 reception yds,BAL_ATL,1.9,0.756,0.436,win,53.0,0.8999999999999999
+17,OU,Ollie Gordon II Under 1.5 receptions,CIN_MIA,2.38,0.725,0.725,win,0.0,1.38
+18,OU,Drake London Under 5.5 receptions,BAL_ATL,2.08,0.775,0.612,loss,7.0,-1.0
+19,OU,Brock Bowers Under 6.5 receptions,LV_NE,2.03,0.775,0.573,loss,8.0,-1.0
+20,OU,Greg Dulcich Under 2.5 receptions,CIN_MIA,2.28,0.675,0.539,loss,4.0,-1.0
+21,OU,Bhayshul Tuten Under 67.5 rush yds,PHI_JAX,1.88,0.804,0.512,loss,72.0,-1.0
+22,OU,Josh Downs Under 4.5 receptions,IND_PIT,2.22,0.675,0.499,win,3.0,1.2200000000000002
+23,OU,Nico Collins Under 81.5 reception yds,HOU_TEN,1.88,0.796,0.497,win,56.0,0.8799999999999999
+24,OU,Nico Collins Under 5.5 receptions,HOU_TEN,1.93,0.775,0.496,win,5.0,0.9299999999999999
+25,OU,Tyson Bagent Under 10.5 rush yds,CHI_GB,1.95,0.765,0.491,loss,17.0,-1.0
+26,OU,Cam Skattebo Under 56.5 rush yds,NYG_WAS,1.9,0.778,0.479,loss,59.0,-1.0
+27,OU,Brock Bowers Under 72.5 reception yds,LV_NE,1.88,0.784,0.474,loss,110.0,-1.0
+28,OU,George Holani Under 1.5 receptions,SF_SEA,2.17,0.675,0.465,loss,4.0,-1.0
+29,OU,Marvin Mims Jr. Over 1.5 receptions,DEN_LAC,2.16,0.675,0.458,win,2.0,1.1600000000000001
+30,OU,Parker Washington Under 4.5 receptions,PHI_JAX,2.01,0.725,0.457,loss,6.0,-1.0
+31,OU,Will Shipley Under 2.5 receptions,PHI_JAX,1.88,0.775,0.457,win,1.0,0.8799999999999999
+32,OU,Malik Nabers Under 5.5 receptions,NYG_WAS,1.66,0.875,0.452,loss,11.0,-1.0
+33,OU,Braelon Allen Under 73.5 rush yds,CLE_NYJ,1.89,0.768,0.452,loss,116.0,-1.0
+34,OU,Dalton Kincaid Under 49.5 reception yds,BUF_LA,1.88,0.771,0.449,win,7.0,0.8799999999999999
+35,OU,Drake London Under 81.5 reception yds,BAL_ATL,1.89,0.764,0.444,loss,118.0,-1.0
+36,total,Over 37.5 (HOU@TEN),,1.91,0.674,0.287,loss,29.0,-1.0
+37,spread,NYG +4.5 (NYG@WAS),,1.91,0.67,0.28,win,0.0,0.9099999999999999
+38,spread,SF +3.0 (SF@SEA),,1.91,0.666,0.272,win,3.0,0.9099999999999999
+39,total,Over 41.5 (DEN@LAC),,1.91,0.658,0.257,loss,40.0,-1.0
+40,total,Over 41.5 (PHI@JAX),,1.91,0.619,0.182,loss,36.0,-1.0
+41,spread,CLE +2.5 (CLE@NYJ),,1.91,0.611,0.167,loss,-5.0,-1.0
+42,total,Over 42.5 (MIN@NO),,1.91,0.604,0.154,loss,36.0,-1.0
+43,total,Over 39.5 (CLE@NYJ),,1.91,0.603,0.152,loss,29.0,-1.0
+44,spread,TEN +7.5 (HOU@TEN),,1.91,0.594,0.135,loss,-23.0,-1.0
+45,spread,BUF +3.0 (BUF@LA),,1.91,0.585,0.117,win,3.0,0.9099999999999999
+46,teaser leg,GB +1.5 teased to +7.5 vs CHI,,1.3,0.762,-0.009,win,24.0,0.30000000000000004
+47,teaser leg,NO +2.5 teased to +8.5 vs MIN,,1.3,0.762,-0.009,loss,-10.0,-1.0
+48,teaser leg,CLE +2.5 teased to +8.5 at NYJ,,1.3,0.762,-0.009,win,-5.0,0.30000000000000004
+49,prime under,BAL at ATL Under 43.5 (SNF),,1.91,0.563,0.075,loss,53.0,-1.0
+50,prime under,BUF at LA Under 54.5 (MNF),,1.91,0.563,0.075,loss,71.0,-1.0

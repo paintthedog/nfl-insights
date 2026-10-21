@@ -1,0 +1,23 @@
+{
+ "markets": [
+  "player_anytime_td",
+  "player_pass_yds",
+  "player_rush_yds",
+  "player_reception_yds",
+  "player_receptions"
+ ],
+ "bookmakers": "draftkings",
+ "credits_per_game": 5,
+ "credits_used": [
+  {
+   "date": "2026-10-05",
+   "used": 5,
+   "note": "ATL@NO, 5 markets"
+  },
+  {
+   "date": "2026-10-08",
+   "used": 75,
+   "note": "Week 5, all 15 games, 5 markets, DraftKings; early-week pull"
+  }
+ ]
+}

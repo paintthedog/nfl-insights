@@ -1,0 +1,119 @@
+{
+ "asof": "2026-10-18T09:35 ET",
+ "source": "Forbes Week 6 injuries (Oct 14), Yahoo live injury tracker (Oct 12-13), FantasyPros (Oct 12). No official Wednesday practice report yet. | OL carryover check Oct 14: Penning on reserve (roster RES); Awosika out wks 4-5, no update; Bortolini full practice wk5 (back); Lane Johnson/Jurgens no current report \u2014 re-check Thu/Fri. | Oct 15: Wednesday practice reports (Yahoo injury report + live blog, NBC). | Carryovers: Johnston limited (chest); Jurgens limited (concussion) -> treated as playing; Lane Johnson & Bortolini not on Wed report -> back. | Oct 16: Hurts out (blood clot, Rapoport), McKee starts; Lamar DNP Thu; Roman Wilson out (Yahoo Oct 15, PFT Oct 15). | Oct 17: final Friday reports (CBS Oct 16 5:57pm, SI final injury report Oct 17): Lamar, Barkley, Montgomery, Rice, J. Love out; Caleb Q but full practice; DeVonta expected back; Henderson good chance; Lamb/Bateman/Nailor not on report -> playing; Jurgens out (concussion). | Oct 17 pm: Croskey-Merritt + Mariota out (Quinn); Diggs Q limited x2; Evans Q expected to play (Maiocco); DJ Moore likely sits (Capaccio); Olave limited Fri, trending to play; Henderson leaning out; Kamara/Dowdle likely active; Metcalf illness Q; A.J. Brown likely activated (Rapoport) - not in pool, flagged.",
+ "out": [
+  "AJ Dillon",
+  "Adonai Mitchell",
+  "Ashton Dulin",
+  "Baker Mayfield",
+  "Ben Skowronik",
+  "Breece Hall",
+  "Carter Runyon",
+  "David Montgomery",
+  "David Sills",
+  "Deebo Samuel",
+  "Dont'e Thornton",
+  "Dylan Sampson",
+  "Jacory Croskey-Merritt",
+  "Jalen Hurts",
+  "Jeremiyah Love",
+  "Kyle Monangai",
+  "Lamar Jackson",
+  "Marcus Mariota",
+  "Matt Hibner",
+  "Michael Pittman",
+  "Raheim Sanders",
+  "Rashee Rice",
+  "Roman Wilson",
+  "Saquon Barkley",
+  "Skyy Moore",
+  "Tank Bigsby",
+  "Tank Dell",
+  "Theo Johnson",
+  "Tre Harris",
+  "Will Shipley"
+ ],
+ "p_play": {
+  "Quinshon Judkins": 0.5,
+  "DeVonta Smith": 0.9,
+  "Kenyon Sadiq": 0.4,
+  "TreVeyon Henderson": 0.4,
+  "Tyler Warren": 0.7,
+  "Alvin Kamara": 0.95,
+  "Chris Olave": 0.95,
+  "DK Metcalf": 1.0,
+  "Rico Dowdle": 0.9,
+  "DJ Moore": 0.25,
+  "Joshua Palmer": 0.7,
+  "Tyjae Spears": 0.6,
+  "Omar Cooper Jr.": 0.95,
+  "Ja'Kobi Lane": 0.9,
+  "Trevor Etienne": 0.6,
+  "Sean Tucker": 0.6,
+  "Savion Williams": 0.6,
+  "KeAndre Lambert-Smith": 0.5,
+  "Brenen Thompson": 0.5,
+  "Will Mallory": 0.6,
+  "Eli Stowers": 0.6,
+  "Grant Calcaterra": 0.6,
+  "Stefon Diggs": 0.7,
+  "Mike Evans": 0.8,
+  "Jeremy McNichols": 0.6,
+  "Rachaad White": 1.0,
+  "Austin Ekeler": 1.0,
+  "Pat Freiermuth": 0.8
+ },
+ "qb_start": {
+  "SEA": "Sam Darnold",
+  "CHI": "Caleb Williams",
+  "PHI": "Tanner McKee",
+  "BAL": "Tyler Huntley"
+ },
+ "next_man": {},
+ "ol_out": [
+  "Cam Jurgens",
+  "Drew Shelton",
+  "Dylan Parham",
+  "Joe Alt",
+  "Josh Simmons",
+  "Kayode Awosika",
+  "Monroe Freeling",
+  "Teven Jenkins",
+  "Trevor Penning"
+ ],
+ "team_notes": {
+  "ATL": "Penix (ribs) expected to start per team optimism; Tagovailoa backup",
+  "BAL": "Lamar Jackson DNP Wednesday (ankle), day-to-day; Huntley starts if he sits",
+  "CHI": "Caleb Williams (hamstring) full practice Wednesday; expected to start",
+  "HOU": "Traded for WR Marvin Harrison Jr. (from ARI); Montgomery (groin) week-to-week",
+  "SEA": "Darnold starts Thursday (AP preview Oct 14); schedule feed wrongly listed Drew Lock, who is the backup (forearm, no designation)",
+  "PHI": "Jalen Hurts out (blood clot); Tanner McKee starts. Barkley & DeVonta Smith hopeful (hamstrings)",
+  "NE": "A.J. Brown expected to be activated off IR for the Jets game (Rapoport, Oct 17); not in the projection pool yet, treat Patriots WR targets as spread thinner than shown.",
+  "WAS": "Rachaad White is the lead back with Croskey-Merritt out (Ekeler cleared, secondary).",
+  "SF": "Christian Kirk may be activated for Monday night."
+ },
+ "back": [
+  "Jalen Nailor",
+  "Lane Johnson",
+  "Quentin Johnston",
+  "Tanor Bortolini"
+ ],
+ "qb_uncertain": {
+  "CHI": {
+   "starter": "Caleb Williams",
+   "backup": "Tyson Bagent",
+   "p": 0.92,
+   "note": "Questionable (hamstring) but practiced in full; trending toward playing (SI Oct 17)"
+  }
+ },
+ "lead_back": {
+  "ARI": [
+   "Tyler Allgeier",
+   0.65
+  ],
+  "WAS": [
+   "Rachaad White",
+   0.6
+  ]
+ }
+}

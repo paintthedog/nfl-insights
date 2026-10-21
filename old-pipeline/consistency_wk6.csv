@@ -1,0 +1,3 @@
+week,check,game_id,subject,market,dk,board,gap,note,side,price,point
+6,Moneyline vs spread,2026_06_NO_NYG,NO@NYG,ml,0.5,0.435,0.065,"moneyline says NYG wins 50%, the spread (+1.5) says 43%; NO moneyline is the cheaper side",NO,1.91,
+6,Moneyline vs spread,2026_06_CHI_ATL,CHI@ATL,ml,0.483,0.435,0.048,"moneyline says ATL wins 48%, the spread (+1.5) says 43%; CHI moneyline is the cheaper side",CHI,1.85,

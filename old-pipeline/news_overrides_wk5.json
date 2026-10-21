@@ -1,0 +1,77 @@
+{
+ "asof": "2026-10-09T23:30 ET",
+ "source": "NFL.com Friday roundup Oct 9 + Yahoo injury tracker; official Friday designations; ETR Week 5 previews (Sat): Bigsby to IR, Pierce promoted from PS; OL outs + play-caller notes from ETR previews Oct 10",
+ "out": [
+  "Adonai Mitchell",
+  "Breece Hall",
+  "Caleb Douglas",
+  "Chris Brooks",
+  "DeVonta Smith",
+  "Dont'e Thornton",
+  "Jalen Nailor",
+  "Justin Joly",
+  "Kyle Juszczyk",
+  "Kyle Monangai",
+  "Lamar Jackson",
+  "Mack Hollins",
+  "Marcus Mariota",
+  "Marquise Brown",
+  "Michael Pittman",
+  "Quentin Johnston",
+  "Reggie Gilliam",
+  "Saquon Barkley",
+  "Savion Williams",
+  "Stefon Diggs",
+  "Tank Bigsby",
+  "Tylan Wallace",
+  "Zach Charbonnet"
+ ],
+ "p_play": {
+  "Trey Lance": 0.03,
+  "Ashton Jeanty": 0.45,
+  "Ja'Marr Chase": 0.8,
+  "Tee Higgins": 0.8,
+  "Justin Jefferson": 0.66,
+  "Jordan Addison": 0.66,
+  "Ladd McConkey": 0.66,
+  "Rhamondre Stevenson": 0.66,
+  "Alvin Kamara": 0.66,
+  "Rico Dowdle": 0.8,
+  "Terry McLaurin": 0.66,
+  "Jaylen Wright": 0.66,
+  "George Holani": 0.66,
+  "Carnell Tate": 0.66,
+  "David Martin-Robinson": 0.66,
+  "Mason Taylor": 0.9,
+  "Jayden Daniels": 0.97,
+  "Mike Evans": 1.0,
+  "Malik Nabers": 1.0,
+  "Jeremiyah Love": 1.0,
+  "Kaelon Black": 1.0,
+  "Zay Flowers": 0.66,
+  "Colbie Young": 0.66,
+  "Barion Brown": 0.66,
+  "Irvin Charles": 0.66,
+  "Dallas Goedert": 1.0
+ },
+ "qb_start": {
+  "BAL": "Tyler Huntley"
+ },
+ "next_man": {
+  "PHI": "Dameon Pierce"
+ },
+ "ol_out": [
+  "Lane Johnson",
+  "Cam Jurgens",
+  "Trevor Penning",
+  "Kayode Awosika",
+  "Tanor Bortolini"
+ ],
+ "team_notes": {
+  "PHI": "Line upheaval beyond the report: Lane Johnson retired midweek and Cam Jurgens was traded. The offense fell to 28th in EPA/play without Johnson last year.",
+  "HOU": "DeMeco Ryans takes over defensive play-calling from Matt Burke this week.",
+  "DEN": "Sean Payton takes back offensive play-calling from Davis Webb.",
+  "MIA": "Claimed Kaytron Allen off waivers Friday; dead last in plays from scrimmage.",
+  "ARI": "Offensive line unraveling: Paris Johnson out for the year, Isaiah Adams out, his backup tore an ACL."
+ }
+}

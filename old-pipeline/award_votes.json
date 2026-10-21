@@ -1,0 +1,397 @@
+{
+ "mvp": {
+  "2016": [
+   "Matt Ryan",
+   "Tom Brady",
+   "Derek Carr",
+   "Ezekiel Elliott",
+   "Aaron Rodgers"
+  ],
+  "2017": [
+   "Tom Brady",
+   "Todd Gurley",
+   "Carson Wentz"
+  ],
+  "2018": [
+   "Patrick Mahomes",
+   "Drew Brees"
+  ],
+  "2019": [
+   "Lamar Jackson"
+  ],
+  "2020": [
+   "Aaron Rodgers",
+   "Josh Allen",
+   "Patrick Mahomes"
+  ],
+  "2021": [
+   "Aaron Rodgers",
+   "Tom Brady",
+   "Cooper Kupp"
+  ],
+  "2022": [
+   "Patrick Mahomes",
+   "Jalen Hurts",
+   "Josh Allen",
+   "Joe Burrow",
+   "Justin Jefferson"
+  ],
+  "2023": [
+   "Lamar Jackson",
+   "Dak Prescott",
+   "Christian McCaffrey",
+   "Brock Purdy",
+   "Josh Allen"
+  ],
+  "2024": [
+   "Josh Allen",
+   "Lamar Jackson",
+   "Saquon Barkley",
+   "Joe Burrow",
+   "Jared Goff"
+  ],
+  "2025": [
+   "Matthew Stafford",
+   "Drake Maye",
+   "Josh Allen",
+   "Christian McCaffrey",
+   "Trevor Lawrence"
+  ]
+ },
+ "opoy": {
+  "2016": [
+   "Matt Ryan",
+   "Aaron Rodgers",
+   "David Johnson",
+   "Tom Brady",
+   "Ezekiel Elliott"
+  ],
+  "2017": [
+   "Todd Gurley",
+   "Antonio Brown",
+   "Tom Brady",
+   "DeAndre Hopkins"
+  ],
+  "2018": [
+   "Patrick Mahomes",
+   "Drew Brees",
+   "Todd Gurley",
+   "DeAndre Hopkins"
+  ],
+  "2019": [
+   "Michael Thomas",
+   "Lamar Jackson",
+   "Christian McCaffrey",
+   "Patrick Mahomes",
+   "Russell Wilson"
+  ],
+  "2020": [
+   "Derrick Henry",
+   "Patrick Mahomes",
+   "Aaron Rodgers",
+   "Josh Allen",
+   "Travis Kelce"
+  ],
+  "2021": [
+   "Cooper Kupp",
+   "Jonathan Taylor",
+   "Tom Brady",
+   "Aaron Rodgers"
+  ],
+  "2022": [
+   "Justin Jefferson",
+   "Patrick Mahomes",
+   "Jalen Hurts",
+   "Tyreek Hill",
+   "Josh Jacobs"
+  ],
+  "2023": [
+   "Christian McCaffrey",
+   "Tyreek Hill",
+   "CeeDee Lamb",
+   "Lamar Jackson",
+   "Dak Prescott"
+  ],
+  "2024": [
+   "Saquon Barkley",
+   "Lamar Jackson",
+   "Ja'Marr Chase",
+   "Derrick Henry",
+   "Joe Burrow"
+  ],
+  "2025": [
+   "Jaxon Smith-Njigba",
+   "Christian McCaffrey",
+   "Puka Nacua",
+   "Bijan Robinson",
+   "Drake Maye"
+  ]
+ },
+ "dpoy": {
+  "2016": [
+   "Khalil Mack",
+   "Von Miller",
+   "Landon Collins",
+   "Aaron Donald",
+   "Sean Lee"
+  ],
+  "2017": [
+   "Aaron Donald",
+   "Calais Campbell",
+   "Chandler Jones",
+   "Cameron Jordan",
+   "DeMarcus Lawrence"
+  ],
+  "2018": [
+   "Aaron Donald",
+   "Khalil Mack"
+  ],
+  "2019": [
+   "Stephon Gilmore",
+   "Chandler Jones",
+   "T.J. Watt",
+   "Shaquil Barrett",
+   "Aaron Donald"
+  ],
+  "2020": [
+   "Aaron Donald",
+   "T.J. Watt",
+   "Xavien Howard"
+  ],
+  "2021": [
+   "T.J. Watt",
+   "Micah Parsons",
+   "Aaron Donald"
+  ],
+  "2022": [
+   "Nick Bosa",
+   "Micah Parsons",
+   "Chris Jones",
+   "Haason Reddick",
+   "Myles Garrett"
+  ],
+  "2023": [
+   "Myles Garrett",
+   "T.J. Watt",
+   "Micah Parsons",
+   "Maxx Crosby",
+   "DaRon Bland"
+  ],
+  "2024": [
+   "Patrick Surtain II",
+   "Trey Hendrickson",
+   "Myles Garrett",
+   "T.J. Watt",
+   "Zack Baun"
+  ],
+  "2025": [
+   "Myles Garrett",
+   "Will Anderson Jr.",
+   "Micah Parsons",
+   "Nik Bonitto",
+   "Aidan Hutchinson"
+  ]
+ },
+ "oroy": {
+  "2016": [
+   "Dak Prescott",
+   "Ezekiel Elliott"
+  ],
+  "2017": [
+   "Alvin Kamara",
+   "Kareem Hunt",
+   "Deshaun Watson"
+  ],
+  "2018": [
+   "Saquon Barkley",
+   "Baker Mayfield",
+   "Quenton Nelson"
+  ],
+  "2019": [
+   "Kyler Murray",
+   "Josh Jacobs",
+   "A.J. Brown",
+   "Miles Sanders"
+  ],
+  "2020": [
+   "Justin Herbert",
+   "Justin Jefferson"
+  ],
+  "2021": [
+   "Ja'Marr Chase",
+   "Mac Jones",
+   "Creed Humphrey",
+   "Rashawn Slater"
+  ],
+  "2022": [
+   "Garrett Wilson",
+   "Kenneth Walker III",
+   "Brock Purdy",
+   "Chris Olave",
+   "Tyler Allgeier"
+  ],
+  "2023": [
+   "C.J. Stroud",
+   "Puka Nacua",
+   "Sam LaPorta",
+   "Jahmyr Gibbs",
+   "Bijan Robinson"
+  ],
+  "2024": [
+   "Jayden Daniels",
+   "Brock Bowers",
+   "Bo Nix",
+   "Brian Thomas Jr.",
+   "Malik Nabers"
+  ],
+  "2025": [
+   "Tetairoa McMillan",
+   "Tyler Shough",
+   "TreVeyon Henderson",
+   "Jaxson Dart",
+   "Emeka Egbuka"
+  ]
+ },
+ "droy": {
+  "2016": [
+   "Joey Bosa",
+   "Jalen Ramsey",
+   "Deion Jones"
+  ],
+  "2017": [
+   "Marshon Lattimore",
+   "Tre'Davious White",
+   "Reuben Foster"
+  ],
+  "2018": [
+   "Shaquille Leonard",
+   "Derwin James",
+   "Bradley Chubb"
+  ],
+  "2019": [
+   "Nick Bosa",
+   "Maxx Crosby",
+   "Devin Bush Jr.",
+   "Josh Hines-Allen"
+  ],
+  "2020": [
+   "Chase Young",
+   "Jeremy Chinn",
+   "Patrick Queen",
+   "Antoine Winfield Jr."
+  ],
+  "2021": [
+   "Micah Parsons"
+  ],
+  "2022": [
+   "Sauce Gardner",
+   "Aidan Hutchinson",
+   "Riq Woolen",
+   "Kayvon Thibodeaux",
+   "Jalen Pitre"
+  ],
+  "2023": [
+   "Will Anderson Jr.",
+   "Jalen Carter",
+   "Kobie Turner",
+   "Devon Witherspoon",
+   "Brian Branch"
+  ],
+  "2024": [
+   "Jared Verse",
+   "Quinyon Mitchell",
+   "Braden Fiske",
+   "Cooper DeJean",
+   "Chop Robinson"
+  ],
+  "2025": [
+   "Carson Schwesinger",
+   "Nick Emmanwori",
+   "James Pearce Jr.",
+   "Xavier Watts",
+   "Abdul Carter"
+  ]
+ },
+ "coy": {
+  "2016": [
+   "Jason Garrett",
+   "Bill Belichick",
+   "Adam Gase",
+   "Jack Del Rio",
+   "Andy Reid"
+  ],
+  "2017": [
+   "Sean McVay",
+   "Mike Zimmer",
+   "Doug Marrone",
+   "Bill Belichick",
+   "Doug Pederson"
+  ],
+  "2018": [
+   "Matt Nagy",
+   "Anthony Lynn",
+   "Frank Reich",
+   "Andy Reid",
+   "Pete Carroll"
+  ],
+  "2019": [
+   "John Harbaugh",
+   "Kyle Shanahan",
+   "Matt LaFleur",
+   "Sean McDermott",
+   "Mike Tomlin"
+  ],
+  "2020": [
+   "Kevin Stefanski",
+   "Sean McDermott",
+   "Brian Flores",
+   "Ron Rivera",
+   "Matt LaFleur"
+  ],
+  "2021": [
+   "Mike Vrabel",
+   "Matt LaFleur",
+   "Rich Bisaccia",
+   "Zac Taylor",
+   "Bill Belichick"
+  ],
+  "2022": [
+   "Brian Daboll",
+   "Kyle Shanahan",
+   "Doug Pederson",
+   "Sean McDermott",
+   "Nick Sirianni"
+  ],
+  "2023": [
+   "Kevin Stefanski",
+   "DeMeco Ryans",
+   "Dan Campbell",
+   "John Harbaugh",
+   "Kyle Shanahan"
+  ],
+  "2024": [
+   "Kevin O'Connell",
+   "Dan Campbell",
+   "Andy Reid",
+   "Dan Quinn",
+   "Sean Payton"
+  ],
+  "2025": [
+   "Mike Vrabel",
+   "Liam Coen",
+   "Mike Macdonald",
+   "Ben Johnson",
+   "Kyle Shanahan"
+  ]
+ },
+ "_notes": [
+  "Source: Pro-Football-Reference awards voting pages (awards_2016..awards_2025), read via an automated page summarizer; 2016 cross-checked against footballperspective.com, 2025 first-place votes cross-checked against an AOL/USA Today results article.",
+  "2016-2021: single-vote ballots; order is by vote count. Lists shorter than 5 mean fewer players received votes (or, where 5 are listed, more may have received votes). 2022-2025: order is by total ranked-ballot points.",
+  "Unanimous (1 name): mvp 2019 Lamar Jackson (50/50), droy 2021 Micah Parsons (50/50).",
+  "Ties in vote count, listed in PFR table order: mvp 2016 Carr/Elliott (6 each, 3rd); opoy 2018 Gurley/Hopkins (2 each); opoy 2019 Mahomes/Wilson (1 each); opoy 2020 Mahomes/Rodgers (5 each) and Allen/Kelce (3 each); dpoy 2017 Jordan/Lawrence tied at 1 with Xavier Rhodes, Harrison Smith, Bobby Wagner (4th-5th slots arbitrary among five); dpoy 2019 Donald tied at 1 with Danielle Hunter and Tre'Davious White (5th slot arbitrary); coy 2017 Belichick/Pederson (1 each); coy 2019 McDermott/Tomlin (2 each).",
+  "Ties in points (2022+): coy 2023 Stefanski and DeMeco Ryans both 165 points, Stefanski won on first-place votes; Harbaugh/Shanahan both 26 points; droy 2022 Jalen Pitre tied for 5th with Sam Williams (1 point each).",
+  "oroy 2022: Garrett Wilson won on points (156) although Kenneth Walker III had more first-place votes (19 vs 18). coy 2025: Ben Johnson (145 pts, 1 first-place vote) finished ahead of Kyle Shanahan (140 pts, 6 first-place votes).",
+  "Truncated to 5 where more received votes: mvp 2016 (6th Dak Prescott), opoy 2016, dpoy 2016 (6th Eric Berry), opoy 2020 (6th Alvin Kamara), coy 2018 (6th Sean Payton), coy 2019 (6th Sean Payton), coy 2020 (6th Sean Payton/Andy Reid).",
+  "Name normalizations: Shaquille Leonard (then Darius Leonard); Josh Hines-Allen (then Josh Allen, JAX edge); Jr. suffixes added for Will Anderson, Brian Thomas, James Pearce."
+ ]
+}

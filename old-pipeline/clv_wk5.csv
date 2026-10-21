@@ -1,0 +1,101 @@
+slate,cat,bet,price,pnl,news,close_price,clv,beat,same,close_pt,clv_pts
+v1,TD,Xavier Hutchinson anytime TD,7.5,-1.0,,6.5,0.15384615384615374,True,False,,
+v1,TD,Marvin Mims Jr. anytime TD,9.5,-1.0,,8.0,0.1875,True,False,,
+v1,TD,Konata Mumpfield anytime TD,8.5,-1.0,,,,,,,
+v1,TD,Darius Cooper anytime TD,5.5,4.5,,7.5,-0.2666666666666667,False,False,,
+v1,TD,T.J. Hockenson anytime TD,4.2,-1.0,,4.0,0.050000000000000044,True,False,,
+v1,TD,Dallas Goedert anytime TD,4.3,-1.0,,4.3,0.0,False,True,,
+v1,TD,Jameis Winston anytime TD,10.0,-1.0,,11.0,-0.09090909090909094,False,False,,
+v1,TD,Daniel Jones anytime TD,6.5,-1.0,,8.0,-0.1875,False,False,,
+v1,TD,Makai Lemon anytime TD,5.75,-1.0,,6.0,-0.04166666666666663,False,False,,
+v1,TD,Tyrone Tracy Jr. anytime TD,10.0,-1.0,,9.0,0.11111111111111116,True,False,,
+v1,TD,Michael Mayer anytime TD,4.7,-1.0,,4.7,0.0,False,True,,
+v1,TD,Dontayvion Wicks anytime TD,4.5,-1.0,,5.0,-0.09999999999999998,False,False,,
+v1,TD,Josh Cameron anytime TD,8.5,-1.0,,9.0,-0.05555555555555558,False,False,,
+v1,TD,Kaytron Allen anytime TD,9.0,0.0,,,,,,,
+v1,TD,Kimani Vidal anytime TD,6.5,5.5,,8.0,-0.1875,False,False,,
+v1,OU,Zay Flowers Under 70.5 reception yds,1.9,0.8999999999999999,,1.89,,True,False,67.5,3.0
+v1,OU,Ollie Gordon II Under 1.5 receptions,2.38,1.38,,2.03,,True,False,1.5,0.0
+v1,OU,Drake London Under 5.5 receptions,2.08,-1.0,,1.68,,False,False,6.5,-1.0
+v1,OU,Brock Bowers Under 6.5 receptions,2.03,-1.0,,1.88,,True,False,6.5,0.0
+v1,OU,Greg Dulcich Under 2.5 receptions,2.28,-1.0,,2.07,,True,False,2.5,0.0
+v1,OU,Bhayshul Tuten Under 67.5 rush yds,1.88,-1.0,,1.91,,True,False,65.5,2.0
+v1,OU,Josh Downs Under 4.5 receptions,2.22,1.2200000000000002,,2.06,,True,False,4.5,0.0
+v1,OU,Nico Collins Under 81.5 reception yds,1.88,0.8799999999999999,,1.9,,True,False,77.5,4.0
+v1,OU,Nico Collins Under 5.5 receptions,1.93,0.93,,1.92,,True,False,5.5,0.0
+v1,OU,Tyson Bagent Under 10.5 rush yds,1.95,-1.0,,1.91,,False,False,11.5,-1.0
+v1,OU,Cam Skattebo Under 56.5 rush yds,1.9,-1.0,,1.91,,False,False,58.5,-2.0
+v1,OU,Brock Bowers Under 72.5 reception yds,1.88,-1.0,,1.91,,False,False,73.5,-1.0
+v1,OU,George Holani Under 1.5 receptions,2.17,-1.0,,2.17,,False,True,1.5,0.0
+v1,OU,Marvin Mims Jr. Over 1.5 receptions,2.16,1.16,,2.0,,True,False,1.5,0.0
+v1,OU,Parker Washington Under 4.5 receptions,2.01,-1.0,,1.98,,True,False,4.5,0.0
+v1,OU,Will Shipley Under 2.5 receptions,1.88,0.8799999999999999,,1.78,,True,False,2.5,0.0
+v1,OU,Malik Nabers Under 5.5 receptions,1.66,-1.0,,2.12,,True,False,4.5,1.0
+v1,OU,Braelon Allen Under 73.5 rush yds,1.89,-1.0,,1.89,,True,False,70.5,3.0
+v1,OU,Dalton Kincaid Under 49.5 reception yds,1.88,0.8799999999999999,,,,,,,
+v1,OU,Drake London Under 81.5 reception yds,1.89,-1.0,,1.9,,False,False,81.5,0.0
+v1,total,Over 37.5 (HOU@TEN),1.91,-1.0,,,,False,True,37.5,0.0
+v1,spread,NYG +4.5 (NYG@WAS),1.91,0.91,,,,True,False,3.5,1.0
+v1,spread,SF +3.0 (SF@SEA),1.91,0.91,,,,False,True,3.0,0.0
+v1,total,Over 41.5 (DEN@LAC),1.91,-1.0,,,,True,False,42.5,1.0
+v1,total,Over 41.5 (PHI@JAX),1.91,-1.0,,,,False,True,41.5,0.0
+v1,spread,CLE +2.5 (CLE@NYJ),1.91,-1.0,,,,False,True,2.5,0.0
+v1,total,Over 42.5 (MIN@NO),1.91,-1.0,,,,False,False,41.5,-1.0
+v1,total,Over 39.5 (CLE@NYJ),1.91,-1.0,,,,False,False,38.5,-1.0
+v1,spread,TEN +7.5 (HOU@TEN),1.91,-1.0,,,,True,False,6.5,1.0
+v1,spread,BUF +3.0 (BUF@LA),1.91,0.91,,,,False,False,3.5,-0.5
+v1,teaser leg,GB +1.5 teased to +7.5 vs CHI,1.3,0.3,,,,,,,
+v1,teaser leg,NO +2.5 teased to +8.5 vs MIN,1.3,-1.0,,,,,,,
+v1,teaser leg,CLE +2.5 teased to +8.5 at NYJ,1.3,0.3,,,,,,,
+v1,prime under,BAL at ATL Under 43.5 (SNF),1.91,-1.0,,,,False,False,44.5,-1.0
+v1,prime under,BUF at LA Under 54.5 (MNF),1.91,-1.0,,,,False,False,55.5,-1.0
+v2,TD,Jordan Addison anytime TD,3.55,0.0,0.0,3.25,0.0923076923076922,True,False,,
+v2,TD,Luther Burden III anytime TD,3.4,-1.0,1.0,3.2,0.0625,True,False,,
+v2,TD,Chris Olave anytime TD,3.15,-1.0,0.0,2.8,0.125,True,False,,
+v2,TD,Brock Bowers anytime TD,2.3,1.2999999999999998,1.0,2.4,-0.04166666666666674,False,False,,
+v2,TD,Isaiah Likely anytime TD,3.4,2.4,0.0,3.5,-0.02857142857142858,False,False,,
+v2,TD,Sam LaPorta anytime TD,2.8,1.7999999999999998,0.0,2.65,0.05660377358490565,True,False,,
+v2,TD,Tucker Kraft anytime TD,3.45,-1.0,1.0,3.3,0.045454545454545636,True,False,,
+v2,TD,Colston Loveland anytime TD,3.35,-1.0,1.0,3.3,0.015151515151515138,True,False,,
+v2,TD,Tony Pollard anytime TD,3.5,-1.0,0.0,3.2,0.09375,True,False,,
+v2,TD,Michael Wilson anytime TD,2.75,-1.0,0.0,2.35,0.17021276595744683,True,False,,
+v2,TD,Jaxon Smith-Njigba anytime TD,2.0,1.0,0.0,1.87,0.06951871657753994,True,False,,
+v2,TD,Matthew Golden anytime TD,3.3,-1.0,1.0,3.0,0.09999999999999987,True,False,,
+v2,TD,Brian Robinson Jr. anytime TD,3.3,-1.0,1.0,3.5,-0.05714285714285716,False,False,,
+v2,TD,Josh Allen anytime TD,1.87,0.8700000000000001,0.0,,,,,,
+v2,TD,D'Andre Swift anytime TD,2.15,1.15,1.0,1.61,0.3354037267080745,True,False,,
+v2,TD,Garrett Wilson anytime TD,2.4,1.4,1.0,2.5,-0.040000000000000036,False,False,,
+v2,TD,Omarion Hampton anytime TD,2.7,-1.0,1.0,2.85,-0.05263157894736836,False,False,,
+v2,TD,Jacory Croskey-Merritt anytime TD,2.45,1.4500000000000002,1.0,2.6,-0.05769230769230771,False,False,,
+v2,TD,Aaron Jones anytime TD,1.74,0.74,0.0,1.95,-0.10769230769230764,False,False,,
+v2,TD,Zay Flowers anytime TD,3.0,-1.0,1.0,3.1,-0.032258064516129115,False,False,,
+v2,TD,Roman Wilson anytime TD,3.55,-1.0,1.0,3.85,-0.07792207792207795,False,False,,
+v2,TD,George Kittle anytime TD,2.9,-1.0,0.0,2.9,0.0,False,True,,
+v2,TD,Christian Watson anytime TD,2.8,1.7999999999999998,1.0,2.85,-0.01754385964912286,False,False,,
+v2,TD,Trey McBride anytime TD,2.15,1.15,0.0,2.05,0.04878048780487809,True,False,,
+v2,TD,Justin Jefferson anytime TD,2.8,1.7999999999999998,0.0,2.75,0.018181818181818077,True,False,,
+v2,OU,Drake London Under 5.5 rec,2.08,-1.0,1.0,1.68,,False,False,6.5,-1.0
+v2,OU,Ollie Gordon II Under 1.5 rec,2.38,1.38,0.0,2.03,,True,False,1.5,0.0
+v2,OU,Zay Flowers Under 70.5 rec yds,1.9,0.8999999999999999,1.0,1.89,,True,False,67.5,3.0
+v2,OU,Nico Collins Under 81.5 rec yds,1.88,0.8799999999999999,0.0,1.9,,True,False,77.5,4.0
+v2,OU,Josh Downs Under 4.5 rec,2.22,1.2200000000000002,0.0,2.06,,True,False,4.5,0.0
+v2,OU,Bhayshul Tuten Under 67.5 rush yds,1.88,-1.0,1.0,1.91,,True,False,65.5,2.0
+v2,OU,Cam Skattebo Under 56.5 rush yds,1.9,-1.0,0.0,1.91,,False,False,58.5,-2.0
+v2,OU,Marvin Mims Jr. Over 1.5 rec,2.16,1.16,0.0,2.0,,True,False,1.5,0.0
+v2,OU,Parker Washington Under 4.5 rec,2.01,-1.0,1.0,1.98,,True,False,4.5,0.0
+v2,OU,Will Shipley Under 2.5 rec,1.88,0.8799999999999999,1.0,1.78,,True,False,2.5,0.0
+v2,OU,Mike Evans Under 3.5 rec,2.28,-1.0,0.0,2.18,,True,False,3.5,0.0
+v2,OU,Drake Maye Under 230.5 pass yds,1.88,-1.0,1.0,1.89,,False,False,230.5,0.0
+v2,OU,D'Andre Swift Under 14.5 rec yds,1.88,-1.0,1.0,1.93,,False,False,18.5,-4.0
+v2,OU,Trey McBride Under 7.5 rec,2.1,-1.0,0.0,1.72,,False,False,8.5,-1.0
+v2,OU,Tyson Bagent Under 10.5 rush yds,1.95,-1.0,1.0,1.91,,False,False,11.5,-1.0
+v2,OU,Jaxon Smith-Njigba Under 90.5 rec yds,1.9,-1.0,0.0,1.9,,False,False,98.5,-8.0
+v2,OU,Christian McCaffrey Under 53.5 rush yds,1.88,-1.0,0.0,1.88,,True,False,50.5,3.0
+v2,OU,Troy Franklin Under 19.5 rec yds,1.88,0.8799999999999999,0.0,1.86,,True,False,19.5,0.0
+v2,total,Over 37.5 (HOU@TEN),1.91,-1.0,0.0,,,False,True,37.5,0.0
+v2,spread,SF +3.0 (SF@SEA),1.91,0.91,0.0,,,False,True,3.0,0.0
+v2,spread,NYG +4.5 (NYG@WAS),1.91,0.91,1.0,,,True,False,3.5,1.0
+v2,total,Over 41.5 (DEN@LAC),1.91,-1.0,1.0,,,True,False,42.5,1.0
+v2,total,Over 41.5 (PHI@JAX),1.91,-1.0,1.0,,,False,True,41.5,0.0
+v2,spread,CLE +2.5 (CLE@NYJ),1.91,-1.0,1.0,,,False,True,2.5,0.0
+v2,total,Over 42.5 (MIN@NO),1.91,-1.0,0.0,,,False,False,41.5,-1.0

@@ -1,0 +1,9 @@
+target,feature,n,boom_rate,boom_top20pct,boom_bottom20pct,brier_gain_pct,seasons_better
+WR rec_yds,rec_x,8593,0.143,0.147,0.141,-0.0,2/5
+TE rec_yds,rec_x,3655,0.153,0.162,0.13,-0.0,3/5
+RB rush_yds,rush_x,5081,0.137,0.157,0.147,0.0,3/5
+RB rec_yds,rec_x,2408,0.147,0.095,0.141,-0.0,1/5
+QB pass_yds,qb_x,2410,0.156,0.142,0.157,-0.03,0/5
+WR rec_yds,qb_x,8593,0.143,0.142,0.142,0.03,4/5
+WR rec_yds,opp_px,8593,0.143,0.143,0.146,0.0,2/5
+RB rush_yds,opp_rx,5081,0.137,0.128,0.135,-0.0,2/5

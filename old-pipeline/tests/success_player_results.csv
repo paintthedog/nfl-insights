@@ -1,0 +1,22 @@
+feature,target,n,mae_now,mae_with,change_pct,p,effect
+Rushing success rate (player),RB rush_yds,5505,21.402,21.42,0.08,0.000,+2.7%
+Rushing success rate (player),RB car,5503,3.634,3.63,-0.11,0.000,+3.5%
+Target success rate (player),WR rec_yds,8849,23.27,23.233,-0.16,0.000,+4.3%
+Target success rate (player),WR tgt,8849,2.022,2.01,-0.59,0.000,+5.3%
+Target success rate (player),TE rec_yds,4583,16.089,16.1,0.06,0.000,+2.6%
+Target success rate (player),RB rec_yds,4622,11.745,11.708,-0.31,0.000,+4.3%
+Dropback success rate (QB),QB pass_yds,2311,55.864,55.597,-0.48,0.000,+2.4%
+Dropback success rate (QB),QB att,2311,6.363,6.367,0.05,0.000,+1.7%
+Team offensive success rate,QB att,2311,6.363,6.368,0.07,0.118,+0.4%
+Team offensive success rate,QB pass_yds,2311,55.864,55.686,-0.32,0.000,+1.8%
+Team offensive success rate,WR tgt,8984,2.029,2.028,-0.05,0.065,+0.7%
+Team offensive success rate,RB car,5974,3.535,3.536,0.03,0.050,+0.7%
+Team offensive success rate,RB rush_yds,5983,20.471,20.469,-0.01,0.000,+2.2%
+Opponent success rate allowed,QB pass_yds,2311,55.864,55.912,0.09,0.000,+0.5%
+Opponent success rate allowed,RB rush_yds,5983,20.471,20.46,-0.06,0.000,+2.3%
+Opponent success rate allowed,WR rec_yds,8984,23.191,23.192,0.0,0.000,-0.8%
+Opp pass SR allowed,QB pass_yds,2311,55.864,55.938,0.13,0.000,+0.7%
+Opp pass SR allowed,WR rec_yds,8984,23.191,23.196,0.02,0.000,-0.9%
+Opp pass SR allowed,TE rec_yds,4609,16.072,16.031,-0.25,0.000,+2.8%
+Opp rush SR allowed,RB rush_yds,5983,20.471,20.485,0.07,0.000,+1.5%
+Opp rush SR allowed,RB car,5974,3.535,3.534,-0.01,0.000,+1.3%
