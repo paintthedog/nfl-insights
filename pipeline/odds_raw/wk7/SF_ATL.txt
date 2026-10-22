@@ -1,0 +1,39 @@
+player_anytime_td|Bijan Robinson|Yes||1.41
+player_anytime_td|Christian McCaffrey|Yes||1.41
+player_anytime_td|Drake London|Yes||2.25
+player_anytime_td|George Kittle|Yes||2.25
+player_anytime_td|Brian Robinson Jr.|Yes||3.7
+player_anytime_td|Kyle Pitts|Yes||3.95
+player_anytime_td|Brock Purdy|Yes||4.0
+player_anytime_td|Kaelon Black|Yes||4.8
+player_anytime_td|Christian Kirk|Yes||4.8
+player_anytime_td|Jahan Dotson|Yes||5.0
+player_anytime_td|Brandin Cooks|Yes||5.0
+player_anytime_td|Kyle Juszczyk|Yes||5.5
+player_anytime_td|Jordan Watkins|Yes||7.0
+player_anytime_td|Zachariah Branch|Yes||8.5
+player_anytime_td|Jacob Cowing|Yes||8.5
+player_anytime_td|Atlanta Falcons D/ST|Yes||9.0
+player_anytime_td|San Francisco 49ers D/ST|Yes||9.0
+player_anytime_td|Michael Penix Jr.|Yes||10.0
+player_anytime_td|Luke Farrell|Yes||11.0
+player_anytime_td|Austin Hooper|Yes||12.0
+player_anytime_td|Olamide Zaccheaus|Yes||13.0
+player_anytime_td|Charlie Woerner|Yes||14.0
+player_anytime_td|James Jordan|Yes||26.0
+player_anytime_td|Brayden Willis|Yes||31.0
+player_anytime_td|Malik Turner|Yes||31.0
+player_anytime_td|Chris Blair|Yes||41.0
+player_anytime_td|Nick Muse|Yes||46.0
+player_receptions|Drake London|Over|5.5|1.76
+player_receptions|Drake London|Under|5.5|2.04
+player_receptions|George Kittle|Over|5.5|1.87
+player_receptions|George Kittle|Under|5.5|1.9
+player_receptions|Christian McCaffrey|Over|5.5|2.08
+player_receptions|Christian McCaffrey|Under|5.5|1.72
+player_receptions|Bijan Robinson|Over|3.5|1.63
+player_receptions|Bijan Robinson|Under|3.5|2.24
+player_receptions|Kyle Pitts|Over|3.5|1.97
+player_receptions|Kyle Pitts|Under|3.5|1.81
+player_receptions|Jahan Dotson|Over|2.5|2.34
+player_receptions|Jahan Dotson|Under|2.5|1.58

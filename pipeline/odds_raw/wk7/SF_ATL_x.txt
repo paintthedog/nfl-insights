@@ -4,3 +4,127 @@ game_spreads|Atlanta Falcons||3.0|1.83
 game_spreads|San Francisco 49ers||-3.0|2.0
 game_totals|Over|Over|49.5|1.87
 game_totals|Under|Under|49.5|1.95
+player_receptions_alternate|Drake London|Over|2.5|1.04
+player_receptions_alternate|Drake London|Over|3.5|1.14
+player_receptions_alternate|Drake London|Over|4.5|1.36
+player_receptions_alternate|Drake London|Over|5.5|1.75
+player_receptions_alternate|Drake London|Over|6.5|2.4
+player_receptions_alternate|Drake London|Over|7.5|3.64
+player_receptions_alternate|Drake London|Over|8.5|5.79
+player_receptions_alternate|Drake London|Over|9.5|9.7
+player_receptions_alternate|Drake London|Over|10.5|15.2
+player_receptions_alternate|Drake London|Over|11.5|24.0
+player_receptions_alternate|George Kittle|Over|2.5|1.05
+player_receptions_alternate|George Kittle|Over|3.5|1.18
+player_receptions_alternate|George Kittle|Over|4.5|1.42
+player_receptions_alternate|George Kittle|Over|5.5|1.86
+player_receptions_alternate|George Kittle|Over|6.5|2.64
+player_receptions_alternate|George Kittle|Over|7.5|4.07
+player_receptions_alternate|George Kittle|Over|8.5|6.61
+player_receptions_alternate|George Kittle|Over|9.5|10.9
+player_receptions_alternate|George Kittle|Over|10.5|17.6
+player_receptions_alternate|George Kittle|Over|11.5|25.0
+player_receptions_alternate|Christian McCaffrey|Over|2.5|1.07
+player_receptions_alternate|Christian McCaffrey|Over|3.5|1.22
+player_receptions_alternate|Christian McCaffrey|Over|4.5|1.51
+player_receptions_alternate|Christian McCaffrey|Over|5.5|2.04
+player_receptions_alternate|Christian McCaffrey|Over|6.5|3.0
+player_receptions_alternate|Christian McCaffrey|Over|7.5|4.67
+player_receptions_alternate|Christian McCaffrey|Over|8.5|7.6
+player_receptions_alternate|Christian McCaffrey|Over|9.5|12.6
+player_receptions_alternate|Christian McCaffrey|Over|10.5|20.8
+player_receptions_alternate|Bijan Robinson|Over|1.5|1.06
+player_receptions_alternate|Bijan Robinson|Over|2.5|1.24
+player_receptions_alternate|Bijan Robinson|Over|3.5|1.61
+player_receptions_alternate|Bijan Robinson|Over|4.5|2.32
+player_receptions_alternate|Bijan Robinson|Over|5.5|3.64
+player_receptions_alternate|Bijan Robinson|Over|6.5|6.2
+player_receptions_alternate|Bijan Robinson|Over|7.5|11.2
+player_receptions_alternate|Bijan Robinson|Over|8.5|19.0
+player_receptions_alternate|Bijan Robinson|Over|9.5|28.0
+player_receptions_alternate|Kyle Pitts|Over|1.5|1.12
+player_receptions_alternate|Kyle Pitts|Over|2.5|1.4
+player_receptions_alternate|Kyle Pitts|Over|3.5|1.97
+player_receptions_alternate|Kyle Pitts|Over|4.5|3.13
+player_receptions_alternate|Kyle Pitts|Over|5.5|5.47
+player_receptions_alternate|Kyle Pitts|Over|6.5|10.0
+player_receptions_alternate|Kyle Pitts|Over|7.5|17.6
+player_receptions_alternate|Kyle Pitts|Over|8.5|28.0
+player_receptions_alternate|Jahan Dotson|Over|1.5|1.44
+player_receptions_alternate|Jahan Dotson|Over|2.5|2.34
+player_receptions_alternate|Jahan Dotson|Over|3.5|4.45
+player_receptions_alternate|Jahan Dotson|Over|4.5|9.6
+player_receptions_alternate|Jahan Dotson|Over|5.5|20.0
+player_rush_yds_alternate|Bijan Robinson|Over|39.5|1.07
+player_rush_yds_alternate|Bijan Robinson|Over|49.5|1.15
+player_rush_yds_alternate|Bijan Robinson|Over|59.5|1.29
+player_rush_yds_alternate|Bijan Robinson|Over|69.5|1.49
+player_rush_yds_alternate|Bijan Robinson|Over|79.5|1.76
+player_rush_yds_alternate|Bijan Robinson|Over|83.5|1.91
+player_rush_yds_alternate|Bijan Robinson|Over|89.5|2.15
+player_rush_yds_alternate|Bijan Robinson|Over|99.5|2.71
+player_rush_yds_alternate|Bijan Robinson|Over|109.5|3.48
+player_rush_yds_alternate|Bijan Robinson|Over|119.5|4.6
+player_rush_yds_alternate|Bijan Robinson|Over|129.5|6.18
+player_rush_yds_alternate|Bijan Robinson|Over|139.5|8.4
+player_rush_yds_alternate|Bijan Robinson|Over|149.5|11.4
+player_rush_yds_alternate|Bijan Robinson|Over|159.5|15.2
+player_rush_yds_alternate|Bijan Robinson|Over|169.5|20.8
+player_rush_yds_alternate|Bijan Robinson|Over|179.5|27.0
+player_rush_yds_alternate|Bijan Robinson|Over|189.5|35.0
+player_rush_yds_alternate|Christian McCaffrey|Over|24.5|1.06
+player_rush_yds_alternate|Christian McCaffrey|Over|29.5|1.1
+player_rush_yds_alternate|Christian McCaffrey|Over|39.5|1.26
+player_rush_yds_alternate|Christian McCaffrey|Over|49.5|1.51
+player_rush_yds_alternate|Christian McCaffrey|Over|59.5|1.91
+player_rush_yds_alternate|Christian McCaffrey|Over|69.5|2.53
+player_rush_yds_alternate|Christian McCaffrey|Over|79.5|3.42
+player_rush_yds_alternate|Christian McCaffrey|Over|89.5|4.74
+player_rush_yds_alternate|Christian McCaffrey|Over|99.5|6.8
+player_rush_yds_alternate|Christian McCaffrey|Over|109.5|9.8
+player_rush_yds_alternate|Christian McCaffrey|Over|119.5|13.6
+player_rush_yds_alternate|Christian McCaffrey|Over|129.5|19.4
+player_rush_yds_alternate|Christian McCaffrey|Over|139.5|27.0
+player_rush_yds_alternate|Christian McCaffrey|Over|149.5|39.0
+player_rush_yds_alternate|Brian Robinson Jr.|Over|9.5|1.09
+player_rush_yds_alternate|Brian Robinson Jr.|Over|14.5|1.22
+player_rush_yds_alternate|Brian Robinson Jr.|Over|19.5|1.4
+player_rush_yds_alternate|Brian Robinson Jr.|Over|24.5|1.65
+player_rush_yds_alternate|Brian Robinson Jr.|Over|28.5|1.93
+player_rush_yds_alternate|Brian Robinson Jr.|Over|29.5|2.0
+player_rush_yds_alternate|Brian Robinson Jr.|Over|39.5|3.06
+player_rush_yds_alternate|Brian Robinson Jr.|Over|49.5|4.74
+player_rush_yds_alternate|Brian Robinson Jr.|Over|59.5|7.5
+player_rush_yds_alternate|Brian Robinson Jr.|Over|69.5|11.4
+player_rush_yds_alternate|Brian Robinson Jr.|Over|79.5|17.0
+player_rush_yds_alternate|Brian Robinson Jr.|Over|89.5|25.0
+player_rush_yds_alternate|Brian Robinson Jr.|Over|99.5|36.0
+player_rush_yds_alternate|Kaelon Black|Over|9.5|1.1
+player_rush_yds_alternate|Kaelon Black|Over|14.5|1.21
+player_rush_yds_alternate|Kaelon Black|Over|19.5|1.39
+player_rush_yds_alternate|Kaelon Black|Over|24.5|1.62
+player_rush_yds_alternate|Kaelon Black|Over|28.5|1.88
+player_rush_yds_alternate|Kaelon Black|Over|29.5|1.95
+player_rush_yds_alternate|Kaelon Black|Over|39.5|2.9
+player_rush_yds_alternate|Kaelon Black|Over|49.5|4.53
+player_rush_yds_alternate|Kaelon Black|Over|59.5|7.0
+player_rush_yds_alternate|Kaelon Black|Over|69.5|11.0
+player_rush_yds_alternate|Kaelon Black|Over|79.5|17.0
+player_rush_yds_alternate|Kaelon Black|Over|89.5|25.0
+player_rush_yds_alternate|Kaelon Black|Over|99.5|36.0
+player_rush_yds_alternate|Brock Purdy|Over|9.5|1.35
+player_rush_yds_alternate|Brock Purdy|Over|14.5|1.6
+player_rush_yds_alternate|Brock Purdy|Over|18.5|1.87
+player_rush_yds_alternate|Brock Purdy|Over|19.5|1.94
+player_rush_yds_alternate|Brock Purdy|Over|24.5|2.43
+player_rush_yds_alternate|Brock Purdy|Over|29.5|3.09
+player_rush_yds_alternate|Brock Purdy|Over|39.5|5.24
+player_rush_yds_alternate|Brock Purdy|Over|49.5|9.1
+player_rush_yds_alternate|Brock Purdy|Over|59.5|15.4
+player_rush_yds_alternate|Brock Purdy|Over|69.5|26.0
+player_rush_yds_alternate|Michael Penix Jr.|Over|1.5|1.89
+player_rush_yds_alternate|Michael Penix Jr.|Over|9.5|4.44
+player_rush_yds_alternate|Michael Penix Jr.|Over|14.5|7.6
+player_rush_yds_alternate|Michael Penix Jr.|Over|19.5|12.6
+player_rush_yds_alternate|Michael Penix Jr.|Over|24.5|20.0
+player_rush_yds_alternate|Michael Penix Jr.|Over|29.5|29.0
