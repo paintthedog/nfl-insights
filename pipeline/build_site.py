@@ -265,7 +265,8 @@ for r in _s.itertuples():
 # soft news: curated per-week notes (play-caller changes, retirements, roster churn) shown on the game cards
 try:
     _nw = json.load(open(f"news_overrides_wk{week}.json"))
-    news_notes = _nw.get("team_notes", {}); news_asof = _nw.get("asof", "")
+    from auto_overrides import fresh_notes
+    news_notes = fresh_notes(week, _nw.get("team_notes", {})); news_asof = _nw.get("asof", "")   # notes older than 4 days are hidden (Oct 22)
 except FileNotFoundError:
     news_notes = {}; news_asof = ""
 

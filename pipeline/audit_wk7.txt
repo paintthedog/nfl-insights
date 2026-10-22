@@ -1,4 +1,2 @@
-Staleness audit, week 7: 3 item(s)
-  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
-  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+Staleness audit, week 7: 1 item(s)
   [DFS] no dk_salaries_wk7.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

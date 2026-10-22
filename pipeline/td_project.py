@@ -96,6 +96,7 @@ games = sched[(sched.season == SEASON) & (sched.week == WEEK) & sched.result.isn
 # the nflverse injuries feed; curated by hand at refresh time, names resolved to ids, they override the practice-based
 # chances above. "out" removes the player from the pool entirely.
 NEWS_NEXT_MAN = {}
+NEWS_ACTIVE = {}          # pid -> team, activated by the news ahead of the roster file
 try:
     _nw = json.load(open(f"news_overrides_wk{WEEK}.json"))
     _nm = players.drop_duplicates("gsis_id"); _nm = _nm.assign(k=_nm.display_name.str.lower().str.replace(r"\b(jr|sr|ii|iii|iv)\b\.?", "", regex=True).str.replace(r"[^a-z ]", "", regex=True).str.replace(r"\s+", " ", regex=True).str.strip())
@@ -128,10 +129,22 @@ try:
         q_play[_b] = 1 - u["p"]; q_lbl[_b] = f"starts if {u['starter'].split()[-1]} sits"
         print(f"qb_uncertain: {tm} {u['starter']} {u['p']:.0%} / {u['backup']}")
     NEWS_NEXT_MAN = {tm: _find(n) for tm, n in _nw.get("next_man", {}).items()}
+    # Oct 22: news beats a lagging roster file. A player the news gives a chance to play (p_play > 0) or lists as back is
+    # activated even while the roster still says RES (Kirk, Charbonnet, Mason off IR; Tank Dell off PUP): he joins his
+    # team's pool from his last usage, discounted for the layoff like any returning player.
+    _ros_any = pd.read_parquet("data/rosters_2026.parquet")
+    _ros_any = _ros_any[(_ros_any.week <= WEEK) & ~_ros_any.status.isin(["CUT", "RET"])].sort_values("week").drop_duplicates("gsis_id", keep="last").set_index("gsis_id").team
+    for n in list(_nw.get("back", [])) + [k for k, v in _nw.get("p_play", {}).items() if v > 0]:
+        _p = _find(n)
+        if _p is None or _p not in _ros_any.index or n in _nw.get("out", []): continue
+        if _p in unavailable: print("news activates:", n, _ros_any[_p])
+        unavailable.discard(_p); NEWS_ACTIVE[_p] = _ros_any[_p]
+        if n in _nw.get("back", []): q_play.pop(_p, None); q_lbl.pop(_p, None)   # confirmed back: full chance
     print("news overrides applied:", _nw["asof"], "| out:", len(_nw.get("out", [])), "| p_play:", len(_nw.get("p_play", {})))
 except FileNotFoundError:
     pass
 recent = pg[pg.season == SEASON].sort_values("gameday")
+pos_name = players.drop_duplicates("gsis_id").set_index("gsis_id").display_name.to_dict()
 _POS = pg.drop_duplicates("pid", keep="last").set_index("pid").pos.to_dict()
 rows = []
 for _, g in games.iterrows():
@@ -148,11 +161,21 @@ for _, g in games.iterrows():
         prev = pg[(pg.season == SEASON - 1) & (pg.posteam == tm)]
         back |= {p for p in set(prev.pid) & listed if roster_team.get(p) == tm} - set(tg.pid)
         back = {p for p in back if _POS.get(p) != "QB" or p in _qbs_ok}
+        # Oct 22: traded/claimed players. On this team's roster now, with real usage this season for another team: they keep
+        # their decayed shares (features are per player, not per team) and the team total is re-balanced in proj_project.
+        _mine = {p for p, t in roster_team.items() if t == tm}
+        _cur_use = recent[recent.pid.isin(_mine) & (recent.posteam != tm)]
+        traded_in = {p for p, last_tm in _cur_use.groupby("pid").posteam.last().items() if last_tm != tm and _POS.get(p) != "QB"}
+        # news-activated players (off IR/PUP before the roster file catches up) with usage in the last three seasons
+        _act = {p for p, t in NEWS_ACTIVE.items() if t == tm and _POS.get(p) != "QB"}
+        _act &= set(pg[pg.season >= SEASON - 2].pid)
+        for p in (traded_in | _act) - pool - set(tg.pid): print("pool add:", tm, pos_name.get(p, p), "(traded in)" if p in traded_in else "(activated by news)")
+        back |= traded_in | _act
         last_seen = tg.groupby("pid").game_id.last().map({gid: i for i, gid in enumerate(order)})
-        for pid in pool | {p for p in back if p in roster_team.index}:
-            if pid in unavailable or roster_team.get(pid, tm) != tm:
+        for pid in pool | {p for p in back if p in roster_team.index or p in NEWS_ACTIVE}:
+            if pid in unavailable or (NEWS_ACTIVE.get(pid) or roster_team.get(pid, tm)) != tm:
                 continue
-            missed = len(order) - 1 - last_seen[pid] if pid in last_seen.index else len(order)
+            missed = 0 if pid in traded_in else len(order) - 1 - last_seen[pid] if pid in last_seen.index else len(order)
             rows.append(dict(game_id=g.game_id, posteam=tm, pid=pid, gameday=pd.to_datetime(g.gameday),
                              season=SEASON, week=WEEK, missed=int(missed)))
 pred = pd.DataFrame(rows)

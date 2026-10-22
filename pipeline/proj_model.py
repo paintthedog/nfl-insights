@@ -442,7 +442,7 @@ def fit_calibration(tr, use_def=True):
                 X["ol_missing"] = rows.ol_missing.fillna(0.9)
             if grp == "QB" and st == "sacks":
                 X["opp_prs"] = rows.opp_prs.fillna(0); X["own_prs"] = rows.own_prs.fillna(0)
-            models[(st, grp)] = sm.GLM(rows[st], sm.add_constant(X), family=sm.families.Poisson()).fit()
+            models[(st, grp)] = sm.GLM(rows[st], sm.add_constant(X, has_constant="add"), family=sm.families.Poisson()).fit()
     return models
 
 

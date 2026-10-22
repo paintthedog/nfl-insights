@@ -24,6 +24,8 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] For every team with a back in `out`, confirm who the lead is (feeds above, or WebSearch "<team> running back depth chart") and set `lead_back`. An even committee split is the model's default and it is usually wrong.
 - [ ] WebSearch: "<team> injury news" for teams with Questionable stars; beat-writer reports
 - [ ] Start a new week's overrides by COPYING last week's file, then prune — never start blank (Week 6: starting blank silently dropped five OL absences)
+- [ ] (Oct 22) `auto_overrides.py` runs in daily.sh before every rebuild: seeds a missing week from the last one (carries out/lead_back/qb_start/ol_out, drops chances), dates every entry in `news_dates_wk{W}.json`, lets official game statuses beat hand chances, and removes contradictions. The audit prints [STALE] for any chance/lead back/uncertain QB older than 3 days: re-verify it and either change it or list the name (or team code) under `"confirmed": [...]` in the overrides file to re-date it. Team notes older than 4 days stop showing on the site.
+- [ ] (Oct 22) News activates players ahead of the roster file: anyone in `back`, or given a `p_play` above 0, joins his team's pool even while nflverse still lists him RES (IR/PUP). Traded players join their new team's pool automatically with their usage carried over.
 - [ ] Update `news_overrides_wk{W}.json`: `out`, `p_play`, `qb_start`, `next_man`, `lead_back`, `ol_out`, `team_notes` — and bump `asof`
 - [ ] `lead_back` (Oct 18): when a starter is out and the news names the replacement among KNOWN backs, set `"lead_back": {"TEAM": ["Name", 0.65]}` (his share of the team's backfield carries). Without it the model splits the work evenly across the committee; that is what every "DK sees a bigger role" ROLE flag on a running back has meant so far (Allgeier, R. White, McLaughlin). `next_man` is only for a back with no usage history.
 - [ ] QB audit: compare the schedule feed's listed QB (home_qb_name/away_qb_name) for week W against each team's last starter; for any mismatch, confirm the real starter from news and set `qb_start` in the overrides (the lines model now honors it). The feed listed Drew Lock for SEA in Week 6 and the model leaned Denver for no reason.
@@ -97,6 +99,12 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 
 ## ML + top TD scorer (Clinton's standing rule, Oct 18)
 - [ ] `ml_td_slate.build(W)` runs inside paper_slate.py: per game, the projected winner by the site's line-anchored win chance (Oct 21; was the raw model margin) on the moneyline + the game's likeliest anytime-TD scorer (either team), one 2-leg parlay. Backfill or re-log with `python ml_td_slate.py W --paper`. Price = the two DK prices multiplied (reference only). Graded on hit rate vs model_p.
+
+## Pre-registered main tests (Oct 22)
+- [ ] `record.py` PRIMARY: ML + top TD scorer (100 bets), matchup props TD and receptions (100 each), same-game stacks (75 each), small-underdog teasers (60). Fixed before any had results: don't add to or reshuffle the list mid-season. Main tests earn trust at a profit plus 2 standard errors above break-even; every other rule is exploratory and needs 150 bets and 3 standard errors.
+
+## Market vs model vs blend (Oct 22)
+- [ ] `scorecard.py` scores three numbers on the same games and players: the market's, the model's raw number, and the blend the site shows (game margin, game total, anytime TD). Report-card lines "Off the market? ..." say which was closest once the sample is big enough (40 games, 300 TD prices). If the market keeps winning, the site's numbers should sit on the market's.
 
 ## Same-game parlay pricing
 - [ ] `from parlay_joint import joint; joint([("QB pass_yds", p1), ("WR1 rec_yds", p2), ...])` gives P(all legs hit) using historical same-game correlations (data/joint_corr.json; refit with `python parlay_joint.py fit` in the offseason). Use DK no-vig or the site's blended chance for each p. Compare to the DK same-game price: payout x joint P - 1 = expected return.

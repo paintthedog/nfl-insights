@@ -1,6 +1,4 @@
-Staleness audit, week 8: 5 item(s)
-  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
-  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
-  [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
+Staleness audit, week 8: 3 item(s)
   [INJURY] no week 8 injury report in the feed yet (normal before Wednesday)
+  [STALE] lead_back ARI set 2026-10-17 (5 days ago) - re-verify or remove
   [DFS] no dk_salaries_wk8.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

@@ -659,7 +659,7 @@ a { color: var(--accent); }
   <section class="panel" id="p-record" role="tabpanel" aria-labelledby="tab-record" hidden>
     <p class="wnote" id="sc-intro"></p>
     <h3 class="rech" style="margin-top:10px">1. Bets we're testing: does betting on the model pay?</h3>
-    <p class="wnote">Every bet is placed by a fixed rule from the game-morning DraftKings pull, nothing hand-picked. Flat 1 unit each; a player who doesn't play is a push. <b>Expected</b> is how many the model said would hit. A rule needs 150+ bets, a profit, and a hit rate above break-even before it's labeled trustworthy. Same-game stacks and the TD-price tracking are graded on hit rate only. Open a group for its rules or bets.</p>
+    <p class="wnote">Every bet is placed by a fixed rule from the game-morning DraftKings pull, nothing hand-picked. Flat 1 unit each; a player who doesn't play is a push. <b>Expected</b> is how many the model said would hit. <b>Main tests</b> were picked on Oct 22, before any had results, and each has a fixed number of bets it needs (shown as "Too early (12 of 100)"); it earns trust with a profit and a hit rate clearly above break-even (2 standard errors). Every other rule is exploratory: with this many rules running, some will look good by luck, so they need 150+ bets and a much stronger result (3 standard errors). Same-game stacks and ML + top TD scorer have no real price, so they're graded on whether the model's chance was right. Open a group for its rules or bets.</p>
     <div class="controls"><div class="seg sm" role="group" aria-label="Period" id="rec-period"></div></div>
     <div id="rec-fam"></div>
     <h3 class="rech">2. Everything the model projects: are the numbers right?</h3>
@@ -1682,7 +1682,7 @@ let recPeriod = "week"; const twSt = {}, sfSt = {};
 function renderRecord() {
   const u = x => `<span class="num ${x > 0 ? "pos-ev" : ""}">${x > 0 ? "+" : x < 0 ? "−" : ""}${Math.abs(x).toFixed(2)}</span>`;
   const pc = x => x == null ? dash : `<span class="num">${(x * 100).toFixed(1)}%</span>`;
-  const labCls = l => /trust|On target|Ahead|Holding/.test(l) ? "ok" : /Don't|Lean|closer|Too narrow|Too wide/.test(l) ? "lean" : "";
+  const labCls = l => /trust|On target|Ahead|Holding|about right/.test(l) ? "ok" : /Don't|Lean|closer|Too narrow|Too wide|too optimistic/.test(l) ? "lean" : "";
   $("#sc-intro").innerHTML = SC && SC.asof ? `Graded through ${esc(SC.asof)}.` : "Nothing graded yet.";
   const S = (RC && RC.strategy || []).map((r, i) => ({ ...r, ord: i })), TW = RC && RC.thisweek, fams = (RC && RC.families) || [];
   // ---- 1. bets: one list of groups, This week / Season
@@ -1714,7 +1714,8 @@ function renderRecord() {
     $("#rec-fam").innerHTML = (nLive ? `<p class="wnote" style="margin-bottom:8px">All bet rules so far: <b>${nLive} graded bets, ${uLive > 0 ? "+" : "−"}${Math.abs(uLive).toFixed(1)} units</b>.</p>` : "") + fams.map((fm, i) => { const rows = S.filter(r => r.family === fm); if (!rows.length) return "";
       const n = rows.reduce((a, r) => a + r.n, 0), w = rows.reduce((a, r) => a + r.w, 0), un = rows.reduce((a, r) => a + r.units, 0), pend = rows.reduce((a, r) => a + r.pending, 0);
       const track = rows.every(r => r.group !== "bet"), reads = [...new Set(rows.map(r => r.read))];
-      return `<details class="fam" data-sf="${i}"><summary><span class="player">${esc(fm)}</span><span class="n">${n ? `${w} of ${n} <span class="q">hit</span>` : `<span class="q">${pend} pending</span>`}</span><span class="n hide-m">${n && !track ? u(un) : n ? `<span class="q">hit rate only</span>` : ""}</span><span class="vlab ${reads.length === 1 ? labCls(reads[0]) : ""}">${esc(reads.length === 1 ? reads[0] : "Mixed")}</span></summary><div class="tbody"><div class="tablebox"><table id="sf-t${i}"></table></div></div></details>`; }).join("");
+      const mainT = ((RC && RC.primary_families) || []).includes(fm) ? `<span class="tag holds" style="margin-right:6px">Main test</span>` : "";
+      return `<details class="fam" data-sf="${i}"><summary><span class="player">${mainT}${esc(fm)}</span><span class="n">${n ? `${w} of ${n} <span class="q">hit</span>` : `<span class="q">${pend} pending</span>`}</span><span class="n hide-m">${n && !track ? u(un) : n ? `<span class="q">hit rate only</span>` : ""}</span><span class="vlab ${reads.length === 1 ? labCls(reads[0]) : ""}">${esc(reads.length === 1 ? reads[0] : "Mixed")}</span></summary><div class="tbody"><div class="tablebox"><table id="sf-t${i}"></table></div></div></details>`; }).join("");
     fams.forEach((fm, i) => { const rows = S.filter(r => r.family === fm); if (rows.length) colTable($(`#sf-t${i}`), ruleCols, rows, sfSt[i] || (sfSt[i] = { key: "ord", dir: 1 }), renderRecord); });
   }
   // ---- 2. the model's numbers: report card
@@ -1723,7 +1724,7 @@ function renderRecord() {
 }
 renderRecord();
 // Angles tested lives on the Model tab now
-(() => { const cls = l => l === "Earning trust" ? "trust" : l === "Don't bet" ? "dont" : "";
+(() => { const cls = l => l === "Earning trust" || l === "Model about right" ? "trust" : l === "Don't bet" || l === "Model too optimistic" ? "dont" : "";
   $("#rec-verdicts").innerHTML = RC ? RC.verdicts.map(v => `<div class="vcard"><span class="vlab ${cls(v.label)}">${esc(v.label)}</span><h4>${esc(v.name)}</h4><p>${esc(v.note)}</p></div>`).join("") : ""; })();
 
 // ---------- Scorecard (Oct 18): every published number graded against results, not just the bets

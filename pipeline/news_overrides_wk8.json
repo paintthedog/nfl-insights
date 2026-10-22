@@ -1,6 +1,6 @@
 {
  "asof": "2026-10-22T09:30 ET",
- "source": "Copied from Week 7 overrides Oct 22 (checklist: never start blank). Re-verify every item against Week 8 practice reports. | , trending to play; Henderson leaning out; Kamara/Dowdle likely active; Metcalf illness Q; A.J. Brown likely activated (Rapoport) - not in pool, flagged. | Oct 22: CBS Wednesday Week 7 practice reports (Oct 21 7:59pm), Yahoo live news blog (Oct 19-21), DK Network injury report (Oct 20 7:25pm). The two role feeds (Footballers, FantasyData) and weather sites were not fetchable in the unattended run.",
+ "source": "Seeded Oct 22 from week 7 (out/lead_back/qb_start/ol_out carried; chances dropped per auto_overrides rule). Re-verify against week 8 reports.",
  "out": [
   "Ben Skowronik",
   "Breece Hall",
@@ -29,56 +29,7 @@
   "Najee Harris",
   "DJ Moore"
  ],
- "p_play": {
-  "DeVonta Smith": 0.9,
-  "Kenyon Sadiq": 0.4,
-  "TreVeyon Henderson": 0.4,
-  "Tyler Warren": 0.3,
-  "Alvin Kamara": 0.85,
-  "Chris Olave": 0.95,
-  "DK Metcalf": 1.0,
-  "Rico Dowdle": 0.9,
-  "Joshua Palmer": 0.7,
-  "Tyjae Spears": 0.8,
-  "Omar Cooper Jr.": 0.95,
-  "Ja'Kobi Lane": 0.9,
-  "Trevor Etienne": 0.6,
-  "Savion Williams": 0.6,
-  "KeAndre Lambert-Smith": 0.5,
-  "Brenen Thompson": 0.5,
-  "Will Mallory": 0.6,
-  "Eli Stowers": 0.6,
-  "Grant Calcaterra": 0.6,
-  "Stefon Diggs": 0.7,
-  "Mike Evans": 0.6,
-  "Jeremy McNichols": 0.6,
-  "Rachaad White": 1.0,
-  "Austin Ekeler": 1.0,
-  "Pat Freiermuth": 0.8,
-  "Ladd McConkey": 0.4,
-  "Rashod Bateman": 0.8,
-  "Dalton Kincaid": 0.7,
-  "Baker Mayfield": 0.2,
-  "Jeremiyah Love": 0.35,
-  "Caleb Williams": 1.0,
-  "Lamar Jackson": 0.5,
-  "Jalen Hurts": 0.0,
-  "A.J. Brown": 0.85,
-  "Travis Kelce": 0.9,
-  "Theo Johnson": 0.6,
-  "Josh Jacobs": 0.5,
-  "Ashton Dulin": 0.6,
-  "Adonai Mitchell": 0.6,
-  "Quinshon Judkins": 0.5,
-  "Dylan Sampson": 0.5,
-  "Matt Hibner": 0.6,
-  "Bucky Irving": 0.7,
-  "Emeka Egbuka": 0.4,
-  "Dalton Schultz": 0.5,
-  "Justin Jefferson": 0.85,
-  "Jaylen Waddle": 0.85,
-  "Brock Bowers": 0.85
- },
+ "p_play": {},
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
@@ -131,14 +82,7 @@
   "Andrew Vorhees",
   "Aaron Banks"
  ],
- "qb_uncertain": {
-  "BAL": {
-   "starter": "Lamar Jackson",
-   "backup": "Tyler Huntley",
-   "p": 0.5,
-   "note": "ankle; Week 7 return is the target if he practices fully (FantasyPros Oct 19)"
-  }
- },
+ "qb_uncertain": {},
  "lead_back": {
   "ARI": [
    "Tyler Allgeier",

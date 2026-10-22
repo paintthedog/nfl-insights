@@ -52,12 +52,20 @@ FAMILY = {"TD singles": ["TD 2.5–3.9, model likes", "TD skip list (not bet)", 
           "Same-game stacks": ["Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches"],
           "Matchup props (opp top-8 vs position)": ["Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position"],
           "Receptions and alt-line parlays": ["Receptions, model differs 5+ pts", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50"],
-          "Teasers and trend unders": ["Teasers: small underdogs +6, 2 legs", "Trend unders: wind 10–19 mph", "Trend unders: prime time"],
+          "Teasers (small underdogs +6)": ["Teasers: small underdogs +6, 2 legs"],
+          "Trend unders": ["Trend unders: wind 10–19 mph", "Trend unders: prime time"],
           "Game lines": ["Team totals, model differs 2+ pts", "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts"],
           "Board consistency (DK vs DK)": ["Board consistency"],
           "Interceptions": ["QB INTs (0.5), model differs 5+ pts"],
           "Every TD price (tracking)": ["TD all: under 2.5", "TD all: 2.5–3.9", "TD all: 4.0–6.0", "TD all: over 6.0"],
           "Control: random picks": ["Control: random"]}
+# Pre-registered main tests (Oct 22, before any of them had a graded sample): bets needed before the Read can say anything.
+# Chosen for what Clinton bets and the structural angles he wants tested. Do not add to or reshuffle this list mid-season.
+PRIMARY = {"ML + top TD scorer, 2 legs": 100,
+           "Matchup props: TD, opp top-8 vs position": 100, "Matchup props: receptions over, opp top-8 vs position": 100,
+           "Same-game stacks: favorite + lead RB": 75, "Same-game stacks: top two pass catchers": 75, "Same-game stacks: QB yards + WR1 catches": 75,
+           "Teasers: small underdogs +6, 2 legs": 60}
+PRIMARY_FAMILIES = sorted({f for f, ts in FAMILY.items() if set(ts) & set(PRIMARY)})
 FAM_OF = {t: f for f, ts in FAMILY.items() for t in ts}
 GROUP = {t: ("skip" if t in _SKIP else "track" if t in _TRACK else "control" if t.startswith("Control") else "bet") for t in ORDER}
 pap = [pd.read_csv(f).assign(week=int(re.search(r"wk(\d+)", f).group(1))) for f in sorted(glob.glob("paper_wk*_graded.csv"))]
@@ -67,16 +75,23 @@ for t in ORDER:
     x = pap[pap.type == t]; gx = x[x.result.isin(["win", "loss"])]
     n = len(gx); w = int((gx.result == "win").sum()); u = float(gx.pnl.sum()) if n else 0.0
     hit = w / n if n else None; mp = float(gx.model_p.mean()) if n else None; be = float((1 / gx.price).mean()) if n else None
-    if n < 150: read = "Too early"
-    elif u > 0 and hit > be: read = "Earning trust"
+    # Oct 22: pre-registered main tests get a fixed sample size and a 2-sigma bar; everything else is exploratory and needs
+    # 150 bets and a 3-sigma bar, because with ~25 rules running some will look good by luck alone.
+    need = PRIMARY.get(t, 150)
+    z_be = (w - float((1 / gx.price).sum())) / max(float(((1 / gx.price) * (1 - 1 / gx.price)).sum()) ** 0.5, 1e-9) if n else 0.0
+    z_md = (w - float(gx.model_p.sum())) / max(float((gx.model_p * (1 - gx.model_p)).sum()) ** 0.5, 1e-9) if n else 0.0
+    bar = 2.0 if t in PRIMARY else 3.0
+    if n < need: read = f"Too early ({n} of {need})" if t in PRIMARY else "Too early"
+    elif u > 0 and z_be >= bar: read = "Earning trust"
     elif u / n < -0.08: read = "Don't bet"
     else: read = "No edge yet"
-    if GROUP[t] == "track": read = "Tracking only"
+    if GROUP[t] == "track":   # no real price: graded on whether the model's chance was right
+        read = (f"Too early ({n} of {need})" if n < need else "Model about right" if abs(z_md) < 2 else "Model too optimistic" if z_md < 0 else "Model too cautious") if t in PRIMARY else "Tracking only"
     if GROUP[t] == "control": read = "Benchmark"
     cv = gx["clv"].dropna() if "clv" in gx else pd.Series(dtype=float); cp = gx["clv_pts"].dropna() if "clv_pts" in gx else pd.Series(dtype=float)
     clv_ = dict(n=int(len(cv)), avg=round(float(cv.mean()), 4), beat=round(float((cv > 0).mean()), 3)) if len(cv) else None   # Oct 21
     clvp = dict(n=int(len(cp)), avg=round(float(cp.mean()), 2), beat=round(float((cp > 0).mean()), 3)) if len(cp) else None
-    strategy.append(dict(type=t, family=FAM_OF.get(t, "Other"), group=GROUP[t], n=n, w=w, pending=int((x.result == "pending").sum()), hit=hit, model=mp, breakeven=be, units=round(u, 2), read=read,
+    strategy.append(dict(type=t, family=FAM_OF.get(t, "Other"), group=GROUP[t], n=n, w=w, pending=int((x.result == "pending").sum()), hit=hit, model=mp, breakeven=be, units=round(u, 2), read=read, primary=t in PRIMARY, need=need,
                          clv=clv_, clv_pts=clvp))
 # this week's tests: per family, for the latest week with a slate
 thisweek = None
@@ -188,7 +203,7 @@ if gn: verdicts.append(verdict("Game totals", gn, ouw + oul and ouw / (ouw + oul
 paper_list = [dict(week=int(b.week), type=b.type, bet=(f"{b.subject} " + ("anytime TD" if b.market == "atd" else (f"{b.side} {b.line:g}" if b.market != "ml" and b.market != "parlay" else ("moneyline" if b.market == "ml" else "")))).strip(),
                    price=float(b.paid_price if pd.notna(b.paid_price) else b.price), model_p=float(b.model_p), result=b.result, actual=None if pd.isna(b.actual) else float(b.actual), pnl=float(b.pnl))
               for b in pap.itertuples() if GROUP.get(b.type) in ("bet", "skip", "control") or str(b.type).startswith("Same-game") or str(b.type).startswith("ML + top")]
-out = dict(strategy=strategy, thisweek=thisweek, families=list(FAMILY), paper=paper_list, asof=pd.Timestamp.now(tz="America/New_York").strftime("%a %b %-d, %-I:%M %p ET"), verdicts=verdicts, types=types, weekly=weekly,
+out = dict(strategy=strategy, thisweek=thisweek, families=[f for f in FAMILY if f in PRIMARY_FAMILIES] + [f for f in FAMILY if f not in PRIMARY_FAMILIES], primary_families=PRIMARY_FAMILIES, paper=paper_list, asof=pd.Timestamp.now(tz="America/New_York").strftime("%a %b %-d, %-I:%M %p ET"), verdicts=verdicts, types=types, weekly=weekly,
            bets=[dict(week=int(r.week), slate=r.slate, type=r.type, bet=r.bet, price=float(r.price), model_p=float(r.model_p), result=r.result,
                       actual=None if pd.isna(r.actual) else float(r.actual), pnl=float(r.pnl)) for r in bets.itertuples()] if len(bets) else [],
            totals=dict(n=len(g), w=int((g.result == "win").sum()), units=round(float(g.pnl.sum()), 2)) if len(g) else None)

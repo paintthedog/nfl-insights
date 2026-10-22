@@ -15,5 +15,6 @@ print(W, W + 1 if len(nxt) and nxt.spread_line.notna().all() else "")
 P
 )
 echo "week $W ${NEXT:+and $NEXT}"
+python auto_overrides.py $W $NEXT     # seed a missing week, date every entry, let official statuses win, prune no-ops
 bash refresh_all.sh $W $NEXT
 echo "built site/paydirt.html"

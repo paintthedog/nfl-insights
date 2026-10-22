@@ -9,7 +9,7 @@ Three kinds of number, three tests:
                  inside the middle half (target 50%)
   probabilities  TD, interception, cover and over chances: what the model said on average vs how often it happened, by bucket,
                  plus the Brier score (lower is better) and DraftKings' Brier where DK priced the same thing."""
-import glob, json, re, sys
+import glob, json, os, re, sys
 from math import erf, sqrt
 import numpy as np, pandas as pd
 sys.path.insert(0, ".")
@@ -17,6 +17,13 @@ import proj_model as PM
 
 SEASON = 2026
 Phi = lambda z: 0.5 * (1 + erf(z / sqrt(2)))
+from statistics import NormalDist
+_qn = NormalDist().inv_cdf
+T3 = []   # market vs raw model vs blend, per game and per priced TD (Oct 22)
+W_PROP = 0.2   # same log-odds weight build_site.py gives the model when it blends TD chances with DraftKings
+def _blend(pm, pk):
+    pm, pk = min(max(pm, 0.01), 0.99), min(max(pk, 0.01), 0.99); lo = lambda p: np.log(p / (1 - p))
+    return float(1 / (1 + np.exp(-(W_PROP * lo(pm) + (1 - W_PROP) * lo(pk)))))
 norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z ]", " ", re.sub(r"\b(jr|sr|ii|iii|iv)\b\.?", "", str(s).lower().replace("'", "")))).strip()
 pbp = pd.read_parquet(f"data/pbp_{SEASON}.parquet")
 pbp = pbp[pbp.two_point_attempt.ne(1)]
@@ -107,6 +114,13 @@ for wk in weeks:
             if g["game_id"] not in gids: continue
             s = sw.set_index("game_id").loc[g["game_id"]]; mg = float(s.home_score - s.away_score); tot = float(s.home_score + s.away_score)
             G.append(dict(wk=wk, m_margin=g["m_margin"], spread=g.get("spread"), mg=mg, m_total=g["m_total"], total=g.get("total"), tot=tot))
+            # Oct 22: three numbers per game - market, the model's raw number, and the line-anchored blend the site shows
+            if g.get("spread") is not None and g.get("p_home_cover") is not None:
+                bm = g["spread"] + sd * _qn(min(max(g["p_home_cover"], 0.01), 0.99))
+                T3.append(dict(wk=wk, kind="margin", market=g["spread"], model=g["m_margin"], blend=bm, act=mg, sd=sd))
+            if g.get("total") is not None and g.get("p_over") is not None:
+                sdt = D["lines"].get("sd_total", 13.0); bt = g["total"] + sdt * _qn(min(max(g["p_over"], 0.01), 0.99))
+                T3.append(dict(wk=wk, kind="total", market=g["total"], model=g["m_total"], blend=bt, act=tot, sd=sdt))
             if g.get("spread") is not None and mg != -g["spread"]:
                 PR.append(dict(wk=wk, mkt="Spread: home team covers", p=float(g["p_home_cover"]), y=float(mg + g["spread"] > 0), dk=0.5))
             if g.get("total") is not None and tot != g["total"]:
@@ -121,6 +135,7 @@ for r in lt.itertuples():
     pid = pid_in(r.player, r.game_id)
     if pid is None or pd.isna(r.model_p): continue
     PR.append(dict(wk=int(r.week), mkt="Anytime TD", p=float(r.model_p), y=float(tds.get((r.game_id, pid), 0) > 0), dk=1 / r.price / 1.07))
+    _y = float(tds.get((r.game_id, pid), 0) > 0); T3.append(dict(wk=int(r.week), kind="td", market=1 / r.price / 1.07, model=float(r.model_p), blend=_blend(float(r.model_p), 1 / r.price), act=_y))
 # model's average vs DraftKings' line on the same player, same stat (the O/U pulls log the model's mean at pull time)
 lo = pre_k(pd.read_csv("props_log_ou.csv")); lo = lo[(lo.season == SEASON) & (lo.book == "draftkings") & lo.game_id.isin(done)]
 lo = lo.sort_values("pulled_at").drop_duplicates(["game_id", "player", "market"], keep="last")
@@ -133,8 +148,10 @@ for r in lo.itertuples():
     LV.append(dict(wk=int(r.week), stat=st, model=float(r.model_mean), line=float(r.point), act=float(a[st])))
 LV = pd.DataFrame(LV)
 A, R, PR, G = pd.DataFrame(A), pd.DataFrame(R), pd.DataFrame(PR), pd.DataFrame(G)
-if not len(A):   # no pre-kickoff archives yet (archive/ was lost in the Oct 21 export): keep the last scorecard
+if not len(A) and not os.environ.get("SC_TEST"):   # no pre-kickoff archives yet (archive/ was lost in the Oct 21 export): keep the last scorecard
     print("scorecard: no archived snapshots for finished games; keeping existing scorecard.json"); sys.exit(0)
+if not len(A): A = pd.DataFrame(columns=["wk", "stat", "proj", "act", "line"])
+if not len(R): R = pd.DataFrame(columns=["wk", "stat", "below", "above", "mid"])
 LAB = {"pass_yds": "Passing yards", "rush_yds": "Rushing yards", "car": "Carries", "tgt": "Targets", "rec": "Receptions", "rec_yds": "Receiving yards", "fp_ppr": "Fantasy points (PPR)"}
 out = dict(asof=pd.Timestamp.now(tz="America/New_York").strftime("%b %-d, %Y"), weeks=sorted(set(map(int, set(A.wk if len(A) else []) | set(PR.wk if len(PR) else []) | set(LV.wk if len(LV) else [])))),
            snap_weeks=sorted(set(int(g[5:7]) for g in SNAP_GAMES)), n_games=len(G))
@@ -171,6 +188,18 @@ for mkt, e in EDGES.items():
                       brier_dk=round(((k.dk - k.y) ** 2).mean(), 4) if len(k) and mkt == "Anytime TD" else None,
                       brier_coin=round(((0.5 - x.y) ** 2).mean(), 4) if mkt.startswith(("Spread", "Game goes")) else None, buckets=bk))
 out["probs"] = probs
+# ---- Oct 22: does moving off the market help? Market, raw model and the site's blend, scored on the same games/players.
+T3 = pd.DataFrame(T3); three = []
+if len(T3):
+    for kind, lab in (("margin", "Game margin"), ("total", "Game total"), ("td", "Anytime TD")):
+        x = T3[T3.kind == kind]
+        if not len(x): continue
+        if kind == "td":
+            sc = {k: round(float(((x[k] - x.act) ** 2).mean()), 4) for k in ("market", "model", "blend")}; unit = "Brier score, lower is better"
+        else:
+            sc = {k: round(float((x[k] - x.act).abs().mean()), 2) for k in ("market", "model", "blend")}; unit = "average miss in points"
+        three.append(dict(name=lab, n=int(len(x)), unit=unit, **sc, best=min(sc, key=sc.get), weeks=sorted(set(map(int, x.wk)))))
+out["three_way"] = three
 if len(G):
     gl = G[G.spread.notna()]; gt = G[G.total.notna()]
     out["games"] = dict(n=len(G), margin_model=round((G.mg - G.m_margin).abs().mean(), 2), margin_line=round((gl.mg + gl.spread).abs().mean(), 2) if len(gl) else None,
@@ -224,7 +253,14 @@ if os.path.exists("line_moves.json"):
         line("Line movement", "Market followed" if share >= 0.6 and tw + aw >= 12 else ("Market went the other way" if share <= 0.4 and tw + aw >= 12 else "Even"),
              f"When the model's spread or total differed from the line by 1+ points at publish, the line later moved toward the model {tw} times, away {aw}, and stayed put {n - tw - aw} ({n} cases). Toward means the market later agreed with what the model saw first.")
     else: line("Line movement", "Too early", f"{n} cases of the model differing from the opening line by 1+ points; needs 20+. Toward-the-model moves would mean the market later agrees with what the model saw first.")
+NEED3 = {"Game margin": 40, "Game total": 40, "Anytime TD": 300}
+for t in three:
+    need = NEED3[t["name"]]; nums = f"market {t['market']}, model {t['model']}, blend {t['blend']} ({t['unit']}, {t['n']} {'players' if t['name'] == 'Anytime TD' else 'games'})"
+    if t["n"] < need: line(f"Off the market? {t['name']}", "Too early", f"{t['n']} of {need} needed. So far: {nums}.")
+    else:
+        lab = {"market": "Market is closer", "blend": "Blend adds a little", "model": "Ahead of the market"}[t["best"]]
+        line(f"Off the market? {t['name']}", lab, f"Which number was closest to what happened: {nums}." + (" Moving off DraftKings' number hasn't helped here; the site's number should sit on the market's." if t["best"] == "market" else ""))
 out["card"] = card
-json.dump(out, open("scorecard.json", "w"), indent=1, allow_nan=False, default=lambda o: None)
+json.dump(out, open(os.environ.get("SC_TEST") or "scorecard.json", "w"), indent=1, allow_nan=False, default=lambda o: None)
 print("weeks", out["weeks"], "snap", out["snap_weeks"]); print(pd.DataFrame(out["by_week"]).to_string()); print(pd.DataFrame(out["vs_lines"]).to_string())
 for p in out["probs"]: print(p["mkt"], p["n"], p["said"], p["hap"], p["brier"], p["brier_dk"], p["brier_coin"])

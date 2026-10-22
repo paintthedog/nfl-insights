@@ -15,6 +15,7 @@ NFL Insights (also called "Paydirt") is Clinton's NFL projection and betting-res
 - Run state that must persist between runs is committed: `pipeline/archive/`, `pipeline/data/line_history.csv`, record and bet CSVs, override JSONs. Commit after every run.
 - `SPEC.md` and `recover/` are now reference only.
 - `tracker/` is superseded by the pipeline's own scorecard; not scheduled.
+- Oct 22 fixes: traded and news-activated players now enter the projections; the overrides file is dated per entry and housekept by `auto_overrides.py`; four pre-registered main tests with fixed sample sizes on the Record tab; the scorecard grades market vs raw model vs blend; bootstrap rebuilds `tests/_wf_proj.pkl` again; superseded script copies moved to `pipeline/legacy/` (never edit those).
 
 ## Daily update (what the scheduled task does)
 Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; resolve `audit_wk{W}.txt`; rebuild; publish `pipeline/site/paydirt.html` to the site URL; commit and push; send a short digest.
@@ -49,6 +50,7 @@ Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is
 
 ## Repo layout
 - `pipeline/` — the whole site pipeline: data pulls, models, site build (`daily.sh` is the entry point)
+- `pipeline/legacy/` — superseded copies of scripts, reference only
 - `pipeline/archive/` — pre-kickoff copies of every published week (feeds the scorecard; commit them)
 - `tracker/`, `recover/`, `SPEC.md` — reference only
 - Clinton's private bet log is NOT in this repo (the repo is public). Never add it.

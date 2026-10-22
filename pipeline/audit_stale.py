@@ -29,9 +29,11 @@ for tm, x in qq[(qq["sum"] > 1.05) | ((qq["count"] > 1) & (qq["sum"] < 0.95))].i
 ro = pd.read_parquet("data/rosters_2026.parquet"); rw = ro.sort_values("week").drop_duplicates("gsis_id", keep="last")   # latest listing per player (bye teams skip a week)
 rw = rw.assign(n=rw.full_name.map(norm)).drop_duplicates("gsis_id")
 st = rw.set_index("gsis_id")
+news_on = {norm(n) for n in ov.get("back", [])} | {norm(n) for n, p in (ov.get("p_play") or {}).items() if p > 0}
 for r in live.itertuples():
     if r.pid in st.index:
         x = st.loc[r.pid]
+        if x.status in ("RES", "EXE") and norm(r.name) in news_on: continue   # activated by the news ahead of the roster file (Oct 22)
         if x.status in ("RES", "CUT", "INA", "RET", "EXE", "TRD"): flag("ROSTER", f"{r.name} ({r.team}) projected {r.pts:.1f} pts but roster status {x.status} ({x.status_description_abbr})")
         elif x.team != r.team: flag("TEAM", f"{r.name} projected for {r.team} but roster lists {x.team}")
     else: flag("ROSTER", f"{r.name} ({r.team}) not on any 2026 roster")
@@ -41,7 +43,8 @@ use = pd.concat([lastteam[["week", "posteam", "receiver_player_id"]].rename(colu
 cnt = use.groupby(["pid", "posteam"]).size().reset_index(name="touches").sort_values("touches").drop_duplicates("pid", keep="last")
 projected = set(P.pid)
 for r in cnt[cnt.touches >= 8].itertuples():
-    if r.pid in st.index and st.loc[r.pid].team != r.posteam and st.loc[r.pid].status == "ACT" and r.pid not in projected:
+    _playing = set(sw.home_team) | set(sw.away_team)       # a new team on bye this week has no projections to be missing from
+    if r.pid in st.index and st.loc[r.pid].team != r.posteam and st.loc[r.pid].status == "ACT" and r.pid not in projected and st.loc[r.pid].team in _playing:
         flag("TRADE", f"{st.loc[r.pid].full_name} moved {r.posteam} -> {st.loc[r.pid].team} ({r.touches} targets+carries with {r.posteam}) and is not in the {st.loc[r.pid].team} projections")
 # 3. official injury report (this week) vs projection
 inj = pd.read_parquet("data/injuries_2026.parquet"); iw = inj[inj.week == W]
@@ -62,6 +65,11 @@ try:
     for nm in prev.get("ol_out", []):
         if nm not in ov.get("ol_out", []) and nm not in ov.get("back", []): flag("CARRYOVER", f"OL {nm} was out last week, not listed this week — confirm")
 except FileNotFoundError: pass
+# 4b. per-entry staleness (Oct 22): chances, lead backs and uncertain QBs set more than 3 days ago
+try:
+    from auto_overrides import stale_lines
+    for m in stale_lines(W): flag("STALE", m)
+except Exception as e: flag("STALE", f"stale check skipped: {e}")
 # 5. feed freshness
 now = pd.Timestamp.now(tz="UTC")
 asof = ov.get("asof")
