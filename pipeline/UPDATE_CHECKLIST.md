@@ -43,7 +43,7 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 ## 6. Sanity checks (before publishing)
 - [ ] Read `audit_wk{W}.txt` (written by refresh_all.sh; or `python audit_stale.py W`). Resolve every item: QB mismatches → qb_start; ROSTER/TEAM/INJURY conflicts → out/p_play; CARRYOVER → confirm each of last week's outs (players AND ol_out) is still out or back; FRESHNESS/WEATHER → refetch. Mention anything left unresolved in the digest.
 - [ ] ROLE items (from the audit): DraftKings implies a very different role than the model. Search the news for that team's depth chart; fix through out/p_play/next_man/qb_start if the news supports it, otherwise mention it in the digest as 'trust DK here'. Never edit projections to match DK.
-- [ ] `node t2.js` and `node nav.js` in scratchpad — zero page errors at 1320w and 390w (nav.js clicks every tab and view: This week · Players [Projections, Touchdowns & INTs, Defense vs position] · Season [Season, Awards] · Record · Model [The model, Trends])
+- [ ] `node check_page.js site/paydirt.html` must print OK (data parses, scripts compile, no bet log). The old click-through tests (t2.js, nav.js) were lost in the Oct 21 export; after a layout change, open the page on a phone and click every tab.
 - [ ] Spot-check 3 projections against today's news: newly-out players gone, next-man seeds fired where expected, OL counts match reports
 - [ ] `ol_missing_wk{W}.csv` exists and is current (this file silently defaulting to 0 was a real bug once)
 - [ ] Prices-asof stamp on the site matches the latest pull, not a stale one

@@ -7,17 +7,17 @@ NFL Insights (also called "Paydirt") is Clinton's NFL projection and betting-res
 
 **Goal:** the most informed, likelihood-based bets possible, plus visibility into trends. Beating DraftKings is NOT the goal. Don't frame the work as edge-hunting, but stay honest when the market is more accurate than the model.
 
-## Status (Oct 20, 2026)
-- The original pipeline was built in a chat that hit its length limit. Its code lives only in that chat's workspace, and the daily 8:52 a.m. ET update still runs there via a chained reminder. **Its code can't be copied out.**
-- **Rebuild plan:** see `SPEC.md`. Full transcript recovery was declined as too costly (Oct 20); a pilot of turns 3–20 is in `recover/`.
-- **Oct 20:** the old daily run fired but failed to publish; treat the old pipeline as dead. Site patched from here (v150: Week 6 Monday night graded via `tools/grade_pending.py`). Rebuild starts Oct 21.
-- **This repo is the rebuild.** The old daily run is disabled (Oct 21), so publishing from here is safe.
-- `tracker/` (built Oct 19) snapshots the live site's projections before kickoff and grades them against nflverse stats. See `tracker/TICK.md`.
+## Status (Oct 21, 2026)
+- **The original pipeline is back.** Exported from the old chat on Oct 21 into `pipeline/` (code, config, small data). Large data and model files were left out of the export; `pipeline/bootstrap_data.py` rebuilds them from nflverse.
+- **One command updates the site from a fresh workspace:** `bash pipeline/daily.sh` (picks the current week, adds next week once its lines exist). Output: `pipeline/site/paydirt.html`. Takes ~25 min from scratch, ~10 once data is cached.
+- Oct 21 evening: Week 7 and 8 rebuilt and published as v152.
+- Lost in the export: pre-kickoff archives before Oct 21 (the scorecard keeps its last numbers until new weeks are graded) and line-movement history (restarts Oct 21).
+- Run state that must persist between runs is committed: `pipeline/archive/`, `pipeline/data/line_history.csv`, record and bet CSVs, override JSONs. Commit after every run.
+- `SPEC.md` and `recover/` are now reference only.
+- `tracker/` is superseded by the pipeline's own scorecard; not scheduled.
 
-## Next session (agreed Oct 20)
-1. **Daily results updater** (runs from this repo every morning): pull nflverse results, update records/standings, grade pending Record-tab bets (`tools/grade_pending.py`), verify site vs actual results and fix or alert, republish. Schedule it as the daily task.
-2. **Season simulator**: rebuild win totals and division/playoff/#1 seed/conference/Super Bowl odds from the ratings, home-field value and schedule stored in the site's `season` data, plus actual results. Becomes the rebuild's season-sim piece.
-Patched by hand on Oct 20: v150 (Week 6 MNF bets graded), v151 (SF 6-0, WAS 1-4-1 on Season tab; their sim odds still pre-MNF).
+## Daily update (what the scheduled task does)
+Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; resolve `audit_wk{W}.txt`; rebuild; publish `pipeline/site/paydirt.html` to the site URL; commit and push; send a short digest.
 
 ## Clinton's standing rules
 - **Odds:** decimal only. **DraftKings** is the reference book (he also bets FanDuel; FanDuel won't allow INT props in a same-game parlay). Never scrape DK or FanDuel sites.
@@ -42,15 +42,15 @@ Patched by hand on Oct 20: v150 (Week 6 MNF bets graded), v151 (SF 6-0, WAS 1-4-
 - Clinton bets throughout the week and may send screenshots of bets to judge against the projections.
 
 ## Recurring schedule (ET)
-- **Oct 21:** all scheduled tasks disabled at Clinton's request (old daily update chain and tracker snapshot chain). None had worked. Nothing runs on a schedule until the rebuilt pipeline is tested by hand first.
-- Replacements must be recurring cron tasks that start a fresh session from this repo, never self-rescheduling send_later chains tied to one chat.
-- **Tuesday:** grade the week and send the recap: what worked, what didn't, what we learned, season accuracy.
+- **Daily 8:52 a.m.:** "NFL Insights daily update" scheduled task. Starts a fresh session from this repo each run; nothing chains or reschedules itself. Its prompt is the "Daily update" section above.
+- **Tuesday:** the same run also sends the weekly recap (what worked, what didn't, what we learned, season accuracy).
+- Oct 21: the old self-rescheduling tasks (daily update chain, tracker snapshots) were disabled. Never rebuild schedules as send_later chains tied to one chat.
 
 ## Repo layout
-- `tracker/` — projection snapshots and season-long accuracy grading
-- `pipeline/` — (to rebuild) data pulls, model, site build
-- `site/` — (to rebuild) the published page
-- `bets/` — Clinton's private bet log (never published)
+- `pipeline/` — the whole site pipeline: data pulls, models, site build (`daily.sh` is the entry point)
+- `pipeline/archive/` — pre-kickoff copies of every published week (feeds the scorecard; commit them)
+- `tracker/`, `recover/`, `SPEC.md` — reference only
+- Clinton's private bet log is NOT in this repo (the repo is public). Never add it.
 
 ## How to work here
 - Keep chats short and focused on one topic. Commit at the end of any change.
