@@ -29,7 +29,7 @@ band = lambda x: "TD all: under 2.5" if x < 2.5 else "TD all: 2.5–3.9" if x <=
 atd = [r for r in D["td"] if r.get("dk")]
 for r in atd:
     gid = gid_of_team.get(r["team"]); ev = r["p"] * r["dk"] - 1
-    if not 4.0 <= r["dk"] <= 6.0: add(band(r["dk"]), gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
+    if not 3.9 < r["dk"] <= 6.0: add(band(r["dk"]), gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
     if 2.5 <= r["dk"] <= 3.9 and ev >= 0.03: add("TD 2.5–3.9, model likes", gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
     if r["dk"] < 2.5 and ev <= -0.10: add("TD skip list (not bet)", gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
 # ---- TD parlays from DIFFERENT games (no correlation between legs, so the bet is "are DK's short scorer prices fair?").
