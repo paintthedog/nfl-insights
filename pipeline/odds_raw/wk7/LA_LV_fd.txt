@@ -1,0 +1,6 @@
+game_h2h|Las Vegas Raiders|ML||2.8
+game_h2h|Los Angeles Rams|ML||1.47
+game_spreads|Las Vegas Raiders||4.5|1.89
+game_spreads|Los Angeles Rams||-4.5|1.93
+game_totals|Over|Over|48.5|1.91
+game_totals|Under|Under|48.5|1.91

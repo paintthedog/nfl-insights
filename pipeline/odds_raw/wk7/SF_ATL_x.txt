@@ -1,0 +1,6 @@
+game_h2h|Atlanta Falcons|ML||2.3
+game_h2h|San Francisco 49ers|ML||1.65
+game_spreads|Atlanta Falcons||3.0|1.83
+game_spreads|San Francisco 49ers||-3.0|2.0
+game_totals|Over|Over|49.5|1.87
+game_totals|Under|Under|49.5|1.95

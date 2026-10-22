@@ -1,0 +1,6 @@
+game_h2h|Kansas City Chiefs|ML||2.24
+game_h2h|Seattle Seahawks|ML||1.68
+game_spreads|Kansas City Chiefs||2.5|1.98
+game_spreads|Seattle Seahawks||-2.5|1.85
+game_totals|Over|Over|42.5|1.91
+game_totals|Under|Under|42.5|1.91

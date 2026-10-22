@@ -1,0 +1,6 @@
+game_h2h|Cleveland Browns|ML||1.77
+game_h2h|Tennessee Titans|ML||2.1
+game_spreads|Cleveland Browns||-1.5|1.91
+game_spreads|Tennessee Titans||1.5|1.91
+game_totals|Over|Over|37.5|1.95
+game_totals|Under|Under|37.5|1.87

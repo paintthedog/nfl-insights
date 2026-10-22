@@ -1,0 +1,182 @@
+EVENT|ffebea881c1d7b2dfb85b3e590c35985|2026-10-23T00:15:00Z|New England Patriots|Chicago Bears
+draftkings|h2h|Chicago Bears||1.65
+draftkings|h2h|New England Patriots||2.3
+draftkings|spreads|Chicago Bears|-3.0|1.98
+draftkings|spreads|New England Patriots|3.0|1.85
+draftkings|totals|Over|50.5|1.87
+draftkings|totals|Under|50.5|1.95
+fanduel|h2h|Chicago Bears||1.64
+fanduel|h2h|New England Patriots||2.32
+fanduel|spreads|Chicago Bears|-3.0|1.95
+fanduel|spreads|New England Patriots|3.0|1.87
+fanduel|totals|Over|50.5|1.91
+fanduel|totals|Under|50.5|1.91
+EVENT|2e710ea5a306b614f0f966e3d78732f8|2026-10-25T13:30:00Z|Pittsburgh Steelers|New Orleans Saints
+draftkings|h2h|New Orleans Saints||2.45
+draftkings|h2h|Pittsburgh Steelers||1.57
+draftkings|spreads|New Orleans Saints|3.5|1.85
+draftkings|spreads|Pittsburgh Steelers|-3.5|1.98
+draftkings|totals|Over|44.5|1.91
+draftkings|totals|Under|44.5|1.91
+fanduel|h2h|New Orleans Saints||2.44
+fanduel|h2h|Pittsburgh Steelers||1.58
+fanduel|spreads|New Orleans Saints|3.0|1.96
+fanduel|spreads|Pittsburgh Steelers|-3.0|1.85
+fanduel|totals|Over|44.5|1.89
+fanduel|totals|Under|44.5|1.93
+EVENT|b1be064fb52a198a62109c279e7ab24c|2026-10-25T17:00:00Z|San Francisco 49ers|Atlanta Falcons
+draftkings|h2h|Atlanta Falcons||2.3
+draftkings|h2h|San Francisco 49ers||1.65
+draftkings|spreads|Atlanta Falcons|3.0|1.83
+draftkings|spreads|San Francisco 49ers|-3.0|2.0
+draftkings|totals|Over|49.5|1.87
+draftkings|totals|Under|49.5|1.95
+fanduel|h2h|Atlanta Falcons||2.28
+fanduel|h2h|San Francisco 49ers||1.66
+fanduel|spreads|Atlanta Falcons|2.5|1.98
+fanduel|spreads|San Francisco 49ers|-2.5|1.83
+fanduel|totals|Over|49.5|1.87
+fanduel|totals|Under|49.5|1.95
+EVENT|550ec5290f935d311995affbcb0b5c79|2026-10-25T17:00:00Z|Cincinnati Bengals|Baltimore Ravens
+draftkings|h2h|Baltimore Ravens||2.02
+draftkings|h2h|Cincinnati Bengals||1.82
+draftkings|spreads|Baltimore Ravens|1.5|1.83
+draftkings|spreads|Cincinnati Bengals|-1.5|2.0
+draftkings|totals|Over|48.5|1.91
+draftkings|totals|Under|48.5|1.91
+fanduel|h2h|Baltimore Ravens||1.96
+fanduel|h2h|Cincinnati Bengals||1.89
+fanduel|spreads|Baltimore Ravens|1.5|1.83
+fanduel|spreads|Cincinnati Bengals|-1.5|1.98
+fanduel|totals|Over|48.5|1.91
+fanduel|totals|Under|48.5|1.91
+EVENT|2823e986597c449ab94126cd5ed3fae9|2026-10-25T17:00:00Z|Tampa Bay Buccaneers|Carolina Panthers
+draftkings|h2h|Carolina Panthers||1.6
+draftkings|h2h|Tampa Bay Buccaneers||2.4
+draftkings|spreads|Carolina Panthers|-3.0|1.83
+draftkings|spreads|Tampa Bay Buccaneers|3.0|2.0
+draftkings|totals|Over|44.5|1.91
+draftkings|totals|Under|44.5|1.91
+fanduel|h2h|Carolina Panthers||1.63
+fanduel|h2h|Tampa Bay Buccaneers||2.34
+fanduel|spreads|Carolina Panthers|-3.0|1.91
+fanduel|spreads|Tampa Bay Buccaneers|3.0|1.91
+fanduel|totals|Over|44.5|1.91
+fanduel|totals|Under|44.5|1.91
+EVENT|5dce18baccec5d3ad5fb3a3ce52f7619|2026-10-25T17:00:00Z|Cleveland Browns|Tennessee Titans
+draftkings|h2h|Cleveland Browns||1.77
+draftkings|h2h|Tennessee Titans||2.1
+draftkings|spreads|Cleveland Browns|-1.5|1.91
+draftkings|spreads|Tennessee Titans|1.5|1.91
+draftkings|totals|Over|37.5|1.95
+draftkings|totals|Under|37.5|1.87
+fanduel|h2h|Cleveland Browns||1.81
+fanduel|h2h|Tennessee Titans||2.06
+fanduel|spreads|Cleveland Browns|-1.5|1.89
+fanduel|spreads|Tennessee Titans|1.5|1.93
+fanduel|totals|Over|37.5|1.95
+fanduel|totals|Under|37.5|1.87
+EVENT|2bba7fde6f97d0e54403d53676e4ab63|2026-10-25T17:00:00Z|New York Giants|Houston Texans
+draftkings|h2h|Houston Texans||1.19
+draftkings|h2h|New York Giants||4.9
+draftkings|spreads|Houston Texans|-10.5|1.93
+draftkings|spreads|New York Giants|10.5|1.89
+draftkings|totals|Over|42.5|1.85
+draftkings|totals|Under|42.5|1.98
+fanduel|h2h|Houston Texans||1.18
+fanduel|h2h|New York Giants||5.1
+fanduel|spreads|Houston Texans|-10.5|1.95
+fanduel|spreads|New York Giants|10.5|1.87
+fanduel|totals|Over|43.5|1.98
+fanduel|totals|Under|43.5|1.83
+EVENT|f3992ad4496724baf7dcd1ef58245d6b|2026-10-25T17:00:00Z|Indianapolis Colts|Minnesota Vikings
+draftkings|h2h|Indianapolis Colts||3.25
+draftkings|h2h|Minnesota Vikings||1.36
+draftkings|spreads|Indianapolis Colts|6.5|1.89
+draftkings|spreads|Minnesota Vikings|-6.5|1.93
+draftkings|totals|Over|41.5|1.91
+draftkings|totals|Under|41.5|1.91
+fanduel|h2h|Indianapolis Colts||3.4
+fanduel|h2h|Minnesota Vikings||1.34
+fanduel|spreads|Indianapolis Colts|6.5|1.87
+fanduel|spreads|Minnesota Vikings|-6.5|1.95
+fanduel|totals|Over|41.5|1.91
+fanduel|totals|Under|41.5|1.91
+EVENT|be5dd120ca08b43d647b6caa8953500a|2026-10-25T17:00:00Z|Miami Dolphins|New York Jets
+draftkings|h2h|Miami Dolphins||2.95
+draftkings|h2h|New York Jets||1.42
+draftkings|spreads|Miami Dolphins|4.5|1.95
+draftkings|spreads|New York Jets|-4.5|1.87
+draftkings|totals|Over|39.5|1.93
+draftkings|totals|Under|39.5|1.89
+fanduel|h2h|Miami Dolphins||2.94
+fanduel|h2h|New York Jets||1.43
+fanduel|spreads|Miami Dolphins|4.5|1.96
+fanduel|spreads|New York Jets|-4.5|1.85
+fanduel|totals|Over|39.5|1.94
+fanduel|totals|Under|39.5|1.88
+EVENT|436119bb3ccdaa6ed7808aa3ebd82b76|2026-10-25T20:05:00Z|Denver Broncos|Arizona Cardinals
+draftkings|h2h|Arizona Cardinals||2.9
+draftkings|h2h|Denver Broncos||1.43
+draftkings|spreads|Arizona Cardinals|4.5|1.91
+draftkings|spreads|Denver Broncos|-4.5|1.91
+draftkings|totals|Over|43.5|1.87
+draftkings|totals|Under|43.5|1.95
+fanduel|h2h|Arizona Cardinals||2.88
+fanduel|h2h|Denver Broncos||1.44
+fanduel|spreads|Arizona Cardinals|4.5|1.91
+fanduel|spreads|Denver Broncos|-4.5|1.91
+fanduel|totals|Over|43.5|1.91
+fanduel|totals|Under|43.5|1.91
+EVENT|e8e5715eefb6a9ce64765e9ddf49c0cc|2026-10-25T20:25:00Z|Green Bay Packers|Detroit Lions
+draftkings|h2h|Detroit Lions||1.6
+draftkings|h2h|Green Bay Packers||2.4
+draftkings|spreads|Detroit Lions|-3.0|1.91
+draftkings|spreads|Green Bay Packers|3.0|1.91
+draftkings|totals|Over|53.5|1.91
+draftkings|totals|Under|53.5|1.91
+fanduel|h2h|Detroit Lions||1.58
+fanduel|h2h|Green Bay Packers||2.42
+fanduel|spreads|Detroit Lions|-3.0|1.85
+fanduel|spreads|Green Bay Packers|3.0|1.96
+fanduel|totals|Over|52.5|1.83
+fanduel|totals|Under|52.5|1.98
+EVENT|f7679cf18454e4d88a8f2b990c3f08ac|2026-10-25T20:25:00Z|Los Angeles Rams|Las Vegas Raiders
+draftkings|h2h|Las Vegas Raiders||2.8
+draftkings|h2h|Los Angeles Rams||1.46
+draftkings|spreads|Las Vegas Raiders|4.5|1.87
+draftkings|spreads|Los Angeles Rams|-4.5|1.95
+draftkings|totals|Over|48.5|1.93
+draftkings|totals|Under|48.5|1.89
+fanduel|h2h|Las Vegas Raiders||2.8
+fanduel|h2h|Los Angeles Rams||1.47
+fanduel|spreads|Las Vegas Raiders|4.5|1.89
+fanduel|spreads|Los Angeles Rams|-4.5|1.93
+fanduel|totals|Over|48.5|1.91
+fanduel|totals|Under|48.5|1.91
+EVENT|176d474ed8b2bbf1eb4d7e9c56b4bf22|2026-10-26T00:20:00Z|Kansas City Chiefs|Seattle Seahawks
+draftkings|h2h|Kansas City Chiefs||2.24
+draftkings|h2h|Seattle Seahawks||1.68
+draftkings|spreads|Kansas City Chiefs|2.5|1.98
+draftkings|spreads|Seattle Seahawks|-2.5|1.85
+draftkings|totals|Over|42.5|1.91
+draftkings|totals|Under|42.5|1.91
+fanduel|h2h|Kansas City Chiefs||2.22
+fanduel|h2h|Seattle Seahawks||1.69
+fanduel|spreads|Kansas City Chiefs|2.5|1.96
+fanduel|spreads|Seattle Seahawks|-2.5|1.85
+fanduel|totals|Over|42.5|1.89
+fanduel|totals|Under|42.5|1.93
+EVENT|4853610e63c246f2027a6a248e642c9a|2026-10-27T00:15:00Z|Dallas Cowboys|Philadelphia Eagles
+draftkings|h2h|Dallas Cowboys||1.44
+draftkings|h2h|Philadelphia Eagles||2.85
+draftkings|spreads|Dallas Cowboys|-4.5|1.89
+draftkings|spreads|Philadelphia Eagles|4.5|1.93
+draftkings|totals|Over|44.5|1.91
+draftkings|totals|Under|44.5|1.91
+fanduel|h2h|Dallas Cowboys||1.48
+fanduel|h2h|Philadelphia Eagles||2.76
+fanduel|spreads|Dallas Cowboys|-4.5|1.91
+fanduel|spreads|Philadelphia Eagles|4.5|1.91
+fanduel|totals|Over|44.5|1.91
+fanduel|totals|Under|44.5|1.91

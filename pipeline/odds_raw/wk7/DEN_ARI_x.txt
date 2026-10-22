@@ -1,0 +1,6 @@
+game_h2h|Arizona Cardinals|ML||2.9
+game_h2h|Denver Broncos|ML||1.43
+game_spreads|Arizona Cardinals||4.5|1.91
+game_spreads|Denver Broncos||-4.5|1.91
+game_totals|Over|Over|43.5|1.87
+game_totals|Under|Under|43.5|1.95

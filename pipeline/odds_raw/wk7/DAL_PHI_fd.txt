@@ -1,0 +1,6 @@
+game_h2h|Dallas Cowboys|ML||1.48
+game_h2h|Philadelphia Eagles|ML||2.76
+game_spreads|Dallas Cowboys||-4.5|1.91
+game_spreads|Philadelphia Eagles||4.5|1.91
+game_totals|Over|Over|44.5|1.91
+game_totals|Under|Under|44.5|1.91

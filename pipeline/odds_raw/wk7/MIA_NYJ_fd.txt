@@ -1,0 +1,6 @@
+game_h2h|Miami Dolphins|ML||2.94
+game_h2h|New York Jets|ML||1.43
+game_spreads|Miami Dolphins||4.5|1.96
+game_spreads|New York Jets||-4.5|1.85
+game_totals|Over|Over|39.5|1.94
+game_totals|Under|Under|39.5|1.88

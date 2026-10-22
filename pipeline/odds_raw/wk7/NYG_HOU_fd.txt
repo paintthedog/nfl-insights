@@ -1,0 +1,6 @@
+game_h2h|Houston Texans|ML||1.18
+game_h2h|New York Giants|ML||5.1
+game_spreads|Houston Texans||-10.5|1.95
+game_spreads|New York Giants||10.5|1.87
+game_totals|Over|Over|43.5|1.98
+game_totals|Under|Under|43.5|1.83

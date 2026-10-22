@@ -1,0 +1,6 @@
+game_h2h|Indianapolis Colts|ML||3.4
+game_h2h|Minnesota Vikings|ML||1.34
+game_spreads|Indianapolis Colts||6.5|1.87
+game_spreads|Minnesota Vikings||-6.5|1.95
+game_totals|Over|Over|41.5|1.91
+game_totals|Under|Under|41.5|1.91

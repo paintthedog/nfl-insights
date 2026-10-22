@@ -1,0 +1,6 @@
+game_h2h|Carolina Panthers|ML||1.63
+game_h2h|Tampa Bay Buccaneers|ML||2.34
+game_spreads|Carolina Panthers||-3.0|1.91
+game_spreads|Tampa Bay Buccaneers||3.0|1.91
+game_totals|Over|Over|44.5|1.91
+game_totals|Under|Under|44.5|1.91

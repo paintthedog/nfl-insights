@@ -1,0 +1,6 @@
+game_h2h|New Orleans Saints|ML||2.45
+game_h2h|Pittsburgh Steelers|ML||1.57
+game_spreads|New Orleans Saints||3.5|1.85
+game_spreads|Pittsburgh Steelers||-3.5|1.98
+game_totals|Over|Over|44.5|1.91
+game_totals|Under|Under|44.5|1.91

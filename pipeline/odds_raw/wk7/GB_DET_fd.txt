@@ -1,0 +1,6 @@
+game_h2h|Detroit Lions|ML||1.58
+game_h2h|Green Bay Packers|ML||2.42
+game_spreads|Detroit Lions||-3.0|1.85
+game_spreads|Green Bay Packers||3.0|1.96
+game_totals|Over|Over|52.5|1.83
+game_totals|Under|Under|52.5|1.98

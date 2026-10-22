@@ -1,0 +1,6 @@
+game_h2h|Chicago Bears|ML||1.65
+game_h2h|New England Patriots|ML||2.3
+game_spreads|Chicago Bears||-3.0|1.98
+game_spreads|New England Patriots||3.0|1.85
+game_totals|Over|Over|50.5|1.87
+game_totals|Under|Under|50.5|1.95
