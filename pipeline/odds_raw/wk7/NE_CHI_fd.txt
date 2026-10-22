@@ -4,3 +4,214 @@ game_spreads|Chicago Bears||-3.0|1.95
 game_spreads|New England Patriots||3.0|1.87
 game_totals|Over|Over|50.5|1.91
 game_totals|Under|Under|50.5|1.91
+player_anytime_td|D'Andre Swift|Yes||1.61
+player_anytime_td|Rhamondre Stevenson|Yes||1.91
+player_anytime_td|A.J. Brown|Yes||2.35
+player_anytime_td|Colston Loveland|Yes||2.65
+player_anytime_td|Rome Odunze|Yes||2.7
+player_anytime_td|Luther Burden III|Yes||2.85
+player_anytime_td|Hunter Henry|Yes||3.2
+player_anytime_td|Roschon Johnson|Yes||3.3
+player_anytime_td|DeMario Douglas|Yes||4.1
+player_anytime_td|Drake Maye|Yes||4.5
+player_anytime_td|TreVeyon Henderson|Yes||4.4
+player_anytime_td|Caleb Williams|Yes||4.5
+player_anytime_td|Kalif Raymond|Yes||4.9
+player_anytime_td|Efton Chism III|Yes||5.6
+player_anytime_td|Eli Raridon|Yes||6.0
+player_anytime_td|Cole Kmet|Yes||6.0
+player_anytime_td|Corey Kiner|Yes||7.5
+player_anytime_td|New England Patriots Defense|Yes||8.0
+player_anytime_td|Kyle Williams|Yes||8.0
+player_anytime_td|Chicago Bears Defense|Yes||8.0
+player_anytime_td|Sam Roush|Yes||10.5
+player_anytime_td|Zavion Thomas|Yes||15.0
+player_anytime_td|Cameron Latu|Yes||17.0
+player_anytime_td|Tanner Arkin|Yes||17.0
+player_anytime_td|Jahdae Walker|Yes||18.0
+player_anytime_td|Zavier Scott|Yes||21.0
+player_receptions|Colston Loveland|Over|3.5|1.58
+player_receptions|Colston Loveland|Under|3.5|2.28
+player_receptions|TreVeyon Henderson|Over|0.5|1.49
+player_receptions|TreVeyon Henderson|Under|0.5|2.52
+player_receptions|Eli Raridon|Over|1.5|2.02
+player_receptions|Eli Raridon|Under|1.5|1.74
+player_receptions|Roschon Johnson|Over|1.5|2.24
+player_receptions|Roschon Johnson|Under|1.5|1.6
+player_receptions|Kalif Raymond|Over|2.5|1.93
+player_receptions|Kalif Raymond|Under|2.5|1.82
+player_receptions|Hunter Henry|Over|3.5|2.16
+player_receptions|Hunter Henry|Under|3.5|1.65
+player_receptions|Kyle Williams|Over|1.5|2.34
+player_receptions|Kyle Williams|Under|1.5|1.56
+player_receptions|Rhamondre Stevenson|Over|2.5|1.77
+player_receptions|Rhamondre Stevenson|Under|2.5|1.98
+player_receptions|D'Andre Swift|Over|2.5|1.72
+player_receptions|D'Andre Swift|Under|2.5|2.04
+player_receptions|Rome Odunze|Over|3.5|2.24
+player_receptions|Rome Odunze|Under|3.5|1.6
+player_receptions|DeMario Douglas|Over|3.5|2.12
+player_receptions|DeMario Douglas|Under|3.5|1.68
+player_receptions|Efton Chism III|Over|1.5|1.68
+player_receptions|Efton Chism III|Under|1.5|2.12
+player_receptions|Cole Kmet|Over|1.5|2.78
+player_receptions|Cole Kmet|Under|1.5|1.41
+player_receptions|Luther Burden III|Over|4.5|1.68
+player_receptions|Luther Burden III|Under|4.5|2.12
+player_receptions|A.J. Brown|Over|4.5|1.62
+player_receptions|A.J. Brown|Under|4.5|2.2
+player_receptions_alternate|Roschon Johnson|Over|0.5|1.28
+player_receptions_alternate|Roschon Johnson|Over|1.5|2.24
+player_receptions_alternate|Roschon Johnson|Over|2.5|4.6
+player_receptions_alternate|Roschon Johnson|Over|3.5|9.5
+player_receptions_alternate|Rome Odunze|Over|1.5|1.15
+player_receptions_alternate|Rome Odunze|Over|2.5|1.49
+player_receptions_alternate|Rome Odunze|Over|3.5|2.24
+player_receptions_alternate|Rome Odunze|Over|4.5|3.7
+player_receptions_alternate|Rome Odunze|Over|5.5|6.5
+player_receptions_alternate|Rome Odunze|Over|6.5|11.0
+player_receptions_alternate|TreVeyon Henderson|Over|0.5|1.49
+player_receptions_alternate|TreVeyon Henderson|Over|1.5|2.98
+player_receptions_alternate|TreVeyon Henderson|Over|2.5|6.5
+player_receptions_alternate|Kyle Williams|Over|0.5|1.28
+player_receptions_alternate|Kyle Williams|Over|1.5|2.32
+player_receptions_alternate|Kyle Williams|Over|2.5|5.0
+player_receptions_alternate|Efton Chism III|Over|0.5|1.13
+player_receptions_alternate|Efton Chism III|Over|1.5|1.65
+player_receptions_alternate|Efton Chism III|Over|2.5|2.98
+player_receptions_alternate|Efton Chism III|Over|3.5|5.9
+player_receptions_alternate|Efton Chism III|Over|4.5|11.0
+player_receptions_alternate|Hunter Henry|Over|1.5|1.12
+player_receptions_alternate|Hunter Henry|Over|2.5|1.42
+player_receptions_alternate|Hunter Henry|Over|3.5|2.06
+player_receptions_alternate|Hunter Henry|Over|4.5|3.3
+player_receptions_alternate|Hunter Henry|Over|5.5|5.3
+player_receptions_alternate|Hunter Henry|Over|6.5|9.5
+player_receptions_alternate|Hunter Henry|Over|7.5|13.8
+player_receptions_alternate|D'Andre Swift|Over|1.5|1.24
+player_receptions_alternate|D'Andre Swift|Over|2.5|1.72
+player_receptions_alternate|D'Andre Swift|Over|3.5|2.72
+player_receptions_alternate|D'Andre Swift|Over|4.5|4.5
+player_receptions_alternate|D'Andre Swift|Over|5.5|7.8
+player_receptions_alternate|D'Andre Swift|Over|6.5|13.0
+player_receptions_alternate|Luther Burden III|Over|2.5|1.11
+player_receptions_alternate|Luther Burden III|Over|3.5|1.3
+player_receptions_alternate|Luther Burden III|Over|4.5|1.68
+player_receptions_alternate|Luther Burden III|Over|5.5|2.4
+player_receptions_alternate|Luther Burden III|Over|6.5|3.55
+player_receptions_alternate|Luther Burden III|Over|7.5|5.3
+player_receptions_alternate|Luther Burden III|Over|8.5|8.5
+player_receptions_alternate|Luther Burden III|Over|9.5|13.0
+player_receptions_alternate|Colston Loveland|Over|1.5|1.06
+player_receptions_alternate|Colston Loveland|Over|2.5|1.24
+player_receptions_alternate|Colston Loveland|Over|3.5|1.58
+player_receptions_alternate|Colston Loveland|Over|4.5|2.28
+player_receptions_alternate|Colston Loveland|Over|5.5|3.4
+player_receptions_alternate|Colston Loveland|Over|6.5|5.5
+player_receptions_alternate|Colston Loveland|Over|7.5|9.0
+player_receptions_alternate|Colston Loveland|Over|8.5|13.8
+player_receptions_alternate|Rhamondre Stevenson|Over|1.5|1.25
+player_receptions_alternate|Rhamondre Stevenson|Over|2.5|1.74
+player_receptions_alternate|Rhamondre Stevenson|Over|3.5|2.78
+player_receptions_alternate|Rhamondre Stevenson|Over|4.5|4.6
+player_receptions_alternate|Rhamondre Stevenson|Over|5.5|7.8
+player_receptions_alternate|Rhamondre Stevenson|Over|6.5|13.0
+player_receptions_alternate|A.J. Brown|Over|2.5|1.08
+player_receptions_alternate|A.J. Brown|Over|3.5|1.25
+player_receptions_alternate|A.J. Brown|Over|4.5|1.56
+player_receptions_alternate|A.J. Brown|Over|5.5|2.16
+player_receptions_alternate|A.J. Brown|Over|6.5|3.2
+player_receptions_alternate|A.J. Brown|Over|7.5|4.9
+player_receptions_alternate|A.J. Brown|Over|8.5|7.4
+player_receptions_alternate|A.J. Brown|Over|9.5|11.0
+player_receptions_alternate|Eli Raridon|Over|0.5|1.2
+player_receptions_alternate|Eli Raridon|Over|1.5|1.94
+player_receptions_alternate|Eli Raridon|Over|2.5|3.8
+player_receptions_alternate|Eli Raridon|Over|3.5|8.0
+player_receptions_alternate|Cole Kmet|Over|0.5|1.34
+player_receptions_alternate|Cole Kmet|Over|1.5|2.64
+player_receptions_alternate|Cole Kmet|Over|2.5|5.9
+player_receptions_alternate|DeMario Douglas|Over|1.5|1.12
+player_receptions_alternate|DeMario Douglas|Over|2.5|1.4
+player_receptions_alternate|DeMario Douglas|Over|3.5|2.04
+player_receptions_alternate|DeMario Douglas|Over|4.5|3.25
+player_receptions_alternate|DeMario Douglas|Over|5.5|5.3
+player_receptions_alternate|DeMario Douglas|Over|6.5|9.5
+player_receptions_alternate|DeMario Douglas|Over|7.5|15.0
+player_receptions_alternate|Kalif Raymond|Over|1.5|1.3
+player_receptions_alternate|Kalif Raymond|Over|2.5|1.91
+player_receptions_alternate|Kalif Raymond|Over|3.5|3.2
+player_receptions_alternate|Kalif Raymond|Over|4.5|5.7
+player_receptions_alternate|Kalif Raymond|Over|5.5|9.8
+player_receptions_alternate|Kalif Raymond|Over|6.5|16.0
+player_rush_yds_alternate|TreVeyon Henderson|Over|4.5|1.06
+player_rush_yds_alternate|TreVeyon Henderson|Over|9.5|1.17
+player_rush_yds_alternate|TreVeyon Henderson|Over|14.5|1.34
+player_rush_yds_alternate|TreVeyon Henderson|Over|19.5|1.56
+player_rush_yds_alternate|TreVeyon Henderson|Over|24.5|1.88
+player_rush_yds_alternate|TreVeyon Henderson|Over|29.5|2.26
+player_rush_yds_alternate|TreVeyon Henderson|Over|39.5|3.25
+player_rush_yds_alternate|TreVeyon Henderson|Over|49.5|4.9
+player_rush_yds_alternate|TreVeyon Henderson|Over|59.5|7.3
+player_rush_yds_alternate|TreVeyon Henderson|Over|69.5|9.8
+player_rush_yds_alternate|TreVeyon Henderson|Over|79.5|13.6
+player_rush_yds_alternate|TreVeyon Henderson|Over|89.5|18.0
+player_rush_yds_alternate|Caleb Williams|Over|4.5|1.07
+player_rush_yds_alternate|Caleb Williams|Over|9.5|1.24
+player_rush_yds_alternate|Caleb Williams|Over|14.5|1.49
+player_rush_yds_alternate|Caleb Williams|Over|19.5|1.88
+player_rush_yds_alternate|Caleb Williams|Over|24.5|2.42
+player_rush_yds_alternate|Caleb Williams|Over|29.5|3.2
+player_rush_yds_alternate|Caleb Williams|Over|39.5|5.7
+player_rush_yds_alternate|Caleb Williams|Over|49.5|9.8
+player_rush_yds_alternate|Caleb Williams|Over|59.5|16.0
+player_rush_yds_alternate|Roschon Johnson|Over|9.5|1.12
+player_rush_yds_alternate|Roschon Johnson|Over|14.5|1.26
+player_rush_yds_alternate|Roschon Johnson|Over|19.5|1.45
+player_rush_yds_alternate|Roschon Johnson|Over|24.5|1.74
+player_rush_yds_alternate|Roschon Johnson|Over|29.5|2.12
+player_rush_yds_alternate|Roschon Johnson|Over|39.5|3.1
+player_rush_yds_alternate|Roschon Johnson|Over|49.5|4.7
+player_rush_yds_alternate|Roschon Johnson|Over|59.5|7.3
+player_rush_yds_alternate|Roschon Johnson|Over|69.5|9.8
+player_rush_yds_alternate|Roschon Johnson|Over|79.5|13.8
+player_rush_yds_alternate|Corey Kiner|Over|4.5|1.2
+player_rush_yds_alternate|Corey Kiner|Over|9.5|1.45
+player_rush_yds_alternate|Corey Kiner|Over|14.5|1.88
+player_rush_yds_alternate|Corey Kiner|Over|19.5|2.46
+player_rush_yds_alternate|Corey Kiner|Over|24.5|3.2
+player_rush_yds_alternate|Corey Kiner|Over|29.5|4.1
+player_rush_yds_alternate|Corey Kiner|Over|39.5|6.8
+player_rush_yds_alternate|Corey Kiner|Over|49.5|10.2
+player_rush_yds_alternate|Drake Maye|Over|9.5|1.09
+player_rush_yds_alternate|Drake Maye|Over|14.5|1.22
+player_rush_yds_alternate|Drake Maye|Over|19.5|1.41
+player_rush_yds_alternate|Drake Maye|Over|24.5|1.66
+player_rush_yds_alternate|Drake Maye|Over|29.5|2.04
+player_rush_yds_alternate|Drake Maye|Over|39.5|3.2
+player_rush_yds_alternate|Drake Maye|Over|49.5|5.0
+player_rush_yds_alternate|Drake Maye|Over|59.5|7.8
+player_rush_yds_alternate|Drake Maye|Over|69.5|12.0
+player_rush_yds_alternate|Drake Maye|Over|79.5|16.0
+player_rush_yds_alternate|Rhamondre Stevenson|Over|14.5|1.06
+player_rush_yds_alternate|Rhamondre Stevenson|Over|19.5|1.13
+player_rush_yds_alternate|Rhamondre Stevenson|Over|24.5|1.24
+player_rush_yds_alternate|Rhamondre Stevenson|Over|29.5|1.37
+player_rush_yds_alternate|Rhamondre Stevenson|Over|39.5|1.77
+player_rush_yds_alternate|Rhamondre Stevenson|Over|49.5|2.42
+player_rush_yds_alternate|Rhamondre Stevenson|Over|59.5|3.3
+player_rush_yds_alternate|Rhamondre Stevenson|Over|69.5|4.7
+player_rush_yds_alternate|Rhamondre Stevenson|Over|79.5|6.8
+player_rush_yds_alternate|Rhamondre Stevenson|Over|89.5|9.0
+player_rush_yds_alternate|Rhamondre Stevenson|Over|99.5|12.0
+player_rush_yds_alternate|Rhamondre Stevenson|Over|109.5|16.0
+player_rush_yds_alternate|D'Andre Swift|Over|29.5|1.08
+player_rush_yds_alternate|D'Andre Swift|Over|39.5|1.23
+player_rush_yds_alternate|D'Andre Swift|Over|49.5|1.44
+player_rush_yds_alternate|D'Andre Swift|Over|59.5|1.82
+player_rush_yds_alternate|D'Andre Swift|Over|69.5|2.38
+player_rush_yds_alternate|D'Andre Swift|Over|79.5|3.1
+player_rush_yds_alternate|D'Andre Swift|Over|89.5|4.1
+player_rush_yds_alternate|D'Andre Swift|Over|99.5|5.5
+player_rush_yds_alternate|D'Andre Swift|Over|109.5|7.8
+player_rush_yds_alternate|D'Andre Swift|Over|124.5|12.0

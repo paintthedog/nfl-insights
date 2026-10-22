@@ -1,0 +1,56 @@
+player_anytime_td|D'Andre Swift|Yes||1.61
+player_anytime_td|Rhamondre Stevenson|Yes||1.91
+player_anytime_td|A.J. Brown|Yes||2.4
+player_anytime_td|Rome Odunze|Yes||2.7
+player_anytime_td|Colston Loveland|Yes||2.75
+player_anytime_td|Luther Burden III|Yes||2.8
+player_anytime_td|Hunter Henry|Yes||3.3
+player_anytime_td|Roschon Johnson|Yes||3.45
+player_anytime_td|DeMario Douglas|Yes||4.0
+player_anytime_td|TreVeyon Henderson|Yes||4.3
+player_anytime_td|Drake Maye|Yes||4.4
+player_anytime_td|Caleb Williams|Yes||4.7
+player_anytime_td|Kalif Raymond|Yes||4.8
+player_anytime_td|Efton Chism III|Yes||5.75
+player_anytime_td|Eli Raridon|Yes||6.0
+player_anytime_td|Cole Kmet|Yes||6.5
+player_anytime_td|Chicago Bears D/ST|Yes||7.0
+player_anytime_td|New England Patriots D/ST|Yes||7.0
+player_anytime_td|Kyle Williams|Yes||7.0
+player_anytime_td|Corey Kiner|Yes||7.0
+player_anytime_td|Sam Roush|Yes||11.0
+player_anytime_td|Jahdae Walker|Yes||15.0
+player_anytime_td|Zavion Thomas|Yes||16.0
+player_anytime_td|Cameron Latu|Yes||23.0
+player_anytime_td|Tanner Arkin|Yes||23.0
+player_anytime_td|Zavier Scott|Yes||23.0
+player_receptions|A.J. Brown|Over|5.5|2.05
+player_receptions|A.J. Brown|Under|5.5|1.75
+player_receptions|Luther Burden III|Over|4.5|1.69
+player_receptions|Luther Burden III|Under|4.5|2.13
+player_receptions|Colston Loveland|Over|3.5|1.62
+player_receptions|Colston Loveland|Under|3.5|2.25
+player_receptions|DeMario Douglas|Over|3.5|2.07
+player_receptions|DeMario Douglas|Under|3.5|1.73
+player_receptions|Rome Odunze|Over|3.5|2.19
+player_receptions|Rome Odunze|Under|3.5|1.66
+player_receptions|Hunter Henry|Over|3.5|2.34
+player_receptions|Hunter Henry|Under|3.5|1.58
+player_receptions|D'Andre Swift|Over|2.5|1.76
+player_receptions|D'Andre Swift|Under|2.5|2.02
+player_receptions|Rhamondre Stevenson|Over|2.5|1.8
+player_receptions|Rhamondre Stevenson|Under|2.5|1.98
+player_receptions|Kalif Raymond|Over|2.5|1.85
+player_receptions|Kalif Raymond|Under|2.5|1.93
+player_receptions|Efton Chism III|Over|1.5|1.73
+player_receptions|Efton Chism III|Under|1.5|2.08
+player_receptions|Eli Raridon|Over|1.5|2.2
+player_receptions|Eli Raridon|Under|1.5|1.65
+player_receptions|Roschon Johnson|Over|1.5|2.22
+player_receptions|Roschon Johnson|Under|1.5|1.64
+player_receptions|Kyle Williams|Over|1.5|2.38
+player_receptions|Kyle Williams|Under|1.5|1.56
+player_receptions|Cole Kmet|Over|1.5|2.68
+player_receptions|Cole Kmet|Under|1.5|1.46
+player_receptions|TreVeyon Henderson|Over|0.5|1.51
+player_receptions|TreVeyon Henderson|Under|0.5|2.53
