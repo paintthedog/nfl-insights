@@ -1,3 +1,5 @@
 tracker/dl/
 tracker/out/
 __pycache__/
+pipeline/daily.log
+pipeline/refresh.log
