@@ -1,0 +1,51 @@
+player_anytime_td|Woody Marks|Yes||1.8
+player_anytime_td|Nico Collins|Yes||2.25
+player_anytime_td|Malik Nabers|Yes||3.35
+player_anytime_td|Marvin Harrison Jr.|Yes||3.5
+player_anytime_td|Dalton Schultz|Yes||3.5
+player_anytime_td|Isaiah Likely|Yes||3.55
+player_anytime_td|Foster Moreau|Yes||4.0
+player_anytime_td|Cam Skattebo|Yes||4.3
+player_anytime_td|Tyrone Tracy Jr.|Yes||4.6
+player_anytime_td|Houston Texans D/ST|Yes||5.0
+player_anytime_td|Jaylin Noel|Yes||5.25
+player_anytime_td|Dare Ogunbowale|Yes||5.75
+player_anytime_td|New York Giants D/ST|Yes||6.0
+player_anytime_td|C.J. Stroud|Yes||6.0
+player_anytime_td|Xavier Hutchinson|Yes||7.0
+player_anytime_td|J.J. McCarthy|Yes||7.0
+player_anytime_td|Devin Singletary|Yes||7.5
+player_anytime_td|Kayshon Boutte|Yes||8.0
+player_anytime_td|Malachi Fields|Yes||8.0
+player_anytime_td|Darnell Mooney|Yes||8.0
+player_anytime_td|Cade Stover|Yes||8.5
+player_anytime_td|Tank Dell|Yes||9.0
+player_anytime_td|Theo Johnson|Yes||9.0
+player_anytime_td|Brevin Jordan|Yes||10.5
+player_anytime_td|Charlie Jones|Yes||16.0
+player_anytime_td|Marlin Klein|Yes||17.0
+player_anytime_td|Chris Manhertz|Yes||23.0
+player_anytime_td|Thomas Fidone|Yes||29.0
+player_anytime_td|Patrick Ricard|Yes||36.0
+player_receptions|Malik Nabers|Over|5.5|1.78
+player_receptions|Malik Nabers|Under|5.5|2.0
+player_receptions|Isaiah Likely|Over|5.5|1.93
+player_receptions|Isaiah Likely|Under|5.5|1.84
+player_receptions|Nico Collins|Over|4.5|1.7
+player_receptions|Nico Collins|Under|4.5|2.12
+player_receptions|Marvin Harrison Jr.|Over|2.5|1.81
+player_receptions|Marvin Harrison Jr.|Under|2.5|1.98
+player_receptions|Jaylin Noel|Over|2.5|1.98
+player_receptions|Jaylin Noel|Under|2.5|1.8
+player_receptions|Malachi Fields|Over|1.5|1.57
+player_receptions|Malachi Fields|Under|1.5|2.36
+player_receptions|Tyrone Tracy Jr.|Over|1.5|1.93
+player_receptions|Tyrone Tracy Jr.|Under|1.5|1.85
+player_receptions|Devin Singletary|Over|1.5|2.09
+player_receptions|Devin Singletary|Under|1.5|1.72
+player_receptions|Kayshon Boutte|Over|1.5|2.35
+player_receptions|Kayshon Boutte|Under|1.5|1.58
+player_receptions|Tank Dell|Over|1.5|2.64
+player_receptions|Tank Dell|Under|1.5|1.47
+player_receptions|Xavier Hutchinson|Over|1.5|2.66
+player_receptions|Xavier Hutchinson|Under|1.5|1.47

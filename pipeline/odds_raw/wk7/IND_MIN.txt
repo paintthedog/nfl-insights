@@ -1,0 +1,34 @@
+player_anytime_td|Jonathan Taylor|Yes||1.87
+player_anytime_td|Aaron Jones|Yes||1.91
+player_anytime_td|Justin Jefferson|Yes||2.6
+player_anytime_td|Jordan Addison|Yes||3.7
+player_anytime_td|T.J. Hockenson|Yes||3.8
+player_anytime_td|Tyler Warren|Yes||3.8
+player_anytime_td|Kyler Murray|Yes||4.4
+player_anytime_td|Josh Downs|Yes||4.5
+player_anytime_td|Keenan Allen|Yes||4.6
+player_anytime_td|Minnesota Vikings D/ST|Yes||5.75
+player_anytime_td|Jauan Jennings|Yes||6.0
+player_anytime_td|Indianapolis Colts D/ST|Yes||7.0
+player_anytime_td|Laquon Treadwell|Yes||7.5
+player_anytime_td|Daniel Jones|Yes||8.0
+player_anytime_td|Mo Alie-Cox|Yes||8.0
+player_anytime_td|Will Mallory|Yes||9.0
+player_anytime_td|Drew Ogletree|Yes||9.5
+player_anytime_td|Myles Price|Yes||11.0
+player_anytime_td|Tai Felton|Yes||12.0
+player_anytime_td|Gavin Bartholomew|Yes||12.0
+player_anytime_td|Ben Yurosek|Yes||12.0
+player_anytime_td|Ashton Dulin|Yes||12.0
+player_anytime_td|Deion Burks|Yes||13.0
+player_anytime_td|Seth McGowan|Yes||14.0
+player_anytime_td|DJ Giddens|Yes||26.0
+player_anytime_td|Anthony Gould|Yes||41.0
+player_receptions|Justin Jefferson|Over|5.5|1.71
+player_receptions|Justin Jefferson|Under|5.5|2.11
+player_receptions|T.J. Hockenson|Over|4.5|2.13
+player_receptions|T.J. Hockenson|Under|4.5|1.69
+player_receptions|Jordan Addison|Over|3.5|2.03
+player_receptions|Jordan Addison|Under|3.5|1.76
+player_receptions|Jonathan Taylor|Over|2.5|2.11
+player_receptions|Jonathan Taylor|Under|2.5|1.71

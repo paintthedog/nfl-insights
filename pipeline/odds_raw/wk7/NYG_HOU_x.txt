@@ -4,3 +4,130 @@ game_spreads|Houston Texans||-10.5|1.93
 game_spreads|New York Giants||10.5|1.89
 game_totals|Over|Over|42.5|1.85
 game_totals|Under|Under|42.5|1.98
+player_receptions_alternate|Malik Nabers|Over|2.5|1.04
+player_receptions_alternate|Malik Nabers|Over|3.5|1.15
+player_receptions_alternate|Malik Nabers|Over|4.5|1.37
+player_receptions_alternate|Malik Nabers|Over|5.5|1.76
+player_receptions_alternate|Malik Nabers|Over|6.5|2.4
+player_receptions_alternate|Malik Nabers|Over|7.5|3.49
+player_receptions_alternate|Malik Nabers|Over|8.5|5.4
+player_receptions_alternate|Malik Nabers|Over|9.5|8.7
+player_receptions_alternate|Malik Nabers|Over|10.5|14.0
+player_receptions_alternate|Malik Nabers|Over|11.5|22.0
+player_receptions_alternate|Isaiah Likely|Over|2.5|1.06
+player_receptions_alternate|Isaiah Likely|Over|3.5|1.2
+player_receptions_alternate|Isaiah Likely|Over|4.5|1.45
+player_receptions_alternate|Isaiah Likely|Over|5.5|1.91
+player_receptions_alternate|Isaiah Likely|Over|6.5|2.69
+player_receptions_alternate|Isaiah Likely|Over|7.5|4.09
+player_receptions_alternate|Isaiah Likely|Over|8.5|6.56
+player_receptions_alternate|Isaiah Likely|Over|9.5|10.6
+player_receptions_alternate|Isaiah Likely|Over|10.5|16.8
+player_receptions_alternate|Isaiah Likely|Over|11.5|25.0
+player_receptions_alternate|Nico Collins|Over|2.5|1.11
+player_receptions_alternate|Nico Collins|Over|3.5|1.3
+player_receptions_alternate|Nico Collins|Over|4.5|1.69
+player_receptions_alternate|Nico Collins|Over|5.5|2.4
+player_receptions_alternate|Nico Collins|Over|6.5|3.72
+player_receptions_alternate|Nico Collins|Over|7.5|6.06
+player_receptions_alternate|Nico Collins|Over|8.5|10.4
+player_receptions_alternate|Nico Collins|Over|9.5|17.8
+player_receptions_alternate|Nico Collins|Over|10.5|27.0
+player_receptions_alternate|Marvin Harrison Jr.|Over|1.5|1.26
+player_receptions_alternate|Marvin Harrison Jr.|Over|2.5|1.79
+player_receptions_alternate|Marvin Harrison Jr.|Over|3.5|2.96
+player_receptions_alternate|Marvin Harrison Jr.|Over|4.5|5.38
+player_receptions_alternate|Marvin Harrison Jr.|Over|5.5|11.2
+player_receptions_alternate|Marvin Harrison Jr.|Over|6.5|21.0
+player_receptions_alternate|Jaylin Noel|Over|1.5|1.33
+player_receptions_alternate|Jaylin Noel|Over|2.5|1.98
+player_receptions_alternate|Jaylin Noel|Over|3.5|3.54
+player_receptions_alternate|Jaylin Noel|Over|4.5|7.0
+player_receptions_alternate|Jaylin Noel|Over|5.5|14.0
+player_receptions_alternate|Jaylin Noel|Over|6.5|25.0
+player_receptions_alternate|Malachi Fields|Over|1.5|1.57
+player_receptions_alternate|Malachi Fields|Over|2.5|2.68
+player_receptions_alternate|Malachi Fields|Over|3.5|5.22
+player_receptions_alternate|Malachi Fields|Over|4.5|11.0
+player_receptions_alternate|Malachi Fields|Over|5.5|22.0
+player_receptions_alternate|Tyrone Tracy Jr.|Over|1.5|1.92
+player_receptions_alternate|Tyrone Tracy Jr.|Over|2.5|3.75
+player_receptions_alternate|Tyrone Tracy Jr.|Over|3.5|8.3
+player_receptions_alternate|Tyrone Tracy Jr.|Over|4.5|18.4
+player_receptions_alternate|Devin Singletary|Over|1.5|2.08
+player_receptions_alternate|Devin Singletary|Over|2.5|4.38
+player_receptions_alternate|Devin Singletary|Over|3.5|10.7
+player_receptions_alternate|Devin Singletary|Over|4.5|23.0
+player_receptions_alternate|Kayshon Boutte|Over|1.5|2.34
+player_receptions_alternate|Kayshon Boutte|Over|2.5|5.44
+player_receptions_alternate|Kayshon Boutte|Over|3.5|13.4
+player_receptions_alternate|Kayshon Boutte|Over|4.5|27.0
+player_receptions_alternate|Tank Dell|Over|1.5|2.64
+player_receptions_alternate|Tank Dell|Over|2.5|6.39
+player_receptions_alternate|Tank Dell|Over|3.5|15.4
+player_receptions_alternate|Xavier Hutchinson|Over|1.5|2.67
+player_receptions_alternate|Xavier Hutchinson|Over|2.5|6.53
+player_receptions_alternate|Xavier Hutchinson|Over|3.5|17.0
+player_rush_yds_alternate|Woody Marks|Over|19.5|1.04
+player_rush_yds_alternate|Woody Marks|Over|24.5|1.08
+player_rush_yds_alternate|Woody Marks|Over|29.5|1.14
+player_rush_yds_alternate|Woody Marks|Over|39.5|1.32
+player_rush_yds_alternate|Woody Marks|Over|49.5|1.6
+player_rush_yds_alternate|Woody Marks|Over|56.5|1.89
+player_rush_yds_alternate|Woody Marks|Over|59.5|2.04
+player_rush_yds_alternate|Woody Marks|Over|69.5|2.66
+player_rush_yds_alternate|Woody Marks|Over|79.5|3.63
+player_rush_yds_alternate|Woody Marks|Over|89.5|4.99
+player_rush_yds_alternate|Woody Marks|Over|99.5|7.1
+player_rush_yds_alternate|Woody Marks|Over|109.5|10.2
+player_rush_yds_alternate|Woody Marks|Over|119.5|14.2
+player_rush_yds_alternate|Woody Marks|Over|129.5|20.4
+player_rush_yds_alternate|Woody Marks|Over|139.5|28.0
+player_rush_yds_alternate|Woody Marks|Over|149.5|38.0
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|9.5|1.29
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|14.5|1.45
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|19.5|1.66
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|23.5|1.89
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|24.5|1.97
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|29.5|2.33
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|39.5|3.4
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|49.5|4.97
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|59.5|7.3
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|69.5|10.5
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|79.5|14.4
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|89.5|19.8
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|99.5|25.0
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|109.5|32.0
+player_rush_yds_alternate|Tyrone Tracy Jr.|Over|119.5|40.0
+player_rush_yds_alternate|Cam Skattebo|Over|9.5|1.05
+player_rush_yds_alternate|Cam Skattebo|Over|14.5|1.14
+player_rush_yds_alternate|Cam Skattebo|Over|19.5|1.27
+player_rush_yds_alternate|Cam Skattebo|Over|24.5|1.47
+player_rush_yds_alternate|Cam Skattebo|Over|29.5|1.74
+player_rush_yds_alternate|Cam Skattebo|Over|31.5|1.87
+player_rush_yds_alternate|Cam Skattebo|Over|39.5|2.6
+player_rush_yds_alternate|Cam Skattebo|Over|49.5|4.02
+player_rush_yds_alternate|Cam Skattebo|Over|59.5|6.4
+player_rush_yds_alternate|Cam Skattebo|Over|69.5|10.0
+player_rush_yds_alternate|Cam Skattebo|Over|79.5|15.2
+player_rush_yds_alternate|Cam Skattebo|Over|89.5|22.0
+player_rush_yds_alternate|Cam Skattebo|Over|99.5|33.0
+player_rush_yds_alternate|J.J. McCarthy|Over|9.5|1.2
+player_rush_yds_alternate|J.J. McCarthy|Over|14.5|1.38
+player_rush_yds_alternate|J.J. McCarthy|Over|19.5|1.62
+player_rush_yds_alternate|J.J. McCarthy|Over|23.5|1.87
+player_rush_yds_alternate|J.J. McCarthy|Over|24.5|1.94
+player_rush_yds_alternate|J.J. McCarthy|Over|29.5|2.39
+player_rush_yds_alternate|J.J. McCarthy|Over|39.5|3.85
+player_rush_yds_alternate|J.J. McCarthy|Over|49.5|6.38
+player_rush_yds_alternate|J.J. McCarthy|Over|59.5|11.0
+player_rush_yds_alternate|J.J. McCarthy|Over|69.5|19.4
+player_rush_yds_alternate|J.J. McCarthy|Over|79.5|30.0
+player_rush_yds_alternate|C.J. Stroud|Over|9.5|1.9
+player_rush_yds_alternate|C.J. Stroud|Over|14.5|2.44
+player_rush_yds_alternate|C.J. Stroud|Over|19.5|3.15
+player_rush_yds_alternate|C.J. Stroud|Over|24.5|4.22
+player_rush_yds_alternate|C.J. Stroud|Over|29.5|5.66
+player_rush_yds_alternate|C.J. Stroud|Over|39.5|11.0
+player_rush_yds_alternate|C.J. Stroud|Over|49.5|20.6
+player_rush_yds_alternate|C.J. Stroud|Over|59.5|34.0
