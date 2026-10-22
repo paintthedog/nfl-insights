@@ -1,0 +1,44 @@
+player_anytime_td|Kenneth Walker III|Yes||1.8
+player_anytime_td|Zach Charbonnet|Yes||2.1
+player_anytime_td|Emanuel Wilson|Yes||2.2
+player_anytime_td|Jaxon Smith-Njigba|Yes||2.25
+player_anytime_td|Xavier Worthy|Yes||3.2
+player_anytime_td|Rashee Rice|Yes||3.25
+player_anytime_td|Travis Kelce|Yes||3.3
+player_anytime_td|AJ Barner|Yes||3.95
+player_anytime_td|Rashid Shaheed|Yes||4.5
+player_anytime_td|Cooper Kupp|Yes||4.9
+player_anytime_td|Jalen Royals|Yes||5.0
+player_anytime_td|Seattle Seahawks D/ST|Yes||6.5
+player_anytime_td|Kansas City Chiefs D/ST|Yes||6.5
+player_anytime_td|George Holani|Yes||6.5
+player_anytime_td|Patrick Mahomes|Yes||6.5
+player_anytime_td|Noah Gray|Yes||7.5
+player_anytime_td|Sam Darnold|Yes||8.0
+player_anytime_td|Tory Horton|Yes||8.0
+player_anytime_td|Cyrus Allen|Yes||11.0
+player_anytime_td|Emmett Johnson|Yes||12.0
+player_anytime_td|Eric Saubert|Yes||14.0
+player_anytime_td|Jared Wiley|Yes||17.0
+player_anytime_td|Brashard Smith|Yes||19.0
+player_anytime_td|Jake Briningstool|Yes||20.0
+player_anytime_td|Nick Kallerup|Yes||26.0
+player_anytime_td|Nikko Remigio|Yes||29.0
+player_anytime_td|Montorie Foster Jr.|Yes||36.0
+player_anytime_td|Ben VanSumeren|Yes||71.0
+player_receptions|Jaxon Smith-Njigba|Over|6.5|1.75
+player_receptions|Jaxon Smith-Njigba|Under|6.5|2.04
+player_receptions|Travis Kelce|Over|4.5|2.13
+player_receptions|Travis Kelce|Under|4.5|1.69
+player_receptions|Kenneth Walker III|Over|3.5|2.27
+player_receptions|Kenneth Walker III|Under|3.5|1.62
+player_receptions|AJ Barner|Over|2.5|1.72
+player_receptions|AJ Barner|Under|2.5|2.08
+player_receptions|Cooper Kupp|Over|2.5|1.98
+player_receptions|Cooper Kupp|Under|2.5|1.8
+player_receptions|Rashid Shaheed|Over|2.5|2.05
+player_receptions|Rashid Shaheed|Under|2.5|1.75
+player_receptions|Noah Gray|Over|1.5|1.64
+player_receptions|Noah Gray|Under|1.5|2.22
+player_receptions|Tory Horton|Over|1.5|2.26
+player_receptions|Tory Horton|Under|1.5|1.62

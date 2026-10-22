@@ -83,3 +83,2058 @@ week,game_id,market,subject,side,point,price,pulled_at
 7,2026_07_TB_CAR,game_spreads,TB,,3.0,1.91,2026-10-22T11:18Z
 7,2026_07_TB_CAR,game_totals,Over,Over,44.5,1.91,2026-10-22T11:18Z
 7,2026_07_TB_CAR,game_totals,Under,Under,44.5,1.91,2026-10-22T11:18Z
+7,2026_07_CIN_BAL,game_h2h,BAL,ML,,1.96,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,game_h2h,CIN,ML,,1.89,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,game_spreads,BAL,,1.5,1.83,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,game_spreads,CIN,,-1.5,1.98,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,game_totals,Over,Over,48.5,1.91,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,game_totals,Under,Under,48.5,1.91,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Derrick Henry,Yes,,1.45,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Chase Brown,Yes,,1.87,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Ja'Marr Chase,Yes,,2.05,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Tee Higgins,Yes,,2.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Zay Flowers,Yes,,2.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Mark Andrews,Yes,,3.3,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Samaje Perine,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Rashod Bateman,Yes,,4.2,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Ja'Kobi Lane,Yes,,4.2,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Mike Gesicki,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Dohnte Meyers,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Justice Hill,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Joe Burrow,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Devontez Walker,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Cincinnati Bengals Defense,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Mitchell Tinsley,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Matthew Hibner,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Josh Cuevas,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Nick Vannett,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Jack Endries,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Erick All,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Baltimore Ravens Defense,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Drew Sample,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Colbie Young,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,LaJohntay Wester,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Tahj Brooks,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_anytime_td,Rasheen Ali,Yes,,46.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Mike Gesicki,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Mike Gesicki,Under,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Tee Higgins,Over,5.5,2.4,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Tee Higgins,Under,5.5,1.53,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Samaje Perine,Over,1.5,1.65,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Samaje Perine,Under,1.5,2.16,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Chase Brown,Over,3.5,1.88,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Chase Brown,Under,3.5,1.88,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Ja'Marr Chase,Over,6.5,1.58,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Ja'Marr Chase,Under,6.5,2.28,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Dohnte Meyers,Over,2.5,2.12,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions,Dohnte Meyers,Under,2.5,1.68,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,1.5,1.37,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,2.5,2.1,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,3.5,3.7,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,4.5,6.8,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Dohnte Meyers,Over,5.5,13.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,1.5,1.29,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,3.5,3.1,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,4.5,5.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,5.5,9.8,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Mike Gesicki,Over,6.5,16.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,2.5,1.4,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,4.5,2.98,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,5.5,4.9,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,6.5,7.8,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Chase Brown,Over,7.5,13.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Samaje Perine,Over,0.5,1.15,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Samaje Perine,Over,1.5,1.68,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Samaje Perine,Over,2.5,3.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Samaje Perine,Over,3.5,5.9,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,4.5,1.14,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,5.5,1.31,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,6.5,1.58,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,7.5,2.08,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,8.5,2.82,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,9.5,3.9,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,10.5,5.7,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,11.5,8.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,12.5,12.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Ja'Marr Chase,Over,13.5,16.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,2.5,1.1,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,3.5,1.3,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,5.5,2.4,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,6.5,3.6,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,7.5,5.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,8.5,8.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_receptions_alternate,Tee Higgins,Over,9.5,13.6,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Joe Burrow,Over,4.5,1.62,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Joe Burrow,Over,9.5,2.4,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Joe Burrow,Over,14.5,3.65,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Joe Burrow,Over,19.5,5.3,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Joe Burrow,Over,24.5,8.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,49.5,1.14,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,59.5,1.25,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,69.5,1.42,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,79.5,1.68,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,89.5,2.02,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,99.5,2.52,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,109.5,3.1,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,124.5,4.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,149.5,8.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Derrick Henry,Over,174.5,13.8,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,4.5,1.07,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,9.5,1.24,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,14.5,1.45,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,19.5,1.78,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,24.5,2.24,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,29.5,2.82,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,39.5,4.6,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,49.5,7.3,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Samaje Perine,Over,59.5,10.2,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,19.5,1.06,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,24.5,1.12,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,29.5,1.2,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,39.5,1.43,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,49.5,1.82,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,59.5,2.4,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,69.5,3.25,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,79.5,4.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,89.5,6.2,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,99.5,8.5,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,109.5,11.0,2026-10-22T12:45Z
+7,2026_07_CIN_BAL,player_rush_yds_alternate,Chase Brown,Over,124.5,16.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_h2h,CLE,ML,,1.81,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_h2h,TEN,ML,,2.06,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_spreads,CLE,,-1.5,1.89,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_spreads,TEN,,1.5,1.93,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_totals,Over,Over,37.5,1.95,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,game_totals,Under,Under,37.5,1.87,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Tony Pollard,Yes,,2.3,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Denzel Boston,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Harold Fannin Jr.,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,KC Concepcion,Yes,,3.7,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Carnell Tate,Yes,,4.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Wan'Dale Robinson,Yes,,4.3,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Deshaun Watson,Yes,,5.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Jerry Jeudy,Yes,,5.7,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Cam Ward,Yes,,5.9,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Gunnar Helm,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Nicholas Singleton,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Tyjae Spears,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Cleveland Browns Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Tennessee Titans Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Elic Ayomanor,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Calvin Ridley,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Blake Whiteheart,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Chimere Dike,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Daniel Bellinger,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Isaiah Bond,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Malachi Corley,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Tylan Wallace,Yes,,19.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Michael Burton,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Michael Carter,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Julius Chestnut,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,David Martin-Robinson,Yes,,34.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Kylen Granson,Yes,,34.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_anytime_td,Carsen Ryan,Yes,,46.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Denzel Boston,Over,3.5,2.12,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Denzel Boston,Under,3.5,1.68,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Jerry Jeudy,Over,1.5,1.49,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Jerry Jeudy,Under,1.5,2.52,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Harold Fannin Jr.,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Harold Fannin Jr.,Under,3.5,1.77,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Carnell Tate,Over,4.5,1.98,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Carnell Tate,Under,4.5,1.77,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Wan'Dale Robinson,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Wan'Dale Robinson,Under,4.5,1.6,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,KC Concepcion,Over,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,KC Concepcion,Under,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Elic Ayomanor,Over,1.5,2.58,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Elic Ayomanor,Under,1.5,1.47,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Gunnar Helm,Over,2.5,2.28,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions,Gunnar Helm,Under,2.5,1.58,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,1.5,1.11,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,2.5,1.38,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,4.5,3.05,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,5.5,5.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,6.5,8.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Harold Fannin Jr.,Over,7.5,13.6,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,1.5,1.06,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,2.5,1.23,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,5.5,3.35,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,6.5,5.3,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,7.5,8.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Wan'Dale Robinson,Over,8.5,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Jerry Jeudy,Over,0.5,1.09,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Jerry Jeudy,Over,1.5,1.49,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Jerry Jeudy,Over,2.5,2.54,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Jerry Jeudy,Over,3.5,4.7,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Jerry Jeudy,Over,4.5,9.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,2.5,1.43,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,3.5,2.1,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,4.5,3.4,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,5.5,6.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,6.5,10.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Denzel Boston,Over,7.5,18.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,2.5,1.15,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,3.5,1.4,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,5.5,2.74,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,6.5,4.1,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,7.5,6.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,8.5,10.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,KC Concepcion,Over,9.5,16.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,2.5,1.17,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,3.5,1.43,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,4.5,1.98,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,5.5,2.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,6.5,4.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,7.5,7.3,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,8.5,11.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Carnell Tate,Over,9.5,16.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,0.5,1.07,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,1.5,1.42,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,2.5,2.24,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,3.5,4.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,4.5,7.4,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Gunnar Helm,Over,5.5,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Elic Ayomanor,Over,0.5,1.32,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Elic Ayomanor,Over,1.5,2.58,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_receptions_alternate,Elic Ayomanor,Over,2.5,5.9,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,4.5,1.36,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,9.5,1.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,14.5,2.72,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,19.5,3.9,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,24.5,5.7,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Cam Ward,Over,29.5,8.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,29.5,1.07,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,39.5,1.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,49.5,1.37,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,59.5,1.63,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,69.5,2.06,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,79.5,2.68,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,89.5,3.4,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,99.5,4.6,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,109.5,6.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,124.5,9.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Tony Pollard,Over,149.5,16.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,9.5,1.08,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,14.5,1.2,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,19.5,1.36,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,24.5,1.56,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,29.5,1.88,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,39.5,2.78,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,49.5,4.1,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,59.5,6.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,69.5,9.5,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,79.5,13.0,2026-10-22T12:45Z
+7,2026_07_CLE_TEN,player_rush_yds_alternate,Deshaun Watson,Over,89.5,18.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_h2h,DAL,ML,,1.48,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_h2h,PHI,ML,,2.76,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_spreads,DAL,,-4.5,1.91,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_spreads,PHI,,4.5,1.91,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_totals,Over,Over,44.5,1.91,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,game_totals,Under,Under,44.5,1.91,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Javonte Williams,Yes,,1.57,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Dameon Pierce,Yes,,2.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,CeeDee Lamb,Yes,,2.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,George Pickens,Yes,,2.6,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,DeVonta Smith,Yes,,2.7,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Dallas Goedert,Yes,,3.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Jake Ferguson,Yes,,3.7,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Ryan Flournoy,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Makai Lemon,Yes,,4.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Dontayvion Wicks,Yes,,4.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Dak Prescott,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Darius Cooper,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Tanner McKee,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Philadelphia Eagles Defense,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Brevyn Spann-Ford,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Dallas Cowboys Defense,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Johnny Mundt,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Jonathan Mingo,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Camden Brown,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Tyler Goodson,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Hunter Luepke,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Emari Demercado,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Luke Schoonmaker,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Elijah Moore,Yes,,14.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,Britain Covey,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_anytime_td,E.J. Jenkins,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Javonte Williams,Over,2.5,2.06,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Javonte Williams,Under,2.5,1.71,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,George Pickens,Over,4.5,1.65,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,George Pickens,Under,4.5,2.16,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Dallas Goedert,Over,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Dallas Goedert,Under,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Ryan Flournoy,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Ryan Flournoy,Under,3.5,1.77,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,CeeDee Lamb,Over,7.5,2.06,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,CeeDee Lamb,Under,7.5,1.71,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,DeVonta Smith,Over,6.5,1.93,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,DeVonta Smith,Under,6.5,1.82,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Jake Ferguson,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions,Jake Ferguson,Under,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Jake Ferguson,Over,1.5,1.28,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Jake Ferguson,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Jake Ferguson,Over,3.5,3.1,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Jake Ferguson,Over,4.5,5.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Jake Ferguson,Over,5.5,9.8,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,1.5,1.36,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,2.5,2.04,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,3.5,3.4,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,4.5,6.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Javonte Williams,Over,5.5,10.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,4.5,1.13,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,5.5,1.29,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,6.5,1.56,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,7.5,2.04,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,8.5,2.78,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,9.5,3.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,10.5,5.7,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,11.5,8.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,12.5,12.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,CeeDee Lamb,Over,13.5,18.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,2.5,1.1,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,3.5,1.29,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,4.5,1.65,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,5.5,2.38,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,6.5,3.55,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,7.5,5.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,8.5,8.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,George Pickens,Over,9.5,13.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,1.5,1.11,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,2.5,1.38,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,3.5,1.96,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,4.5,3.05,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,5.5,5.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,6.5,8.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Ryan Flournoy,Over,7.5,13.6,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,3.5,1.1,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,4.5,1.25,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,5.5,1.49,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,6.5,1.91,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,7.5,2.54,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,8.5,3.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,9.5,5.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,10.5,7.4,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,11.5,10.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,DeVonta Smith,Over,12.5,15.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,2.5,1.17,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,3.5,1.42,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,5.5,2.64,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,6.5,3.8,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,7.5,5.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,8.5,8.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_receptions_alternate,Dallas Goedert,Over,9.5,13.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,29.5,1.08,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,39.5,1.2,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,49.5,1.38,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,59.5,1.65,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,69.5,2.04,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,79.5,2.62,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,89.5,3.3,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,99.5,4.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,109.5,5.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,124.5,9.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Javonte Williams,Over,149.5,16.0,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,4.5,1.5,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,9.5,2.18,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,14.5,3.25,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,19.5,4.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,24.5,7.3,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Tanner McKee,Over,29.5,9.8,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,4.5,1.36,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,9.5,1.88,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,14.5,2.74,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,19.5,3.9,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,24.5,5.7,2026-10-22T12:45Z
+7,2026_07_DAL_PHI,player_rush_yds_alternate,Dak Prescott,Over,29.5,8.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_h2h,ARI,ML,,2.88,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_h2h,DEN,ML,,1.44,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_spreads,ARI,,4.5,1.91,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_spreads,DEN,,-4.5,1.91,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_totals,Over,Over,43.5,1.91,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,game_totals,Under,Under,43.5,1.91,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,J.K. Dobbins,Yes,,2.05,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Trey McBride,Yes,,2.35,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Tyler Allgeier,Yes,,2.6,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Jeremiyah Love,Yes,,2.6,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Jaylen Waddle,Yes,,2.85,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,RJ Harvey,Yes,,3.1,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Courtland Sutton,Yes,,3.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Michael Wilson,Yes,,3.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Bo Nix,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Kendrick Bourne,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Bam Knight,Yes,,5.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Evan Engram,Yes,,5.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Denver Broncos Defense,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Marvin Mims Jr.,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Troy Franklin,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Jalen Brooks,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Jacoby Brissett,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Elijah Higgins,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Adam Trautman,Yes,,9.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Arizona Cardinals Defense,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Nate Adkins,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Lil'Jordan Humphrey,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Shawn Bowman,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Teagan Quitoriano,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Reggie Virgil,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Adam Prentice,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Devin Duvernay,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Dallen Bentley,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_anytime_td,Simi Fehoko,Yes,,36.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Jaylen Waddle,Over,4.5,1.77,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Jaylen Waddle,Under,4.5,1.98,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Courtland Sutton,Over,3.5,2.32,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Courtland Sutton,Under,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Marvin Mims Jr.,Over,1.5,1.82,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Marvin Mims Jr.,Under,1.5,1.94,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Michael Wilson,Over,4.5,2.04,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Michael Wilson,Under,4.5,1.72,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Kendrick Bourne,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Kendrick Bourne,Under,3.5,1.77,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Troy Franklin,Over,1.5,1.72,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Troy Franklin,Under,1.5,2.04,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Elijah Higgins,Over,1.5,1.76,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Elijah Higgins,Under,1.5,2.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Trey McBride,Over,7.5,2.06,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Trey McBride,Under,7.5,1.71,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Evan Engram,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Evan Engram,Under,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Jalen Brooks,Over,1.5,1.76,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions,Jalen Brooks,Under,1.5,2.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Troy Franklin,Over,0.5,1.15,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Troy Franklin,Over,1.5,1.72,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Troy Franklin,Over,2.5,3.25,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Troy Franklin,Over,3.5,6.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,0.5,1.17,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,1.5,1.74,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,2.5,3.05,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,3.5,5.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,4.5,9.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Elijah Higgins,Over,5.5,16.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,1.5,1.11,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,2.5,1.38,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,3.5,1.98,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,4.5,3.1,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,5.5,5.1,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,6.5,9.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Kendrick Bourne,Over,7.5,13.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,1.5,1.29,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,2.5,1.88,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,3.5,3.1,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,4.5,5.3,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,5.5,9.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Evan Engram,Over,6.5,16.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Marvin Mims Jr.,Over,0.5,1.17,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Marvin Mims Jr.,Over,1.5,1.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Marvin Mims Jr.,Over,2.5,3.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Marvin Mims Jr.,Over,3.5,7.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,2.5,1.12,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,3.5,1.34,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,4.5,1.77,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,5.5,2.54,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,6.5,3.9,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,7.5,6.2,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,8.5,9.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jaylen Waddle,Over,9.5,15.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,2.5,1.17,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,3.5,1.47,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,4.5,2.04,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,5.5,3.05,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,6.5,4.9,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,7.5,7.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Michael Wilson,Over,8.5,13.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jalen Brooks,Over,0.5,1.15,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jalen Brooks,Over,1.5,1.76,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jalen Brooks,Over,2.5,3.25,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Jalen Brooks,Over,3.5,6.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,1.5,1.15,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,2.5,1.52,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,3.5,2.32,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,4.5,3.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,5.5,6.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,6.5,11.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Courtland Sutton,Over,7.5,18.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,4.5,1.14,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,5.5,1.31,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,6.5,1.57,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,7.5,2.02,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,8.5,2.78,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,9.5,3.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,10.5,5.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,11.5,7.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,12.5,11.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_receptions_alternate,Trey McBride,Over,13.5,16.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,19.5,1.08,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,24.5,1.15,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,29.5,1.24,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,39.5,1.44,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,49.5,1.77,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,59.5,2.26,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,69.5,2.88,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,79.5,3.8,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,89.5,4.9,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,99.5,6.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,109.5,8.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,J.K. Dobbins,Over,124.5,11.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,4.5,1.28,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,9.5,1.65,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,14.5,2.3,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,19.5,3.2,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,24.5,4.2,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,29.5,6.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Bo Nix,Over,39.5,12.0,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Jacoby Brissett,Over,4.5,1.6,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Jacoby Brissett,Over,9.5,2.4,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Jacoby Brissett,Over,14.5,3.65,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Jacoby Brissett,Over,19.5,5.5,2026-10-22T12:45Z
+7,2026_07_DEN_ARI,player_rush_yds_alternate,Jacoby Brissett,Over,24.5,8.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_h2h,DET,ML,,1.58,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_h2h,GB,ML,,2.42,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_spreads,DET,,-3.0,1.85,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_spreads,GB,,3.0,1.96,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_totals,Over,Over,52.5,1.83,2026-10-22T12:45Z
+7,2026_07_GB_DET,game_totals,Under,Under,52.5,1.98,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jahmyr Gibbs,Yes,,1.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Amon-Ra St. Brown,Yes,,1.71,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Josh Jacobs,Yes,,2.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Christian Watson,Yes,,2.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Matthew Golden,Yes,,2.55,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Sam LaPorta,Yes,,2.75,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jameson Williams,Yes,,2.85,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Tucker Kraft,Yes,,2.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Pierre Strong Jr.,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,MarShawn Lloyd,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Isaac TeSlaa,Yes,,4.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Savion Williams,Yes,,5.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Brock Wright,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Green Bay Packers Defense,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jordan Love,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Sione Vaki,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Detroit Lions Defense,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jared Goff,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Mark Redman,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jonnu Smith,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Bo Melton,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Tyler Conklin,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Josh Whyle,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,J. Michael Sturdivant,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jackson Meeks,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Tay Martin,Yes,,26.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_anytime_td,Jacob Saylors,Yes,,34.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Sam LaPorta,Over,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Sam LaPorta,Under,4.5,2.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Christian Watson,Over,4.5,1.93,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Christian Watson,Under,4.5,1.82,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Jahmyr Gibbs,Over,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Jahmyr Gibbs,Under,4.5,2.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Matthew Golden,Over,4.5,1.63,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Matthew Golden,Under,4.5,2.18,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Isaac TeSlaa,Over,1.5,1.69,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Isaac TeSlaa,Under,1.5,2.08,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Josh Jacobs,Over,1.5,1.83,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Josh Jacobs,Under,1.5,1.91,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Tucker Kraft,Over,4.5,1.98,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Tucker Kraft,Under,4.5,1.77,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Jameson Williams,Over,3.5,1.72,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Jameson Williams,Under,3.5,2.04,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Savion Williams,Over,2.5,2.16,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Savion Williams,Under,2.5,1.65,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Pierre Strong Jr.,Over,1.5,1.88,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Pierre Strong Jr.,Under,1.5,1.88,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Amon-Ra St. Brown,Over,7.5,2.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions,Amon-Ra St. Brown,Under,7.5,1.76,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Savion Williams,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Savion Williams,Over,1.5,1.37,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Savion Williams,Over,2.5,2.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Savion Williams,Over,3.5,3.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Savion Williams,Over,4.5,7.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Isaac TeSlaa,Over,0.5,1.14,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Isaac TeSlaa,Over,1.5,1.68,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Isaac TeSlaa,Over,2.5,3.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Isaac TeSlaa,Over,3.5,6.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,2.5,1.11,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,3.5,1.31,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,4.5,1.66,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,5.5,2.32,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,6.5,3.35,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,7.5,5.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,8.5,8.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Sam LaPorta,Over,9.5,12.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,4.5,1.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,5.5,1.29,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,6.5,1.54,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,7.5,2.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,8.5,2.68,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,9.5,3.7,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,10.5,5.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,11.5,7.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,12.5,10.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Amon-Ra St. Brown,Over,13.5,16.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,2.5,1.07,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,3.5,1.24,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,4.5,1.56,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,5.5,2.18,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,6.5,3.25,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,7.5,5.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,8.5,8.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Matthew Golden,Over,9.5,13.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,2.5,1.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,3.5,1.31,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,4.5,1.66,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,5.5,2.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,6.5,3.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,7.5,5.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,8.5,7.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,9.5,10.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jahmyr Gibbs,Over,10.5,16.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,2.5,1.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,3.5,1.36,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,4.5,1.83,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,5.5,2.74,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,6.5,4.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,7.5,7.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,8.5,10.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Christian Watson,Over,9.5,16.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,1.5,1.07,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,2.5,1.28,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,3.5,1.71,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,4.5,2.62,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,5.5,4.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,6.5,7.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Jameson Williams,Over,7.5,12.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,2.5,1.15,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,3.5,1.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,4.5,1.89,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,5.5,2.78,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,6.5,4.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,7.5,7.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,8.5,10.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Tucker Kraft,Over,9.5,16.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Pierre Strong Jr.,Over,0.5,1.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Pierre Strong Jr.,Over,1.5,1.88,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Pierre Strong Jr.,Over,2.5,3.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Pierre Strong Jr.,Over,3.5,6.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Josh Jacobs,Over,0.5,1.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Josh Jacobs,Over,1.5,1.83,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Josh Jacobs,Over,2.5,3.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Josh Jacobs,Over,3.5,5.7,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_receptions_alternate,Josh Jacobs,Over,4.5,10.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,49.5,1.08,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,59.5,1.17,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,69.5,1.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,79.5,1.48,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,89.5,1.74,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,99.5,2.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,109.5,2.58,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,124.5,3.7,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,149.5,6.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jahmyr Gibbs,Over,174.5,12.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,14.5,1.06,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,19.5,1.12,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,24.5,1.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,29.5,1.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,39.5,1.56,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,49.5,1.98,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,59.5,2.54,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,69.5,3.25,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,79.5,4.2,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,89.5,5.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,99.5,7.3,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,109.5,9.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Josh Jacobs,Over,124.5,13.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,4.5,1.41,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,9.5,2.02,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,14.5,2.88,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,19.5,4.1,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,24.5,5.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Sione Vaki,Over,29.5,7.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,4.5,1.26,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,9.5,1.6,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,14.5,2.08,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,19.5,2.72,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,24.5,3.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,29.5,4.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,39.5,6.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,MarShawn Lloyd,Over,49.5,9.8,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jared Goff,Over,4.5,2.88,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jared Goff,Over,9.5,4.7,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jared Goff,Over,14.5,8.0,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,4.5,1.5,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,9.5,2.18,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,14.5,3.25,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,19.5,4.9,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,24.5,7.4,2026-10-22T12:45Z
+7,2026_07_GB_DET,player_rush_yds_alternate,Jordan Love,Over,29.5,10.2,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_h2h,IND,ML,,3.4,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_h2h,MIN,ML,,1.34,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_spreads,IND,,6.5,1.87,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_spreads,MIN,,-6.5,1.95,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_totals,Over,Over,41.5,1.91,2026-10-22T12:45Z
+7,2026_07_IND_MIN,game_totals,Under,Under,41.5,1.91,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Jonathan Taylor,Yes,,1.87,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Aaron Jones,Yes,,2.05,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Justin Jefferson,Yes,,2.8,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Tyler Warren,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Jordan Addison,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,T.J. Hockenson,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Kyler Murray,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Josh Downs,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Keenan Allen,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Jauan Jennings,Yes,,5.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Mo Alie-Cox,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Minnesota Vikings Defense,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Laquon Treadwell,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Daniel Jones,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Indianapolis Colts Defense,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Will Mallory,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Drew Ogletree,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Tai Felton,Yes,,9.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Gavin Bartholomew,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Myles Price,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Deion Burks,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Ashton Dulin,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Ben Yurosek,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,Seth McGowan,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_anytime_td,DJ Giddens,Yes,,36.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Jonathan Taylor,Over,2.5,2.08,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Jonathan Taylor,Under,2.5,1.69,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,T.J. Hockenson,Over,4.5,2.1,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,T.J. Hockenson,Under,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Justin Jefferson,Over,5.5,1.76,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Justin Jefferson,Under,5.5,2.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Jordan Addison,Over,3.5,2.16,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions,Jordan Addison,Under,3.5,1.65,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,1.5,1.36,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,2.5,2.04,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,3.5,3.4,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,4.5,6.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jonathan Taylor,Over,5.5,10.2,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,2.5,1.2,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,3.5,1.49,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,4.5,2.08,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,5.5,3.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,6.5,4.7,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,7.5,7.4,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,8.5,11.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,T.J. Hockenson,Over,9.5,18.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,1.5,1.13,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,2.5,1.45,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,3.5,2.16,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,4.5,3.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,5.5,6.2,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,6.5,10.2,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Jordan Addison,Over,7.5,18.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,3.5,1.15,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,4.5,1.37,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,5.5,1.76,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,6.5,2.46,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,7.5,3.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,8.5,5.3,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,9.5,8.5,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_receptions_alternate,Justin Jefferson,Over,10.5,13.0,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,39.5,1.13,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,49.5,1.29,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,59.5,1.48,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,69.5,1.78,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,79.5,2.24,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,89.5,2.82,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,99.5,3.6,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,109.5,4.6,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,124.5,7.3,2026-10-22T12:45Z
+7,2026_07_IND_MIN,player_rush_yds_alternate,Jonathan Taylor,Over,149.5,13.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_h2h,KC,ML,,2.22,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_h2h,SEA,ML,,1.69,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_spreads,KC,,2.5,1.96,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_spreads,SEA,,-2.5,1.85,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_totals,Over,Over,42.5,1.89,2026-10-22T12:45Z
+7,2026_07_KC_SEA,game_totals,Under,Under,42.5,1.93,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Kenneth Walker III,Yes,,1.77,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Emanuel Wilson,Yes,,2.1,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Zach Charbonnet,Yes,,2.1,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Jaxon Smith-Njigba,Yes,,2.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Xavier Worthy,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Travis Kelce,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Rashee Rice,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,AJ Barner,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Rashid Shaheed,Yes,,4.4,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Cooper Kupp,Yes,,5.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Jalen Royals,Yes,,5.4,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,George Holani,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Patrick Mahomes,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Sam Darnold,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Noah Gray,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Seattle Seahawks Defense,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Tory Horton,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Cyrus Allen,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Kansas City Chiefs Defense,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Eric Saubert,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Emmett Johnson,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Brashard Smith,Yes,,18.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Jared Wiley,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Jake Briningstool,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Nick Kallerup,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Nikko Remigio,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Montorie Foster Jr.,Yes,,36.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_anytime_td,Ben VanSumeren,Yes,,61.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Cooper Kupp,Over,2.5,1.98,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Cooper Kupp,Under,2.5,1.77,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Jaxon Smith-Njigba,Over,6.5,1.65,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Jaxon Smith-Njigba,Under,6.5,2.16,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Tory Horton,Over,1.5,2.24,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Tory Horton,Under,1.5,1.6,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Noah Gray,Over,1.5,1.58,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Noah Gray,Under,1.5,2.28,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Kenneth Walker III,Over,3.5,2.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Kenneth Walker III,Under,3.5,1.62,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Rashid Shaheed,Over,2.5,2.02,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Rashid Shaheed,Under,2.5,1.74,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,AJ Barner,Over,2.5,1.63,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,AJ Barner,Under,2.5,2.18,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Travis Kelce,Over,4.5,2.18,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions,Travis Kelce,Under,4.5,1.63,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,0.5,1.12,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,1.5,1.57,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,2.5,2.78,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,3.5,5.1,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,4.5,10.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Noah Gray,Over,5.5,18.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Cooper Kupp,Over,1.5,1.31,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Cooper Kupp,Over,2.5,1.96,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Cooper Kupp,Over,3.5,3.3,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Cooper Kupp,Over,4.5,6.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Cooper Kupp,Over,5.5,10.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,1.5,1.17,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,2.5,1.49,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,3.5,2.18,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,4.5,3.4,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,5.5,5.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Kenneth Walker III,Over,6.5,9.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Tory Horton,Over,0.5,1.26,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Tory Horton,Over,1.5,2.24,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Tory Horton,Over,2.5,4.7,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Tory Horton,Over,3.5,10.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,1.5,1.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,2.5,1.63,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,3.5,2.54,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,4.5,4.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,5.5,7.4,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,AJ Barner,Over,6.5,13.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,2.5,1.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,3.5,1.52,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,4.5,2.16,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,5.5,3.25,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,6.5,5.1,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,7.5,8.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Travis Kelce,Over,8.5,13.6,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Rashid Shaheed,Over,1.5,1.33,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Rashid Shaheed,Over,2.5,2.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Rashid Shaheed,Over,3.5,3.4,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Rashid Shaheed,Over,4.5,6.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Rashid Shaheed,Over,5.5,12.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,4.5,1.15,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,5.5,1.33,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,6.5,1.65,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,7.5,2.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,8.5,3.05,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,9.5,4.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,10.5,6.8,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,11.5,9.8,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_receptions_alternate,Jaxon Smith-Njigba,Over,12.5,13.8,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,39.5,1.06,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,49.5,1.15,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,59.5,1.28,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,69.5,1.47,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,79.5,1.74,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,89.5,2.12,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,99.5,2.64,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,109.5,3.25,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,124.5,4.7,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,149.5,9.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Kenneth Walker III,Over,174.5,16.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Sam Darnold,Over,4.5,1.88,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Sam Darnold,Over,9.5,2.94,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Sam Darnold,Over,14.5,4.6,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Sam Darnold,Over,19.5,7.3,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Sam Darnold,Over,24.5,9.8,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,4.5,1.41,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,9.5,2.04,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,14.5,2.94,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,19.5,4.2,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,24.5,5.9,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Emmett Johnson,Over,29.5,8.0,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,4.5,1.15,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,9.5,1.43,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,14.5,1.89,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,19.5,2.54,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,24.5,3.5,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,29.5,4.9,2026-10-22T12:45Z
+7,2026_07_KC_SEA,player_rush_yds_alternate,Patrick Mahomes,Over,39.5,9.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_h2h,LV,ML,,2.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_h2h,LA,ML,,1.47,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_spreads,LV,,4.5,1.89,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_spreads,LA,,-4.5,1.93,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_totals,Over,Over,48.5,1.91,2026-10-22T12:45Z
+7,2026_07_LA_LV,game_totals,Under,Under,48.5,1.91,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Kyren Williams,Yes,,1.61,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Puka Nacua,Yes,,1.77,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Ashton Jeanty,Yes,,1.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Brock Bowers,Yes,,2.1,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Blake Corum,Yes,,2.65,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Tyler Higbee,Yes,,3.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Tre Tucker,Yes,,4.3,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Michael Mayer,Yes,,4.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Colby Parkinson,Yes,,4.9,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Konata Mumpfield,Yes,,5.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Mike Washington Jr.,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Dont'e Thornton Jr.,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Jalen Nailor,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Dylan Laube,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Davis Allen,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Las Vegas Raiders Defense,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Los Angeles Rams Defense,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Jordan Whittington,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Tutu Atwell,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Cody White,Yes,,10.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Alex Bachman,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Connor Heyward,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,CJ Daniels,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Ian Thomas,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Malik Benson,Yes,,19.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Kirk Cousins,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Dareke Young,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Matthew Stafford,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Max Klare,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_anytime_td,Dean Connors,Yes,,41.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Tre Tucker,Over,3.5,2.06,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Tre Tucker,Under,3.5,1.71,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Blake Corum,Over,1.5,2.44,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Blake Corum,Under,1.5,1.52,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Davis Allen,Over,0.5,1.4,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Davis Allen,Under,0.5,2.82,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Kyren Williams,Over,3.5,1.72,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Kyren Williams,Under,3.5,2.04,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Puka Nacua,Over,8.5,2.04,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Puka Nacua,Under,8.5,1.72,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Ashton Jeanty,Over,3.5,1.82,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Ashton Jeanty,Under,3.5,1.93,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Michael Mayer,Over,3.5,1.72,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Michael Mayer,Under,3.5,2.04,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Brock Bowers,Over,6.5,2.16,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Brock Bowers,Under,6.5,1.65,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Jordan Whittington,Over,0.5,1.53,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Jordan Whittington,Under,0.5,2.4,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Colby Parkinson,Over,2.5,2.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Colby Parkinson,Under,2.5,1.76,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Konata Mumpfield,Over,1.5,1.58,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Konata Mumpfield,Under,1.5,2.28,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Tyler Higbee,Over,4.5,2.16,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions,Tyler Higbee,Under,4.5,1.65,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Davis Allen,Over,0.5,1.41,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Davis Allen,Over,1.5,2.94,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Davis Allen,Over,2.5,7.3,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Colby Parkinson,Over,1.5,1.32,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Colby Parkinson,Over,2.5,2.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Colby Parkinson,Over,3.5,3.35,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Colby Parkinson,Over,4.5,6.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Colby Parkinson,Over,5.5,10.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,1.5,1.09,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,2.5,1.32,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,3.5,1.76,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,4.5,2.64,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,5.5,4.1,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,6.5,6.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,7.5,10.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Kyren Williams,Over,8.5,16.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Konata Mumpfield,Over,0.5,1.12,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Konata Mumpfield,Over,1.5,1.58,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Konata Mumpfield,Over,2.5,2.78,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Konata Mumpfield,Over,3.5,5.1,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Konata Mumpfield,Over,4.5,9.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,2.5,1.42,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,3.5,2.06,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,4.5,3.25,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,5.5,5.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,6.5,9.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tre Tucker,Over,7.5,15.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,1.5,1.1,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,2.5,1.34,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,3.5,1.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,4.5,2.74,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,5.5,4.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,6.5,6.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,7.5,10.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Ashton Jeanty,Over,8.5,16.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,4.5,1.06,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,5.5,1.15,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,6.5,1.32,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,7.5,1.58,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,8.5,2.04,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,9.5,2.78,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,10.5,3.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,11.5,5.3,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,12.5,7.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,13.5,11.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Puka Nacua,Over,14.5,15.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,3.5,1.12,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,4.5,1.3,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,5.5,1.6,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,6.5,2.14,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,7.5,3.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,8.5,4.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,9.5,6.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,10.5,9.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Brock Bowers,Over,11.5,13.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,1.5,1.07,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,2.5,1.29,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,3.5,1.74,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,4.5,2.54,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,5.5,4.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,6.5,6.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,7.5,10.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Michael Mayer,Over,8.5,16.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,2.5,1.21,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,3.5,1.52,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,4.5,2.18,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,5.5,3.25,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,6.5,5.1,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,7.5,8.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Tyler Higbee,Over,8.5,13.6,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Blake Corum,Over,0.5,1.31,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Blake Corum,Over,1.5,2.42,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Blake Corum,Over,2.5,5.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_receptions_alternate,Blake Corum,Over,3.5,10.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,19.5,1.07,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,24.5,1.13,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,29.5,1.23,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,39.5,1.49,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,49.5,1.93,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,59.5,2.58,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,69.5,3.4,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,79.5,4.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,89.5,6.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,99.5,8.5,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,109.5,11.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Ashton Jeanty,Over,124.5,16.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,9.5,1.17,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,14.5,1.36,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,19.5,1.6,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,24.5,1.96,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,29.5,2.42,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,39.5,3.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,49.5,5.9,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Mike Washington Jr.,Over,59.5,9.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,29.5,1.07,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,39.5,1.2,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,49.5,1.4,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,59.5,1.71,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,69.5,2.18,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,79.5,2.82,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,89.5,3.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,99.5,5.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,109.5,6.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Kyren Williams,Over,124.5,9.8,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,14.5,1.09,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,19.5,1.18,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,24.5,1.31,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,29.5,1.48,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,39.5,2.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,49.5,2.82,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,59.5,4.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,69.5,5.7,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,79.5,8.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,89.5,11.0,2026-10-22T12:45Z
+7,2026_07_LA_LV,player_rush_yds_alternate,Blake Corum,Over,99.5,15.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_h2h,MIA,ML,,2.94,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_h2h,NYJ,ML,,1.43,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_spreads,MIA,,4.5,1.96,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_spreads,NYJ,,-4.5,1.85,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_totals,Over,Over,39.5,1.94,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,game_totals,Under,Under,39.5,1.88,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Braelon Allen,Yes,,1.83,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Breece Hall,Yes,,1.83,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Garrett Wilson,Yes,,2.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Ollie Gordon II,Yes,,3.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Adonai Mitchell,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Omar Cooper Jr.,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Malik Washington,Yes,,4.6,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Kenyon Sadiq,Yes,,4.7,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Malik Willis,Yes,,4.7,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Caleb Douglas,Yes,,4.9,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Mason Taylor,Yes,,5.3,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Isaiah Davis,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Greg Dulcich,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Jaylen Wright,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Tim Patrick,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Chris Bell,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Miami Dolphins Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,New York Jets Defense,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Geno Smith,Yes,,9.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Isaiah Williams,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Kaytron Allen,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Kevin Coleman Jr.,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Will Kacmarek,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Jeremy Ruckert,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Malik McClain,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Jelani Woods,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Kene Nwangwu,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,DJ Herman,Yes,,26.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Andrew Beck,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Ryan Miller,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Jalen Tolbert,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Justin Joly,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_anytime_td,Seydou Traore,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Caleb Douglas,Over,2.5,1.68,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Caleb Douglas,Under,2.5,2.12,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Ollie Gordon II,Over,1.5,1.98,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Ollie Gordon II,Under,1.5,1.77,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Malik Washington,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Malik Washington,Under,4.5,1.6,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Greg Dulcich,Over,2.5,2.24,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Greg Dulcich,Under,2.5,1.6,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Garrett Wilson,Over,5.5,1.98,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Garrett Wilson,Under,5.5,1.77,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Mason Taylor,Over,2.5,1.62,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Mason Taylor,Under,2.5,2.22,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Kenyon Sadiq,Over,2.5,2.16,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Kenyon Sadiq,Under,2.5,1.65,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Chris Bell,Over,1.5,1.82,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions,Chris Bell,Under,1.5,1.94,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,0.5,1.07,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,1.5,1.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,2.5,2.22,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,3.5,3.9,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,4.5,7.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Greg Dulcich,Over,5.5,13.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,1.5,1.21,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,2.5,1.66,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,3.5,2.68,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,4.5,4.6,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,5.5,8.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Caleb Douglas,Over,6.5,13.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,2.5,1.22,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,5.5,3.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,6.5,5.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,7.5,9.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Malik Washington,Over,8.5,13.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Ollie Gordon II,Over,0.5,1.21,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Ollie Gordon II,Over,1.5,1.98,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Ollie Gordon II,Over,2.5,3.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Ollie Gordon II,Over,3.5,7.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,2.5,1.06,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,3.5,1.2,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,4.5,1.45,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,5.5,1.96,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,6.5,2.78,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,7.5,4.1,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,8.5,6.2,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,9.5,9.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Garrett Wilson,Over,10.5,13.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,1.5,1.2,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,2.5,1.62,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,3.5,2.52,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,4.5,4.1,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,5.5,7.3,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Mason Taylor,Over,6.5,12.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,1.5,1.37,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,2.5,2.14,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,3.5,3.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,4.5,7.3,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Kenyon Sadiq,Over,5.5,13.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Chris Bell,Over,0.5,1.17,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Chris Bell,Over,1.5,1.82,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Chris Bell,Over,2.5,3.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Chris Bell,Over,3.5,7.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_receptions_alternate,Chris Bell,Over,4.5,13.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,9.5,1.06,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,14.5,1.15,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,19.5,1.3,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,24.5,1.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,29.5,1.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,39.5,2.74,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,49.5,4.1,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,59.5,6.2,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,69.5,9.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,79.5,13.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Malik Willis,Over,89.5,18.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,19.5,1.07,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,24.5,1.14,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,29.5,1.23,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,39.5,1.49,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,49.5,1.93,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,59.5,2.58,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,69.5,3.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,79.5,4.7,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,89.5,6.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,99.5,8.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,109.5,11.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Ollie Gordon II,Over,124.5,16.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Geno Smith,Over,4.5,1.63,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Geno Smith,Over,9.5,2.48,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Geno Smith,Over,14.5,3.7,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Geno Smith,Over,19.5,5.7,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Geno Smith,Over,24.5,8.5,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,4.5,1.15,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,9.5,1.4,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,14.5,1.77,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,19.5,2.34,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,24.5,3.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,29.5,4.0,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,39.5,6.8,2026-10-22T12:45Z
+7,2026_07_MIA_NYJ,player_rush_yds_alternate,Jaylen Wright,Over,49.5,9.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_h2h,CHI,ML,,1.64,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_h2h,NE,ML,,2.32,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_spreads,CHI,,-3.0,1.95,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_spreads,NE,,3.0,1.87,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_totals,Over,Over,50.5,1.91,2026-10-22T12:45Z
+7,2026_07_NE_CHI,game_totals,Under,Under,50.5,1.91,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,D'Andre Swift,Yes,,1.61,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Rhamondre Stevenson,Yes,,1.91,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,A.J. Brown,Yes,,2.35,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Colston Loveland,Yes,,2.65,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Rome Odunze,Yes,,2.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Luther Burden III,Yes,,2.85,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Hunter Henry,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Roschon Johnson,Yes,,3.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,DeMario Douglas,Yes,,4.1,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Drake Maye,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,TreVeyon Henderson,Yes,,4.4,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Caleb Williams,Yes,,4.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Kalif Raymond,Yes,,4.9,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Efton Chism III,Yes,,5.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Eli Raridon,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Cole Kmet,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Corey Kiner,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,New England Patriots Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Kyle Williams,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Chicago Bears Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Sam Roush,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Zavion Thomas,Yes,,15.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Cameron Latu,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Tanner Arkin,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Jahdae Walker,Yes,,18.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_anytime_td,Zavier Scott,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Colston Loveland,Over,3.5,1.58,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Colston Loveland,Under,3.5,2.28,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,TreVeyon Henderson,Over,0.5,1.49,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,TreVeyon Henderson,Under,0.5,2.52,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Eli Raridon,Over,1.5,2.02,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Eli Raridon,Under,1.5,1.74,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Roschon Johnson,Over,1.5,2.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Roschon Johnson,Under,1.5,1.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Kalif Raymond,Over,2.5,1.93,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Kalif Raymond,Under,2.5,1.82,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Hunter Henry,Over,3.5,2.16,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Hunter Henry,Under,3.5,1.65,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Kyle Williams,Over,1.5,2.34,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Kyle Williams,Under,1.5,1.56,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Rhamondre Stevenson,Over,2.5,1.77,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Rhamondre Stevenson,Under,2.5,1.98,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,D'Andre Swift,Over,2.5,1.72,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,D'Andre Swift,Under,2.5,2.04,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Rome Odunze,Over,3.5,2.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Rome Odunze,Under,3.5,1.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,DeMario Douglas,Over,3.5,2.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,DeMario Douglas,Under,3.5,1.68,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Efton Chism III,Over,1.5,1.68,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Efton Chism III,Under,1.5,2.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Cole Kmet,Over,1.5,2.78,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Cole Kmet,Under,1.5,1.41,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Luther Burden III,Over,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,Luther Burden III,Under,4.5,2.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,A.J. Brown,Over,4.5,1.62,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions,A.J. Brown,Under,4.5,2.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Roschon Johnson,Over,0.5,1.28,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Roschon Johnson,Over,1.5,2.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Roschon Johnson,Over,2.5,4.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Roschon Johnson,Over,3.5,9.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,1.5,1.15,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,2.5,1.49,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,3.5,2.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,4.5,3.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,5.5,6.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rome Odunze,Over,6.5,11.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,TreVeyon Henderson,Over,0.5,1.49,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,TreVeyon Henderson,Over,1.5,2.98,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,TreVeyon Henderson,Over,2.5,6.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kyle Williams,Over,0.5,1.28,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kyle Williams,Over,1.5,2.32,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kyle Williams,Over,2.5,5.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Efton Chism III,Over,0.5,1.13,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Efton Chism III,Over,1.5,1.65,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Efton Chism III,Over,2.5,2.98,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Efton Chism III,Over,3.5,5.9,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Efton Chism III,Over,4.5,11.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,2.5,1.42,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,3.5,2.06,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,4.5,3.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,5.5,5.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,6.5,9.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Hunter Henry,Over,7.5,13.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,1.5,1.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,2.5,1.72,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,3.5,2.72,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,4.5,4.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,5.5,7.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,D'Andre Swift,Over,6.5,13.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,2.5,1.11,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,3.5,1.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,4.5,1.68,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,5.5,2.4,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,6.5,3.55,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,7.5,5.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,8.5,8.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Luther Burden III,Over,9.5,13.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,1.5,1.06,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,2.5,1.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,3.5,1.58,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,4.5,2.28,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,5.5,3.4,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,6.5,5.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,7.5,9.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Colston Loveland,Over,8.5,13.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,1.5,1.25,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,2.5,1.74,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,3.5,2.78,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,4.5,4.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,5.5,7.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Rhamondre Stevenson,Over,6.5,13.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,2.5,1.08,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,3.5,1.25,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,4.5,1.56,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,5.5,2.16,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,6.5,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,7.5,4.9,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,8.5,7.4,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,A.J. Brown,Over,9.5,11.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Eli Raridon,Over,0.5,1.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Eli Raridon,Over,1.5,1.94,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Eli Raridon,Over,2.5,3.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Eli Raridon,Over,3.5,8.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Cole Kmet,Over,0.5,1.34,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Cole Kmet,Over,1.5,2.64,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Cole Kmet,Over,2.5,5.9,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,2.5,1.4,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,3.5,2.04,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,4.5,3.25,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,5.5,5.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,6.5,9.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,DeMario Douglas,Over,7.5,15.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,1.5,1.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,2.5,1.91,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,3.5,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,4.5,5.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,5.5,9.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_receptions_alternate,Kalif Raymond,Over,6.5,16.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,4.5,1.06,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,9.5,1.17,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,14.5,1.34,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,19.5,1.56,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,24.5,1.88,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,29.5,2.26,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,39.5,3.25,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,49.5,4.9,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,59.5,7.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,69.5,9.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,79.5,13.6,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,TreVeyon Henderson,Over,89.5,18.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,4.5,1.07,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,9.5,1.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,14.5,1.49,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,19.5,1.88,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,24.5,2.42,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,29.5,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,39.5,5.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,49.5,9.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Caleb Williams,Over,59.5,16.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,9.5,1.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,14.5,1.26,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,19.5,1.45,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,24.5,1.74,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,29.5,2.12,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,39.5,3.1,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,49.5,4.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,59.5,7.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,69.5,9.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Roschon Johnson,Over,79.5,13.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,4.5,1.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,9.5,1.45,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,14.5,1.88,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,19.5,2.46,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,24.5,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,29.5,4.1,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,39.5,6.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Corey Kiner,Over,49.5,10.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,9.5,1.09,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,14.5,1.22,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,19.5,1.41,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,24.5,1.66,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,29.5,2.04,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,39.5,3.2,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,49.5,5.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,59.5,7.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,69.5,12.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Drake Maye,Over,79.5,16.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,14.5,1.06,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,19.5,1.13,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,24.5,1.24,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,29.5,1.37,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,39.5,1.77,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,49.5,2.42,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,59.5,3.3,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,69.5,4.7,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,79.5,6.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,89.5,9.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,99.5,12.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,Rhamondre Stevenson,Over,109.5,16.0,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,29.5,1.08,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,39.5,1.23,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,49.5,1.44,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,59.5,1.82,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,69.5,2.38,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,79.5,3.1,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,89.5,4.1,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,99.5,5.5,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,109.5,7.8,2026-10-22T12:45Z
+7,2026_07_NE_CHI,player_rush_yds_alternate,D'Andre Swift,Over,124.5,12.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_h2h,HOU,ML,,1.18,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_h2h,NYG,ML,,5.1,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_spreads,HOU,,-10.5,1.95,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_spreads,NYG,,10.5,1.87,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_totals,Over,Over,43.5,1.98,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,game_totals,Under,Under,43.5,1.83,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Woody Marks,Yes,,1.83,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Nico Collins,Yes,,2.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Foster Moreau,Yes,,3.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Dalton Schultz,Yes,,3.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Marvin Harrison Jr.,Yes,,3.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Malik Nabers,Yes,,3.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Isaiah Likely,Yes,,3.6,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Cam Skattebo,Yes,,4.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Tyrone Tracy Jr.,Yes,,4.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Dare Ogunbowale,Yes,,5.1,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Jaylin Noel,Yes,,5.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Houston Texans Defense,Yes,,5.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,C.J. Stroud,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Kayshon Boutte,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Devin Singletary,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Cade Stover,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,J.J. McCarthy,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Xavier Hutchinson,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Tank Dell,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Theo Johnson,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Malachi Fields,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,New York Giants Defense,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Brevin Jordan,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Marlin Klein,Yes,,10.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Charlie Jones,Yes,,14.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Chris Manhertz,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Thomas Fidone,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_anytime_td,Patrick Ricard,Yes,,36.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Jaylin Noel,Over,2.5,2.06,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Jaylin Noel,Under,2.5,1.71,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Kayshon Boutte,Over,1.5,2.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Kayshon Boutte,Under,1.5,1.57,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Devin Singletary,Over,1.5,2.04,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Devin Singletary,Under,1.5,1.72,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Marvin Harrison Jr.,Over,2.5,1.85,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Marvin Harrison Jr.,Under,2.5,1.89,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Malachi Fields,Over,2.5,2.44,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Malachi Fields,Under,2.5,1.52,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Isaiah Likely,Over,5.5,2.02,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Isaiah Likely,Under,5.5,1.74,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Malik Nabers,Over,5.5,1.78,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Malik Nabers,Under,5.5,1.96,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Tank Dell,Over,1.5,2.54,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Tank Dell,Under,1.5,1.48,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Tyrone Tracy Jr.,Over,1.5,1.93,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Tyrone Tracy Jr.,Under,1.5,1.82,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Xavier Hutchinson,Over,1.5,2.54,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Xavier Hutchinson,Under,1.5,1.48,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Nico Collins,Over,4.5,1.72,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions,Nico Collins,Under,4.5,2.04,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tyrone Tracy Jr.,Over,0.5,1.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tyrone Tracy Jr.,Over,1.5,1.89,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tyrone Tracy Jr.,Over,2.5,3.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tyrone Tracy Jr.,Over,3.5,6.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,2.5,1.07,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,3.5,1.23,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,4.5,1.49,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,5.5,1.98,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,6.5,2.78,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,7.5,4.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,8.5,6.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,9.5,9.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Isaiah Likely,Over,10.5,13.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,0.5,1.08,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,1.5,1.47,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,2.5,2.46,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,3.5,4.6,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,4.5,9.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malachi Fields,Over,5.5,15.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,2.5,1.11,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,3.5,1.31,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,4.5,1.71,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,5.5,2.48,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,6.5,3.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,7.5,6.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,8.5,9.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Nico Collins,Over,9.5,15.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Devin Singletary,Over,0.5,1.24,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Devin Singletary,Over,1.5,2.04,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Devin Singletary,Over,2.5,3.7,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Devin Singletary,Over,3.5,7.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tank Dell,Over,0.5,1.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tank Dell,Over,1.5,2.48,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tank Dell,Over,2.5,4.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tank Dell,Over,3.5,7.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Tank Dell,Over,4.5,9.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,1.5,1.29,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,2.5,1.85,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,3.5,2.94,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,4.5,4.9,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,5.5,7.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Marvin Harrison Jr.,Over,6.5,13.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Kayshon Boutte,Over,0.5,1.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Kayshon Boutte,Over,1.5,2.28,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Kayshon Boutte,Over,2.5,4.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Kayshon Boutte,Over,3.5,8.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,3.5,1.18,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,4.5,1.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,5.5,1.77,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,6.5,2.46,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,7.5,3.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,8.5,5.1,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,9.5,8.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,10.5,11.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Malik Nabers,Over,11.5,16.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,1.5,1.36,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,2.5,2.04,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,3.5,3.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,4.5,6.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,5.5,10.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Jaylin Noel,Over,6.5,18.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Xavier Hutchinson,Over,0.5,1.34,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Xavier Hutchinson,Over,1.5,2.54,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Xavier Hutchinson,Over,2.5,5.1,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_receptions_alternate,Xavier Hutchinson,Over,3.5,10.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,4.5,1.07,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,9.5,1.21,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,14.5,1.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,19.5,1.63,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,24.5,1.94,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,29.5,2.32,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,39.5,3.25,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,49.5,4.6,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,59.5,6.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,69.5,8.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,79.5,11.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Tyrone Tracy Jr.,Over,89.5,13.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,9.5,1.14,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,14.5,1.31,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,19.5,1.57,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,24.5,1.98,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,29.5,2.54,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,39.5,4.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,49.5,6.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,59.5,10.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,J.J. McCarthy,Over,69.5,16.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,4.5,1.37,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,9.5,1.88,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,14.5,2.68,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,19.5,3.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,24.5,5.7,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,C.J. Stroud,Over,29.5,8.5,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,9.5,1.11,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,14.5,1.22,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,19.5,1.37,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,24.5,1.54,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,29.5,1.76,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,39.5,2.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,49.5,3.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,59.5,4.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,69.5,5.7,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,79.5,7.4,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,89.5,9.8,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,99.5,13.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Cam Skattebo,Over,109.5,16.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,24.5,1.09,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,29.5,1.17,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,39.5,1.38,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,49.5,1.74,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,59.5,2.3,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,69.5,3.05,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,79.5,4.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,89.5,5.9,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,99.5,8.0,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,109.5,10.2,2026-10-22T12:45Z
+7,2026_07_NYG_HOU,player_rush_yds_alternate,Woody Marks,Over,124.5,15.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_h2h,NO,ML,,2.44,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_h2h,PIT,ML,,1.58,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_spreads,NO,,3.0,1.96,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_spreads,PIT,,-3.0,1.85,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_totals,Over,Over,44.5,1.89,2026-10-22T12:45Z
+7,2026_07_PIT_NO,game_totals,Under,Under,44.5,1.93,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Jaylen Warren,Yes,,1.71,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Kendre Miller,Yes,,2.55,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,DK Metcalf,Yes,,2.75,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Chris Olave,Yes,,2.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Germie Bernard,Yes,,3.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Rico Dowdle,Yes,,3.4,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Pat Freiermuth,Yes,,3.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Devaughn Vele,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Juwan Johnson,Yes,,3.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Alvin Kamara,Yes,,3.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Darnell Washington,Yes,,3.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Tyler Shough,Yes,,5.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Pittsburgh Steelers Defense,Yes,,7.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Bryce Lance,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,CJ Donaldson,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Noah Fant,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,New Orleans Saints Defense,Yes,,9.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Aaron Rodgers,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Robert Tonyan,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Kaden Wetjen,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Barion Brown,Yes,,16.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Oscar Delp,Yes,,19.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Travis Homer,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Eli Heidenreich,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Riley Nowakowski,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_anytime_td,Treyton Welch,Yes,,46.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Darnell Washington,Over,2.5,2.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Darnell Washington,Under,2.5,1.76,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Bryce Lance,Over,1.5,2.06,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Bryce Lance,Under,1.5,1.71,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Alvin Kamara,Over,2.5,1.77,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Alvin Kamara,Under,2.5,1.98,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Jaylen Warren,Over,3.5,2.34,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Jaylen Warren,Under,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Germie Bernard,Over,4.5,1.63,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Germie Bernard,Under,4.5,2.18,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Devaughn Vele,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Devaughn Vele,Under,4.5,1.6,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Rico Dowdle,Over,1.5,1.72,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Rico Dowdle,Under,1.5,2.04,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Juwan Johnson,Over,3.5,1.82,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Juwan Johnson,Under,3.5,1.93,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Noah Fant,Over,1.5,1.77,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Noah Fant,Under,1.5,1.98,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Pat Freiermuth,Over,3.5,2.34,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Pat Freiermuth,Under,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Chris Olave,Over,5.5,1.65,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,Chris Olave,Under,5.5,2.16,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,DK Metcalf,Over,4.5,1.72,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions,DK Metcalf,Under,4.5,2.04,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Darnell Washington,Over,1.5,1.32,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Darnell Washington,Over,2.5,1.98,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Darnell Washington,Over,3.5,3.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Darnell Washington,Over,4.5,6.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Darnell Washington,Over,5.5,11.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,2.5,1.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,3.5,1.31,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,4.5,1.72,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,5.5,2.54,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,6.5,3.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,7.5,5.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,8.5,9.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,DK Metcalf,Over,9.5,13.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Bryce Lance,Over,0.5,1.22,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Bryce Lance,Over,1.5,2.06,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Bryce Lance,Over,2.5,4.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Bryce Lance,Over,3.5,9.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,1.5,1.17,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,2.5,1.52,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,3.5,2.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,4.5,3.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,5.5,6.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,6.5,10.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Pat Freiermuth,Over,7.5,18.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,1.5,1.08,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,2.5,1.32,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,3.5,1.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,4.5,2.78,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,5.5,4.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,6.5,7.4,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,7.5,12.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Juwan Johnson,Over,8.5,18.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,1.5,1.17,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,2.5,1.53,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,3.5,2.32,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,4.5,3.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,5.5,6.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,6.5,9.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Jaylen Warren,Over,7.5,16.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Alvin Kamara,Over,1.5,1.26,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Alvin Kamara,Over,2.5,1.76,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Alvin Kamara,Over,3.5,2.82,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Alvin Kamara,Over,4.5,4.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Alvin Kamara,Over,5.5,8.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,2.5,1.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,3.5,1.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,4.5,1.63,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,5.5,2.24,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,6.5,3.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,7.5,5.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,8.5,8.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Germie Bernard,Over,9.5,13.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Noah Fant,Over,0.5,1.15,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Noah Fant,Over,1.5,1.76,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Noah Fant,Over,2.5,3.25,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Noah Fant,Over,3.5,6.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,3.5,1.13,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,4.5,1.31,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,5.5,1.63,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,6.5,2.24,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,7.5,3.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,8.5,4.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,9.5,7.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,10.5,10.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Chris Olave,Over,11.5,16.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,2.5,1.22,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,3.5,1.56,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,4.5,2.24,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,5.5,3.35,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,6.5,5.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,7.5,8.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Devaughn Vele,Over,8.5,13.6,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Rico Dowdle,Over,0.5,1.15,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Rico Dowdle,Over,1.5,1.72,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Rico Dowdle,Over,2.5,3.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_receptions_alternate,Rico Dowdle,Over,3.5,5.9,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,4.5,1.12,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,9.5,1.34,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,14.5,1.68,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,19.5,2.18,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,24.5,2.82,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,29.5,3.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,39.5,6.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Alvin Kamara,Over,49.5,9.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,4.5,1.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,9.5,1.49,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,14.5,2.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,19.5,2.78,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,24.5,3.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,29.5,5.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Tyler Shough,Over,39.5,9.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Aaron Rodgers,Over,4.5,2.78,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Aaron Rodgers,Over,9.5,4.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Aaron Rodgers,Over,14.5,7.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,29.5,1.07,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,39.5,1.21,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,49.5,1.4,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,59.5,1.69,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,69.5,2.18,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,79.5,2.82,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,89.5,3.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,99.5,5.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,109.5,6.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Jaylen Warren,Over,124.5,10.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,14.5,1.09,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,19.5,1.2,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,24.5,1.31,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,29.5,1.47,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,39.5,1.93,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,49.5,2.64,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,59.5,3.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,69.5,5.1,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,79.5,7.3,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,89.5,9.8,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,99.5,13.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Kendre Miller,Over,109.5,18.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,9.5,1.07,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,14.5,1.17,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,19.5,1.31,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,24.5,1.49,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,29.5,1.74,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,39.5,2.54,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,49.5,3.7,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,59.5,5.5,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,69.5,8.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,79.5,11.0,2026-10-22T12:45Z
+7,2026_07_PIT_NO,player_rush_yds_alternate,Rico Dowdle,Over,89.5,15.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_h2h,ATL,ML,,2.28,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_h2h,SF,ML,,1.66,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_spreads,ATL,,2.5,1.98,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_spreads,SF,,-2.5,1.83,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_totals,Over,Over,49.5,1.87,2026-10-22T12:45Z
+7,2026_07_SF_ATL,game_totals,Under,Under,49.5,1.95,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Christian McCaffrey,Yes,,1.38,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Bijan Robinson,Yes,,1.4,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,George Kittle,Yes,,2.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Drake London,Yes,,2.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Brian Robinson Jr.,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Kyle Pitts,Yes,,3.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Brock Purdy,Yes,,4.1,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Christian Kirk,Yes,,4.7,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Brandin Cooks,Yes,,4.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Kaelon Black,Yes,,4.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Jahan Dotson,Yes,,4.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Kyle Juszczyk,Yes,,5.7,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Jordan Watkins,Yes,,6.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Atlanta Falcons Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Zachariah Branch,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Jacob Cowing,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,San Francisco 49ers Defense,Yes,,9.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Michael Penix Jr.,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Luke Farrell,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Austin Hooper,Yes,,12.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Olamide Zaccheaus,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Charlie Woerner,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,James Jordan,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Malik Turner,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Chris Blair,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Brayden Willis,Yes,,28.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_anytime_td,Nick Muse,Yes,,31.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Drake London,Over,5.5,1.68,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Drake London,Under,5.5,2.12,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Bijan Robinson,Over,3.5,1.58,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Bijan Robinson,Under,3.5,2.28,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Jahan Dotson,Over,1.5,1.49,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Jahan Dotson,Under,1.5,2.52,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Christian McCaffrey,Over,5.5,2.06,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Christian McCaffrey,Under,5.5,1.71,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,George Kittle,Over,5.5,1.98,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,George Kittle,Under,5.5,1.77,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Kyle Pitts,Over,3.5,2.06,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions,Kyle Pitts,Under,3.5,1.71,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,1.5,1.06,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,2.5,1.24,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,3.5,1.6,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,4.5,2.28,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,5.5,3.35,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,6.5,5.1,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,7.5,8.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Bijan Robinson,Over,8.5,12.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,1.5,1.12,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,2.5,1.41,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,3.5,2.02,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,4.5,3.25,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,5.5,5.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,6.5,9.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Kyle Pitts,Over,7.5,13.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,2.5,1.07,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,3.5,1.21,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,4.5,1.45,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,5.5,1.91,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,6.5,2.68,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,7.5,3.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,8.5,5.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,9.5,8.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,10.5,12.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,George Kittle,Over,11.5,16.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,0.5,1.08,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,1.5,1.48,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,2.5,2.54,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,3.5,4.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,4.5,9.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Jahan Dotson,Over,5.5,18.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,3.5,1.13,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,4.5,1.31,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,5.5,1.65,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,6.5,2.24,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,7.5,3.25,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,8.5,4.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,9.5,7.4,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,10.5,11.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Drake London,Over,11.5,16.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,2.5,1.12,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,3.5,1.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,4.5,1.57,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,5.5,2.02,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,6.5,2.68,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,7.5,3.6,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,8.5,4.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,9.5,6.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,10.5,9.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,11.5,12.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_receptions_alternate,Christian McCaffrey,Over,12.5,15.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,4.5,1.08,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,9.5,1.24,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,14.5,1.48,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,19.5,1.88,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,24.5,2.42,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,29.5,3.2,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,39.5,5.7,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,49.5,9.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brock Purdy,Over,59.5,16.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,9.5,1.13,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,14.5,1.28,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,19.5,1.45,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,24.5,1.74,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,29.5,2.1,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,39.5,3.05,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,49.5,4.6,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,59.5,6.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,69.5,9.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,79.5,13.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Brian Robinson Jr.,Over,89.5,18.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,24.5,1.06,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,29.5,1.11,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,39.5,1.25,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,49.5,1.47,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,59.5,1.82,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,69.5,2.36,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,79.5,3.05,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,89.5,4.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,99.5,5.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,109.5,7.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Christian McCaffrey,Over,124.5,10.2,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,9.5,1.1,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,14.5,1.22,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,19.5,1.38,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,24.5,1.6,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,29.5,1.88,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,39.5,2.74,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,49.5,3.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,59.5,5.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,69.5,8.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,79.5,11.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Kaelon Black,Over,89.5,15.0,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Michael Penix Jr.,Over,4.5,2.38,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Michael Penix Jr.,Over,9.5,3.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Michael Penix Jr.,Over,14.5,6.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Michael Penix Jr.,Over,19.5,9.8,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,39.5,1.06,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,49.5,1.15,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,59.5,1.29,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,69.5,1.47,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,79.5,1.74,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,89.5,2.14,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,99.5,2.68,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,109.5,3.3,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,124.5,4.9,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,149.5,9.5,2026-10-22T12:45Z
+7,2026_07_SF_ATL,player_rush_yds_alternate,Bijan Robinson,Over,174.5,16.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_h2h,CAR,ML,,1.63,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_h2h,TB,ML,,2.34,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_spreads,CAR,,-3.0,1.91,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_spreads,TB,,3.0,1.91,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_totals,Over,Over,44.5,1.91,2026-10-22T12:45Z
+7,2026_07_TB_CAR,game_totals,Under,Under,44.5,1.91,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Chuba Hubbard,Yes,,1.77,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Bucky Irving,Yes,,2.15,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Tetairoa McMillan,Yes,,2.35,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Jalen Coker,Yes,,2.7,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Chris Godwin,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Emeka Egbuka,Yes,,3.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Cade Otton,Yes,,3.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Darren Waller,Yes,,4.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Ted Hurst III,Yes,,4.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Tommy Tremble,Yes,,4.1,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Kenny Gainwell,Yes,,5.1,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Tez Johnson,Yes,,5.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Baker Mayfield,Yes,,6.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Mitchell Evans,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Sean Tucker,Yes,,7.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Bryce Young,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Tampa Bay Buccaneers Defense,Yes,,8.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Carolina Panthers Defense,Yes,,8.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,AJ Dillon,Yes,,9.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,John Metchie III,Yes,,11.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Brycen Tremayne,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Kameron Johnson,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Ja'Tavion Sanders,Yes,,13.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Trevor Etienne,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Anthony Tyus III,Yes,,17.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,David Moore,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Ko Kieft,Yes,,20.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Payne Durham,Yes,,21.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Bauer Sharp,Yes,,23.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_anytime_td,Feleipe Franks,Yes,,36.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Tommy Tremble,Over,1.5,1.49,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Tommy Tremble,Under,1.5,2.52,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Jalen Coker,Over,5.5,1.93,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Jalen Coker,Under,5.5,1.82,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Darren Waller,Over,2.5,2.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Darren Waller,Under,2.5,1.62,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Tetairoa McMillan,Over,5.5,2.1,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Tetairoa McMillan,Under,5.5,1.68,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Chuba Hubbard,Over,2.5,2.12,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions,Chuba Hubbard,Under,2.5,1.68,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Chuba Hubbard,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Chuba Hubbard,Over,1.5,1.37,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Chuba Hubbard,Over,2.5,2.1,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Chuba Hubbard,Over,3.5,3.65,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Chuba Hubbard,Over,4.5,6.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tommy Tremble,Over,0.5,1.09,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tommy Tremble,Over,1.5,1.49,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tommy Tremble,Over,2.5,2.54,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tommy Tremble,Over,3.5,4.6,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tommy Tremble,Over,4.5,9.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,2.5,1.07,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,3.5,1.23,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,4.5,1.52,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,5.5,2.08,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,6.5,3.05,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,7.5,4.7,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,8.5,7.4,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,9.5,12.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Tetairoa McMillan,Over,10.5,18.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,0.5,1.06,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,1.5,1.38,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,2.5,2.18,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,3.5,3.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,4.5,7.3,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Darren Waller,Over,5.5,13.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,2.5,1.06,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,3.5,1.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,4.5,1.43,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,5.5,1.93,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,6.5,2.74,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,7.5,4.1,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,8.5,6.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,9.5,9.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_receptions_alternate,Jalen Coker,Over,10.5,13.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,4.5,1.12,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,9.5,1.33,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,14.5,1.68,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,19.5,2.22,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,24.5,3.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,29.5,4.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Baker Mayfield,Over,39.5,7.4,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,4.5,1.31,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,9.5,1.76,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,14.5,2.48,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,19.5,3.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,24.5,5.0,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bryce Young,Over,29.5,7.3,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,39.5,1.14,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,49.5,1.29,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,59.5,1.51,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,69.5,1.83,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,79.5,2.3,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,89.5,2.94,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,99.5,3.7,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,109.5,4.9,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,124.5,7.4,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Chuba Hubbard,Over,149.5,13.8,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,29.5,1.07,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,39.5,1.18,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,49.5,1.36,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,59.5,1.65,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,69.5,2.04,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,79.5,2.68,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,89.5,3.4,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,99.5,4.6,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,109.5,6.2,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,124.5,9.5,2026-10-22T12:45Z
+7,2026_07_TB_CAR,player_rush_yds_alternate,Bucky Irving,Over,149.5,18.0,2026-10-22T12:45Z

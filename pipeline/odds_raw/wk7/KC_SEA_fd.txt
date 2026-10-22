@@ -4,3 +4,124 @@ game_spreads|Kansas City Chiefs||2.5|1.96
 game_spreads|Seattle Seahawks||-2.5|1.85
 game_totals|Over|Over|42.5|1.89
 game_totals|Under|Under|42.5|1.93
+player_anytime_td|Kenneth Walker III|Yes||1.77
+player_anytime_td|Emanuel Wilson|Yes||2.1
+player_anytime_td|Zach Charbonnet|Yes||2.1
+player_anytime_td|Jaxon Smith-Njigba|Yes||2.2
+player_anytime_td|Xavier Worthy|Yes||3.2
+player_anytime_td|Travis Kelce|Yes||3.2
+player_anytime_td|Rashee Rice|Yes||3.2
+player_anytime_td|AJ Barner|Yes||3.8
+player_anytime_td|Rashid Shaheed|Yes||4.4
+player_anytime_td|Cooper Kupp|Yes||5.0
+player_anytime_td|Jalen Royals|Yes||5.4
+player_anytime_td|George Holani|Yes||6.0
+player_anytime_td|Patrick Mahomes|Yes||6.5
+player_anytime_td|Sam Darnold|Yes||7.0
+player_anytime_td|Noah Gray|Yes||8.0
+player_anytime_td|Seattle Seahawks Defense|Yes||8.5
+player_anytime_td|Tory Horton|Yes||8.5
+player_anytime_td|Cyrus Allen|Yes||10.0
+player_anytime_td|Kansas City Chiefs Defense|Yes||10.5
+player_anytime_td|Eric Saubert|Yes||12.0
+player_anytime_td|Emmett Johnson|Yes||12.0
+player_anytime_td|Brashard Smith|Yes||18.0
+player_anytime_td|Jared Wiley|Yes||20.0
+player_anytime_td|Jake Briningstool|Yes||20.0
+player_anytime_td|Nick Kallerup|Yes||21.0
+player_anytime_td|Nikko Remigio|Yes||31.0
+player_anytime_td|Montorie Foster Jr.|Yes||36.0
+player_anytime_td|Ben VanSumeren|Yes||61.0
+player_receptions|Cooper Kupp|Over|2.5|1.98
+player_receptions|Cooper Kupp|Under|2.5|1.77
+player_receptions|Jaxon Smith-Njigba|Over|6.5|1.65
+player_receptions|Jaxon Smith-Njigba|Under|6.5|2.16
+player_receptions|Tory Horton|Over|1.5|2.24
+player_receptions|Tory Horton|Under|1.5|1.6
+player_receptions|Noah Gray|Over|1.5|1.58
+player_receptions|Noah Gray|Under|1.5|2.28
+player_receptions|Kenneth Walker III|Over|3.5|2.2
+player_receptions|Kenneth Walker III|Under|3.5|1.62
+player_receptions|Rashid Shaheed|Over|2.5|2.02
+player_receptions|Rashid Shaheed|Under|2.5|1.74
+player_receptions|AJ Barner|Over|2.5|1.63
+player_receptions|AJ Barner|Under|2.5|2.18
+player_receptions|Travis Kelce|Over|4.5|2.18
+player_receptions|Travis Kelce|Under|4.5|1.63
+player_receptions_alternate|Noah Gray|Over|0.5|1.12
+player_receptions_alternate|Noah Gray|Over|1.5|1.57
+player_receptions_alternate|Noah Gray|Over|2.5|2.78
+player_receptions_alternate|Noah Gray|Over|3.5|5.1
+player_receptions_alternate|Noah Gray|Over|4.5|10.2
+player_receptions_alternate|Noah Gray|Over|5.5|18.0
+player_receptions_alternate|Cooper Kupp|Over|1.5|1.31
+player_receptions_alternate|Cooper Kupp|Over|2.5|1.96
+player_receptions_alternate|Cooper Kupp|Over|3.5|3.3
+player_receptions_alternate|Cooper Kupp|Over|4.5|6.2
+player_receptions_alternate|Cooper Kupp|Over|5.5|10.2
+player_receptions_alternate|Kenneth Walker III|Over|1.5|1.17
+player_receptions_alternate|Kenneth Walker III|Over|2.5|1.49
+player_receptions_alternate|Kenneth Walker III|Over|3.5|2.18
+player_receptions_alternate|Kenneth Walker III|Over|4.5|3.4
+player_receptions_alternate|Kenneth Walker III|Over|5.5|5.5
+player_receptions_alternate|Kenneth Walker III|Over|6.5|9.5
+player_receptions_alternate|Tory Horton|Over|0.5|1.26
+player_receptions_alternate|Tory Horton|Over|1.5|2.24
+player_receptions_alternate|Tory Horton|Over|2.5|4.7
+player_receptions_alternate|Tory Horton|Over|3.5|10.2
+player_receptions_alternate|AJ Barner|Over|1.5|1.2
+player_receptions_alternate|AJ Barner|Over|2.5|1.63
+player_receptions_alternate|AJ Barner|Over|3.5|2.54
+player_receptions_alternate|AJ Barner|Over|4.5|4.2
+player_receptions_alternate|AJ Barner|Over|5.5|7.4
+player_receptions_alternate|AJ Barner|Over|6.5|13.0
+player_receptions_alternate|Travis Kelce|Over|2.5|1.2
+player_receptions_alternate|Travis Kelce|Over|3.5|1.52
+player_receptions_alternate|Travis Kelce|Over|4.5|2.16
+player_receptions_alternate|Travis Kelce|Over|5.5|3.25
+player_receptions_alternate|Travis Kelce|Over|6.5|5.1
+player_receptions_alternate|Travis Kelce|Over|7.5|8.5
+player_receptions_alternate|Travis Kelce|Over|8.5|13.6
+player_receptions_alternate|Rashid Shaheed|Over|1.5|1.33
+player_receptions_alternate|Rashid Shaheed|Over|2.5|2.0
+player_receptions_alternate|Rashid Shaheed|Over|3.5|3.4
+player_receptions_alternate|Rashid Shaheed|Over|4.5|6.5
+player_receptions_alternate|Rashid Shaheed|Over|5.5|12.0
+player_receptions_alternate|Jaxon Smith-Njigba|Over|4.5|1.15
+player_receptions_alternate|Jaxon Smith-Njigba|Over|5.5|1.33
+player_receptions_alternate|Jaxon Smith-Njigba|Over|6.5|1.65
+player_receptions_alternate|Jaxon Smith-Njigba|Over|7.5|2.2
+player_receptions_alternate|Jaxon Smith-Njigba|Over|8.5|3.05
+player_receptions_alternate|Jaxon Smith-Njigba|Over|9.5|4.5
+player_receptions_alternate|Jaxon Smith-Njigba|Over|10.5|6.8
+player_receptions_alternate|Jaxon Smith-Njigba|Over|11.5|9.8
+player_receptions_alternate|Jaxon Smith-Njigba|Over|12.5|13.8
+player_rush_yds_alternate|Kenneth Walker III|Over|39.5|1.06
+player_rush_yds_alternate|Kenneth Walker III|Over|49.5|1.15
+player_rush_yds_alternate|Kenneth Walker III|Over|59.5|1.28
+player_rush_yds_alternate|Kenneth Walker III|Over|69.5|1.47
+player_rush_yds_alternate|Kenneth Walker III|Over|79.5|1.74
+player_rush_yds_alternate|Kenneth Walker III|Over|89.5|2.12
+player_rush_yds_alternate|Kenneth Walker III|Over|99.5|2.64
+player_rush_yds_alternate|Kenneth Walker III|Over|109.5|3.25
+player_rush_yds_alternate|Kenneth Walker III|Over|124.5|4.7
+player_rush_yds_alternate|Kenneth Walker III|Over|149.5|9.0
+player_rush_yds_alternate|Kenneth Walker III|Over|174.5|16.0
+player_rush_yds_alternate|Sam Darnold|Over|4.5|1.88
+player_rush_yds_alternate|Sam Darnold|Over|9.5|2.94
+player_rush_yds_alternate|Sam Darnold|Over|14.5|4.6
+player_rush_yds_alternate|Sam Darnold|Over|19.5|7.3
+player_rush_yds_alternate|Sam Darnold|Over|24.5|9.8
+player_rush_yds_alternate|Emmett Johnson|Over|4.5|1.41
+player_rush_yds_alternate|Emmett Johnson|Over|9.5|2.04
+player_rush_yds_alternate|Emmett Johnson|Over|14.5|2.94
+player_rush_yds_alternate|Emmett Johnson|Over|19.5|4.2
+player_rush_yds_alternate|Emmett Johnson|Over|24.5|5.9
+player_rush_yds_alternate|Emmett Johnson|Over|29.5|8.0
+player_rush_yds_alternate|Patrick Mahomes|Over|4.5|1.15
+player_rush_yds_alternate|Patrick Mahomes|Over|9.5|1.43
+player_rush_yds_alternate|Patrick Mahomes|Over|14.5|1.89
+player_rush_yds_alternate|Patrick Mahomes|Over|19.5|2.54
+player_rush_yds_alternate|Patrick Mahomes|Over|24.5|3.5
+player_rush_yds_alternate|Patrick Mahomes|Over|29.5|4.9
+player_rush_yds_alternate|Patrick Mahomes|Over|39.5|9.5
