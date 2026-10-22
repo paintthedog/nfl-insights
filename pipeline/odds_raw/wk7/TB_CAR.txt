@@ -1,0 +1,40 @@
+player_anytime_td|Chuba Hubbard|Yes||1.77
+player_anytime_td|Bucky Irving|Yes||2.15
+player_anytime_td|Tetairoa McMillan|Yes||2.35
+player_anytime_td|Jalen Coker|Yes||2.6
+player_anytime_td|Emeka Egbuka|Yes||3.15
+player_anytime_td|Chris Godwin|Yes||3.3
+player_anytime_td|Cade Otton|Yes||3.75
+player_anytime_td|Ted Hurst III|Yes||3.95
+player_anytime_td|Darren Waller|Yes||4.2
+player_anytime_td|Tommy Tremble|Yes||4.3
+player_anytime_td|Kenny Gainwell|Yes||5.0
+player_anytime_td|Tez Johnson|Yes||5.5
+player_anytime_td|Baker Mayfield|Yes||5.75
+player_anytime_td|Bryce Young|Yes||7.0
+player_anytime_td|Carolina Panthers D/ST|Yes||7.5
+player_anytime_td|Tampa Bay Buccaneers D/ST|Yes||7.5
+player_anytime_td|Sean Tucker|Yes||7.5
+player_anytime_td|Mitchell Evans|Yes||8.5
+player_anytime_td|AJ Dillon|Yes||9.5
+player_anytime_td|John Metchie III|Yes||11.0
+player_anytime_td|Ja'Tavion Sanders|Yes||14.0
+player_anytime_td|Brycen Tremayne|Yes||15.0
+player_anytime_td|Kameron Johnson|Yes||16.0
+player_anytime_td|Trevor Etienne|Yes||17.0
+player_anytime_td|Payne Durham|Yes||19.0
+player_anytime_td|David Moore|Yes||23.0
+player_anytime_td|Anthony Tyus III|Yes||23.0
+player_anytime_td|Ko Kieft|Yes||23.0
+player_anytime_td|Bauer Sharp|Yes||26.0
+player_anytime_td|Feleipe Franks|Yes||41.0
+player_receptions|Jalen Coker|Over|5.5|2.06
+player_receptions|Jalen Coker|Under|5.5|1.74
+player_receptions|Tetairoa McMillan|Over|5.5|2.16
+player_receptions|Tetairoa McMillan|Under|5.5|1.68
+player_receptions|Chuba Hubbard|Over|2.5|2.07
+player_receptions|Chuba Hubbard|Under|2.5|1.74
+player_receptions|Darren Waller|Over|2.5|2.33
+player_receptions|Darren Waller|Under|2.5|1.59
+player_receptions|Tommy Tremble|Over|2.5|2.46
+player_receptions|Tommy Tremble|Under|2.5|1.53

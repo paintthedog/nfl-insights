@@ -1,0 +1,44 @@
+player_anytime_td|Tony Pollard|Yes||2.2
+player_anytime_td|Denzel Boston|Yes||3.15
+player_anytime_td|Harold Fannin Jr.|Yes||3.35
+player_anytime_td|KC Concepcion|Yes||3.65
+player_anytime_td|Carnell Tate|Yes||4.2
+player_anytime_td|Wan'Dale Robinson|Yes||4.4
+player_anytime_td|Deshaun Watson|Yes||4.7
+player_anytime_td|Jerry Jeudy|Yes||5.5
+player_anytime_td|Cleveland Browns D/ST|Yes||6.0
+player_anytime_td|Gunnar Helm|Yes||6.0
+player_anytime_td|Tennessee Titans D/ST|Yes||6.5
+player_anytime_td|Cam Ward|Yes||6.5
+player_anytime_td|Tyjae Spears|Yes||7.0
+player_anytime_td|Nicholas Singleton|Yes||8.0
+player_anytime_td|Elic Ayomanor|Yes||8.5
+player_anytime_td|Calvin Ridley|Yes||10.0
+player_anytime_td|Malachi Corley|Yes||13.0
+player_anytime_td|Isaiah Bond|Yes||13.0
+player_anytime_td|Daniel Bellinger|Yes||14.0
+player_anytime_td|Chimere Dike|Yes||15.0
+player_anytime_td|Blake Whiteheart|Yes||15.0
+player_anytime_td|Tylan Wallace|Yes||21.0
+player_anytime_td|Michael Carter|Yes||26.0
+player_anytime_td|Michael Burton|Yes||29.0
+player_anytime_td|Julius Chestnut|Yes||31.0
+player_anytime_td|David Martin-Robinson|Yes||41.0
+player_anytime_td|Carsen Ryan|Yes||46.0
+player_anytime_td|Kylen Granson|Yes||51.0
+player_receptions|KC Concepcion|Over|4.5|1.97
+player_receptions|KC Concepcion|Under|4.5|1.81
+player_receptions|Carnell Tate|Over|4.5|2.0
+player_receptions|Carnell Tate|Under|4.5|1.78
+player_receptions|Wan'Dale Robinson|Over|4.5|2.21
+player_receptions|Wan'Dale Robinson|Under|4.5|1.65
+player_receptions|Harold Fannin Jr.|Over|3.5|1.92
+player_receptions|Harold Fannin Jr.|Under|3.5|1.85
+player_receptions|Denzel Boston|Over|3.5|2.14
+player_receptions|Denzel Boston|Under|3.5|1.69
+player_receptions|Gunnar Helm|Over|2.5|2.38
+player_receptions|Gunnar Helm|Under|2.5|1.57
+player_receptions|Jerry Jeudy|Over|1.5|1.54
+player_receptions|Jerry Jeudy|Under|1.5|2.44
+player_receptions|Elic Ayomanor|Over|1.5|2.33
+player_receptions|Elic Ayomanor|Under|1.5|1.59

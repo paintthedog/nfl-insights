@@ -4,3 +4,93 @@ game_spreads|Cleveland Browns||-1.5|1.91
 game_spreads|Tennessee Titans||1.5|1.91
 game_totals|Over|Over|37.5|1.95
 game_totals|Under|Under|37.5|1.87
+player_receptions_alternate|Carnell Tate|Over|1.5|1.04
+player_receptions_alternate|Carnell Tate|Over|2.5|1.17
+player_receptions_alternate|Carnell Tate|Over|3.5|1.44
+player_receptions_alternate|Carnell Tate|Over|4.5|1.97
+player_receptions_alternate|Carnell Tate|Over|5.5|2.96
+player_receptions_alternate|Carnell Tate|Over|6.5|4.79
+player_receptions_alternate|Carnell Tate|Over|7.5|8.3
+player_receptions_alternate|Carnell Tate|Over|8.5|14.2
+player_receptions_alternate|Carnell Tate|Over|9.5|23.0
+player_receptions_alternate|KC Concepcion|Over|1.5|1.03
+player_receptions_alternate|KC Concepcion|Over|2.5|1.16
+player_receptions_alternate|KC Concepcion|Over|3.5|1.44
+player_receptions_alternate|KC Concepcion|Over|4.5|1.95
+player_receptions_alternate|KC Concepcion|Over|5.5|2.96
+player_receptions_alternate|KC Concepcion|Over|6.5|4.83
+player_receptions_alternate|KC Concepcion|Over|7.5|8.3
+player_receptions_alternate|KC Concepcion|Over|8.5|14.4
+player_receptions_alternate|KC Concepcion|Over|9.5|23.0
+player_receptions_alternate|Wan'Dale Robinson|Over|1.5|1.06
+player_receptions_alternate|Wan'Dale Robinson|Over|2.5|1.22
+player_receptions_alternate|Wan'Dale Robinson|Over|3.5|1.56
+player_receptions_alternate|Wan'Dale Robinson|Over|4.5|2.2
+player_receptions_alternate|Wan'Dale Robinson|Over|5.5|3.41
+player_receptions_alternate|Wan'Dale Robinson|Over|6.5|5.58
+player_receptions_alternate|Wan'Dale Robinson|Over|7.5|9.5
+player_receptions_alternate|Wan'Dale Robinson|Over|8.5|16.2
+player_receptions_alternate|Wan'Dale Robinson|Over|9.5|25.0
+player_receptions_alternate|Harold Fannin Jr.|Over|1.5|1.1
+player_receptions_alternate|Harold Fannin Jr.|Over|2.5|1.36
+player_receptions_alternate|Harold Fannin Jr.|Over|3.5|1.89
+player_receptions_alternate|Harold Fannin Jr.|Over|4.5|2.98
+player_receptions_alternate|Harold Fannin Jr.|Over|5.5|5.19
+player_receptions_alternate|Harold Fannin Jr.|Over|6.5|9.5
+player_receptions_alternate|Harold Fannin Jr.|Over|7.5|17.2
+player_receptions_alternate|Harold Fannin Jr.|Over|8.5|28.0
+player_receptions_alternate|Denzel Boston|Over|1.5|1.13
+player_receptions_alternate|Denzel Boston|Over|2.5|1.43
+player_receptions_alternate|Denzel Boston|Over|3.5|2.09
+player_receptions_alternate|Denzel Boston|Over|4.5|3.47
+player_receptions_alternate|Denzel Boston|Over|5.5|6.5
+player_receptions_alternate|Denzel Boston|Over|6.5|12.2
+player_receptions_alternate|Denzel Boston|Over|7.5|22.0
+player_receptions_alternate|Gunnar Helm|Over|1.5|1.46
+player_receptions_alternate|Gunnar Helm|Over|2.5|2.4
+player_receptions_alternate|Gunnar Helm|Over|3.5|4.54
+player_receptions_alternate|Gunnar Helm|Over|4.5|9.4
+player_receptions_alternate|Gunnar Helm|Over|5.5|19.2
+player_receptions_alternate|Jerry Jeudy|Over|1.5|1.53
+player_receptions_alternate|Jerry Jeudy|Over|2.5|2.62
+player_receptions_alternate|Jerry Jeudy|Over|3.5|5.29
+player_receptions_alternate|Jerry Jeudy|Over|4.5|11.6
+player_receptions_alternate|Jerry Jeudy|Over|5.5|23.0
+player_receptions_alternate|Elic Ayomanor|Over|1.5|2.28
+player_receptions_alternate|Elic Ayomanor|Over|2.5|5.15
+player_receptions_alternate|Elic Ayomanor|Over|3.5|12.6
+player_receptions_alternate|Elic Ayomanor|Over|4.5|26.0
+player_rush_yds_alternate|Tony Pollard|Over|24.5|1.04
+player_rush_yds_alternate|Tony Pollard|Over|29.5|1.07
+player_rush_yds_alternate|Tony Pollard|Over|39.5|1.18
+player_rush_yds_alternate|Tony Pollard|Over|49.5|1.37
+player_rush_yds_alternate|Tony Pollard|Over|59.5|1.64
+player_rush_yds_alternate|Tony Pollard|Over|66.5|1.9
+player_rush_yds_alternate|Tony Pollard|Over|69.5|2.04
+player_rush_yds_alternate|Tony Pollard|Over|79.5|2.6
+player_rush_yds_alternate|Tony Pollard|Over|89.5|3.41
+player_rush_yds_alternate|Tony Pollard|Over|99.5|4.6
+player_rush_yds_alternate|Tony Pollard|Over|109.5|6.28
+player_rush_yds_alternate|Tony Pollard|Over|119.5|8.7
+player_rush_yds_alternate|Tony Pollard|Over|129.5|12.2
+player_rush_yds_alternate|Tony Pollard|Over|139.5|16.6
+player_rush_yds_alternate|Tony Pollard|Over|149.5|24.0
+player_rush_yds_alternate|Tony Pollard|Over|159.5|33.0
+player_rush_yds_alternate|Deshaun Watson|Over|9.5|1.07
+player_rush_yds_alternate|Deshaun Watson|Over|14.5|1.16
+player_rush_yds_alternate|Deshaun Watson|Over|19.5|1.32
+player_rush_yds_alternate|Deshaun Watson|Over|24.5|1.55
+player_rush_yds_alternate|Deshaun Watson|Over|29.5|1.88
+player_rush_yds_alternate|Deshaun Watson|Over|39.5|3.03
+player_rush_yds_alternate|Deshaun Watson|Over|49.5|5.17
+player_rush_yds_alternate|Deshaun Watson|Over|59.5|8.9
+player_rush_yds_alternate|Deshaun Watson|Over|69.5|14.6
+player_rush_yds_alternate|Deshaun Watson|Over|79.5|24.0
+player_rush_yds_alternate|Deshaun Watson|Over|89.5|36.0
+player_rush_yds_alternate|Cam Ward|Over|9.5|1.84
+player_rush_yds_alternate|Cam Ward|Over|14.5|2.55
+player_rush_yds_alternate|Cam Ward|Over|19.5|3.67
+player_rush_yds_alternate|Cam Ward|Over|24.5|5.35
+player_rush_yds_alternate|Cam Ward|Over|29.5|7.9
+player_rush_yds_alternate|Cam Ward|Over|39.5|16.2
+player_rush_yds_alternate|Cam Ward|Over|49.5|29.0
