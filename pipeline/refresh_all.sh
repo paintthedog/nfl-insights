@@ -16,7 +16,7 @@ for W in $(seq 1 ${1}); do ls bets_wk${W}*.csv >/dev/null 2>&1 && python grade_b
 for f in paper_wk*.csv; do [ -f "$f" ] || continue; case $f in *_graded*) ;; *) W=$(echo $f | sed 's/[^0-9]//g'); python grade_paper.py $W > /dev/null;; esac; done   # mechanical paper slates
 python record.py > /dev/null                      # Record tab
 python line_moves.py > /dev/null                  # did lines move toward the model's numbers?
-python scorecard.py > /dev/null                   # scorecard: every published number vs results (top of the Record tab)
+python scorecard.py                   # scorecard: every published number vs results (top of the Record tab)
 NFL_WEEK=${@: -1} python explain_weights.py
 for W in "$@"; do python build_site.py $W; done
 python trends.py

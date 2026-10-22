@@ -133,6 +133,8 @@ for r in lo.itertuples():
     LV.append(dict(wk=int(r.week), stat=st, model=float(r.model_mean), line=float(r.point), act=float(a[st])))
 LV = pd.DataFrame(LV)
 A, R, PR, G = pd.DataFrame(A), pd.DataFrame(R), pd.DataFrame(PR), pd.DataFrame(G)
+if not len(A):   # no pre-kickoff archives yet (archive/ was lost in the Oct 21 export): keep the last scorecard
+    print("scorecard: no archived snapshots for finished games; keeping existing scorecard.json"); sys.exit(0)
 LAB = {"pass_yds": "Passing yards", "rush_yds": "Rushing yards", "car": "Carries", "tgt": "Targets", "rec": "Receptions", "rec_yds": "Receiving yards", "fp_ppr": "Fantasy points (PPR)"}
 out = dict(asof=pd.Timestamp.now(tz="America/New_York").strftime("%b %-d, %Y"), weeks=sorted(set(map(int, set(A.wk if len(A) else []) | set(PR.wk if len(PR) else []) | set(LV.wk if len(LV) else [])))),
            snap_weeks=sorted(set(int(g[5:7]) for g in SNAP_GAMES)), n_games=len(G))

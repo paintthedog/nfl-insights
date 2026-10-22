@@ -1,0 +1,27 @@
+Staleness audit, week 8: 26 item(s)
+  [OVERRIDES] news_overrides_wk8.json missing
+  [QB] PHI: feed lists Jalen Hurts, last starter T.McKee — confirm and set qb_start
+  [QB] SEA: feed lists Drew Lock, last starter S.Darnold — confirm and set qb_start
+  [ROSTER] DJ Moore (BUF) projected 6.3 pts but roster status INA (A01)
+  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+  [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
+  [INJURY] no week 8 injury report in the feed yet (normal before Wednesday)
+  [CARRYOVER] Kyle Monangai was out last week, now projected 6.5 pts with no Week 8 status — confirm he's back
+  [CARRYOVER] Quinshon Judkins was out last week, now projected 8.7 pts with no Week 8 status — confirm he's back
+  [CARRYOVER] Terry McLaurin was out last week, now projected 5.5 pts with no Week 8 status — confirm he's back
+  [CARRYOVER] OL Cam Jurgens was out last week, not listed this week — confirm
+  [CARRYOVER] OL Drew Shelton was out last week, not listed this week — confirm
+  [CARRYOVER] OL Dylan Parham was out last week, not listed this week — confirm
+  [CARRYOVER] OL Joe Alt was out last week, not listed this week — confirm
+  [CARRYOVER] OL Josh Simmons was out last week, not listed this week — confirm
+  [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm
+  [CARRYOVER] OL Monroe Freeling was out last week, not listed this week — confirm
+  [CARRYOVER] OL Teven Jenkins was out last week, not listed this week — confirm
+  [CARRYOVER] OL Trevor Penning was out last week, not listed this week — confirm
+  [CARRYOVER] OL Alijah Vera-Tucker was out last week, not listed this week — confirm
+  [CARRYOVER] OL Ben Brown was out last week, not listed this week — confirm
+  [CARRYOVER] OL Jonah Jackson was out last week, not listed this week — confirm
+  [CARRYOVER] OL Andrew Vorhees was out last week, not listed this week — confirm
+  [CARRYOVER] OL Aaron Banks was out last week, not listed this week — confirm
+  [DFS] no dk_salaries_wk8.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

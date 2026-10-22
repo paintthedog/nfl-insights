@@ -1,0 +1,6 @@
+# re-downloadable or rebuilt each run (bootstrap_data.py / refresh_all.sh)
+data/*.parquet
+site/
+__pycache__/
+tests/_*.pkl
+lines_backtest.pkl
