@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-22T09:30 ET",
+ "asof": "2026-10-22T09:45 ET",
  "source": "Seeded Oct 22 from week 7 (out/lead_back/qb_start/ol_out carried; chances dropped per auto_overrides rule). Re-verify against week 8 reports.",
  "out": [
   "Ben Skowronik",
@@ -45,8 +45,7 @@
   "Teven Jenkins",
   "Trevor Penning",
   "Alijah Vera-Tucker",
-  "Ben Brown",
-  "Jonah Jackson"
+  "Ben Brown"
  ],
  "team_notes": {
   "ATL": "Penix (ribs) expected to start per team optimism; Tagovailoa backup",
@@ -80,7 +79,8 @@
   "Monroe Freeling",
   "Dylan Parham",
   "Andrew Vorhees",
-  "Aaron Banks"
+  "Aaron Banks",
+  "Jonah Jackson"
  ],
  "qb_uncertain": {},
  "lead_back": {

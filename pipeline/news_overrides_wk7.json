@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-21T22:30 ET",
+ "asof": "2026-10-22T09:45 ET",
  "source": "Forbes Week 6 injuries (Oct 14), Yahoo live injury tracker (Oct 12-13), FantasyPros (Oct 12). No official Wednesday practice report yet. | OL carryover check Oct 14: Penning on reserve (roster RES); Awosika out wks 4-5, no update; Bortolini full practice wk5 (back); Lane Johnson/Jurgens no current report \u2014 re-check Thu/Fri. | Oct 15: Wednesday practice reports (Yahoo injury report + live blog, NBC). | Carryovers: Johnston limited (chest); Jurgens limited (concussion) -> treated as playing; Lane Johnson & Bortolini not on Wed report -> back. | Oct 16: Hurts out (blood clot, Rapoport), McKee starts; Lamar DNP Thu; Roman Wilson out (Yahoo Oct 15, PFT Oct 15). | Oct 17: final Friday reports (CBS Oct 16 5:57pm, SI final injury report Oct 17): Lamar, Barkley, Montgomery, Rice, J. Love out; Caleb Q but full practice; DeVonta expected back; Henderson good chance; Lamb/Bateman/Nailor not on report -> playing; Jurgens out (concussion). | Oct 17 pm: Croskey-Merritt + Mariota out (Quinn); Diggs Q limited x2; Evans Q expected to play (Maiocco); DJ Moore likely sits (Capaccio); Olave limited Fri, trending to play; Henderson leaning out; Kamara/Dowdle likely active; Metcalf illness Q; A.J. Brown likely activated (Rapoport) - not in pool, flagged. | Oct 22: CBS Wednesday Week 7 practice reports (Oct 21 7:59pm), Yahoo live news blog (Oct 19-21), DK Network injury report (Oct 20 7:25pm). The two role feeds (Footballers, FantasyData) and weather sites were not fetchable in the unattended run. | Oct 21 10:30pm: Fantasy Footballers + FantasyData role feeds read (Wed practice items).",
  "out": [
   "Ben Skowronik",
@@ -57,10 +57,10 @@
   "Jaylen Waddle": 0.85,
   "Brock Bowers": 0.85,
   "Christian Kirk": 0.8,
-  "Zach Charbonnet": 0.75,
-  "Jordan Mason": 0.7,
+  "Zach Charbonnet": 0.9,
+  "Jordan Mason": 0.85,
   "Jonah Coleman": 0.5,
-  "T.J. Hockenson": 0.85,
+  "T.J. Hockenson": 0.95,
   "DK Metcalf": 1.0,
   "Caleb Williams": 1.0,
   "Matthew Hibner": 0.7
@@ -80,13 +80,12 @@
   "Teven Jenkins",
   "Trevor Penning",
   "Alijah Vera-Tucker",
-  "Ben Brown",
-  "Jonah Jackson"
+  "Ben Brown"
  ],
  "team_notes": {
   "ATL": "Penix (ribs) expected to start per team optimism; Tagovailoa backup",
   "BAL": "Lamar limited Wed (first practice since the Week 4 ankle sprain); Huntley started the last two. Bateman limited, no-contact jersey.",
-  "CHI": "Monangai ruled out for TNF (thumb/toe), reportedly headed to IR; Swift and Roschon Johnson handle the backfield.",
+  "CHI": "Monangai ruled out for TNF (thumb/toe), reportedly headed to IR; Swift and Roschon Johnson handle the backfield. Jonah Jackson (OL) upgraded to full, will play TNF; Monangai OUT (NFL.com Oct 21).",
   "HOU": "Tank Dell activated for Sunday. Montgomery DNP Wed (groin); Woody Marks led the backfield in Week 6.",
   "SEA": "Charbonnet full practice Wed, good chance to debut vs KC. Shaheed limited (hip).",
   "PHI": "Hurts out for the season; McKee starts. Barkley hamstring; Dameon Pierce took every RB carry in Week 6.",
@@ -115,7 +114,8 @@
   "Monroe Freeling",
   "Dylan Parham",
   "Andrew Vorhees",
-  "Aaron Banks"
+  "Aaron Banks",
+  "Jonah Jackson"
  ],
  "qb_uncertain": {
   "BAL": {

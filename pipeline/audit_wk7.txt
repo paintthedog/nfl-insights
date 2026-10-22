@@ -1,2 +1,5 @@
-Staleness audit, week 7: 1 item(s)
-  [DFS] no dk_salaries_wk7.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
+Staleness audit, week 7: 4 item(s)
+  [ROLE] Woody Marks (HOU) TD: model 32% vs DK 52% - DK sees a bigger role (starter? injury ahead of him?)
+  [ROLE] Zach Charbonnet (SEA) TD: model 23% vs DK 45% - DK sees a bigger role (starter? injury ahead of him?)
+  [ROLE] Jeremiyah Love (ARI) TD: model 14% vs DK 36% - DK sees a bigger role (starter? injury ahead of him?)
+  [ROLE] T.J. Hockenson (MIN) catches: model 2.4 vs DK line 4.5 - check role/targets news
