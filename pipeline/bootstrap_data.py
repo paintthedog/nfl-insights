@@ -13,6 +13,8 @@ def get(fn, *a):
     raise SystemExit(f"could not load {fn.__name__}")
 
 yrs = list(range(FIRST, LAST + 1))
+if not os.path.exists("data/players.parquet"):   # team_adj.py needs it; refresh_data.py normally writes it later
+    get(nfl.load_players).to_parquet("data/players.parquet")
 if not (os.path.exists("data/snaps.parquet") and os.path.exists("data/snaps_def.parquet")):
     sn = get(nfl.load_snap_counts, yrs)
     keep = [c for c in ["game_id", "season", "week", "game_type", "team", "opponent", "pfr_player_id", "player", "position",
