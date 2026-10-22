@@ -163,11 +163,13 @@ for p in proj["players"]:
 
 # DraftKings main-slate salaries (dk_salaries_wk<week>.csv: name,salary) -> price and points per $1,000
 try:
-    _dk = pd.read_csv(f"dk_salaries_wk{week}.csv").set_index("name").salary.to_dict()
+    import re, unicodedata as _ud   # Oct 22: match on a normalized name (DK writes "Estime", nflverse "Estimé"; suffixes and punctuation differ)
+    _nk = lambda n: re.sub(r"[^a-z]", "", re.sub(r"\b(jr|sr|ii|iii|iv|v)\b\.?", "", _ud.normalize("NFKD", str(n)).encode("ascii", "ignore").decode().lower()))
+    _dk = {_nk(k): v for k, v in pd.read_csv(f"dk_salaries_wk{week}.csv").set_index("name").salary.items()}
 except FileNotFoundError:
-    _dk = {}
+    _dk = {}; _nk = lambda n: n
 for p in proj["players"]:
-    sal = _dk.get(p["name"]); d = p.get("dk")
+    sal = _dk.get(_nk(p["name"])); d = p.get("dk")
     pp = p.get("p_play", 1) or 1
     p["dk_sal"] = int(sal) if sal else None
     p["dk_pts"] = round(d["pts"], 1) if d else None        # already averaged over the games he sits
