@@ -1,0 +1,49 @@
+player_anytime_td|J.K. Dobbins|Yes||2.05
+player_anytime_td|Trey McBride|Yes||2.35
+player_anytime_td|Jeremiyah Love|Yes||2.6
+player_anytime_td|Tyler Allgeier|Yes||2.75
+player_anytime_td|Jaylen Waddle|Yes||2.95
+player_anytime_td|RJ Harvey|Yes||3.2
+player_anytime_td|Courtland Sutton|Yes||3.3
+player_anytime_td|Michael Wilson|Yes||3.45
+player_anytime_td|Kendrick Bourne|Yes||4.5
+player_anytime_td|Bo Nix|Yes||4.5
+player_anytime_td|Zonovan Knight|Yes||5.25
+player_anytime_td|Evan Engram|Yes||5.25
+player_anytime_td|Denver Broncos D/ST|Yes||6.0
+player_anytime_td|Marvin Mims Jr.|Yes||6.5
+player_anytime_td|Arizona Cardinals D/ST|Yes||7.0
+player_anytime_td|Troy Franklin|Yes||7.0
+player_anytime_td|Jalen Brooks|Yes||8.0
+player_anytime_td|Jacoby Brissett|Yes||8.5
+player_anytime_td|Elijah Higgins|Yes||9.0
+player_anytime_td|Adam Trautman|Yes||10.5
+player_anytime_td|Nate Adkins|Yes||11.0
+player_anytime_td|Lil'Jordan Humphrey|Yes||12.0
+player_anytime_td|Adam Prentice|Yes||20.0
+player_anytime_td|Dallen Bentley|Yes||21.0
+player_anytime_td|Teagan Quitoriano|Yes||23.0
+player_anytime_td|Reggie Virgil|Yes||23.0
+player_anytime_td|Shawn Bowman|Yes||29.0
+player_anytime_td|Devin Duvernay|Yes||41.0
+player_anytime_td|Simi Fehoko|Yes||46.0
+player_receptions|Trey McBride|Over|7.5|2.06
+player_receptions|Trey McBride|Under|7.5|1.74
+player_receptions|Jaylen Waddle|Over|4.5|1.71
+player_receptions|Jaylen Waddle|Under|4.5|2.1
+player_receptions|Michael Wilson|Over|4.5|1.95
+player_receptions|Michael Wilson|Under|4.5|1.83
+player_receptions|Kendrick Bourne|Over|3.5|1.96
+player_receptions|Kendrick Bourne|Under|3.5|1.82
+player_receptions|Courtland Sutton|Over|3.5|2.12
+player_receptions|Courtland Sutton|Under|3.5|1.7
+player_receptions|Evan Engram|Over|2.5|1.8
+player_receptions|Evan Engram|Under|2.5|1.98
+player_receptions|Elijah Higgins|Over|1.5|1.76
+player_receptions|Elijah Higgins|Under|1.5|2.03
+player_receptions|Jalen Brooks|Over|1.5|1.76
+player_receptions|Jalen Brooks|Under|1.5|2.03
+player_receptions|Troy Franklin|Over|1.5|1.82
+player_receptions|Troy Franklin|Under|1.5|1.95
+player_receptions|Marvin Mims Jr.|Over|1.5|1.93
+player_receptions|Marvin Mims Jr.|Under|1.5|1.84

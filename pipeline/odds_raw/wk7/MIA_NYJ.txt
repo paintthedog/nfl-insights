@@ -1,0 +1,48 @@
+player_anytime_td|Braelon Allen|Yes||1.8
+player_anytime_td|Breece Hall|Yes||1.83
+player_anytime_td|Garrett Wilson|Yes||2.5
+player_anytime_td|Ollie Gordon II|Yes||2.85
+player_anytime_td|Malik Washington|Yes||4.3
+player_anytime_td|Malik Willis|Yes||4.7
+player_anytime_td|Caleb Douglas|Yes||4.7
+player_anytime_td|Omar Cooper Jr.|Yes||4.8
+player_anytime_td|Adonai Mitchell|Yes||4.8
+player_anytime_td|Kenyon Sadiq|Yes||5.0
+player_anytime_td|Mason Taylor|Yes||5.5
+player_anytime_td|Greg Dulcich|Yes||5.5
+player_anytime_td|Jaylen Wright|Yes||6.0
+player_anytime_td|Chris Bell|Yes||6.0
+player_anytime_td|Isaiah Davis|Yes||6.5
+player_anytime_td|New York Jets D/ST|Yes||7.0
+player_anytime_td|Miami Dolphins D/ST|Yes||7.5
+player_anytime_td|Tim Patrick|Yes||7.5
+player_anytime_td|Geno Smith|Yes||9.5
+player_anytime_td|Kevin Coleman Jr.|Yes||10.0
+player_anytime_td|Kaytron Allen|Yes||10.5
+player_anytime_td|Will Kacmarek|Yes||10.5
+player_anytime_td|Isaiah Williams|Yes||14.0
+player_anytime_td|DJ Herman|Yes||19.0
+player_anytime_td|Jeremy Ruckert|Yes||20.0
+player_anytime_td|Kene Nwangwu|Yes||23.0
+player_anytime_td|Jalen Tolbert|Yes||23.0
+player_anytime_td|Malik McClain|Yes||26.0
+player_anytime_td|Seydou Traore|Yes||26.0
+player_anytime_td|Jelani Woods|Yes||31.0
+player_anytime_td|Andrew Beck|Yes||31.0
+player_anytime_td|Justin Joly|Yes||31.0
+player_receptions|Garrett Wilson|Over|5.5|1.98
+player_receptions|Garrett Wilson|Under|5.5|1.8
+player_receptions|Malik Washington|Over|4.5|2.16
+player_receptions|Malik Washington|Under|4.5|1.68
+player_receptions|Mason Taylor|Over|2.5|1.57
+player_receptions|Mason Taylor|Under|2.5|2.36
+player_receptions|Caleb Douglas|Over|2.5|1.73
+player_receptions|Caleb Douglas|Under|2.5|2.07
+player_receptions|Greg Dulcich|Over|2.5|2.18
+player_receptions|Greg Dulcich|Under|2.5|1.67
+player_receptions|Kenyon Sadiq|Over|2.5|2.37
+player_receptions|Kenyon Sadiq|Under|2.5|1.57
+player_receptions|Chris Bell|Over|1.5|1.78
+player_receptions|Chris Bell|Under|1.5|2.01
+player_receptions|Ollie Gordon II|Over|1.5|2.0
+player_receptions|Ollie Gordon II|Under|1.5|1.78

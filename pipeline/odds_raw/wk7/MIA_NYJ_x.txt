@@ -4,3 +4,98 @@ game_spreads|Miami Dolphins||4.5|1.95
 game_spreads|New York Jets||-4.5|1.87
 game_totals|Over|Over|39.5|1.93
 game_totals|Under|Under|39.5|1.89
+player_receptions_alternate|Garrett Wilson|Over|2.5|1.07
+player_receptions_alternate|Garrett Wilson|Over|3.5|1.21
+player_receptions_alternate|Garrett Wilson|Over|4.5|1.48
+player_receptions_alternate|Garrett Wilson|Over|5.5|1.97
+player_receptions_alternate|Garrett Wilson|Over|6.5|2.83
+player_receptions_alternate|Garrett Wilson|Over|7.5|4.38
+player_receptions_alternate|Garrett Wilson|Over|8.5|7.1
+player_receptions_alternate|Garrett Wilson|Over|9.5|11.8
+player_receptions_alternate|Garrett Wilson|Over|10.5|19.4
+player_receptions_alternate|Garrett Wilson|Over|11.5|27.0
+player_receptions_alternate|Malik Washington|Over|1.5|1.05
+player_receptions_alternate|Malik Washington|Over|2.5|1.21
+player_receptions_alternate|Malik Washington|Over|3.5|1.54
+player_receptions_alternate|Malik Washington|Over|4.5|2.15
+player_receptions_alternate|Malik Washington|Over|5.5|3.28
+player_receptions_alternate|Malik Washington|Over|6.5|5.34
+player_receptions_alternate|Malik Washington|Over|7.5|9.0
+player_receptions_alternate|Malik Washington|Over|8.5|15.4
+player_receptions_alternate|Malik Washington|Over|9.5|24.0
+player_receptions_alternate|Mason Taylor|Over|1.5|1.17
+player_receptions_alternate|Mason Taylor|Over|2.5|1.55
+player_receptions_alternate|Mason Taylor|Over|3.5|2.34
+player_receptions_alternate|Mason Taylor|Over|4.5|3.97
+player_receptions_alternate|Mason Taylor|Over|5.5|7.2
+player_receptions_alternate|Mason Taylor|Over|6.5|13.8
+player_receptions_alternate|Mason Taylor|Over|7.5|23.0
+player_receptions_alternate|Caleb Douglas|Over|1.5|1.24
+player_receptions_alternate|Caleb Douglas|Over|2.5|1.72
+player_receptions_alternate|Caleb Douglas|Over|3.5|2.78
+player_receptions_alternate|Caleb Douglas|Over|4.5|5.07
+player_receptions_alternate|Caleb Douglas|Over|5.5|9.8
+player_receptions_alternate|Caleb Douglas|Over|6.5|18.2
+player_receptions_alternate|Greg Dulcich|Over|1.5|1.4
+player_receptions_alternate|Greg Dulcich|Over|2.5|2.17
+player_receptions_alternate|Greg Dulcich|Over|3.5|3.88
+player_receptions_alternate|Greg Dulcich|Over|4.5|7.7
+player_receptions_alternate|Greg Dulcich|Over|5.5|15.4
+player_receptions_alternate|Kenyon Sadiq|Over|1.5|1.44
+player_receptions_alternate|Kenyon Sadiq|Over|2.5|2.35
+player_receptions_alternate|Kenyon Sadiq|Over|3.5|4.41
+player_receptions_alternate|Kenyon Sadiq|Over|4.5|8.9
+player_receptions_alternate|Kenyon Sadiq|Over|5.5|18.4
+player_receptions_alternate|Chris Bell|Over|1.5|1.77
+player_receptions_alternate|Chris Bell|Over|2.5|3.26
+player_receptions_alternate|Chris Bell|Over|3.5|7.0
+player_receptions_alternate|Chris Bell|Over|4.5|13.8
+player_receptions_alternate|Chris Bell|Over|5.5|26.0
+player_receptions_alternate|Ollie Gordon II|Over|1.5|1.99
+player_receptions_alternate|Ollie Gordon II|Over|2.5|3.76
+player_receptions_alternate|Ollie Gordon II|Over|3.5|8.0
+player_receptions_alternate|Ollie Gordon II|Over|4.5|16.8
+player_receptions_alternate|Ollie Gordon II|Over|5.5|29.0
+player_rush_yds_alternate|Ollie Gordon II|Over|19.5|1.08
+player_rush_yds_alternate|Ollie Gordon II|Over|24.5|1.14
+player_rush_yds_alternate|Ollie Gordon II|Over|29.5|1.23
+player_rush_yds_alternate|Ollie Gordon II|Over|39.5|1.52
+player_rush_yds_alternate|Ollie Gordon II|Over|48.5|1.91
+player_rush_yds_alternate|Ollie Gordon II|Over|49.5|1.96
+player_rush_yds_alternate|Ollie Gordon II|Over|59.5|2.66
+player_rush_yds_alternate|Ollie Gordon II|Over|69.5|3.75
+player_rush_yds_alternate|Ollie Gordon II|Over|79.5|5.27
+player_rush_yds_alternate|Ollie Gordon II|Over|89.5|7.6
+player_rush_yds_alternate|Ollie Gordon II|Over|99.5|11.0
+player_rush_yds_alternate|Ollie Gordon II|Over|109.5|15.8
+player_rush_yds_alternate|Ollie Gordon II|Over|119.5|22.0
+player_rush_yds_alternate|Ollie Gordon II|Over|129.5|32.0
+player_rush_yds_alternate|Malik Willis|Over|9.5|1.11
+player_rush_yds_alternate|Malik Willis|Over|14.5|1.22
+player_rush_yds_alternate|Malik Willis|Over|19.5|1.38
+player_rush_yds_alternate|Malik Willis|Over|24.5|1.6
+player_rush_yds_alternate|Malik Willis|Over|29.5|1.88
+player_rush_yds_alternate|Malik Willis|Over|39.5|2.74
+player_rush_yds_alternate|Malik Willis|Over|49.5|4.26
+player_rush_yds_alternate|Malik Willis|Over|59.5|6.74
+player_rush_yds_alternate|Malik Willis|Over|69.5|10.9
+player_rush_yds_alternate|Malik Willis|Over|79.5|17.6
+player_rush_yds_alternate|Malik Willis|Over|89.5|27.0
+player_rush_yds_alternate|Malik Willis|Over|99.5|39.0
+player_rush_yds_alternate|Jaylen Wright|Over|9.5|1.42
+player_rush_yds_alternate|Jaylen Wright|Over|14.5|1.84
+player_rush_yds_alternate|Jaylen Wright|Over|19.5|2.47
+player_rush_yds_alternate|Jaylen Wright|Over|24.5|3.37
+player_rush_yds_alternate|Jaylen Wright|Over|29.5|4.63
+player_rush_yds_alternate|Jaylen Wright|Over|39.5|8.3
+player_rush_yds_alternate|Jaylen Wright|Over|49.5|13.8
+player_rush_yds_alternate|Jaylen Wright|Over|59.5|21.0
+player_rush_yds_alternate|Jaylen Wright|Over|69.5|32.0
+player_rush_yds_alternate|Geno Smith|Over|6.5|1.93
+player_rush_yds_alternate|Geno Smith|Over|9.5|2.34
+player_rush_yds_alternate|Geno Smith|Over|14.5|3.26
+player_rush_yds_alternate|Geno Smith|Over|19.5|4.57
+player_rush_yds_alternate|Geno Smith|Over|24.5|6.43
+player_rush_yds_alternate|Geno Smith|Over|29.5|9.4
+player_rush_yds_alternate|Geno Smith|Over|39.5|19.0
+player_rush_yds_alternate|Geno Smith|Over|49.5|33.0
