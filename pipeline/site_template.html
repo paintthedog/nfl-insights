@@ -938,6 +938,17 @@ const LN = DATA.lines, TR = ALL.trends;
 const fmtSpread = sp => sp == null ? "—" : sp > 0 ? "−" + sp : sp < 0 ? "+" + (-sp) : "PK";   // home team's number; line is positive when home is favored
 const ncdf = z => { const s = z < 0 ? -1 : 1, x = Math.abs(z) / Math.SQRT2, k = 1 / (1 + 0.3275911 * x);
   const e = 1 - (((((1.061405429 * k - 1.453152027) * k) + 1.421413741) * k - 0.284496736) * k + 0.254829592) * k * Math.exp(-x * x); return 0.5 * (1 + s * e); };
+const qnorm = p => { // inverse normal CDF (Acklam), accurate to ~1e-9
+  const a = [-39.69683028665376, 220.9460984245205, -275.9285104469687, 138.357751867269, -30.66479806614716, 2.506628277459239],
+    b = [-54.47609879822406, 161.5858368580409, -155.6989798598866, 66.80131188771972, -13.28068155288572],
+    c = [-0.007784894002430293, -0.3223964580411365, -2.400758277161838, -2.549732539343734, 4.374664141464968, 2.938163982698783],
+    d = [0.007784695709041462, 0.3224671290700398, 2.445134137142996, 3.754408661907416];
+  p = Math.min(Math.max(p, 1e-9), 1 - 1e-9);
+  if (p < 0.02425) { const q = Math.sqrt(-2 * Math.log(p)); return (((((c[0] * q + c[1]) * q + c[2]) * q + c[3]) * q + c[4]) * q + c[5]) / ((((d[0] * q + d[1]) * q + d[2]) * q + d[3]) * q + 1); }
+  if (p > 1 - 0.02425) return -qnorm(1 - p);
+  const q = p - 0.5, r = q * q;
+  return (((((a[0] * r + a[1]) * r + a[2]) * r + a[3]) * r + a[4]) * r + a[5]) * q / (((((b[0] * r + b[1]) * r + b[2]) * r + b[3]) * r + b[4]) * r + 1);
+};
 const TT = LN.team_totals, ttBy = Object.fromEntries(TT.map(x => [x.team, x]));
 function wxTxt(home) {
   const wx = DATA.weather[home];
@@ -949,11 +960,14 @@ LN.games.forEach((g, i) => {
   g.lp = g.p_home_cover == null ? null : Math.max(g.p_home_cover, 1 - g.p_home_cover);
   // Oct 19: a calibrated chance inside 48-52% is a coin flip, not a lean (the WAS +7.5 "51%" lesson); the model's own margin still shows on the card
   g.flip = g.lp != null && g.lp < 0.52;
-  g.leanTxt = g.lean == null ? null : g.flip ? `Coin flip` : g.lean === g.home ? `${g.home} ${fmtSpread(g.spread)}` : `${g.away} ${fmtSpread(-g.spread)}`;
+  g.leanTxt = g.lean == null ? null : g.flip ? `No edge` : g.lean === g.home ? `${g.home} ${fmtSpread(g.spread)}` : `${g.away} ${fmtSpread(-g.spread)}`;
   g.tl = g.p_over == null ? null : (g.p_over >= 0.5 ? "Over" : "Under");
   g.tp = g.p_over == null ? null : Math.max(g.p_over, 1 - g.p_over);
-  g.tflip = g.tp != null && g.tp < 0.52; if (g.tflip) g.tl = "Coin flip";
+  g.tflip = g.tp != null && g.tp < 0.52; if (g.tflip) g.tl = "No edge";
   g.gap = g.has ? g.m_margin - g.spread : null; g.tgap = g.total == null ? null : g.m_total - g.total;
+  // Oct 21: one best-estimate margin per game, so the win bar, the line and the spread call agree. It starts from DraftKings'
+  // spread and moves only as far as the calibrated cover chance allows (the model's own margin has little record against the line).
+  g.bm = g.has && g.p_home_cover != null ? g.spread + LN.sd_margin * qnorm(g.p_home_cover) : g.m_margin;
   g.sp = g.has ? Math.abs(g.spread) : null; g.fav = !g.has || g.spread === 0 ? null : g.spread > 0 ? g.home : g.away; g.dog = g.fav == null ? null : g.fav === g.home ? g.away : g.home;
   g.lineTxt = g.has ? (g.fav ? `${g.fav} −${g.sp}` : "Pick") + (g.total != null ? ` · ${g.total}` : "") : (g.total != null ? `No spread yet · ${g.total}` : "No line yet");
   const h = DATA.line_hist[g.game_id]; g.mv = "";
@@ -965,7 +979,7 @@ LN.games.forEach((g, i) => {
   g.name = `${g.away_name} at ${g.home_name}`; g.short = `${g.away} at ${g.home}`;
 });
 TT.forEach(x => { const g = LN.games.find(g => g.home === x.team || g.away === x.team), sg = x.home ? 1 : -1;
-  x.win = ncdf(sg * g.m_margin / LN.sd_margin); x.mwin = g.spread == null ? null : ncdf(sg * g.spread / LN.sd_margin); x.diff = x.mkt == null ? null : x.model - x.mkt; });
+  x.win = ncdf(sg * g.bm / LN.sd_margin); x.rawwin = ncdf(sg * g.m_margin / LN.sd_margin); x.mwin = g.spread == null ? null : ncdf(sg * g.spread / LN.sd_margin); x.diff = x.mkt == null ? null : x.model - x.mkt; });
 const STRONG = 0.55;   // calibrated (Oct 16): the model-vs-line gap is worth little; only flag what history backs
 const leanCell = (txt, p, gap) => txt ? `<span class="num ${p != null && p >= STRONG ? "move" : ""}" style="white-space:nowrap">${esc(txt)} ${pct(p)}</span>` : dash;
 function slateFacts() {
@@ -1359,7 +1373,9 @@ function teamPair(away, home, dark) {
 }
 function winBar(g) {
   const a = ttBy[g.away], h = ttBy[g.home], pa = Math.round(a.win * 100), ph = 100 - pa, ma = a.mwin == null ? null : Math.round(a.mwin * 100);
-  const tip = `Model: ${g.away} ${pa}%, ${g.home} ${ph}%` + (ma == null ? "" : `. The spread implies ${g.away} ${ma}%, ${g.home} ${100 - ma}% (the tick).`);
+  const ra = Math.round(a.rawwin * 100);
+  const tip = ma == null ? `Model only (no line yet): ${g.away} ${pa}%, ${g.home} ${ph}%.`
+    : `Best estimate: DraftKings' spread, adjusted only as far as the model has earned. The spread alone says ${g.away} ${ma}% (the tick). The model on its own says ${g.away} ${ra}%, but its disagreements with the line haven't held up, so it barely moves the number.`;
   const [al, hl] = teamPair(g.away, g.home, false), [ad, hd] = teamPair(g.away, g.home, true);
   return `<div class="gc-win" tabindex="0" data-tip="${esc(tip)}" style="--ta-l:${al};--th-l:${hl};--ta-d:${ad};--th-d:${hd}"><div class="wl"><span class="${pa >= ph ? "lead" : ""}"><i class="sw" style="background:var(--ta);margin-left:0"></i>${esc(g.away)} <b>${pa}%</b></span><span class="cap">chance to win</span><span class="${ph > pa ? "lead" : ""}"><b>${ph}%</b> ${esc(g.home)}<i class="sw" style="background:var(--th);margin-right:0"></i></span></div>
     <div class="wbar"><i class="a" style="width:${pa}%"></i><i class="h"></i>${ma == null ? "" : `<s style="left:${ma}%"></s>`}</div></div>`;
@@ -1418,8 +1434,8 @@ function gameCards() {
     return `<article class="gc"><div class="gc-top"><span><b>${esc(g.day)}</b>${g.notes ? " · " + esc(g.notes.replace(/ · ?[A-Z]{2,3} QB change/g, "").replace(/^[A-Z]{2,3} QB change( · )?/, "")) : ""}</span><span>${wxTxt(g.home)}</span></div>
       ${winBar(g)}
       <div class="gc-score">${head(g, g.away, false)}<div class="gc-mid"><span class="tot">at</span><span class="ln">${g.has ? (g.fav ? `${esc(g.fav)} −${g.sp}` : "Pick") : "No spread"}</span><span class="tot">${g.total != null ? "total " + g.total : ""}</span><span class="tot" style="color:var(--faint)">model ${g.m_total.toFixed(1)}</span></div>${head(g, g.home, true)}</div>
-      <div class="gc-leans"><div class="${g.lp != null && g.lp >= STRONG ? "move" : ""}"><span class="lab">Model on the spread</span><span>${g.flip ? `<b>Coin flip</b> <span class="q">model ${g.m_margin > 0 ? g.home : g.away} by ${Math.abs(g.m_margin).toFixed(1)}</span>` : g.leanTxt ? `<b>${esc(g.leanTxt)}</b> ${pct(g.lp)}` : "—"}</span></div>
-        <div class="${g.tp != null && g.tp >= STRONG ? "move" : ""}"><span class="lab">Model on the total</span><span>${g.tflip ? `<b>Coin flip</b> <span class="q">model ${g.m_total.toFixed(1)}</span>` : g.tl ? `<b>${g.tl} ${g.total}</b> ${pct(g.tp)}` : `${g.m_total.toFixed(1)} expected`}</span></div></div>
+      <div class="gc-leans"><div class="${g.lp != null && g.lp >= STRONG ? "move" : ""}"><span class="lab">Model on the spread</span><span>${g.flip ? `<b>No edge</b> <span class="q" data-tip="The model on its own has ${g.m_margin > 0 ? g.home : g.away} by ${Math.abs(g.m_margin).toFixed(1)}. Its disagreements with the line have not held up, so neither side is favored to cover.">model alone: ${g.m_margin > 0 ? g.home : g.away} by ${Math.abs(g.m_margin).toFixed(1)}</span>` : g.leanTxt ? `<b>${esc(g.leanTxt)}</b> ${pct(g.lp)}` : "—"}</span></div>
+        <div class="${g.tp != null && g.tp >= STRONG ? "move" : ""}"><span class="lab">Model on the total</span><span>${g.tflip ? `<b>No edge</b> <span class="q">model ${g.m_total.toFixed(1)}</span>` : g.tl ? `<b>${g.tl} ${g.total}</b> ${pct(g.tp)}` : `${g.m_total.toFixed(1)} expected`}</span></div></div>
       <div class="gc-sides">${side(g, g.away, false)}${side(g, g.home, true)}</div>
       ${projPanel(g)}
       ${gl.length ? `<div class="gc-game"><h4>Game notes</h4>${gl.sort(thinFirst).map(o => o.html).join("")}</div>` : ""}</article>`; }).join("");
