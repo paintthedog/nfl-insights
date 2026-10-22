@@ -4,3 +4,174 @@ game_spreads|Detroit Lions||-3.0|1.85
 game_spreads|Green Bay Packers||3.0|1.96
 game_totals|Over|Over|52.5|1.83
 game_totals|Under|Under|52.5|1.98
+player_anytime_td|Jahmyr Gibbs|Yes||1.3
+player_anytime_td|Amon-Ra St. Brown|Yes||1.71
+player_anytime_td|Josh Jacobs|Yes||2.1
+player_anytime_td|Christian Watson|Yes||2.3
+player_anytime_td|Matthew Golden|Yes||2.55
+player_anytime_td|Sam LaPorta|Yes||2.75
+player_anytime_td|Jameson Williams|Yes||2.85
+player_anytime_td|Tucker Kraft|Yes||2.8
+player_anytime_td|Pierre Strong Jr.|Yes||4.5
+player_anytime_td|MarShawn Lloyd|Yes||4.6
+player_anytime_td|Isaac TeSlaa|Yes||4.8
+player_anytime_td|Savion Williams|Yes||5.0
+player_anytime_td|Brock Wright|Yes||8.0
+player_anytime_td|Green Bay Packers Defense|Yes||8.5
+player_anytime_td|Jordan Love|Yes||9.0
+player_anytime_td|Sione Vaki|Yes||9.0
+player_anytime_td|Detroit Lions Defense|Yes||9.0
+player_anytime_td|Jared Goff|Yes||10.0
+player_anytime_td|Mark Redman|Yes||10.0
+player_anytime_td|Jonnu Smith|Yes||10.5
+player_anytime_td|Bo Melton|Yes||15.0
+player_anytime_td|Tyler Conklin|Yes||17.0
+player_anytime_td|Josh Whyle|Yes||20.0
+player_anytime_td|J. Michael Sturdivant|Yes||23.0
+player_anytime_td|Jackson Meeks|Yes||23.0
+player_anytime_td|Tay Martin|Yes||26.0
+player_anytime_td|Jacob Saylors|Yes||34.0
+player_receptions|Sam LaPorta|Over|4.5|1.68
+player_receptions|Sam LaPorta|Under|4.5|2.12
+player_receptions|Christian Watson|Over|4.5|1.93
+player_receptions|Christian Watson|Under|4.5|1.82
+player_receptions|Jahmyr Gibbs|Over|4.5|1.68
+player_receptions|Jahmyr Gibbs|Under|4.5|2.12
+player_receptions|Matthew Golden|Over|4.5|1.63
+player_receptions|Matthew Golden|Under|4.5|2.18
+player_receptions|Isaac TeSlaa|Over|1.5|1.69
+player_receptions|Isaac TeSlaa|Under|1.5|2.08
+player_receptions|Josh Jacobs|Over|1.5|1.83
+player_receptions|Josh Jacobs|Under|1.5|1.91
+player_receptions|Tucker Kraft|Over|4.5|1.98
+player_receptions|Tucker Kraft|Under|4.5|1.77
+player_receptions|Jameson Williams|Over|3.5|1.72
+player_receptions|Jameson Williams|Under|3.5|2.04
+player_receptions|Savion Williams|Over|2.5|2.16
+player_receptions|Savion Williams|Under|2.5|1.65
+player_receptions|Pierre Strong Jr.|Over|1.5|1.88
+player_receptions|Pierre Strong Jr.|Under|1.5|1.88
+player_receptions|Amon-Ra St. Brown|Over|7.5|2.0
+player_receptions|Amon-Ra St. Brown|Under|7.5|1.76
+player_receptions_alternate|Savion Williams|Over|0.5|1.06
+player_receptions_alternate|Savion Williams|Over|1.5|1.37
+player_receptions_alternate|Savion Williams|Over|2.5|2.12
+player_receptions_alternate|Savion Williams|Over|3.5|3.8
+player_receptions_alternate|Savion Williams|Over|4.5|7.3
+player_receptions_alternate|Isaac TeSlaa|Over|0.5|1.14
+player_receptions_alternate|Isaac TeSlaa|Over|1.5|1.68
+player_receptions_alternate|Isaac TeSlaa|Over|2.5|3.1
+player_receptions_alternate|Isaac TeSlaa|Over|3.5|6.5
+player_receptions_alternate|Sam LaPorta|Over|2.5|1.11
+player_receptions_alternate|Sam LaPorta|Over|3.5|1.31
+player_receptions_alternate|Sam LaPorta|Over|4.5|1.66
+player_receptions_alternate|Sam LaPorta|Over|5.5|2.32
+player_receptions_alternate|Sam LaPorta|Over|6.5|3.35
+player_receptions_alternate|Sam LaPorta|Over|7.5|5.1
+player_receptions_alternate|Sam LaPorta|Over|8.5|8.0
+player_receptions_alternate|Sam LaPorta|Over|9.5|12.0
+player_receptions_alternate|Amon-Ra St. Brown|Over|4.5|1.12
+player_receptions_alternate|Amon-Ra St. Brown|Over|5.5|1.29
+player_receptions_alternate|Amon-Ra St. Brown|Over|6.5|1.54
+player_receptions_alternate|Amon-Ra St. Brown|Over|7.5|2.0
+player_receptions_alternate|Amon-Ra St. Brown|Over|8.5|2.68
+player_receptions_alternate|Amon-Ra St. Brown|Over|9.5|3.7
+player_receptions_alternate|Amon-Ra St. Brown|Over|10.5|5.3
+player_receptions_alternate|Amon-Ra St. Brown|Over|11.5|7.4
+player_receptions_alternate|Amon-Ra St. Brown|Over|12.5|10.2
+player_receptions_alternate|Amon-Ra St. Brown|Over|13.5|16.0
+player_receptions_alternate|Matthew Golden|Over|2.5|1.07
+player_receptions_alternate|Matthew Golden|Over|3.5|1.24
+player_receptions_alternate|Matthew Golden|Over|4.5|1.56
+player_receptions_alternate|Matthew Golden|Over|5.5|2.18
+player_receptions_alternate|Matthew Golden|Over|6.5|3.25
+player_receptions_alternate|Matthew Golden|Over|7.5|5.1
+player_receptions_alternate|Matthew Golden|Over|8.5|8.5
+player_receptions_alternate|Matthew Golden|Over|9.5|13.0
+player_receptions_alternate|Jahmyr Gibbs|Over|2.5|1.12
+player_receptions_alternate|Jahmyr Gibbs|Over|3.5|1.31
+player_receptions_alternate|Jahmyr Gibbs|Over|4.5|1.66
+player_receptions_alternate|Jahmyr Gibbs|Over|5.5|2.3
+player_receptions_alternate|Jahmyr Gibbs|Over|6.5|3.3
+player_receptions_alternate|Jahmyr Gibbs|Over|7.5|5.0
+player_receptions_alternate|Jahmyr Gibbs|Over|8.5|7.4
+player_receptions_alternate|Jahmyr Gibbs|Over|9.5|10.2
+player_receptions_alternate|Jahmyr Gibbs|Over|10.5|16.0
+player_receptions_alternate|Christian Watson|Over|2.5|1.12
+player_receptions_alternate|Christian Watson|Over|3.5|1.36
+player_receptions_alternate|Christian Watson|Over|4.5|1.83
+player_receptions_alternate|Christian Watson|Over|5.5|2.74
+player_receptions_alternate|Christian Watson|Over|6.5|4.2
+player_receptions_alternate|Christian Watson|Over|7.5|7.3
+player_receptions_alternate|Christian Watson|Over|8.5|10.2
+player_receptions_alternate|Christian Watson|Over|9.5|16.0
+player_receptions_alternate|Jameson Williams|Over|1.5|1.07
+player_receptions_alternate|Jameson Williams|Over|2.5|1.28
+player_receptions_alternate|Jameson Williams|Over|3.5|1.71
+player_receptions_alternate|Jameson Williams|Over|4.5|2.62
+player_receptions_alternate|Jameson Williams|Over|5.5|4.2
+player_receptions_alternate|Jameson Williams|Over|6.5|7.3
+player_receptions_alternate|Jameson Williams|Over|7.5|12.0
+player_receptions_alternate|Tucker Kraft|Over|2.5|1.15
+player_receptions_alternate|Tucker Kraft|Over|3.5|1.4
+player_receptions_alternate|Tucker Kraft|Over|4.5|1.89
+player_receptions_alternate|Tucker Kraft|Over|5.5|2.78
+player_receptions_alternate|Tucker Kraft|Over|6.5|4.2
+player_receptions_alternate|Tucker Kraft|Over|7.5|7.3
+player_receptions_alternate|Tucker Kraft|Over|8.5|10.2
+player_receptions_alternate|Tucker Kraft|Over|9.5|16.0
+player_receptions_alternate|Pierre Strong Jr.|Over|0.5|1.2
+player_receptions_alternate|Pierre Strong Jr.|Over|1.5|1.88
+player_receptions_alternate|Pierre Strong Jr.|Over|2.5|3.5
+player_receptions_alternate|Pierre Strong Jr.|Over|3.5|6.8
+player_receptions_alternate|Josh Jacobs|Over|0.5|1.2
+player_receptions_alternate|Josh Jacobs|Over|1.5|1.83
+player_receptions_alternate|Josh Jacobs|Over|2.5|3.2
+player_receptions_alternate|Josh Jacobs|Over|3.5|5.7
+player_receptions_alternate|Josh Jacobs|Over|4.5|10.2
+player_rush_yds_alternate|Jahmyr Gibbs|Over|49.5|1.08
+player_rush_yds_alternate|Jahmyr Gibbs|Over|59.5|1.17
+player_rush_yds_alternate|Jahmyr Gibbs|Over|69.5|1.3
+player_rush_yds_alternate|Jahmyr Gibbs|Over|79.5|1.48
+player_rush_yds_alternate|Jahmyr Gibbs|Over|89.5|1.74
+player_rush_yds_alternate|Jahmyr Gibbs|Over|99.5|2.1
+player_rush_yds_alternate|Jahmyr Gibbs|Over|109.5|2.58
+player_rush_yds_alternate|Jahmyr Gibbs|Over|124.5|3.7
+player_rush_yds_alternate|Jahmyr Gibbs|Over|149.5|6.8
+player_rush_yds_alternate|Jahmyr Gibbs|Over|174.5|12.0
+player_rush_yds_alternate|Josh Jacobs|Over|14.5|1.06
+player_rush_yds_alternate|Josh Jacobs|Over|19.5|1.12
+player_rush_yds_alternate|Josh Jacobs|Over|24.5|1.2
+player_rush_yds_alternate|Josh Jacobs|Over|29.5|1.3
+player_rush_yds_alternate|Josh Jacobs|Over|39.5|1.56
+player_rush_yds_alternate|Josh Jacobs|Over|49.5|1.98
+player_rush_yds_alternate|Josh Jacobs|Over|59.5|2.54
+player_rush_yds_alternate|Josh Jacobs|Over|69.5|3.25
+player_rush_yds_alternate|Josh Jacobs|Over|79.5|4.2
+player_rush_yds_alternate|Josh Jacobs|Over|89.5|5.5
+player_rush_yds_alternate|Josh Jacobs|Over|99.5|7.3
+player_rush_yds_alternate|Josh Jacobs|Over|109.5|9.5
+player_rush_yds_alternate|Josh Jacobs|Over|124.5|13.0
+player_rush_yds_alternate|Sione Vaki|Over|4.5|1.41
+player_rush_yds_alternate|Sione Vaki|Over|9.5|2.02
+player_rush_yds_alternate|Sione Vaki|Over|14.5|2.88
+player_rush_yds_alternate|Sione Vaki|Over|19.5|4.1
+player_rush_yds_alternate|Sione Vaki|Over|24.5|5.5
+player_rush_yds_alternate|Sione Vaki|Over|29.5|7.4
+player_rush_yds_alternate|MarShawn Lloyd|Over|4.5|1.26
+player_rush_yds_alternate|MarShawn Lloyd|Over|9.5|1.6
+player_rush_yds_alternate|MarShawn Lloyd|Over|14.5|2.08
+player_rush_yds_alternate|MarShawn Lloyd|Over|19.5|2.72
+player_rush_yds_alternate|MarShawn Lloyd|Over|24.5|3.4
+player_rush_yds_alternate|MarShawn Lloyd|Over|29.5|4.5
+player_rush_yds_alternate|MarShawn Lloyd|Over|39.5|6.8
+player_rush_yds_alternate|MarShawn Lloyd|Over|49.5|9.8
+player_rush_yds_alternate|Jared Goff|Over|4.5|2.88
+player_rush_yds_alternate|Jared Goff|Over|9.5|4.7
+player_rush_yds_alternate|Jared Goff|Over|14.5|8.0
+player_rush_yds_alternate|Jordan Love|Over|4.5|1.5
+player_rush_yds_alternate|Jordan Love|Over|9.5|2.18
+player_rush_yds_alternate|Jordan Love|Over|14.5|3.25
+player_rush_yds_alternate|Jordan Love|Over|19.5|4.9
+player_rush_yds_alternate|Jordan Love|Over|24.5|7.4
+player_rush_yds_alternate|Jordan Love|Over|29.5|10.2

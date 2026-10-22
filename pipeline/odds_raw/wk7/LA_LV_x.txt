@@ -4,3 +4,141 @@ game_spreads|Las Vegas Raiders||4.5|1.87
 game_spreads|Los Angeles Rams||-4.5|1.95
 game_totals|Over|Over|48.5|1.93
 game_totals|Under|Under|48.5|1.89
+player_receptions_alternate|Puka Nacua|Over|4.5|1.08
+player_receptions_alternate|Puka Nacua|Over|5.5|1.2
+player_receptions_alternate|Puka Nacua|Over|6.5|1.4
+player_receptions_alternate|Puka Nacua|Over|7.5|1.71
+player_receptions_alternate|Puka Nacua|Over|8.5|2.23
+player_receptions_alternate|Puka Nacua|Over|9.5|3.06
+player_receptions_alternate|Puka Nacua|Over|10.5|4.44
+player_receptions_alternate|Puka Nacua|Over|11.5|6.67
+player_receptions_alternate|Puka Nacua|Over|12.5|10.1
+player_receptions_alternate|Puka Nacua|Over|13.5|15.2
+player_receptions_alternate|Puka Nacua|Over|14.5|22.0
+player_receptions_alternate|Puka Nacua|Over|15.5|29.0
+player_receptions_alternate|Brock Bowers|Over|3.5|1.11
+player_receptions_alternate|Brock Bowers|Over|4.5|1.28
+player_receptions_alternate|Brock Bowers|Over|5.5|1.57
+player_receptions_alternate|Brock Bowers|Over|6.5|2.1
+player_receptions_alternate|Brock Bowers|Over|7.5|2.97
+player_receptions_alternate|Brock Bowers|Over|8.5|4.52
+player_receptions_alternate|Brock Bowers|Over|9.5|7.1
+player_receptions_alternate|Brock Bowers|Over|10.5|11.4
+player_receptions_alternate|Brock Bowers|Over|11.5|17.6
+player_receptions_alternate|Brock Bowers|Over|12.5|25.0
+player_receptions_alternate|Tyler Higbee|Over|1.5|1.07
+player_receptions_alternate|Tyler Higbee|Over|2.5|1.24
+player_receptions_alternate|Tyler Higbee|Over|3.5|1.57
+player_receptions_alternate|Tyler Higbee|Over|4.5|2.2
+player_receptions_alternate|Tyler Higbee|Over|5.5|3.34
+player_receptions_alternate|Tyler Higbee|Over|6.5|5.29
+player_receptions_alternate|Tyler Higbee|Over|7.5|8.8
+player_receptions_alternate|Tyler Higbee|Over|8.5|14.4
+player_receptions_alternate|Tyler Higbee|Over|9.5|22.0
+player_receptions_alternate|Kyren Williams|Over|1.5|1.09
+player_receptions_alternate|Kyren Williams|Over|2.5|1.32
+player_receptions_alternate|Kyren Williams|Over|3.5|1.78
+player_receptions_alternate|Kyren Williams|Over|4.5|2.64
+player_receptions_alternate|Kyren Williams|Over|5.5|4.42
+player_receptions_alternate|Kyren Williams|Over|6.5|7.7
+player_receptions_alternate|Kyren Williams|Over|7.5|13.2
+player_receptions_alternate|Kyren Williams|Over|8.5|23.0
+player_receptions_alternate|Michael Mayer|Over|1.5|1.09
+player_receptions_alternate|Michael Mayer|Over|2.5|1.31
+player_receptions_alternate|Michael Mayer|Over|3.5|1.76
+player_receptions_alternate|Michael Mayer|Over|4.5|2.66
+player_receptions_alternate|Michael Mayer|Over|5.5|4.41
+player_receptions_alternate|Michael Mayer|Over|6.5|7.7
+player_receptions_alternate|Michael Mayer|Over|7.5|14.0
+player_receptions_alternate|Michael Mayer|Over|8.5|23.0
+player_receptions_alternate|Ashton Jeanty|Over|1.5|1.1
+player_receptions_alternate|Ashton Jeanty|Over|2.5|1.35
+player_receptions_alternate|Ashton Jeanty|Over|3.5|1.85
+player_receptions_alternate|Ashton Jeanty|Over|4.5|2.86
+player_receptions_alternate|Ashton Jeanty|Over|5.5|4.88
+player_receptions_alternate|Ashton Jeanty|Over|6.5|8.6
+player_receptions_alternate|Ashton Jeanty|Over|7.5|15.2
+player_receptions_alternate|Ashton Jeanty|Over|8.5|25.0
+player_receptions_alternate|Tre Tucker|Over|1.5|1.14
+player_receptions_alternate|Tre Tucker|Over|2.5|1.45
+player_receptions_alternate|Tre Tucker|Over|3.5|2.09
+player_receptions_alternate|Tre Tucker|Over|4.5|3.36
+player_receptions_alternate|Tre Tucker|Over|5.5|5.94
+player_receptions_alternate|Tre Tucker|Over|6.5|10.7
+player_receptions_alternate|Tre Tucker|Over|7.5|19.6
+player_receptions_alternate|Colby Parkinson|Over|1.5|1.38
+player_receptions_alternate|Colby Parkinson|Over|2.5|2.14
+player_receptions_alternate|Colby Parkinson|Over|3.5|3.88
+player_receptions_alternate|Colby Parkinson|Over|4.5|7.9
+player_receptions_alternate|Colby Parkinson|Over|5.5|15.4
+player_receptions_alternate|Colby Parkinson|Over|6.5|27.0
+player_receptions_alternate|Konata Mumpfield|Over|1.5|1.63
+player_receptions_alternate|Konata Mumpfield|Over|2.5|2.92
+player_receptions_alternate|Konata Mumpfield|Over|3.5|6.04
+player_receptions_alternate|Konata Mumpfield|Over|4.5|13.2
+player_receptions_alternate|Konata Mumpfield|Over|5.5|26.0
+player_receptions_alternate|Blake Corum|Over|1.5|2.44
+player_receptions_alternate|Blake Corum|Over|2.5|5.76
+player_receptions_alternate|Blake Corum|Over|3.5|14.6
+player_receptions_alternate|Blake Corum|Over|4.5|28.0
+player_receptions_alternate|Davis Allen|Over|1.5|2.88
+player_receptions_alternate|Davis Allen|Over|2.5|7.4
+player_receptions_alternate|Davis Allen|Over|3.5|19.0
+player_rush_yds_alternate|Kyren Williams|Over|24.5|1.05
+player_rush_yds_alternate|Kyren Williams|Over|29.5|1.08
+player_rush_yds_alternate|Kyren Williams|Over|39.5|1.21
+player_rush_yds_alternate|Kyren Williams|Over|49.5|1.41
+player_rush_yds_alternate|Kyren Williams|Over|59.5|1.72
+player_rush_yds_alternate|Kyren Williams|Over|63.5|1.88
+player_rush_yds_alternate|Kyren Williams|Over|69.5|2.16
+player_rush_yds_alternate|Kyren Williams|Over|79.5|2.78
+player_rush_yds_alternate|Kyren Williams|Over|89.5|3.68
+player_rush_yds_alternate|Kyren Williams|Over|99.5|5.02
+player_rush_yds_alternate|Kyren Williams|Over|109.5|6.79
+player_rush_yds_alternate|Kyren Williams|Over|119.5|9.3
+player_rush_yds_alternate|Kyren Williams|Over|129.5|13.2
+player_rush_yds_alternate|Kyren Williams|Over|139.5|19.0
+player_rush_yds_alternate|Kyren Williams|Over|149.5|26.0
+player_rush_yds_alternate|Kyren Williams|Over|159.5|34.0
+player_rush_yds_alternate|Ashton Jeanty|Over|19.5|1.06
+player_rush_yds_alternate|Ashton Jeanty|Over|24.5|1.11
+player_rush_yds_alternate|Ashton Jeanty|Over|29.5|1.2
+player_rush_yds_alternate|Ashton Jeanty|Over|39.5|1.45
+player_rush_yds_alternate|Ashton Jeanty|Over|49.5|1.88
+player_rush_yds_alternate|Ashton Jeanty|Over|59.5|2.58
+player_rush_yds_alternate|Ashton Jeanty|Over|69.5|3.68
+player_rush_yds_alternate|Ashton Jeanty|Over|79.5|5.26
+player_rush_yds_alternate|Ashton Jeanty|Over|89.5|7.6
+player_rush_yds_alternate|Ashton Jeanty|Over|99.5|11.2
+player_rush_yds_alternate|Ashton Jeanty|Over|109.5|15.8
+player_rush_yds_alternate|Ashton Jeanty|Over|119.5|22.0
+player_rush_yds_alternate|Ashton Jeanty|Over|129.5|31.0
+player_rush_yds_alternate|Ashton Jeanty|Over|139.5|39.0
+player_rush_yds_alternate|Blake Corum|Over|9.5|1.05
+player_rush_yds_alternate|Blake Corum|Over|14.5|1.12
+player_rush_yds_alternate|Blake Corum|Over|19.5|1.22
+player_rush_yds_alternate|Blake Corum|Over|24.5|1.35
+player_rush_yds_alternate|Blake Corum|Over|29.5|1.53
+player_rush_yds_alternate|Blake Corum|Over|37.5|1.91
+player_rush_yds_alternate|Blake Corum|Over|39.5|2.03
+player_rush_yds_alternate|Blake Corum|Over|49.5|2.78
+player_rush_yds_alternate|Blake Corum|Over|59.5|3.89
+player_rush_yds_alternate|Blake Corum|Over|69.5|5.54
+player_rush_yds_alternate|Blake Corum|Over|79.5|8.0
+player_rush_yds_alternate|Blake Corum|Over|89.5|11.2
+player_rush_yds_alternate|Blake Corum|Over|99.5|15.8
+player_rush_yds_alternate|Blake Corum|Over|109.5|22.0
+player_rush_yds_alternate|Blake Corum|Over|119.5|30.0
+player_rush_yds_alternate|Blake Corum|Over|129.5|41.0
+player_rush_yds_alternate|Mike Washington Jr.|Over|9.5|1.21
+player_rush_yds_alternate|Mike Washington Jr.|Over|14.5|1.42
+player_rush_yds_alternate|Mike Washington Jr.|Over|19.5|1.75
+player_rush_yds_alternate|Mike Washington Jr.|Over|21.5|1.92
+player_rush_yds_alternate|Mike Washington Jr.|Over|24.5|2.23
+player_rush_yds_alternate|Mike Washington Jr.|Over|29.5|2.88
+player_rush_yds_alternate|Mike Washington Jr.|Over|39.5|5.09
+player_rush_yds_alternate|Mike Washington Jr.|Over|49.5|8.7
+player_rush_yds_alternate|Mike Washington Jr.|Over|59.5|14.4
+player_rush_yds_alternate|Mike Washington Jr.|Over|69.5|21.0
+player_rush_yds_alternate|Mike Washington Jr.|Over|79.5|30.0
+player_rush_yds_alternate|Mike Washington Jr.|Over|89.5|40.0

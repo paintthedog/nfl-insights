@@ -1,0 +1,52 @@
+player_anytime_td|Kyren Williams|Yes||1.65
+player_anytime_td|Puka Nacua|Yes||1.77
+player_anytime_td|Ashton Jeanty|Yes||1.8
+player_anytime_td|Brock Bowers|Yes||2.1
+player_anytime_td|Blake Corum|Yes||2.65
+player_anytime_td|Tyler Higbee|Yes||3.8
+player_anytime_td|Tre Tucker|Yes||4.3
+player_anytime_td|Michael Mayer|Yes||4.7
+player_anytime_td|Colby Parkinson|Yes||5.0
+player_anytime_td|Mike Washington Jr.|Yes||5.75
+player_anytime_td|Konata Mumpfield|Yes||6.0
+player_anytime_td|Dont'e Thornton Jr.|Yes||6.5
+player_anytime_td|Jalen Nailor|Yes||7.0
+player_anytime_td|Davis Allen|Yes||7.0
+player_anytime_td|Los Angeles Rams D/ST|Yes||7.5
+player_anytime_td|Las Vegas Raiders D/ST|Yes||8.0
+player_anytime_td|Jordan Whittington|Yes||8.0
+player_anytime_td|Dylan Laube|Yes||8.5
+player_anytime_td|Tutu Atwell|Yes||8.5
+player_anytime_td|Cody White|Yes||12.0
+player_anytime_td|Connor Heyward|Yes||17.0
+player_anytime_td|Alex Bachman|Yes||17.0
+player_anytime_td|Malik Benson|Yes||19.0
+player_anytime_td|Ian Thomas|Yes||19.0
+player_anytime_td|Matthew Stafford|Yes||19.0
+player_anytime_td|CJ Daniels|Yes||20.0
+player_anytime_td|Kirk Cousins|Yes||21.0
+player_anytime_td|Dareke Young|Yes||23.0
+player_anytime_td|Max Klare|Yes||41.0
+player_anytime_td|Dean Connors|Yes||46.0
+player_receptions|Puka Nacua|Over|7.5|1.72
+player_receptions|Puka Nacua|Under|7.5|2.08
+player_receptions|Brock Bowers|Over|6.5|2.09
+player_receptions|Brock Bowers|Under|6.5|1.72
+player_receptions|Tyler Higbee|Over|4.5|2.21
+player_receptions|Tyler Higbee|Under|4.5|1.65
+player_receptions|Michael Mayer|Over|3.5|1.78
+player_receptions|Michael Mayer|Under|3.5|2.01
+player_receptions|Kyren Williams|Over|3.5|1.79
+player_receptions|Kyren Williams|Under|3.5|1.98
+player_receptions|Ashton Jeanty|Over|3.5|1.88
+player_receptions|Ashton Jeanty|Under|3.5|1.89
+player_receptions|Tre Tucker|Over|3.5|2.1
+player_receptions|Tre Tucker|Under|3.5|1.71
+player_receptions|Colby Parkinson|Over|2.5|2.15
+player_receptions|Colby Parkinson|Under|2.5|1.68
+player_receptions|Konata Mumpfield|Over|1.5|1.63
+player_receptions|Konata Mumpfield|Under|1.5|2.25
+player_receptions|Blake Corum|Over|1.5|2.44
+player_receptions|Blake Corum|Under|1.5|1.54
+player_receptions|Davis Allen|Over|0.5|1.43
+player_receptions|Davis Allen|Under|0.5|2.78
