@@ -32,12 +32,13 @@ Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is
   - Stack = QB + exactly 2 of his pass catchers, and no more from that team.
   - At most one Eagle. No Saints while they're bad.
   - Follow established tournament practice; don't hand-tune an optimizer.
-- **Test strategies tracked every week:**
-  - "ML + top TD scorer, 2 legs" (started Week 6)
-  - matchup props
-  - same-game stacks
-  - TD fades
-  - a random-pick control
+- **Test strategies tracked every week** (pre-registered, mechanical; see the checklist for exact rules):
+  - "ML + top TD scorer, 2 legs" (started Week 6; picks the winner by the line-anchored chance since Oct 21)
+  - matchup props, same-game stacks (incl. QB yards + WR1 catches), TD fades, a random-pick control
+  - added Oct 21: small-underdog teasers, wind and prime-time unders, steady-leg parlays
+  - cut Oct 21: top-5-total TD parlays, favorites' lead-RB TD parlays, the TD 4.0–6.0 band
+- **What Clinton wants from the data:** find which predictions the model is genuinely good at, and the bets closest to structural "hacks" of the book: boosts and promos, DK vs FanDuel price shopping, key-number teasers, same-game parlays priced below their fair (correlated) price, and DK's board disagreeing with itself. The model has not beaten DK's lines on any market yet; say so when it matters.
+- **Odds budget:** the Odds API account has 500 credits for the season. No second weekly prop pull; closing-line value comes free from nflverse for game lines only.
 - When asked a raw question (e.g. "most TDs allowed to which position"), answer the raw count, not a relative-to-average number.
 - Clinton bets throughout the week and may send screenshots of bets to judge against the projections.
 

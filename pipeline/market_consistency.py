@@ -116,6 +116,52 @@ if len(rb) >= 10:
         if abs(e) >= 1.5 * sd:
             flag("Lead back vs game script", r.game_id, r.player, "rush_yds", r.rush, f, e, f"DK's ladder puts {r.player} ({r.team}) at a {r.rush:.0f}-yard median; a lead back on a team with {r.imp:.1f} implied points, favored by {r.hcp:+.1f}, averages {f:.0f}" + (" — ladder high vs the game script" if e > 0 else " — ladder low vs the game script"))
 
+# ---- 5 (Oct 21). main line vs the same outcome on the alternate ladder: DK's main "Over 3.5 receptions" and its alternate "4+" are one bet.
+# Week 6: the main line paid ~0.5% more on average and the alternate was better in 16 of 126 cases (at most +1.3%), so this is a
+# price-shopping rule more than an edge. Flagged when either side pays 2%+ more for the identical outcome.
+OU = pd.read_csv("props_log_ou.csv") if __import__("os").path.exists("props_log_ou.csv") else pd.DataFrame()
+if len(OU):
+    ou = OU[(OU.week == W) & (OU.market == "player_receptions")].sort_values("pulled_at").drop_duplicates(["game_id", "player"], keep="last")
+    al = M[(M.market == "player_receptions_alternate") & (M.side == "Over")].copy(); al["k"] = al.subject.map(norm); ou = ou.assign(k=ou.player.map(norm))
+    for r in al.merge(ou, on=["game_id", "k", "point"], suffixes=("", "_main")).itertuples():
+        gap = r.price / r.over - 1
+        if abs(gap) >= 0.02:
+            better = "alternate" if gap > 0 else "main line"
+            flag("Main line vs alternate", r.game_id, r.subject, "rec", r.price, r.over, gap, f"{r.subject} over {r.point:g} receptions pays {r.over:.2f} on the main line and {r.price:.2f} on the alternate ladder; take the {better}")
+# ---- 6 (Oct 21). team totals vs the game line: a team's points implied by DK's spread and total vs DK's own team-total line.
+# Flagged at 1+ point apart; the bettable side moves the team total back toward the game line.
+SDTEAM = 9.5
+try:
+    _L = json.load(open(f"lines_2026_wk{W}.json")); SDTEAM = sqrt((_L["sd_total"] ** 2 + _L["sd_margin"] ** 2) / 4)
+except Exception: pass
+for (gid, team), x in M[M.market == "team_totals"].groupby(["game_id", "subject"]):
+    if gid not in G or team not in G[gid]["imp"]: continue
+    o, u = x[x.side == "Over"], x[x.side == "Under"]
+    if not len(o) or not len(u): continue
+    ln, imp = float(o.point.iloc[0]), G[gid]["imp"][team]; gap = imp - ln
+    if abs(gap) >= 1.0:
+        side = "Over" if gap > 0 else "Under"; pr = float((o if gap > 0 else u).price.iloc[0])
+        p_side = 1 - Phi((ln - imp) / SDTEAM) if side == "Over" else Phi((ln - imp) / SDTEAM)
+        flag("Team total vs game line", gid, team, "team_total", ln, imp, gap, f"DK's team total for {team} is {ln:g}; its spread and total imply {imp:.1f} — {side} is the side that agrees with the game line",
+             side=side, price=pr, point=ln)
+        flags[-1]["board_p"] = round(p_side, 4)
+# ---- 7 (Oct 21). DraftKings vs FanDuel on the identical outcome (fd_log.csv, filled by ingest_fd.py from the same pull).
+# Not a bet type: it's which book to place the bet at. Flagged when FanDuel pays 3%+ more.
+if __import__("os").path.exists("fd_log.csv"):
+    FD = pd.read_csv("fd_log.csv"); FD = FD[FD.week == W].sort_values("pulled_at").drop_duplicates(["game_id", "market", "subject", "side", "point"], keep="last")
+    dk = M[["game_id", "market", "subject", "side", "point", "price"]].copy()
+    dk = pd.concat([dk, TD.assign(market="player_anytime_td", subject=TD.player, side="Yes", point=np.nan)[["game_id", "market", "subject", "side", "point", "price"]]])
+    if len(OU):
+        o2 = OU[OU.week == W].sort_values("pulled_at").drop_duplicates(["game_id", "market", "player"], keep="last")
+        dk = pd.concat([dk, o2.assign(subject=o2.player, side="Over", price=o2.over)[["game_id", "market", "subject", "side", "point", "price"]],
+                        o2.assign(subject=o2.player, side="Under", price=o2.under)[["game_id", "market", "subject", "side", "point", "price"]]])
+    for d_ in (dk, FD): d_["k"] = d_.subject.map(norm); d_["pk"] = d_.point.fillna(-99).round(1); d_["sk"] = d_.side.fillna("").replace({"": "-"})
+    J = FD.merge(dk, on=["game_id", "market", "k", "sk", "pk"], suffixes=("_fd", "_dk"))
+    for r in J.itertuples():
+        gap = r.price_fd / r.price_dk - 1
+        if gap >= 0.03:
+            pt = "" if pd.isna(r.point_fd) else f" {r.point_fd:g}"
+            flag("DraftKings vs FanDuel", r.game_id, r.subject_fd, r.market, r.price_dk, r.price_fd, gap, f"{r.subject_fd} {r.market.replace('player_', '').replace('_', ' ')} {r.side_fd if isinstance(r.side_fd, str) else ''}{pt}: FanDuel {r.price_fd:.2f} vs DraftKings {r.price_dk:.2f}")
 F = pd.DataFrame(flags).sort_values(["check", "gap"], key=lambda s: s.abs() if s.name == "gap" else s, ascending=[True, False]) if flags else pd.DataFrame()
 F.to_csv(f"consistency_wk{W}.csv", index=False)
 # paper record rows: the board's own number stands in for model_p (this test has no model of ours in it)
@@ -124,6 +170,8 @@ for r in (F[F.side.notna()].itertuples() if len(F) else []):
     if r.market == "ml":
         g = G[r.game_id]; p = (1 - r.board) if r.side == g["away"] else r.board
         paper.append(dict(week=W, type="Board consistency", game_id=r.game_id, subject=r.side, market="ml", side="ML", line=None, price=round(float(r.price), 3), model_p=round(float(p), 4), legs="", placed_at=""))
+    elif r.market == "team_total":
+        paper.append(dict(week=W, type="Board consistency", game_id=r.game_id, subject=r.subject, market="team_total", side=r.side, line=float(r.point), price=round(float(r.price), 3), model_p=float(r.board_p), legs="", placed_at=""))
     elif r.market == "atd":
         paper.append(dict(week=W, type="Board consistency", game_id=r.game_id, subject=r.subject, market="atd", side="Yes", line=None, price=round(float(r.price), 3), model_p=round(float(r.board), 4), legs="", placed_at=""))
 PAPER = pd.DataFrame(paper)

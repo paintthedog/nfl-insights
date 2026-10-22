@@ -1690,7 +1690,7 @@ function renderRecord() {
   $$("[data-rp]").forEach(b => b.addEventListener("click", () => { recPeriod = b.dataset.rp; renderRecord(); }));
   const betCols = [
     { k: "bet", label: "Bet", asc: 1, cell: r => `<span class="player">${esc(r.bet)}</span><span class="sub">${esc(r.type)}</span>` },
-    { k: "price", label: "Price", cell: r => `<span class="num">${r.price.toFixed(2)}</span>` }, { k: "model_p", label: "Model", cell: r => `<span class="num">${pct(r.model_p)}</span>` },
+    { k: "price", label: "Price", cell: r => `<span class="num">${r.price.toFixed(2)}</span>${r.fair ? `<span class="sub" data-tip="Same-game parlay: the price these legs deserve given how they move together. If DraftKings' same-game price in the app is higher than this, the parlay pays more than it should.">fair ${r.fair.toFixed(2)}</span>` : ""}` }, { k: "model_p", label: "Model", cell: r => `<span class="num">${pct(r.model_p)}</span>` },
     { k: "result", label: "Result", asc: 1, cell: r => `<span class="num ${r.result === "win" ? "pos-ev" : ""}">${r.result === "void" ? "push" : r.result}${r.actual == null ? "" : ` <span class="dim">(${r.actual % 1 ? r.actual.toFixed(1) : r.actual})</span>`}</span>` },
     { k: "pnl", label: "Units", cell: r => r.result === "pending" ? dash : u(r.pnl) }];
   const ruleCols = [
@@ -1699,6 +1699,9 @@ function renderRecord() {
     { k: "hit", label: "Hit", cell: r => r.hit == null ? dash : `<span class="num pts ${r.breakeven != null && r.hit > r.breakeven ? "pos-ev" : ""}">${(r.hit * 100).toFixed(1)}%</span><span class="sub">${r.w} of ${r.n}</span>` },
     { k: "model", label: "Model said", cell: r => pc(r.model) }, { k: "breakeven", label: "Break-even", cell: r => pc(r.breakeven) },
     { k: "units", label: "Units", cell: r => r.n && r.group === "bet" ? u(r.units) : dash },
+    { k: "clv", label: "Beat the close", sv: r => r.clv ? r.clv.avg : r.clv_pts ? r.clv_pts.avg / 10 : -9,
+      cell: r => r.clv ? `<span class="num ${r.clv.avg > 0 ? "pos-ev" : ""}" data-tip="Price taken vs the market's closing price, game lines only. Positive = the bet got a better number than the close. It settles whether a rule is good long before the win–loss record can.">${r.clv.avg > 0.0005 ? "+" : r.clv.avg < -0.0005 ? "−" : ""}${Math.abs(r.clv.avg * 100).toFixed(1)}%</span><span class="sub">${Math.round(r.clv.beat * 100)}% of ${r.clv.n}</span>`
+        : r.clv_pts ? `<span class="num ${r.clv_pts.avg > 0 ? "pos-ev" : ""}" data-tip="Points of line value vs the market's closing line (totals and teaser legs). Positive = a better number than the close.">${r.clv_pts.avg >= 0.05 ? "+" : r.clv_pts.avg <= -0.05 ? "−" : ""}${Math.abs(r.clv_pts.avg).toFixed(1)} pts</span><span class="sub">${Math.round(r.clv_pts.beat * 100)}% of ${r.clv_pts.n}</span>` : dash },
     { k: "read", label: "Read", asc: 1, cell: r => `<span class="vlab ${labCls(r.read)}">${esc(r.read)}</span>` }];
   if (recPeriod === "week") {
     if (!TW) $("#rec-fam").innerHTML = `<p class="wnote">No slate yet; the first comes from the next game-morning pull.</p>`;

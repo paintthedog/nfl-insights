@@ -10,12 +10,7 @@ W, pulled = int(sys.argv[1]), sys.argv[2]
 sch = pd.read_parquet("data/sched.parquet"); sch = sch[(sch.season == 2026) & (sch.week == W)]
 TEAMS = pd.read_parquet("data/sched.parquet")[["home_team"]].drop_duplicates().home_team
 NICK = {}   # 'Denver Broncos' -> DEN via nickname (last word), with the two LA/NY teams resolved by full city
-FULL = {"Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL", "Baltimore Ravens": "BAL", "Buffalo Bills": "BUF", "Carolina Panthers": "CAR", "Chicago Bears": "CHI",
-        "Cincinnati Bengals": "CIN", "Cleveland Browns": "CLE", "Dallas Cowboys": "DAL", "Denver Broncos": "DEN", "Detroit Lions": "DET", "Green Bay Packers": "GB",
-        "Houston Texans": "HOU", "Indianapolis Colts": "IND", "Jacksonville Jaguars": "JAX", "Kansas City Chiefs": "KC", "Las Vegas Raiders": "LV", "Los Angeles Chargers": "LAC",
-        "Los Angeles Rams": "LA", "Miami Dolphins": "MIA", "Minnesota Vikings": "MIN", "New England Patriots": "NE", "New Orleans Saints": "NO", "New York Giants": "NYG",
-        "New York Jets": "NYJ", "Philadelphia Eagles": "PHI", "Pittsburgh Steelers": "PIT", "San Francisco 49ers": "SF", "Seattle Seahawks": "SEA", "Tampa Bay Buccaneers": "TB",
-        "Tennessee Titans": "TEN", "Washington Commanders": "WAS"}
+from team_names import FULL
 rows = []
 for f in sorted(glob.glob(f"odds_raw/wk{W}/*_x.txt")):
     g = os.path.basename(f).replace("_x.txt", ""); away, home = g.split("_")[:2]; gid = f"2026_{W:02d}_{away}_{home}"

@@ -15,7 +15,7 @@ def p_over(arr, line):
             t = .5 if arr[i] == arr[i - 1] else (line - arr[i - 1]) / (arr[i] - arr[i - 1]); return 1 - (QS[i - 1] + t * (QS[i] - QS[i - 1]))
     return max(0, (1 - QS[-1]) * .5)
 td, ou = [], {}
-for f in sorted(x for x in glob.glob(f"odds_raw/wk{W}/*.txt") if not x.endswith("_x.txt")):   # _x files = extra markets (ingest_more.py)
+for f in sorted(x for x in glob.glob(f"odds_raw/wk{W}/*.txt") if not x.endswith(("_x.txt", "_fd.txt"))):   # _x files = extra markets (ingest_more.py)
     g = os.path.basename(f).split(".")[0].replace("_a", "").replace("_b", ""); away, home = g.split("_"); gid = f"2026_{W:02d}_{away}_{home}"
     for line in open(f):
         x = line.strip().split("|")

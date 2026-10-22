@@ -1,7 +1,7 @@
 """Standing rule (Clinton, Oct 18): "ML + top TD scorer, 2 legs". For every game not yet started: the model's projected winner on the
 moneyline + the game's single likeliest anytime-TD scorer (either team), as one two-leg same-game parlay.
 Usage: python ml_td_slate.py W [--paper]   (paper_slate.py calls build(W) on game mornings)
-Leg chances: moneyline = model win chance blended 20/80 with DK's no-vig price; TD = the site's blended chance. Joint chance =
+Leg chances: moneyline = the site's line-anchored win chance (Oct 21; was the raw model margin) blended 20/80 with DK's no-vig price; TD = the site's blended chance. Joint chance =
 the two multiplied, then nudged by the historical win-vs-lead-scorer link from parlay_joint (RB1 rush_yds ~ WIN) only when the
 scorer is on the picked team; a scorer on the other team is left independent. Price = the two DK prices multiplied (a REFERENCE:
 DK pays less on a same-game parlay). Graded by hit rate and vs the reference price."""
@@ -15,6 +15,14 @@ norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z ]", " ", re.sub(r"\b(jr|sr|i
 lg = lambda p: log(p / (1 - p)); ilg = lambda x: 1 / (1 + exp(-x))
 blend = lambda pm, pk: ilg(0.2 * lg(min(max(pm, .01), .99)) + 0.8 * lg(min(max(pk, .01), .99)))
 STACK_LIFT = 1.08     # P(win & own lead back scores) / (P(win) * P(scores)), from the copula's RB1-WIN link at ~60% legs
+
+
+def anchored_home_win(g, SDM):
+    """Oct 21: the site's best-estimate home win chance: DK's spread moved only as far as the calibrated cover chance allows
+    (same number as the game cards). Falls back to the model margin when there is no line."""
+    from scipy.stats import norm as _n
+    if g.get("spread") is None or g.get("p_home_cover") is None: return Phi(g["m_margin"] / SDM)
+    return Phi((g["spread"] + SDM * float(_n.ppf(min(max(g["p_home_cover"], 1e-6), 1 - 1e-6)))) / SDM)
 
 
 def build(W, now=None, picks=None, stamp=None):
@@ -31,7 +39,7 @@ def build(W, now=None, picks=None, stamp=None):
         if gid not in sw.index: continue
         if picks is None and kick(gid) <= now: continue
         h = M[(M.game_id == gid) & (M.market == "game_h2h")]
-        ph_m = Phi(g["m_margin"] / SDM)
+        ph_m = anchored_home_win(g, SDM)     # Oct 21: was the raw model margin, which picked market underdogs the model only liked on its own
         if picks and gid in picks: team, scorer = picks[gid]
         elif picks: continue
         else:
@@ -51,7 +59,8 @@ def build(W, now=None, picks=None, stamp=None):
                 dict(gid=gid, player=r["name"], stat="atd", line=None, price=float(r["dk"]), p=round(p_td, 4), label="ATD")]
         out.append(dict(week=W, type=TYPE, game_id=gid, subject=f"{team} wins + {r['name']} TD", market="parlay", side="All", line=None,
                         price=round(pr * r["dk"], 3), model_p=round(min(joint, 0.99), 4), legs=json.dumps(legs),
-                        placed_at=stamp or now.tz_convert("UTC").strftime("%Y-%m-%dT%H:%MZ"), indep_p=round(p_win * p_td, 4)))
+                        placed_at=stamp or now.tz_convert("UTC").strftime("%Y-%m-%dT%H:%MZ"), indep_p=round(p_win * p_td, 4),
+                        fair_price=round(1 / max(joint, 1e-6), 2)))
     return pd.DataFrame(out)
 
 

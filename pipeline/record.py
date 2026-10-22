@@ -38,19 +38,21 @@ for t, x in g.groupby("type"):
 
 # ---------------- 1b. current strategy: mechanical paper slates (paper_wk*_graded.csv)
 ORDER = ["Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position", "TD 2.5–3.9, model likes", "Receptions, model differs 5+ pts", "QB INTs (0.5), model differs 5+ pts", "Team totals, model differs 2+ pts",
-         "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts", "Board consistency", "Parlays (alt lines, 2–3 legs)",
+         "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts", "Board consistency", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50",
+         "Teasers: small underdogs +6, 2 legs", "Trend unders: wind 10–19 mph", "Trend unders: prime time",
          "TD parlays: likeliest per game, 2 legs", "TD parlays: likeliest per game, 3 legs", "TD parlays: top-5 totals, 2 legs", "TD parlays: top-5 totals, 3 legs", "TD parlays: top-5 favorites' lead RB", "TD parlays: top-total game, both teams' shortest",
          "TD skip list (not bet)", "TD singles: likeliest scorer per game",
-         "ML + top TD scorer, 2 legs", "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers",
+         "ML + top TD scorer, 2 legs", "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches",
          "TD all: under 2.5", "TD all: 2.5–3.9", "TD all: 4.0–6.0", "TD all: over 6.0", "Control: random"]
-_SKIP = {"TD skip list (not bet)"}; _TRACK = {"ML + top TD scorer, 2 legs", "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "TD singles: likeliest scorer per game", "TD all: under 2.5", "TD all: 2.5–3.9", "TD all: 4.0–6.0", "TD all: over 6.0"}
+_SKIP = {"TD skip list (not bet)"}; _TRACK = {"ML + top TD scorer, 2 legs", "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches", "TD singles: likeliest scorer per game", "TD all: under 2.5", "TD all: 2.5–3.9", "TD all: 4.0–6.0", "TD all: over 6.0"}
 # Oct 18: 8 reader-facing groups for the Record tab; the fine-grained types remain as sub-rows
 FAMILY = {"TD singles": ["TD 2.5–3.9, model likes", "TD skip list (not bet)", "TD singles: likeliest scorer per game"],
           "TD parlays (across games)": ["TD parlays: likeliest per game, 2 legs", "TD parlays: likeliest per game, 3 legs", "TD parlays: top-5 totals, 2 legs", "TD parlays: top-5 totals, 3 legs", "TD parlays: top-5 favorites' lead RB", "TD parlays: top-total game, both teams' shortest"],
           "ML + top TD scorer, 2 legs": ["ML + top TD scorer, 2 legs"],
-          "Same-game stacks": ["Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers"],
+          "Same-game stacks": ["Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches"],
           "Matchup props (opp top-8 vs position)": ["Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position"],
-          "Receptions and alt-line parlays": ["Receptions, model differs 5+ pts", "Parlays (alt lines, 2–3 legs)"],
+          "Receptions and alt-line parlays": ["Receptions, model differs 5+ pts", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50"],
+          "Teasers and trend unders": ["Teasers: small underdogs +6, 2 legs", "Trend unders: wind 10–19 mph", "Trend unders: prime time"],
           "Game lines": ["Team totals, model differs 2+ pts", "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts"],
           "Board consistency (DK vs DK)": ["Board consistency"],
           "Interceptions": ["QB INTs (0.5), model differs 5+ pts"],
@@ -71,7 +73,11 @@ for t in ORDER:
     else: read = "No edge yet"
     if GROUP[t] == "track": read = "Tracking only"
     if GROUP[t] == "control": read = "Benchmark"
-    strategy.append(dict(type=t, family=FAM_OF.get(t, "Other"), group=GROUP[t], n=n, w=w, pending=int((x.result == "pending").sum()), hit=hit, model=mp, breakeven=be, units=round(u, 2), read=read))
+    cv = gx["clv"].dropna() if "clv" in gx else pd.Series(dtype=float); cp = gx["clv_pts"].dropna() if "clv_pts" in gx else pd.Series(dtype=float)
+    clv_ = dict(n=int(len(cv)), avg=round(float(cv.mean()), 4), beat=round(float((cv > 0).mean()), 3)) if len(cv) else None   # Oct 21
+    clvp = dict(n=int(len(cp)), avg=round(float(cp.mean()), 2), beat=round(float((cp > 0).mean()), 3)) if len(cp) else None
+    strategy.append(dict(type=t, family=FAM_OF.get(t, "Other"), group=GROUP[t], n=n, w=w, pending=int((x.result == "pending").sum()), hit=hit, model=mp, breakeven=be, units=round(u, 2), read=read,
+                         clv=clv_, clv_pts=clvp))
 # this week's tests: per family, for the latest week with a slate
 thisweek = None
 if len(pap):
@@ -82,7 +88,8 @@ if len(pap):
         g_ = y[y.result.isin(["win", "loss"])]
         fams.append(dict(family=f, n=len(y), done=len(g_), w=int((g_.result == "win").sum()), expected=round(float(y.model_p.sum()), 1), units=round(float(g_.pnl.sum()), 2),
                          bets=[dict(type=b.type, bet=(f"{b.subject} " + ("anytime TD" if b.market == "atd" else (f"{b.side} {b.line:g}" if b.market not in ("ml", "parlay") else ("moneyline" if b.market == "ml" else "")))).strip(),
-                                    price=float(b.paid_price if pd.notna(b.paid_price) else b.price), model_p=float(b.model_p), result=b.result, actual=None if pd.isna(b.actual) else float(b.actual), pnl=float(b.pnl)) for b in y.itertuples()]))
+                                    price=float(b.paid_price if pd.notna(b.paid_price) else b.price), model_p=float(b.model_p), result=b.result, actual=None if pd.isna(b.actual) else float(b.actual), pnl=float(b.pnl),
+                                    fair=None if pd.isna(getattr(b, "fair_price", np.nan)) else float(b.fair_price)) for b in y.itertuples()]))
     thisweek = dict(week=cw, families=fams)
 
 # ---------------- 2. model vs market by week

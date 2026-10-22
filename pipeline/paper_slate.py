@@ -25,10 +25,11 @@ def add(type_, gid, subj, market, side, line, price, p, legs=None):
                      legs=json.dumps(legs) if legs else "", placed_at=now))
 # ---- anytime TDs (tracking by band + the two betting rules)
 band = lambda x: "TD all: under 2.5" if x < 2.5 else "TD all: 2.5–3.9" if x <= 3.9 else "TD all: 4.0–6.0" if x <= 6.0 else "TD all: over 6.0"
+# Oct 21: the 4.0–6.0 band is no longer logged (8 hits in 62, -26.7u through Week 6; Clinton doesn't bet past 4.5 anyway)
 atd = [r for r in D["td"] if r.get("dk")]
 for r in atd:
     gid = gid_of_team.get(r["team"]); ev = r["p"] * r["dk"] - 1
-    add(band(r["dk"]), gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
+    if not 4.0 <= r["dk"] <= 6.0: add(band(r["dk"]), gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
     if 2.5 <= r["dk"] <= 3.9 and ev >= 0.03: add("TD 2.5–3.9, model likes", gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
     if r["dk"] < 2.5 and ev <= -0.10: add("TD skip list (not bet)", gid, r["name"], "atd", "Yes", None, r["dk"], r["p"])
 # ---- TD parlays from DIFFERENT games (no correlation between legs, so the bet is "are DK's short scorer prices fair?").
@@ -49,19 +50,8 @@ for i in range(0, len(pool) - 1, 2):
 for i in range(0, len(pool) - 2, 3):
     if i // 3 < 3: td_parlay("TD parlays: likeliest per game, 3 legs", pool[i:i + 3])
 top5 = {g["game_id"] for g in sorted([g for g in L["games"] if g.get("total")], key=lambda g: -g["total"])[:5]}
-tp = [l for l in pool if l["gid"] in top5]
-for c in itertools.combinations(tp, 2): td_parlay("TD parlays: top-5 totals, 2 legs", c)
-for c in itertools.combinations(tp, 3): td_parlay("TD parlays: top-5 totals, 3 legs", c)
-# Favored team's lead back in each top-5-total game (Week 5: favorites' lead backs scored, the trailing side's often didn't).
-fav_rb = []
-for g in L["games"]:
-    if g["game_id"] not in top5 or g.get("spread") is None: continue
-    fav = g["away"] if g["spread"] < 0 else g["home"]          # nflverse sign: negative = away team favored
-    rbs = [r for r in atd if r["team"] == fav and r.get("pos") == "RB" and 1.15 <= r["dk"] <= 3.0]
-    if rbs:
-        r = min(rbs, key=lambda r: r["dk"]); fav_rb.append(dict(gid=g["game_id"], player=r["name"], stat="atd", line=0.5, price=float(r["dk"]), p=round(float(r["p"]), 4)))
-for k in (2, 3):
-    for c in itertools.combinations(fav_rb, k): td_parlay("TD parlays: top-5 favorites' lead RB", c)
+# Oct 21: cut "TD parlays: top-5 totals" (2 and 3 legs; 1 win in 20, -18u) and "TD parlays: top-5 favorites' lead RB" (4 in 20, -10u).
+# Their past rows stay in the record.
 # Both teams' shortest scorer in the week's single highest-total game (same game: recorded at the singles' product, not DK's SGP price)
 if L["games"]:
     hi = max([g for g in L["games"] if g.get("total")], key=lambda g: g["total"], default=None)
@@ -129,6 +119,45 @@ for gid, g in games.items():
         if abs(ph - mh) >= 0.04:
             team, price, p = (g["home"], hp.price.iloc[0], ph) if ph > mh else (g["away"], ap.price.iloc[0], 1 - ph)
             add("Moneyline, model differs 4+ pts", gid, team, "ml", "ML", None, price, p)
+# ---- Oct 21: trend unders (no model involved; the edge, if any, is a long-run pattern in the results). model_p = the pattern's
+# historical hit rate from trends.json, so the record shows whether it still holds.
+_sched = pd.read_parquet("data/sched.parquet"); _sw = _sched[(_sched.season == 2026) & (_sched.week == W)].set_index("game_id")
+try: _TA = json.load(open("trends.json"))["applies"]
+except Exception: _TA = {}
+for gid, g in games.items():
+    x = M[(M.game_id == gid) & (M.market == "game_totals") & (M.side == "Under")]
+    if not len(x) or gid not in _sw.index: continue
+    ln, up = float(x.point.iloc[0]), float(x.price.iloc[0]); sub = f"{g['away']}@{g['home']}"
+    wx = (D.get("weather") or {}).get(g["home"]) or {}
+    if not wx.get("dome") and not wx.get("unverified") and wx.get("wind") is not None and 10 <= wx["wind"] <= 19 and _TA.get("wind"):
+        add("Trend unders: wind 10–19 mph", gid, sub, "game_total", "Under", ln, up, _TA["wind"]["pct"] / 100)
+    if int(str(_sw.loc[gid].gametime)[:2]) >= 19 and _TA.get("prime"):
+        add("Trend unders: prime time", gid, sub, "game_total", "Under", ln, up, _TA["prime"]["pct"] / 100)
+# ---- Oct 21: 6-point teasers on small underdogs (+1.5 to +2.5 -> +7.5 to +8.5, crossing 3 and 7). DK prices every 6-point teaser
+# the same, but NFL margins cluster on 3 and 7, so these legs cover more often than the price assumes. The favorite half of the
+# classic teaser (-7.5 to -8.5) tested worse (71% since 2016) and is left out. Legs from different games, paired in kickoff order.
+# The Odds API has no teaser prices: price is a REFERENCE of 1.80 for a 2-team teaser (check DK's actual price in the app).
+TEASE_PRICE = 1.80
+_hist = _sched[(_sched.season >= 2016) & (_sched.season < 2026) & (_sched.game_type == "REG") & _sched.result.notna() & _sched.spread_line.notna()]
+_lw = []
+for r in _hist.itertuples():
+    for home in (True, False):
+        line = -r.spread_line if home else r.spread_line; mg = r.result if home else -r.result
+        if 1.5 <= line <= 2.5 and mg + line + 6 != 0: _lw.append(mg + line + 6 > 0)
+P_TLEG = float(np.mean(_lw)) if _lw else 0.75
+tlegs = []
+for gid, g in games.items():
+    x = M[(M.game_id == gid) & (M.market == "game_spreads")]
+    for _, r in x.iterrows():
+        if 1.5 <= float(r.point) <= 2.5 and gid in _sw.index:
+            tlegs.append(dict(gid=gid, player=r.subject, stat="spread", line=float(r.point) + 6, price=round(TEASE_PRICE ** 0.5, 4), p=round(P_TLEG, 4),
+                              label=f"{r.subject} {float(r.point) + 6:+g}", kick=f"{_sw.loc[gid].gameday} {_sw.loc[gid].gametime}"))
+tlegs.sort(key=lambda l: (l["kick"], l["gid"]))
+for i in range(0, len(tlegs) - 1, 2):
+    c = tlegs[i:i + 2]
+    if c[0]["gid"] == c[1]["gid"]: continue
+    add("Teasers: small underdogs +6, 2 legs", "", " + ".join(l["label"] for l in c), "parlay", "All", None, TEASE_PRICE, P_TLEG ** 2,
+        legs=[{k: v for k, v in l.items() if k != "kick"} for l in c])
 # ---- 2-3 leg parlays from alternate rungs (receptions, rushing yards), legs from different games
 P = {norm(p["name"]): p for p in D["proj"]["players"]}
 legs = []
@@ -151,6 +180,39 @@ for ev, pay, combo in sorted(cands, key=lambda c: -c[0]):
     for l in combo: used[(l["player"], l["stat"], l["line"])] = used.get((l["player"], l["stat"], l["line"]), 0) + 1
     add("Parlays (alt lines, 2–3 legs)", "", " + ".join(f"{l['player']} {l['line']}+ {'rec' if l['stat']=='rec' else 'rush yds'}" for l in combo),
         "parlay", "All", None, pay, float(np.prod([l["p"] for l in combo])), legs=list(combo))
+# ---- Oct 21: steady-leg parlays. Alternate rungs DK prices 1.25-1.50 (about 67-80% legs) on players with a real season record
+# (8+ catches for pass catchers, 25+ carries for backs), where the model at least agrees with DK (model chance >= DK's implied).
+# No model edge required: the question is whether stacking DK's own short prices across games gets to ~2.0 without bleeding.
+_pb = pd.read_parquet("data/pbp_2026.parquet", columns=["week", "receiver_player_id", "rusher_player_id", "complete_pass", "rush_attempt"])
+_pb = _pb[_pb.week < W]
+_CAT = _pb.groupby("receiver_player_id").complete_pass.sum(); _CAR = _pb.groupby("rusher_player_id").rush_attempt.sum()
+def _record_ok(p, st):
+    return (_CAT.get(p.get("pid"), 0) >= 8) if st == "rec" else (_CAR.get(p.get("pid"), 0) >= 25)
+steady = []
+for _, r in M[M.market.isin(["player_receptions_alternate", "player_rush_yds_alternate"]) & (M.side == "Over")].iterrows():
+    p = P.get(norm(r.subject)); st = "rec" if "receptions" in r.market else "rush_yds"
+    q = (p or {}).get("q", {}).get(st) if p else None
+    if not q or not 1.25 <= r.price <= 1.50 or (p.get("p_play") or 1) < 0.9 or not _record_ok(p, st): continue
+    pm = p_over(q, float(r.point))
+    if pm >= 1 / r.price: steady.append(dict(gid=r.game_id, player=r.subject, stat=st, line=float(r.point), price=float(r.price), p=round(pm, 4)))
+best = {}
+for l in steady:      # one rung per player and stat: the one closest to 1.40
+    k = (l["player"], l["stat"])
+    if k not in best or abs(l["price"] - 1.40) < abs(best[k]["price"] - 1.40): best[k] = l
+steady = sorted(best.values(), key=lambda l: -l["p"])[:24]
+sc = []
+for k in (2, 3):
+    for combo in itertools.combinations(steady, k):
+        if len({l["gid"] for l in combo}) < k: continue
+        pay = float(np.prod([l["price"] for l in combo]))
+        if 1.9 <= pay <= 2.4: sc.append((float(np.prod([l["p"] for l in combo])), pay, combo))
+used_s = {}
+for jp, pay, combo in sorted(sc, key=lambda c: -c[0]):
+    if sum(1 for b in bets if b["type"] == "Parlays: steady legs 1.25–1.50") >= 6: break
+    if any(used_s.get((l["player"], l["stat"]), 0) >= 1 for l in combo): continue
+    for l in combo: used_s[(l["player"], l["stat"])] = 1
+    add("Parlays: steady legs 1.25–1.50", "", " + ".join(f"{l['player']} {l['line']:g}+ {'rec' if l['stat']=='rec' else 'rush yds'}" for l in combo),
+        "parlay", "All", None, pay, jp, legs=list(combo))
 # ---- Clinton's rule (Oct 18): prop bets go to players with the BEST MATCHUPS. A matchup is "best" when the opponent ranks top-8 in fantasy
 # points allowed to the player's position this season (the site's opp_rank) AND has allowed at least a league-average rate of TDs to that
 # position (dvp 'td' vs league). Two bet types: the TD play and the receptions over, both limited to those players. Mechanical, graded like the rest.

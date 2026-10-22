@@ -58,11 +58,18 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Fetch all; write `odds_raw/wk{W}/*.txt` (archive the prior pull to `odds_raw/wk{W}_<day>/` first)
 - [ ] Per game, TWO event URLs (each under the ~250-char fetch limit), bookmakers=draftkings:
       (a) markets=player_anytime_td,player_receptions,player_pass_interceptions
-      (b) markets=player_receptions_alternate,player_rush_yds_alternate,team_totals
-      plus ONE sport-level URL: markets=h2h,spreads,totals&oddsFormat=decimal  → ~6 credits/game + 3 ≈ 85/week for a full slate
+      (b) markets=player_receptions_alternate,player_rush_yds_alternate,player_pass_yds_alternate,team_totals   (pass-yds rungs added Oct 21 for the QB + WR1 stack: +1 credit/game)
+      plus ONE sport-level URL: markets=h2h,spreads,totals&oddsFormat=decimal  → ~7 credits/game + 3 ≈ 100/week for a full slate
+      Oct 21: use bookmakers=draftkings,fanduel on every URL (line shopping + the DK-vs-FanDuel check). Believed to cost no extra credits;
+      CHECK the x-requests-used header on the first pull and update this line.
 - [ ] Save ATD/receptions to `odds_raw/wk{W}/<AWAY>_<HOME>.txt` (market|player|side|point|price) → `python ingest_odds.py {W} "<ts>"`
 - [ ] Save INTs, alt rungs, team totals, and game lines (game_h2h / game_totals / game_spreads rows) to `odds_raw/wk{W}/<AWAY>_<HOME>_x.txt` → `python ingest_more.py {W} "<ts>"`
-- [ ] Rebuild (build_site + assemble), then `python paper_slate.py {W}` (includes the TD parlay types: likeliest scorer per game priced 1.15–3.00, paired across games in price order, plus all 2/3-leg combos among the top-5 game totals, the favored team's lead RB in each top-5 game (all 2/3-leg combos), and both teams' shortest scorer in the single highest-total game; same legs tracked as singles) — MECHANICAL slate, never hand-edit; it is the pre-registered record
+- [ ] FanDuel's outcomes (all markets) to `odds_raw/wk{W}/<AWAY>_<HOME>_fd.txt`, same 5-field format → `python ingest_fd.py {W} "<ts>"`
+- [ ] Rebuild (build_site + assemble), then `python paper_slate.py {W}` — MECHANICAL slate, never hand-edit; it is the pre-registered record. Types as of Oct 21:
+      TD parlays (likeliest scorer per game priced 1.15–3.00, paired across games; both teams' shortest in the top-total game); steady-leg parlays (alt rungs 1.25–1.50, real season record, model agrees; 2–3 legs to ~2.0);
+      teasers (underdogs +1.5 to +2.5 teased 6, two legs from different games; reference price 1.80 — check DK's real 2-team teaser price in the app and note it);
+      trend unders (verified wind 10–19 mph; kickoff 7 p.m. ET or later). CUT Oct 21: top-5-total TD parlays, favorites' lead-RB TD parlays, the TD 4.0–6.0 band.
+- [ ] `python market_consistency.py {W} --paper` (run by paper_slate) now also checks main line vs alternate ladder, team totals vs the game line (bettable, joins Board consistency), and DK vs FanDuel (price shopping; not a bet). Put the FanDuel-better list in the digest.
 - [ ] Publish
 - [ ] Report: edges in the 2x–4x range only (ignore longshot-tail "edges" — known model weakness), market-vs-model disagreements worth knowing even as passes, credit ledger (used this season / ~remaining of 500)
 
@@ -89,7 +96,7 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Prop bets favor players with the best matchups: paper_slate.py adds "Matchup props" (TD Yes at 1.5-4.0, and receptions overs where the model agrees) ONLY for RB/WR/TE whose opponent ranks top-8 in fantasy points allowed to their position AND allows at least a league-average TD rate to it. When Clinton asks for prop picks, lead with these; a strong model number against a bad matchup is a pass.
 
 ## ML + top TD scorer (Clinton's standing rule, Oct 18)
-- [ ] `ml_td_slate.build(W)` runs inside paper_slate.py: per game, the model's projected winner on the moneyline + the game's likeliest anytime-TD scorer (either team), one 2-leg parlay. Backfill or re-log with `python ml_td_slate.py W --paper`. Price = the two DK prices multiplied (reference only). Graded on hit rate vs model_p.
+- [ ] `ml_td_slate.build(W)` runs inside paper_slate.py: per game, the projected winner by the site's line-anchored win chance (Oct 21; was the raw model margin) on the moneyline + the game's likeliest anytime-TD scorer (either team), one 2-leg parlay. Backfill or re-log with `python ml_td_slate.py W --paper`. Price = the two DK prices multiplied (reference only). Graded on hit rate vs model_p.
 
 ## Same-game parlay pricing
 - [ ] `from parlay_joint import joint; joint([("QB pass_yds", p1), ("WR1 rec_yds", p2), ...])` gives P(all legs hit) using historical same-game correlations (data/joint_corr.json; refit with `python parlay_joint.py fit` in the offseason). Use DK no-vig or the site's blended chance for each p. Compare to the DK same-game price: payout x joint P - 1 = expected return.
@@ -108,3 +115,8 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Keep legs where model P exceeds DK implied by >= 3 pts; build 5-10 paper parlays of 2-3 legs targeting ~2.0-2.5x
 - [ ] Log to parlays_wk{W}.csv (legs, prices, model joint P, payout) and grade with the other paper bets
 - [ ] Yardage gaps vs DK main lines are NOT bets (DK subsumes the model there); consistency adds nothing reliable except a hint on rushing
+
+## Closing-line value and fair same-game prices (Oct 21)
+- [ ] `grade_paper.py` adds `clv` (moneylines: price taken / closing price − 1) and `clv_pts` (totals and teaser legs: points better than the close), from nflverse's closing lines. Free; props have no CLV because a second paid pull per week doesn't fit the 500-credit budget.
+- [ ] Record tab shows "Beat the close" per rule. A rule that beats the close over 50+ bets is worth more than its win–loss record says, and vice versa.
+- [ ] Same-game stacks and ML + top TD scorer carry `fair_price` (1 / joint chance). When Clinton asks about a same-game parlay, compare DK's same-game price in the app with the fair price: above it = the parlay pays more than it should.

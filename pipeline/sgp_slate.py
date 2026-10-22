@@ -18,6 +18,15 @@ norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z ]", " ", re.sub(r"\b(jr|sr|i
 lg = lambda p: log(p / (1 - p)); ilg = lambda x: 1 / (1 + exp(-x))
 blend = lambda pm, pk: ilg(0.2 * lg(min(max(pm, .01), .99)) + 0.8 * lg(min(max(pk, .01), .99)))
 TYPE_A, TYPE_B = "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers"
+TYPE_C = "Same-game stacks: QB yards + WR1 catches"
+
+
+def anchored_home_win(g, SDM):
+    """Oct 21: the site's best-estimate home win chance: DK's spread moved only as far as the calibrated cover chance allows
+    (same number as the game cards). Falls back to the model margin when there is no line."""
+    from scipy.stats import norm as _n
+    if g.get("spread") is None or g.get("p_home_cover") is None: return Phi(g["m_margin"] / SDM)
+    return Phi((g["spread"] + SDM * float(_n.ppf(min(max(g["p_home_cover"], 1e-6), 1 - 1e-6)))) / SDM)
 
 
 def build(W, now=None):
@@ -44,7 +53,7 @@ def build(W, now=None):
         if not len(hp) or not len(ap): continue
         hpr, apr = float(hp.price.iloc[0]), float(ap.price.iloc[0])
         fav, fpr = (g["home"], hpr) if hpr <= apr else (g["away"], apr)
-        nv = (1 / fpr) / (1 / hpr + 1 / apr); pm = Phi(g["m_margin"] / SDM); pm = pm if fav == g["home"] else 1 - pm
+        nv = (1 / fpr) / (1 / hpr + 1 / apr); pm = anchored_home_win(g, SDM); pm = pm if fav == g["home"] else 1 - pm
         win = dict(gid=gid, player=fav, stat="ml", line=None, price=fpr, p=round(blend(pm, nv), 4), label="WIN")
         tp = [p for p in P if p["team"] == fav and (p.get("p_play") or 1) >= 0.85]
 
@@ -69,13 +78,21 @@ def build(W, now=None):
             l_ = rung(p, "player_receptions_alternate", "rec")
             if l_: legs.append(dict(l_, label=f"{role} rec"))
         if len(legs) == 2 and legs[0]["label"] != legs[1]["label"]: rows.append((TYPE_B, gid, legs))
+        # C (Oct 21): QB passing-yards rung + his WR1's receptions rung. Needs player_pass_yds_alternate in the pull.
+        qbs = [p for p in tp if p["pos"] == "QB"]
+        if qbs and wr:
+            qb = max(qbs, key=lambda p: p["mean"].get("pass_yds") or 0)
+            lq = rung(qb, "player_pass_yds_alternate", "pass_yds"); lw = rung(wr[0], "player_receptions_alternate", "rec")
+            if lq and lw: rows.append((TYPE_C, gid, [dict(lq, label="QB pass_yds"), dict(lw, label="WR1 rec")]))
     out = []
     stamp = now.tz_convert("UTC").strftime("%Y-%m-%dT%H:%MZ")
     for t, gid, legs in rows:
         jp = joint([(l["label"], l["p"]) for l in legs]); ip = float(np.prod([l["p"] for l in legs]))
-        subj = " + ".join(f"{l['player']} wins" if l["stat"] == "ml" else f"{l['player']} {l['line']:g}+ {'rec' if l['stat'] == 'rec' else 'rush yds'}" for l in legs)
+        _u = {"rec": "rec", "rush_yds": "rush yds", "pass_yds": "pass yds"}
+        subj = " + ".join(f"{l['player']} wins" if l["stat"] == "ml" else f"{l['player']} {l['line']:g}+ {_u[l['stat']]}" for l in legs)
         out.append(dict(week=W, type=t, game_id=gid, subject=subj, market="parlay", side="All", line=None, price=round(float(np.prod([l["price"] for l in legs])), 3),
-                        model_p=round(jp, 4), legs=json.dumps([{k: v for k, v in l.items()} for l in legs]), placed_at=stamp, indep_p=round(ip, 4)))
+                        model_p=round(jp, 4), legs=json.dumps([{k: v for k, v in l.items()} for l in legs]), placed_at=stamp, indep_p=round(ip, 4),
+                        fair_price=round(1 / max(jp, 1e-6), 2)))   # Oct 21: DK's same-game price above this = the stack pays more than it should
     return pd.DataFrame(out)
 
 
@@ -83,7 +100,7 @@ if __name__ == "__main__":
     new = build(W)
     f = f"paper_wk{W}.csv"; old = pd.read_csv(f)
     keep_gids = set(new.game_id) if len(new) else set()
-    old = old[~(old.type.isin([TYPE_A, TYPE_B]) & old.game_id.isin(keep_gids))]   # re-running before kickoff replaces only games not yet started
+    old = old[~(old.type.isin([TYPE_A, TYPE_B, TYPE_C]) & old.game_id.isin(keep_gids))]   # re-running before kickoff replaces only games not yet started
     pd.concat([old, new], ignore_index=True).to_csv(f, index=False)
     print(f"{f}: +{len(new)} same-game stacks")
     if len(new): print(new[["type", "subject", "price", "model_p", "indep_p"]].to_string())
