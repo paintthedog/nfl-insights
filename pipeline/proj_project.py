@@ -137,6 +137,18 @@ for pid, g_ in _h.groupby("pid"):
     if pos_ not in QS_AT: continue
     CONS[pid] = dict(gp=int(len(g_)), qs=int((g_.fp >= QS_AT[pos_]).sum()), dud=int((g_.fp <= DUD_AT[pos_]).sum()),
                      hist={st: [round(float(x), 1) for x in g_[st]] for st in ["pass_yds", "rush_yds", "rec_yds", "rec"]})
+# ---- steadiness rating (Oct 22, steady.py): role spread + output spread this season, ranked within position, plus
+# flags for when the season no longer describes the role. A label and a filter only; never feeds a projection.
+import steady as STD
+try:
+    _sh = STD.add_features(d[(~d._pred) & (d.season == SEASON)].copy(), include_current=True)
+    STEADY = STD.ratings(_sh.groupby("pid").tail(1))
+    _ov = json.load(open(f"news_overrides_wk{WEEK}.json"))
+    _names = dict(zip(players.gsis_id, players.display_name))
+    STEADY_FLAGS = STD.role_flags(_sh, f[["pid", "pos", "posteam"]].drop_duplicates("pid"), _ov, _names)
+    print(f"steady: {len(STEADY)} rated, {len(STEADY_FLAGS)} role flags")
+except Exception as e:   # never block the build over a label
+    print("steady: skipped,", repr(e)); STEADY, STEADY_FLAGS = {}, {}
 store = pickle.load(open("ratio_table.pkl", "rb"))
 tab = store["tab"]
 rows = []
@@ -150,6 +162,7 @@ for _, r in f.iterrows():
             q[st] = [round(x, 2) for x in qs]
     rows.append(dict(
         cons=CONS.get(r.pid),
+        steady=dict(STEADY[r.pid], flags=STEADY_FLAGS.get(r.pid, [])) if r.pid in STEADY else (dict(flags=STEADY_FLAGS[r.pid]) if r.pid in STEADY_FLAGS else None),
         pid=r.pid, name=r["name"], pos=r.pos, team=r.posteam, opp=r.opp, implied=round(float(r.implied), 1),
         flag=r.flag if isinstance(r.flag, str) else "",
         mean={k: round(float(r[f"p_{k}"]), 2) for k in ["att", "cmp", "pass_yds", "pass_td", "ints", "sacks", "pass_1d",

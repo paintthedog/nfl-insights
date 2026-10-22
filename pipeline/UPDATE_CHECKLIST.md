@@ -106,6 +106,9 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 ## Market vs model vs blend (Oct 22)
 - [ ] `scorecard.py` scores three numbers on the same games and players: the market's, the model's raw number, and the blend the site shows (game margin, game total, anytime TD). Report-card lines "Off the market? ..." say which was closest once the sample is big enough (40 games, 300 TD prices). If the market keeps winning, the site's numbers should sit on the market's.
 
+## Steady rating (Oct 22)
+- [ ] `steady.py` runs inside proj_project.py; the Projections tab shows Steady (0–100) with ◆ for a role change. When Clinton asks for steady legs, use Steady 60+ with no ◆ AND his standing rules (real season record, matchup). It is a filter, not an edge, until the rated-60+ paper rule or the leg-level check says otherwise.
+
 ## Same-game parlay pricing
 - [ ] `from parlay_joint import joint; joint([("QB pass_yds", p1), ("WR1 rec_yds", p2), ...])` gives P(all legs hit) using historical same-game correlations (data/joint_corr.json; refit with `python parlay_joint.py fit` in the offseason). Use DK no-vig or the site's blended chance for each p. Compare to the DK same-game price: payout x joint P - 1 = expected return.
 

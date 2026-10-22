@@ -194,25 +194,32 @@ for _, r in M[M.market.isin(["player_receptions_alternate", "player_rush_yds_alt
     q = (p or {}).get("q", {}).get(st) if p else None
     if not q or not 1.25 <= r.price <= 1.50 or (p.get("p_play") or 1) < 0.9 or not _record_ok(p, st): continue
     pm = p_over(q, float(r.point))
-    if pm >= 1 / r.price: steady.append(dict(gid=r.game_id, player=r.subject, stat=st, line=float(r.point), price=float(r.price), p=round(pm, 4)))
+    sd = p.get("steady") or {}
+    if pm >= 1 / r.price: steady.append(dict(gid=r.game_id, player=r.subject, stat=st, line=float(r.point), price=float(r.price), p=round(pm, 4),
+                                             stdy=sd.get("score"), stdy_flag=bool(sd.get("flags"))))   # Oct 22: steadiness tagged on every leg
 best = {}
 for l in steady:      # one rung per player and stat: the one closest to 1.40
     k = (l["player"], l["stat"])
     if k not in best or abs(l["price"] - 1.40) < abs(best[k]["price"] - 1.40): best[k] = l
-steady = sorted(best.values(), key=lambda l: -l["p"])[:24]
-sc = []
-for k in (2, 3):
-    for combo in itertools.combinations(steady, k):
-        if len({l["gid"] for l in combo}) < k: continue
-        pay = float(np.prod([l["price"] for l in combo]))
-        if 1.9 <= pay <= 2.4: sc.append((float(np.prod([l["p"] for l in combo])), pay, combo))
-used_s = {}
-for jp, pay, combo in sorted(sc, key=lambda c: -c[0]):
-    if sum(1 for b in bets if b["type"] == "Parlays: steady legs 1.25–1.50") >= 6: break
-    if any(used_s.get((l["player"], l["stat"]), 0) >= 1 for l in combo): continue
-    for l in combo: used_s[(l["player"], l["stat"])] = 1
-    add("Parlays: steady legs 1.25–1.50", "", " + ".join(f"{l['player']} {l['line']:g}+ {'rec' if l['stat']=='rec' else 'rush yds'}" for l in combo),
-        "parlay", "All", None, pay, jp, legs=list(combo))
+def steady_parlays(legs, type_):
+    legs = sorted(legs, key=lambda l: -l["p"])[:24]
+    sc = []
+    for k in (2, 3):
+        for combo in itertools.combinations(legs, k):
+            if len({l["gid"] for l in combo}) < k: continue
+            pay = float(np.prod([l["price"] for l in combo]))
+            if 1.9 <= pay <= 2.4: sc.append((float(np.prod([l["p"] for l in combo])), pay, combo))
+    used_s = {}
+    for jp, pay, combo in sorted(sc, key=lambda c: -c[0]):
+        if sum(1 for b in bets if b["type"] == type_) >= 6: break
+        if any(used_s.get((l["player"], l["stat"]), 0) >= 1 for l in combo): continue
+        for l in combo: used_s[(l["player"], l["stat"])] = 1
+        add(type_, "", " + ".join(f"{l['player']} {l['line']:g}+ {'rec' if l['stat']=='rec' else 'rush yds'}" for l in combo),
+            "parlay", "All", None, pay, jp, legs=list(combo))
+steady_parlays(list(best.values()), "Parlays: steady legs 1.25–1.50")
+# Oct 22 (exploratory, Clinton's steadiness rating): the same rule using only players rated Steady 60+ with no role change this week.
+# Compared head to head with the parent rule above; the per-leg stdy tags also let us grade legs by score band.
+steady_parlays([l for l in best.values() if (l["stdy"] or 0) >= 60 and not l["stdy_flag"]], "Parlays: steady legs, rated 60+")
 # ---- Clinton's rule (Oct 18): prop bets go to players with the BEST MATCHUPS. A matchup is "best" when the opponent ranks top-8 in fantasy
 # points allowed to the player's position this season (the site's opp_rank) AND has allowed at least a league-average rate of TDs to that
 # position (dvp 'td' vs league). Two bet types: the TD play and the receptions over, both limited to those players. Mechanical, graded like the rest.

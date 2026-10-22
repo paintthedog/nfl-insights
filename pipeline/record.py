@@ -38,7 +38,7 @@ for t, x in g.groupby("type"):
 
 # ---------------- 1b. current strategy: mechanical paper slates (paper_wk*_graded.csv)
 ORDER = ["Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position", "TD 2.5–3.9, model likes", "Receptions, model differs 5+ pts", "QB INTs (0.5), model differs 5+ pts", "Team totals, model differs 2+ pts",
-         "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts", "Board consistency", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50",
+         "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts", "Board consistency", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50", "Parlays: steady legs, rated 60+",
          "Teasers: small underdogs +6, 2 legs", "Trend unders: wind 10–19 mph", "Trend unders: prime time",
          "TD parlays: likeliest per game, 2 legs", "TD parlays: likeliest per game, 3 legs", "TD parlays: top-5 totals, 2 legs", "TD parlays: top-5 totals, 3 legs", "TD parlays: top-5 favorites' lead RB", "TD parlays: top-total game, both teams' shortest",
          "TD skip list (not bet)", "TD singles: likeliest scorer per game",
@@ -51,7 +51,7 @@ FAMILY = {"TD singles": ["TD 2.5–3.9, model likes", "TD skip list (not bet)", 
           "ML + top TD scorer, 2 legs": ["ML + top TD scorer, 2 legs"],
           "Same-game stacks": ["Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches"],
           "Matchup props (opp top-8 vs position)": ["Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position"],
-          "Receptions and alt-line parlays": ["Receptions, model differs 5+ pts", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50"],
+          "Receptions and alt-line parlays": ["Receptions, model differs 5+ pts", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50", "Parlays: steady legs, rated 60+"],
           "Teasers (small underdogs +6)": ["Teasers: small underdogs +6, 2 legs"],
           "Trend unders": ["Trend unders: wind 10–19 mph", "Trend unders: prime time"],
           "Game lines": ["Team totals, model differs 2+ pts", "Game totals, model differs 3+ pts", "Moneyline, model differs 4+ pts"],

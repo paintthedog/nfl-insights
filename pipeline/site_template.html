@@ -566,6 +566,7 @@ a { color: var(--accent); }
       <button class="chip" data-ppos="TE" aria-pressed="false">TE</button>
       <button class="chip" data-ppos="FLEX" aria-pressed="false">Flex</button>
       <input id="proj-q" type="search" placeholder="Search player or team" aria-label="Search player or team">
+      <button class="chip" id="proj-steady" aria-pressed="false" data-tip="Only players with a steadiness score of 60+ and no role change this week">Steady 60+</button>
       <span class="sep" aria-hidden="true"></span>
       <div class="seg sm" role="group" aria-label="Columns">
         <button data-pcols="all" aria-pressed="true">All columns</button>
@@ -811,6 +812,7 @@ const GLOSS = {
   "PPR points": "Projected full-season fantasy points with one point per reception, and the range that holds 8 of every 10 outcomes.",
   "Leads the league": "His best chance of finishing first in a major category, and which one.",
   "Chance to lead": "Share of 4,000 simulated seasons in which he finishes first. Fair odds are the break-even decimal price.",
+  "Steady": "0–100 within position: half how much his role (share of team targets, or carries + targets for backs) moves game to game, half how much his PPR moves. 100 = steadiest. ◆ = his role changed this week, so the score describes the old role. Hover a score for the parts.",
   "Quality starts": "Games this season at or above what the last startable player at his position scores in a typical week: QB 18.4, RB 11.1, WR 12.3, TE 10.1 PPR (2021-25 weekly cutoffs). Descriptive only — the projections do not use it.",
   "Duds": "Games this season at or below what the last rosterable player at his position scores: QB 10.5, RB 4.4, WR 6.0, TE 6.2 PPR.",
   "Opp": "This week's opponent. @ means on the road.",
@@ -1151,6 +1153,7 @@ function statVal(p, k) {
 }
 PJ.players.forEach(p => { p.ppr = p.mean.fp_ppr; p.std = p.mean.fp_std; const v = p.var && p.var.ppr;
   p.floor = v ? v.floor : null; p.ceil = v ? v.ceil : null; p.boom = v ? v.boom : null; p.bust = v ? v.bust : null;
+  p.stdy = p.steady && p.steady.score != null ? p.steady.score : null;
   p.dksal = p.dk_sal; p.dkpts = p.dk_pts; p.dkval = p.dk_val; p.dkcval = p.dk_cval;
   new Set(Object.values(STAT_SETS).flat().map(s => s[0])).forEach(k => { p["s_" + k] = statVal(p, k); }); });
 const hasDK = PJ.players.some(p => p.dkval != null);
@@ -1174,6 +1177,7 @@ function projCols() {
     { g: "fan", grp: "This season", k: "dud", label: "Duds", sv: p => p.cons && p.cons.gp ? p.cons.dud / p.cons.gp : null,
       cell: p => { const c = p.cons; if (!c || !c.gp) return dash; const r = c.dud / c.gp;
         return `<span class="num ${r >= 0.4 ? "fpd-dn" : ""}" tabindex="0" data-tip="PPR of ${({QB:10.5,RB:4.4,WR:6,TE:6.2})[p.pos]} or less — a week that hurt any lineup it was in">${c.dud} of ${c.gp}</span>`; } },
+    { g: "fan", grp: "This season", k: "stdy", label: "Steady", cell: steadyCell },
     ...(STAT_SETS[pPos] || STAT_SETS.ALL).map(([k, label, dp]) => ({ g: "stat", grp: "Projected stats", k: "s_" + k, label,
       cell: p => {
         const v = p["s_" + k];
@@ -1210,9 +1214,26 @@ function projCols() {
   ];
   return pCols === "all" ? cols : cols.filter(c => !c.g || c.g === pCols || (pCols === "dk" && c.k === "ppr"));
 }
-const inPos = p => pPos === "ALL" || p.pos === pPos || (pPos === "FLEX" && p.pos !== "QB");
+const SHW = { RB: "carries + targets", QB: "dropbacks", WR: "targets", TE: "targets" };
+function steadyTip(p) {
+  const s = p.steady; if (!s) return "";
+  let t = s.score == null ? "No steadiness score: fewer than 3 games this season, or too small a role to rate (under 6 PPR a game, or under 10% of team targets, 15% of carries + targets for backs)." :
+    `Steadiness ${s.score} of 100 among ${s.n_pos} ${posWord[p.pos] || p.pos + "s"} with 3+ games and a real role (100 = steadiest), from his last ${s.n} games. ` +
+    (s.role == null ? `Quarterbacks are rated on output only: output ${s.output}. ` : `Role ${s.role} (his share of team ${SHW[p.pos]} averaged ${pct(s.share)}, moving ${Math.round(s.role_cv * 100)}% game to game) · output ${s.output ?? "—"} (PPR moving ${Math.round((s.out_cv || 0) * 100)}% game to game). `) +
+    "Among players with a real role it has added little beyond the projection in backtests (the steadiest third cleared prop rungs 1–2 points more often than the jumpiest, not reliably). A description and a filter; it never changes a projection.";
+  if (s.flags && s.flags.length) t += " ROLE CHANGE: " + s.flags.join("; ") + ". The score describes the old role.";
+  return t;
+}
+function steadyCell(p) {
+  const s = p.steady; if (!s) return dash;
+  const fl = s.flags && s.flags.length ? `<span class="trend dn" aria-label="role change">◆</span>` : "";
+  if (s.score == null) return `<span class="num" tabindex="0" data-tip="${esc(steadyTip(p))}">—</span>${fl}`;
+  return `<span class="num ${s.score >= 67 ? "fpd-up" : s.score <= 33 ? "fpd-dn" : ""}" tabindex="0" data-tip="${esc(steadyTip(p))}">${s.score}</span>${fl}`;
+}
+let pSteady = false;
+const inPos = p => (!pSteady || (p.stdy >= 60 && !(p.steady.flags && p.steady.flags.length))) && (pPos === "ALL" || p.pos === pPos || (pPos === "FLEX" && p.pos !== "QB"));
 function renderProj() {
-  press("[data-ppos]", "ppos", pPos); press("[data-pcols]", "pcols", pCols);
+  press("[data-ppos]", "ppos", pPos); press("[data-pcols]", "pcols", pCols); $("#proj-steady").setAttribute("aria-pressed", String(pSteady));
   const q = pQ.trim().toLowerCase(), pool = PJ.players.filter(inPos);
   const rows = pool.filter(p => !q || p.name.toLowerCase().includes(q) || p.team.toLowerCase() === q || p.opp.toLowerCase() === q);
   const cols = projCols();
@@ -1224,6 +1245,7 @@ function renderProj() {
   ansBox("#proj-ans", [
     [`Top projected ${pw}s`, topN(pool, p => p.ppr).map(p => who(p, p.ppr.toFixed(1))).join("<br>")],
     ["Safest floor", topN(solid, p => p.floor, 2).map(p => who(p, `${p.floor.toFixed(1)} on a bad day`)).join("<br>")],
+    ["Steadiest", topN(solid.filter(p => p.stdy != null && !(p.steady.flags && p.steady.flags.length)), p => p.stdy + p.ppr / 100, 2).map(p => who(p, `${p.stdy} of 100`)).join("<br>") || `<span class="q">Not enough games yet</span>`],
     ["Highest ceiling", topN(solid, p => p.ceil, 2).map(p => who(p, `${p.ceil.toFixed(1)} on a great day`)).join("<br>")],
     hasDK ? ["Best DraftKings value", topN(pool.filter(p => p.dkpts >= 10), p => p.dkval, 2).map(p => who(p, `$${p.dksal.toLocaleString("en-US")} · ${p.dkval.toFixed(2)} per $1,000`)).join("<br>") || `<span class="q">No salaries for this group</span>`] : null,
     ["Injury flags", flagged.length ? `<b>${flagged.length}</b> <span class="q">${pw}s may not play, marked with a red !. Their numbers assume they do. Biggest: ${topN(flagged, p => p.ppr, 2).map(p => `${esc(p.name)} (${pct(p.p_play)} to play)`).join(", ")}.</span>` : `<span class="q">None in this group</span>`]]);
@@ -1231,6 +1253,7 @@ function renderProj() {
 $$("[data-ppos]").forEach(b => b.addEventListener("click", () => { pPos = b.dataset.ppos; renderProj(); }));
 $$("[data-pcols]").forEach(b => b.addEventListener("click", () => { pCols = b.dataset.pcols; store.set("pp-cols", pCols); renderProj(); }));
 $("#proj-q").addEventListener("input", e => { pQ = e.target.value; renderProj(); });
+$("#proj-steady").addEventListener("click", () => { pSteady = !pSteady; renderProj(); });
 $("#proj-more").addEventListener("click", () => { pAll = !pAll; renderProj(); });
 renderProj();
 
