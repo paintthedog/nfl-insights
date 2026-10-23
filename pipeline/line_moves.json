@@ -1,15 +1,38 @@
 {
- "rows": [],
+ "rows": [
+  {
+   "week": 7,
+   "game_id": "2026_07_NE_CHI",
+   "market": "spread",
+   "model": -0.8,
+   "line_then": 3.0,
+   "close": 3.0,
+   "gap": -3.8,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_NE_CHI",
+   "market": "total",
+   "model": 48.8,
+   "line_then": 50.5,
+   "close": 50.5,
+   "gap": -1.7,
+   "move": 0.0,
+   "result": "no move"
+  }
+ ],
  "spread": {
-  "n": 0,
+  "n": 1,
   "toward": 0,
   "away": 0,
-  "still": 0
+  "still": 1
  },
  "total": {
-  "n": 0,
+  "n": 1,
   "toward": 0,
   "away": 0,
-  "still": 0
+  "still": 1
  }
 }
