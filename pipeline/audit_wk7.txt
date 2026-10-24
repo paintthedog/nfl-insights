@@ -1,4 +1,4 @@
 Staleness audit, week 7: 3 item(s)
-  [ROLE] Zach Charbonnet (SEA) TD: model 23% vs DK 45% - DK sees a bigger role (starter? injury ahead of him?)
-  [ROLE] Jeremiyah Love (ARI) TD: model 14% vs DK 36% - DK sees a bigger role (starter? injury ahead of him?)
+  [CARRYOVER] Adonai Mitchell was out last week, now projected 5.2 pts with no Week 7 status — confirm he's back
+  [CARRYOVER] Lamar Jackson was out last week, now projected 15.7 pts with no Week 7 status — confirm he's back
   [ROLE] T.J. Hockenson (MIN) catches: model 2.3 vs DK line 4.5 - check role/targets news

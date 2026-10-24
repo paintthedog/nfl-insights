@@ -94,7 +94,7 @@
    "rows": [
     {
      "label": "Touchdown chances",
-     "pct": 40.3,
+     "pct": 40.4,
      "swing": 1.17
     },
     {
@@ -135,27 +135,27 @@
    ]
   },
   "RB": {
-   "n": 41,
+   "n": 42,
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 51.9,
-     "swing": 2.97
+     "pct": 51.4,
+     "swing": 2.9
     },
     {
      "label": "Touchdown chances",
-     "pct": 22.3,
-     "swing": 1.27
+     "pct": 22.9,
+     "swing": 1.29
     },
     {
      "label": "Snap share",
      "pct": 9.1,
-     "swing": 0.52
+     "swing": 0.51
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
      "pct": 5.5,
-     "swing": 0.32
+     "swing": 0.31
     },
     {
      "label": "Opponent defense",
@@ -165,7 +165,7 @@
     {
      "label": "Vegas total & spread",
      "pct": 2.2,
-     "swing": 0.13
+     "swing": 0.12
     },
     {
      "label": "Team's recent play volume",
@@ -180,7 +180,7 @@
     {
      "label": "Quarterback change",
      "pct": 1.7,
-     "swing": 0.1
+     "swing": 0.09
     }
    ]
   },
@@ -189,23 +189,23 @@
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 40.7,
-     "swing": 2.59
+     "pct": 40.6,
+     "swing": 2.6
     },
     {
      "label": "WOPR",
-     "pct": 17.7,
-     "swing": 1.12
+     "pct": 17.6,
+     "swing": 1.13
     },
     {
      "label": "Snap share",
-     "pct": 11.2,
+     "pct": 11.1,
      "swing": 0.71
     },
     {
      "label": "Touchdown chances",
-     "pct": 9.8,
-     "swing": 0.62
+     "pct": 10.2,
+     "swing": 0.65
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
@@ -219,7 +219,7 @@
     },
     {
      "label": "Quarterback change",
-     "pct": 3.8,
+     "pct": 3.7,
      "swing": 0.24
     },
     {
@@ -239,18 +239,18 @@
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 46.5,
+     "pct": 46.2,
      "swing": 1.85
     },
     {
-     "label": "Snap share",
-     "pct": 14.1,
-     "swing": 0.56
+     "label": "Touchdown chances",
+     "pct": 14.3,
+     "swing": 0.57
     },
     {
-     "label": "Touchdown chances",
-     "pct": 13.8,
-     "swing": 0.55
+     "label": "Snap share",
+     "pct": 14.0,
+     "swing": 0.56
     },
     {
      "label": "Team's recent play volume",
@@ -274,7 +274,7 @@
     },
     {
      "label": "Opponent defense",
-     "pct": 2.8,
+     "pct": 2.7,
      "swing": 0.11
     },
     {
