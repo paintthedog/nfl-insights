@@ -20,12 +20,14 @@ NFL Insights (also called "Paydirt") is Clinton's NFL projection and betting-res
 
 - Oct 25 (Clinton: not enough bets tested): `pipeline/make_urls.py W` now writes the game-morning Odds API block (never hand-write it; Week 7's dropped the pass-yds ladder and team totals, so QB yards + WR1 had 0 bets). Exploratory side rules in `pipeline/paper_extra.py` (teaser legs graded alone, wide teasers, underdog same-game stacks, matchup receptions without the TD filter); main tests unchanged. Teaser backtest 2016–2025 in TEST_LEDGER: only the +1.5 to +2.5 underdog band clears break-even (z +1.4).
 
+- **Oct 25 (Clinton's decision): no more manual Odds API pulls.** The timing was his call, which made the record anecdotal. The site's job is predicting outcomes accurately and grading those predictions. Game spreads, totals and moneylines come free from nflverse (refreshed each daily run; closing lines after games) and stay as the benchmark for game predictions. Player numbers show the model's own figures (no DK prop blend from Week 8 on). Paper bets: `pipeline/paper_lines.py` logs game-line rules automatically at the last daily run before kickoff (teasers main + legs + wide, moneyline and total gaps, trend unders, control). Rules that needed prop or same-game prices are stopped (record.py RETIRED); their graded rows stay. `paper_slate.py`, `paper_extra.py`, `make_urls.py` are no longer run.
+
 ## Daily update (what the scheduled task does)
 Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; resolve `audit_wk{W}.txt`; rebuild; publish `pipeline/site/paydirt.html` to the site URL; commit and push; send a short digest.
 
 ## Clinton's standing rules
 - **Odds:** decimal only. **DraftKings** is the reference book (he also bets FanDuel; FanDuel won't allow INT props in a same-game parlay). Never scrape DK or FanDuel sites.
-- **Odds pulls:** The Odds API, on a 500-credit account, so stay within budget. Pulls are manual on game mornings, and Clinton pastes the URLs. Claude can only fetch Odds API URLs that he pastes as plain text in a message; send them in batches of about 4.
+- **Odds pulls: stopped Oct 25.** Don't suggest or schedule them. (If Clinton ever restarts one: The Odds API, 500-credit account; Claude can only fetch URLs he pastes as plain text; `pipeline/make_urls.py` writes the block.)
 - **Weather:** MySportsWeather is the primary source and Covers is the cross-check. Open-Meteo is blocked, so don't suggest it.
 - **Props:** used mainly as conservative legs in 2–3-leg parlays targeting a 2x+ payout. Favor consistent players with the best matchups: the opponent must be top-8 in fantasy points allowed to that position AND allow at least the league-average TD rate.
 - **Anytime TD:** focus on the 2.5–3.9 decimal range. 4.5+ is too random to bet.
@@ -42,7 +44,7 @@ Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is
   - added Oct 21: small-underdog teasers, wind and prime-time unders, steady-leg parlays
   - cut Oct 21: top-5-total TD parlays, favorites' lead-RB TD parlays, the TD 4.0–6.0 band
 - **What Clinton wants from the data:** find which predictions the model is genuinely good at, and the bets closest to structural "hacks" of the book: boosts and promos, DK vs FanDuel price shopping, key-number teasers, same-game parlays priced below their fair (correlated) price, and DK's board disagreeing with itself. The model has not beaten DK's lines on any market yet; say so when it matters.
-- **Odds budget:** the Odds API account has 500 credits for the season. No second weekly prop pull; closing-line value comes free from nflverse for game lines only.
+- **Market data:** nflverse game lines only (free, automatic). Closing-line value for game-line paper bets comes from the same feed.
 - When asked a raw question (e.g. "most TDs allowed to which position"), answer the raw count, not a relative-to-average number.
 - Clinton bets throughout the week and may send screenshots of bets to judge against the projections.
 

@@ -93,7 +93,7 @@ how = """
 </div>
 <div>
   <h2>Prices and DraftKings</h2>
-  <p>DraftKings lines appear in small orange type under the projections, and anytime-TD prices next to the model's fair odds, once a game's prices are pulled — a snapshot, not live. Fair odds have no house margin; DK's do. <b>DK pts</b> uses DraftKings scoring (with 3-point yardage bonuses); <b>Value</b> is DK points per $1,000 of salary, <b>Ceil value</b> the same at the 90th percentile.</p>
+  <p>Player numbers are the model's own; sportsbook prop prices are no longer pulled (Oct 25), so weeks from Week 8 on show the model alone. Game spreads and totals come from nflverse's free line feed, refreshed every morning. Fair odds are the model's chance as decimal odds, with no house margin. <b>DK pts</b> uses DraftKings scoring (with 3-point yardage bonuses); <b>Value</b> is DK points per $1,000 of salary, <b>Ceil value</b> the same at the 90th percentile.</p>
 </div>
 <div>
   <h2>Terms</h2>

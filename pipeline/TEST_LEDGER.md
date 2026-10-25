@@ -62,3 +62,7 @@ Backtest, 6-point teaser legs, nflverse closing spreads 2016–2025 regular seas
 | Favorites −1.5 to −2.5 | 423 | 67.6% | −3.0 | −17.7% |
 | Favorites −7.5 to −8.5 | 220 | 71.8% | −0.9 | −7.2% |
 Read: the main teaser band is the only one above break-even, and even ten seasons only get it to 1.4 SE. Sixty forward bets cannot settle it alone; the backtest plus the forward record together are the evidence. Never tease favorites of −1.5 to −2.5.
+
+## Oct 25 (later): prop pulls ended — the site predicts outcomes, the market is a free benchmark
+Clinton stopped the manual Odds API pulls: when he pulled decided what got logged. From Week 8 every paper bet comes from `paper_lines.py`, priced from nflverse's schedule feed at the last daily run before kickoff (fixed timing). Continuing: Teasers: small underdogs +6 (main test, 60), Teaser legs, Teasers (wide), Moneyline model differs 4+, Game totals model differs 3+, Trend unders (wind, prime time), Control: random. Stopped (record.py RETIRED, graded rows kept): ML + top TD scorer, matchup props, all same-game stacks, receptions/INT/team-total gaps, alt-line and steady-leg parlays, TD singles/parlays/bands, board consistency. Note for reading the record: nflverse prices are a market consensus, not DraftKings, so these rules are not comparable bet-for-bet with the Week 6–7 DK rows.
+Accuracy questions that still get answered without prices: fantasy-point MAE and bias, TD chance calibration (does 30% score 30%?), floor/ceiling coverage, and game margin/total vs the closing line (scorecard.py).

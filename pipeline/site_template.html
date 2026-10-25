@@ -660,7 +660,7 @@ a { color: var(--accent); }
   <section class="panel" id="p-record" role="tabpanel" aria-labelledby="tab-record" hidden>
     <p class="wnote" id="sc-intro"></p>
     <h3 class="rech" style="margin-top:10px">1. Bets we're testing: does betting on the model pay?</h3>
-    <p class="wnote">Every bet is placed by a fixed rule from the game-morning DraftKings pull, nothing hand-picked. Flat 1 unit each; a player who doesn't play is a push. <b>Expected</b> is how many the model said would hit. <b>Main tests</b> were picked on Oct 22, before any had results, and each has a fixed number of bets it needs (shown as "Too early (12 of 100)"); it earns trust with a profit and a hit rate clearly above break-even (2 standard errors). Every other rule is exploratory: with this many rules running, some will look good by luck, so they need 150+ bets and a much stronger result (3 standard errors). Same-game stacks and ML + top TD scorer have no real price, so they're graded on whether the model's chance was right. Open a group for its rules or bets.</p>
+    <p class="wnote">Every bet is placed by a fixed rule, nothing hand-picked. Since Oct 25 only game-line rules run, priced from nflverse's free line feed at the last morning update before kickoff; rules that needed DraftKings prop prices stopped (their graded bets stay below). Flat 1 unit each; a player who doesn't play is a push. <b>Expected</b> is how many the model said would hit. <b>Main tests</b> were picked on Oct 22, before any had results, and each has a fixed number of bets it needs (shown as "Too early (12 of 100)"); it earns trust with a profit and a hit rate clearly above break-even (2 standard errors). Every other rule is exploratory: with this many rules running, some will look good by luck, so they need 150+ bets and a much stronger result (3 standard errors). Same-game stacks and ML + top TD scorer have no real price, so they're graded on whether the model's chance was right. Open a group for its rules or bets.</p>
     <div class="controls"><div class="seg sm" role="group" aria-label="Period" id="rec-period"></div></div>
     <div id="rec-fam"></div>
     <h3 class="rech">2. Everything the model projects: are the numbers right?</h3>
@@ -1262,7 +1262,7 @@ renderProj();
   const a = PJ.prices_asof, n = PJ.n_priced || 0;
   const when = a ? new Date(a).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short" }) : null;
   const games = new Set(PJ.players.filter(p => p.lines || p.tdpx).map(p => [p.team, p.opp].sort().join("-"))).size;
-  const msg = n ? `DraftKings prices shown for ${games} of ${DATA.n_games} game${DATA.n_games === 1 ? "" : "s"}, pulled ${when}. Not live.` : "No sportsbook prices pulled for this week yet.";
+  const msg = n ? `DraftKings prices shown for ${games} of ${DATA.n_games} game${DATA.n_games === 1 ? "" : "s"}, pulled ${when}. Not live.` : "No prop prices this week: the site shows the model's own numbers (prop pulls ended Oct 25).";
   $("#proj-px").textContent = (n ? msg + " The orange number under the model's yards and receptions is DraftKings' line; hover it for the over and under prices. " : msg + " ") + "Dotted column headers have a definition: hover or tap. Click a header to sort.";
   $("#td-px").textContent = msg;
 })();
@@ -1727,7 +1727,7 @@ function renderRecord() {
         : r.clv_pts ? `<span class="num ${r.clv_pts.avg > 0 ? "pos-ev" : ""}" data-tip="Points of line value vs the market's closing line (totals and teaser legs). Positive = a better number than the close.">${r.clv_pts.avg >= 0.05 ? "+" : r.clv_pts.avg <= -0.05 ? "−" : ""}${Math.abs(r.clv_pts.avg).toFixed(1)} pts</span><span class="sub">${Math.round(r.clv_pts.beat * 100)}% of ${r.clv_pts.n}</span>` : dash },
     { k: "read", label: "Read", asc: 1, cell: r => `<span class="vlab ${labCls(r.read)}">${esc(r.read)}</span>` }];
   if (recPeriod === "week") {
-    if (!TW) $("#rec-fam").innerHTML = `<p class="wnote">No slate yet; the first comes from the next game-morning pull.</p>`;
+    if (!TW) $("#rec-fam").innerHTML = `<p class="wnote">No slate yet; game-line bets are logged automatically each morning before kickoff.</p>`;
     else {
       $("#rec-fam").innerHTML = TW.families.map((f, i) => `<details class="fam" data-fam="${i}"><summary><span class="player">${esc(f.family)}</span><span class="n">${f.done ? `${f.w} of ${f.done} <span class="q">hit</span>` : `<span class="q">${f.n} pending</span>`}</span><span class="n hide-m">${f.expected} <span class="q">expected of ${f.n}</span></span><span class="n hide-m">${f.done ? u(f.units) : ""}</span></summary><div class="tbody"><div class="tablebox"><table id="tw-t${i}"></table></div></div></details>`).join("");
       TW.families.forEach((f, i) => colTable($(`#tw-t${i}`), betCols, f.bets, twSt[i] || (twSt[i] = { key: "model_p", dir: -1 }), renderRecord));

@@ -67,7 +67,16 @@ FAMILY = {"TD singles": ["TD 2.5–3.9, model likes", "TD skip list (not bet)", 
 PRIMARY = {"ML + top TD scorer, 2 legs": 100,
            "Matchup props: TD, opp top-8 vs position": 100, "Matchup props: receptions over, opp top-8 vs position": 100,
            "Same-game stacks: favorite + lead RB": 75, "Same-game stacks: top two pass catchers": 75, "Same-game stacks: QB yards + WR1 catches": 75,
-           "Teasers: small underdogs +6, 2 legs": 60}
+           "Teasers: small underdogs +6, 2 legs": 60}   # Oct 25: only this one survives the end of the prop pulls
+# Oct 25: Clinton ended the manual Odds API pulls (their timing was his call). Rules that need DraftKings player-prop or same-game
+# prices stop; their graded rows stay in the record. Game-line rules continue from nflverse prices (paper_lines.py).
+RETIRED = {"ML + top TD scorer, 2 legs", "Matchup props: TD, opp top-8 vs position", "Matchup props: receptions over, opp top-8 vs position",
+           "Same-game stacks: favorite + lead RB", "Same-game stacks: top two pass catchers", "Same-game stacks: QB yards + WR1 catches",
+           "Same-game stacks (underdog): win + lead RB", "Same-game stacks (underdog): top two pass catchers", "Same-game stacks (underdog): QB yards + WR1 catches",
+           "Matchup props: receptions over, opp top-8 (no TD filter)", "TD 2.5–3.9, model likes", "Receptions, model differs 5+ pts", "QB INTs (0.5), model differs 5+ pts",
+           "Team totals, model differs 2+ pts", "Board consistency", "Parlays (alt lines, 2–3 legs)", "Parlays: steady legs 1.25–1.50", "Parlays: steady legs, rated 60+",
+           "TD parlays: likeliest per game, 2 legs", "TD parlays: likeliest per game, 3 legs", "TD parlays: top-total game, both teams' shortest", "TD skip list (not bet)",
+           "TD singles: likeliest scorer per game", "TD all: under 2.5", "TD all: 2.5–3.9", "TD all: over 6.0"}
 PRIMARY_FAMILIES = sorted({f for f, ts in FAMILY.items() if set(ts) & set(PRIMARY)})
 FAM_OF = {t: f for f, ts in FAMILY.items() for t in ts}
 GROUP = {t: ("skip" if t in _SKIP else "track" if t in _TRACK else "control" if t.startswith("Control") else "bet") for t in ORDER}
@@ -91,6 +100,7 @@ for t in ORDER:
     if GROUP[t] == "track":   # no real price: graded on whether the model's chance was right
         read = (f"Too early ({n} of {need})" if n < need else "Model about right" if abs(z_md) < 2 else "Model too optimistic" if z_md < 0 else "Model too cautious") if t in PRIMARY else "Tracking only"
     if GROUP[t] == "control": read = "Benchmark"
+    if t in RETIRED : read = f"Stopped Oct 25 ({n} graded)"   # needs DraftKings prop prices; manual pulls ended
     cv = gx["clv"].dropna() if "clv" in gx else pd.Series(dtype=float); cp = gx["clv_pts"].dropna() if "clv_pts" in gx else pd.Series(dtype=float)
     clv_ = dict(n=int(len(cv)), avg=round(float(cv.mean()), 4), beat=round(float((cv > 0).mean()), 3)) if len(cv) else None   # Oct 21
     clvp = dict(n=int(len(cp)), avg=round(float(cp.mean()), 2), beat=round(float((cp > 0).mean()), 3)) if len(cp) else None

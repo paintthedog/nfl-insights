@@ -12,6 +12,7 @@ for W in "$@"; do
   export NFL_WEEK=$W
   python lines_project.py $W; python project_week.py; python td_project.py; python ol_week.py $W; python proj_project.py; python lines_project.py $W   # second pass: team model uses this week's QB chances
 done
+for W in "$@"; do python paper_lines.py $W; done   # Oct 25: automatic game-line paper bets from nflverse prices (no manual pulls)
 for W in $(seq 1 ${1}); do ls bets_wk${W}*.csv >/dev/null 2>&1 && python grade_bets.py $W > /dev/null; done   # grade paper slates for finished games
 for f in paper_wk*.csv; do [ -f "$f" ] || continue; case $f in *_graded*) ;; *) W=$(echo $f | sed 's/[^0-9]//g'); python grade_paper.py $W > /dev/null;; esac; done   # mechanical paper slates
 python record.py > /dev/null                      # Record tab

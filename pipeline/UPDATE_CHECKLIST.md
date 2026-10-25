@@ -54,7 +54,8 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Publish to the artifact (same URL)
 - [ ] Post a short digest: new outs/returns, projection moves >1.5 pts or >15% ATD swing, forecast changes, line moves, anything that touches open paper bets
 
-## 8. ⚑ Odds pull — game mornings only (Sun ~7am; Thu/Mon if betting those)
+## 8. ~~Odds pull~~ — STOPPED Oct 25 (Clinton's decision; reference only). Game-line paper bets now log automatically: `paper_lines.py` runs inside refresh_all.sh
+### (old step 8) ⚑ Odds pull — game mornings only (Sun ~7am; Thu/Mon if betting those)
 - [ ] Fetch events list (0 credits) → build the URL block (1 ATD call per game + 1 lines call)
 - [ ] (Oct 25) Build the block with `python make_urls.py {W}` (never by hand: the hand-written Week 7 block dropped pass-yds rungs and team totals, so QB yards + WR1 logged zero bets). `--late` skips games already started; `--only a,b` does a targeted re-pull. Key stays out of the repo (KEY placeholder).
 - [ ] ⚑ Clinton pastes the URL block (provenance requirement — cannot be automated)
