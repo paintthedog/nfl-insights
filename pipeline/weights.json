@@ -17,8 +17,8 @@
   },
   {
    "label": "Interception-worthy throws",
-   "pct": 12.7,
-   "swing": 1.46
+   "pct": 12.8,
+   "swing": 1.48
   },
   {
    "label": "Throw depth",
@@ -49,18 +49,18 @@
  "td": [
   {
    "label": "Target share",
-   "pct": 35.5,
-   "swing": 4.58
+   "pct": 35.4,
+   "swing": 4.57
   },
   {
    "label": "Team's implied points (Vegas)",
-   "pct": 22.2,
-   "swing": 2.87
+   "pct": 22.3,
+   "swing": 2.88
   },
   {
    "label": "Carry share",
-   "pct": 19.8,
-   "swing": 2.56
+   "pct": 19.7,
+   "swing": 2.54
   },
   {
    "label": "Team's run/pass TD split",
@@ -69,13 +69,13 @@
   },
   {
    "label": "Goal-line carries (inside the 10)",
-   "pct": 6.3,
-   "swing": 0.82
+   "pct": 6.5,
+   "swing": 0.84
   },
   {
    "label": "Past touchdown share",
-   "pct": 5.5,
-   "swing": 0.71
+   "pct": 5.4,
+   "swing": 0.7
   },
   {
    "label": "Red-zone targets",
@@ -114,7 +114,7 @@
     },
     {
      "label": "Interceptions",
-     "pct": 5.9,
+     "pct": 5.8,
      "swing": 0.17
     },
     {
@@ -135,32 +135,32 @@
    ]
   },
   "RB": {
-   "n": 42,
+   "n": 46,
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 51.4,
-     "swing": 2.9
+     "pct": 51.7,
+     "swing": 2.82
     },
     {
      "label": "Touchdown chances",
      "pct": 22.9,
-     "swing": 1.29
+     "swing": 1.25
     },
     {
      "label": "Snap share",
-     "pct": 9.1,
-     "swing": 0.51
+     "pct": 8.8,
+     "swing": 0.48
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
      "pct": 5.5,
-     "swing": 0.31
+     "swing": 0.3
     },
     {
      "label": "Opponent defense",
      "pct": 3.4,
-     "swing": 0.19
+     "swing": 0.18
     },
     {
      "label": "Vegas total & spread",
@@ -170,7 +170,7 @@
     {
      "label": "Team's recent play volume",
      "pct": 2.1,
-     "swing": 0.12
+     "swing": 0.11
     },
     {
      "label": "WOPR",
@@ -179,28 +179,28 @@
     },
     {
      "label": "Quarterback change",
-     "pct": 1.7,
+     "pct": 1.6,
      "swing": 0.09
     }
    ]
   },
   "WR": {
-   "n": 68,
+   "n": 69,
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 40.6,
-     "swing": 2.6
+     "pct": 40.8,
+     "swing": 2.59
     },
     {
      "label": "WOPR",
      "pct": 17.6,
-     "swing": 1.13
+     "swing": 1.11
     },
     {
      "label": "Snap share",
      "pct": 11.1,
-     "swing": 0.71
+     "swing": 0.7
     },
     {
      "label": "Touchdown chances",
@@ -209,13 +209,13 @@
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
-     "pct": 6.9,
-     "swing": 0.44
+     "pct": 6.8,
+     "swing": 0.43
     },
     {
      "label": "Team's recent play volume",
      "pct": 5.9,
-     "swing": 0.38
+     "swing": 0.37
     },
     {
      "label": "Quarterback change",
@@ -244,8 +244,8 @@
     },
     {
      "label": "Touchdown chances",
-     "pct": 14.3,
-     "swing": 0.57
+     "pct": 14.5,
+     "swing": 0.58
     },
     {
      "label": "Snap share",
@@ -259,12 +259,12 @@
     },
     {
      "label": "WOPR",
-     "pct": 6.2,
+     "pct": 6.1,
      "swing": 0.25
     },
     {
      "label": "Quarterback change",
-     "pct": 4.1,
+     "pct": 4.0,
      "swing": 0.16
     },
     {

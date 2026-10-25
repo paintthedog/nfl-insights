@@ -1,6 +1,6 @@
 {
- "asof": "2026-10-24T09:20 ET",
- "source": "Forbes Week 6 injuries (Oct 14), Yahoo live injury tracker (Oct 12-13), FantasyPros (Oct 12). No official Wednesday practice report yet. | OL carryover check Oct 14: Penning on reserve (roster RES); Awosika out wks 4-5, no update; Bortolini full practice wk5 (back); Lane Johnson/Jurgens no current report \u2014 re-check Thu/Fri. | Oct 15: Wednesday practice reports (Yahoo injury report + live blog, NBC). | Carryovers: Johnston limited (chest); Jurgens limited (concussion) -> treated as playing; Lane Johnson & Bortolini not on Wed report -> back. | Oct 16: Hurts out (blood clot, Rapoport), McKee starts; Lamar DNP Thu; Roman Wilson out (Yahoo Oct 15, PFT Oct 15). | Oct 17: final Friday reports (CBS Oct 16 5:57pm, SI final injury report Oct 17): Lamar, Barkley, Montgomery, Rice, J. Love out; Caleb Q but full practice; DeVonta expected back; Henderson good chance; Lamb/Bateman/Nailor not on report -> playing; Jurgens out (concussion). | Oct 17 pm: Croskey-Merritt + Mariota out (Quinn); Diggs Q limited x2; Evans Q expected to play (Maiocco); DJ Moore likely sits (Capaccio); Olave limited Fri, trending to play; Henderson leaning out; Kamara/Dowdle likely active; Metcalf illness Q; A.J. Brown likely activated (Rapoport) - not in pool, flagged. | Oct 22: CBS Wednesday Week 7 practice reports (Oct 21 7:59pm), Yahoo live news blog (Oct 19-21), DK Network injury report (Oct 20 7:25pm). The two role feeds (Footballers, FantasyData) and weather sites were not fetchable in the unattended run. | Oct 21 10:30pm: Fantasy Footballers + FantasyData role feeds read (Wed practice items). | Oct 23: role feeds (Footballers, FantasyData) not fetchable in the unattended run (permission prompt). Used Eagles.com Thu report (Oct 22 7:26pm), Seahawks.com Thu report (Oct 22), Arizona Sports Wed report (Oct 21), Newsweek/NBC citing Zenitz on Love (Oct 22), Athlon on Marks (Oct 23). | Oct 24: nflverse final Friday Week 7 game statuses (Out: Love, Charbonnet, Evans, Egbuka, Warren, Deebo, Thornton Jr., B. Robinson, Gabriel, Gould, Brashard Smith, Skowronek; Doubtful: Theo Johnson); NBC Oct 23 confirms Love out vs DEN. No-designation players cleared to play. Role feeds not fetchable unattended.",
+ "asof": "2026-10-25T09:10 ET",
+ "source": "Forbes Week 6 injuries (Oct 14), Yahoo live injury tracker (Oct 12-13), FantasyPros (Oct 12). No official Wednesday practice report yet. | OL carryover check Oct 14: Penning on reserve (roster RES); Awosika out wks 4-5, no update; Bortolini full practice wk5 (back); Lane Johnson/Jurgens no current report \u2014 re-check Thu/Fri. | Oct 15: Wednesday practice reports (Yahoo injury report + live blog, NBC). | Carryovers: Johnston limited (chest); Jurgens limited (concussion) -> treated as playing; Lane Johnson & Bortolini not on Wed report -> back. | Oct 16: Hurts out (blood clot, Rapoport), McKee starts; Lamar DNP Thu; Roman Wilson out (Yahoo Oct 15, PFT Oct 15). | Oct 17: final Friday reports (CBS Oct 16 5:57pm, SI final injury report Oct 17): Lamar, Barkley, Montgomery, Rice, J. Love out; Caleb Q but full practice; DeVonta expected back; Henderson good chance; Lamb/Bateman/Nailor not on report -> playing; Jurgens out (concussion). | Oct 17 pm: Croskey-Merritt + Mariota out (Quinn); Diggs Q limited x2; Evans Q expected to play (Maiocco); DJ Moore likely sits (Capaccio); Olave limited Fri, trending to play; Henderson leaning out; Kamara/Dowdle likely active; Metcalf illness Q; A.J. Brown likely activated (Rapoport) - not in pool, flagged. | Oct 22: CBS Wednesday Week 7 practice reports (Oct 21 7:59pm), Yahoo live news blog (Oct 19-21), DK Network injury report (Oct 20 7:25pm). The two role feeds (Footballers, FantasyData) and weather sites were not fetchable in the unattended run. | Oct 21 10:30pm: Fantasy Footballers + FantasyData role feeds read (Wed practice items). | Oct 23: role feeds (Footballers, FantasyData) not fetchable in the unattended run (permission prompt). Used Eagles.com Thu report (Oct 22 7:26pm), Seahawks.com Thu report (Oct 22), Arizona Sports Wed report (Oct 21), Newsweek/NBC citing Zenitz on Love (Oct 22), Athlon on Marks (Oct 23). | Oct 24: nflverse final Friday Week 7 game statuses (Out: Love, Charbonnet, Evans, Egbuka, Warren, Deebo, Thornton Jr., B. Robinson, Gabriel, Gould, Brashard Smith, Skowronek; Doubtful: Theo Johnson); NBC Oct 23 confirms Love out vs DEN. No-designation players cleared to play. Role feeds not fetchable unattended. | Oct 25: Ravens ruled out Lamar Jackson, Huntley starts (Ravens.com, Yahoo, ESPN wire Oct 24). Packers activated Josh Jacobs from exempt list for 2026 debut, on track to play (NFL.com, ESPN, PFT). Role feeds not fetchable unattended (permission prompt); headline-level web search only. | Oct 25 audit: DeVonta Smith official status Out -> out. A. Mitchell returned to practice Oct 21 (Jets.com), no game status -> back. D. Sampson limited Wed, Browns optimistic (Footballers/RotoBaller headlines), no game status -> back.",
  "out": [
   "Ben Skowronik",
   "Breece Hall",
@@ -39,11 +39,12 @@
   "Zach Charbonnet",
   "Mike Evans",
   "Deebo Samuel Sr.",
-  "Emeka Egbuka"
+  "Emeka Egbuka",
+  "Lamar Jackson",
+  "DeVonta Smith"
  ],
  "p_play": {
-  "DeVonta Smith": 0.5,
-  "Josh Jacobs": 0.5,
+  "Josh Jacobs": 0.85,
   "DK Metcalf": 1.0,
   "Caleb Williams": 1.0,
   "Dallas Goedert": 0.5
@@ -52,7 +53,8 @@
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
   "TB": "Jalon Daniels",
-  "NYG": "J.J. McCarthy"
+  "NYG": "J.J. McCarthy",
+  "BAL": "Tyler Huntley"
  },
  "next_man": {},
  "ol_out": [
@@ -98,16 +100,11 @@
   "Dylan Parham",
   "Andrew Vorhees",
   "Aaron Banks",
-  "Jonah Jackson"
+  "Jonah Jackson",
+  "Adonai Mitchell",
+  "Dylan Sampson"
  ],
- "qb_uncertain": {
-  "BAL": {
-   "starter": "Lamar Jackson",
-   "backup": "Tyler Huntley",
-   "p": 0.5,
-   "note": "ankle; officially Questionable, limited practice; Fowler calls it 50/50 (NBC, Oct 24)"
-  }
- },
+ "qb_uncertain": {},
  "lead_back": {
   "ARI": [
    "Tyler Allgeier",
