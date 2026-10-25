@@ -42,3 +42,23 @@ Why this exists: by mid-October we had run ~45 tests. At a 5% false-positive rat
 | Does game-to-game spread in role (opportunity share), snap share, or PPR tell us whether a player clears a prop rung more often than the model's chance? | tests/t_steady.py | Rungs the model put at ~70–85% (rec for RB/WR/TE, rush yds for RB, pass yds for QB), 23,904 legs. Steadiest third vs jumpiest third, hit rate minus model chance: role spread +2.1 pts (t=3.0) in 2019–23, +1.3 (t=1.3) in 2024–26; PPR spread +1.4 (t=2.0) then +3.2 (t=3.1); snap-share spread +0.6 then +0.1 (nothing); equal-weight blend of role + PPR +2.0 (t=2.8) then +2.0 (t=2.0). | (see next row) |
 | Same test, players with a real role only | tests/t_steady.py | Restricted to players with a real role (6+ PPR, 10%+ of targets, RB 15%+ of carries + targets: the players who get rated), 18,858 legs: blend +0.7 (t=0.9) fit, +1.9 (t=1.7) check; role +1.0 / +1.1; PPR spread +0.4 / +2.6 (t=2.2). Most of the all-player signal was fringe players missing rungs. | KEPT as a DESCRIPTION and filter (steady.py, Steady column on Projections, ◆ role-change flags), at Clinton's request. Not shown to add an edge among bettable players. Equal weights because the parts traded places; snap spread dropped. Never feeds a projection. Tested against the model's chance, NOT DraftKings' price. Revisit at season end with 2026 Weeks 7–18. |
 | Paper test: "Parlays: steady legs, rated 60+" (same rule as steady legs 1.25–1.50, legs limited to Steady 60+ with no role flag) | paper_slate.py | Starts Week 8 game morning. Every steady-leg now carries its score (`stdy`, `stdy_flag`) in the legs JSON. | Exploratory (150 bets, 3 SE). Better read sooner: leg-level hit rate by score band vs the leg's DK no-vig chance once 200+ tagged legs exist. If rated legs don't beat DK's price, the rating is a description, not an edge. |
+
+## Oct 25: more volume for the tests (Clinton: "not testing nearly enough bets")
+Week 7 logged 472 paper bets, but the pre-registered main tests fill slowly: QB yards + WR1 catches 0 (the hand-written URL block dropped player_pass_yds_alternate and team_totals), small-underdog teasers 1 a week, matchup receptions ~5 a week. The main tests are NOT changed. Fixes and exploratory side rules (150 bets, 3 SE, like every other exploratory rule):
+| Change | Where | Note |
+|---|---|---|
+| URL block is generated, never hand-written | make_urls.py | ~101 credits for a 14-game slate (7/game + 3). Restores QB yards + WR1 catches. |
+| Teaser legs: small underdogs +6 | paper_extra.py | Each leg of the main rule graded alone (ref price 1.80**0.5 = 1.342, break-even 74.5%). Doubles the sample, same rule. |
+| Teasers (wide): underdogs +1 to +3, all pairs | paper_extra.py | Comparison rule. Backtest 2016–2025 (below) says the widening DILUTES: expect it to trail the main rule. |
+| Same-game stacks (underdog): the three sgp_slate rules on the DK underdog | sgp_slate.build(side="dog") | Oct 16 correlation test: favorite win + dog offense is negatively correlated; dog win + own RB is positively. Graded on hit rate vs joint chance. |
+| Matchup props: receptions over, opp top-8 (no TD filter) | paper_extra.py | Clinton's matchup rule without the TD-rate half. Real-season-record rule applied (8+ catches / 25+ carries) to all extras. |
+Backtest, 6-point teaser legs, nflverse closing spreads 2016–2025 regular season (pushes dropped), break-even 74.5% at a 1.80 two-teamer:
+| Band | Legs | Cover | z vs break-even | 2-leg ROI |
+|---|---|---|---|---|
+| Underdogs +1.5 to +2.5 (main rule) | 421 | 77.4% ±2.0 | +1.4 | +7.9% |
+| Underdogs +1 to +3 (wide) | 967 | 75.2% ±1.4 | +0.5 | +1.7% |
+| Underdogs +1 only | 171 | 73.1% | −0.4 | −3.8% |
+| Underdogs +3 only | 375 | 73.6% | −0.4 | −2.5% |
+| Favorites −1.5 to −2.5 | 423 | 67.6% | −3.0 | −17.7% |
+| Favorites −7.5 to −8.5 | 220 | 71.8% | −0.9 | −7.2% |
+Read: the main teaser band is the only one above break-even, and even ten seasons only get it to 1.4 SE. Sixty forward bets cannot settle it alone; the backtest plus the forward record together are the evidence. Never tease favorites of −1.5 to −2.5.

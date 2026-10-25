@@ -254,6 +254,9 @@ out = pd.DataFrame(bets)
 try:
     import sgp_slate, ml_td_slate; out = pd.concat([out, sgp_slate.build(W), ml_td_slate.build(W)], ignore_index=True)
 except Exception as e: print("same-game stacks skipped:", e)
+try:   # Oct 25: exploratory widened rules (paper_extra.py); the pre-registered main tests above are unchanged
+    import paper_extra; out = pd.concat([out, paper_extra.build(W)[0]], ignore_index=True)
+except Exception as e: print("exploratory extras skipped:", e)
 out.to_csv(f"paper_wk{W}.csv", index=False)
 # board consistency (Oct 18): DK's lines against each other, no model of ours; bettable flags join the record
 import subprocess

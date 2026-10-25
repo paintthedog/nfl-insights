@@ -56,6 +56,7 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 
 ## 8. ⚑ Odds pull — game mornings only (Sun ~7am; Thu/Mon if betting those)
 - [ ] Fetch events list (0 credits) → build the URL block (1 ATD call per game + 1 lines call)
+- [ ] (Oct 25) Build the block with `python make_urls.py {W}` (never by hand: the hand-written Week 7 block dropped pass-yds rungs and team totals, so QB yards + WR1 logged zero bets). `--late` skips games already started; `--only a,b` does a targeted re-pull. Key stays out of the repo (KEY placeholder).
 - [ ] ⚑ Clinton pastes the URL block (provenance requirement — cannot be automated)
 - [ ] Fetch all; write `odds_raw/wk{W}/*.txt` (archive the prior pull to `odds_raw/wk{W}_<day>/` first)
 - [ ] Per game, TWO event URLs (each under the ~250-char fetch limit), bookmakers=draftkings:

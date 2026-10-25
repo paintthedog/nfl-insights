@@ -29,7 +29,11 @@ def anchored_home_win(g, SDM):
     return Phi((g["spread"] + SDM * float(_n.ppf(min(max(g["p_home_cover"], 1e-6), 1 - 1e-6)))) / SDM)
 
 
-def build(W, now=None):
+TYPES_DOG = {TYPE_A: "Same-game stacks (underdog): win + lead RB", TYPE_B: "Same-game stacks (underdog): top two pass catchers",
+             TYPE_C: "Same-game stacks (underdog): QB yards + WR1 catches"}   # Oct 25: exploratory, the same three rules on the DK underdog
+
+
+def build(W, now=None, side="fav"):
     D = json.load(open(f"site/data_wk{W}.json")); L = json.load(open(f"lines_2026_wk{W}.json")); QS = D["proj"]["quants"]
     sched = pd.read_parquet("data/sched.parquet"); sw = sched[(sched.season == 2026) & (sched.week == W)].set_index("game_id")
     now = now or pd.Timestamp.now(tz="America/New_York")
@@ -53,6 +57,7 @@ def build(W, now=None):
         if not len(hp) or not len(ap): continue
         hpr, apr = float(hp.price.iloc[0]), float(ap.price.iloc[0])
         fav, fpr = (g["home"], hpr) if hpr <= apr else (g["away"], apr)
+        if side == "dog": fav, fpr = (g["away"], apr) if fav == g["home"] else (g["home"], hpr)   # Oct 25: same rules, other side
         nv = (1 / fpr) / (1 / hpr + 1 / apr); pm = anchored_home_win(g, SDM); pm = pm if fav == g["home"] else 1 - pm
         win = dict(gid=gid, player=fav, stat="ml", line=None, price=fpr, p=round(blend(pm, nv), 4), label="WIN")
         tp = [p for p in P if p["team"] == fav and (p.get("p_play") or 1) >= 0.85]
@@ -86,6 +91,7 @@ def build(W, now=None):
             if lq and lw: rows.append((TYPE_C, gid, [dict(lq, label="QB pass_yds"), dict(lw, label="WR1 rec")]))
     out = []
     stamp = now.tz_convert("UTC").strftime("%Y-%m-%dT%H:%MZ")
+    if side == "dog": rows = [(TYPES_DOG[t], gid, legs) for t, gid, legs in rows]
     for t, gid, legs in rows:
         jp = joint([(l["label"], l["p"]) for l in legs]); ip = float(np.prod([l["p"] for l in legs]))
         _u = {"rec": "rec", "rush_yds": "rush yds", "pass_yds": "pass yds"}
