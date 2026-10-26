@@ -57,7 +57,7 @@ AVG_STATS = ["pass_yds", "rush_yds", "car", "tgt", "rec", "rec_yds", "fp_ppr"]
 RANGE_STATS = ["pass_yds", "rush_yds", "car", "tgt", "rec", "rec_yds", "fp_ppr"]
 LINE_KEY = {"pass_yds": "pass_yds", "rush_yds": "rush_yds", "rec": "rec", "rec_yds": "rec_yds"}
 QI = {q: i for i, q in enumerate(PM.QUANTS)}
-A, R, PR, G = [], [], [], []
+A, R, PR, G, NS = [], [], [], [], []
 SNAP_GAMES = set()
 _pre = lambda d: d[pd.to_datetime(d.pulled_at, utc=True, format="ISO8601") < pd.to_datetime(d.kickoff, utc=True, format="ISO8601")]
 _lt = _pre(pd.read_csv("props_log.csv")); _lt = _lt[_lt.book == "draftkings"].sort_values("pulled_at")
@@ -74,6 +74,10 @@ for wk in weeks:
         # ---- players: averages and ranges
         for p in D["proj"]["players"]:
             gid = game_of(p["team"], gs)
+            # Oct 26: players the site expected to play for real volume (p_play 0.9+, 5+ PPR points) who never touched the ball.
+            # Every number published for them was wrong before kickoff, and the averages below skip them, so count them here.
+            if gid in gids and (p.get("p_play") or 1) >= 0.9 and ((p.get("mean") or {}).get("fp_ppr") or 0) >= 5:
+                NS.append(dict(wk=wk, name=p["name"], team=p["team"], pos=p["pos"], fp=float(p["mean"]["fp_ppr"]), y=float(p["pid"] not in touched.get(gid, set()))))
             if gid not in gids or (gid, p["pid"]) not in act.index: continue
             a = act.loc[(gid, p["pid"])]; a = a.iloc[0] if isinstance(a, pd.DataFrame) else a
             if (p.get("p_play") or 1) < 0.9: continue
@@ -203,7 +207,14 @@ out["three_way"] = three
 if len(G):
     gl = G[G.spread.notna()]; gt = G[G.total.notna()]
     out["games"] = dict(n=len(G), margin_model=round((G.mg - G.m_margin).abs().mean(), 2), margin_line=round((gl.mg + gl.spread).abs().mean(), 2) if len(gl) else None,
-                        total_model=round((G.tot - G.m_total).abs().mean(), 2), total_line=round((gt.tot - gt.total).abs().mean(), 2) if len(gt) else None)
+                        total_model=round((G.tot - G.m_total).abs().mean(), 2), total_line=round((gt.tot - gt.total).abs().mean(), 2) if len(gt) else None,
+                        # Oct 26: lean, not just miss. Positive = the model's total ran higher than what was scored.
+                        total_bias_model=round((G.m_total - G.tot).mean(), 2), total_bias_line=round((gt.total - gt.tot).mean(), 2) if len(gt) else None)
+NS = pd.DataFrame(NS)
+if len(NS):
+    last = int(NS.wk.max()); z = NS[(NS.wk == last) & (NS.y == 1)].sort_values("fp", ascending=False)
+    out["no_shows"] = dict(n=len(NS), missed=int(NS.y.sum()), rate=round(float(NS.y.mean()), 3), week=last,
+                           names=[f"{r.name} ({r.team} {r.pos}, {r.fp:.1f})" for r in z.itertuples()][:12])
 wk_rows = []
 for wk in out["weeks"]:
     a = A[(A.wk == wk) & (A.stat == "fp_ppr")] if len(A) else A; r = R[(R.wk == wk) & (R.stat == "fp_ppr")] if len(R) else R; p = PR[(PR.wk == wk) & (PR.mkt == "Anytime TD")]
@@ -232,6 +243,19 @@ if rf and rf["n"] >= 150:
     lab, txt = ("On target", "about 1 in 5 results land outside the floor-to-ceiling range, as designed.") if 0.14 <= tot <= 0.26 else (("Too narrow", f"{tot:.0%} of results land outside the floor-to-ceiling range; 20% is the design.") if tot > 0.26 else ("Too wide", f"only {tot:.0%} of results land outside the floor-to-ceiling range; 20% is the design."))
     line("Floors and ceilings", lab, f"Over {rf['n']} player-games, {txt}")
 elif rf: line("Floors and ceilings", "Too early", f"{rf['n']} player-games so far; needs 150+.")
+# Oct 26: the same floor-to-ceiling check for every stat with a published range, so a stat that drifts gets named
+off = [f"{r['stat'].lower()} {r['below'] + r['above']:.0%}" for r in rng if r["stat"] != "Fantasy points (PPR)" and r["n"] >= 150 and not 0.14 <= r["below"] + r["above"] <= 0.26]
+ok_n = sum(1 for r in rng if r["stat"] != "Fantasy points (PPR)" and r["n"] >= 150)
+if ok_n: line("Ranges by stat", "On target" if not off else "Lean found",
+              f"{ok_n} stats with 150+ results checked; 20% outside the floor-to-ceiling range is the design." + (" Off target: " + ", ".join(off) + "." if off else " All within 14–26%."))
+if "games" in out and out["games"]["n"] >= 30:
+    g = out["games"]; bm, bl = g["total_bias_model"], g["total_bias_line"]
+    line("Game totals", "Lean found" if abs(bm) >= 1.5 else "On target",
+         f"Over {g['n']} games the model's total averaged {abs(bm):.1f} points {'above' if bm > 0 else 'below'} what was scored" + (f" (the closing total: {abs(bl):.1f} {'above' if bl > 0 else 'below'})" if bl is not None else "") + f". Average miss {g['total_model']:.1f} vs the line's {g['total_line']:.1f}.")
+ns = out.get("no_shows")
+if ns:
+    lab = "Too early" if ns["n"] < 200 else ("On target" if ns["rate"] <= 0.03 else "Lean found")
+    line("Expected to play, didn't", lab, f"{ns['missed']} of {ns['n']} players projected to play for 5+ PPR points never touched the ball ({ns['rate']:.1%}). Every number the site showed for them was wrong before kickoff, and the averages above leave them out." + (f" Week {ns['week']}: " + "; ".join(ns["names"]) + "." if ns["names"] else ""))
 if "games" in out and out["games"]["n"] >= 30:
     g = out["games"]; better = g["margin_line"] is not None and g["margin_model"] < g["margin_line"]
     line("Game lines", "Ahead of the market" if better else "Market is closer", f"Average miss on the margin {g['margin_model']:.1f} points vs the closing spread's {g['margin_line']:.1f}, over {g['n']} games." + ("" if better else " Read the model's spread as a second opinion, not a bet."))
