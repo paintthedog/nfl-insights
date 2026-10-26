@@ -1,7 +1,7 @@
 team,ol_missing_pred,who
-ARI,3,Paris Johnson Jr.; Jon Gaines II; Isaiah Adams
+ARI,2,Paris Johnson Jr.; Jon Gaines II
 ATL,0,
-BAL,2,Ronnie Stanley; Jovaughn Gwyn
+BAL,1,Ronnie Stanley
 BUF,0,
 CAR,0,
 CHI,0,
@@ -9,7 +9,7 @@ CIN,0,
 CLE,0,
 DAL,0,
 DEN,0,
-DET,1,Ben Bartch
+DET,0,
 GB,0,
 HOU,0,
 IND,0,
@@ -29,5 +29,5 @@ PIT,0,
 SEA,0,
 SF,0,
 TB,1,Luke Goedeke
-TEN,1,Jackson Slater
+TEN,0,
 WAS,0,

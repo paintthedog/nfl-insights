@@ -1,7 +1,7 @@
 team,ol_missing_pred,who
-ARI,2,Paris Johnson Jr.; Isaiah Adams
+ARI,1,Paris Johnson Jr.
 ATL,0,
-BAL,1,Jovaughn Gwyn
+BAL,0,
 BUF,0,
 CAR,0,
 CHI,0,
@@ -9,7 +9,7 @@ CIN,0,
 CLE,0,
 DAL,0,
 DEN,0,
-DET,1,Ben Bartch
+DET,0,
 GB,0,
 HOU,0,
 IND,0,
@@ -29,5 +29,5 @@ PIT,0,
 SEA,0,
 SF,0,
 TB,0,
-TEN,1,Jackson Slater
+TEN,0,
 WAS,0,

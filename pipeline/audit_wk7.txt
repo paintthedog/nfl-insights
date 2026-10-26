@@ -1,4 +1,7 @@
-Staleness audit, week 7: 3 item(s)
-  [CARRYOVER] Adonai Mitchell was out last week, now projected 5.1 pts with no Week 7 status — confirm he's back
-  [CARRYOVER] Dylan Sampson was out last week, now projected 4.1 pts with no Week 7 status — confirm he's back
-  [ROLE] T.J. Hockenson (MIN) catches: model 2.1 vs DK line 4.5 - check role/targets news
+Staleness audit, week 7: 6 item(s)
+  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+  [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
+  [STALE] lead_back NYJ set 2026-10-22 (4 days ago) - re-verify or remove
+  [STALE] p_play Caleb Williams set 2026-10-22 (4 days ago) - re-verify or remove
+  [STALE] p_play DK Metcalf set 2026-10-22 (4 days ago) - re-verify or remove

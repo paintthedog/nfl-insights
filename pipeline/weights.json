@@ -2,90 +2,90 @@
  "int": [
   {
    "label": "Passes broken up",
-   "pct": 21.0,
-   "swing": 2.43
+   "pct": 22.8,
+   "swing": 2.65
   },
   {
    "label": "Expected pass attempts",
-   "pct": 18.3,
-   "swing": 2.11
+   "pct": 18.0,
+   "swing": 2.09
   },
   {
    "label": "Game script (spread)",
-   "pct": 15.8,
+   "pct": 15.7,
    "swing": 1.82
   },
   {
    "label": "Interception-worthy throws",
-   "pct": 12.8,
+   "pct": 12.7,
    "swing": 1.48
   },
   {
    "label": "Throw depth",
-   "pct": 11.9,
-   "swing": 1.38
+   "pct": 11.5,
+   "swing": 1.34
   },
   {
    "label": "Opposing defense's INT rate",
-   "pct": 11.9,
-   "swing": 1.38
+   "pct": 10.9,
+   "swing": 1.27
   },
   {
    "label": "QB inexperience",
-   "pct": 4.8,
-   "swing": 0.56
+   "pct": 4.7,
+   "swing": 0.55
   },
   {
    "label": "Pass rush (both sides)",
    "pct": 2.7,
-   "swing": 0.31
+   "swing": 0.32
   },
   {
    "label": "Wind",
-   "pct": 0.9,
-   "swing": 0.1
+   "pct": 1.1,
+   "swing": 0.13
   }
  ],
  "td": [
   {
    "label": "Target share",
-   "pct": 35.4,
-   "swing": 4.57
+   "pct": 34.1,
+   "swing": 4.49
   },
   {
    "label": "Team's implied points (Vegas)",
-   "pct": 22.3,
-   "swing": 2.88
+   "pct": 22.1,
+   "swing": 2.91
   },
   {
    "label": "Carry share",
-   "pct": 19.7,
-   "swing": 2.54
+   "pct": 20.5,
+   "swing": 2.7
   },
   {
    "label": "Team's run/pass TD split",
-   "pct": 8.4,
-   "swing": 1.08
+   "pct": 9.0,
+   "swing": 1.19
   },
   {
    "label": "Goal-line carries (inside the 10)",
-   "pct": 6.5,
-   "swing": 0.84
+   "pct": 6.8,
+   "swing": 0.9
   },
   {
    "label": "Past touchdown share",
-   "pct": 5.4,
-   "swing": 0.7
+   "pct": 5.2,
+   "swing": 0.68
   },
   {
    "label": "Red-zone targets",
-   "pct": 1.3,
-   "swing": 0.17
+   "pct": 1.2,
+   "swing": 0.16
   },
   {
    "label": "Opponent's TDs allowed to position",
-   "pct": 0.9,
-   "swing": 0.12
+   "pct": 1.0,
+   "swing": 0.13
   }
  ],
  "proj": {
@@ -94,37 +94,37 @@
    "rows": [
     {
      "label": "Touchdown chances",
-     "pct": 40.4,
-     "swing": 1.17
+     "pct": 41.6,
+     "swing": 1.24
     },
     {
      "label": "Usage (targets, carries, QB attempts)",
      "pct": 21.8,
-     "swing": 0.63
+     "swing": 0.65
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
-     "pct": 14.6,
+     "pct": 14.0,
      "swing": 0.42
     },
     {
      "label": "Opponent defense",
      "pct": 8.6,
-     "swing": 0.25
+     "swing": 0.26
     },
     {
      "label": "Interceptions",
-     "pct": 5.8,
+     "pct": 5.6,
      "swing": 0.17
     },
     {
      "label": "Team's recent play volume",
-     "pct": 5.7,
+     "pct": 5.3,
      "swing": 0.16
     },
     {
      "label": "Vegas total & spread",
-     "pct": 3.1,
+     "pct": 3.0,
      "swing": 0.09
     },
     {
@@ -139,43 +139,43 @@
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 51.7,
-     "swing": 2.82
+     "pct": 50.5,
+     "swing": 2.84
     },
     {
      "label": "Touchdown chances",
-     "pct": 22.9,
-     "swing": 1.25
+     "pct": 22.2,
+     "swing": 1.24
     },
     {
      "label": "Snap share",
-     "pct": 8.8,
-     "swing": 0.48
+     "pct": 10.7,
+     "swing": 0.6
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
-     "pct": 5.5,
-     "swing": 0.3
+     "pct": 5.0,
+     "swing": 0.28
     },
     {
      "label": "Opponent defense",
-     "pct": 3.4,
-     "swing": 0.18
+     "pct": 3.7,
+     "swing": 0.21
     },
     {
      "label": "Vegas total & spread",
-     "pct": 2.2,
+     "pct": 2.1,
      "swing": 0.12
     },
     {
      "label": "Team's recent play volume",
      "pct": 2.1,
-     "swing": 0.11
+     "swing": 0.12
     },
     {
      "label": "WOPR",
-     "pct": 1.8,
-     "swing": 0.1
+     "pct": 2.0,
+     "swing": 0.11
     },
     {
      "label": "Quarterback change",
@@ -189,98 +189,98 @@
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 40.8,
-     "swing": 2.59
+     "pct": 41.2,
+     "swing": 2.66
     },
     {
      "label": "WOPR",
-     "pct": 17.6,
-     "swing": 1.11
+     "pct": 17.5,
+     "swing": 1.13
     },
     {
      "label": "Snap share",
-     "pct": 11.1,
+     "pct": 10.9,
      "swing": 0.7
     },
     {
      "label": "Touchdown chances",
-     "pct": 10.2,
-     "swing": 0.65
+     "pct": 9.7,
+     "swing": 0.63
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
-     "pct": 6.8,
-     "swing": 0.43
+     "pct": 6.9,
+     "swing": 0.45
     },
     {
      "label": "Team's recent play volume",
      "pct": 5.9,
-     "swing": 0.37
+     "swing": 0.38
     },
     {
      "label": "Quarterback change",
-     "pct": 3.7,
-     "swing": 0.24
+     "pct": 3.6,
+     "swing": 0.23
     },
     {
      "label": "Vegas total & spread",
-     "pct": 2.3,
-     "swing": 0.15
+     "pct": 2.5,
+     "swing": 0.16
     },
     {
      "label": "Opponent defense",
-     "pct": 1.6,
-     "swing": 0.1
+     "pct": 1.7,
+     "swing": 0.11
     }
    ]
   },
   "TE": {
-   "n": 34,
+   "n": 29,
    "rows": [
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 46.2,
-     "swing": 1.85
+     "pct": 49.0,
+     "swing": 2.17
     },
     {
      "label": "Touchdown chances",
-     "pct": 14.5,
-     "swing": 0.58
+     "pct": 14.3,
+     "swing": 0.63
     },
     {
      "label": "Snap share",
-     "pct": 14.0,
-     "swing": 0.56
-    },
-    {
-     "label": "Team's recent play volume",
-     "pct": 6.3,
-     "swing": 0.25
+     "pct": 11.5,
+     "swing": 0.51
     },
     {
      "label": "WOPR",
-     "pct": 6.1,
-     "swing": 0.25
+     "pct": 6.5,
+     "swing": 0.29
+    },
+    {
+     "label": "Team's recent play volume",
+     "pct": 6.0,
+     "swing": 0.27
     },
     {
      "label": "Quarterback change",
-     "pct": 4.0,
-     "swing": 0.16
+     "pct": 3.9,
+     "swing": 0.17
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
      "pct": 3.9,
-     "swing": 0.16
+     "swing": 0.17
     },
     {
      "label": "Opponent defense",
-     "pct": 2.7,
-     "swing": 0.11
+     "pct": 2.6,
+     "swing": 0.12
     },
     {
      "label": "Vegas total & spread",
      "pct": 2.3,
-     "swing": 0.09
+     "swing": 0.1
     }
    ]
   }
@@ -288,50 +288,50 @@
  "margin": [
   {
    "label": "Defense ratings",
-   "pct": 29.7,
-   "swing": 1.89
+   "pct": 30.1,
+   "swing": 1.93
   },
   {
    "label": "Offense ratings",
-   "pct": 27.7,
-   "swing": 1.76
+   "pct": 26.7,
+   "swing": 1.71
   },
   {
    "label": "Quarterback quality & changes",
-   "pct": 26.2,
-   "swing": 1.67
+   "pct": 26.3,
+   "swing": 1.69
   },
   {
    "label": "Missing defensive regulars",
-   "pct": 10.7,
+   "pct": 10.6,
    "swing": 0.68
   },
   {
    "label": "Short week & rest",
-   "pct": 3.2,
-   "swing": 0.2
+   "pct": 3.6,
+   "swing": 0.23
   },
   {
    "label": "Wind",
-   "pct": 2.5,
-   "swing": 0.16
+   "pct": 2.6,
+   "swing": 0.17
   }
  ],
  "total": [
   {
    "label": "Offense ratings (both)",
-   "pct": 32.1,
-   "swing": 2.25
+   "pct": 32.4,
+   "swing": 2.24
   },
   {
    "label": "Quarterback quality & changes",
-   "pct": 22.4,
-   "swing": 1.57
+   "pct": 22.1,
+   "swing": 1.53
   },
   {
    "label": "Weather & roof",
-   "pct": 22.0,
-   "swing": 1.54
+   "pct": 21.8,
+   "swing": 1.51
   },
   {
    "label": "Missing defensive regulars",
@@ -340,13 +340,13 @@
   },
   {
    "label": "Defense ratings (both)",
-   "pct": 8.8,
-   "swing": 0.62
+   "pct": 9.1,
+   "swing": 0.63
   },
   {
    "label": "How often both teams pass",
-   "pct": 3.2,
-   "swing": 0.22
+   "pct": 3.0,
+   "swing": 0.21
   },
   {
    "label": "Pace",
@@ -354,5 +354,5 @@
    "swing": 0.01
   }
  ],
- "home_field": 1.5
+ "home_field": 1.4
 }

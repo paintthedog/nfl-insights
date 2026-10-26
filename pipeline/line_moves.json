@@ -21,18 +21,282 @@
    "gap": -1.7,
    "move": 0.0,
    "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_PIT_NO",
+   "market": "spread",
+   "model": -0.4,
+   "line_then": -3.5,
+   "close": -3.0,
+   "gap": 3.1,
+   "move": 0.5,
+   "result": "toward"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_PIT_NO",
+   "market": "total",
+   "model": 45.7,
+   "line_then": 44.5,
+   "close": 43.5,
+   "gap": 1.2,
+   "move": -1.0,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_SF_ATL",
+   "market": "spread",
+   "model": -5.8,
+   "line_then": -3.0,
+   "close": -2.5,
+   "gap": -2.8,
+   "move": 0.5,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_SF_ATL",
+   "market": "total",
+   "model": 50.5,
+   "line_then": 49.5,
+   "close": 50.5,
+   "gap": 1.0,
+   "move": 1.0,
+   "result": "toward"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_CIN_BAL",
+   "market": "spread",
+   "model": 0.8,
+   "line_then": -1.5,
+   "close": -3.0,
+   "gap": 2.3,
+   "move": -1.5,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_CIN_BAL",
+   "market": "total",
+   "model": 47.6,
+   "line_then": 48.5,
+   "close": 46.5,
+   "gap": -0.9,
+   "move": -2.0,
+   "result": "no gap"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_TB_CAR",
+   "market": "spread",
+   "model": 4.9,
+   "line_then": 3.0,
+   "close": 3.0,
+   "gap": 1.9,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_TB_CAR",
+   "market": "total",
+   "model": 43.3,
+   "line_then": 44.5,
+   "close": 44.5,
+   "gap": -1.2,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_NYG_HOU",
+   "market": "spread",
+   "model": 6.1,
+   "line_then": 10.5,
+   "close": 10.5,
+   "gap": -4.4,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_NYG_HOU",
+   "market": "total",
+   "model": 46.3,
+   "line_then": 42.5,
+   "close": 42.5,
+   "gap": 3.8,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_IND_MIN",
+   "market": "spread",
+   "model": 6.2,
+   "line_then": 6.5,
+   "close": 6.5,
+   "gap": -0.3,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_IND_MIN",
+   "market": "total",
+   "model": 44.5,
+   "line_then": 41.5,
+   "close": 41.5,
+   "gap": 3.0,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_MIA_NYJ",
+   "market": "spread",
+   "model": 5.3,
+   "line_then": 4.5,
+   "close": 3.5,
+   "gap": 0.8,
+   "move": -1.0,
+   "result": "no gap"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_MIA_NYJ",
+   "market": "total",
+   "model": 40.6,
+   "line_then": 39.5,
+   "close": 39.5,
+   "gap": 1.1,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_CLE_TEN",
+   "market": "spread",
+   "model": -2.1,
+   "line_then": -1.5,
+   "close": -1.5,
+   "gap": -0.6,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_CLE_TEN",
+   "market": "total",
+   "model": 39.8,
+   "line_then": 37.5,
+   "close": 36.5,
+   "gap": 2.3,
+   "move": -1.0,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_DEN_ARI",
+   "market": "spread",
+   "model": 0.9,
+   "line_then": -4.5,
+   "close": -4.5,
+   "gap": 5.4,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_DEN_ARI",
+   "market": "total",
+   "model": 46.8,
+   "line_then": 43.5,
+   "close": 42.5,
+   "gap": 3.3,
+   "move": -1.0,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_GB_DET",
+   "market": "spread",
+   "model": 3.8,
+   "line_then": 3.0,
+   "close": 3.5,
+   "gap": 0.8,
+   "move": 0.5,
+   "result": "no gap"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_GB_DET",
+   "market": "total",
+   "model": 52.5,
+   "line_then": 53.5,
+   "close": 55.5,
+   "gap": -1.0,
+   "move": 2.0,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_LA_LV",
+   "market": "spread",
+   "model": -7.1,
+   "line_then": -4.5,
+   "close": -3.5,
+   "gap": -2.6,
+   "move": 1.0,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_LA_LV",
+   "market": "total",
+   "model": 49.0,
+   "line_then": 48.5,
+   "close": 48.5,
+   "gap": 0.5,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_KC_SEA",
+   "market": "spread",
+   "model": -2.2,
+   "line_then": 2.5,
+   "close": 3.0,
+   "gap": -4.7,
+   "move": 0.5,
+   "result": "away"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_KC_SEA",
+   "market": "total",
+   "model": 44.1,
+   "line_then": 42.5,
+   "close": 42.5,
+   "gap": 1.6,
+   "move": 0.0,
+   "result": "no move"
   }
  ],
  "spread": {
-  "n": 1,
-  "toward": 0,
-  "away": 0,
-  "still": 1
+  "n": 9,
+  "toward": 1,
+  "away": 4,
+  "still": 4
  },
  "total": {
-  "n": 1,
-  "toward": 0,
-  "away": 0,
-  "still": 1
+  "n": 11,
+  "toward": 1,
+  "away": 4,
+  "still": 6
  }
 }
