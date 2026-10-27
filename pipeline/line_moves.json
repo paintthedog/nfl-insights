@@ -285,6 +285,28 @@
    "gap": 1.6,
    "move": 0.0,
    "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_DAL_PHI",
+   "market": "spread",
+   "model": -4.2,
+   "line_then": -4.5,
+   "close": -4.5,
+   "gap": 0.3,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 7,
+   "game_id": "2026_07_DAL_PHI",
+   "market": "total",
+   "model": 45.3,
+   "line_then": 44.5,
+   "close": 43.5,
+   "gap": 0.8,
+   "move": -1.0,
+   "result": "no gap"
   }
  ],
  "spread": {
