@@ -1,0 +1,86 @@
+{
+ "asof": "2026-10-22T09:45 ET",
+ "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
+ "out": [
+  "Ben Skowronik",
+  "Breece Hall",
+  "Carter Runyon",
+  "David Montgomery",
+  "Deebo Samuel",
+  "Jacory Croskey-Merritt",
+  "Jalen Hurts",
+  "Kyle Monangai",
+  "Marcus Mariota",
+  "Michael Pittman",
+  "Raheim Sanders",
+  "Rashee Rice",
+  "Roman Wilson",
+  "Saquon Barkley",
+  "Skyy Moore",
+  "Tank Bigsby",
+  "Tre Harris",
+  "Will Shipley",
+  "Davante Adams",
+  "Terry McLaurin",
+  "Elijah Arroyo",
+  "KaVontae Turpin",
+  "Tyler Badie",
+  "Romeo Doubs",
+  "Najee Harris",
+  "DJ Moore"
+ ],
+ "p_play": {},
+ "qb_start": {
+  "PHI": "Tanner McKee",
+  "SEA": "Sam Darnold",
+  "TB": "Jalon Daniels",
+  "NYG": "J.J. McCarthy"
+ },
+ "next_man": {},
+ "ol_out": [
+  "Drew Shelton",
+  "Joe Alt",
+  "Josh Simmons",
+  "Kayode Awosika",
+  "Teven Jenkins",
+  "Trevor Penning",
+  "Alijah Vera-Tucker",
+  "Ben Brown"
+ ],
+ "team_notes": {},
+ "back": [
+  "Jalen Nailor",
+  "Lane Johnson",
+  "Quentin Johnston",
+  "Tanor Bortolini",
+  "Tank Dell",
+  "David Sills",
+  "AJ Dillon",
+  "Dont'e Thornton",
+  "Cam Jurgens",
+  "Monroe Freeling",
+  "Dylan Parham",
+  "Andrew Vorhees",
+  "Aaron Banks",
+  "Jonah Jackson"
+ ],
+ "qb_uncertain": {},
+ "lead_back": {
+  "ARI": [
+   "Tyler Allgeier",
+   0.65
+  ],
+  "NYJ": [
+   "Braelon Allen",
+   0.65
+  ],
+  "HOU": [
+   "Woody Marks",
+   0.65
+  ],
+  "PHI": [
+   "Dameon Pierce",
+   0.75
+  ]
+ }
+}
