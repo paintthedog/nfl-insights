@@ -1,9 +1,8 @@
 {
- "asof": "2026-10-22T09:45 ET",
+ "asof": "2026-10-29T09:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Ben Skowronik",
-  "Breece Hall",
   "Carter Runyon",
   "David Montgomery",
   "Deebo Samuel",
@@ -13,7 +12,6 @@
   "Marcus Mariota",
   "Michael Pittman",
   "Raheim Sanders",
-  "Rashee Rice",
   "Roman Wilson",
   "Saquon Barkley",
   "Skyy Moore",
@@ -27,9 +25,14 @@
   "Tyler Badie",
   "Romeo Doubs",
   "Najee Harris",
-  "DJ Moore"
+  "Dameon Pierce"
  ],
- "p_play": {},
+ "p_play": {
+  "Breece Hall": 0.5,
+  "Rashee Rice": 0.5,
+  "DJ Moore": 0.5,
+  "Tyler Allgeier": 0.6
+ },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
@@ -47,7 +50,14 @@
   "Alijah Vera-Tucker",
   "Ben Brown"
  ],
- "team_notes": {},
+ "team_notes": {
+  "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
+  "ARI": "Allgeier DNP Wed (Oct 28); Jeremiyah Love back at practice (limited).",
+  "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
+  "BUF": "DJ Moore limited in practice Wed after the bye.",
+  "KC": "Rashee Rice limited in practice Wed Oct 28.",
+  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet."
+ },
  "back": [
   "Jalen Nailor",
   "Lane Johnson",
@@ -66,10 +76,6 @@
  ],
  "qb_uncertain": {},
  "lead_back": {
-  "ARI": [
-   "Tyler Allgeier",
-   0.65
-  ],
   "NYJ": [
    "Braelon Allen",
    0.65
@@ -77,10 +83,6 @@
   "HOU": [
    "Woody Marks",
    0.65
-  ],
-  "PHI": [
-   "Dameon Pierce",
-   0.75
   ]
  }
 }

@@ -1,8 +1,7 @@
-Staleness audit, week 8: 7 item(s)
-  [STALE] lead_back ARI set 2026-10-22 (6 days ago) - re-verify or remove
-  [STALE] lead_back HOU set 2026-10-22 (6 days ago) - re-verify or remove
-  [STALE] lead_back NYJ set 2026-10-22 (6 days ago) - re-verify or remove
-  [STALE] lead_back PHI set 2026-10-22 (6 days ago) - re-verify or remove
-  [FRESHNESS] overrides asof 2026-10-22T09:45 ET is older than 48h
+Staleness audit, week 8: 6 item(s)
+  [CARRYOVER] Jeremiyah Love was out last week, now projected 9.1 pts with no Week 8 status — confirm he's back
+  [CARRYOVER] Tyler Warren was out last week, now projected 8.2 pts with no Week 8 status — confirm he's back
+  [CARRYOVER] Emeka Egbuka was out last week, now projected 8.9 pts with no Week 8 status — confirm he's back
+  [STALE] lead_back HOU set 2026-10-22 (7 days ago) - re-verify or remove
   [DFS] no dk_salaries_wk8.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
   [WEATHER] first game 2026-10-29 is within 48h and forecasts_wk8.csv is missing

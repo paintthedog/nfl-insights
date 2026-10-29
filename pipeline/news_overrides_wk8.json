@@ -1,9 +1,8 @@
 {
- "asof": "2026-10-22T09:45 ET",
+ "asof": "2026-10-29T09:30 ET",
  "source": "Seeded Oct 22 from week 7 (out/lead_back/qb_start/ol_out carried; chances dropped per auto_overrides rule). Re-verify against week 8 reports.",
  "out": [
   "Ben Skowronik",
-  "Breece Hall",
   "Carter Runyon",
   "David Montgomery",
   "Deebo Samuel",
@@ -13,7 +12,6 @@
   "Marcus Mariota",
   "Michael Pittman",
   "Raheim Sanders",
-  "Rashee Rice",
   "Roman Wilson",
   "Saquon Barkley",
   "Skyy Moore",
@@ -27,9 +25,14 @@
   "Tyler Badie",
   "Romeo Doubs",
   "Najee Harris",
-  "DJ Moore"
+  "Dameon Pierce"
  ],
- "p_play": {},
+ "p_play": {
+  "Breece Hall": 0.5,
+  "Rashee Rice": 0.5,
+  "DJ Moore": 0.5,
+  "Tyler Allgeier": 0.6
+ },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
@@ -53,7 +56,7 @@
   "CHI": "Caleb Williams (hamstring) full practice Wednesday; expected to start",
   "HOU": "Tank Dell activated for Sunday. Montgomery DNP Wed (groin); Woody Marks led the backfield in Week 6.",
   "SEA": "Darnold starts Thursday (AP preview Oct 14); schedule feed wrongly listed Drew Lock, who is the backup (forearm, no designation)",
-  "PHI": "Hurts out for the season; McKee starts. Barkley hamstring; Dameon Pierce took every RB carry in Week 6.",
+  "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
   "NE": "Doubs to IR (out 4). A.J. Brown played Week 6 off IR; high ankle sprain, not on Wed report. Vera-Tucker and Ben Brown OUT for TNF.",
   "WAS": "Rachaad White is the lead back with Croskey-Merritt out (Ekeler cleared, secondary).",
   "SF": "Mike Evans Achilles tendinitis aggravated MNF; Shanahan 'hopefully he'll be able to play' (Oct 20). Deebo out a couple weeks.",
@@ -64,7 +67,11 @@
   "LA": "Davante Adams on IR (hamstring, 6-10 weeks); Atwell, Whittington and Mumpfield pick up targets behind Nacua.",
   "GB": "Josh Jacobs off the exempt list; full week of practice expected, debut undecided.",
   "NYG": "J.J. McCarthy named starter over Winston (Yahoo Oct 20). Najee Harris reportedly released; Tracy/Singletary/Skattebo in the room.",
-  "NYJ": "Breece Hall DNP Wed (quad), hasn't practiced since Week 3; Braelon Allen leads the backfield."
+  "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
+  "ARI": "Allgeier DNP Wed (Oct 28); Jeremiyah Love back at practice (limited).",
+  "BUF": "DJ Moore limited in practice Wed after the bye.",
+  "KC": "Rashee Rice limited in practice Wed Oct 28.",
+  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet."
  },
  "back": [
   "Jalen Nailor",
@@ -84,10 +91,6 @@
  ],
  "qb_uncertain": {},
  "lead_back": {
-  "ARI": [
-   "Tyler Allgeier",
-   0.65
-  ],
   "NYJ": [
    "Braelon Allen",
    0.65
@@ -95,10 +98,6 @@
   "HOU": [
    "Woody Marks",
    0.65
-  ],
-  "PHI": [
-   "Dameon Pierce",
-   0.75
   ]
  }
 }
