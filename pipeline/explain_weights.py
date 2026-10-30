@@ -136,7 +136,7 @@ def _game_w(model, groups, X):
         out.append((lab, float(np.mean(np.abs(dev)))))
     tot = sum(v for _, v in out)
     return sorted([dict(label=l, pct=round(100 * v / tot, 1), swing=round(v, 2)) for l, v in out], key=lambda r: -r["pct"])
-W["margin"] = _game_w(_mm, [("Offense ratings", ["off_gap"]), ("Defense ratings", ["def_gap"]), ("Quarterback quality & changes", ["qd_gap", "qb_gap"]),
+W["margin"] = _game_w(_mm, [("Offense ratings", ["off_gap"]), ("Defense ratings", ["def_gap"]), ("Quarterback quality & changes", ["qd_gap", "qb_gap", "qb_ret_gap", "qb_new_gap"]),
                             ("Short week & rest", ["rest_gap", "h_short", "a_short"]), ("Missing defensive regulars", ["dmiss_gap"]), ("Wind", ["wind_eff"])], LM.MARGIN_X)
 W["total"] = _game_w(_mt, [("Offense ratings (both)", ["off_sum"]), ("Defense ratings (both)", ["def_sum"]), ("Quarterback quality & changes", ["qd_sum", "qb_any"]),
                            ("How often both teams pass", ["pass_sum"]), ("Pace", ["pace_sum"]), ("Weather & roof", ["wind_eff", "cold", "dome"]),

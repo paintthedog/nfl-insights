@@ -24,6 +24,7 @@ Why this exists: by mid-October we had run ~45 tests. At a 5% false-positive rat
 | Oct 16 | Same-game leg correlation (likely legs) | tests/t_combo_lift.py | QB+WR1 stack +4–5 pts (8/8 seasons); fav win + dog offense negative; cross-game independent | Informs parlay rules |
 | Oct 16 | Fav RB1 TD + dog WR1 catches | (inline) | Lift ~1.01, unstable by season | No effect |
 | Oct 17 | QB change split: new/backup vs starter returning | tests/t_qb_split.py | Returning-starter bias +1.27 → +0.59, but margin MAE +0.010 (2/8 seasons) | REJECTED for now (flags computed, off) — revisit at season end |
+| Oct 30 | QB change split re-run (same test, data through Week 7) | (scratch, same method as t_qb_split.py) | Margin MAE 10.137 → 10.147 overall; games with a returning starter 9.893 → 9.832 (n=186); new/backup QB games 10.890 → 10.978 (n=324). 2026 fit: returning −1.41 pts, new/backup −2.80 pts (was one −2.24 for any change). Closing line MAE 9.81 | ADOPTED — Clinton's decision (Oct 30): a returning starter must be treated differently from a backup. Accuracy cost is within noise; watch returning-starter games on the scorecard |
 | Oct 17 | Receiver team-scaling bias + final recalibration (WR/TE rec, tgt, rec yds) | tests/t_team_scale.py | Top-20% receivers bias +0.23 rec / +3.7 yds → ~0; MAE +0.7% | KEPT — JUDGMENT: bias matters for over/under probabilities; check Week 6+ prop scorecard |
 | Oct 17 | Market role check (audit flag, not a model change) | audit_stale.py | Flags White, Allgeier, McLaughlin, Lemon, London on Week 6 | KEPT (process) |
 

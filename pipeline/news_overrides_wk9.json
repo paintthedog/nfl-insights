@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-29T09:30 ET",
+ "asof": "2026-10-30T19:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -12,7 +12,6 @@
   "Michael Pittman",
   "Raheim Sanders",
   "Roman Wilson",
-  "Saquon Barkley",
   "Skyy Moore",
   "Tank Bigsby",
   "Will Shipley",
@@ -34,8 +33,8 @@
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
-  "TB": "Jalon Daniels",
-  "NYG": "J.J. McCarthy"
+  "NYG": "J.J. McCarthy",
+  "BAL": "Lamar Jackson"
  },
  "next_man": {},
  "ol_out": [
@@ -75,7 +74,8 @@
   "Tyler Warren",
   "Emeka Egbuka",
   "Zach Charbonnet",
-  "Tre Harris"
+  "Tre Harris",
+  "Lamar Jackson"
  ],
  "qb_uncertain": {},
  "lead_back": {

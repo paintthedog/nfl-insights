@@ -176,7 +176,9 @@ def build(pbp, sched, predict_games=None):
     return g
 
 
-MARGIN_X = ["off_gap", "def_gap", "qb_gap", "rest_gap", "h_short", "a_short", "wind_eff", "qd_gap", "dmiss_gap", "sr_off_gap", "sr_def_gap"]
+# Oct 30 (Clinton): a starter RETURNING is not the same as a backup stepping in, so the QB-change term is split
+# (qb_ret_gap, qb_new_gap). Walk-forward 2019-2026: see TEST_LEDGER.
+MARGIN_X = ["off_gap", "def_gap", "qb_ret_gap", "qb_new_gap", "rest_gap", "h_short", "a_short", "wind_eff", "qd_gap", "dmiss_gap", "sr_off_gap", "sr_def_gap"]
 TOTAL_X = ["off_sum", "def_sum", "pace_sum", "pass_sum", "wind_eff", "dome", "cold", "qb_any", "qd_sum", "dmiss_sum"]
 
 

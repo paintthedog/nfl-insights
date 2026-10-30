@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-30T09:45 ET",
+ "asof": "2026-10-30T19:30 ET",
  "source": "Seeded Oct 22 from week 7 (out/lead_back/qb_start/ol_out carried; chances dropped per auto_overrides rule). Re-verify against week 8 reports.",
  "out": [
   "Carter Runyon",
@@ -12,7 +12,6 @@
   "Michael Pittman",
   "Raheim Sanders",
   "Roman Wilson",
-  "Saquon Barkley",
   "Skyy Moore",
   "Tank Bigsby",
   "Will Shipley",
@@ -23,20 +22,47 @@
   "Tyler Badie",
   "Romeo Doubs",
   "Najee Harris",
-  "Dameon Pierce"
+  "Dameon Pierce",
+  "Anthony Gould",
+  "RJ Harvey",
+  "DeVonta Smith",
+  "Dontayvion Wicks",
+  "Brian Robinson",
+  "Emeka Egbuka"
  ],
  "p_play": {
-  "Breece Hall": 0.5,
-  "Rashee Rice": 0.5,
+  "Breece Hall": 0.6,
+  "Rashee Rice": 0.95,
   "DJ Moore": 0.75,
-  "Tyler Allgeier": 0.8,
-  "Jadarian Price": 0.6
+  "Tyler Allgeier": 0.7,
+  "Jadarian Price": 0.6,
+  "Saquon Barkley": 0.8,
+  "TreVeyon Henderson": 0.6,
+  "A.J. Brown": 0.5,
+  "Dalton Kincaid": 0.7,
+  "Ray Davis": 0.6,
+  "Jakobi Meyers": 0.5,
+  "Jaylen Waddle": 0.6,
+  "George Pickens": 0.8,
+  "Luke Schoonmaker": 0.5,
+  "Kenneth Gainwell": 0.75,
+  "Colby Parkinson": 0.5,
+  "Treylon Burks": 0.6,
+  "Olamide Zaccheaus": 0.6,
+  "Andrew Ogletree": 0.6,
+  "Colston Loveland": 0.75,
+  "Tyjae Spears": 0.15,
+  "Carnell Tate": 0.15,
+  "Rashid Shaheed": 0.4,
+  "Jeremiyah Love": 0.9,
+  "Michael Wilson": 0.9,
+  "Aaron Jones": 0.95
  },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
-  "TB": "Jalon Daniels",
-  "NYG": "J.J. McCarthy"
+  "NYG": "J.J. McCarthy",
+  "BAL": "Lamar Jackson"
  },
  "next_man": {},
  "ol_out": [
@@ -50,18 +76,18 @@
   "Ben Brown"
  ],
  "team_notes": {
-  "ATL": "Penix (ribs) expected to start per team optimism; Tagovailoa backup",
-  "BAL": "Lamar targeting a Week 7 return vs the Bengals; Bateman shoulder.",
-  "CHI": "Caleb Williams (hamstring) full practice Wednesday; expected to start",
+  "ATL": "Brian Robinson OUT; Khalil Herbert behind Bijan.",
+  "BAL": "Lamar Jackson WILL PLAY at BUF (Minter, Fri Oct 30) after missing three games.",
+  "CHI": "Monangai no practice all week, expected to sit MNF. Loveland limited Fri (neck).",
   "HOU": "Tank Dell activated for Sunday. Montgomery DNP Wed (groin); Woody Marks led the backfield in Week 6.",
   "SEA": "Charbonnet (knee) full practice Thu, trending to season debut MNF; Jadarian Price designated to return, limited, Macdonald calls Week 8 'realistic'. Darnold starts.",
-  "PHI": "Barkley and DeVonta Smith DNP Wed/Thu; Pierce on IR, Jaydon Blue signed. McKee starts.",
-  "NE": "A.J. Brown DNP Thu (knee flare-up), 'up in the air' vs MIA; Henderson DNP (illness). Doubs on IR.",
+  "PHI": "McKee starts (Hurts on IR, blood clots). DeVonta Smith and Wicks OUT. Barkley no designation per latest report (limited Fri).",
+  "NE": "A.J. Brown and Henderson questionable (Vrabel, Fri).",
   "WAS": "Rachaad White is the lead back with Croskey-Merritt out (Ekeler cleared, secondary).",
   "SF": "Mike Evans Achilles tendinitis aggravated MNF; Shanahan 'hopefully he'll be able to play' (Oct 20). Deebo out a couple weeks.",
   "LAC": "McConkey ruled out with a concussion in Week 6; protocol makes Week 7 doubtful until cleared.",
-  "TB": "Mayfield (thumb) FULL practice Wed Oct 21; Bowles still planning on Jalon Daniels (Auman, Oct 20). Re-check Friday.",
-  "IND": "Tyler Warren (groin) was inactive in Week 6; Week 7 status unknown until Wednesday.",
+  "TB": "Mayfield starting (full practice all week). Egbuka OUT (foot). Gainwell questionable, full Friday.",
+  "IND": "Gould OUT. Warren good to go. Josh Downs requested a trade (no deal yet).",
   "CLE": "Judkins ruled out (ankle plus off-field); McLaughlin and Estime share the backfield.",
   "LA": "Davante Adams on IR (hamstring, 6-10 weeks); Atwell, Whittington and Mumpfield pick up targets behind Nacua.",
   "GB": "Josh Jacobs off the exempt list; full week of practice expected, debut undecided.",
@@ -69,8 +95,10 @@
   "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
   "ARI": "Allgeier DNP Wed (Oct 28); Jeremiyah Love back at practice (limited).",
   "BUF": "DJ Moore limited in practice Wed after the bye.",
-  "KC": "Rashee Rice limited in practice Wed Oct 28.",
-  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet."
+  "KC": "Rashee Rice will play (first game since Week 4). Kelce no designation.",
+  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
+  "DEN": "RJ Harvey OUT (knee). Jonah Coleman back from IR; Coleman/Dobbins committee, Badie passing downs. Waddle questionable.",
+  "TEN": "Spears and Carnell Tate doubtful (Saleh, Fri). Pollard leads if Spears sits."
  },
  "back": [
   "Jalen Nailor",
@@ -89,10 +117,11 @@
   "Jonah Jackson",
   "Jeremiyah Love",
   "Tyler Warren",
-  "Emeka Egbuka",
   "Zach Charbonnet",
   "Jadarian Price",
-  "Tre Harris"
+  "Tre Harris",
+  "Jonah Coleman",
+  "Lamar Jackson"
  ],
  "qb_uncertain": {},
  "lead_back": {
