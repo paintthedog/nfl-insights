@@ -1,15 +1,15 @@
 team,ol_missing_pred,who
-ARI,4,Isaac Seumalo; Elijah Wilkinson; Paris Johnson Jr.; Jon Gaines II
+ARI,2,Paris Johnson Jr.; Jon Gaines II
 ATL,0,
-BAL,1,Olaivavega Ioane
+BAL,0,
 BUF,1,Spencer Brown
 CAR,2,Taylor Moton; Damien Lewis
 CHI,0,
 CIN,0,
-CLE,2,Tytus Howard; Elgton Jenkins
+CLE,1,Tytus Howard
 DAL,0,
 DEN,0,
-DET,1,Penei Sewell
+DET,0,
 GB,2,Sean Rhyan; Travis Glover
 HOU,0,
 IND,0,
@@ -19,7 +19,7 @@ LA,1,Coleman Shelton
 LAC,3,Rashawn Slater; Trevor Penning; Joe Alt
 LV,0,
 MIA,1,Kadyn Proctor
-MIN,2,Joe Huber; Donovan Jackson
+MIN,1,Donovan Jackson
 NE,2,Alijah Vera-Tucker; Ben Brown
 NO,0,
 NYG,0,

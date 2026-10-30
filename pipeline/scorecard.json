@@ -1,14 +1,16 @@
 {
- "asof": "Oct 29, 2026",
+ "asof": "Oct 30, 2026",
  "weeks": [
   4,
   5,
-  7
+  7,
+  8
  ],
  "snap_weeks": [
-  7
+  7,
+  8
  ],
- "n_games": 14,
+ "n_games": 15,
  "vs_lines": [
   {
    "stat": "Receptions",
@@ -59,77 +61,77 @@
  "averages": [
   {
    "stat": "Passing yards",
-   "n": 26,
-   "proj": 236.5,
-   "act": 235.7,
-   "bias": -0.83,
-   "mae": 50.04,
+   "n": 28,
+   "proj": 235.6,
+   "act": 236.6,
+   "bias": 1.05,
+   "mae": 48.28,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
   },
   {
    "stat": "Rushing yards",
-   "n": 125,
-   "proj": 21.6,
-   "act": 23.7,
-   "bias": 2.08,
-   "mae": 15.95,
+   "n": 134,
+   "proj": 21.3,
+   "act": 23.2,
+   "bias": 1.9,
+   "mae": 15.75,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
   },
   {
    "stat": "Carries",
-   "n": 96,
-   "proj": 6.3,
-   "act": 6.8,
-   "bias": 0.51,
-   "mae": 3.03,
+   "n": 104,
+   "proj": 6.1,
+   "act": 6.7,
+   "bias": 0.6,
+   "mae": 3.14,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
   },
   {
    "stat": "Targets",
-   "n": 210,
-   "proj": 3.7,
+   "n": 226,
+   "proj": 3.6,
    "act": 3.7,
-   "bias": 0.08,
-   "mae": 1.59,
+   "bias": 0.11,
+   "mae": 1.6,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
   },
   {
    "stat": "Receptions",
-   "n": 207,
+   "n": 223,
    "proj": 2.5,
    "act": 2.6,
-   "bias": 0.04,
-   "mae": 1.29,
+   "bias": 0.09,
+   "mae": 1.32,
    "n_line": 116,
    "mae_model_l": 1.49,
    "mae_dk": 1.5
   },
   {
    "stat": "Receiving yards",
-   "n": 213,
-   "proj": 26.5,
-   "act": 28.7,
-   "bias": 2.26,
-   "mae": 18.97,
+   "n": 229,
+   "proj": 26.2,
+   "act": 28.6,
+   "bias": 2.38,
+   "mae": 18.48,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
   },
   {
    "stat": "Fantasy points (PPR)",
-   "n": 239,
+   "n": 257,
    "proj": 8.7,
    "act": 9.2,
-   "bias": 0.5,
-   "mae": 4.7,
+   "bias": 0.56,
+   "mae": 4.65,
    "n_line": 0,
    "mae_model_l": null,
    "mae_dk": null
@@ -138,98 +140,98 @@
  "ranges": [
   {
    "stat": "Passing yards",
-   "n": 26,
-   "below": 0.038,
+   "n": 28,
+   "below": 0.036,
    "above": 0.0,
-   "mid": 0.5
+   "mid": 0.536
   },
   {
    "stat": "Rushing yards",
-   "n": 131,
-   "below": 0.179,
-   "above": 0.214,
-   "mid": 0.618
+   "n": 141,
+   "below": 0.181,
+   "above": 0.22,
+   "mid": 0.61
   },
   {
    "stat": "Carries",
-   "n": 131,
-   "below": 0.164,
-   "above": 0.21,
-   "mid": 0.74
+   "n": 141,
+   "below": 0.167,
+   "above": 0.216,
+   "mid": 0.745
   },
   {
    "stat": "Targets",
-   "n": 213,
+   "n": 229,
    "below": 0.068,
-   "above": 0.103,
-   "mid": 0.709
+   "above": 0.105,
+   "mid": 0.707
   },
   {
    "stat": "Receptions",
-   "n": 213,
-   "below": 0.099,
-   "above": 0.101,
-   "mid": 0.709
+   "n": 229,
+   "below": 0.096,
+   "above": 0.107,
+   "mid": 0.703
   },
   {
    "stat": "Receiving yards",
-   "n": 213,
-   "below": 0.131,
-   "above": 0.155,
-   "mid": 0.493
+   "n": 229,
+   "below": 0.127,
+   "above": 0.148,
+   "mid": 0.507
   },
   {
    "stat": "Fantasy points (PPR)",
-   "n": 239,
-   "below": 0.094,
-   "above": 0.13,
+   "n": 257,
+   "below": 0.091,
+   "above": 0.128,
    "mid": 0.49
   }
  ],
  "probs": [
   {
    "mkt": "Anytime TD",
-   "n": 531,
+   "n": 550,
    "said": 0.214,
-   "hap": 0.235,
-   "brier": 0.1554,
+   "hap": 0.236,
+   "brier": 0.1548,
    "brier_dk": 0.1539,
    "brier_coin": null,
    "buckets": [
     {
      "lo": 0.0,
      "hi": 0.1,
-     "n": 80,
+     "n": 84,
      "said": 0.079,
-     "hap": 0.025
+     "hap": 0.024
     },
     {
      "lo": 0.1,
      "hi": 0.2,
-     "n": 213,
+     "n": 219,
      "said": 0.147,
-     "hap": 0.141
+     "hap": 0.137
     },
     {
      "lo": 0.2,
      "hi": 0.3,
-     "n": 125,
+     "n": 130,
      "said": 0.245,
-     "hap": 0.312
+     "hap": 0.315
     },
     {
      "lo": 0.3,
      "hi": 0.4,
-     "n": 70,
+     "n": 72,
      "said": 0.338,
-     "hap": 0.4
+     "hap": 0.403
     },
     {
      "lo": 0.4,
      "hi": 0.5,
-     "n": 23,
-     "said": 0.454,
-     "hap": 0.565
+     "n": 25,
+     "said": 0.452,
+     "hap": 0.6
     },
     {
      "lo": 0.5,
@@ -242,10 +244,10 @@
   },
   {
    "mkt": "QB throws an interception",
-   "n": 27,
+   "n": 29,
    "said": 0.496,
-   "hap": 0.519,
-   "brier": 0.2557,
+   "hap": 0.552,
+   "brier": 0.2553,
    "brier_dk": null,
    "brier_coin": null,
    "buckets": [
@@ -259,16 +261,16 @@
     {
      "lo": 0.4,
      "hi": 0.5,
-     "n": 14,
-     "said": 0.456,
-     "hap": 0.5
+     "n": 15,
+     "said": 0.458,
+     "hap": 0.533
     },
     {
      "lo": 0.5,
      "hi": 0.6,
-     "n": 10,
-     "said": 0.536,
-     "hap": 0.6
+     "n": 11,
+     "said": 0.534,
+     "hap": 0.636
     },
     {
      "lo": 0.6,
@@ -281,37 +283,37 @@
   },
   {
    "mkt": "Spread: home team covers",
-   "n": 14,
+   "n": 15,
    "said": 0.485,
-   "hap": 0.5,
-   "brier": 0.2534,
+   "hap": 0.533,
+   "brier": 0.2541,
    "brier_dk": null,
    "brier_coin": 0.25,
    "buckets": [
     {
      "lo": 0.45,
      "hi": 0.5,
-     "n": 14,
+     "n": 15,
      "said": 0.485,
-     "hap": 0.5
+     "hap": 0.533
     }
    ]
   },
   {
    "mkt": "Game goes over the total",
-   "n": 14,
-   "said": 0.499,
-   "hap": 0.571,
-   "brier": 0.2465,
+   "n": 15,
+   "said": 0.498,
+   "hap": 0.533,
+   "brier": 0.2464,
    "brier_dk": null,
    "brier_coin": 0.25,
    "buckets": [
     {
      "lo": 0.45,
      "hi": 0.5,
-     "n": 7,
-     "said": 0.488,
-     "hap": 0.571
+     "n": 8,
+     "said": 0.489,
+     "hap": 0.5
     },
     {
      "lo": 0.5,
@@ -324,10 +326,10 @@
   },
   {
    "mkt": "Model's favorite wins",
-   "n": 14,
+   "n": 15,
    "said": 0.619,
-   "hap": 0.571,
-   "brier": 0.2829,
+   "hap": 0.6,
+   "brier": 0.2739,
    "brier_dk": null,
    "brier_coin": null,
    "buckets": [
@@ -341,9 +343,9 @@
     {
      "lo": 0.6,
      "hi": 0.7,
-     "n": 6,
-     "said": 0.663,
-     "hap": 0.5
+     "n": 7,
+     "said": 0.656,
+     "hap": 0.571
     },
     {
      "lo": 0.7,
@@ -358,26 +360,28 @@
  "three_way": [
   {
    "name": "Game margin",
-   "n": 14,
+   "n": 15,
    "unit": "average miss in points",
-   "market": 10.21,
-   "model": 12.0,
-   "blend": 10.07,
+   "market": 9.83,
+   "model": 11.48,
+   "blend": 9.72,
    "best": "blend",
    "weeks": [
-    7
+    7,
+    8
    ]
   },
   {
    "name": "Game total",
-   "n": 14,
+   "n": 15,
    "unit": "average miss in points",
-   "market": 10.57,
-   "model": 10.08,
-   "blend": 10.45,
+   "market": 9.97,
+   "model": 9.59,
+   "blend": 9.84,
    "best": "model",
    "weeks": [
-    7
+    7,
+    8
    ]
   },
   {
@@ -395,24 +399,20 @@
   }
  ],
  "games": {
-  "n": 14,
-  "margin_model": 12.0,
-  "margin_line": 13.07,
-  "total_model": 10.08,
-  "total_line": 10.57,
-  "total_bias_model": 1.98,
-  "total_bias_line": -0.14
+  "n": 15,
+  "margin_model": 11.48,
+  "margin_line": 12.97,
+  "total_model": 9.59,
+  "total_line": 9.97,
+  "total_bias_model": 2.03,
+  "total_bias_line": -0.03
  },
  "no_shows": {
-  "n": 170,
+  "n": 181,
   "missed": 3,
-  "rate": 0.018,
-  "week": 7,
-  "names": [
-   "Britain Covey (PHI WR, 7.4)",
-   "Pierre Strong (GB RB, 7.2)",
-   "Audric Estim\u00e9 (CLE RB, 5.3)"
-  ]
+  "rate": 0.017,
+  "week": 8,
+  "names": []
  },
  "by_week": [
   {
@@ -462,33 +462,49 @@
    "margin_line": 13.1,
    "n_games": 14,
    "snapshot": true
+  },
+  {
+   "week": 8,
+   "fp_mae": 3.95,
+   "fp_bias": 1.39,
+   "below": 0.056,
+   "above": 0.111,
+   "td_said": 4.0,
+   "td_hap": 5,
+   "td_n": 19,
+   "td_brier": 0.1394,
+   "td_brier_dk": null,
+   "margin_model": 4.2,
+   "margin_line": 11.5,
+   "n_games": 1,
+   "snapshot": true
   }
  ],
  "card": [
   {
    "name": "Touchdown chances",
    "label": "Lean found",
-   "text": "About as accurate as DraftKings over 531 priced players. Overall it runs low: players scored more often than it said. Too cautious on likely scorers: players it put at 40%+ scored 60% of the time, not 50%."
+   "text": "About as accurate as DraftKings over 550 priced players. Overall it runs low: players scored more often than it said. Too cautious on likely scorers: players it put at 40%+ scored 62% of the time, not 50%."
   },
   {
    "name": "Floors and ceilings",
    "label": "On target",
-   "text": "Over 239 player-games, about 1 in 5 results land outside the floor-to-ceiling range, as designed."
+   "text": "Over 257 player-games, about 1 in 5 results land outside the floor-to-ceiling range, as designed."
   },
   {
    "name": "Ranges by stat",
    "label": "Lean found",
-   "text": "3 stats with 150+ results checked; 20% outside the floor-to-ceiling range is the design. Off target: receiving yards 29%."
+   "text": "3 stats with 150+ results checked; 20% outside the floor-to-ceiling range is the design. Off target: receiving yards 28%."
   },
   {
    "name": "Expected to play, didn't",
    "label": "Too early",
-   "text": "3 of 170 players projected to play for 5+ PPR points never touched the ball (1.8%). Every number the site showed for them was wrong before kickoff, and the averages above leave them out. Week 7: Britain Covey (PHI WR, 7.4); Pierre Strong (GB RB, 7.2); Audric Estim\u00e9 (CLE RB, 5.3)."
+   "text": "3 of 181 players projected to play for 5+ PPR points never touched the ball (1.7%). Every number the site showed for them was wrong before kickoff, and the averages above leave them out."
   },
   {
    "name": "Game lines",
    "label": "Too early",
-   "text": "14 games graded; needs 30+."
+   "text": "15 games graded; needs 30+."
   },
   {
    "name": "Player lines vs DraftKings",
@@ -498,17 +514,17 @@
   {
    "name": "Line movement",
    "label": "Even",
-   "text": "When the model's spread or total differed from the line by 1+ points at publish, the line later moved toward the model 2 times, away 8, and stayed put 10 (20 cases). Toward means the market later agreed with what the model saw first."
+   "text": "When the model's spread or total differed from the line by 1+ points at publish, the line later moved toward the model 2 times, away 8, and stayed put 11 (21 cases). Toward means the market later agreed with what the model saw first."
   },
   {
    "name": "Off the market? Game margin",
    "label": "Too early",
-   "text": "14 of 40 needed. So far: market 10.21, model 12.0, blend 10.07 (average miss in points, 14 games)."
+   "text": "15 of 40 needed. So far: market 9.83, model 11.48, blend 9.72 (average miss in points, 15 games)."
   },
   {
    "name": "Off the market? Game total",
    "label": "Too early",
-   "text": "14 of 40 needed. So far: market 10.57, model 10.08, blend 10.45 (average miss in points, 14 games)."
+   "text": "15 of 40 needed. So far: market 9.97, model 9.59, blend 9.84 (average miss in points, 15 games)."
   },
   {
    "name": "Off the market? Anytime TD",

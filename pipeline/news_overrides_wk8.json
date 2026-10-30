@@ -1,8 +1,7 @@
 {
- "asof": "2026-10-29T09:30 ET",
+ "asof": "2026-10-30T09:45 ET",
  "source": "Seeded Oct 22 from week 7 (out/lead_back/qb_start/ol_out carried; chances dropped per auto_overrides rule). Re-verify against week 8 reports.",
  "out": [
-  "Ben Skowronik",
   "Carter Runyon",
   "David Montgomery",
   "Deebo Samuel",
@@ -16,7 +15,6 @@
   "Saquon Barkley",
   "Skyy Moore",
   "Tank Bigsby",
-  "Tre Harris",
   "Will Shipley",
   "Davante Adams",
   "Terry McLaurin",
@@ -30,8 +28,9 @@
  "p_play": {
   "Breece Hall": 0.5,
   "Rashee Rice": 0.5,
-  "DJ Moore": 0.5,
-  "Tyler Allgeier": 0.6
+  "DJ Moore": 0.75,
+  "Tyler Allgeier": 0.8,
+  "Jadarian Price": 0.6
  },
  "qb_start": {
   "PHI": "Tanner McKee",
@@ -55,9 +54,9 @@
   "BAL": "Lamar targeting a Week 7 return vs the Bengals; Bateman shoulder.",
   "CHI": "Caleb Williams (hamstring) full practice Wednesday; expected to start",
   "HOU": "Tank Dell activated for Sunday. Montgomery DNP Wed (groin); Woody Marks led the backfield in Week 6.",
-  "SEA": "Darnold starts Thursday (AP preview Oct 14); schedule feed wrongly listed Drew Lock, who is the backup (forearm, no designation)",
-  "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
-  "NE": "Doubs to IR (out 4). A.J. Brown played Week 6 off IR; high ankle sprain, not on Wed report. Vera-Tucker and Ben Brown OUT for TNF.",
+  "SEA": "Charbonnet (knee) full practice Thu, trending to season debut MNF; Jadarian Price designated to return, limited, Macdonald calls Week 8 'realistic'. Darnold starts.",
+  "PHI": "Barkley and DeVonta Smith DNP Wed/Thu; Pierce on IR, Jaydon Blue signed. McKee starts.",
+  "NE": "A.J. Brown DNP Thu (knee flare-up), 'up in the air' vs MIA; Henderson DNP (illness). Doubs on IR.",
   "WAS": "Rachaad White is the lead back with Croskey-Merritt out (Ekeler cleared, secondary).",
   "SF": "Mike Evans Achilles tendinitis aggravated MNF; Shanahan 'hopefully he'll be able to play' (Oct 20). Deebo out a couple weeks.",
   "LAC": "McConkey ruled out with a concussion in Week 6; protocol makes Week 7 doubtful until cleared.",
@@ -87,7 +86,13 @@
   "Dylan Parham",
   "Andrew Vorhees",
   "Aaron Banks",
-  "Jonah Jackson"
+  "Jonah Jackson",
+  "Jeremiyah Love",
+  "Tyler Warren",
+  "Emeka Egbuka",
+  "Zach Charbonnet",
+  "Jadarian Price",
+  "Tre Harris"
  ],
  "qb_uncertain": {},
  "lead_back": {

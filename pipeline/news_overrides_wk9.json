@@ -2,7 +2,6 @@
  "asof": "2026-10-29T09:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
-  "Ben Skowronik",
   "Carter Runyon",
   "David Montgomery",
   "Deebo Samuel",
@@ -16,7 +15,6 @@
   "Saquon Barkley",
   "Skyy Moore",
   "Tank Bigsby",
-  "Tre Harris",
   "Will Shipley",
   "Davante Adams",
   "Terry McLaurin",
@@ -72,7 +70,12 @@
   "Dylan Parham",
   "Andrew Vorhees",
   "Aaron Banks",
-  "Jonah Jackson"
+  "Jonah Jackson",
+  "Jeremiyah Love",
+  "Tyler Warren",
+  "Emeka Egbuka",
+  "Zach Charbonnet",
+  "Tre Harris"
  ],
  "qb_uncertain": {},
  "lead_back": {

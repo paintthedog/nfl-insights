@@ -307,6 +307,28 @@
    "gap": 0.8,
    "move": -1.0,
    "result": "no gap"
+  },
+  {
+   "week": 8,
+   "game_id": "2026_08_CAR_GB",
+   "market": "spread",
+   "model": 3.3,
+   "line_then": 3.0,
+   "close": 3.5,
+   "gap": 0.3,
+   "move": 0.5,
+   "result": "no gap"
+  },
+  {
+   "week": 8,
+   "game_id": "2026_08_CAR_GB",
+   "market": "total",
+   "model": 48.5,
+   "line_then": 47.5,
+   "close": 47.5,
+   "gap": 1.0,
+   "move": 0.0,
+   "result": "no move"
   }
  ],
  "spread": {
@@ -316,9 +338,9 @@
   "still": 4
  },
  "total": {
-  "n": 11,
+  "n": 12,
   "toward": 1,
   "away": 4,
-  "still": 6
+  "still": 7
  }
 }
