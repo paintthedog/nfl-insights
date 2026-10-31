@@ -12,7 +12,7 @@ The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydi
 - **One command updates the site from a fresh workspace:** `bash pipeline/daily.sh` (picks the current week, adds next week once its lines exist). Output: `pipeline/site/paydirt.html`. Takes ~25 min from scratch, ~10 once data is cached.
 - Oct 21 evening: Week 7 and 8 rebuilt and published as v152.
 - Lost in the export: pre-kickoff archives before Oct 21 (the scorecard keeps its last numbers until new weeks are graded) and line-movement history (restarts Oct 21).
-- Run state that must persist between runs is committed: `pipeline/archive/`, `pipeline/data/line_history.csv`, record and bet CSVs, override JSONs. Commit after every run.
+- Run state that must persist between runs is committed: `pipeline/archive/` (a pre-kickoff copy of every published week, saved by assemble_site.py whenever the data changed: this is what makes after-the-fact tests possible, so never prune it), `pipeline/data/line_history.csv`, record and bet CSVs, `combos_wk*.csv` + `combos_report.json`, `forecasts_wk*.csv`, override JSONs. Commit after every run. (Oct 31, Clinton: preserve everything going forward so any new test can be run on what the model actually said.)
 - `SPEC.md` and `recover/` are now reference only.
 - `tracker/` is superseded by the pipeline's own scorecard; not scheduled.
 - Oct 22 fixes: traded and news-activated players now enter the projections; the overrides file is dated per entry and housekept by `auto_overrides.py`; four pre-registered main tests with fixed sample sizes on the Record tab; the scorecard grades market vs raw model vs blend; bootstrap rebuilds `tests/_wf_proj.pkl` again; superseded script copies moved to `pipeline/legacy/` (never edit those).
