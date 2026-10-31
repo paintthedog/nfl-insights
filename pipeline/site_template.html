@@ -1,44 +1,26 @@
 <title>Tron's Model</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&family=Jersey+10&family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&family=Jersey+10&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: warm paper ground, white cards with a soft shadow. Oct 31: Silkscreen pixel title, Helvetica (Arial fallback)
    for everything else. Teal is the house accent; orange is reserved for "look here"
    (model and line apart, the book's number, the most likely outcome). */
-:root {  /* Oct 31: "Tron's Model" arcade look. Light = cartridge label (cream, ink outlines); dark = Arcade Night (navy, neon). */
-  --bg: #f3eedc; --surface: #fffaf0; --ink: #1d1838; --muted: #5d5785; --faint: #857fa8; --rule: #ddd4bb; --track: #ebe4cf;
-  --accent: #d4148a; --accent-ink: #a80f6d; --accent-soft: #fbe0ef; --flag: #d4148a; --model: #1d1838; --market: #857fa8;
-  --bet: #1b7a3e; --bet-bg: #d6eedb; --lean: #8a6500; --lean-bg: #f5e6b5; --pass: #5d5785; --pass-bg: #ece6d3;
-  --warn: #b42828; --warn-bg: #f6d9d3; --soft: #b5441f; --soft-bg: #f8e2d6; --tough: #1f5fae; --tough-bg: #e2ebf6;
+:root {  /* Oct 31: "Tron's Model" arcade look, light only (Clinton): white ground, navy outlines, hard shadows; IBM Plex Mono reading text. */
+  --bg: #f5f5f8; --surface: #ffffff; --ink: #1d1838; --muted: #5a5680; --faint: #85829f; --rule: #dedde7; --track: #ededf3;
+  --accent: #d4148a; --accent-ink: #a80f6d; --accent-soft: #fbe0ef; --flag: #d4148a; --model: #1d1838; --market: #85829f;
+  --bet: #1b7a3e; --bet-bg: #d9f0de; --lean: #8a6500; --lean-bg: #f6ebc4; --pass: #5a5680; --pass-bg: #ededf3;
+  --warn: #b42828; --warn-bg: #f8dddd; --soft: #b5441f; --soft-bg: #f8e2d6; --tough: #1f5fae; --tough-bg: #e2ebf6;
   --s1: #7a3fd0; --s2: #0a8fb0; --s3: #c46a00; --gold: #d4148a;
-  --frame: #1d1838; --hard: #1d1838; --sel: #1d1838; --sel-ink: #fffaf0; --head-ink: #a80f6d; --score: #1d1838; --fav: #d4148a; --fav-ink: #fffaf0;
+  --frame: #1d1838; --hard: #1d1838; --sel: #1d1838; --sel-ink: #ffffff; --head-ink: #a80f6d; --score: #1d1838; --fav: #d4148a; --fav-ink: #ffffff;
   --t1: #1d1838; --t1-sh: #ff8fd0; --t2: #d4148a; --t2-sh: #6fe3f5;
-  --shadow: 3px 3px 0 var(--hard);
-  --f-serif: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
-  --f-display: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
-  --f-body: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
-  --f-data: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
+  --shadow: 3px 3px 0 var(--hard); color-scheme: light;
+  --f-serif: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --f-display: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --f-body: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --f-data: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
   --f-pixel: "Press Start 2P", "Silkscreen", monospace; --f-title: "Silkscreen", monospace; --f-score: "Jersey 10", "Silkscreen", monospace;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #0d0d24; --surface: #15153a; --ink: #eceaff; --muted: #a3a1d6; --faint: #75739f; --rule: #2b2b5e; --track: #1e1e48;
-  --accent: #ff3fb4; --accent-ink: #ff7ccc; --accent-soft: #3a1438; --flag: #ff3fb4; --model: #eceaff; --market: #75739f;
-  --bet: #4dff88; --bet-bg: #0f3a24; --lean: #ffe14d; --lean-bg: #3a3410; --pass: #a3a1d6; --pass-bg: #1e1e48;
-  --warn: #ff6b6b; --warn-bg: #3d1820; --soft: #ff9a5c; --soft-bg: #3a1e10; --tough: #7cc4ff; --tough-bg: #142a4a;
-  --s1: #b48cff; --s2: #2ee8ff; --s3: #ffb347; --gold: #ffe14d;
-  --frame: #3a3a80; --hard: #000; --sel: #29f3ff; --sel-ink: #07071a; --head-ink: #ff3fb4; --score: #ffe14d; --fav: #ffe14d; --fav-ink: #07071a;
-  --t1: #29f3ff; --t1-sh: #ff2bd6; --t2: #ffe600; --t2-sh: #ff2bd6;
-  --shadow: 4px 4px 0 var(--hard); color-scheme: dark; } }
-:root[data-theme="dark"] {
-  --bg: #0d0d24; --surface: #15153a; --ink: #eceaff; --muted: #a3a1d6; --faint: #75739f; --rule: #2b2b5e; --track: #1e1e48;
-  --accent: #ff3fb4; --accent-ink: #ff7ccc; --accent-soft: #3a1438; --flag: #ff3fb4; --model: #eceaff; --market: #75739f;
-  --bet: #4dff88; --bet-bg: #0f3a24; --lean: #ffe14d; --lean-bg: #3a3410; --pass: #a3a1d6; --pass-bg: #1e1e48;
-  --warn: #ff6b6b; --warn-bg: #3d1820; --soft: #ff9a5c; --soft-bg: #3a1e10; --tough: #7cc4ff; --tough-bg: #142a4a;
-  --s1: #b48cff; --s2: #2ee8ff; --s3: #ffb347; --gold: #ffe14d;
-  --frame: #3a3a80; --hard: #000; --sel: #29f3ff; --sel-ink: #07071a; --head-ink: #ff3fb4; --score: #ffe14d; --fav: #ffe14d; --fav-ink: #07071a;
-  --t1: #29f3ff; --t1-sh: #ff2bd6; --t2: #ffe600; --t2-sh: #ff2bd6;
-  --shadow: 4px 4px 0 var(--hard); color-scheme: dark; }
 
 [hidden] { display: none !important; }
 body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14.5px; line-height: 1.5; font-weight: 400; }
@@ -477,8 +459,6 @@ a { color: var(--accent); }
 .gc-win .cap { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
 .wbar { position: relative; display: flex; gap: 2px; height: 9px; border-radius: 2px; overflow: hidden; background: var(--surface); }
 .gc-win { --ta: var(--ta-l, var(--s1)); --th: var(--th-l, var(--s2)); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .gc-win { --ta: var(--ta-d, var(--s1)); --th: var(--th-d, var(--s2)); } }
-:root[data-theme="dark"] .gc-win { --ta: var(--ta-d, var(--s1)); --th: var(--th-d, var(--s2)); }
 .wbar i.a { display: block; background: var(--ta); border-radius: 2px 0 0 100px; }
 .wbar i.h { flex: 1; background: var(--th); border-radius: 0 2px 2px 0; }
 .wbar s { position: absolute; top: 0; bottom: 0; width: 3px; margin-left: -1.5px; background: var(--surface); box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 55%, transparent); }   /* spread-implied tick: visible on any team color */
@@ -531,7 +511,7 @@ a { color: var(--accent); }
 .gp-note { margin: 0; padding: 0 14px 10px; font-size: 11.5px; color: var(--faint); }
 @media (max-width: 640px) { .gp-body { grid-template-columns: 1fr; } .gp-team + .gp-team { border-left: 0; border-top: 1px solid var(--rule); padding-top: 8px; } }
 
-/* ---------- Oct 31: arcade layer (pixel fonts only on titles, labels, headers, big scores; Chakra Petch for reading) ---------- */
+/* ---------- Oct 31: arcade layer (pixel fonts only on titles, labels, headers, big scores; IBM Plex Mono for reading) ---------- */
 .mast h1 span { color: var(--t2) !important; text-shadow: 3px 3px 0 var(--t2-sh); }
 .mast { border-bottom: 2px solid var(--frame) !important; }
 .mast .meta { font-family: var(--f-body); }
@@ -563,6 +543,9 @@ th, tr.grp th { font-family: var(--f-pixel); font-weight: 400; font-size: 8px; l
 .seg { border: 2px solid var(--frame); } .seg button + button { border-left: 2px solid var(--frame); }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 .mp { border-width: 2px; }
+td { font-size: 12px; } td .player { font-size: 12.5px; }
+body { font-size: 13.5px; }
+.gc-team .nm { font-size: 19px !important; }
 .relbig { font-family: var(--f-score); font-size: 38px; color: var(--score); }
 @media (max-width: 640px) {
   .mast h1 { font-size: 28px; }
@@ -570,6 +553,8 @@ th, tr.grp th { font-family: var(--f-pixel); font-weight: 400; font-size: 8px; l
   .tabs button { font-size: 8px; padding: 8px 7px; flex: 0 1 auto; }
   .tabs button[aria-selected="true"]::before { margin-right: 5px; }
   .gc-team .pts { font-size: 34px; }
+  .gc-team .rc, .gc-mid .tot, .gc-top { font-size: 11px; letter-spacing: -.02em; }
+  .gc-score { gap: 6px; padding-inline: 12px; }
 }
 </style>
 <div class="wrap">
@@ -756,17 +741,9 @@ const press = (sel, attr, val) => $$(sel).forEach(x => x.setAttribute("aria-pres
 const ansBox = () => {};
 const topN = (rows, f, n = 3, dir = -1) => rows.filter(r => f(r) != null).sort((a, b) => (f(a) - f(b)) * dir).slice(0, n);
 
-// ---------- light / dark (follows the device until the viewer picks one; the choice is remembered on this device)
-(() => {
-  const root = document.documentElement, btn = $("#theme-btn");
-  const sysDark = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const saved = store.get("pp-theme");
-  if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved);
-  const cur = () => root.getAttribute("data-theme") || (sysDark() ? "dark" : "light");
-  const paint = () => { btn.textContent = cur() === "dark" ? "Light mode" : "Dark mode"; };
-  btn.addEventListener("click", () => { const n = cur() === "dark" ? "light" : "dark"; root.setAttribute("data-theme", n); store.set("pp-theme", n); paint(); });
-  paint();
-})();
+// ---------- light only (Oct 31, Clinton): no dark mode, no theme button
+document.documentElement.setAttribute("data-theme", "light");
+$("#theme-btn").remove();
 
 // ---------- masthead
 $("#meta").innerHTML = `<span><b>${DATA.season} · Week ${DATA.week}</b></span><span class="mhide">${DATA.n_games} game${DATA.n_games === 1 ? "" : "s"} · data through Week ${DATA.through}</span><span class="mhide">Built ${esc(DATA.built)}</span>`;
