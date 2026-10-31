@@ -1,5 +1,3 @@
-Staleness audit, week 8: 4 item(s)
-  [CARRYOVER] Lamar Jackson was out last week, now projected 17.1 pts with no Week 8 status — confirm he's back
-  [STALE] lead_back HOU set 2026-10-22 (8 days ago) - re-verify or remove
-  [DFS] no dk_salaries_wk8.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
+Staleness audit, week 8: 2 item(s)
+  [STALE] lead_back HOU set 2026-10-22 (9 days ago) - re-verify or remove
   [WEATHER] first game 2026-10-29 is within 48h and forecasts_wk8.csv is missing
