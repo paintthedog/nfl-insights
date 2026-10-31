@@ -1,50 +1,44 @@
 <title>Tron's Model</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&family=Jersey+10&family=Chakra+Petch:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: warm paper ground, white cards with a soft shadow. Oct 31: Silkscreen pixel title, Helvetica (Arial fallback)
    for everything else. Teal is the house accent; orange is reserved for "look here"
    (model and line apart, the book's number, the most likely outcome). */
-:root {
-  --bg: #f7f7f6;          /* paper ground */
-  --surface: #ffffff;
-  --ink: #1a1a1a;
-  --muted: #5e5e5e;
-  --faint: #8c8c8c;
-  --rule: #e4e4e2;
-  --track: #efefed;
-  --accent: #d6336c;      /* Budapest pink */
-  --accent-ink: #a8204f;
-  --accent-soft: #fde4ec;
-  --flag: #d6336c;        /* look-here pink */
-  --model: #1a1a1a;
-  --market: #8c8c8c;
-  --bet: #2c6a48;  --bet-bg: #dcebdf;
-  --lean: #946a10; --lean-bg: #f4e6c2;
-  --pass: #5e5e5e; --pass-bg: #f0f0ee;
-  --warn: #8e2f22; --warn-bg: #f3ddd4;
-  --soft: #b5441f; --soft-bg: #f8e2d6;   /* defense gives up a lot = soft matchup */
-  --tough: #1f5fae; --tough-bg: #e2ebf6;
-  --s1: #5b3fc4; --s2: #14a08a; --s3: #d97a0a;   /* categorical series: violet, teal, orange (validated all-pairs, light) */
-  --shadow: 0 1px 2px rgba(0,0,0,.05);
-  --f-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;   /* Oct 31: Helvetica everywhere except the Silkscreen title */
-  --f-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --f-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --f-data: "Helvetica Neue", Helvetica, Arial, sans-serif; --gold: #d6336c;
+:root {  /* Oct 31: "Tron's Model" arcade look. Light = cartridge label (cream, ink outlines); dark = Arcade Night (navy, neon). */
+  --bg: #f3eedc; --surface: #fffaf0; --ink: #1d1838; --muted: #5d5785; --faint: #857fa8; --rule: #ddd4bb; --track: #ebe4cf;
+  --accent: #d4148a; --accent-ink: #a80f6d; --accent-soft: #fbe0ef; --flag: #d4148a; --model: #1d1838; --market: #857fa8;
+  --bet: #1b7a3e; --bet-bg: #d6eedb; --lean: #8a6500; --lean-bg: #f5e6b5; --pass: #5d5785; --pass-bg: #ece6d3;
+  --warn: #b42828; --warn-bg: #f6d9d3; --soft: #b5441f; --soft-bg: #f8e2d6; --tough: #1f5fae; --tough-bg: #e2ebf6;
+  --s1: #7a3fd0; --s2: #0a8fb0; --s3: #c46a00; --gold: #d4148a;
+  --frame: #1d1838; --hard: #1d1838; --sel: #1d1838; --sel-ink: #fffaf0; --head-ink: #a80f6d; --score: #1d1838; --fav: #d4148a; --fav-ink: #fffaf0;
+  --t1: #1d1838; --t1-sh: #ff8fd0; --t2: #d4148a; --t2-sh: #6fe3f5;
+  --shadow: 3px 3px 0 var(--hard);
+  --f-serif: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
+  --f-display: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
+  --f-data: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
+  --f-pixel: "Press Start 2P", "Silkscreen", monospace; --f-title: "Silkscreen", monospace; --f-score: "Jersey 10", "Silkscreen", monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #121212; --surface: #1c1c1c; --ink: #ededed; --muted: #a6a6a6; --faint: #767676; --rule: #2e2e2e; --track: #262626;
-  --accent: #f27a9e; --accent-ink: #f7a3bc; --accent-soft: #3a1c27; --flag: #f27a9e; --model: #ededed; --market: #767676;
-  --bet: #4fb37a; --bet-bg: #16301f; --lean: #e0b24a; --lean-bg: #3a2f14; --pass: #a6a6a6; --pass-bg: #242424;
-  --warn: #e88a6e; --warn-bg: #3d2019; --soft: #f09a72; --soft-bg: #3a1e10; --tough: #9cc3e8; --tough-bg: #1c2a3c; --s1: #8467e0; --s2: #13a08a; --s3: #d9771a;
-  --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark; --gold: #f27a9e;} }
+  --bg: #0d0d24; --surface: #15153a; --ink: #eceaff; --muted: #a3a1d6; --faint: #75739f; --rule: #2b2b5e; --track: #1e1e48;
+  --accent: #ff3fb4; --accent-ink: #ff7ccc; --accent-soft: #3a1438; --flag: #ff3fb4; --model: #eceaff; --market: #75739f;
+  --bet: #4dff88; --bet-bg: #0f3a24; --lean: #ffe14d; --lean-bg: #3a3410; --pass: #a3a1d6; --pass-bg: #1e1e48;
+  --warn: #ff6b6b; --warn-bg: #3d1820; --soft: #ff9a5c; --soft-bg: #3a1e10; --tough: #7cc4ff; --tough-bg: #142a4a;
+  --s1: #b48cff; --s2: #2ee8ff; --s3: #ffb347; --gold: #ffe14d;
+  --frame: #3a3a80; --hard: #000; --sel: #29f3ff; --sel-ink: #07071a; --head-ink: #ff3fb4; --score: #ffe14d; --fav: #ffe14d; --fav-ink: #07071a;
+  --t1: #29f3ff; --t1-sh: #ff2bd6; --t2: #ffe600; --t2-sh: #ff2bd6;
+  --shadow: 4px 4px 0 var(--hard); color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --bg: #121212; --surface: #1c1c1c; --ink: #ededed; --muted: #a6a6a6; --faint: #767676; --rule: #2e2e2e; --track: #262626;
-  --accent: #f27a9e; --accent-ink: #f7a3bc; --accent-soft: #3a1c27; --flag: #f27a9e; --model: #ededed; --market: #767676;
-  --bet: #4fb37a; --bet-bg: #16301f; --lean: #e0b24a; --lean-bg: #3a2f14; --pass: #a6a6a6; --pass-bg: #242424;
-  --warn: #e88a6e; --warn-bg: #3d2019; --soft: #f09a72; --soft-bg: #3a1e10; --tough: #9cc3e8; --tough-bg: #1c2a3c; --s1: #8467e0; --s2: #13a08a; --s3: #d9771a;
-  --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark; --gold: #f27a9e;}
+  --bg: #0d0d24; --surface: #15153a; --ink: #eceaff; --muted: #a3a1d6; --faint: #75739f; --rule: #2b2b5e; --track: #1e1e48;
+  --accent: #ff3fb4; --accent-ink: #ff7ccc; --accent-soft: #3a1438; --flag: #ff3fb4; --model: #eceaff; --market: #75739f;
+  --bet: #4dff88; --bet-bg: #0f3a24; --lean: #ffe14d; --lean-bg: #3a3410; --pass: #a3a1d6; --pass-bg: #1e1e48;
+  --warn: #ff6b6b; --warn-bg: #3d1820; --soft: #ff9a5c; --soft-bg: #3a1e10; --tough: #7cc4ff; --tough-bg: #142a4a;
+  --s1: #b48cff; --s2: #2ee8ff; --s3: #ffb347; --gold: #ffe14d;
+  --frame: #3a3a80; --hard: #000; --sel: #29f3ff; --sel-ink: #07071a; --head-ink: #ff3fb4; --score: #ffe14d; --fav: #ffe14d; --fav-ink: #07071a;
+  --t1: #29f3ff; --t1-sh: #ff2bd6; --t2: #ffe600; --t2-sh: #ff2bd6;
+  --shadow: 4px 4px 0 var(--hard); color-scheme: dark; }
 
 [hidden] { display: none !important; }
 body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14.5px; line-height: 1.5; font-weight: 400; }
@@ -445,13 +439,14 @@ td .also { white-space: normal; }
 
 /* ---------- Award Insights house layer ---------- */
 .mast { border-bottom: 1px solid var(--rule) !important; padding-bottom: 16px !important; }
-.mast h1 { font-family: "Silkscreen", var(--f-display); font-weight: 700; text-transform: none; letter-spacing: 0; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.05; }   /* Oct 31: Silkscreen pixel title (Clinton) */
+.mast h1 { font-family: var(--f-title); font-weight: 700; text-transform: none; letter-spacing: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.05; color: var(--t1); text-shadow: 3px 3px 0 var(--t1-sh); }
 .mast h1 span { color: var(--accent); }
 nav.tabs { border-bottom: 0; background: var(--track); border-radius: 3px; padding: 3px; gap: 3px; width: fit-content; max-width: 100%; margin-top: 16px; }
 .tabs button { font-family: var(--f-body); font-size: 13.5px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted);
   border: 0; border-radius: 2px; padding: 8px 15px; margin: 0; }
 .tabs button[aria-selected="true"] { background: var(--surface); color: var(--accent-ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
-.tabs button:hover { color: var(--ink); }
+.tabs button:not([aria-selected="true"]):hover { color: var(--ink); }
+.tabs button[aria-selected="true"]:hover { color: var(--sel-ink); }
 .hcard, .wcard, details.tcard, .gc, .compare, .tablebox, .verdictbox, .gcard { border-radius: 3px; border-color: var(--rule); box-shadow: var(--shadow); }
 .tablebox { box-shadow: none; }
 .hcard.wide[style] { box-shadow: none; border-radius: 0; }
@@ -535,6 +530,47 @@ a { color: var(--accent); }
 .gp-l { font-size: 12px; color: var(--muted); margin-top: 1px; }
 .gp-note { margin: 0; padding: 0 14px 10px; font-size: 11.5px; color: var(--faint); }
 @media (max-width: 640px) { .gp-body { grid-template-columns: 1fr; } .gp-team + .gp-team { border-left: 0; border-top: 1px solid var(--rule); padding-top: 8px; } }
+
+/* ---------- Oct 31: arcade layer (pixel fonts only on titles, labels, headers, big scores; Chakra Petch for reading) ---------- */
+.mast h1 span { color: var(--t2) !important; text-shadow: 3px 3px 0 var(--t2-sh); }
+.mast { border-bottom: 2px solid var(--frame) !important; }
+.mast .meta { font-family: var(--f-body); }
+nav.tabs { background: none; padding: 0; gap: 6px; flex-wrap: wrap; border-radius: 0; }
+.tabs button { font-family: var(--f-pixel); font-size: 10px; font-weight: 400; text-transform: uppercase; letter-spacing: 0; line-height: 1.4;
+  color: var(--muted); border: 2px solid var(--frame); border-radius: 0; padding: 9px 11px; background: var(--surface); }
+.tabs button[aria-selected="true"] { background: var(--sel); color: var(--sel-ink); border-color: var(--sel); box-shadow: 3px 3px 0 var(--hard); }
+.tabs button[aria-selected="true"]::before { content: "\25B6"; margin-right: 7px; }
+.tabs button:hover { color: var(--ink); }
+.hcard, .wcard, details.tcard, .gc, .compare, .gcard, .vcard, .verdictbox, .rcard, .pick, .empty { border-radius: 0 !important; border: 2px solid var(--frame) !important; box-shadow: var(--shadow) !important; }
+.fam { border-radius: 0; border: 2px solid var(--frame); }
+.tablebox { border-radius: 0; border: 2px solid var(--frame); box-shadow: var(--shadow); }
+.hcard.wide[style] { box-shadow: none !important; border: 0 !important; }
+.hcard h2, .wcard h2, .notes h2, .rech, .betsbody h3, .compare h3 { font-family: var(--f-pixel); font-weight: 400; font-size: 12px; line-height: 1.6;
+  text-transform: uppercase; letter-spacing: 0; color: var(--head-ink); }
+.hcard h2 .go { font-family: var(--f-body); font-size: 13px; text-transform: none; }
+.sech, .sch, .gc-side h4, .gc-game h4, .gp-team h4 { font-family: var(--f-pixel); font-weight: 400; font-size: 9px; line-height: 1.6; letter-spacing: 0; text-transform: uppercase; }
+th, tr.grp th { font-family: var(--f-pixel); font-weight: 400; font-size: 8px; line-height: 1.6; letter-spacing: 0; text-transform: uppercase; color: var(--head-ink); }
+.gc-top { background: var(--track); border-bottom: 2px solid var(--frame); }
+.gc-team .nm { font-family: var(--f-display); font-weight: 700; font-size: 21px; letter-spacing: 0; }
+.gc-team .pts { font-family: var(--f-score); font-weight: 400; font-size: 42px; line-height: 1; color: var(--score); }
+.gc-team .pts small { font-family: var(--f-pixel); font-size: 8px; }
+.gc-team.fav .nm::after { font-family: var(--f-pixel); font-size: 8px; font-weight: 400; background: var(--fav); color: var(--fav-ink); border-radius: 0; padding: 3px 5px; }
+.gc-win .cap { font-family: var(--f-pixel); font-size: 8px; letter-spacing: 0; }
+.wbar { height: 12px; border-radius: 0; gap: 3px; }
+.wbar i.a, .wbar i.h { border-radius: 0 !important; -webkit-mask-image: repeating-linear-gradient(90deg, #000 0 8px, transparent 8px 10px); mask-image: repeating-linear-gradient(90deg, #000 0 8px, transparent 8px 10px); }
+.tcard .vd { font-family: var(--f-display); font-weight: 500; font-size: 16px; }
+.chip, .seg, .seg button, .btn, .more, .mp, .call, .tag, .vlab, .flag, .skiptag, .pos, .controls input, .controls select, .tip, .rkc { border-radius: 0 !important; }
+.seg { border: 2px solid var(--frame); } .seg button + button { border-left: 2px solid var(--frame); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.mp { border-width: 2px; }
+.relbig { font-family: var(--f-score); font-size: 38px; color: var(--score); }
+@media (max-width: 640px) {
+  .mast h1 { font-size: 28px; }
+  nav.tabs { gap: 5px; }
+  .tabs button { font-size: 8px; padding: 8px 7px; flex: 0 1 auto; }
+  .tabs button[aria-selected="true"]::before { margin-right: 5px; }
+  .gc-team .pts { font-size: 34px; }
+}
 </style>
 <div class="wrap">
   <header class="mast">
