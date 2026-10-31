@@ -543,6 +543,8 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
 .seg { border: 2px solid var(--frame); } .seg button + button { border-left: 2px solid var(--frame); }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 .mp { border-width: 2px; }
+#cb-sum, [id^="cb-t"], #cb-legs { min-width: 0 !important; table-layout: auto !important; }
+#p-record #cb-list td:first-child { white-space: normal; }
 .relbig { font-family: var(--f-data); font-weight: 600; color: var(--score); }
 @media (max-width: 640px) {
   .mast h1 { font-size: clamp(20px, 6.4vw, 28px); }
@@ -692,6 +694,12 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
       <h4 class="sch">Averages: projected vs actual</h4><div class="tablebox"><table id="sc-avg"></table></div>
       <h4 class="sch">Model vs DraftKings' line on the same players</h4><div class="tablebox"><table id="sc-vl"></table></div>
     </div></details>
+    <h3 class="rech" id="combos">3. Combos: when the model says these all happen, do they?</h3>
+    <p class="wnote">No odds involved. Before each game, fixed rules pair the model's predictions into 2- and 3-part combos at round, bettable thresholds (50+ rush yds, 4+ catches, 225+ pass yds), each leg picked where the model gives it about a 70% chance. A combo's chance accounts for how its parts move together in the same game (a QB's big day lifts his top receiver). A combo with a scratched player is set aside. The random pairs are the control. Exploratory: a type means little before about 150 graded combos.</p>
+    <div class="tablebox"><table id="cb-sum"></table></div>
+    <div class="controls" style="margin-top:6px"><div class="seg sm" role="group" aria-label="Week" id="cb-wk"></div></div>
+    <div id="cb-list"></div>
+    <details class="tcard" style="margin-top:4px" id="cb-legs-box"><summary><span class="tg"></span><span class="ttl">Single legs</span><span class="vd">How often each kind of leg hit vs the model's chance</span><span class="op" aria-hidden="true"></span></summary><div class="tbody"><div class="tablebox"><table id="cb-legs"></table></div></div></details>
   </section>
 
   <section class="panel" id="p-how" role="tabpanel" aria-labelledby="tab-how" hidden>
@@ -1756,6 +1764,46 @@ function renderRecord() {
   if (typeof evenSoon === "function") evenSoon();
 }
 renderRecord();
+// ---------- Combos (Oct 31): odds-free combination predictions, logged by combo_slate.py, graded on hit rate vs the model's joint chance
+const CB = ALL.combos; let cbWeek = null; const cbSt = { s: { key: "ord", dir: 1 }, l: { key: "stat", dir: 1 } }, cbT = {};
+function renderCombos() {
+  if (!CB || !(CB.combos || []).length) { $("#cb-sum").innerHTML = ""; $("#cb-list").innerHTML = `<p class="wnote">No combos logged yet.</p>`; $("#cb-legs-box").hidden = true; return; }
+  const P = x => x == null ? dash : `<span class="num">${Math.round(x * 100)}%</span>`;
+  const order = CB.order || [], ord = t => { const i = order.indexOf(t); return i < 0 ? 99 : i; };
+  const short = t => { const x = t.replace(/^Combo: |^Control: /, ""); return x[0].toUpperCase() + x.slice(1); }, mob = MOBQ.matches;
+  const all = CB.combos, weeks = [...new Set(all.map(c => c.week))].sort((a, b) => b - a);
+  if (cbWeek == null || !weeks.includes(cbWeek)) cbWeek = weeks.slice().sort((a, b) => a - b).find(w => all.some(c => c.week === w && c.status === "pending")) ?? weeks[0];   // the week being played, else the latest
+  const types = order.map(t => {
+    const g = (CB.types || []).find(r => r.type === t), rows = all.filter(c => c.type === t), pend = rows.filter(c => c.status === "pending").length;
+    return { type: t, ord: ord(t), n: g ? g.n : 0, hits: g ? g.hits : 0, hit: g ? g.hit_rate : null, said: g ? g.said : (rows.length ? rows.reduce((a, c) => a + c.model_p, 0) / rows.length : null), indep: g ? g.said_indep : null, z: g ? g.z : null, pend };
+  }).filter(r => r.n || r.pend);
+  const read = r => !r.n ? "Waiting for games" : r.n < 40 ? "Too early" : Math.abs(r.z) < 2 ? "About right" : r.z > 0 ? "Model too cautious" : "Model too optimistic";
+  colTable($("#cb-sum"), [
+    { k: "type", label: "Combo", asc: 1, sv: r => r.ord, cell: r => `<span class="player" style="white-space:normal">${esc(short(r.type))}</span>${r.pend ? `<span class="sub">${r.pend} pending</span>` : ""}${mob ? `<span class="sub">${read(r)}</span>` : ""}` },
+    ...(mob ? [] : [{ k: "n", label: "Graded", cell: r => `<span class="num">${r.n || "—"}</span>` }]),
+    { k: "hit", label: "Hit", cell: r => r.hit == null ? dash : `<span class="num pts">${Math.round(r.hit * 100)}%</span><span class="sub">${r.hits} of ${r.n}</span>` },
+    { k: "said", label: "Model said", cell: r => P(r.said) + (r.indep != null && Math.abs(r.indep - r.said) >= 0.01 ? `<span class="sub">${Math.round(r.indep * 100)}% if unrelated</span>` : "") },
+    ...(mob ? [] : [{ k: "read", label: "Read", asc: 1, sv: r => read(r), cell: r => `<span class="vlab ${/About right/.test(read(r)) ? "ok" : /too/.test(read(r)) ? "lean" : ""}">${read(r)}</span>` }])],
+    types, cbSt.s, renderCombos);
+  $("#cb-wk").innerHTML = weeks.slice().sort((a, b) => a - b).map(w => `<button data-cbw="${w}" aria-pressed="${w === cbWeek}">Week ${w}</button>`).join("");
+  $$("[data-cbw]").forEach(b => b.addEventListener("click", () => { cbWeek = +b.dataset.cbw; renderCombos(); }));
+  const wk = all.filter(c => c.week === cbWeek), groups = order.filter(t => wk.some(c => c.type === t));
+  const mark = r => r === "hit" ? `<span class="pos-ev">✓</span>` : r === "miss" ? `<span class="fpd-dn">✗</span>` : r === "void" ? `<span class="dim">–</span>` : "";
+  $("#cb-list").innerHTML = groups.map((t, i) => { const rows = wk.filter(c => c.type === t), done = rows.filter(c => c.status === "hit" || c.status === "miss"), h = done.filter(c => c.status === "hit").length;
+    return `<details class="fam"><summary><span class="player">${esc(short(t))}</span><span class="n">${done.length ? `${h} of ${done.length} <span class="q">hit</span>` : `<span class="q">${rows.length} pending</span>`}</span><span class="n hide-m"><span class="q">model said</span> ${Math.round(rows.reduce((a, c) => a + c.model_p, 0) / rows.length * 100)}%</span></summary><div class="tbody"><div class="tablebox"><table id="cb-t${i}"></table></div></div></details>`; }).join("");
+  groups.forEach((t, i) => colTable($(`#cb-t${i}`), [
+    { k: "subject", label: "Combo", asc: 1, cell: r => `<span class="player" style="white-space:normal">${r.legs.map(l => `${mark(l.r)} ${esc(l.t)}`).join("<br>")}</span><span class="sub">${esc(r.games.split(",").map(g => g.split("_").slice(2).join(" @ ")).join(" · "))}</span>` },
+    { k: "model_p", label: "Model", cell: r => P(r.model_p) },
+    { k: "status", label: "Result", asc: 1, cell: r => `<span class="num ${r.status === "hit" ? "pos-ev" : ""}">${r.status === "void" ? "set aside" : r.status === "pending" ? "—" : r.status}</span>` }],
+    wk.filter(c => c.type === t), cbT[t] || (cbT[t] = { key: "model_p", dir: -1 }), renderCombos));
+  const legs = CB.legs || [];
+  $("#cb-legs-box").hidden = !legs.length;
+  if (legs.length) colTable($("#cb-legs"), [
+    { k: "stat", label: "Leg", asc: 1, cell: r => `<span class="player">${esc({ ml: "Team wins", atd: "Scores a TD", rec: "Catches", rush_yds: "Rushing yards", pass_yds: "Passing yards" }[r.stat] || r.stat)}</span>` },
+    { k: "n", label: "Legs", cell: r => `<span class="num">${r.n}</span>` }, { k: "said", label: "Model said", cell: r => P(r.said) }, { k: "hit_rate", label: "Hit", cell: r => P(r.hit_rate) }],
+    legs, cbSt.l, renderCombos);
+}
+renderCombos();
 // Angles tested lives on the Model tab now
 (() => { const cls = l => l === "Earning trust" || l === "Model about right" ? "trust" : l === "Don't bet" || l === "Model too optimistic" ? "dont" : "";
   $("#rec-verdicts").innerHTML = RC ? RC.verdicts.map(v => `<div class="vcard"><span class="vlab ${cls(v.label)}">${esc(v.label)}</span><h4>${esc(v.name)}</h4><p>${esc(v.note)}</p></div>`).join("") : ""; })();

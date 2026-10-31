@@ -1,8 +1,9 @@
 """Odds-free combination predictions (Oct 31, Clinton's request). The question is not "would this bet pay" but "when the model says
 a combination of outcomes has an X% chance, does it happen X% of the time?" No sportsbook prices are used anywhere.
 
-Every leg is chosen by the model alone: the round line where the model's chance of going over is closest to 70%
-(receptions x.5; yards in 5-yard steps ending .5). Win legs use the site's line-anchored win chance (nflverse spread, free).
+Every leg is chosen by the model alone: the bettable round threshold ("50+ rush yds", "3+ catches", "225+ pass yds") where
+the model's chance of reaching it is closest to 70% (Oct 31, Clinton: thresholds like a sportsbook's alt lines, not x.5 lines).
+Receptions 1+..12+; rushing/receiving yards 10, 15, 20, 25, 30, 40 ... 100, 125, 150; passing yards 150 to 350 in 25s. Win legs use the site's line-anchored win chance (nflverse spread, free).
 TD legs use the site's anytime-TD chance. Eligible players: projected to play (p_play 0.85+) and a real season record
 (8+ catches for pass catchers, 25+ carries for backs).
 
@@ -28,7 +29,7 @@ TYPES = ["Combo: win + lead RB yards", "Combo: QB yards + WR1 catches", "Combo: 
          "Combo: steady pair across games", "Combo: steady trio across games", "Control: random pair across games"]
 TARGET = 0.70
 norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z ]", " ", re.sub(r"\b(jr|sr|ii|iii|iv)\b\.?", "", str(s).lower().replace("'", "")))).strip()
-UNIT = {"rec": "catches", "rush_yds": "rush yds", "pass_yds": "pass yds"}
+UNIT = {"rec": "catches", "rush_yds": "rush yds", "pass_yds": "pass yds", "rec_yds": "rec yds"}
 
 
 def season_counts(W):
@@ -56,11 +57,11 @@ def build(W, now=None):
     def leg(p, st, gid, label):
         q = (p.get("q") or {}).get(st)
         if not q: return None
-        cands = [k + .5 for k in range(0, 15)] if st == "rec" else [k * 5 + 4.5 for k in range(1, 80)]
-        best = min(cands, key=lambda c: abs(p_over(q, c) - TARGET))
-        pr = p_over(q, best)
+        ks = list(range(1, 13)) if st == "rec" else list(range(150, 351, 25)) if st == "pass_yds" else [10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150]
+        k = min(ks, key=lambda k: abs(p_over(q, k - .5) - TARGET))    # "k+" = at least k = more than k - 0.5
+        pr = p_over(q, k - .5)
         if not .55 <= pr <= .85: return None
-        return dict(gid=gid, player=p["name"], team=p["team"], stat=st, line=best, p=round(float(pr), 4), label=label)
+        return dict(gid=gid, player=p["name"], team=p["team"], stat=st, line=k - .5, k=k, p=round(float(pr), 4), label=label)
 
     def real(p):
         if (p.get("p_play") or 1) < 0.85: return False
@@ -122,7 +123,7 @@ def build(W, now=None):
         same = len(set(gl)) == 1 and all(l["label"] for l in legs) and not any(l["stat"] == "atd" for l in legs)
         jp = joint([(l["label"], l["p"]) for l in legs]) if same else ip
         subj = " + ".join(f"{l['player']} wins" if l["stat"] == "ml" else f"{l['player']} scores a TD" if l["stat"] == "atd"
-                          else f"{l['player']} {l['line']:g}+ {UNIT[l['stat']]}" for l in legs)
+                          else f"{l['player']} {l.get('k', l['line']):g}+ {UNIT[l['stat']]}" for l in legs)
         out.append(dict(week=W, type=t, games=",".join(dict.fromkeys(gl)), subject=subj, n_legs=len(legs), model_p=round(jp, 4),
                         indep_p=round(ip, 4), legs=json.dumps(legs), placed_at=stamp))
     return pd.DataFrame(out)
@@ -165,25 +166,27 @@ def grade():
                   gm[gm.passer_player_id.eq(p)].passing_yards.sum() if l["stat"] == "pass_yds" else gm[gm.rusher_player_id.eq(p)].rushing_yards.sum())
         return "hit" if v > l["line"] else "miss"
 
-    rows, legrows = [], []
+    rows, legrows, shown = [], [], []
     for f in sorted(glob.glob("combos_wk*.csv")):
         d = pd.read_csv(f)
         for r in d.itertuples():
             legs = json.loads(r.legs); res = [leg_result(l) for l in legs]
             for l, x in zip(legs, res):
                 if x in ("hit", "miss"): legrows.append(dict(week=r.week, stat=l["stat"], p=l["p"], hit=x == "hit", key=(r.week, l["gid"], l["player"], l["stat"], l["line"])))
-            if "pending" in res: continue
-            live = [x for x in res if x != "void"]
-            if len(live) < len(res): continue                       # a scratched leg changes the question; leave the combo out
-            rows.append(dict(week=r.week, type=r.type, model_p=r.model_p, indep_p=r.indep_p, hit=all(x == "hit" for x in live), n_legs=r.n_legs))
+            st = "pending" if "pending" in res else "void" if "void" in res else "hit" if all(x == "hit" for x in res) else "miss"
+            shown.append(dict(week=int(r.week), type=r.type, subject=r.subject, games=r.games, model_p=r.model_p, indep_p=r.indep_p, status=st,
+                              legs=[dict(t=t, r=x) for t, x in zip(r.subject.split(" + "), res)]))
+            if st in ("pending", "void"): continue                  # a scratched leg changes the question; leave the combo out
+            rows.append(dict(week=r.week, type=r.type, model_p=r.model_p, indep_p=r.indep_p, hit=st == "hit", n_legs=r.n_legs))
     G = pd.DataFrame(rows); LG = pd.DataFrame(legrows)
-    rep = {"asof": pd.Timestamp.now(tz="America/New_York").strftime("%Y-%m-%d %H:%M ET"), "types": [], "legs": []}
+    rep = {"asof": pd.Timestamp.now(tz="America/New_York").strftime("%Y-%m-%d %H:%M ET"), "types": [], "legs": [], "order": TYPES,
+           "combos": [c for c in shown if c["week"] >= (max([c["week"] for c in shown]) - 2 if shown else 0)]}   # the site shows the last three weeks
     if len(G):
         for t in TYPES + ["All combos"]:
             g = G if t == "All combos" else G[G.type == t]
             if not len(g): continue
             se = float(np.sqrt((g.model_p * (1 - g.model_p)).sum()) / len(g))
-            rep["types"].append(dict(type=t, n=int(len(g)), hits=int(g.hit.sum()), hit_rate=round(float(g.hit.mean()), 3),
+            rep["types"].append(dict(type=t, legs=int(g.n_legs.iloc[0]) if t != "All combos" else None, n=int(len(g)), hits=int(g.hit.sum()), hit_rate=round(float(g.hit.mean()), 3),
                                      said=round(float(g.model_p.mean()), 3), said_indep=round(float(g.indep_p.mean()), 3),
                                      z=round(float((g.hit.mean() - g.model_p.mean()) / se), 2) if se else None,
                                      brier_joint=round(float(((g.model_p - g.hit) ** 2).mean()), 4),

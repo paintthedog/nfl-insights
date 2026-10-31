@@ -25,7 +25,7 @@ def slim(d):
 allw = {str(w): slim(json.load(open(f"site/data_wk{w}.json"))) for w in weeks}
 opt = lambda f: json.load(open(f)) if os.path.exists(f) else None
 payload = dict(weeks=weeks, default=weeks[0], data=allw, trends=opt("trends.json"), awards=opt("awards.json"),
-               season=opt("season.json"), record=opt("record.json"), scorecard=opt("scorecard.json"))
+               season=opt("season.json"), record=opt("record.json"), scorecard=opt("scorecard.json"), combos=opt("combos_report.json"))
 payload = rnd(payload)
 html = open("site_template.html").read().replace("/*__DATA__*/null", json.dumps(payload, allow_nan=False, separators=(",", ":")))
 open("site/paydirt.html", "w").write(html)
