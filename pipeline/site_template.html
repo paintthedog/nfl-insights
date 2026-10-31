@@ -1,10 +1,10 @@
 <title>Tron's Model</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Silkscreen:wght@400;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
 <style>
-/* Layout: Award Insights house style. Warm paper ground, white cards with a soft shadow, Young Serif for names and
-   headings, Readex Pro for everything you read or compare. Teal is the house accent; orange is reserved for "look here"
+/* Layout: warm paper ground, white cards with a soft shadow. Oct 31: Silkscreen pixel title, Helvetica (Arial fallback)
+   for everything else. Teal is the house accent; orange is reserved for "look here"
    (model and line apart, the book's number, the most likely outcome). */
 :root {
   --bg: #f7f7f6;          /* paper ground */
@@ -28,10 +28,10 @@
   --tough: #1f5fae; --tough-bg: #e2ebf6;
   --s1: #5b3fc4; --s2: #14a08a; --s3: #d97a0a;   /* categorical series: violet, teal, orange (validated all-pairs, light) */
   --shadow: 0 1px 2px rgba(0,0,0,.05);
-  --f-serif: "Young Serif", Georgia, "Times New Roman", serif;
-  --f-display: "Readex Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-body: "Readex Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-data: "Readex Pro", system-ui, -apple-system, "Segoe UI", sans-serif; --gold: #d6336c;
+  --f-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;   /* Oct 31: Helvetica everywhere except the Silkscreen title */
+  --f-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-data: "Helvetica Neue", Helvetica, Arial, sans-serif; --gold: #d6336c;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #121212; --surface: #1c1c1c; --ink: #ededed; --muted: #a6a6a6; --faint: #767676; --rule: #2e2e2e; --track: #262626;
@@ -47,7 +47,7 @@
   --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark; --gold: #f27a9e;}
 
 [hidden] { display: none !important; }
-body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14.5px; line-height: 1.5; font-weight: 300; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14.5px; line-height: 1.5; font-weight: 400; }
 b, strong { font-weight: 500; }
 .wrap { max-width: 1480px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 56px; }
 .num { font-family: var(--f-data); font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; font-weight: 400; }
@@ -157,7 +157,7 @@ tbody tr:last-child td { border-bottom: 0; }
 .stats { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
 .stats b { color: var(--ink); font-weight: 500; }
 td .pts { font-weight: 500; font-size: 13px; }
-td { font-size: 12.5px; font-family: var(--f-data); font-weight: 300; font-variant-numeric: tabular-nums; }
+td { font-size: 12.5px; font-family: var(--f-data); font-weight: 400; font-variant-numeric: tabular-nums; }
 td .sub { font-weight: 300; font-size: 11px; }
 td .player { font-size: 13.5px; }
 .sech { margin: 22px 0 8px; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
@@ -294,10 +294,10 @@ th.hastip button { cursor: pointer; }
 .vlab { justify-self: start; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 2px; background: var(--track); color: var(--muted); }
 .vlab.trust { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); color: var(--accent); }
 .vlab.dont { background: color-mix(in srgb, var(--warn) 18%, var(--surface)); color: var(--warn); }
-.rech { font-family: var(--f-serif); font-weight: 400; font-size: 18px; margin: 22px 0 8px; }
+.rech { font-family: var(--f-serif); font-weight: 600; font-size: 18px; margin: 22px 0 8px; }
 .betsbody { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; margin-top: 10px; }
 .betsbody > div { min-width: 0; }
-.betsbody h3 { font-family: var(--f-serif); font-weight: 400; font-size: 18px; margin: 0 0 4px; }
+.betsbody h3 { font-family: var(--f-serif); font-weight: 600; font-size: 18px; margin: 0 0 4px; }
 .betsbody .bnote { margin: 0 0 8px; font-size: 12.5px; color: var(--muted); }
 .empty { padding: 14px; font-size: 13px; color: var(--muted); background: var(--surface); border: 1px dashed var(--rule); border-radius: 3px; }
 .hcard > * { min-width: 0; }
@@ -457,13 +457,13 @@ nav.tabs { border-bottom: 0; background: var(--track); border-radius: 3px; paddi
 .hcard.wide[style] { box-shadow: none; border-radius: 0; }
 .gc, .compare { border-top-width: 1px; border-top-color: var(--rule); overflow: hidden; }
 .gc-top { background: var(--track); }
-.hcard h2, .wcard h2, .notes h2 { font-family: var(--f-serif); font-weight: 400; text-transform: none; letter-spacing: -.005em; color: var(--ink); text-wrap: balance; }
+.hcard h2, .wcard h2, .notes h2 { font-family: var(--f-serif); font-weight: 600; text-transform: none; letter-spacing: -.01em; color: var(--ink); text-wrap: balance; }
 .hcard h2 { font-size: 18px; }
 .wcard h2 { font-size: 19px; }
 .notes h2 { font-size: 21px; }
 .hcard h2 .go { font-family: var(--f-body); }
-.gc-team .nm { font-family: var(--f-serif); font-weight: 400; font-size: 21px; }
-.tcard .vd { font-family: var(--f-serif); font-weight: 400; font-size: 17px; line-height: 1.35; }
+.gc-team .nm { font-family: var(--f-serif); font-weight: 600; letter-spacing: -.01em; font-size: 21px; }
+.tcard .vd { font-family: var(--f-serif); font-weight: 500; font-size: 17px; line-height: 1.35; }
 .sech { font-size: 11.5px; letter-spacing: .09em; color: var(--muted); }
 .seg { border-radius: 3px; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }

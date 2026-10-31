@@ -3,7 +3,7 @@
 Read this first in every chat. This repo is the single source of truth. Chats come and go; anything worth keeping is committed here.
 
 ## What this is
-The site is **Tron's Model** (renamed Oct 31; formerly NFL Insights / "Paydirt"). It is Clinton's NFL projection and betting-research site (title in the Silkscreen pixel font; body still Readex Pro), published as a claude.ai artifact: https://claude.ai/artifact/MVrDv9jyZBGoEnfbcnYSZH. Other people see it, so his personal bet log never goes on the site.
+The site is **Tron's Model** (renamed Oct 31; formerly NFL Insights / "Paydirt"). It is Clinton's NFL projection and betting-research site (title in the Silkscreen pixel font; everything else Helvetica, Arial fallback), published as a claude.ai artifact: https://claude.ai/artifact/MVrDv9jyZBGoEnfbcnYSZH. Other people see it, so his personal bet log never goes on the site.
 
 **Goal:** the most informed, likelihood-based bets possible, plus visibility into trends. Beating DraftKings is NOT the goal. Don't frame the work as edge-hunting, but stay honest when the market is more accurate than the model.
 
