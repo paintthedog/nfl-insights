@@ -1,7 +1,7 @@
 <title>Tron's Model</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&family=Jersey+10&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: warm paper ground, white cards with a soft shadow. Oct 31: Silkscreen pixel title, Helvetica (Arial fallback)
    for everything else. Teal is the house accent; orange is reserved for "look here"
@@ -532,7 +532,7 @@ nav.tabs { background: none; padding: 0; gap: 6px; flex-wrap: wrap; border-radiu
 th, tr.grp th { font-family: var(--f-pixel); font-weight: 400; font-size: 8px; line-height: 1.6; letter-spacing: 0; text-transform: uppercase; color: var(--head-ink); }
 .gc-top { background: var(--track); border-bottom: 2px solid var(--frame); }
 .gc-team .nm { font-family: var(--f-display); font-weight: 700; font-size: 21px; letter-spacing: 0; }
-.gc-team .pts { font-family: var(--f-score); font-weight: 400; font-size: 42px; line-height: 1; color: var(--score); }
+.gc-team .pts { font-family: var(--f-data); font-weight: 600; font-size: 32px; line-height: 1.1; color: var(--score); font-variant-numeric: tabular-nums; }
 .gc-team .pts small { font-family: var(--f-pixel); font-size: 8px; }
 .gc-team.fav .nm::after { font-family: var(--f-pixel); font-size: 8px; font-weight: 400; background: var(--fav); color: var(--fav-ink); border-radius: 0; padding: 3px 5px; }
 .gc-win .cap { font-family: var(--f-pixel); font-size: 8px; letter-spacing: 0; }
@@ -543,13 +543,13 @@ th, tr.grp th { font-family: var(--f-pixel); font-weight: 400; font-size: 8px; l
 .seg { border: 2px solid var(--frame); } .seg button + button { border-left: 2px solid var(--frame); }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 .mp { border-width: 2px; }
-.relbig { font-family: var(--f-score); font-size: 38px; color: var(--score); }
+.relbig { font-family: var(--f-data); font-weight: 600; color: var(--score); }
 @media (max-width: 640px) {
   .mast h1 { font-size: 28px; }
   nav.tabs { gap: 5px; }
   .tabs button { font-size: 8px; padding: 8px 7px; flex: 0 1 auto; }
   .tabs button[aria-selected="true"]::before { margin-right: 5px; }
-  .gc-team .pts { font-size: 34px; }
+  .gc-team .pts { font-size: 27px; }
   .gc-team .rc, .gc-mid .tot, .gc-top { font-size: 11.5px; }
   .gc-score { gap: 6px; padding-inline: 12px; }
 }
