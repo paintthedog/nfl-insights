@@ -15,11 +15,13 @@ done
 for W in "$@"; do python paper_lines.py $W; done   # Oct 25: automatic game-line paper bets from nflverse prices (no manual pulls)
 for W in $(seq 1 ${1}); do ls bets_wk${W}*.csv >/dev/null 2>&1 && python grade_bets.py $W > /dev/null; done   # grade paper slates for finished games
 for f in paper_wk*.csv; do [ -f "$f" ] || continue; case $f in *_graded*) ;; *) W=$(echo $f | sed 's/[^0-9]//g'); python grade_paper.py $W > /dev/null;; esac; done   # mechanical paper slates
+python combo_slate.py grade > /dev/null           # -> combos_report.json
 python record.py > /dev/null                      # Record tab
 python line_moves.py > /dev/null                  # did lines move toward the model's numbers?
 python scorecard.py                   # scorecard: every published number vs results (top of the Record tab)
 NFL_WEEK=${@: -1} python explain_weights.py
 for W in "$@"; do python build_site.py $W; done
+for W in "$@"; do python combo_slate.py $W; done   # Oct 31: odds-free combination predictions (logged until kickoff)
 python trends.py
 python season.py
 python awards.py

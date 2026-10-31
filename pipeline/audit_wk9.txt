@@ -1,8 +1,4 @@
-Staleness audit, week 9: 7 item(s)
+Staleness audit, week 9: 3 item(s)
   [INJURY] no week 9 injury report in the feed yet (normal before Wednesday)
-  [CARRYOVER] RJ Harvey was out last week, now projected 6.8 pts with no Week 9 status — confirm he's back
-  [CARRYOVER] DeVonta Smith was out last week, now projected 10.5 pts with no Week 9 status — confirm he's back
-  [CARRYOVER] Dontayvion Wicks was out last week, now projected 6.0 pts with no Week 9 status — confirm he's back
-  [CARRYOVER] Brian Robinson was out last week, now projected 4.8 pts with no Week 9 status — confirm he's back
-  [STALE] lead_back HOU set 2026-10-22 (8 days ago) - re-verify or remove
+  [STALE] lead_back HOU set 2026-10-22 (9 days ago) - re-verify or remove
   [DFS] no dk_salaries_wk9.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
