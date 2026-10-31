@@ -53,7 +53,7 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Prices-asof stamp on the site matches the latest pull, not a stale one
 
 ## 7. Publish & digest
-- [ ] Publish to the artifact (same URL)
+- [ ] Publish: commit `docs/index.html` (written by assemble_site.py) and push to main; GitHub Pages serves it at https://paintthedog.github.io/nfl-insights/ within a minute or two (Oct 31: replaces the claude.ai artifact)
 - [ ] Post a short digest: new outs/returns, projection moves >1.5 pts or >15% ATD swing, forecast changes, line moves, anything that touches open paper bets
 
 ## 8. ~~Odds pull~~ — STOPPED Oct 25 (Clinton's decision; reference only). Game-line paper bets now log automatically: `paper_lines.py` runs inside refresh_all.sh

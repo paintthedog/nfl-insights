@@ -30,6 +30,15 @@ payload = rnd(payload)
 html = open("site_template.html").read().replace("/*__DATA__*/null", json.dumps(payload, allow_nan=False, separators=(",", ":")))
 open("site/paydirt.html", "w").write(html)
 print(f"site/paydirt.html: weeks {weeks}, {len(html)/1024:.0f} KB")
+# Oct 31 (Clinton): the site also lives on GitHub Pages from docs/ (a full page: the artifact host used to add the skeleton)
+HEAD = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+        '<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">'
+        '<meta name="apple-mobile-web-app-title" content="Tron\'s Model"><meta name="theme-color" content="#f5f5f8">'
+        '<style>body{margin:0}</style>')
+_i = html.index("<style>")                       # the template's <title> and font links belong in <head>
+os.makedirs("../docs", exist_ok=True)
+open("../docs/index.html", "w").write(HEAD + html[:_i] + "</head><body>" + html[_i:] + "</body></html>")
+print("docs/index.html written (GitHub Pages)")
 
 # Oct 18: archive what was just published (only when it changed), so the scorecard grades each game off the numbers that were
 # actually on the site at kickoff. Stamps are Eastern time, matching the schedule's kickoff times.

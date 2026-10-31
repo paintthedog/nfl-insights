@@ -3,7 +3,7 @@
 Read this first in every chat. This repo is the single source of truth. Chats come and go; anything worth keeping is committed here.
 
 ## What this is
-The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydirt"). It is Clinton's NFL projection and betting-research site, published as a claude.ai artifact: https://claude.ai/artifact/MVrDv9jyZBGoEnfbcnYSZH. Other people see it, so his personal bet log never goes on the site.
+The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydirt"). It is Clinton's NFL projection and betting-research site, published on **GitHub Pages** from `docs/` (Oct 31, Clinton: the repo, not a claude.ai artifact): https://paintthedog.github.io/nfl-insights/ . `assemble_site.py` writes `docs/index.html` (full page with the pixel-football home-screen icon); publishing = committing and pushing it. The old artifact (https://claude.ai/artifact/MVrDv9jyZBGoEnfbcnYSZH) is retired once Pages is confirmed live. The repo and the site are public, so his personal bet log never goes in either.
 
 **Goal:** the most informed, likelihood-based bets possible, plus visibility into trends. Beating DraftKings is NOT the goal. Don't frame the work as edge-hunting, but stay honest when the market is more accurate than the model.
 
@@ -31,7 +31,7 @@ The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydi
 - **Oct 31 look (Clinton's picks):** light only (no dark mode, no theme button), white/cool-gray ground, navy 2px frames with hard 3px shadows. Silkscreen pixel title with pink/cyan offset shadows; Press Start 2P only for the top tabs (▶ on the selected one); Figtree for everything else, including section headings, table headers, labels and every number (pixel fonts in tables rejected Oct 31). Rejected along the way: cream background, Helvetica, IBM Plex Mono, Jersey 10 scores, dark Arcade Night.
 
 ## Daily update (what the scheduled task does)
-Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; **on every Thu–Mon run fetch MySportsWeather + Covers and rewrite `forecasts_wk{W}.csv` (checklist step 4; required, not optional)**; resolve `audit_wk{W}.txt`; rebuild; publish `pipeline/site/paydirt.html` to the site URL; commit and push; send a short digest.
+Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; **on every Thu–Mon run fetch MySportsWeather + Covers and rewrite `forecasts_wk{W}.csv` (checklist step 4; required, not optional)**; resolve `audit_wk{W}.txt`; rebuild; `node check_page.js ../docs/index.html` must print OK; commit (including `docs/index.html`) and push to main, which publishes the site; send a short digest.
 
 ## Clinton's standing rules
 - **Odds:** decimal only. **DraftKings** is the reference book (he also bets FanDuel; FanDuel won't allow INT props in a same-game parlay). Never scrape DK or FanDuel sites.
@@ -62,6 +62,7 @@ Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is
 - Oct 21: the old self-rescheduling tasks (daily update chain, tracker snapshots) were disabled. Never rebuild schedules as send_later chains tied to one chat.
 
 ## Repo layout
+- `docs/` — the published site (GitHub Pages: index.html + icons; rebuilt by assemble_site.py, never hand-edit)
 - `pipeline/` — the whole site pipeline: data pulls, models, site build (`daily.sh` is the entry point)
 - `pipeline/legacy/` — superseded copies of scripts, reference only
 - `pipeline/archive/` — pre-kickoff copies of every published week (feeds the scorecard; commit them)
