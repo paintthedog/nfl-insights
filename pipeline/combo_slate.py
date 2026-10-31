@@ -19,6 +19,7 @@ Rules (mechanical, every game not yet kicked off; re-running replaces rows only 
 model_p = joint chance (same-game legs through parlay_joint's historical correlations; cross-game legs multiplied).
 indep_p = the legs multiplied as if unrelated. The report scores both, so it also tells whether the correlation model helps.
 Usage: python combo_slate.py W       log week W (refresh_all.sh runs it for each week it builds)
+       python combo_slate.py backfill 7 8   fill games never logged live from their last pre-kickoff archive (marked backfilled)
        python combo_slate.py grade   grade every combos_wk*.csv and write combos_report.json"""
 import sys, json, re, glob
 import numpy as np, pandas as pd
@@ -27,6 +28,10 @@ from sgp_slate import anchored_home_win
 
 TYPES = ["Combo: win + lead RB yards", "Combo: QB yards + WR1 catches", "Combo: top two pass catchers", "Combo: win + likeliest TD scorer",
          "Combo: steady pair across games", "Combo: steady trio across games", "Control: random pair across games"]
+NARR = ["Combo: favorite's RB yards + underdog's WR1 catches", "Combo: QB yards + top TE catches", "Combo: lead RB yards + own QB yards",
+        "Combo: shootout, both QBs' yards", "Combo: ground battle, both lead RBs' yards", "Combo: upset, underdog wins + its RB yards",
+        "Combo: blowout, favorite wins + its RB yards + underdog QB yards", "Combo: WR1 duel, both top receivers' catches"]   # Oct 31: game-script stories
+TYPES = TYPES[:4] + NARR + TYPES[4:]
 TARGET = 0.70
 norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z ]", " ", re.sub(r"\b(jr|sr|ii|iii|iv)\b\.?", "", str(s).lower().replace("'", "")))).strip()
 UNIT = {"rec": "catches", "rush_yds": "rush yds", "pass_yds": "pass yds", "rec_yds": "rec yds"}
@@ -38,8 +43,9 @@ def season_counts(W):
     return pbp.groupby("receiver_player_id").complete_pass.sum().to_dict(), pbp[pbp.rush_attempt.eq(1)].groupby("rusher_player_id").size().to_dict()
 
 
-def build(W, now=None):
-    D = json.load(open(f"site/data_wk{W}.json")); L = json.load(open(f"lines_2026_wk{W}.json")); QS = D["proj"]["quants"]
+def build(W, now=None, D=None, only=None):
+    """D: a pre-kickoff archive copy of the site data (backfill); only: restrict to these game_ids."""
+    D = D or json.load(open(f"site/data_wk{W}.json")); L = D["lines"] if "games" in (D.get("lines") or {}) else json.load(open(f"lines_2026_wk{W}.json")); QS = D["proj"]["quants"]
     sched = pd.read_parquet("data/sched.parquet"); sw = sched[(sched.season == 2026) & (sched.week == W)].set_index("game_id")
     now = now or pd.Timestamp.now(tz="America/New_York")
     kick = lambda gid: pd.Timestamp(f"{sw.loc[gid].gameday} {sw.loc[gid].gametime}").tz_localize("America/New_York")
@@ -70,12 +76,13 @@ def build(W, now=None):
 
     P = D["proj"]["players"]; TD = {(t["name"], t["team"]): t for t in D.get("td", [])}
     SDM = L["sd_margin"]; rows = []; steady_legs = []; pool = []
-    games = sorted([g for g in L["games"] if g["game_id"] in sw.index and kick(g["game_id"]) > now],
+    games = sorted([g for g in L["games"] if g["game_id"] in sw.index and kick(g["game_id"]) > now and (only is None or g["game_id"] in only)],
                    key=lambda g: (str(sw.loc[g["game_id"]].gameday), str(sw.loc[g["game_id"]].gametime), g["game_id"]))
     for g in games:
         gid = g["game_id"]; ph = anchored_home_win(g, SDM)
         fav, pw = (g["home"], ph) if ph >= .5 else (g["away"], 1 - ph)
         win = dict(gid=gid, player=fav, team=fav, stat="ml", line=None, p=round(float(pw), 4), label="WIN")
+        dog = g["away"] if fav == g["home"] else g["home"]; R = {}
         for team in (g["home"], g["away"]):
             tp = [p for p in P if p["team"] == team and real(p)]
             rbs = sorted([p for p in tp if p["pos"] == "RB" and CAR.get(p.get("pid"), 0) >= 25], key=lambda p: -(p["mean"].get("car") or 0))
@@ -95,12 +102,28 @@ def build(W, now=None):
                 l = leg(p, "rec", gid, f"{role} rec")
                 if l: two.append(l)
             if len(two) == 2 and two[0]["label"] != two[1]["label"]: rows.append((TYPES[2], [gid], two))
+            qb_ = max(qbs, key=lambda p: p["mean"].get("pass_yds") or 0) if qbs else None
+            R[team] = dict(qb=qb_ and leg(qb_, "pass_yds", gid, "QB pass_yds"), rb=rbs and leg(rbs[0], "rush_yds", gid, "RB1 rush_yds"),
+                           wr1=wr and leg(wr[0], "rec", gid, "WR1 rec"), te1=te and leg(te[0], "rec", gid, "TE1 rec"))
             for p in tp:                                   # every eligible leg goes into the pool for steady and control combos
                 st = "pass_yds" if p["pos"] == "QB" else "rush_yds" if p["pos"] == "RB" else "rec"
                 l = leg(p, st, gid, None)
                 if l:
                     s = p.get("steady") or {}
                     pool.append(dict(l, steady=s.get("score"), flags=len(s.get("flags") or [])))
+        # game-script stories. Labels are from one team's side ("OPP " = the other team) so parlay_joint applies the right correlations
+        o = lambda l: dict(l, label="OPP " + l["label"])
+        F, U = R.get(fav, {}), R.get(dog, {})
+        dwin = dict(win, player=dog, team=dog, p=round(1 - win["p"], 4))
+        if F.get("rb") and U.get("wr1"): rows.append((NARR[0], [gid], [F["rb"], o(U["wr1"])]))
+        for T in (F, U):
+            if T.get("qb") and T.get("te1"): rows.append((NARR[1], [gid], [T["qb"], T["te1"]]))
+            if T.get("rb") and T.get("qb"): rows.append((NARR[2], [gid], [T["rb"], T["qb"]]))
+        if F.get("qb") and U.get("qb"): rows.append((NARR[3], [gid], [F["qb"], o(U["qb"])]))
+        if F.get("rb") and U.get("rb"): rows.append((NARR[4], [gid], [F["rb"], o(U["rb"])]))
+        if U.get("rb"): rows.append((NARR[5], [gid], [dwin, U["rb"]]))
+        if F.get("rb") and U.get("qb"): rows.append((NARR[6], [gid], [win, F["rb"], o(U["qb"])]))
+        if F.get("wr1") and U.get("wr1"): rows.append((NARR[7], [gid], [F["wr1"], o(U["wr1"])]))
         tds = [t for t in D.get("td", []) if t["team"] in (g["home"], g["away"])]
         tds = [t for t in tds if any(p["name"] == t["name"] and p["team"] == t["team"] and real(p) for p in P)]
         if tds:
@@ -108,13 +131,13 @@ def build(W, now=None):
             rows.append((TYPES[3], [gid], [win, dict(gid=gid, player=t["name"], team=t["team"], stat="atd", line=None, p=round(float(t["p"]), 4), label="TD")]))
         st = [l for l in pool if l["gid"] == gid and (l["steady"] or 0) >= 60 and l["flags"] == 0]
         if st: steady_legs.append(max(st, key=lambda l: (l["steady"], l["p"])))
-    for i in range(0, len(steady_legs) - 1, 2): rows.append((TYPES[4], [l["gid"] for l in steady_legs[i:i + 2]], steady_legs[i:i + 2]))
-    for i in range(0, len(steady_legs) - 2, 3): rows.append((TYPES[5], [l["gid"] for l in steady_legs[i:i + 3]], steady_legs[i:i + 3]))
+    for i in range(0, len(steady_legs) - 1, 2): rows.append(("Combo: steady pair across games", [l["gid"] for l in steady_legs[i:i + 2]], steady_legs[i:i + 2]))
+    for i in range(0, len(steady_legs) - 2, 3): rows.append(("Combo: steady trio across games", [l["gid"] for l in steady_legs[i:i + 3]], steady_legs[i:i + 3]))
     gids = sorted({l["gid"] for l in pool})
     for _ in range(8 if len(gids) >= 2 else 0):
         a, b = rng.choice(gids, 2, replace=False)
         la = [l for l in pool if l["gid"] == a]; lb = [l for l in pool if l["gid"] == b]
-        rows.append((TYPES[6], [a, b], [la[rng.integers(len(la))], lb[rng.integers(len(lb))]]))
+        rows.append(("Control: random pair across games", [a, b], [la[rng.integers(len(la))], lb[rng.integers(len(lb))]]))
 
     stamp = now.tz_convert("UTC").strftime("%Y-%m-%dT%H:%MZ"); out = []
     for t, gl, legs in rows:
@@ -141,6 +164,33 @@ def log(W):
         new = new[~new.games.map(lambda s: any(started(g) for g in s.split(",")))]
     pd.concat([old, new], ignore_index=True).to_csv(f, index=False)
     print(f"{f}: {len(new)} combos logged for games not yet started ({len(old)} kept)")
+
+
+def backfill(W):
+    """Oct 31: rebuild week W's combos after the fact from the site data archived BEFORE each game's kickoff (archive/data_wk{W}_*.json,
+    saved by assemble_site.py on every publish). Same rules and numbers as a live run; rows carry backfilled=1 so the record says so.
+    Only games whose combos were never logged live are filled; weeks before 7 have no archives (lost in the Oct 21 export)."""
+    import glob as _g
+    sched = pd.read_parquet("data/sched.parquet"); sw = sched[(sched.season == 2026) & (sched.week == W)].set_index("game_id")
+    kick = lambda gid: pd.Timestamp(f"{sw.loc[gid].gameday} {sw.loc[gid].gametime}").tz_localize("America/New_York")
+    arch = sorted(_g.glob(f"archive/data_wk{W}_*.json"))
+    stamp = lambda f: pd.Timestamp(f[-18:-5].replace("_", " "), tz="America/New_York") if False else pd.to_datetime(f[-18:-5], format="%Y%m%d_%H%M").tz_localize("America/New_York")
+    f = f"combos_wk{W}.csv"
+    try: old = pd.read_csv(f)
+    except FileNotFoundError: old = pd.DataFrame(columns=["games"])
+    have = {g for s_ in old.games for g in str(s_).split(",")}
+    pick = {}
+    for gid in sw.index:
+        if gid in have: continue
+        pre = [a for a in arch if stamp(a) < kick(gid)]
+        if pre: pick.setdefault(pre[-1], []).append(gid)
+    new = []
+    for a, gids in pick.items():
+        d = build(W, now=stamp(a), D=json.load(open(a)), only=set(gids))
+        if len(d): d["backfilled"] = 1; new.append(d)
+    if new:
+        old = pd.concat([old] + new, ignore_index=True); old.to_csv(f, index=False)
+    print(f"{f}: backfilled {sum(len(d) for d in new)} combos for {sum(len(v) for v in pick.values())} games from {len(pick)} pre-kickoff archive(s)")
 
 
 def grade():
@@ -203,4 +253,5 @@ def grade():
 
 if __name__ == "__main__":
     if sys.argv[1] == "grade": grade()
+    elif sys.argv[1] == "backfill": [backfill(int(w)) for w in sys.argv[2:]]
     else: log(int(sys.argv[1]))
