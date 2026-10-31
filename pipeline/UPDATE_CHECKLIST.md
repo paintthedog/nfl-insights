@@ -32,10 +32,12 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Freshness rule (the Bigsby lesson): any override older than 48h gets re-verified or removed
 - [ ] Tier discipline: availability facts → model inputs; role facts → pool/seeds; narrative → `team_notes` only. Never hand-edit projections.
 
-## 4. Weather (within 48h of kickoff; skip early-week)
-- [ ] WebFetch mysportsweather.com/nfl (primary: meteorologist, kickoff-hour wind + gusts) + covers.com/sport/nfl/weather (cross-check); note any >3 mph disagreement in the source column. Open-Meteo is blocked to fetching (robots); NWS point forecasts only for a single genuinely windy/snowy game
-- [ ] Rewrite `forecasts_wk{W}.csv` (team,wind,temp,precip,source) — outdoor stadiums only; note source disagreements
-- [ ] Roof games (ARI, ATL, DAL, HOU, IND, LV, MIN, NO, DET, LAR/LAC): leave to sched roof field
+## 4. Weather (REQUIRED on every run with an outdoor game inside 72 hours, i.e. Thu–Mon; Oct 31: Week 8 sat with no forecasts until Saturday afternoon)
+- [ ] WebFetch https://www.mysportsweather.com/nfl (primary: kickoff-hour wind + gusts, temp, precip; NBM block as a second opinion) and https://www.covers.com/sport/nfl/weather (cross-check; one wind number, no gusts). Open-Meteo is blocked (robots); NWS point forecasts only for a single genuinely windy/snowy game
+- [ ] Rewrite `forecasts_wk{W}.csv` (team,wind,temp,precip,source) every run: one row per OUTDOOR game keyed by HOME team code as in sched (LA = Rams), wind = MySportsWeather kickoff hour; source note = "MySportsWeather <Mon D> (gusts N); Covers X" and "(>3 mph apart)" when they disagree by more than 3 mph. Do the same for W+1 once its games are inside 72h
+- [ ] If one source fails, use the other and say so in the note; never leave a game blank. If both fail, say so prominently in the digest
+- [ ] Roof games (ATL, DAL closed, DET, HOU, IND, LV, MIN, NO, ARI, LA/LAC at SoFi): leave to the sched roof field
+- [ ] audit_stale.py flags [WEATHER] for any outdoor game inside 72h with no row, and for a file not refreshed today or yesterday (it looks for the date in the source notes). Then rerun refresh_all.sh so totals and player projections use the wind
 
 ## 5. Rebuild everything
 - [ ] `python dvp_td.py` (season-level TDs allowed by position)

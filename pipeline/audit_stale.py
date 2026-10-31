@@ -85,10 +85,23 @@ if pbp.week.max() < done_wk: flag("FRESHNESS", f"play-by-play only through week 
 # DFS salaries: Clinton attaches DK's salary export early in the week; until then the site's value columns are blank
 if not os.path.exists(f"dk_salaries_wk{W}.csv"):
     flag("DFS", f"no dk_salaries_wk{W}.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate")
-# 6. weather inside 48h
-k = pd.to_datetime(sw.gameday).min()
+# 6. weather (Oct 31, Clinton: "no forecast data so close to the games" is a flaw). Every unplayed OUTDOOR game kicking off within
+#    72 hours needs a row in forecasts_wk{W}.csv, refreshed today (MySportsWeather primary, Covers cross-check; see UPDATE_CHECKLIST step 4).
 import os
-if (k - pd.Timestamp.now()).days < 2 and not os.path.exists(f"forecasts_wk{W}.csv"): flag("WEATHER", f"first game {k.date()} is within 48h and forecasts_wk{W}.csv is missing")
+_now_et = pd.Timestamp.now(tz="America/New_York")
+_ko = lambda r: pd.Timestamp(f"{r.gameday} {r.gametime}").tz_localize("America/New_York")
+_soon = [r for r in sw.itertuples() if pd.isna(r.result) and str(r.roof) in ("outdoors", "open") and pd.Timedelta(0) < _ko(r) - _now_et < pd.Timedelta(hours=72)]
+if _soon:
+    try: _fc = pd.read_csv(f"forecasts_wk{W}.csv")
+    except FileNotFoundError: _fc = None
+    if _fc is None:
+        flag("WEATHER", f"{len(_soon)} outdoor game(s) kick off within 72h and forecasts_wk{W}.csv is missing: fetch MySportsWeather + Covers")
+    else:
+        _miss = [r.home_team for r in _soon if r.home_team not in set(_fc.team)]
+        if _miss: flag("WEATHER", f"no forecast row for outdoor game(s) at {', '.join(_miss)} (kickoff within 72h)")
+        _today = [_now_et.strftime(f"%b {_now_et.day}"), (_now_et - pd.Timedelta(days=1)).strftime("%b ") + str((_now_et - pd.Timedelta(days=1)).day)]
+        if not _fc.source.astype(str).str.contains("|".join(_today)).any():
+            flag("WEATHER", f"forecasts_wk{W}.csv was not refreshed today or yesterday (no '{_today[0]}' in its source notes): refetch")
 # ROLE CHECK (Oct 17): DraftKings prices carry role news fast (Allgeier, R. White, McLaughlin, the Drew Lock miss). When DK implies a much
 # bigger (or smaller) role than the model, it is usually the model that is stale: look at the news, adjust out/p_play/next_man, never the numbers.
 try:

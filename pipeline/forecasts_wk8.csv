@@ -1,0 +1,11 @@
+team,wind,temp,precip,source
+TB,12,80,73,MySportsWeather Oct 31 (gusts 21; NBM 12/20); Covers 15.1 (summary - unverified)
+BUF,3,63,0,MySportsWeather Oct 31 (gusts 6); Covers 6.3 (summary - unverified; >3 mph apart)
+CIN,3,68,20,MySportsWeather Oct 31 (gusts 8); Covers 5.4 (summary - unverified)
+PIT,3,66,0,MySportsWeather Oct 31 (gusts 7); Covers 4.2 (summary - unverified)
+JAX,18,75,50,MySportsWeather Oct 31 (gusts 25; NBM 16/25); Covers 14.1 (summary - unverified; >3 mph apart)
+NYJ,8,61,0,MySportsWeather Oct 31 (gusts 10; NBM 4/6); Covers 5.0 (summary - unverified)
+DEN,5,64,0,MySportsWeather Oct 31 (gusts 14); not in Covers read
+MIA,14,79,85,MySportsWeather Oct 31 (gusts 25); not in Covers read
+WAS,1,51,0,MySportsWeather Oct 31 (gusts 5); not in Covers read
+SEA,1,52,3,MySportsWeather Oct 31 (gusts 2) - Monday night; not in Covers read
