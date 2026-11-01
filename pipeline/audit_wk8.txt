@@ -1,3 +1,2 @@
-Staleness audit, week 8: 2 item(s)
-  [CARRYOVER] Breece Hall was out last week, now projected 5.2 pts with no Week 8 status — confirm he's back
-  [STALE] lead_back HOU set 2026-10-22 (9 days ago) - re-verify or remove
+Staleness audit, week 8: 1 item(s)
+  [STALE] lead_back HOU set 2026-10-22 (10 days ago) - re-verify or remove
