@@ -33,6 +33,7 @@ pg = PM.player_games(PM.load())[0]
 pg = pg[pg.game_id.isin(done)].copy()
 pg["fp_ppr"] = (pg.pass_yds * .04 + pg.pass_td * 4 - pg.ints * 2 + pg.rush_yds * .1 + pg.rush_td * 6 + pg.rec + pg.rec_yds * .1 + pg.rec_td * 6)
 act = pg.set_index(["game_id", "pid"])
+ZERO = pd.Series(0.0, index=pg.columns.drop(["game_id", "pid"], errors="ignore"))
 pl = pd.read_parquet("data/players.parquet", columns=["gsis_id", "display_name"])
 NM = {}
 for g, n in zip(pl.gsis_id, pl.display_name): NM.setdefault(norm(n), []).append(g)
@@ -40,6 +41,13 @@ tds = pbp[pbp.touchdown.eq(1) & pbp.td_player_id.notna()].groupby(["game_id", "t
 ints = pbp.groupby(["game_id", "passer_player_id"]).interception.sum()
 dropbacks = pbp[pbp.qb_dropback.eq(1)].groupby(["game_id", "passer_player_id"]).size()
 touched = pbp.groupby("game_id").apply(lambda g: set(g.passer_player_id.dropna()) | set(g.rusher_player_id.dropna()) | set(g.receiver_player_id.dropna()))
+# Nov 2: grade every listed player who was ON THE FIELD (offensive snaps > 0), counting a 0-target day as a 0. Before this only
+# players who touched the ball were graded, which selected on good days: results ran ~10% above projections and ~15% beat the
+# ceiling, and players who played 50 snaps without a target were miscounted as no-shows. Games without snap counts yet fall back
+# to "touched the ball".
+_sn = pd.read_parquet("data/snaps.parquet", columns=["game_id", "gsis_id", "offense_snaps"])
+ONFIELD = _sn[_sn.offense_snaps.fillna(0) > 0].groupby("game_id").gsis_id.apply(set).to_dict()
+on_field = lambda gid, pid: pid in ONFIELD[gid] if gid in ONFIELD else pid in touched.get(gid, set())
 
 
 def pid_in(name, gid):
@@ -83,9 +91,12 @@ for wk in weeks:
             # Oct 26: players the site expected to play for real volume (p_play 0.9+, 5+ PPR points) who never touched the ball.
             # Every number published for them was wrong before kickoff, and the averages below skip them, so count them here.
             if gid in gids and (p.get("p_play") or 1) >= 0.9 and ((p.get("mean") or {}).get("fp_ppr") or 0) >= 5:
-                NS.append(dict(wk=wk, name=p["name"], team=p["team"], pos=p["pos"], fp=float(p["mean"]["fp_ppr"]), y=float(p["pid"] not in touched.get(gid, set()))))
-            if gid not in gids or (gid, p["pid"]) not in act.index: continue
-            a = act.loc[(gid, p["pid"])]; a = a.iloc[0] if isinstance(a, pd.DataFrame) else a
+                NS.append(dict(wk=wk, name=p["name"], team=p["team"], pos=p["pos"], fp=float(p["mean"]["fp_ppr"]), y=float(not on_field(gid, p["pid"]))))
+            if gid not in gids: continue
+            if (gid, p["pid"]) in act.index:
+                a = act.loc[(gid, p["pid"])]; a = a.iloc[0] if isinstance(a, pd.DataFrame) else a
+            elif on_field(gid, p["pid"]): a = ZERO
+            else: continue
             if (p.get("p_play") or 1) < 0.9: continue
             for st in AVG_STATS:
                 if st in ("pass_yds",) and p["pos"] != "QB": continue
@@ -316,7 +327,7 @@ if "games" in out and out["games"]["n"] >= 30:
 ns = out.get("no_shows")
 if ns:
     lab = "Too early" if ns["n"] < 200 else ("On target" if ns["rate"] <= 0.03 else "Lean found")
-    line("Expected to play, didn't", lab, f"{ns['missed']} of {ns['n']} players projected to play for 5+ PPR points never touched the ball ({ns['rate']:.1%}). Every number the site showed for them was wrong before kickoff, and the averages above leave them out." + (f" Week {ns['week']}: " + "; ".join(ns["names"]) + "." if ns["names"] else ""))
+    line("Expected to play, didn't", lab, f"{ns['missed']} of {ns['n']} players projected to play for 5+ PPR points never took an offensive snap ({ns['rate']:.1%}). Every number the site showed for them was wrong before kickoff, and the averages above leave them out." + (f" Week {ns['week']}: " + "; ".join(ns["names"]) + "." if ns["names"] else ""))
 if "games" in out and out["games"]["n"] >= 30:
     g = out["games"]; better = g["margin_line"] is not None and g["margin_model"] < g["margin_line"]
     line("Game lines", "Ahead of the market" if better else "Market is closer", f"Average miss on the margin {g['margin_model']:.1f} points vs the closing spread's {g['margin_line']:.1f}, over {g['n']} games." + ("" if better else " Read the model's spread as a second opinion, not a bet."))
