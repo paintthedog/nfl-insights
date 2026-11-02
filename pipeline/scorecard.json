@@ -3,6 +3,7 @@
  "weeks": [
   4,
   5,
+  6,
   7,
   8
  ],
@@ -14,13 +15,14 @@
  "vs_lines": [
   {
    "stat": "Receptions",
-   "n": 286,
-   "model": 1.58,
-   "dk": 1.58,
-   "closer": 0.517,
+   "n": 405,
+   "model": 1.61,
+   "dk": 1.6,
+   "closer": 0.501,
    "weeks": [
     4,
     5,
+    6,
     7
    ]
   },
@@ -191,54 +193,54 @@
  "probs": [
   {
    "mkt": "Anytime TD",
-   "n": 756,
-   "said": 0.213,
-   "hap": 0.242,
-   "brier": 0.1587,
-   "brier_dk": 0.1539,
+   "n": 976,
+   "said": 0.217,
+   "hap": 0.235,
+   "brier": 0.158,
+   "brier_dk": 0.1547,
    "brier_coin": null,
    "buckets": [
     {
      "lo": 0.0,
      "hi": 0.1,
-     "n": 120,
+     "n": 146,
      "said": 0.078,
-     "hap": 0.042
+     "hap": 0.048
     },
     {
      "lo": 0.1,
      "hi": 0.2,
-     "n": 299,
+     "n": 383,
      "said": 0.148,
-     "hap": 0.137
+     "hap": 0.138
     },
     {
      "lo": 0.2,
      "hi": 0.3,
-     "n": 180,
-     "said": 0.246,
-     "hap": 0.322
+     "n": 239,
+     "said": 0.247,
+     "hap": 0.314
     },
     {
      "lo": 0.3,
      "hi": 0.4,
-     "n": 88,
-     "said": 0.336,
-     "hap": 0.42
+     "n": 117,
+     "said": 0.337,
+     "hap": 0.359
     },
     {
      "lo": 0.4,
      "hi": 0.5,
-     "n": 41,
-     "said": 0.448,
-     "hap": 0.585
+     "n": 51,
+     "said": 0.446,
+     "hap": 0.549
     },
     {
      "lo": 0.5,
      "hi": 1,
-     "n": 28,
-     "said": 0.558,
-     "hap": 0.643
+     "n": 40,
+     "said": 0.565,
+     "hap": 0.6
     }
    ]
   },
@@ -393,15 +395,16 @@
   },
   {
    "name": "Anytime TD",
-   "n": 283,
+   "n": 503,
    "unit": "Brier score, lower is better",
-   "market": 0.1494,
-   "model": 0.1524,
-   "blend": 0.1486,
+   "market": 0.1525,
+   "model": 0.1537,
+   "blend": 0.1523,
    "best": "blend",
    "weeks": [
     4,
-    5
+    5,
+    6
    ]
   }
  ],
@@ -461,6 +464,22 @@
    "snapshot": false
   },
   {
+   "week": 6,
+   "fp_mae": null,
+   "fp_bias": null,
+   "below": null,
+   "above": null,
+   "td_said": 50.6,
+   "td_hap": 46,
+   "td_n": 220,
+   "td_brier": 0.1553,
+   "td_brier_dk": 0.1564,
+   "margin_model": null,
+   "margin_line": null,
+   "n_games": 0,
+   "snapshot": false
+  },
+  {
    "week": 7,
    "fp_mae": 4.7,
    "fp_bias": 0.5,
@@ -497,6 +516,7 @@
   "weeks": [
    4,
    5,
+   6,
    7,
    8
   ],
@@ -601,18 +621,18 @@
     },
     {
      "pred": "Player scores a TD",
-     "n": 756,
+     "n": 976,
      "need": 100,
-     "said": 0.213,
-     "hap": 0.242,
+     "said": 0.217,
+     "hap": 0.235,
      "right": null,
      "n_side": null,
      "top": {
-      "n": 152,
-      "said": 0.408,
-      "hap": 0.507
+      "n": 196,
+      "said": 0.414,
+      "hap": 0.459
      },
-     "verdict": "Too cautious on its likeliest calls"
+     "verdict": "About right"
     },
     {
      "pred": "QB throws an interception",
@@ -683,6 +703,26 @@
        "hap": 0.547
       },
       "verdict": "Too cautious on its likeliest calls"
+     }
+    ]
+   },
+   "6": {
+    "stats": [],
+    "calls": [
+     {
+      "pred": "Player scores a TD",
+      "n": 220,
+      "need": 100,
+      "said": 0.23,
+      "hap": 0.209,
+      "right": null,
+      "n_side": null,
+      "top": {
+       "n": 44,
+       "said": 0.432,
+       "hap": 0.318
+      },
+      "verdict": "About right"
      }
     ]
    },
@@ -989,8 +1029,8 @@
  "card": [
   {
    "name": "Touchdown chances",
-   "label": "Lean found",
-   "text": "A little behind DraftKings over 756 priced players. Overall it runs low: players scored more often than it said. Too cautious on likely scorers: players it put at 40%+ scored 61% of the time, not 49%."
+   "label": "On target",
+   "text": "A little behind DraftKings over 976 priced players."
   },
   {
    "name": "Floors and ceilings",
@@ -1015,7 +1055,7 @@
   {
    "name": "Player lines vs DraftKings",
    "label": "Market is closer",
-   "text": "Average miss on the same players: receptions tied, receiving yards behind, rushing yards behind, passing yards behind (575 lines). DraftKings' line already includes what the model knows, so a gap is information, not a bet."
+   "text": "Average miss on the same players: receptions tied, receiving yards behind, rushing yards behind, passing yards behind (694 lines). DraftKings' line already includes what the model knows, so a gap is information, not a bet."
   },
   {
    "name": "Line movement",
@@ -1034,8 +1074,8 @@
   },
   {
    "name": "Off the market? Anytime TD",
-   "label": "Too early",
-   "text": "283 of 300 needed. So far: market 0.1494, model 0.1524, blend 0.1486 (Brier score, lower is better, 283 players)."
+   "label": "Blend adds a little",
+   "text": "Which number was closest to what happened: market 0.1525, model 0.1537, blend 0.1523 (Brier score, lower is better, 503 players)."
   }
  ]
 }

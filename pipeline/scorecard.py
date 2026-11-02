@@ -59,7 +59,13 @@ LINE_KEY = {"pass_yds": "pass_yds", "rush_yds": "rush_yds", "rec": "rec", "rec_y
 QI = {q: i for i, q in enumerate(PM.QUANTS)}
 A, R, PR, G, NS = [], [], [], [], []
 SNAP_GAMES = set()
-_pre = lambda d: d[pd.to_datetime(d.pulled_at, utc=True, format="ISO8601") < pd.to_datetime(d.kickoff, utc=True, format="ISO8601")]
+# Nov 2: the Week 6 odds-pull rows were logged without a kickoff time, so every one failed the pre-kickoff test and Week 6 vanished from
+# the record. Fill a missing kickoff from the schedule (gameday + gametime are Eastern).
+_KO = {r.game_id: pd.Timestamp(f"{r.gameday} {r.gametime}", tz="America/New_York").tz_convert("UTC") for r in sched.itertuples() if isinstance(r.gametime, str)}
+def _ko(d):
+    k = pd.to_datetime(d.kickoff, utc=True, format="ISO8601")
+    return k.fillna(d.game_id.map(_KO))
+_pre = lambda d: d[pd.to_datetime(d.pulled_at, utc=True, format="ISO8601") < _ko(d)]
 _lt = _pre(pd.read_csv("props_log.csv")); _lt = _lt[_lt.book == "draftkings"].sort_values("pulled_at")
 DKTD = {(g, norm(n)): p for g, n, p in zip(_lt.game_id, _lt.player, _lt.price)}   # last pre-kickoff DK price, to compare against
 weeks = sorted({int(re.search(r"wk(\d+)_", f).group(1)) for f in glob.glob("archive/data_wk*_*.json")})
@@ -134,7 +140,7 @@ for wk in weeks:
             PR.append(dict(wk=wk, mkt="Model's favorite wins", p=max(Phi(g["m_margin"] / sd), 1 - Phi(g["m_margin"] / sd)), y=float((mg > 0) == (g["m_margin"] > 0)) if mg != 0 else 0.5, dk=None))
 
 # games published before the snapshot archive existed (Weeks 4-5): the odds pulls logged the model's TD chance next to DK's price before kickoff
-pre_k = lambda d: d[pd.to_datetime(d.pulled_at, utc=True, format="ISO8601") < pd.to_datetime(d.kickoff, utc=True, format="ISO8601")]
+pre_k = _pre
 lt = pre_k(pd.read_csv("props_log.csv")); lt = lt[(lt.season == SEASON) & (lt.book == "draftkings") & lt.game_id.isin(done) & ~lt.game_id.isin(SNAP_GAMES)]
 lt = lt.sort_values("pulled_at").drop_duplicates(["game_id", "player"], keep="last")
 for r in lt.itertuples():

@@ -1780,7 +1780,7 @@ let accWk = "all"; const accSt = { s: { key: "ord", dir: 1 }, c: { key: "ord", d
 function renderAccuracy() {
   const AC = SC && SC.accuracy;
   if (!AC) { $("#sc-intro").innerHTML = "Nothing graded yet."; ["#acc-stats", "#acc-calls"].forEach(i => $(i).innerHTML = ""); $("#acc-wk").innerHTML = ""; $("#acc-read").innerHTML = ""; return; }
-  $("#sc-intro").innerHTML = `Every number the site published, checked against what happened, using the copy of the site saved before each kickoff (Weeks 4–5: touchdown chances only, from the odds pulls). Graded through ${esc(SC.asof)}.`;
+  $("#sc-intro").innerHTML = `Every number the site published, checked against what happened, using the copy of the site saved before each kickoff (Weeks 4–6: touchdown chances only, from the odds pulls). Graded through ${esc(SC.asof)}.`;
   const wks = (AC.weeks || []).slice().sort((a, b) => b - a);
   if (accWk !== "all" && !AC.by_week[accWk]) accWk = "all";
   $("#acc-wk").innerHTML = [["all", "All season"], ...wks.map(w => [String(w), `Week ${w}`])].map(([k, l]) => `<button data-accw="${k}" aria-pressed="${k === accWk}">${l}</button>`).join("");
@@ -1798,7 +1798,7 @@ function renderAccuracy() {
     { k: "inside", label: "Inside floor–ceiling", cell: r => r.inside == null ? dash : `<span class="num ${/Ranges/.test(r.verdict) ? "move" : ""}">${Math.round(r.inside * 100)}%</span><span class="sub">aim 80%</span>` },
     ...(mob ? [] : [{ k: "verdict", label: "Verdict", asc: 1, cell: r => vl(r.verdict) }])],
     (D.stats || []).map((r, i) => ({ ...r, ord: i })), accSt.s, renderAccuracy);
-  if (!(D.stats || []).length) $("#acc-stats").innerHTML = `<tbody><tr><td><span class="sub">No player stats graded for this week: only touchdown chances survive from Weeks 4–5 (the odds pulls).</span></td></tr></tbody>`;
+  if (!(D.stats || []).length) $("#acc-stats").innerHTML = `<tbody><tr><td><span class="sub">No player stats graded for this week: only touchdown chances survive from Weeks 4–6 (the odds pulls).</span></td></tr></tbody>`;
   const extra = r => r.right != null ? `<span class="sub">${mob ? "right" : "picked the right side"} ${r.right} of ${r.n_side}</span>`
     : r.top ? `<span class="sub">${mob ? "top fifth" : "likeliest fifth: said"} ${Math.round(r.top.said * 100)}%${mob ? "→" : ", happened "}${Math.round(r.top.hap * 100)}%</span>` : "";
   colTable($("#acc-calls"), [
@@ -1813,7 +1813,7 @@ function renderAccuracy() {
   if (mob) {
     const row = (name, v, txt) => `<div class="rrow"><div><h4>${esc(name)}</h4>${vl(v)}</div><p>${txt}</p></div>`;
     $("#acc-stats-m").innerHTML = (D.stats || []).map(r => row(r.stat, r.verdict, `Typical miss <b>${r.mae.toFixed(r.mae < 10 ? 1 : 0)} ${esc(r.unit)}</b> · ${Math.abs(r.bias) < 0.02 * Math.max(r.proj, 1) ? "even" : `${Math.abs(r.bias).toFixed(r.proj >= 20 ? 1 : 2)} ${r.bias > 0 ? "low" : "high"}`} · <b>${r.inside == null ? "—" : Math.round(r.inside * 100) + "%"}</b> inside floor–ceiling (aim 80%) · ${r.n} graded`)).join("")
-      || `<div class="rrow"><p>No player stats graded for this week: only touchdown chances survive from Weeks 4–5 (the odds pulls).</p></div>`;
+      || `<div class="rrow"><p>No player stats graded for this week: only touchdown chances survive from Weeks 4–6 (the odds pulls).</p></div>`;
     $("#acc-calls-m").innerHTML = (D.calls || []).map(r => row(r.pred, r.verdict, `Model said <b>${Math.round(r.said * 100)}%</b> · happened <b>${Math.round(r.hap * 100)}%</b>${r.right != null ? ` · right side ${r.right} of ${r.n_side}` : r.top ? ` · likeliest fifth: said ${Math.round(r.top.said * 100)}%, happened ${Math.round(r.top.hap * 100)}%` : ""} · ${r.n} graded${r.n < r.need ? ` (needs ${r.need})` : ""}`)).join("");
   }
   $("#acc-read").innerHTML = `<b>How to read it.</b> <b>Typical miss</b> is the average distance between the projection and the result. <b>Lean</b> says whether results came in above the projection (the model ran low) or below it (ran high). The <b>floor–ceiling</b> range is the 10th to 90th percentile, so about 80% of results should land inside; much less means the ranges are too narrow. For yes/no calls, <b>Model said</b> is the average chance it gave and <b>Happened</b> is how often it came true; when the two match, the chances can be taken at face value. Verdicts come from fixed rules and need 100+ players or 30+ games; "Too early" is not a grade. One week is mostly noise.`;
