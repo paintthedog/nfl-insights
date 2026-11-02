@@ -102,8 +102,13 @@ for wk in weeks:
                 if st == "pass_yds" and p["pos"] != "QB": continue
                 if st in ("tgt", "rec", "rec_yds") and p["pos"] == "QB": continue
                 v = float(a[st]); lo, hi, q25, q75 = q[QI[0.1]], q[QI[0.9]], q[QI[0.25]], q[QI[0.75]]
-                R.append(dict(wk=wk, pos=p["pos"], stat=st, below=1.0 if v < lo else (.5 if v == lo else 0.0), above=1.0 if v > hi else (.5 if v == hi else 0.0),
-                              mid=float(q25 <= v <= q75), v=v, lo=lo, hi=hi, q25=q25, q75=q75, m=float((p.get("mean") or {}).get(st) or 0),
+                # Nov 2: ties on a count stat (a backup back with a 0 floor who gets 0 yards) are split by where the result sits in the
+                # published distribution (randomized PIT from the 21 quantiles): the share of the result's probability band that lies
+                # below the 10th / above the 90th / inside 25th-75th. The old rule gave a tie half credit outside, which made every 0-floor
+                # backup look like a miss; counting ties as inside overstates coverage the other way.
+                QL = PM.QUANTS; flo = max([QL[i] for i, x in enumerate(q) if x < v], default=0.0); fhi = min([QL[i] for i, x in enumerate(q) if x > v], default=1.0)
+                wdt = max(fhi - flo, 1e-9); part = lambda a, b: max(0.0, min(fhi, b) - max(flo, a)) / wdt
+                R.append(dict(wk=wk, pos=p["pos"], stat=st, below=part(0, 0.1), above=part(0.9, 1), mid=part(0.25, 0.75), v=v, lo=lo, hi=hi, q25=q25, q75=q75, m=float((p.get("mean") or {}).get(st) or 0),
                               mcar=float((p.get("mean") or {}).get("car") or 0), name=p["name"], team=p["team"]))
         # ---- touchdowns
         for r in (D["td"] if isinstance(D["td"], list) else D["td"].get("rows", [])):
@@ -258,8 +263,11 @@ def _acc(wsel):
                 tol = max(0.04, 2 * np.sqrt(0.16 / len(y)))
                 if inside < 0.80 - tol: issues.append("Ranges too narrow")
                 elif inside > 0.80 + tol: issues.append("Ranges too wide")
+                ab = float(y.above.mean())
+                if "Ranges too narrow" not in issues and ab > 0.10 + max(0.03, 2 * np.sqrt(0.09 / len(y))): issues.append("Ceilings too low")
+                elif "Ranges too narrow" not in issues and ab < 0.10 - max(0.03, 2 * np.sqrt(0.09 / len(y))): issues.append("Ceilings too high")
         stats.append(dict(stat=lab, unit=unit, n=n, proj=round(pm, 1), act=round(float(x.act.mean()), 1), mae=round(mae, 2), bias=round(bias, 2),
-                          inside=None if inside is None else round(inside, 3), n_range=len(y), verdict="Too early" if n < 100 else (" · ".join(issues) or "About right")))
+                          inside=None if inside is None else round(inside, 3), n_range=len(y), above=round(float(y.above.mean()), 3) if len(y) else None, verdict="Too early" if n < 100 else (" · ".join(issues) or "About right")))
     calls = []
     for mkt, lab, need in ACC_CALLS:
         x = pr[pr.mkt == mkt] if len(pr) else pr

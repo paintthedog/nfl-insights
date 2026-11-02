@@ -150,44 +150,44 @@
   {
    "stat": "Rushing yards",
    "n": 257,
-   "below": 0.183,
-   "above": 0.214,
-   "mid": 0.65
+   "below": 0.064,
+   "above": 0.149,
+   "mid": 0.502
   },
   {
    "stat": "Carries",
    "n": 257,
-   "below": 0.171,
-   "above": 0.195,
-   "mid": 0.747
+   "below": 0.054,
+   "above": 0.129,
+   "mid": 0.558
   },
   {
    "stat": "Targets",
    "n": 398,
-   "below": 0.079,
-   "above": 0.109,
-   "mid": 0.704
+   "below": 0.059,
+   "above": 0.107,
+   "mid": 0.555
   },
   {
    "stat": "Receptions",
    "n": 398,
-   "below": 0.113,
-   "above": 0.119,
-   "mid": 0.686
+   "below": 0.082,
+   "above": 0.109,
+   "mid": 0.502
   },
   {
    "stat": "Receiving yards",
    "n": 398,
-   "below": 0.128,
+   "below": 0.1,
    "above": 0.146,
-   "mid": 0.513
+   "mid": 0.45
   },
   {
    "stat": "Fantasy points (PPR)",
    "n": 450,
-   "below": 0.1,
+   "below": 0.093,
    "above": 0.14,
-   "mid": 0.5
+   "mid": 0.47
   }
  ],
  "probs": [
@@ -483,7 +483,7 @@
    "week": 7,
    "fp_mae": 4.7,
    "fp_bias": 0.5,
-   "below": 0.094,
+   "below": 0.085,
    "above": 0.13,
    "td_said": 52.6,
    "td_hap": 58,
@@ -499,7 +499,7 @@
    "week": 8,
    "fp_mae": 4.99,
    "fp_bias": 0.44,
-   "below": 0.107,
+   "below": 0.103,
    "above": 0.152,
    "td_said": 47.7,
    "td_hap": 58,
@@ -530,8 +530,9 @@
      "act": 2.6,
      "mae": 1.37,
      "bias": 0.12,
-     "inside": 0.768,
+     "inside": 0.809,
      "n_range": 398,
+     "above": 0.109,
      "verdict": "About right"
     },
     {
@@ -542,8 +543,9 @@
      "act": 3.7,
      "mae": 1.65,
      "bias": 0.16,
-     "inside": 0.812,
+     "inside": 0.833,
      "n_range": 398,
+     "above": 0.107,
      "verdict": "About right"
     },
     {
@@ -554,8 +556,9 @@
      "act": 28.5,
      "mae": 19.04,
      "bias": 2.61,
-     "inside": 0.726,
+     "inside": 0.754,
      "n_range": 398,
+     "above": 0.146,
      "verdict": "Ranges too narrow"
     },
     {
@@ -566,9 +569,10 @@
      "act": 23.6,
      "mae": 14.75,
      "bias": 1.77,
-     "inside": 0.603,
+     "inside": 0.787,
      "n_range": 257,
-     "verdict": "Ranges too narrow"
+     "above": 0.149,
+     "verdict": "Ceilings too low"
     },
     {
      "stat": "Carries",
@@ -578,9 +582,10 @@
      "act": 7.1,
      "mae": 3.02,
      "bias": 0.7,
-     "inside": 0.634,
+     "inside": 0.817,
      "n_range": 257,
-     "verdict": "Runs low \u00b7 Ranges too narrow"
+     "above": 0.129,
+     "verdict": "Runs low"
     },
     {
      "stat": "Passing yards",
@@ -592,6 +597,7 @@
      "bias": -7.11,
      "inside": 0.846,
      "n_range": 52,
+     "above": 0.058,
      "verdict": "Too early"
     },
     {
@@ -602,9 +608,10 @@
      "act": 9.2,
      "mae": 4.84,
      "bias": 0.47,
-     "inside": 0.76,
+     "inside": 0.767,
      "n_range": 450,
-     "verdict": "About right"
+     "above": 0.14,
+     "verdict": "Ceilings too low"
     }
    ],
    "calls": [
@@ -736,8 +743,9 @@
       "act": 2.6,
       "mae": 1.29,
       "bias": 0.04,
-      "inside": 0.8,
+      "inside": 0.836,
       "n_range": 213,
+      "above": 0.092,
       "verdict": "About right"
      },
      {
@@ -748,8 +756,9 @@
       "act": 3.7,
       "mae": 1.59,
       "bias": 0.08,
-      "inside": 0.829,
+      "inside": 0.847,
       "n_range": 213,
+      "above": 0.103,
       "verdict": "About right"
      },
      {
@@ -760,8 +769,9 @@
       "act": 28.7,
       "mae": 18.97,
       "bias": 2.26,
-      "inside": 0.714,
+      "inside": 0.739,
       "n_range": 213,
+      "above": 0.155,
       "verdict": "Ranges too narrow"
      },
      {
@@ -772,9 +782,10 @@
       "act": 23.7,
       "mae": 15.95,
       "bias": 2.08,
-      "inside": 0.607,
+      "inside": 0.78,
       "n_range": 131,
-      "verdict": "Ranges too narrow"
+      "above": 0.153,
+      "verdict": "Ceilings too low"
      },
      {
       "stat": "Carries",
@@ -784,8 +795,9 @@
       "act": 6.8,
       "mae": 3.03,
       "bias": 0.51,
-      "inside": 0.626,
+      "inside": 0.798,
       "n_range": 131,
+      "above": 0.148,
       "verdict": "Too early"
      },
      {
@@ -798,6 +810,7 @@
       "bias": -0.83,
       "inside": 0.962,
       "n_range": 26,
+      "above": 0.0,
       "verdict": "Too early"
      },
      {
@@ -808,8 +821,9 @@
       "act": 9.2,
       "mae": 4.7,
       "bias": 0.5,
-      "inside": 0.776,
+      "inside": 0.785,
       "n_range": 239,
+      "above": 0.13,
       "verdict": "About right"
      }
     ],
@@ -885,9 +899,10 @@
       "act": 2.6,
       "mae": 1.45,
       "bias": 0.21,
-      "inside": 0.73,
+      "inside": 0.777,
       "n_range": 185,
-      "verdict": "Ranges too narrow"
+      "above": 0.129,
+      "verdict": "About right"
      },
      {
       "stat": "Targets",
@@ -897,8 +912,9 @@
       "act": 3.7,
       "mae": 1.71,
       "bias": 0.25,
-      "inside": 0.792,
+      "inside": 0.818,
       "n_range": 185,
+      "above": 0.113,
       "verdict": "About right"
      },
      {
@@ -909,9 +925,10 @@
       "act": 28.3,
       "mae": 19.13,
       "bias": 3.01,
-      "inside": 0.741,
+      "inside": 0.772,
       "n_range": 185,
-      "verdict": "Ranges too narrow"
+      "above": 0.135,
+      "verdict": "About right"
      },
      {
       "stat": "Rushing yards",
@@ -921,9 +938,10 @@
       "act": 23.5,
       "mae": 13.51,
       "bias": 1.45,
-      "inside": 0.599,
+      "inside": 0.794,
       "n_range": 126,
-      "verdict": "Ranges too narrow"
+      "above": 0.144,
+      "verdict": "About right"
      },
      {
       "stat": "Carries",
@@ -933,8 +951,9 @@
       "act": 7.4,
       "mae": 3.01,
       "bias": 0.9,
-      "inside": 0.643,
+      "inside": 0.838,
       "n_range": 126,
+      "above": 0.109,
       "verdict": "Too early"
      },
      {
@@ -947,6 +966,7 @@
       "bias": -13.39,
       "inside": 0.731,
       "n_range": 26,
+      "above": 0.115,
       "verdict": "Too early"
      },
      {
@@ -957,9 +977,10 @@
       "act": 9.3,
       "mae": 4.99,
       "bias": 0.44,
-      "inside": 0.742,
+      "inside": 0.746,
       "n_range": 211,
-      "verdict": "Ranges too narrow"
+      "above": 0.152,
+      "verdict": "Ceilings too low"
      }
     ],
     "calls": [
@@ -1039,8 +1060,8 @@
   },
   {
    "name": "Ranges by stat",
-   "label": "Lean found",
-   "text": "5 stats with 150+ results checked; 20% outside the floor-to-ceiling range is the design. Off target: rushing yards 40%, carries 37%, receiving yards 27%."
+   "label": "On target",
+   "text": "5 stats with 150+ results checked; 20% outside the floor-to-ceiling range is the design. All within 14\u201326%."
   },
   {
    "name": "Expected to play, didn't",
