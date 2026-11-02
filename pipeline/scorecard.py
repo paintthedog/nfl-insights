@@ -103,7 +103,8 @@ for wk in weeks:
                 if st in ("tgt", "rec", "rec_yds") and p["pos"] == "QB": continue
                 v = float(a[st]); lo, hi, q25, q75 = q[QI[0.1]], q[QI[0.9]], q[QI[0.25]], q[QI[0.75]]
                 R.append(dict(wk=wk, pos=p["pos"], stat=st, below=1.0 if v < lo else (.5 if v == lo else 0.0), above=1.0 if v > hi else (.5 if v == hi else 0.0),
-                              mid=float(q25 <= v <= q75)))
+                              mid=float(q25 <= v <= q75), v=v, lo=lo, hi=hi, q25=q25, q75=q75, m=float((p.get("mean") or {}).get(st) or 0),
+                              mcar=float((p.get("mean") or {}).get("car") or 0), name=p["name"], team=p["team"]))
         # ---- touchdowns
         for r in (D["td"] if isinstance(D["td"], list) else D["td"].get("rows", [])):
             gid = game_of(r["team"], gs)
@@ -160,6 +161,7 @@ for r in lo.itertuples():
     LV.append(dict(wk=int(r.week), stat=st, model=float(r.model_mean), line=float(r.point), act=float(a[st])))
 LV = pd.DataFrame(LV)
 A, R, PR, G = pd.DataFrame(A), pd.DataFrame(R), pd.DataFrame(PR), pd.DataFrame(G)
+if os.environ.get("SC_DUMP"): R.to_csv(os.environ["SC_DUMP"], index=False)   # row-level range checks, for diagnostics (tests/)
 if not len(A) and not os.environ.get("SC_TEST"):   # no pre-kickoff archives yet (archive/ was lost in the Oct 21 export): keep the last scorecard
     print("scorecard: no archived snapshots for finished games; keeping existing scorecard.json"); sys.exit(0)
 if not len(A): A = pd.DataFrame(columns=["wk", "stat", "proj", "act", "line"])
