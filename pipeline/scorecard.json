@@ -285,8 +285,8 @@
    "mkt": "Spread: home team covers",
    "n": 27,
    "said": 0.486,
-   "hap": 0.667,
-   "brier": 0.2564,
+   "hap": 0.481,
+   "brier": 0.2513,
    "brier_dk": null,
    "brier_coin": 0.25,
    "buckets": [
@@ -295,7 +295,7 @@
      "hi": 0.5,
      "n": 27,
      "said": 0.486,
-     "hap": 0.667
+     "hap": 0.481
     }
    ]
   },
@@ -408,7 +408,7 @@
  "games": {
   "n": 27,
   "margin_model": 11.01,
-  "margin_line": 15.0,
+  "margin_line": 10.22,
   "total_model": 11.39,
   "total_line": 11.13,
   "total_bias_model": 1.36,
@@ -472,7 +472,7 @@
    "td_brier": 0.1588,
    "td_brier_dk": 0.1592,
    "margin_model": 12.0,
-   "margin_line": 13.1,
+   "margin_line": 10.2,
    "n_games": 14,
    "snapshot": true
   },
@@ -488,11 +488,504 @@
    "td_brier": 0.1667,
    "td_brier_dk": null,
    "margin_model": 9.9,
-   "margin_line": 17.1,
+   "margin_line": 10.2,
    "n_games": 13,
    "snapshot": true
   }
  ],
+ "accuracy": {
+  "weeks": [
+   4,
+   5,
+   7,
+   8
+  ],
+  "all": {
+   "stats": [
+    {
+     "stat": "Receptions",
+     "unit": "catches",
+     "n": 388,
+     "proj": 2.5,
+     "act": 2.6,
+     "mae": 1.37,
+     "bias": 0.12,
+     "inside": 0.768,
+     "n_range": 398,
+     "verdict": "About right"
+    },
+    {
+     "stat": "Targets",
+     "unit": "targets",
+     "n": 395,
+     "proj": 3.6,
+     "act": 3.7,
+     "mae": 1.65,
+     "bias": 0.16,
+     "inside": 0.812,
+     "n_range": 398,
+     "verdict": "About right"
+    },
+    {
+     "stat": "Receiving yards",
+     "unit": "yds",
+     "n": 398,
+     "proj": 25.9,
+     "act": 28.5,
+     "mae": 19.04,
+     "bias": 2.61,
+     "inside": 0.726,
+     "n_range": 398,
+     "verdict": "Ranges too narrow"
+    },
+    {
+     "stat": "Rushing yards",
+     "unit": "yds",
+     "n": 245,
+     "proj": 21.8,
+     "act": 23.6,
+     "mae": 14.75,
+     "bias": 1.77,
+     "inside": 0.603,
+     "n_range": 257,
+     "verdict": "Ranges too narrow"
+    },
+    {
+     "stat": "Carries",
+     "unit": "carries",
+     "n": 185,
+     "proj": 6.4,
+     "act": 7.1,
+     "mae": 3.02,
+     "bias": 0.7,
+     "inside": 0.634,
+     "n_range": 257,
+     "verdict": "Runs low \u00b7 Ranges too narrow"
+    },
+    {
+     "stat": "Passing yards",
+     "unit": "yds",
+     "n": 52,
+     "proj": 231.9,
+     "act": 224.8,
+     "mae": 63.23,
+     "bias": -7.11,
+     "inside": 0.846,
+     "n_range": 52,
+     "verdict": "Too early"
+    },
+    {
+     "stat": "Fantasy points (PPR)",
+     "unit": "pts",
+     "n": 450,
+     "proj": 8.8,
+     "act": 9.2,
+     "mae": 4.84,
+     "bias": 0.47,
+     "inside": 0.76,
+     "n_range": 450,
+     "verdict": "About right"
+    }
+   ],
+   "calls": [
+    {
+     "pred": "Game winner (the model's pick)",
+     "n": 27,
+     "need": 30,
+     "said": 0.645,
+     "hap": 0.667,
+     "right": 18,
+     "n_side": 27,
+     "top": null,
+     "verdict": "Too early"
+    },
+    {
+     "pred": "Player scores a TD",
+     "n": 756,
+     "need": 100,
+     "said": 0.213,
+     "hap": 0.242,
+     "right": null,
+     "n_side": null,
+     "top": {
+      "n": 152,
+      "said": 0.408,
+      "hap": 0.507
+     },
+     "verdict": "Too cautious on its likeliest calls"
+    },
+    {
+     "pred": "QB throws an interception",
+     "n": 51,
+     "need": 40,
+     "said": 0.493,
+     "hap": 0.569,
+     "right": 25,
+     "n_side": 48,
+     "top": null,
+     "verdict": "About right"
+    },
+    {
+     "pred": "Game goes over the total",
+     "n": 27,
+     "need": 30,
+     "said": 0.496,
+     "hap": 0.481,
+     "right": 13,
+     "n_side": 23,
+     "top": null,
+     "verdict": "Too early"
+    },
+    {
+     "pred": "Home team covers the spread",
+     "n": 27,
+     "need": 30,
+     "said": 0.486,
+     "hap": 0.481,
+     "right": 14,
+     "n_side": 26,
+     "top": null,
+     "verdict": "Too early"
+    }
+   ]
+  },
+  "by_week": {
+   "4": {
+    "stats": [],
+    "calls": [
+     {
+      "pred": "Player scores a TD",
+      "n": 19,
+      "need": 100,
+      "said": 0.204,
+      "hap": 0.263,
+      "right": null,
+      "n_side": null,
+      "top": null,
+      "verdict": "Too early"
+     }
+    ]
+   },
+   "5": {
+    "stats": [],
+    "calls": [
+     {
+      "pred": "Player scores a TD",
+      "n": 264,
+      "need": 100,
+      "said": 0.216,
+      "hap": 0.235,
+      "right": null,
+      "n_side": null,
+      "top": {
+       "n": 53,
+       "said": 0.406,
+       "hap": 0.547
+      },
+      "verdict": "Too cautious on its likeliest calls"
+     }
+    ]
+   },
+   "7": {
+    "stats": [
+     {
+      "stat": "Receptions",
+      "unit": "catches",
+      "n": 207,
+      "proj": 2.5,
+      "act": 2.6,
+      "mae": 1.29,
+      "bias": 0.04,
+      "inside": 0.8,
+      "n_range": 213,
+      "verdict": "About right"
+     },
+     {
+      "stat": "Targets",
+      "unit": "targets",
+      "n": 210,
+      "proj": 3.7,
+      "act": 3.7,
+      "mae": 1.59,
+      "bias": 0.08,
+      "inside": 0.829,
+      "n_range": 213,
+      "verdict": "About right"
+     },
+     {
+      "stat": "Receiving yards",
+      "unit": "yds",
+      "n": 213,
+      "proj": 26.5,
+      "act": 28.7,
+      "mae": 18.97,
+      "bias": 2.26,
+      "inside": 0.714,
+      "n_range": 213,
+      "verdict": "Ranges too narrow"
+     },
+     {
+      "stat": "Rushing yards",
+      "unit": "yds",
+      "n": 125,
+      "proj": 21.6,
+      "act": 23.7,
+      "mae": 15.95,
+      "bias": 2.08,
+      "inside": 0.607,
+      "n_range": 131,
+      "verdict": "Ranges too narrow"
+     },
+     {
+      "stat": "Carries",
+      "unit": "carries",
+      "n": 96,
+      "proj": 6.3,
+      "act": 6.8,
+      "mae": 3.03,
+      "bias": 0.51,
+      "inside": 0.626,
+      "n_range": 131,
+      "verdict": "Too early"
+     },
+     {
+      "stat": "Passing yards",
+      "unit": "yds",
+      "n": 26,
+      "proj": 236.5,
+      "act": 235.7,
+      "mae": 50.04,
+      "bias": -0.83,
+      "inside": 0.962,
+      "n_range": 26,
+      "verdict": "Too early"
+     },
+     {
+      "stat": "Fantasy points (PPR)",
+      "unit": "pts",
+      "n": 239,
+      "proj": 8.7,
+      "act": 9.2,
+      "mae": 4.7,
+      "bias": 0.5,
+      "inside": 0.776,
+      "n_range": 239,
+      "verdict": "About right"
+     }
+    ],
+    "calls": [
+     {
+      "pred": "Game winner (the model's pick)",
+      "n": 14,
+      "need": 30,
+      "said": 0.619,
+      "hap": 0.571,
+      "right": 8,
+      "n_side": 14,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Player scores a TD",
+      "n": 248,
+      "need": 100,
+      "said": 0.212,
+      "hap": 0.234,
+      "right": null,
+      "n_side": null,
+      "top": {
+       "n": 50,
+       "said": 0.406,
+       "hap": 0.46
+      },
+      "verdict": "About right"
+     },
+     {
+      "pred": "QB throws an interception",
+      "n": 27,
+      "need": 40,
+      "said": 0.496,
+      "hap": 0.519,
+      "right": 13,
+      "n_side": 24,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Game goes over the total",
+      "n": 14,
+      "need": 30,
+      "said": 0.499,
+      "hap": 0.571,
+      "right": 6,
+      "n_side": 10,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Home team covers the spread",
+      "n": 14,
+      "need": 30,
+      "said": 0.485,
+      "hap": 0.214,
+      "right": 11,
+      "n_side": 14,
+      "top": null,
+      "verdict": "Too early"
+     }
+    ]
+   },
+   "8": {
+    "stats": [
+     {
+      "stat": "Receptions",
+      "unit": "catches",
+      "n": 181,
+      "proj": 2.4,
+      "act": 2.6,
+      "mae": 1.45,
+      "bias": 0.21,
+      "inside": 0.73,
+      "n_range": 185,
+      "verdict": "Ranges too narrow"
+     },
+     {
+      "stat": "Targets",
+      "unit": "targets",
+      "n": 185,
+      "proj": 3.5,
+      "act": 3.7,
+      "mae": 1.71,
+      "bias": 0.25,
+      "inside": 0.792,
+      "n_range": 185,
+      "verdict": "About right"
+     },
+     {
+      "stat": "Receiving yards",
+      "unit": "yds",
+      "n": 185,
+      "proj": 25.3,
+      "act": 28.3,
+      "mae": 19.13,
+      "bias": 3.01,
+      "inside": 0.741,
+      "n_range": 185,
+      "verdict": "Ranges too narrow"
+     },
+     {
+      "stat": "Rushing yards",
+      "unit": "yds",
+      "n": 120,
+      "proj": 22.0,
+      "act": 23.5,
+      "mae": 13.51,
+      "bias": 1.45,
+      "inside": 0.599,
+      "n_range": 126,
+      "verdict": "Ranges too narrow"
+     },
+     {
+      "stat": "Carries",
+      "unit": "carries",
+      "n": 89,
+      "proj": 6.5,
+      "act": 7.4,
+      "mae": 3.01,
+      "bias": 0.9,
+      "inside": 0.643,
+      "n_range": 126,
+      "verdict": "Too early"
+     },
+     {
+      "stat": "Passing yards",
+      "unit": "yds",
+      "n": 26,
+      "proj": 227.2,
+      "act": 213.8,
+      "mae": 76.43,
+      "bias": -13.39,
+      "inside": 0.731,
+      "n_range": 26,
+      "verdict": "Too early"
+     },
+     {
+      "stat": "Fantasy points (PPR)",
+      "unit": "pts",
+      "n": 211,
+      "proj": 8.8,
+      "act": 9.3,
+      "mae": 4.99,
+      "bias": 0.44,
+      "inside": 0.742,
+      "n_range": 211,
+      "verdict": "Ranges too narrow"
+     }
+    ],
+    "calls": [
+     {
+      "pred": "Game winner (the model's pick)",
+      "n": 13,
+      "need": 30,
+      "said": 0.673,
+      "hap": 0.769,
+      "right": 10,
+      "n_side": 13,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Player scores a TD",
+      "n": 225,
+      "need": 100,
+      "said": 0.212,
+      "hap": 0.258,
+      "right": null,
+      "n_side": null,
+      "top": {
+       "n": 45,
+       "said": 0.413,
+       "hap": 0.578
+      },
+      "verdict": "Too cautious on its likeliest calls"
+     },
+     {
+      "pred": "QB throws an interception",
+      "n": 24,
+      "need": 40,
+      "said": 0.489,
+      "hap": 0.625,
+      "right": 12,
+      "n_side": 24,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Game goes over the total",
+      "n": 13,
+      "need": 30,
+      "said": 0.494,
+      "hap": 0.385,
+      "right": 7,
+      "n_side": 13,
+      "top": null,
+      "verdict": "Too early"
+     },
+     {
+      "pred": "Home team covers the spread",
+      "n": 13,
+      "need": 30,
+      "said": 0.487,
+      "hap": 0.769,
+      "right": 3,
+      "n_side": 12,
+      "top": null,
+      "verdict": "Too early"
+     }
+    ]
+   }
+  }
+ },
  "card": [
   {
    "name": "Touchdown chances",

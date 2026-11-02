@@ -125,8 +125,10 @@ for wk in weeks:
             if g.get("total") is not None and g.get("p_over") is not None:
                 sdt = D["lines"].get("sd_total", 13.0); bt = g["total"] + sdt * _qn(min(max(g["p_over"], 0.01), 0.99))
                 T3.append(dict(wk=wk, kind="total", market=g["total"], model=g["m_total"], blend=bt, act=tot, sd=sdt))
-            if g.get("spread") is not None and mg != -g["spread"]:
-                PR.append(dict(wk=wk, mkt="Spread: home team covers", p=float(g["p_home_cover"]), y=float(mg + g["spread"] > 0), dk=0.5))
+            # Nov 2 fix: the site's "spread" is the home team's expected margin (nflverse spread_line, + = home favored), so home covers when mg > spread.
+            # Before this, cover and the closing line's miss used mg + spread (betting-sign convention) and were wrong.
+            if g.get("spread") is not None and mg != g["spread"]:
+                PR.append(dict(wk=wk, mkt="Spread: home team covers", p=float(g["p_home_cover"]), y=float(mg - g["spread"] > 0), dk=0.5))
             if g.get("total") is not None and tot != g["total"]:
                 PR.append(dict(wk=wk, mkt="Game goes over the total", p=float(g["p_over"]), y=float(tot > g["total"]), dk=0.5))
             PR.append(dict(wk=wk, mkt="Model's favorite wins", p=max(Phi(g["m_margin"] / sd), 1 - Phi(g["m_margin"] / sd)), y=float((mg > 0) == (g["m_margin"] > 0)) if mg != 0 else 0.5, dk=None))
@@ -206,7 +208,7 @@ if len(T3):
 out["three_way"] = three
 if len(G):
     gl = G[G.spread.notna()]; gt = G[G.total.notna()]
-    out["games"] = dict(n=len(G), margin_model=round((G.mg - G.m_margin).abs().mean(), 2), margin_line=round((gl.mg + gl.spread).abs().mean(), 2) if len(gl) else None,
+    out["games"] = dict(n=len(G), margin_model=round((G.mg - G.m_margin).abs().mean(), 2), margin_line=round((gl.mg - gl.spread).abs().mean(), 2) if len(gl) else None,
                         total_model=round((G.tot - G.m_total).abs().mean(), 2), total_line=round((gt.tot - gt.total).abs().mean(), 2) if len(gt) else None,
                         # Oct 26: lean, not just miss. Positive = the model's total ran higher than what was scored.
                         total_bias_model=round((G.m_total - G.tot).mean(), 2), total_bias_line=round((gt.total - gt.tot).mean(), 2) if len(gt) else None)
@@ -223,9 +225,52 @@ for wk in out["weeks"]:
                         below=round(r.below.mean(), 3) if len(r) else None, above=round(r.above.mean(), 3) if len(r) else None,
                         td_said=round(p.p.sum(), 1), td_hap=int(p.y.sum()), td_n=len(p),
                         td_brier=round(((p.p - p.y) ** 2).mean(), 4) if len(p) else None, td_brier_dk=round(((pk.dk - pk.y) ** 2).mean(), 4) if len(pk) else None,
-                        margin_model=round((g.mg - g.m_margin).abs().mean(), 1) if len(g) else None, margin_line=round((g.mg + g.spread).abs().mean(), 1) if len(g) else None, n_games=len(g),
+                        margin_model=round((g.mg - g.m_margin).abs().mean(), 1) if len(g) else None, margin_line=round((g.mg - g.spread).abs().mean(), 1) if len(g) else None, n_games=len(g),
                         snapshot=int(wk) in out["snap_weeks"]))
 out["by_week"] = wk_rows
+# ---- Nov 2 (Clinton: "show me how well it predicts every stat"): one plain table per kind of prediction, for the season and each week.
+# Verdicts come from fixed rules (below), never hand-written.
+ACC_STATS = [("rec", "Receptions", "catches"), ("tgt", "Targets", "targets"), ("rec_yds", "Receiving yards", "yds"), ("rush_yds", "Rushing yards", "yds"),
+             ("car", "Carries", "carries"), ("pass_yds", "Passing yards", "yds"), ("fp_ppr", "Fantasy points (PPR)", "pts")]
+ACC_CALLS = [("Model's favorite wins", "Game winner (the model's pick)", 30), ("Anytime TD", "Player scores a TD", 100), ("QB throws an interception", "QB throws an interception", 40),
+             ("Game goes over the total", "Game goes over the total", 30), ("Spread: home team covers", "Home team covers the spread", 30)]
+def _acc(wsel):
+    a = A[A.wk.isin(wsel)] if len(A) else A; r = R[R.wk.isin(wsel)] if len(R) else R; pr = PR[PR.wk.isin(wsel)] if len(PR) else PR
+    stats = []
+    for st, lab, unit in ACC_STATS:
+        x = a[a.stat == st] if len(a) else a; y = r[r.stat == st] if len(r) else r
+        if not len(x): continue
+        n = len(x); err = x.act - x.proj; bias = float(err.mean()); mae = float(err.abs().mean()); pm = float(x.proj.mean())
+        inside = float(1 - y.below.mean() - y.above.mean()) if len(y) else None
+        issues = []
+        if n >= 100:
+            t = bias / (float(err.std()) / np.sqrt(n)) if err.std() > 0 else 0
+            if abs(t) >= 2 and abs(bias) >= 0.05 * pm: issues.append("Runs low" if bias > 0 else "Runs high")
+            if inside is not None:
+                tol = max(0.04, 2 * np.sqrt(0.16 / len(y)))
+                if inside < 0.80 - tol: issues.append("Ranges too narrow")
+                elif inside > 0.80 + tol: issues.append("Ranges too wide")
+        stats.append(dict(stat=lab, unit=unit, n=n, proj=round(pm, 1), act=round(float(x.act.mean()), 1), mae=round(mae, 2), bias=round(bias, 2),
+                          inside=None if inside is None else round(inside, 3), n_range=len(y), verdict="Too early" if n < 100 else (" · ".join(issues) or "About right")))
+    calls = []
+    for mkt, lab, need in ACC_CALLS:
+        x = pr[pr.mkt == mkt] if len(pr) else pr
+        if not len(x): continue
+        n = len(x); said = float(x.p.mean()); hap = float(x.y.mean())
+        z = (hap - said) / np.sqrt(max(said * (1 - said), 1e-6) / n)
+        top = x[x.p >= x.p.quantile(0.8)]; zt = 0.0
+        if len(top) >= 20 and top.p.nunique() > 1:
+            ts, th = float(top.p.mean()), float(top.y.mean()); zt = (th - ts) / np.sqrt(max(ts * (1 - ts), 1e-6) / len(top))
+        side = x[(x.p - 0.5).abs() >= 0.005]
+        right = int((((side.p > 0.5) & (side.y == 1)) | ((side.p < 0.5) & (side.y == 0))).sum()) if mkt != "Anytime TD" and len(side) else None
+        if n < need: v = "Too early"
+        elif abs(z) >= 2: v = "Happens more often than it says" if z > 0 else "Happens less often than it says"
+        elif abs(zt) >= 2: v = "Too cautious on its likeliest calls" if zt > 0 else "Too confident on its likeliest calls"
+        else: v = "About right"
+        calls.append(dict(pred=lab, n=n, need=need, said=round(said, 3), hap=round(hap, 3), right=right, n_side=len(side) if right is not None else None,
+                          top=dict(n=len(top), said=round(float(top.p.mean()), 3), hap=round(float(top.y.mean()), 3)) if len(top) >= 20 else None, verdict=v))
+    return dict(stats=stats, calls=calls)
+out["accuracy"] = dict(weeks=out["weeks"], all=_acc(out["weeks"]), by_week={str(w): _acc([w]) for w in out["weeks"]})
 # ---- report card: fixed rules only, so the wording is generated from the numbers and never hand-written
 card = []
 def line(name, label, text): card.append(dict(name=name, label=label, text=text))
