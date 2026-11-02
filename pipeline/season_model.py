@@ -28,6 +28,22 @@ DIV = {"BUF": "AFC East", "MIA": "AFC East", "NE": "AFC East", "NYJ": "AFC East"
        "DEN": "AFC West", "KC": "AFC West", "LV": "AFC West", "LAC": "AFC West", "DAL": "NFC East", "NYG": "NFC East", "PHI": "NFC East", "WAS": "NFC East", "CHI": "NFC North", "DET": "NFC North", "GB": "NFC North", "MIN": "NFC North",
        "ATL": "NFC South", "CAR": "NFC South", "NO": "NFC South", "TB": "NFC South", "ARI": "NFC West", "LA": "NFC West", "SF": "NFC West", "SEA": "NFC West"}
 
+# Nov 2 fix: "team": "last" picked the alphabetically last team a player had any stat with. Defensive tallies are keyed by defteam,
+# so a punt-coverage tackle against Tennessee made Arvell Reese (NYG) a Titan; traded players also got the wrong team. Now: the team
+# with most of his production that season, and for the current season his latest team in the weekly roster file.
+_ROSTER_TEAM = {}
+try:
+    _r = pd.read_parquet("data/rosters_2026.parquet")
+    _ROSTER_TEAM = _r[_r.gsis_id.notna()].sort_values("week").groupby("gsis_id").team.last().to_dict()
+except Exception: pass
+def _own_team(df, stats):
+    df = df.assign(_act=df[[c for c in stats if c in df]].abs().sum(axis=1))
+    main = df.sort_values("_act").groupby(["season", "pid"]).team.last()
+    out = df.groupby(["season", "pid"]).agg({c: "sum" for c in stats}); out["team"] = main
+    out = out.reset_index()
+    cur = out.season == SEASON
+    out.loc[cur, "team"] = [_ROSTER_TEAM.get(p, t) for p, t in zip(out.loc[cur, "pid"], out.loc[cur, "team"])]
+    return out
 def tally(df, col, name, w=1.0):
     d = df[df[col].notna()]; return d.groupby(["season", col, "defteam"]).size().mul(w).rename(name).rename_axis(["season", "pid", "team"])
 def build(maxw, minw=0):
@@ -38,7 +54,7 @@ def build(maxw, minw=0):
     ru = p[p.rusher_player_id.notna()].groupby(["season", "rusher_player_id", "posteam"]).agg(car=("rushing_yards", "size"), rush_yds=("rushing_yards", "sum"), rush_td=("rush_touchdown", "sum")).rename_axis(["season", "pid", "team"])
     rc = p[p.receiver_player_id.notna() & (p.play_type == "pass")].groupby(["season", "receiver_player_id", "posteam"]).agg(tgt=("receiving_yards", "size"), rec=("complete_pass", "sum"), rec_yds=("receiving_yards", "sum"), rec_td=("pass_touchdown", "sum")).rename_axis(["season", "pid", "team"])
     off = pa.join(ru, how="outer").join(rc, how="outer").fillna(0).reset_index()
-    off = off.groupby(["season", "pid"]).agg({**{c: "sum" for c in OSTAT}, "team": "last"}).reset_index()
+    off = _own_team(off, OSTAT)
     gp = pd.concat([p[["season", "game_id", c]].rename(columns={c: "pid"}) for c in ("passer_player_id", "rusher_player_id", "receiver_player_id")]).dropna().drop_duplicates().groupby(["season", "pid"]).size().rename("gp")
     off = off.merge(gp, left_on=["season", "pid"], right_index=True, how="left").fillna({"gp": 0})
     d = [tally(p, "sack_player_id", "sacks"), tally(p, "half_sack_1_player_id", "sacks", .5), tally(p, "half_sack_2_player_id", "sacks", .5),
@@ -49,7 +65,7 @@ def build(maxw, minw=0):
     dtd = p[(p.touchdown == 1) & p.td_player_id.notna() & (p.td_team == p.defteam)]
     d.append(dtd.groupby(["season", "td_player_id", "defteam"]).size().rename("dtd").rename_axis(["season", "pid", "team"]))
     de = pd.concat(d, axis=1).T.groupby(level=0).sum().T.fillna(0).reset_index()
-    de = de.groupby(["season", "pid"]).agg({**{c: "sum" for c in DSTAT}, "team": "last"}).reset_index()
+    de = _own_team(de, DSTAT)
     de = de[~de.pid.map(PL.position_group).isin(["QB", "RB", "WR", "TE", "OL", "SPEC"])]
     s = S[(S.week <= maxw) & (S.week >= minw) & S.result.notna()]
     tg = pd.concat([s.assign(team=s.home_team, m=s.result, coach=s.home_coach), s.assign(team=s.away_team, m=-s.result, coach=s.away_coach)])
