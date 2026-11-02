@@ -13,8 +13,6 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 8,Trend unders: wind 10–19 mph,2026_08_NE_MIA,NE@MIA,game_total,Under,43.5,1.87,0.579,,2026-11-01T14:00Z,nflverse
 8,"Game totals, model differs 3+ pts",2026_08_PHI_WAS,PHI@WAS,game_total,Over,40.5,1.909,0.6941,,2026-11-01T14:00Z,nflverse
 8,Trend unders: prime time,2026_08_PHI_WAS,PHI@WAS,game_total,Under,40.5,1.909,0.563,,2026-11-01T14:00Z,nflverse
-8,"Moneyline, model differs 4+ pts",2026_08_CHI_SEA,CHI,ml,ML,,2.42,0.4785,,2026-11-01T14:00Z,nflverse
-8,Trend unders: prime time,2026_08_CHI_SEA,CHI@SEA,game_total,Under,46.5,1.909,0.563,,2026-11-01T14:00Z,nflverse
 8,"Teasers: small underdogs +6, 2 legs",,ATL +8.5 + LV +7.5,parlay,All,,1.8,0.5995,"[{""gid"": ""2026_08_ATL_TB"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""ATL +8.5""}, {""gid"": ""2026_08_LV_NYJ"", ""player"": ""LV"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""LV +7.5""}]",2026-11-01T14:00Z,nflverse
 8,Teaser legs: small underdogs +6,2026_08_ATL_TB,ATL +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_08_ATL_TB"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""ATL +8.5""}]",2026-11-01T14:00Z,nflverse
 8,Teaser legs: small underdogs +6,2026_08_LV_NYJ,LV +7.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_08_LV_NYJ"", ""player"": ""LV"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""LV +7.5""}]",2026-11-01T14:00Z,nflverse
@@ -32,3 +30,6 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 8,Control: random,2026_08_NE_MIA,NE@MIA,game_total,Over,43.5,1.952,0.5302,,2026-11-01T14:00Z,nflverse
 8,Control: random,2026_08_TEN_CIN,TEN@CIN,game_total,Over,45.5,1.893,0.5392,,2026-11-01T14:00Z,nflverse
 8,Control: random,2026_08_KC_DEN,KC@DEN,game_total,Under,40.5,1.926,0.3085,,2026-11-01T14:00Z,nflverse
+8,"Moneyline, model differs 4+ pts",2026_08_CHI_SEA,CHI,ml,ML,,2.45,0.4816,,2026-11-02T14:41Z,nflverse
+8,Trend unders: prime time,2026_08_CHI_SEA,CHI@SEA,game_total,Under,46.5,1.909,0.563,,2026-11-02T14:41Z,nflverse
+8,Control: random,2026_08_CHI_SEA,CHI@SEA,game_total,Under,46.5,1.909,0.47,,2026-11-02T14:41Z,nflverse

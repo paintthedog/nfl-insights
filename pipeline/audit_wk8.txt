@@ -1,2 +1,2 @@
 Staleness audit, week 8: 1 item(s)
-  [STALE] lead_back HOU set 2026-10-22 (10 days ago) - re-verify or remove
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections

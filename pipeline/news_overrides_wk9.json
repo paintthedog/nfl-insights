@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-30T19:30 ET",
+ "asof": "2026-11-02T09:45 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -22,19 +22,31 @@
   "Tyler Badie",
   "Romeo Doubs",
   "Najee Harris",
-  "Dameon Pierce"
+  "Dameon Pierce",
+  "Lamar Jackson",
+  "Kendrick Bourne",
+  "RJ Harvey"
  ],
  "p_play": {
   "Breece Hall": 0.5,
-  "Rashee Rice": 0.5,
-  "DJ Moore": 0.5,
-  "Tyler Allgeier": 0.6
+  "DJ Moore": 0.9,
+  "Tyler Allgeier": 0.85,
+  "Jeremiyah Love": 0.6,
+  "Jake Ferguson": 0.6,
+  "Bam Knight": 0.5,
+  "Josh Palmer": 0.5,
+  "A.J. Brown": 0.6,
+  "TreVeyon Henderson": 0.75,
+  "Emeka Egbuka": 0.6,
+  "Colby Parkinson": 0.6,
+  "Mitchell Tinsley": 0.7,
+  "Audric Estim\u00e9": 0.7
  },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
   "NYG": "J.J. McCarthy",
-  "BAL": "Lamar Jackson"
+  "BAL": "Joe Fagnano"
  },
  "next_man": {},
  "ol_out": [
@@ -49,11 +61,14 @@
  ],
  "team_notes": {
   "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
-  "ARI": "Allgeier DNP Wed (Oct 28); Jeremiyah Love back at practice (limited).",
+  "ARI": "Love (ankle) and Knight (concussion) left Wk8; Bourne high-ankle sprain, multiple weeks. Brissett benched for Minshew mid-game.",
   "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
-  "BUF": "DJ Moore limited in practice Wed after the bye.",
+  "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
   "KC": "Rashee Rice limited in practice Wed Oct 28.",
-  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet."
+  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
+  "BAL": "Lamar Jackson to IR after thumb surgery (could be season-ending). Huntley (toe) ruled out Sunday; Fagnano only healthy QB, no signing as of Mon a.m.",
+  "DEN": "RJ Harvey to IR; Dobbins leads.",
+  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice."
  },
  "back": [
   "Jalen Nailor",
@@ -74,10 +89,22 @@
   "Tyler Warren",
   "Emeka Egbuka",
   "Zach Charbonnet",
-  "Tre Harris",
-  "Lamar Jackson"
+  "Tre Harris"
  ],
- "qb_uncertain": {},
+ "qb_uncertain": {
+  "BAL": {
+   "starter": "Joe Fagnano",
+   "backup": "Tyler Huntley",
+   "p": 0.6,
+   "note": "Lamar to IR (thumb surgery); Huntley toe, Thu status unknown (Nov 2)"
+  },
+  "ARI": {
+   "starter": "Jacoby Brissett",
+   "backup": "Gardner Minshew",
+   "p": 0.5,
+   "note": "Brissett benched mid-game Wk8 for Minshew; Wk9 starter not named (Nov 2)"
+  }
+ },
  "lead_back": {
   "NYJ": [
    "Braelon Allen",
@@ -86,6 +113,10 @@
   "HOU": [
    "Woody Marks",
    0.65
+  ],
+  "DEN": [
+   "J.K. Dobbins",
+   0.6
   ]
  }
 }
