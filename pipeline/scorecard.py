@@ -154,7 +154,11 @@ for wk in weeks:
                 PR.append(dict(wk=wk, mkt="Spread: home team covers", p=float(g["p_home_cover"]), y=float(mg - g["spread"] > 0), dk=0.5))
             if g.get("total") is not None and tot != g["total"]:
                 PR.append(dict(wk=wk, mkt="Game goes over the total", p=float(g["p_over"]), y=float(tot > g["total"]), dk=0.5))
-            PR.append(dict(wk=wk, mkt="Model's favorite wins", p=max(Phi(g["m_margin"] / sd), 1 - Phi(g["m_margin"] / sd)), y=float((mg > 0) == (g["m_margin"] > 0)) if mg != 0 else 0.5, dk=None))
+            # Nov 3: grade the win chance the site shows (line-anchored: the spread moved only as far as the calibrated cover chance
+            # allows, same formula as the Games tab), not the raw team-model margin
+            bmw = g["spread"] + sd * _qn(min(max(g["p_home_cover"], 0.01), 0.99)) if g.get("spread") is not None and g.get("p_home_cover") is not None else g["m_margin"]
+            ph = Phi(bmw / sd)
+            PR.append(dict(wk=wk, mkt="Model's favorite wins", p=max(ph, 1 - ph), y=float((mg > 0) == (ph > 0.5)) if mg != 0 else 0.5, dk=None))
 
 # games published before the snapshot archive existed (Weeks 4-5): the odds pulls logged the model's TD chance next to DK's price before kickoff
 pre_k = _pre
@@ -256,7 +260,7 @@ out["by_week"] = wk_rows
 # Verdicts come from fixed rules (below), never hand-written.
 ACC_STATS = [("rec", "Receptions", "catches"), ("tgt", "Targets", "targets"), ("rec_yds", "Receiving yards", "yds"), ("rush_yds", "Rushing yards", "yds"),
              ("car", "Carries", "carries"), ("pass_yds", "Passing yards", "yds"), ("fp_ppr", "Fantasy points (PPR)", "pts")]
-ACC_CALLS = [("Model's favorite wins", "Game winner (the model's pick)", 30), ("Anytime TD", "Player scores a TD", 100), ("QB throws an interception", "QB throws an interception", 40),
+ACC_CALLS = [("Model's favorite wins", "Game winner (the site's win chance)", 30), ("Anytime TD", "Player scores a TD", 100), ("QB throws an interception", "QB throws an interception", 40),
              ("Game goes over the total", "Game goes over the total", 30), ("Spread: home team covers", "Home team covers the spread", 30)]
 def _acc(wsel):
     a = A[A.wk.isin(wsel)] if len(A) else A; r = R[R.wk.isin(wsel)] if len(R) else R; pr = PR[PR.wk.isin(wsel)] if len(PR) else PR

@@ -329,38 +329,38 @@
   {
    "mkt": "Model's favorite wins",
    "n": 27,
-   "said": 0.645,
-   "hap": 0.667,
-   "brier": 0.2288,
+   "said": 0.631,
+   "hap": 0.741,
+   "brier": 0.2065,
    "brier_dk": null,
    "brier_coin": null,
    "buckets": [
     {
      "lo": 0.5,
      "hi": 0.6,
-     "n": 10,
-     "said": 0.558,
-     "hap": 0.7
+     "n": 14,
+     "said": 0.576,
+     "hap": 0.714
     },
     {
      "lo": 0.6,
      "hi": 0.7,
-     "n": 11,
+     "n": 9,
      "said": 0.653,
-     "hap": 0.545
+     "hap": 0.778
     },
     {
      "lo": 0.7,
      "hi": 0.8,
-     "n": 4,
-     "said": 0.747,
-     "hap": 0.75
+     "n": 3,
+     "said": 0.756,
+     "hap": 0.667
     },
     {
      "lo": 0.8,
      "hi": 1,
-     "n": 2,
-     "said": 0.836,
+     "n": 1,
+     "said": 0.824,
      "hap": 1.0
     }
    ]
@@ -610,12 +610,12 @@
    ],
    "calls": [
     {
-     "pred": "Game winner (the model's pick)",
+     "pred": "Game winner (the site's win chance)",
      "n": 27,
      "need": 30,
-     "said": 0.645,
-     "hap": 0.667,
-     "right": 18,
+     "said": 0.631,
+     "hap": 0.741,
+     "right": 20,
      "n_side": 27,
      "top": null,
      "verdict": "Too early"
@@ -823,12 +823,12 @@
     ],
     "calls": [
      {
-      "pred": "Game winner (the model's pick)",
+      "pred": "Game winner (the site's win chance)",
       "n": 14,
       "need": 30,
-      "said": 0.619,
-      "hap": 0.571,
-      "right": 8,
+      "said": 0.618,
+      "hap": 0.714,
+      "right": 10,
       "n_side": 14,
       "top": null,
       "verdict": "Too early"
@@ -979,10 +979,10 @@
     ],
     "calls": [
      {
-      "pred": "Game winner (the model's pick)",
+      "pred": "Game winner (the site's win chance)",
       "n": 13,
       "need": 30,
-      "said": 0.673,
+      "said": 0.644,
       "hap": 0.769,
       "right": 10,
       "n_side": 13,
