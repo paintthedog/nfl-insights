@@ -3,3 +3,5 @@ tracker/out/
 __pycache__/
 pipeline/daily.log
 pipeline/refresh.log
+pipeline/replay/out/
+pipeline/replay/data_extra/

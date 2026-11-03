@@ -2,7 +2,7 @@
 import numpy as np, pandas as pd
 import td_model as T, injuries as J
 
-SEASON, WEEK = 2026, int(__import__("os").environ.get("NFL_WEEK", 5))
+SEASON, WEEK = int(__import__("os").environ.get("NFL_SEASON", 2026)), int(__import__("os").environ.get("NFL_WEEK", 5))
 # Only these QBs are projected (starters, same list as the INT model); backup QBs are dropped.
 import json, os
 QB_OVERRIDES = json.load(open("qb_overrides.json")).get(str(WEEK), {}) if os.path.exists("qb_overrides.json") else {}
@@ -12,7 +12,7 @@ QUESTIONABLE = []
 pbp, sched, players = T.load()
 pg, team, ctx = T.build_tables(pbp, sched, players)
 
-ros = pd.read_parquet("data/rosters_2026.parquet")
+ros = pd.read_parquet(f"data/rosters_{SEASON}.parquet")
 # each player's most recent roster row (bye-week teams are missing from that week's file, and the current week's file
 # may not exist yet); a game-day inactive tag only counts if it is from THIS week
 ros = ros[ros.week <= WEEK].sort_values("week").drop_duplicates("gsis_id", keep="last")
@@ -20,7 +20,7 @@ CARRY_ROS = not (ros.week == WEEK).any()
 out_codes = ros.status.isin(["RES", "CUT", "RET", "DEV", "EXE"]) | ((ros.status == "INA") & (ros.week == WEEK))      # the "I01" description lags a week (it marks LAST game's inactives), so it is not used
 unavailable = set(ros[out_codes].gsis_id)
 # official injury report: Out / Doubtful are removed from the pool; Questionable is flagged
-inj = pd.read_parquet("data/injuries_2026.parquet")
+inj = pd.read_parquet(f"data/injuries_{SEASON}.parquet")
 _inj_all = inj[inj.season == SEASON]
 inj = _inj_all[_inj_all.week == WEEK]
 # Game statuses arrive team by team (Thursday teams first). A team with statuses this week uses them; every other team
@@ -132,7 +132,7 @@ try:
     # Oct 22: news beats a lagging roster file. A player the news gives a chance to play (p_play > 0) or lists as back is
     # activated even while the roster still says RES (Kirk, Charbonnet, Mason off IR; Tank Dell off PUP): he joins his
     # team's pool from his last usage, discounted for the layoff like any returning player.
-    _ros_any = pd.read_parquet("data/rosters_2026.parquet")
+    _ros_any = pd.read_parquet(f"data/rosters_{SEASON}.parquet")
     _ros_any = _ros_any[(_ros_any.week <= WEEK) & ~_ros_any.status.isin(["CUT", "RET"])].sort_values("week").drop_duplicates("gsis_id", keep="last").set_index("gsis_id").team
     for n in list(_nw.get("back", [])) + [k for k, v in _nw.get("p_play", {}).items() if v > 0]:
         _p = _find(n)
@@ -192,7 +192,7 @@ d = T.features(pg, team, ctx, predict_rows=pred)
 # among known backs was confirmed there; an inheritance bonus for the top known back tested worse and is not used.
 SEED = dict(pr_car_sh=0.12, pr_i10_sh=0.12, pr_i5_sh=0.12, pr_tgt_sh=0.04, pr_rz_sh=0.04, pr_ez_sh=0.02, rtd_sh_s=0.12, ptd_sh_s=0.04)
 _dp = d[d._pred]
-_ros_full = pd.read_parquet("data/rosters_2026.parquet")
+_ros_full = pd.read_parquet(f"data/rosters_{SEASON}.parquet")
 _ros_full = _ros_full[_ros_full.week <= WEEK].sort_values("week").drop_duplicates("gsis_id", keep="last")
 _rb_cand = _ros_full[(_ros_full.status == "ACT") & (_ros_full.position == "RB")]
 seeded_notes = {}

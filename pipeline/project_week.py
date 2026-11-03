@@ -2,7 +2,7 @@
 import sys, numpy as np, pandas as pd
 import int_model as M
 
-SEASON, WEEK = 2026, int(__import__("os").environ.get("NFL_WEEK", 5))
+SEASON, WEEK = int(__import__("os").environ.get("NFL_SEASON", 2026)), int(__import__("os").environ.get("NFL_WEEK", 5))
 # Starter overrides verified against injury news (team -> passer_player_id).
 # Everyone else defaults to the team's most recent starter.
 import json, os

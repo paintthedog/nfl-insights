@@ -4,7 +4,7 @@ import numpy as np, pandas as pd
 from scipy.stats import norm
 import lines_model as L
 
-SEASON, WEEK = 2026, int(sys.argv[1]) if len(sys.argv) > 1 else 4
+SEASON, WEEK = int(__import__("os").environ.get("NFL_SEASON", 2026)), int(sys.argv[1]) if len(sys.argv) > 1 else 4
 pbp, sched = L.load()
 # games the books haven't posted a spread for yet were filled with this model's number so the stat models can run;
 # undo that here so the page never shows our own number as "the line"

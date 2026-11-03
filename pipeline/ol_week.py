@@ -4,7 +4,7 @@ retired / cut per the roster file, Out or Doubtful on this week's report, DNP on
 in news_overrides_wk<W>.json under "ol_out" (retirements and trades never reach the injury report)."""
 import json, os, sys
 import pandas as pd
-W = int(os.environ.get("NFL_WEEK", sys.argv[1] if len(sys.argv) > 1 else 5)); SEASON = 2026
+W = int(os.environ.get("NFL_WEEK", sys.argv[1] if len(sys.argv) > 1 else 5)); SEASON = int(__import__("os").environ.get("NFL_SEASON", 2026))
 pl = pd.read_parquet("data/players.parquet", columns=["gsis_id", "display_name", "position"]).drop_duplicates("gsis_id")
 OL = {"T", "G", "C", "OT", "OG", "OL"}
 snaps = pd.read_parquet("data/snaps.parquet", columns=["game_id", "gsis_id", "team", "offense_pct"]).drop_duplicates(["game_id", "gsis_id"])
