@@ -16,11 +16,11 @@ Returns per-player samples (N_SIM x players) for: tgt, rec, rec_yds, car, rush_y
 import numpy as np, pandas as pd
 
 ATT_SD, CAR_SD, ATT_CAR_CORR = 7.8, 6.9, -0.36
-TGT_OVERDISP, CAR_OVERDISP = 1.4, 3.2     # variance multipliers vs binomial
+TGT_OVERDISP, CAR_OVERDISP = 1.4, float(__import__("os").environ.get("SIM_CAR_OVERDISP", 5.0))   # Nov 3: 3.2 -> 5.0 with the carry concentration (replay, TEST_LEDGER)     # variance multipliers vs binomial
 YPT_SHAPE = 1.3                           # gamma shape for per-target yards (long right tail)
 YPC_SHAPE = 1.6
 GAME_EFF_SD = 0.30                        # per-player per-game multiplier on yards/touch (lognormal sd): hot and cold days
-SHARE_SD = {"tgt": 0.15, "car": 0.5}        # lognormal sd on each player's expected share: uncertainty in the role itself
+SHARE_SD = {"tgt": 0.15, "car": float(__import__("os").environ.get("SIM_SHARE_SD_CAR", 0.5))}        # lognormal sd on each player's expected share: uncertainty in the role itself
 EXIT_P = 0.03                             # chance a player leaves early (injury/benching): stats cut at a uniform point
 TD_OVERDISP = 1.35                        # team TD count: negative-binomial-ish
 

@@ -124,3 +124,13 @@ Fix tested: share concentration in proj_project.py (SHARE_K_REC / SHARE_K_CAR en
 - rushing: carries MAE 3.06 -> 2.87, RMSE 4.33 -> 4.13 (2025 held out: 3.00 -> 2.80, 4.28 -> 4.10); rush yds MAE 13.3 -> 12.6 (2025 13.1 -> 12.4). Bands flatten (0.88-1.07). BUT ceilings break: above-ceiling carries 8.4% -> 12.7%, rush yds 10.7% -> 15.9%; the simulator's carry spread needs retuning with it.
 - receiving: MAE -1 to -2% but RMSE flat or worse in 2025 (rec yds 23.03 -> 23.23, PPR 5.81 -> 5.86), above-ceiling +1-1.5 pts, top band now 0.97. Not worth it.
 Status: not adopted yet. Next: K_CAR 1.4 alone with the simulator's carry dispersion refit so rushing ceilings stay at ~10%.
+
+## Nov 3: carry concentration ADOPTED (SHARE_K_CAR 1.4 + sim CAR_OVERDISP 5.0)
+Replay, 2024 and 2025 Weeks 4-18 even weeks (16 weeks), matched player-games, RBs on the field (p_play 0.9+), vs the old code:
+| | carries MAE / RMSE | rush yds MAE / RMSE | RB PPR MAE / RMSE | rush yds below / above floor-ceiling |
+| old | 3.41 / 4.65 | 20.0 / 29.8 | 4.45 / 6.37 | 10.6% / 10.8% |
+| K_CAR 1.4 only | 3.18 / 4.44 | 19.6 / 29.2 | 4.38 / 6.38 | 10.2% / 12.1% |
+| + SHARE_SD car 0.7 | 3.19 / 4.44 | 19.5 / 29.2 | 4.42 / 6.33 | 8.8% / 11.0% |
+| + CAR_OVERDISP 5.0 (adopted) | 3.17 / 4.43 | 19.5 / 29.2 | 4.42 / 6.32 | 8.4% / 11.0% |
+2025 alone (held out from the K fit): carries 3.33 -> 3.09 MAE, rush yds 20.0 -> 19.4, RB PPR RMSE 6.56 -> 6.53; RB PPR above-ceiling 15.5% -> 14.3%, bias +0.87 -> +0.69. Receiving and WR/TE numbers unchanged (K_REC stays 1.0).
+Live check, Week 9: lead backs +2 to +3 carries (Gibbs 17.6 -> 20.6, Henry 16.0 -> 18.8, Cook 15.2 -> 18.0), committee backups -1.5; team totals unchanged; teams with a news lead_back are skipped (that share is set by hand). Watch on the Record tab: RB carries/rushing lean and rushing ceilings.

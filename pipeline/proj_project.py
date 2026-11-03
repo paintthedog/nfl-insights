@@ -84,14 +84,18 @@ REC_S, RUSH_S = ["p_tgt", "p_rec", "p_rec_yds", "p_rec_1d"], ["p_car", "p_rush_y
 nq = f.pos != "QB"
 for c in REC_S + RUSH_S:
     f.loc[nq, c] = f.loc[nq, c] * f.loc[nq, "back_mult"]
-# Nov 2 (replay test, off by default): share concentration within a team before the team totals. Each non-QB's receiving
-# line is multiplied by (targets / team median)^(K-1) and his rushing line by (carries / team median)^(K-1); the team totals below
-# then put the volume back, so K > 1 moves volume from fringe players to regulars without changing any team total.
-SHARE_K = {"rec": float(__import__("os").environ.get("SHARE_K_REC", 1.0)), "car": float(__import__("os").environ.get("SHARE_K_CAR", 1.0))}
+# Nov 3 (replay test, TEST_LEDGER): share concentration within a team before the team totals. Each non-QB's rushing line is
+# multiplied by (carries / team median)^(K-1); the team totals below then put the volume back, so K > 1 moves carries from fringe
+# backs to the regulars without changing any team total. Replay 2024-25: K = 1.4 for carries (RB carries MAE -7%, rush yds -2.5%,
+# with sim_model.CAR_OVERDISP 5.0 so rushing ceilings stay ~11%). Receiving stays at 1.0 (tested 1.3: no RMSE gain, ceilings slip).
+# Teams with a news lead_back are skipped: that share is already set by hand.
+SHARE_K = {"rec": float(__import__("os").environ.get("SHARE_K_REC", 1.0)), "car": float(__import__("os").environ.get("SHARE_K_CAR", 1.4))}
+_lb_teams = set(_lb) if "_lb" in dir() else set()
 for _k, _base, _cols in (("rec", "p_tgt", REC_S), ("car", "p_car", RUSH_S)):
     if SHARE_K[_k] != 1.0:
-        _b = f.loc[nq, _base].clip(lower=0.05); _mult = (_b / _b.groupby(f.loc[nq, "posteam"]).transform("median")) ** (SHARE_K[_k] - 1)
-        for c in _cols: f.loc[nq, c] = f.loc[nq, c] * _mult
+        _sel = nq & ~f.posteam.isin(_lb_teams if _k == "car" else set())
+        _b = f.loc[_sel, _base].clip(lower=0.05); _mult = (_b / _b.groupby(f.loc[_sel, "posteam"]).transform("median")) ** (SHARE_K[_k] - 1)
+        for c in _cols: f.loc[_sel, c] = f.loc[_sel, c] * _mult
 # ---- make each team add up: the pool gets POOL_FRAC of the team (the rest goes to players who aren't listed), counting
 #      a Questionable player at his chance of playing. p_* stay "if he plays" numbers.
 _q = f[f.pos == "QB"]     # a team with an uncertain starter has two quarterbacks: the team's passing line is their chance-weighted mix
