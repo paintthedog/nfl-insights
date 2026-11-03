@@ -593,18 +593,40 @@
    "gap": -0.3,
    "move": -1.0,
    "result": "no gap"
+  },
+  {
+   "week": 8,
+   "game_id": "2026_08_CHI_SEA",
+   "market": "spread",
+   "model": -1.2,
+   "line_then": 3.0,
+   "close": 3.0,
+   "gap": -4.2,
+   "move": 0.0,
+   "result": "no move"
+  },
+  {
+   "week": 8,
+   "game_id": "2026_08_CHI_SEA",
+   "market": "total",
+   "model": 43.0,
+   "line_then": 46.5,
+   "close": 46.5,
+   "gap": -3.5,
+   "move": 0.0,
+   "result": "no move"
   }
  ],
  "spread": {
-  "n": 19,
+  "n": 20,
   "toward": 6,
   "away": 8,
-  "still": 5
+  "still": 6
  },
  "total": {
-  "n": 21,
+  "n": 22,
   "toward": 7,
   "away": 7,
-  "still": 7
+  "still": 8
  }
 }

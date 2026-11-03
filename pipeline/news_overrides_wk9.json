@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-02T09:45 ET",
+ "asof": "2026-11-03T09:10 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -40,13 +40,14 @@
   "Emeka Egbuka": 0.6,
   "Colby Parkinson": 0.6,
   "Mitchell Tinsley": 0.7,
-  "Audric Estim\u00e9": 0.7
+  "Audric Estimé": 0.7
  },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
   "NYG": "J.J. McCarthy",
-  "BAL": "Joe Fagnano"
+  "BAL": "Joe Fagnano",
+  "ARI": "Gardner Minshew"
  },
  "next_man": {},
  "ol_out": [
@@ -61,12 +62,12 @@
  ],
  "team_notes": {
   "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
-  "ARI": "Love (ankle) and Knight (concussion) left Wk8; Bourne high-ankle sprain, multiple weeks. Brissett benched for Minshew mid-game.",
+  "ARI": "Minshew named Week 9 starter over Brissett; Carson Beck QB2 (Nov 3).",
   "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
   "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
   "KC": "Rashee Rice limited in practice Wed Oct 28.",
   "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
-  "BAL": "Lamar Jackson to IR after thumb surgery (could be season-ending). Huntley (toe) ruled out Sunday; Fagnano only healthy QB, no signing as of Mon a.m.",
+  "BAL": "Lamar Jackson on IR (thumb surgery). Huntley (toe) unlikely Thu; Fagnano (ankle) has a chance (Nov 3).",
   "DEN": "RJ Harvey to IR; Dobbins leads.",
   "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice."
  },
@@ -96,13 +97,7 @@
    "starter": "Joe Fagnano",
    "backup": "Tyler Huntley",
    "p": 0.6,
-   "note": "Lamar to IR (thumb surgery); Huntley toe, Thu status unknown (Nov 2)"
-  },
-  "ARI": {
-   "starter": "Jacoby Brissett",
-   "backup": "Gardner Minshew",
-   "p": 0.5,
-   "note": "Brissett benched mid-game Wk8 for Minshew; Wk9 starter not named (Nov 2)"
+   "note": "Lamar on IR (thumb surgery); Huntley (toe) reported unlikely for Thu, Fagnano (ankle) 'has a chance' per Minter (Nov 3)"
   }
  },
  "lead_back": {
