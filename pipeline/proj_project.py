@@ -69,6 +69,18 @@ f = f[(f.pos != "QB") | f.pid.isin(_qb_ok)].copy()
 # ---- injuries: returning players are eased back in; Questionable players sit some of the time (the simulation plays that out)
 _inj = td.drop_duplicates("pid").set_index("pid")
 f["p_play"] = f.pid.map(_inj.p_play).fillna(1.0); f["back_mult"] = f.pid.map(_inj.back_mult).fillna(1.0)
+# Nov 3 (replay test, ADOPTED; P_ACTIVE=0 turns it off): a listed non-QB with no injury designation is still sometimes a healthy scratch or
+# never sees the field (replay 2024: 66% took a snap when his last-game snap share was under 10%, 88% at 10-20%). P_ACTIVE folds
+# that chance into the share-out and the simulation (the shown p_play and "if he plays" numbers are unchanged).
+if __import__("os").environ.get("P_ACTIVE", "1") == "1":
+    _ls = f.last_snap.fillna(f.pr_snap).fillna(0.0) if "last_snap" in f else pd.Series(0.5, index=f.index)
+    _pa = np.select([_ls <= 0.1, _ls <= 0.2, _ls <= 0.3, _ls <= 0.45, _ls <= 0.6], [0.66, 0.88, 0.90, 0.96, 0.97], 0.99)
+    _m = (f.pos != "QB") & (f.p_play >= 0.99)
+    f.loc[_m, "p_play"] = f.loc[_m, "p_play"] * _pa[_m.to_numpy()]
+# Nov 3 (replay test): quarterback rushing ran ~11% high in the replay (2024 act/proj 0.89 carries, 0.90 yards)
+_QBR = float(__import__("os").environ.get("QB_RUSH_MULT", 0.9))   # ADOPTED Nov 3 (replay: QB rush MAE -3%, lean -2.3 -> -1.0 yds)
+if _QBR != 1.0:
+    for c in ["p_car", "p_rush_yds", "p_rush_1d"]: f.loc[f.pos == "QB", c] = f.loc[f.pos == "QB", c] * _QBR
 # ---- success rate + pace layer (sr_adjust.py; backtested Oct 16): small multipliers on top of the calibrated projection,
 #      applied before the team totals below, so receivers' shifts redistribute shares and QB shifts flow to his receivers
 import sr_adjust as SR
@@ -238,6 +250,25 @@ for r in rows:
     r["mean"]["fp_ppr"], r["mean"]["fp_std"] = sp["mean"]["fp_ppr"], sp["mean"]["fp_std"]   # points from the sim: TDs counted once, INTs included
     r["var"] = {fmt: sp[f"var_{fmt}"] for fmt in ("ppr", "std")}
     r["dk"] = sp["dk"]
+# Nov 3 (replay 2024-25, TEST_LEDGER): the anytime-TD chance shown is a log-odds blend of the TD model's chance (weight 0.25) and
+# the simulator's (0.75): Brier 0.1435 -> 0.1423 (2024), 0.1381 -> 0.1373 (2025, held out). The TD model alone was too flat
+# (40%+ said 47%, scored 54%; under 10% said 7.4%, scored 5.7%). Written back to td_props so every table uses the same number;
+# the TD model's own chance is kept as p_td_model so a rerun never blends twice.
+W_SIM_TD = float(__import__("os").environ.get("W_SIM_TD", 0.75))
+_lg = lambda p: np.log(p / (1 - p)); _il = lambda x: 1 / (1 + np.exp(-x))
+_tdf = pd.read_csv(f"td_props_{SEASON}_wk{WEEK}.csv")
+if "p_td_model" not in _tdf: _tdf["p_td_model"] = _tdf.p_td
+_pm = _tdf.drop_duplicates("pid").set_index("pid").p_td_model
+_bl = {}
+for r in rows:
+    sp = sim_players.get(r["pid"]); pm = _pm.get(r["pid"])
+    if sp is None or pm is None or pd.isna(pm) or W_SIM_TD == 0: continue
+    ps = min(max(sp["p_td"], 0.005), 0.995); pmc = min(max(float(pm), 0.005), 0.995)
+    _bl[r["pid"]] = r["p_td"] = round(float(_il((1 - W_SIM_TD) * _lg(pmc) + W_SIM_TD * _lg(ps))), 3)
+_tdf["p_td"] = [_bl.get(p, m) for p, m in zip(_tdf.pid, _tdf.p_td_model)]
+if "fair_odds" in _tdf: _tdf["fair_odds"] = [round(-100 * p / (1 - p)) if p >= 0.5 else round(100 * (1 - p) / p) for p in _tdf.p_td]
+_tdf.to_csv(f"td_props_{SEASON}_wk{WEEK}.csv", index=False)
+print("anytime-TD blend (sim weight %.2f): %d players, mean %.3f -> %.3f" % (W_SIM_TD, len(_bl), _tdf.p_td_model.mean(), _tdf.p_td.mean()))
 out = dict(quants=P.QUANTS, recal=store["recal"], players=rows, redistrib=REDIST, boom_at=BOOM_AT, bust_at=BUST_AT, sim_params=dict(n_sim=N_SIM, share_sd=S.SHARE_SD, eff_sd=S.GAME_EFF_SD, exit_p=S.EXIT_P, td_overdisp=S.TD_OVERDISP))
 json.dump(out, open(f"proj_{SEASON}_wk{WEEK}.json", "w"))
 print("simulated", f.game_id.nunique(), "games x", N_SIM)
