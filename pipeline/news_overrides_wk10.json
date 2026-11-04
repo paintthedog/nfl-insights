@@ -1,0 +1,93 @@
+{
+ "asof": "2026-11-03T09:10 ET",
+ "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
+ "out": [
+  "Carter Runyon",
+  "David Montgomery",
+  "Deebo Samuel",
+  "Jacory Croskey-Merritt",
+  "Jalen Hurts",
+  "Kyle Monangai",
+  "Marcus Mariota",
+  "Michael Pittman",
+  "Raheim Sanders",
+  "Roman Wilson",
+  "Skyy Moore",
+  "Tank Bigsby",
+  "Will Shipley",
+  "Davante Adams",
+  "Terry McLaurin",
+  "Elijah Arroyo",
+  "KaVontae Turpin",
+  "Tyler Badie",
+  "Romeo Doubs",
+  "Najee Harris",
+  "Dameon Pierce",
+  "Lamar Jackson",
+  "Kendrick Bourne",
+  "RJ Harvey"
+ ],
+ "p_play": {},
+ "qb_start": {
+  "PHI": "Tanner McKee",
+  "SEA": "Sam Darnold",
+  "NYG": "J.J. McCarthy",
+  "BAL": "Joe Fagnano",
+  "ARI": "Gardner Minshew"
+ },
+ "next_man": {},
+ "ol_out": [
+  "Drew Shelton",
+  "Joe Alt",
+  "Josh Simmons",
+  "Kayode Awosika",
+  "Teven Jenkins",
+  "Trevor Penning",
+  "Alijah Vera-Tucker",
+  "Ben Brown"
+ ],
+ "team_notes": {
+  "ARI": "Minshew named Week 9 starter over Brissett; Carson Beck QB2 (Nov 3).",
+  "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
+  "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
+  "BAL": "Lamar Jackson on IR (thumb surgery). Huntley (toe) unlikely Thu; Fagnano (ankle) has a chance (Nov 3).",
+  "DEN": "RJ Harvey to IR; Dobbins leads.",
+  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice."
+ },
+ "back": [
+  "Jalen Nailor",
+  "Lane Johnson",
+  "Quentin Johnston",
+  "Tanor Bortolini",
+  "Tank Dell",
+  "David Sills",
+  "AJ Dillon",
+  "Dont'e Thornton",
+  "Cam Jurgens",
+  "Monroe Freeling",
+  "Dylan Parham",
+  "Andrew Vorhees",
+  "Aaron Banks",
+  "Jonah Jackson",
+  "Jeremiyah Love",
+  "Tyler Warren",
+  "Emeka Egbuka",
+  "Zach Charbonnet",
+  "Tre Harris"
+ ],
+ "qb_uncertain": {},
+ "lead_back": {
+  "NYJ": [
+   "Braelon Allen",
+   0.65
+  ],
+  "HOU": [
+   "Woody Marks",
+   0.65
+  ],
+  "DEN": [
+   "J.K. Dobbins",
+   0.6
+  ]
+ }
+}
