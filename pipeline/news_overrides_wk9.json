@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-03T09:10 ET",
+ "asof": "2026-11-05T09:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -25,13 +25,13 @@
   "Dameon Pierce",
   "Lamar Jackson",
   "Kendrick Bourne",
-  "RJ Harvey"
+  "RJ Harvey",
+  "Jeremiyah Love"
  ],
  "p_play": {
   "Breece Hall": 0.5,
   "DJ Moore": 0.9,
   "Tyler Allgeier": 0.85,
-  "Jeremiyah Love": 0.6,
   "Jake Ferguson": 0.6,
   "Bam Knight": 0.5,
   "Josh Palmer": 0.5,
@@ -40,14 +40,16 @@
   "Emeka Egbuka": 0.6,
   "Colby Parkinson": 0.6,
   "Mitchell Tinsley": 0.7,
-  "Audric Estim\u00e9": 0.7
+  "Audric Estim\u00e9": 0.7,
+  "Brian Robinson": 0.7
  },
  "qb_start": {
   "PHI": "Tanner McKee",
   "SEA": "Sam Darnold",
   "NYG": "J.J. McCarthy",
   "BAL": "Joe Fagnano",
-  "ARI": "Gardner Minshew"
+  "ARI": "Gardner Minshew",
+  "CLE": "Shedeur Sanders"
  },
  "next_man": {},
  "ol_out": [
@@ -62,14 +64,17 @@
  ],
  "team_notes": {
   "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
-  "ARI": "Minshew named Week 9 starter over Brissett; Carson Beck QB2 (Nov 3).",
+  "ARI": "Minshew starts. Jeremiyah Love on IR (high ankle, 4-5 weeks); Allgeier leads the backfield (Nov 5).",
   "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
   "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
   "KC": "Rashee Rice limited in practice Wed Oct 28.",
   "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
-  "BAL": "Lamar Jackson on IR (thumb surgery). Huntley (toe) unlikely Thu; Fagnano (ankle) has a chance (Nov 3).",
+  "BAL": "Lamar Jackson on IR; Huntley reportedly out for season. Rookie Joe Fagnano (ankle) starts Thursday vs JAX per Jesse Minter (Nov 5).",
   "DEN": "RJ Harvey to IR; Dobbins leads.",
-  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice."
+  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice.",
+  "CLE": "Watson in concussion protocol; Shedeur Sanders expected to start vs NO (Nov 5).",
+  "TB": "Egbuka DNP Wed Nov 4 (worked on the side).",
+  "ATL": "Brian Robinson (hamstring) limited Wed Nov 4; game in Madrid."
  },
  "back": [
   "Jalen Nailor",
@@ -86,9 +91,7 @@
   "Andrew Vorhees",
   "Aaron Banks",
   "Jonah Jackson",
-  "Jeremiyah Love",
   "Tyler Warren",
-  "Emeka Egbuka",
   "Zach Charbonnet",
   "Tre Harris"
  ],
@@ -112,6 +115,10 @@
   "DEN": [
    "J.K. Dobbins",
    0.6
+  ],
+  "ARI": [
+   "Tyler Allgeier",
+   0.65
   ]
  }
 }

@@ -1,10 +1,3 @@
-Staleness audit, week 9: 9 item(s)
-  [ROSTER] A.J. Brown (NE) projected 10.4 pts but roster status INA (A01)
-  [ROSTER] Colby Parkinson (LA) projected 6.9 pts but roster status INA (A01)
-  [ROSTER] Breece Hall (NYJ) projected 4.9 pts but roster status INA (A01)
-  [ROSTER] Mitchell Tinsley (CIN) projected 4.3 pts but roster status INA (A01)
-  [ROSTER] Audric Estimé (CLE) projected 4.4 pts but roster status INA (A01)
-  [ROSTER] Emeka Egbuka (TB) projected 7.8 pts but roster status INA (A01)
-  [ROSTER] TreVeyon Henderson (NE) projected 5.1 pts but roster status INA (A01)
+Staleness audit, week 9: 2 item(s)
   [DFS] no dk_salaries_wk9.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
   [WEATHER] 1 outdoor game(s) kick off within 72h and forecasts_wk9.csv is missing: fetch MySportsWeather + Covers

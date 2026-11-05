@@ -139,7 +139,7 @@ try:
         if _p is None or _p not in _ros_any.index or n in _nw.get("out", []): continue
         if _p in unavailable: print("news activates:", n, _ros_any[_p])
         unavailable.discard(_p); NEWS_ACTIVE[_p] = _ros_any[_p]
-        if n in _nw.get("back", []): q_play.pop(_p, None); q_lbl.pop(_p, None)   # confirmed back: full chance
+        if n in _nw.get("back", []) and n not in _nw.get("p_play", {}): q_play.pop(_p, None); q_lbl.pop(_p, None)   # confirmed back: full chance (a newer p_play wins; Nov 5 Egbuka bug)
     print("news overrides applied:", _nw["asof"], "| out:", len(_nw.get("out", [])), "| p_play:", len(_nw.get("p_play", {})))
 except FileNotFoundError:
     pass
