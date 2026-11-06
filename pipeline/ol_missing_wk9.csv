@@ -1,12 +1,12 @@
 team,ol_missing_pred,who
-ARI,4,Isaac Seumalo; Hjalte Froholdt; Jon Gaines II; Jayden Williams
+ARI,2,Jon Gaines II; Jayden Williams
 ATL,0,
 BAL,0,
-BUF,0,
+BUF,1,Dion Dawkins
 CAR,2,Taylor Moton; Damien Lewis
-CHI,0,
+CHI,1,Joe Thuney
 CIN,0,
-CLE,1,Austin Barber
+CLE,0,
 DAL,0,
 DEN,0,
 DET,1,Cade Mays
@@ -26,8 +26,8 @@ NYG,0,
 NYJ,0,
 PHI,0,
 PIT,0,
-SEA,0,
-SF,1,Trent Williams
-TB,0,
+SEA,1,Charles Cross
+SF,0,
+TB,1,Tristan Wirfs
 TEN,0,
 WAS,0,

@@ -615,17 +615,39 @@
    "gap": -3.5,
    "move": 0.0,
    "result": "no move"
+  },
+  {
+   "week": 9,
+   "game_id": "2026_09_JAX_BAL",
+   "market": "spread",
+   "model": -5.2,
+   "line_then": 2.5,
+   "close": -10.0,
+   "gap": -7.7,
+   "move": -12.5,
+   "result": "toward"
+  },
+  {
+   "week": 9,
+   "game_id": "2026_09_JAX_BAL",
+   "market": "total",
+   "model": 45.2,
+   "line_then": 48.5,
+   "close": 39.5,
+   "gap": -3.3,
+   "move": -9.0,
+   "result": "toward"
   }
  ],
  "spread": {
-  "n": 20,
-  "toward": 6,
+  "n": 21,
+  "toward": 7,
   "away": 8,
   "still": 6
  },
  "total": {
-  "n": 22,
-  "toward": 7,
+  "n": 23,
+  "toward": 8,
   "away": 7,
   "still": 8
  }
