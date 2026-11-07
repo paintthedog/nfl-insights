@@ -1,19 +1,5 @@
-Staleness audit, week 9: 18 item(s)
-  [INJURY] Sam Darnold (SEA) practice 'Did Not Participate In Practice' but projected as healthy (p_play 1.00)
-  [STALE] lead_back DEN set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] lead_back HOU set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] lead_back NYJ set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play A.J. Brown set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Audric Estimé set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Bam Knight set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Breece Hall set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Colby Parkinson set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play DJ Moore set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Emeka Egbuka set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Jake Ferguson set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Josh Palmer set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Mitchell Tinsley set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play TreVeyon Henderson set 2026-11-02 (4 days ago) - re-verify or remove
-  [STALE] p_play Tyler Allgeier set 2026-11-02 (4 days ago) - re-verify or remove
+Staleness audit, week 9: 4 item(s)
+  [CARRYOVER] Kyle Monangai was out last week, now projected 6.2 pts with no Week 9 status — confirm he's back
+  [CARRYOVER] Emeka Egbuka was out last week, now projected 7.7 pts with no Week 9 status — confirm he's back
+  [STALE] p_play DJ Moore set 2026-11-02 (5 days ago) - re-verify or remove
   [DFS] no dk_salaries_wk9.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
-  [WEATHER] 9 outdoor game(s) kick off within 72h and forecasts_wk9.csv is missing: fetch MySportsWeather + Covers

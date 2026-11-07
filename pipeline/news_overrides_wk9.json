@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-05T09:30 ET",
+ "asof": "2026-11-07T09:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -7,7 +7,6 @@
   "Deebo Samuel",
   "Jacory Croskey-Merritt",
   "Jalen Hurts",
-  "Kyle Monangai",
   "Marcus Mariota",
   "Michael Pittman",
   "Raheim Sanders",
@@ -26,30 +25,47 @@
   "Lamar Jackson",
   "Kendrick Bourne",
   "RJ Harvey",
-  "Jeremiyah Love"
+  "Jeremiyah Love",
+  "Cam Skattebo",
+  "Tyrone Tracy Jr.",
+  "Travis Etienne",
+  "CJ Donaldson",
+  "Brian Robinson",
+  "TreVeyon Henderson",
+  "Jeremy McNichols",
+  "DeVonta Smith",
+  "Dontayvion Wicks",
+  "A.J. Brown",
+  "Garrett Wilson",
+  "Mike Evans",
+  "Christian Kirk",
+  "Rashid Shaheed",
+  "Treylon Burks",
+  "Dyami Brown",
+  "Zachariah Branch",
+  "Terrance Ferguson",
+  "Josh Whyle",
+  "David Njoku",
+  "Bam Knight",
+  "Jordyn Tyson",
+  "Mack Hollins",
+  "Demarcus Robinson",
+  "Sam Darnold",
+  "Kyler Murray"
  ],
  "p_play": {
-  "Breece Hall": 0.5,
   "DJ Moore": 0.9,
-  "Tyler Allgeier": 0.85,
-  "Jake Ferguson": 0.6,
-  "Bam Knight": 0.5,
   "Josh Palmer": 0.5,
-  "A.J. Brown": 0.6,
-  "TreVeyon Henderson": 0.75,
-  "Emeka Egbuka": 0.6,
-  "Colby Parkinson": 0.6,
-  "Mitchell Tinsley": 0.7,
-  "Audric Estim\u00e9": 0.7,
-  "Brian Robinson": 0.7
+  "Khalil Shakir": 0.6
  },
  "qb_start": {
   "PHI": "Tanner McKee",
-  "SEA": "Sam Darnold",
+  "SEA": "Drew Lock",
   "NYG": "J.J. McCarthy",
   "BAL": "Joe Fagnano",
   "ARI": "Gardner Minshew",
-  "CLE": "Shedeur Sanders"
+  "CLE": "Shedeur Sanders",
+  "MIN": "Carson Wentz"
  },
  "next_man": {},
  "ol_out": [
@@ -63,18 +79,25 @@
   "Ben Brown"
  ],
  "team_notes": {
-  "PHI": "Dameon Pierce to IR (4th Eagles RB on IR); Jaydon Blue signed to the active roster. Lead back not confirmed. McKee starts.",
+  "PHI": "McKee starts. DeVonta Smith and Wicks out; Barkley cleared (Nov 6).",
   "ARI": "Minshew starts. Jeremiyah Love on IR (high ankle, 4-5 weeks); Allgeier leads the backfield (Nov 5).",
-  "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
-  "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
+  "NYJ": "Breece Hall (quad) cleared to return; Garrett Wilson (concussion) out (Nov 6).",
+  "BUF": "Shakir and Palmer DNP Thursday; Monday game, final report Saturday. Moore limited (Nov 7).",
   "KC": "Rashee Rice limited in practice Wed Oct 28.",
   "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
   "BAL": "Lamar Jackson on IR; Huntley reportedly out for season. Rookie Joe Fagnano (ankle) starts Thursday vs JAX per Jesse Minter (Nov 5).",
   "DEN": "RJ Harvey to IR; Dobbins leads.",
-  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice.",
+  "NE": "A.J. Brown (knee) and Henderson (illness) out; Stevenson leads (Nov 6).",
   "CLE": "Watson in concussion protocol; Shedeur Sanders expected to start vs NO (Nov 5).",
   "TB": "Egbuka DNP Wed Nov 4 (worked on the side).",
-  "ATL": "Brian Robinson (hamstring) limited Wed Nov 4; game in Madrid."
+  "ATL": "Brian Robinson (hamstring) out; Zachariah Branch out; game in Madrid (Nov 6).",
+  "SEA": "Darnold (quad) out; Drew Lock starts. Shaheed out (Nov 6).",
+  "MIN": "Kyler Murray (hamstring) out; Carson Wentz starts Monday vs BUF (Nov 7).",
+  "NYG": "Skattebo doubtful, Tracy on IR: Devin Singletary leads (Nov 6).",
+  "NO": "Etienne IR, CJ Donaldson out; Kamara cleared, Kendre Miller (Nov 6).",
+  "SF": "Evans, Deebo, Kirk, D. Robinson out; McCaffrey cleared (Nov 6).",
+  "DAL": "Jake Ferguson leaning doubtful; Pickens likely plays; Turpin out (Nov 6).",
+  "CHI": "Monangai (thumb/toe) uncertain for SNF (Nov 6)."
  },
  "back": [
   "Jalen Nailor",
@@ -93,7 +116,12 @@
   "Jonah Jackson",
   "Tyler Warren",
   "Zach Charbonnet",
-  "Tre Harris"
+  "Tre Harris",
+  "Breece Hall",
+  "Christian McCaffrey",
+  "Saquon Barkley",
+  "Alvin Kamara",
+  "Kenny Gainwell"
  ],
  "qb_uncertain": {
   "BAL": {
@@ -104,10 +132,6 @@
   }
  },
  "lead_back": {
-  "NYJ": [
-   "Braelon Allen",
-   0.65
-  ],
   "HOU": [
    "Woody Marks",
    0.65
@@ -119,6 +143,10 @@
   "ARI": [
    "Tyler Allgeier",
    0.65
+  ],
+  "NYG": [
+   "Devin Singletary",
+   0.6
   ]
  }
 }
