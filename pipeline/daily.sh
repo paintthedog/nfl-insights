@@ -6,7 +6,6 @@ cd "$(dirname "$0")"
 pip install -q --break-system-packages statsmodels nflreadpy pyarrow polars scikit-learn >/dev/null 2>&1 || true
 python get_data.py > /dev/null
 python bootstrap_data.py
-python practice_log.py $(python -c "import pandas as pd; s=pd.read_parquet(\"data/sched.parquet\"); s=s[(s.season==2026)&(s.game_type==\"REG\")]; print(int(s[s.result.isna()].week.min()))") || true   # Nov 8: snapshot practice statuses (trend log)
 read W NEXT < <(python - <<'P'
 import pandas as pd
 s = pd.read_parquet("data/sched.parquet"); s = s[(s.season == 2026) & (s.game_type == "REG")]
@@ -18,4 +17,5 @@ P
 echo "week $W ${NEXT:+and $NEXT}"
 python auto_overrides.py $W $NEXT     # seed a missing week, date every entry, let official statuses win, prune no-ops
 bash refresh_all.sh $W $NEXT
+python practice_log.py $(python -c "import pandas as pd; s=pd.read_parquet(\"data/sched.parquet\"); s=s[(s.season==2026)&(s.game_type==\"REG\")]; print(int(s[s.result.isna()].week.min()))") || true   # Nov 8 (runs after refresh_all: injuries_2026.parquet is written during the chain): snapshot practice statuses (trend log)
 echo "built site/paydirt.html"

@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-07T22:00 ET",
+ "asof": "2026-11-08T09:30 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -51,12 +51,11 @@
   "Mack Hollins",
   "Demarcus Robinson",
   "Sam Darnold",
-  "Kyler Murray"
+  "Kyler Murray",
+  "Kyle Monangai",
+  "Jaylen Wright"
  ],
- "p_play": {
-  "DJ Moore": 0.9,
-  "Khalil Shakir": 0.6
- },
+ "p_play": {},
  "qb_start": {
   "PHI": "Joe Milton III",
   "SEA": "Drew Lock",
@@ -68,26 +67,24 @@
  },
  "next_man": {},
  "ol_out": [
-  "Joe Alt",
   "Josh Simmons",
   "Kayode Awosika",
   "Teven Jenkins",
   "Trevor Penning",
-  "Alijah Vera-Tucker",
-  "Ben Brown"
+  "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "PHI": "Joe Milton starts vs NYG (named Nov 4; replaces McKee). DeVonta Smith and Wicks out; Barkley cleared.",
+  "PHI": "Joe Milton starts vs NYG; McKee (rib) active as backup (Rapoport, Nov 8). DeVonta Smith, Wicks, Covey out.",
   "ARI": "Minshew starts. Jeremiyah Love on IR (high ankle, 4-5 weeks); Allgeier leads the backfield (Nov 5).",
   "NYJ": "Breece Hall (quad) cleared to return; Garrett Wilson (concussion) out (Nov 6).",
-  "BUF": "Shakir and Palmer DNP Thursday; Monday game, final report Saturday. Moore limited (Nov 7).",
+  "BUF": "Moore and Shakir off the final report (no status); Palmer out. Monday at MIN (Nov 7 report).",
   "KC": "Rashee Rice limited in practice Wed Oct 28.",
-  "DET": "Gibbs (shoulder) and St. Brown DNP Wed Oct 28; no game status yet.",
+  "DET": "St. Brown (Q) expected to play at MIA (Rapoport, Nov 8).",
   "BAL": "Lamar Jackson on IR; Huntley reportedly out for season. Rookie Joe Fagnano (ankle) starts Thursday vs JAX per Jesse Minter (Nov 5).",
   "DEN": "RJ Harvey to IR; Dobbins leads.",
   "NE": "A.J. Brown (knee) and Henderson (illness) out; Stevenson leads (Nov 6).",
-  "CLE": "Watson in concussion protocol; Shedeur Sanders expected to start vs NO (Nov 5).",
-  "TB": "Egbuka DNP Wed Nov 4 (worked on the side).",
+  "CLE": "Watson cleared protocol but expected inactive; Shedeur Sanders starts at NO (Rapoport, Nov 8).",
+  "TB": "Egbuka (Q, full practice Fri) will play at CHI (Rapoport, Nov 8).",
   "ATL": "Brian Robinson (hamstring) out; Zachariah Branch out; game in Madrid (Nov 6).",
   "SEA": "Darnold (quad) out; Drew Lock starts. Shaheed out (Nov 6).",
   "MIN": "Kyler Murray (hamstring) out; Carson Wentz starts Monday vs BUF (Nov 7).",
@@ -95,7 +92,8 @@
   "NO": "Etienne IR, CJ Donaldson out; Kamara cleared, Kendre Miller (Nov 6).",
   "SF": "McCaffrey off the injury report, plays vs LV with no stated limit; Kaelon Black mixes in. Evans, Deebo, Kirk, D. Robinson out (Nov 6).",
   "DAL": "Jake Ferguson leaning doubtful; Pickens likely plays; Turpin out (Nov 6).",
-  "CHI": "Monangai (thumb/toe) uncertain for SNF (Nov 6)."
+  "CHI": "Monangai (toe/thumb) won't play SNF vs TB, expected back Week 11 (Rapoport, Nov 8).",
+  "MIA": "Jaylen Wright (Q) won't play vs DET (Rapoport, Nov 8)."
  },
  "back": [
   "Jalen Nailor",
@@ -161,6 +159,16 @@
    "gtd",
    "2026-11-07",
    "SI Nov 7: WR Hudson elevated; Schottenheimer only 'hopeful'"
+  ],
+  "Amon-Ra St. Brown": [
+   "expected",
+   "2026-11-08",
+   "NFL.com Sunday pregame (Rapoport) Nov 8: expected to play"
+  ],
+  "Emeka Egbuka": [
+   "expected",
+   "2026-11-08",
+   "NFL.com Sunday pregame (Rapoport) Nov 8: will play"
   ]
  },
  "committee": [
