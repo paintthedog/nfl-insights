@@ -149,6 +149,27 @@ try:
         if _p in unavailable: print("news activates:", n, _ros_any[_p])
         unavailable.discard(_p); NEWS_ACTIVE[_p] = _ros_any[_p]
         if n in _nw.get("back", []) and n not in _nw.get("p_play", {}): q_play.pop(_p, None); q_lbl.pop(_p, None)   # confirmed back: full chance (a newer p_play wins; Nov 5 Egbuka bug)
+    # Nov 8 (Clinton: let coach quotes count): "news_q": {"Name": ["expected"|"gtd"|"unlikely", "YYYY-MM-DD", "source"]} moves a
+    # Questionable player's model chance in log-odds (expected +1.5, unlikely -1.5, gtd halfway to 50%), never replaces it. The steps are
+    # PROVISIONAL (no history of quotes to fit them on): every use is logged to news_q_log.csv and graded by news_q_grade.py.
+    import math as _m, datetime as _dtm
+    _NQ = {"expected": 1.5, "unlikely": -1.5}
+    _lg = []
+    for n, v in (_nw.get("news_q") or {}).items():
+        cat, day, src = (list(v) + ["", "", ""])[:3]
+        _p = _find(n)
+        if _p is None or _p in unavailable: continue
+        if not day or (_dtm.date.today() - _dtm.date.fromisoformat(day)).days > 2: print("news_q: stale or undated, ignored:", n, day); continue
+        p0 = min(max(q_play.get(_p, 0.97), 0.02), 0.98); z = _m.log(p0 / (1 - p0))
+        z = z / 2 if cat == "gtd" else z + _NQ.get(cat, 0.0)
+        p1 = round(1 / (1 + _m.exp(-z)), 3)
+        q_play[_p] = p1; q_lbl[_p] = f"{cat.replace('gtd', 'game-time decision')} ({src} {day})"
+        _lg.append(dict(season=SEASON, week=WEEK, name=n, pid=_p, cat=cat, date=day, source=src, p_model=round(p0, 3), p_news=p1))
+        print(f"news_q: {n} {cat} {p0:.2f} -> {p1:.2f}")
+    if _lg:
+        _f = "news_q_log.csv"; _new = pd.DataFrame(_lg)
+        _old = pd.read_csv(_f) if os.path.exists(_f) else _new.iloc[:0]
+        pd.concat([_old, _new]).drop_duplicates(["season", "week", "pid", "cat", "date"], keep="last").to_csv(_f, index=False)
     print("news overrides applied:", _nw["asof"], "| out:", len(_nw.get("out", [])), "| p_play:", len(_nw.get("p_play", {})))
 except FileNotFoundError:
     pass

@@ -27,8 +27,8 @@ def load(path, default):
 
 def entries(ov):
     """Every dated fact in the file, as 'section|key' strings."""
-    keys = [f"out|{n}" for n in ov.get("out", [])] + [f"back|{n}" for n in ov.get("back", [])] + [f"ol_out|{n}" for n in ov.get("ol_out", [])]
-    for sec in ("p_play", "qb_start", "lead_back", "next_man", "team_notes", "qb_uncertain"):
+    keys = [f"out|{n}" for n in ov.get("out", [])] + [f"back|{n}" for n in ov.get("back", [])] + [f"ol_out|{n}" for n in ov.get("ol_out", [])] + [f"committee|{n}" for n in ov.get("committee", [])]
+    for sec in ("p_play", "qb_start", "lead_back", "next_man", "team_notes", "qb_uncertain", "news_q"):
         for k, v in (ov.get(sec) or {}).items():
             keys.append(f"{sec}|{k}|{json.dumps(v, sort_keys=True)}")   # a changed value counts as a new fact
     return keys
@@ -41,7 +41,7 @@ def run(W):
         if not os.path.exists(prev): print(f"auto_overrides: no {path} and no week {W-1} file to seed from"); return
         ov = load(prev, {})
         pdates = load(f"news_dates_wk{W-1}.json", {})
-        ov["p_play"] = {}; ov["qb_uncertain"] = {}
+        ov["p_play"] = {}; ov["qb_uncertain"] = {}; ov["news_q"] = {}; ov["committee"] = []
         ov["team_notes"] = {t: n for t, n in (ov.get("team_notes") or {}).items()
                             if (dt.date.today() - dt.date.fromisoformat(pdates.get(f"team_notes|{t}|{json.dumps(n, sort_keys=True)}", today))).days <= NOTE_DAYS}
         ov["source"] = f"Seeded {today} from week {W-1} by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week {W} reports."
@@ -69,7 +69,11 @@ def run(W):
     dates = {k: v for k, v in dates.items() if k in live}
     conf = set(ov.pop("confirmed", []) or [])
     for k in list(dates):
-        if k.split("|")[1] in conf: dates[k] = today
+        sec, who = k.split("|")[0], k.split("|")[1]
+        if sec in ("qb_start", "qb_uncertain"):
+            # Nov 8 (the McKee miss): a QB is re-dated only when the QB's own name is confirmed, never by team code
+            if any(n in k for n in conf if " " in n): dates[k] = today
+        elif who in conf: dates[k] = today
     for k in live: dates.setdefault(k, today)
     json.dump(ov, open(path, "w"), indent=1); json.dump(dates, open(dpath, "w"), indent=0, sort_keys=True)
     for c in changed: print("auto_overrides:", c)
@@ -77,7 +81,7 @@ def run(W):
     for k, d in sorted(dates.items()):
         age = (dt.date.today() - dt.date.fromisoformat(d)).days
         sec = k.split("|")[0]
-        if sec in ("p_play", "qb_uncertain", "lead_back") and age > STALE_DAYS:
+        if sec in ("p_play", "qb_uncertain", "lead_back", "news_q") and age > STALE_DAYS:
             print(f"STALE: {k.split('|')[0]} {k.split('|')[1]} set {d} ({age} days) - re-verify or remove")
     print(f"auto_overrides: week {W} ok, {len(live)} entries, {len(changed)} cleaned")
 
@@ -87,7 +91,7 @@ def stale_lines(W):
     out = []
     for k, d in load(f"news_dates_wk{W}.json", {}).items():
         age = (dt.date.today() - dt.date.fromisoformat(d)).days
-        if k.split("|")[0] in ("p_play", "qb_uncertain", "lead_back") and age > STALE_DAYS:
+        if k.split("|")[0] in ("p_play", "qb_uncertain", "lead_back", "news_q") and age > STALE_DAYS:
             out.append(f"{k.split('|')[0]} {k.split('|')[1]} set {d} ({age} days ago) - re-verify or remove")
     return out
 

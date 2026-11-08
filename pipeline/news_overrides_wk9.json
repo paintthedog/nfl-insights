@@ -151,5 +151,24 @@
    "Christian McCaffrey",
    0.65
   ]
- }
+ },
+ "news_q": {
+  "Jake Ferguson": [
+   "unlikely",
+   "2026-11-07",
+   "SI Nov 7: less of a chance than Schoonmaker, one limited practice"
+  ],
+  "George Pickens": [
+   "gtd",
+   "2026-11-07",
+   "SI Nov 7: WR Hudson elevated; Schottenheimer only 'hopeful'"
+  ]
+ },
+ "committee": [
+  "NYJ",
+  "SEA"
+ ],
+ "confirmed": [
+  "Carson Wentz"
+ ]
 }

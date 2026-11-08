@@ -19,6 +19,13 @@ qs = ov.get("qb_start", {})
 for r in sw.itertuples():
     for side in ("home", "away"):
         tm, lq = getattr(r, f"{side}_team"), getattr(r, f"{side}_qb_name"); prev = last.get(tm)
+        # Nov 8 (the McKee miss): an override that disagrees with the feed is flagged every run until the news settles it;
+        # keep it only with a dated source naming that QB (then list his name under "confirmed"), else delete it and let the feed decide
+        if tm in qs and isinstance(lq, str) and qs[tm].split()[-1].lower() not in lq.lower() and lq.split()[-1].lower() not in qs[tm].lower():
+            _d = json.load(open(f"news_dates_wk{W}.json")) if os.path.exists(f"news_dates_wk{W}.json") else {}
+            _when = next((v for k, v in _d.items() if k.startswith(f"qb_start|{tm}|")), "?")
+            if _when == "?" or (dt.date.today() - dt.date.fromisoformat(_when)).days > 2:
+                flag("QB-CONFLICT", f"{tm}: qb_start says {qs[tm]} (dated {_when}) but the schedule feed lists {lq} - search the news; keep only with a dated source")
         if tm in qs or tm in ov.get("qb_uncertain", {}) or (isinstance(lq, str) and lq in ov.get("p_play", {})): continue   # confirmed starter, or the listed QB's chance is set explicitly
         if prev and isinstance(lq, str) and prev.split(".")[-1].lower() not in lq.lower():
             flag("QB", f"{tm}: feed lists {lq}, last starter {prev} — confirm and set qb_start")
@@ -65,6 +72,32 @@ try:
     for nm in prev.get("ol_out", []):
         if nm not in ov.get("ol_out", []) and nm not in ov.get("back", []): flag("CARRYOVER", f"OL {nm} was out last week, not listed this week — confirm")
 except FileNotFoundError: pass
+# 4a. (Nov 8, McCaffrey) a returning lead back needs lead_back: otherwise the share-out splits carries with his fill-in.
+#     Returning = led his team in carries over his last 3 games played, missed the team's latest game, projected to play now.
+try:
+    _pb = pd.read_parquet("data/pbp_2026.parquet", columns=["week", "posteam", "rusher_player_id", "rusher_player_name"]).dropna(subset=["rusher_player_id"])
+    _lb = ov.get("lead_back", {}) or {}
+    for tm in set(sw.home_team) | set(sw.away_team):
+        _t = _pb[_pb.posteam == tm]
+        if _t.empty or tm in _lb or tm in (ov.get("committee") or []): continue   # "committee": [team codes] = news says shared backfield
+        _wks = sorted(_t.week.unique()); _lastwk = _wks[-1]
+        _c = _t.groupby(["rusher_player_id", "week"]).size().reset_index(name="c")
+        for pid, d in _c.groupby("rusher_player_id"):
+            d = d.sort_values("week"); last3 = d.tail(3)
+            if d.week.max() >= _lastwk or len(last3) < 2: continue          # played the latest game, or too little history
+            tot = _c[_c.week.isin(last3.week)].groupby("week").c.sum()
+            if (last3.set_index("week").c / tot).mean() < 0.45: continue      # was not the lead back
+            m = P[(P.pid == pid) & (P.p_play >= 0.5)]
+            if len(m): flag("LEAD", f"{m.name.iloc[0]} ({tm}) returns after missing week {int(_lastwk)} (was the lead back) and {tm} has no lead_back - set it from the news (or list {tm} under "committee" if the news says shared)")
+except Exception as e: flag("LEAD", f"returning-back check skipped: {e}")
+# 4c. (Nov 8, Joe Alt / Ben Brown) an ol_out lineman who is active on the roster and absent from this week's injury report
+try:
+    _ros = ro.sort_values("week").drop_duplicates("gsis_id", keep="last")
+    for nm in ov.get("ol_out", []):
+        x = _ros[_ros.full_name.map(norm) == norm(nm)]
+        if len(x) and x.status.iloc[0] == "ACT" and x.team.iloc[0] in set(iw.team) and not (iw.gsis_id == x.gsis_id.iloc[0]).any():
+            flag("OL", f"{nm} ({x.team.iloc[0]}) is in ol_out but active on the roster and not on the {x.team.iloc[0]} injury report - verify or remove")
+except Exception as e: flag("OL", f"ol_out check skipped: {e}")
 # 4b. per-entry staleness (Oct 22): chances, lead backs and uncertain QBs set more than 3 days ago
 try:
     from auto_overrides import stale_lines

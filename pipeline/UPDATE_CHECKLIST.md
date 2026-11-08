@@ -32,6 +32,14 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 - [ ] Freshness rule (the Bigsby lesson): any override older than 48h gets re-verified or removed
 - [ ] Tier discipline: availability facts → model inputs; role facts → pool/seeds; narrative → `team_notes` only. Never hand-edit projections.
 
+## 3b. (Nov 8) News sources that actually load, and the new audit items
+- [ ] FantasyFootballers / FantasyData time out on every scheduled run since Nov 4. Use WebSearch first, then fetch the result URLs (fetching a URL that came from a search works): RotoWire's daily "NFL Injury Report" article, SI's "every starting NFL quarterback ... updated weekly", NBC Sports player news (nbcsports.com/fantasy/football/player-news/...). If no news page can be read at all, the digest's first line says so.
+- [ ] [QB-CONFLICT]: qb_start disagrees with the schedule feed. Search "<team> starting quarterback week W"; keep the override only with a dated source and list the QB's NAME under "confirmed" (team codes no longer re-date QBs). Otherwise delete it and let the feed decide.
+- [ ] [LEAD]: a lead back returns from a missed game with no lead_back for his team. Set lead_back from the news, or list the team under "committee": [...] when the news says shared.
+- [ ] [OL]: an ol_out lineman is active and not on his team's injury report. Verify with a dated source or remove him.
+- [ ] Coach quotes for Questionable players: "news_q": {"Name": ["expected"|"gtd"|"unlikely", "YYYY-MM-DD", "short source"]}. Moves the model's chance (log-odds +1.5 / halfway to 50% / -1.5); ignored after 2 days. Use it for explicit quotes or reports ("expected to play", "game-time decision", "unlikely/leaning doubtful"), not for fantasy opinion. Graded by `python news_q_grade.py` (Tuesday).
+- [ ] `practice_log.py` runs in daily.sh and snapshots practice statuses each run (data/practice_log.csv; commit it). Log only until ~4 weeks exist; then test whether the Wed/Thu/Fri sequence adds to injuries.p_play_q.
+
 ## 4. Weather (REQUIRED on every run with an outdoor game inside 72 hours, i.e. Thu–Mon; Oct 31: Week 8 sat with no forecasts until Saturday afternoon)
 - [ ] WebFetch https://www.mysportsweather.com/nfl (primary: kickoff-hour wind + gusts, temp, precip; NBM block as a second opinion) and https://www.covers.com/sport/nfl/weather (cross-check; one wind number, no gusts). Open-Meteo is blocked (robots); NWS point forecasts only for a single genuinely windy/snowy game
 - [ ] Rewrite `forecasts_wk{W}.csv` (team,wind,temp,precip,source) every run: one row per OUTDOOR game keyed by HOME team code as in sched (LA = Rams), wind = MySportsWeather kickoff hour; source note = "MySportsWeather <Mon D> (gusts N); Covers X" and "(>3 mph apart)" when they disagree by more than 3 mph. Do the same for W+1 once its games are inside 72h
