@@ -34,3 +34,18 @@ PRAC_LBL = {"DNP": "no practice", "Limited": "limited practice", "Full": "full p
 def p_mid(practice_status):
     return PRAC_MID.get(PRACTICE.get(practice_status))
 
+# Nov 8 (Clinton: does practice news matter? ADOPTED after the test in TEST_LEDGER; Q_MODEL=0 turns it off):
+# chance a Questionable RB/WR/TE takes an offensive snap, logistic in his final practice status, his role (mean offensive
+# snap share over his last 3 games this season), whether he has no game yet this season, and whether he missed his last
+# week (more than one week since his last game, byes included). Fit 2019-2025 (2,679 cases, offensive snap > 0).
+# Held out 2024-25 Brier 0.214 vs the flat P_PLAY table 0.249, better in every leave-one-season-out fold 2021-25. The flat
+# table overrated backups (it said ~72%, they played ~46%) and underrated starters (Full 95%, Limited 82%, DNP 56% actual).
+Q_COEF = {"const": -1.362, "Full": 1.894, "Limited": 1.234, "share": 2.445, "no_game": -0.31, "missed": -0.654}
+def p_play_q(practice_status, share=None, missed=False):
+    """share: mean offense snap share (0-1) over his last 3 games this season, None if no game yet."""
+    import math
+    if __import__("os").environ.get("Q_MODEL", "1") != "1": return p_play(practice_status)
+    ps = PRACTICE.get(practice_status)
+    if ps is None: return p_play(practice_status)
+    z = Q_COEF["const"] + Q_COEF.get(ps, 0.0) + (Q_COEF["no_game"] if share is None else Q_COEF["share"] * float(share)) + (Q_COEF["missed"] if missed else 0.0)
+    return round(1 / (1 + math.exp(-z)), 3)

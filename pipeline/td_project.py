@@ -31,7 +31,16 @@ q_play, q_lbl = {}, {}
 _cur = inj[inj.team.isin(_teams_now)]
 unavailable |= set(_cur[_cur.report_status.isin(["Out", "Doubtful"])].gsis_id.dropna())
 QUESTIONABLE = list(set(QUESTIONABLE) | set(_cur[_cur.report_status == "Questionable"].full_name.dropna()))
-q_play.update({r.gsis_id: J.p_play(r.practice_status) for r in _cur[_cur.report_status == "Questionable"].itertuples() if isinstance(r.gsis_id, str)})
+# Nov 8: Questionable chance from practice status + role (injuries.p_play_q); QBs keep the flat table (not fit on QBs)
+_qsn = pd.read_parquet("data/snaps.parquet"); _qsn = _qsn[(_qsn.season == SEASON) & (_qsn.week < WEEK) & (_qsn.offense_snaps > 0)].copy()
+if _qsn.offense_pct.max() > 1.5: _qsn["offense_pct"] = _qsn.offense_pct / 100
+_qsn = _qsn.drop_duplicates(["week", "gsis_id"]).sort_values("week")
+_qrole = {g: (d.offense_pct.tail(3).mean(), WEEK - d.week.iloc[-1] > 1) for g, d in _qsn.groupby("gsis_id")}
+for r in _cur[_cur.report_status == "Questionable"].itertuples():
+    if not isinstance(r.gsis_id, str): continue
+    if r.position in ("RB", "WR", "TE"):
+        _sh, _ms = _qrole.get(r.gsis_id, (None, False)); q_play[r.gsis_id] = J.p_play_q(r.practice_status, _sh, _ms)
+    else: q_play[r.gsis_id] = J.p_play(r.practice_status)
 listed = set(_cur[~_cur.report_status.isin(["Out", "Doubtful"])].gsis_id.dropna())
 # Teams with this week's practice report but no game statuses yet (midweek): practice participation decides, and last
 # week's statuses and Monday's news are superseded. A player missing from his team's report is practicing normally.
