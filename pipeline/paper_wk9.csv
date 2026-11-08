@@ -2,39 +2,39 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 9,"Moneyline, model differs 4+ pts",2026_09_JAX_BAL,BAL,ml,ML,,5.0,0.2768,,2026-11-05T14:21Z,nflverse
 9,"Game totals, model differs 3+ pts",2026_09_JAX_BAL,JAX@BAL,game_total,Over,39.5,1.909,0.6875,,2026-11-05T14:21Z,nflverse
 9,Trend unders: prime time,2026_09_JAX_BAL,JAX@BAL,game_total,Under,39.5,1.909,0.563,,2026-11-05T14:21Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_CIN_ATL,CIN,ml,ML,,1.571,0.6526,,2026-11-08T03:03Z,nflverse
-9,"Game totals, model differs 3+ pts",2026_09_CIN_ATL,CIN@ATL,game_total,Under,52.5,1.893,0.6211,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_CLE_NO,NO,ml,ML,,1.588,0.8076,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_DAL_IND,IND,ml,ML,,2.9,0.3968,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_DEN_CAR,CAR,ml,ML,,2.2,0.5184,,2026-11-08T03:03Z,nflverse
-9,"Game totals, model differs 3+ pts",2026_09_DEN_CAR,DEN@CAR,game_total,Over,44.5,1.926,0.6631,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_DET_MIA,MIA,ml,ML,,3.35,0.3474,,2026-11-08T03:03Z,nflverse
-9,Trend unders: wind 10–19 mph,2026_09_LA_WAS,LA@WAS,game_total,Under,47.5,1.926,0.579,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_NYG_PHI,NYG,ml,ML,,1.645,0.6354,,2026-11-08T03:03Z,nflverse
-9,Trend unders: wind 10–19 mph,2026_09_NYG_PHI,NYG@PHI,game_total,Under,38.5,1.893,0.579,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_NYJ_KC,NYJ,ml,ML,,5.0,0.3195,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_LV_SF,SF,ml,ML,,1.2,0.861,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_ARI_SEA,ARI,ml,ML,,4.5,0.3704,,2026-11-08T03:03Z,nflverse
-9,Trend unders: wind 10–19 mph,2026_09_ARI_SEA,ARI@SEA,game_total,Under,39.5,1.926,0.579,,2026-11-08T03:03Z,nflverse
-9,"Game totals, model differs 3+ pts",2026_09_GB_NE,GB@NE,game_total,Over,44.5,1.909,0.6211,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_TB_CHI,TB,ml,ML,,3.2,0.3909,,2026-11-08T03:03Z,nflverse
-9,"Game totals, model differs 3+ pts",2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.6009,,2026-11-08T03:03Z,nflverse
-9,Trend unders: wind 10–19 mph,2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.579,,2026-11-08T03:03Z,nflverse
-9,Trend unders: prime time,2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.563,,2026-11-08T03:03Z,nflverse
-9,"Moneyline, model differs 4+ pts",2026_09_BUF_MIN,BUF,ml,ML,,1.588,0.6526,,2026-11-08T03:03Z,nflverse
-9,"Game totals, model differs 3+ pts",2026_09_BUF_MIN,BUF@MIN,game_total,Over,43.5,1.847,0.6096,,2026-11-08T03:03Z,nflverse
-9,Trend unders: prime time,2026_09_BUF_MIN,BUF@MIN,game_total,Under,43.5,1.98,0.563,,2026-11-08T03:03Z,nflverse
-9,Teaser legs: small underdogs +6,2026_09_DEN_CAR,CAR +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + CLE +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + CAR +8.5,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + PHI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + CAR +8.5,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + PHI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,CAR +8.5 + PHI +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,CAR +8.5 + MIN +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:03Z,nflverse
-9,"Teasers (wide): underdogs +1 to +3, all pairs",,PHI +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:03Z,nflverse
-9,Control: random,2026_09_ARI_SEA,ARI@SEA,game_total,Over,39.5,1.893,0.521,,2026-11-08T03:03Z,nflverse
-9,Control: random,2026_09_LA_WAS,LA@WAS,game_total,Over,47.5,1.893,0.476,,2026-11-08T03:03Z,nflverse
-9,Control: random,2026_09_DAL_IND,DAL@IND,game_total,Over,51.5,1.893,0.488,,2026-11-08T03:03Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_CIN_ATL,CIN,ml,ML,,1.571,0.6526,,2026-11-08T03:14Z,nflverse
+9,"Game totals, model differs 3+ pts",2026_09_CIN_ATL,CIN@ATL,game_total,Under,52.5,1.893,0.6211,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_CLE_NO,NO,ml,ML,,1.588,0.8076,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_DAL_IND,IND,ml,ML,,2.9,0.3968,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_DEN_CAR,CAR,ml,ML,,2.2,0.5184,,2026-11-08T03:14Z,nflverse
+9,"Game totals, model differs 3+ pts",2026_09_DEN_CAR,DEN@CAR,game_total,Over,44.5,1.926,0.6631,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_DET_MIA,MIA,ml,ML,,3.35,0.3474,,2026-11-08T03:14Z,nflverse
+9,Trend unders: wind 10–19 mph,2026_09_LA_WAS,LA@WAS,game_total,Under,47.5,1.926,0.579,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_NYG_PHI,NYG,ml,ML,,1.645,0.6354,,2026-11-08T03:14Z,nflverse
+9,Trend unders: wind 10–19 mph,2026_09_NYG_PHI,NYG@PHI,game_total,Under,38.5,1.893,0.579,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_NYJ_KC,NYJ,ml,ML,,5.0,0.3195,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_LV_SF,SF,ml,ML,,1.2,0.861,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_ARI_SEA,ARI,ml,ML,,4.5,0.3704,,2026-11-08T03:14Z,nflverse
+9,Trend unders: wind 10–19 mph,2026_09_ARI_SEA,ARI@SEA,game_total,Under,39.5,1.926,0.579,,2026-11-08T03:14Z,nflverse
+9,"Game totals, model differs 3+ pts",2026_09_GB_NE,GB@NE,game_total,Over,44.5,1.909,0.6211,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_TB_CHI,TB,ml,ML,,3.2,0.3909,,2026-11-08T03:14Z,nflverse
+9,"Game totals, model differs 3+ pts",2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.6009,,2026-11-08T03:14Z,nflverse
+9,Trend unders: wind 10–19 mph,2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.579,,2026-11-08T03:14Z,nflverse
+9,Trend unders: prime time,2026_09_TB_CHI,TB@CHI,game_total,Under,47.5,1.87,0.563,,2026-11-08T03:14Z,nflverse
+9,"Moneyline, model differs 4+ pts",2026_09_BUF_MIN,BUF,ml,ML,,1.588,0.6526,,2026-11-08T03:14Z,nflverse
+9,"Game totals, model differs 3+ pts",2026_09_BUF_MIN,BUF@MIN,game_total,Over,43.5,1.847,0.6096,,2026-11-08T03:14Z,nflverse
+9,Trend unders: prime time,2026_09_BUF_MIN,BUF@MIN,game_total,Under,43.5,1.98,0.563,,2026-11-08T03:14Z,nflverse
+9,Teaser legs: small underdogs +6,2026_09_DEN_CAR,CAR +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + CLE +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + CAR +8.5,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + PHI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,ATL +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CIN_ATL"", ""player"": ""ATL"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ATL +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + CAR +8.5,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + PHI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,CLE +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_CLE_NO"", ""player"": ""CLE"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""CLE +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,CAR +8.5 + PHI +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}, {""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,CAR +8.5 + MIN +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_09_DEN_CAR"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +8.5""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:14Z,nflverse
+9,"Teasers (wide): underdogs +1 to +3, all pairs",,PHI +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_09_NYG_PHI"", ""player"": ""PHI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""PHI +9""}, {""gid"": ""2026_09_BUF_MIN"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-08T03:14Z,nflverse
+9,Control: random,2026_09_ARI_SEA,ARI@SEA,game_total,Over,39.5,1.893,0.521,,2026-11-08T03:14Z,nflverse
+9,Control: random,2026_09_LA_WAS,LA@WAS,game_total,Over,47.5,1.893,0.476,,2026-11-08T03:14Z,nflverse
+9,Control: random,2026_09_DAL_IND,DAL@IND,game_total,Over,51.5,1.893,0.488,,2026-11-08T03:14Z,nflverse

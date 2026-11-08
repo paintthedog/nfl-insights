@@ -12,8 +12,8 @@
   },
   {
    "label": "Game script (spread)",
-   "pct": 17.5,
-   "swing": 2.11
+   "pct": 17.7,
+   "swing": 2.14
   },
   {
    "label": "Interception-worthy throws",
@@ -37,8 +37,8 @@
   },
   {
    "label": "Pass rush (both sides)",
-   "pct": 2.9,
-   "swing": 0.35
+   "pct": 2.8,
+   "swing": 0.34
   },
   {
    "label": "Wind",
@@ -49,13 +49,13 @@
  "td": [
   {
    "label": "Target share",
-   "pct": 36.3,
+   "pct": 36.2,
    "swing": 4.74
   },
   {
    "label": "Team's implied points (Vegas)",
-   "pct": 22.8,
-   "swing": 2.98
+   "pct": 22.9,
+   "swing": 3.0
   },
   {
    "label": "Carry share",
@@ -64,7 +64,7 @@
   },
   {
    "label": "Team's run/pass TD split",
-   "pct": 8.1,
+   "pct": 8.0,
    "swing": 1.05
   },
   {
@@ -94,12 +94,12 @@
    "rows": [
     {
      "label": "Touchdown chances",
-     "pct": 41.7,
-     "swing": 1.22
+     "pct": 41.9,
+     "swing": 1.23
     },
     {
      "label": "Usage (targets, carries, QB attempts)",
-     "pct": 26.0,
+     "pct": 25.8,
      "swing": 0.76
     },
     {
@@ -119,7 +119,7 @@
     },
     {
      "label": "Team's recent play volume",
-     "pct": 5.2,
+     "pct": 5.1,
      "swing": 0.15
     },
     {
@@ -149,7 +149,7 @@
     },
     {
      "label": "Snap share",
-     "pct": 9.9,
+     "pct": 9.8,
      "swing": 0.55
     },
     {
@@ -164,16 +164,16 @@
     },
     {
      "label": "Vegas total & spread",
-     "pct": 2.3,
+     "pct": 2.4,
      "swing": 0.13
     },
     {
-     "label": "WOPR",
-     "pct": 2.1,
+     "label": "Team's recent play volume",
+     "pct": 2.0,
      "swing": 0.11
     },
     {
-     "label": "Team's recent play volume",
+     "label": "WOPR",
      "pct": 2.0,
      "swing": 0.11
     },
@@ -240,12 +240,12 @@
     {
      "label": "Usage (targets, carries, QB attempts)",
      "pct": 47.1,
-     "swing": 2.32
+     "swing": 2.31
     },
     {
      "label": "Touchdown chances",
-     "pct": 15.8,
-     "swing": 0.78
+     "pct": 15.7,
+     "swing": 0.77
     },
     {
      "label": "Snap share",

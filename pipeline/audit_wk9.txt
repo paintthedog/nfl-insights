@@ -1,5 +1,5 @@
 Staleness audit, week 9: 4 item(s)
-  [CARRYOVER] Kyle Monangai was out last week, now projected 6.2 pts with no Week 9 status — confirm he's back
-  [CARRYOVER] Emeka Egbuka was out last week, now projected 7.5 pts with no Week 9 status — confirm he's back
+  [CARRYOVER] Kyle Monangai was out last week, now projected 6.3 pts with no Week 9 status — confirm he's back
+  [CARRYOVER] Emeka Egbuka was out last week, now projected 7.8 pts with no Week 9 status — confirm he's back
   [CARRYOVER] OL Drew Shelton was out last week, not listed this week — confirm
   [STALE] p_play DJ Moore set 2026-11-02 (6 days ago) - re-verify or remove
