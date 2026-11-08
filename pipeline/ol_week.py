@@ -18,7 +18,10 @@ ros = ros[ros.week <= W].sort_values("week").drop_duplicates("gsis_id", keep="la
 gone_ros = set(ros[ros.status.isin(["RES", "RET", "CUT", "EXE"])].gsis_id)
 inj = pd.read_parquet(f"data/injuries_{SEASON}.parquet"); inj = inj[inj.week == W]
 out_rep = set(inj[inj.report_status.isin(["Out", "Doubtful"])].gsis_id)
-dnp = set(inj[inj.practice_status.astype(str).str.contains("Did Not", na=False) & inj.report_status.isna()].gsis_id)
+# Nov 8: a DNP with no game status counts only for teams whose final report isn't out yet (no statuses at all this week);
+# once a team has published game statuses, an undesignated player is playing (Alaric Jackson, LA, Week 9)
+_final = set(inj[inj.report_status.notna()].team)
+dnp = set(inj[inj.practice_status.astype(str).str.contains("Did Not", na=False) & inj.report_status.isna() & ~inj.team.isin(_final)].gsis_id)
 news_out = set()
 try:
     nw = json.load(open(f"news_overrides_wk{W}.json"))

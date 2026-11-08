@@ -25,6 +25,7 @@
 "lead_back|DEN|[\"J.K. Dobbins\", 0.6]": "2026-11-07",
 "lead_back|HOU|[\"Woody Marks\", 0.65]": "2026-11-07",
 "lead_back|NYG|[\"Devin Singletary\", 0.6]": "2026-11-07",
+"lead_back|SF|[\"Christian McCaffrey\", 0.65]": "2026-11-08",
 "ol_out|Alijah Vera-Tucker": "2026-10-22",
 "ol_out|Ben Brown": "2026-10-22",
 "ol_out|Drew Shelton": "2026-10-22",
@@ -91,7 +92,7 @@
 "qb_start|CLE|\"Shedeur Sanders\"": "2026-11-07",
 "qb_start|MIN|\"Carson Wentz\"": "2026-11-07",
 "qb_start|NYG|\"J.J. McCarthy\"": "2026-11-07",
-"qb_start|PHI|\"Tanner McKee\"": "2026-11-07",
+"qb_start|PHI|\"Joe Milton III\"": "2026-11-08",
 "qb_start|SEA|\"Drew Lock\"": "2026-11-07",
 "qb_uncertain|BAL|{\"backup\": \"Tyler Huntley\", \"note\": \"Lamar on IR (thumb surgery); Huntley (toe) reported unlikely for Thu, Fagnano (ankle) 'has a chance' per Minter (Nov 3)\", \"p\": 0.6, \"starter\": \"Joe Fagnano\"}": "2026-11-07",
 "team_notes|ARI|\"Minshew starts. Jeremiyah Love on IR (high ankle, 4-5 weeks); Allgeier leads the backfield (Nov 5).\"": "2026-11-07",
@@ -109,8 +110,8 @@
 "team_notes|NO|\"Etienne IR, CJ Donaldson out; Kamara cleared, Kendre Miller (Nov 6).\"": "2026-11-07",
 "team_notes|NYG|\"Skattebo doubtful, Tracy on IR: Devin Singletary leads (Nov 6).\"": "2026-11-07",
 "team_notes|NYJ|\"Breece Hall (quad) cleared to return; Garrett Wilson (concussion) out (Nov 6).\"": "2026-11-07",
-"team_notes|PHI|\"McKee starts. DeVonta Smith and Wicks out; Barkley cleared (Nov 6).\"": "2026-11-07",
+"team_notes|PHI|\"Joe Milton starts vs NYG (named Nov 4; replaces McKee). DeVonta Smith and Wicks out; Barkley cleared.\"": "2026-11-08",
 "team_notes|SEA|\"Darnold (quad) out; Drew Lock starts. Shaheed out (Nov 6).\"": "2026-11-07",
-"team_notes|SF|\"Evans, Deebo, Kirk, D. Robinson out; McCaffrey cleared (Nov 6).\"": "2026-11-07",
+"team_notes|SF|\"McCaffrey off the injury report, plays vs LV with no stated limit; Kaelon Black mixes in. Evans, Deebo, Kirk, D. Robinson out (Nov 6).\"": "2026-11-08",
 "team_notes|TB|\"Egbuka DNP Wed Nov 4 (worked on the side).\"": "2026-11-05"
 }

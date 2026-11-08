@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-07T09:30 ET",
+ "asof": "2026-11-07T22:00 ET",
  "source": "Seeded 2026-10-28 from week 8 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 9 reports.",
  "out": [
   "Carter Runyon",
@@ -59,7 +59,7 @@
   "Khalil Shakir": 0.6
  },
  "qb_start": {
-  "PHI": "Tanner McKee",
+  "PHI": "Joe Milton III",
   "SEA": "Drew Lock",
   "NYG": "J.J. McCarthy",
   "BAL": "Joe Fagnano",
@@ -69,7 +69,6 @@
  },
  "next_man": {},
  "ol_out": [
-  "Drew Shelton",
   "Joe Alt",
   "Josh Simmons",
   "Kayode Awosika",
@@ -79,7 +78,7 @@
   "Ben Brown"
  ],
  "team_notes": {
-  "PHI": "McKee starts. DeVonta Smith and Wicks out; Barkley cleared (Nov 6).",
+  "PHI": "Joe Milton starts vs NYG (named Nov 4; replaces McKee). DeVonta Smith and Wicks out; Barkley cleared.",
   "ARI": "Minshew starts. Jeremiyah Love on IR (high ankle, 4-5 weeks); Allgeier leads the backfield (Nov 5).",
   "NYJ": "Breece Hall (quad) cleared to return; Garrett Wilson (concussion) out (Nov 6).",
   "BUF": "Shakir and Palmer DNP Thursday; Monday game, final report Saturday. Moore limited (Nov 7).",
@@ -95,7 +94,7 @@
   "MIN": "Kyler Murray (hamstring) out; Carson Wentz starts Monday vs BUF (Nov 7).",
   "NYG": "Skattebo doubtful, Tracy on IR: Devin Singletary leads (Nov 6).",
   "NO": "Etienne IR, CJ Donaldson out; Kamara cleared, Kendre Miller (Nov 6).",
-  "SF": "Evans, Deebo, Kirk, D. Robinson out; McCaffrey cleared (Nov 6).",
+  "SF": "McCaffrey off the injury report, plays vs LV with no stated limit; Kaelon Black mixes in. Evans, Deebo, Kirk, D. Robinson out (Nov 6).",
   "DAL": "Jake Ferguson leaning doubtful; Pickens likely plays; Turpin out (Nov 6).",
   "CHI": "Monangai (thumb/toe) uncertain for SNF (Nov 6)."
  },
@@ -147,6 +146,10 @@
   "NYG": [
    "Devin Singletary",
    0.6
+  ],
+  "SF": [
+   "Christian McCaffrey",
+   0.65
   ]
  }
 }
