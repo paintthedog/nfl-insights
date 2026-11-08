@@ -555,6 +555,32 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
   .gc-team .rc, .gc-mid .tot, .gc-top { font-size: 11.5px; }
   .gc-score { gap: 6px; padding-inline: 12px; }
 }
+
+/* Nov 8 (Clinton: team colors unreliable, segmented "slot" bar hard to read): game card top is now a stacked scoreboard,
+   one row per team, site colors only, and a single solid win meter. */
+.gb { padding: 12px 14px 10px; display: grid; gap: 6px; }
+.gb-h, .gb-r { display: grid; grid-template-columns: 46px minmax(0, 1fr) 64px 78px; align-items: center; gap: 10px; }
+.gb-h { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+.gb-h span:nth-child(n+3), .gb-r > :nth-child(n+3) { text-align: right; }
+.gb-r { padding: 6px 0; border-top: 1px solid var(--rule); }
+.gb-ab { font-size: 13px; font-weight: 700; letter-spacing: .03em; text-align: center; padding: 5px 0; border: 2px solid var(--frame); color: var(--ink); background: var(--surface); }
+.gb-r.lead .gb-ab { background: var(--ink); color: #fff; }
+.gb-nm { display: grid; min-width: 0; line-height: 1.25; }
+.gb-nm b { font-size: 18px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gb-nm .fv { font-style: normal; font-size: 9.5px; font-weight: 700; letter-spacing: .08em; background: var(--fav); color: var(--fav-ink); padding: 2px 5px; margin-left: 7px; vertical-align: 3px; }
+.gb-nm small { font-size: 12px; color: var(--muted); }
+.gb-wp { font-size: 20px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+.gb-r.lead .gb-wp { color: var(--ink); font-weight: 700; }
+.gb-pt { display: grid; font-size: 24px; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--score); }
+.gb-pt small { font-size: 11.5px; font-weight: 400; color: var(--muted); }
+.gb-meter { position: relative; height: 10px; background: var(--track); border: 2px solid var(--frame); margin-top: 4px; cursor: help; }
+.gb-meter i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); }
+.gb-meter s { position: absolute; top: -5px; bottom: -5px; width: 3px; margin-left: -1.5px; background: var(--accent); }
+.gb-meter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gb-ml { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); }
+.gb-line { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 8px 14px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
+.gb-line b { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) { .gb-h, .gb-r { grid-template-columns: 40px minmax(0, 1fr) 48px 64px; gap: 8px; } .gb-nm b { font-size: 16px; } .gb-wp { font-size: 17px; } .gb-pt { font-size: 21px; } .gb-ab { font-size: 12px; } }
 </style>
 <div class="wrap">
   <header class="mast">
@@ -1422,6 +1448,22 @@ function teamPair(away, home, dark) {
   if (best) return [best[2], best[3]];
   return [A[0], dark ? "#ededed" : "#1a1a1a"];
 }
+function scoreBoard(g) {   // Nov 8: replaces winBar + the mirrored score block
+  const a = ttBy[g.away], pa = Math.round(a.win * 100), ph = 100 - pa, ma = a.mwin == null ? null : Math.round(a.mwin * 100), ra = Math.round(a.rawwin * 100);
+  const F = TR && TR.applies ? TR.applies.facts : {};
+  const tip = ma == null ? `Model only (no line yet): ${g.away} ${pa}%, ${g.home} ${ph}%.`
+    : `Best estimate: DraftKings' spread, adjusted only as far as the model has earned. The spread alone says ${g.away} ${ma}% (the pink tick). The model on its own says ${g.away} ${ra}%, but its disagreements with the line haven't held up, so it barely moves the number.`;
+  const row = (team, home, p) => { const x = ttBy[team], f = F[team] || {}, qbc = (home ? g.h : g.a).qb_change, at = (DATA.ats_rec || {})[team];
+    const rec = (w, l, q) => `${w}–${l}${q ? "–" + q : ""}`;
+    const sub = [f.rec, home ? "home" : "away", qbc ? "new QB" : "", at ? `ATS ${rec(at.cw, at.cl, at.cp)}` : "", at ? `team total O/U ${rec(at.ow, at.ol, at.op)}` : ""].filter(Boolean).join(" · ");
+    return `<div class="gb-r${p > 50 || (p === 50 && home) ? " lead" : ""}"><span class="gb-ab">${esc(team)}</span><span class="gb-nm"><b>${esc(x.name)}${g.fav === team ? `<i class="fv">FAV</i>` : ""}</b><small>${esc(sub)}</small></span>
+      <span class="gb-wp">${p}%</span><span class="gb-pt">${(x.mkt ?? x.model).toFixed(1)}<small>model ${x.model.toFixed(1)}</small></span></div>`; };
+  const pl = ttBy[g.away].mkt == null ? "Pts (model)" : "Points";
+  return `<div class="gb"><div class="gb-h"><span></span><span>Team</span><span>Win</span><span>${pl}</span></div>${row(g.away, false, pa)}${row(g.home, true, ph)}
+    <div class="gb-meter" tabindex="0" data-tip="${esc(tip)}"><i style="width:${pa}%"></i>${ma == null ? "" : `<s style="left:${ma}%"></s>`}</div>
+    <div class="gb-ml"><span>◀ ${esc(g.away)} ${pa}%</span><span>${ma == null ? "" : "pink tick = spread alone"}</span><span>${ph}% ${esc(g.home)} ▶</span></div></div>
+    <div class="gb-line"><span>Spread <b>${g.has ? (g.fav ? `${esc(g.fav)} −${g.sp}` : "Pick") : "—"}</b></span><span>Total <b>${g.total != null ? g.total : "—"}</b> · model ${g.m_total.toFixed(1)}</span></div>`;
+}
 function winBar(g) {
   const a = ttBy[g.away], h = ttBy[g.home], pa = Math.round(a.win * 100), ph = 100 - pa, ma = a.mwin == null ? null : Math.round(a.mwin * 100);
   const ra = Math.round(a.rawwin * 100);
@@ -1483,8 +1525,7 @@ function gameCards() {
       if (g.has && g.sp < 3 && g.total != null && g.total < 42) gl.push(tr("thin", `<b>Under ${g.total}</b> <span class="q">a spread under 3 with a total under 42 has stayed under ${A.close_low.pct}% of the time</span>`));
     }
     return `<article class="gc"><div class="gc-top"><span><b>${esc(g.day)}</b>${g.notes ? " · " + esc(g.notes.replace(/ · ?[A-Z]{2,3} QB change/g, "").replace(/^[A-Z]{2,3} QB change( · )?/, "")) : ""}</span><span>${wxTxt(g.home)}</span></div>
-      ${winBar(g)}
-      <div class="gc-score">${head(g, g.away, false)}<div class="gc-mid"><span class="tot">at</span><span class="ln">${g.has ? (g.fav ? `${esc(g.fav)} −${g.sp}` : "Pick") : "No spread"}</span><span class="tot">${g.total != null ? "total " + g.total : ""}</span><span class="tot" style="color:var(--faint)">model ${g.m_total.toFixed(1)}</span></div>${head(g, g.home, true)}</div>
+      ${scoreBoard(g)}
       <div class="gc-leans"><div class="${g.lp != null && g.lp >= STRONG ? "move" : ""}"><span class="lab">Model on the spread</span><span>${g.flip ? `<b>No edge</b> <span class="q" data-tip="The model on its own has ${g.m_margin > 0 ? g.home : g.away} by ${Math.abs(g.m_margin).toFixed(1)}. Its disagreements with the line have not held up, so neither side is favored to cover.">model alone: ${g.m_margin > 0 ? g.home : g.away} by ${Math.abs(g.m_margin).toFixed(1)}</span>` : g.leanTxt ? `<b>${esc(g.leanTxt)}</b> ${pct(g.lp)}` : "—"}</span></div>
         <div class="${g.tp != null && g.tp >= STRONG ? "move" : ""}"><span class="lab">Model on the total</span><span>${g.tflip ? `<b>No edge</b> <span class="q">model ${g.m_total.toFixed(1)}</span>` : g.tl ? `<b>${g.tl} ${g.total}</b> ${pct(g.tp)}` : `${g.m_total.toFixed(1)} expected`}</span></div></div>
       <div class="gc-sides">${side(g, g.away, false)}${side(g, g.home, true)}</div>
