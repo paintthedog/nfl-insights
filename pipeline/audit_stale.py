@@ -88,7 +88,7 @@ try:
             tot = _c[_c.week.isin(last3.week)].groupby("week").c.sum()
             if (last3.set_index("week").c / tot).mean() < 0.45: continue      # was not the lead back
             m = P[(P.pid == pid) & (P.p_play >= 0.5)]
-            if len(m): flag("LEAD", f"{m.name.iloc[0]} ({tm}) returns after missing week {int(_lastwk)} (was the lead back) and {tm} has no lead_back - set it from the news (or list {tm} under "committee" if the news says shared)")
+            if len(m): flag("LEAD", f"{m.name.iloc[0]} ({tm}) returns after missing week {int(_lastwk)} (was the lead back) and {tm} has no lead_back - set it from the news (or list {tm} under 'committee' if the news says shared)")
 except Exception as e: flag("LEAD", f"returning-back check skipped: {e}")
 # 4c. (Nov 8, Joe Alt / Ben Brown) an ol_out lineman who is active on the roster and absent from this week's injury report
 try:

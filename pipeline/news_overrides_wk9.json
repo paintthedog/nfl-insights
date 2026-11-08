@@ -55,7 +55,6 @@
  ],
  "p_play": {
   "DJ Moore": 0.9,
-  "Josh Palmer": 0.5,
   "Khalil Shakir": 0.6
  },
  "qb_start": {
@@ -167,8 +166,5 @@
  "committee": [
   "NYJ",
   "SEA"
- ],
- "confirmed": [
-  "Carson Wentz"
  ]
 }
