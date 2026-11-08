@@ -564,7 +564,6 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
 .gb-h span:nth-child(n+3), .gb-r > :nth-child(n+3) { text-align: right; }
 .gb-r { padding: 6px 0; border-top: 1px solid var(--rule); }
 .gb-ab { font-size: 13px; font-weight: 700; letter-spacing: .03em; text-align: center; padding: 5px 0; border: 2px solid var(--frame); color: var(--ink); background: var(--surface); }
-.gb-r.lead .gb-ab { background: var(--ink); color: #fff; }
 .gb-nm { display: grid; min-width: 0; line-height: 1.25; }
 .gb-nm b { font-size: 18px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .gb-nm .fv { font-style: normal; font-size: 9.5px; font-weight: 700; letter-spacing: .08em; background: var(--fav); color: var(--fav-ink); padding: 2px 5px; margin-left: 7px; vertical-align: 3px; }
@@ -573,9 +572,9 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
 .gb-r.lead .gb-wp { color: var(--ink); font-weight: 700; }
 .gb-pt { display: grid; font-size: 24px; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--score); }
 .gb-pt small { font-size: 11.5px; font-weight: 400; color: var(--muted); }
-.gb-meter { position: relative; height: 10px; background: var(--track); border: 2px solid var(--frame); margin-top: 4px; cursor: help; }
-.gb-meter i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); }
-.gb-meter s { position: absolute; top: -5px; bottom: -5px; width: 3px; margin-left: -1.5px; background: var(--accent); }
+.gb-meter { position: relative; height: 14px; background: var(--track); border: 2px solid var(--frame); margin-top: 4px; cursor: help; }
+.gb-meter i { position: absolute; left: 0; top: 0; bottom: 0; border-right: 3px solid var(--surface); }
+.gb-meter s { position: absolute; top: -6px; bottom: -6px; width: 4px; margin-left: -2px; background: var(--surface); border: 1px solid var(--ink); }
 .gb-meter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .gb-ml { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); }
 .gb-line { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 8px 14px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
@@ -1448,20 +1447,27 @@ function teamPair(away, home, dark) {
   if (best) return [best[2], best[3]];
   return [A[0], dark ? "#ededed" : "#1a1a1a"];
 }
+function cardCols(away, home) {   // Nov 8: each team's own primary color; only when the two are too close does the home team switch to its next usable color
+  const pale = c => oklab(c)[0] > 0.86, A = (TEAMC[away] || ["#1d1838"]).filter(c => !pale(c)), H = (TEAMC[home] || ["#1d1838"]).filter(c => !pale(c));
+  const a = A[0] || "#1d1838"; let h = H[0] || "#85829f";
+  if (_dE(a, h) < 0.08) h = H.find(c => _dE(a, c) >= 0.12) || (_dE(a, "#85829f") >= 0.12 ? "#85829f" : "#1d1838");
+  return [a, h];
+}
+const inkOn = c => oklab(c)[0] > 0.68 ? "#1d1838" : "#ffffff";
 function scoreBoard(g) {   // Nov 8: replaces winBar + the mirrored score block
   const a = ttBy[g.away], pa = Math.round(a.win * 100), ph = 100 - pa, ma = a.mwin == null ? null : Math.round(a.mwin * 100), ra = Math.round(a.rawwin * 100);
-  const F = TR && TR.applies ? TR.applies.facts : {};
+  const F = TR && TR.applies ? TR.applies.facts : {}, [ca, ch] = cardCols(g.away, g.home);
   const tip = ma == null ? `Model only (no line yet): ${g.away} ${pa}%, ${g.home} ${ph}%.`
-    : `Best estimate: DraftKings' spread, adjusted only as far as the model has earned. The spread alone says ${g.away} ${ma}% (the pink tick). The model on its own says ${g.away} ${ra}%, but its disagreements with the line haven't held up, so it barely moves the number.`;
+    : `Best estimate: DraftKings' spread, adjusted only as far as the model has earned. The spread alone says ${g.away} ${ma}% (the tick). The model on its own says ${g.away} ${ra}%, but its disagreements with the line haven't held up, so it barely moves the number.`;
   const row = (team, home, p) => { const x = ttBy[team], f = F[team] || {}, qbc = (home ? g.h : g.a).qb_change, at = (DATA.ats_rec || {})[team];
     const rec = (w, l, q) => `${w}–${l}${q ? "–" + q : ""}`;
     const sub = [f.rec, home ? "home" : "away", qbc ? "new QB" : "", at ? `ATS ${rec(at.cw, at.cl, at.cp)}` : "", at ? `team total O/U ${rec(at.ow, at.ol, at.op)}` : ""].filter(Boolean).join(" · ");
-    return `<div class="gb-r${p > 50 || (p === 50 && home) ? " lead" : ""}"><span class="gb-ab">${esc(team)}</span><span class="gb-nm"><b>${esc(x.name)}${g.fav === team ? `<i class="fv">FAV</i>` : ""}</b><small>${esc(sub)}</small></span>
+    return `<div class="gb-r${p > 50 || (p === 50 && home) ? " lead" : ""}"><span class="gb-ab" style="background:${home ? ch : ca};color:${inkOn(home ? ch : ca)}">${esc(team)}</span><span class="gb-nm"><b>${esc(x.name)}${g.fav === team ? `<i class="fv">FAV</i>` : ""}</b><small>${esc(sub)}</small></span>
       <span class="gb-wp">${p}%</span><span class="gb-pt">${(x.mkt ?? x.model).toFixed(1)}<small>model ${x.model.toFixed(1)}</small></span></div>`; };
   const pl = ttBy[g.away].mkt == null ? "Pts (model)" : "Points";
   return `<div class="gb"><div class="gb-h"><span></span><span>Team</span><span>Win</span><span>${pl}</span></div>${row(g.away, false, pa)}${row(g.home, true, ph)}
-    <div class="gb-meter" tabindex="0" data-tip="${esc(tip)}"><i style="width:${pa}%"></i>${ma == null ? "" : `<s style="left:${ma}%"></s>`}</div>
-    <div class="gb-ml"><span>◀ ${esc(g.away)} ${pa}%</span><span>${ma == null ? "" : "pink tick = spread alone"}</span><span>${ph}% ${esc(g.home)} ▶</span></div></div>
+    <div class="gb-meter" tabindex="0" data-tip="${esc(tip)}" style="background:${ch}"><i style="width:${pa}%;background:${ca}"></i>${ma == null ? "" : `<s style="left:${ma}%"></s>`}</div>
+    <div class="gb-ml"><span><i class="cdot" style="background:${ca}"></i>${esc(g.away)} ${pa}%</span><span>${ma == null ? "" : "tick = spread alone"}</span><span>${ph}% ${esc(g.home)}<i class="cdot" style="background:${ch};margin:0 0 0 5px"></i></span></div></div>
     <div class="gb-line"><span>Spread <b>${g.has ? (g.fav ? `${esc(g.fav)} −${g.sp}` : "Pick") : "—"}</b></span><span>Total <b>${g.total != null ? g.total : "—"}</b> · model ${g.m_total.toFixed(1)}</span></div>`;
 }
 function winBar(g) {
