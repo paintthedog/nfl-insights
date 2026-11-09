@@ -1,8 +1,8 @@
 Staleness audit, week 10: 7 item(s)
-  [ROSTER] A.J. Brown (NE) projected 11.4 pts but roster status INA (A01)
-  [ROSTER] Colby Parkinson (LA) projected 7.3 pts but roster status INA (A01)
-  [ROSTER] Breece Hall (NYJ) projected 5.0 pts but roster status INA (A01)
-  [ROSTER] Audric Estimé (CLE) projected 4.0 pts but roster status INA (A01)
-  [ROSTER] TreVeyon Henderson (NE) projected 5.2 pts but roster status INA (A01)
+  [ROSTER] Tim Patrick (NYJ) projected 4.1 pts but roster status INA (A01)
+  [ROSTER] Deshaun Watson (CLE) projected 14.7 pts but roster status INA (A01)
+  [ROSTER] George Pickens (DAL) projected 10.8 pts but roster status INA (A01)
+  [ROSTER] MarShawn Lloyd (GB) projected 4.4 pts but roster status INA (A01)
   [INJURY] no week 10 injury report in the feed yet (normal before Wednesday)
+  [CARRYOVER] Kyler Murray was out last week, now projected 14.0 pts with no Week 10 status — confirm he's back
   [DFS] no dk_salaries_wk10.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

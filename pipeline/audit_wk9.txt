@@ -1,5 +1,7 @@
-Staleness audit, week 9: 4 item(s)
-  [CARRYOVER] Emeka Egbuka was out last week, now projected 7.6 pts with no Week 9 status — confirm he's back
+Staleness audit, week 9: 6 item(s)
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
+  [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
   [CARRYOVER] OL Drew Shelton was out last week, not listed this week — confirm
   [CARRYOVER] OL Joe Alt was out last week, not listed this week — confirm
   [CARRYOVER] OL Ben Brown was out last week, not listed this week — confirm

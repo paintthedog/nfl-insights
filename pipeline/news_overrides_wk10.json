@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-03T09:10 ET",
+ "asof": "2026-11-09T09:40 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
@@ -25,34 +25,65 @@
   "Dameon Pierce",
   "Lamar Jackson",
   "Kendrick Bourne",
-  "RJ Harvey"
+  "RJ Harvey",
+  "Jeremiyah Love",
+  "Cam Skattebo",
+  "Tyrone Tracy Jr.",
+  "Travis Etienne",
+  "CJ Donaldson",
+  "Brian Robinson",
+  "TreVeyon Henderson",
+  "Jeremy McNichols",
+  "DeVonta Smith",
+  "Dontayvion Wicks",
+  "A.J. Brown",
+  "Garrett Wilson",
+  "Mike Evans",
+  "Christian Kirk",
+  "Rashid Shaheed",
+  "Treylon Burks",
+  "Dyami Brown",
+  "Zachariah Branch",
+  "Terrance Ferguson",
+  "Josh Whyle",
+  "David Njoku",
+  "Bam Knight",
+  "Jordyn Tyson",
+  "Mack Hollins",
+  "Demarcus Robinson",
+  "Jaylen Wright",
+  "Sam Darnold"
  ],
  "p_play": {},
  "qb_start": {
   "PHI": "Joe Milton III",
-  "SEA": "Sam Darnold",
   "NYG": "J.J. McCarthy",
-  "BAL": "Joe Fagnano",
+  "BAL": "Jacoby Brissett",
   "ARI": "Gardner Minshew"
  },
  "next_man": {},
  "ol_out": [
-  "Drew Shelton",
-  "Joe Alt",
   "Josh Simmons",
   "Kayode Awosika",
   "Teven Jenkins",
   "Trevor Penning",
-  "Alijah Vera-Tucker",
-  "Ben Brown"
+  "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "ARI": "Minshew named Week 9 starter over Brissett; Carson Beck QB2 (Nov 3).",
-  "NYJ": "Breece Hall (quad) limited Wed Oct 28, first practice in weeks; Braelon Allen still projected lead.",
-  "BUF": "Josh Palmer hamstring (left Wk8). Cook cleared after head check.",
-  "BAL": "Lamar Jackson on IR (thumb surgery). Huntley (toe) unlikely Thu; Fagnano (ankle) has a chance (Nov 3).",
-  "DEN": "RJ Harvey to IR; Dobbins leads.",
-  "NE": "A.J. Brown (knee/ankle) and Henderson (illness) out Wk8; no Wk9 status until Wednesday practice."
+  "BAL": "Jacoby Brissett (trade from ARI finalized Nov 6) slated to start Monday vs LAC (Ravens.com). Huntley out for season, Lamar on IR.",
+  "SEA": "Darnold (quad/rib) in danger of missing Wk10 (Schefter, Nov 9); Lock (oblique) 'up in the air' (Nov 8); Milroe is QB3.",
+  "CLE": "Watson cleared protocol and is presumed the Wk10 starter, not yet announced; Sanders threw 297 yds in Wk9 OT loss (Nov 9).",
+  "MIN": "Kyler Murray (hamstring) sat MNF Wk9; Wentz started. Wk10 status unknown until Wednesday.",
+  "KC": "Mahomes (right elbow) finished Wk9; MRI showed no major injury, more tests (Nov 8).",
+  "LA": "Puka Nacua (knee) MRI after Wk9 (Nov 8).",
+  "LAC": "Herbert (left middle finger, possible fracture); McConkey scratched Wk9 (back) (Nov 8).",
+  "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
+  "NE": "Stevenson (knee), LT Will Campbell and RG Ben Brown (knee) did not return in Wk9 (Nov 8).",
+  "DAL": "Jake Ferguson (knee) tests Monday (Nov 9).",
+  "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
+  "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
+  "ARI": "Jeremiyah Love on IR; Allgeier leads (17 of 18 carries Wk9). Minshew starts; Brissett traded to BAL.",
+  "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion."
  },
  "back": [
   "Jalen Nailor",
@@ -69,25 +100,59 @@
   "Andrew Vorhees",
   "Aaron Banks",
   "Jonah Jackson",
-  "Jeremiyah Love",
   "Tyler Warren",
   "Emeka Egbuka",
   "Zach Charbonnet",
   "Tre Harris"
  ],
- "qb_uncertain": {},
+ "qb_uncertain": {
+  "SEA": {
+   "starter": "Drew Lock",
+   "backup": "Jalen Milroe",
+   "p": 0.6,
+   "note": "Darnold (quad/rib) in danger of missing Wk10 (Schefter, Nov 9); Lock (oblique) 'up in the air' (Macdonald, Nov 8)"
+  },
+  "CLE": {
+   "starter": "Deshaun Watson",
+   "backup": "Shedeur Sanders",
+   "p": 0.6,
+   "note": "Watson cleared protocol, presumed Wk10 starter, not announced (Heavy, Nov 9); Sanders started Wk9"
+  },
+  "MIN": {
+   "starter": "Kyler Murray",
+   "backup": "Carson Wentz",
+   "p": 0.5,
+   "note": "Murray (hamstring) Out for MNF Wk9 (Vikings final report, Nov 7); Wk10 status unknown"
+  }
+ },
  "lead_back": {
-  "NYJ": [
-   "Braelon Allen",
-   0.65
-  ],
   "HOU": [
    "Woody Marks",
    0.65
   ],
   "DEN": [
-   "J.K. Dobbins",
+   "Jonah Coleman",
+   0.65
+  ],
+  "ARI": [
+   "Tyler Allgeier",
+   0.65
+  ],
+  "NYG": [
+   "Devin Singletary",
+   0.6
+  ],
+  "SF": [
+   "Christian McCaffrey",
+   0.65
+  ],
+  "NYJ": [
+   "Breece Hall",
    0.6
   ]
- }
+ },
+ "committee": [
+  "SEA"
+ ],
+ "news_q": {}
 }
