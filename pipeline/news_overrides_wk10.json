@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-09T09:40 ET",
+ "asof": "2026-11-10T09:30 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
@@ -27,7 +27,6 @@
   "Kendrick Bourne",
   "RJ Harvey",
   "Jeremiyah Love",
-  "Cam Skattebo",
   "Tyrone Tracy Jr.",
   "Travis Etienne",
   "CJ Donaldson",
@@ -59,7 +58,8 @@
   "PHI": "Joe Milton III",
   "NYG": "J.J. McCarthy",
   "BAL": "Jacoby Brissett",
-  "ARI": "Gardner Minshew"
+  "ARI": "Gardner Minshew",
+  "SEA": "Drew Lock"
  },
  "next_man": {},
  "ol_out": [
@@ -71,19 +71,20 @@
  ],
  "team_notes": {
   "BAL": "Jacoby Brissett (trade from ARI finalized Nov 6) slated to start Monday vs LAC (Ravens.com). Huntley out for season, Lamar on IR.",
-  "SEA": "Darnold (quad/rib) in danger of missing Wk10 (Schefter, Nov 9); Lock (oblique) 'up in the air' (Nov 8); Milroe is QB3.",
-  "CLE": "Watson cleared protocol and is presumed the Wk10 starter, not yet announced; Sanders threw 297 yds in Wk9 OT loss (Nov 9).",
-  "MIN": "Kyler Murray (hamstring) sat MNF Wk9; Wentz started. Wk10 status unknown until Wednesday.",
+  "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
+  "CLE": "Browns plan to start Watson vs HOU (ESPN source, Nov 9); Monken not confirmed. Sanders 297 yds in Wk9.",
+  "MIN": "Murray Grade 2 hamstring, questionable at best (SI, Nov 10); Wentz benched late Wk9 for Brosmer; trade deadline Tue.",
   "KC": "Mahomes (right elbow) finished Wk9; MRI showed no major injury, more tests (Nov 8).",
   "LA": "Puka Nacua (knee) MRI after Wk9 (Nov 8).",
-  "LAC": "Herbert (left middle finger, possible fracture); McConkey scratched Wk9 (back) (Nov 8).",
+  "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
   "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
-  "NE": "Stevenson (knee), LT Will Campbell and RG Ben Brown (knee) did not return in Wk9 (Nov 8).",
+  "NE": "Stevenson (knee) imaging; A.J. Brown expected to travel to Germany, no decision; RG Ben Brown not traveling (Vrabel, Nov 9).",
   "DAL": "Jake Ferguson (knee) tests Monday (Nov 9).",
   "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
   "ARI": "Jeremiyah Love on IR; Allgeier leads (17 of 18 carries Wk9). Minshew starts; Brissett traded to BAL.",
-  "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion."
+  "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
+  "NYG": "McCarthy (hip pointer) expected to play Thu; Skattebo (hamstring) 'should be full go' (Harbaugh, Nov 9)."
  },
  "back": [
   "Jalen Nailor",
@@ -103,26 +104,21 @@
   "Tyler Warren",
   "Emeka Egbuka",
   "Zach Charbonnet",
-  "Tre Harris"
+  "Tre Harris",
+  "Cam Skattebo"
  ],
  "qb_uncertain": {
-  "SEA": {
-   "starter": "Drew Lock",
-   "backup": "Jalen Milroe",
-   "p": 0.6,
-   "note": "Darnold (quad/rib) in danger of missing Wk10 (Schefter, Nov 9); Lock (oblique) 'up in the air' (Macdonald, Nov 8)"
-  },
   "CLE": {
    "starter": "Deshaun Watson",
    "backup": "Shedeur Sanders",
-   "p": 0.6,
-   "note": "Watson cleared protocol, presumed Wk10 starter, not announced (Heavy, Nov 9); Sanders started Wk9"
+   "p": 0.85,
+   "note": "Browns plan to start Watson vs HOU (ESPN/Fowler source, Nov 9); Monken hasn't confirmed"
   },
   "MIN": {
    "starter": "Kyler Murray",
    "backup": "Carson Wentz",
-   "p": 0.5,
-   "note": "Murray (hamstring) Out for MNF Wk9 (Vikings final report, Nov 7); Wk10 status unknown"
+   "p": 0.35,
+   "note": "Murray Grade 2 hamstring, 'questionable at best' (SI, Nov 10); Wentz benched late Wk9 for Brosmer"
   }
  },
  "lead_back": {
@@ -154,5 +150,11 @@
  "committee": [
   "SEA"
  ],
- "news_q": {}
+ "news_q": {
+  "Cam Skattebo": [
+   "expected",
+   "2026-11-09",
+   "Harbaugh: 'should be full go' Thu (NFL.com)"
+  ]
+ }
 }

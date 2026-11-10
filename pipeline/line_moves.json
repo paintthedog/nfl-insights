@@ -923,6 +923,28 @@
    "gap": -6.3,
    "move": 0.0,
    "result": "no move"
+  },
+  {
+   "week": 9,
+   "game_id": "2026_09_BUF_MIN",
+   "market": "spread",
+   "model": -1.9,
+   "line_then": -2.5,
+   "close": -3.0,
+   "gap": 0.6,
+   "move": -0.5,
+   "result": "no gap"
+  },
+  {
+   "week": 9,
+   "game_id": "2026_09_BUF_MIN",
+   "market": "total",
+   "model": 49.2,
+   "line_then": 47.5,
+   "close": 44.5,
+   "gap": 1.7,
+   "move": -3.0,
+   "result": "away"
   }
  ],
  "spread": {
@@ -932,9 +954,9 @@
   "still": 11
  },
  "total": {
-  "n": 32,
+  "n": 33,
   "toward": 11,
-  "away": 10,
+  "away": 11,
   "still": 11
  }
 }
