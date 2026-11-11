@@ -106,6 +106,7 @@ games = sched[(sched.season == SEASON) & (sched.week == WEEK) & sched.result.isn
 # chances above. "out" removes the player from the pool entirely.
 NEWS_NEXT_MAN = {}
 NEWS_ACTIVE = {}          # pid -> team, activated by the news ahead of the roster file
+NEWS_QB_TEAM = {}         # Nov 11: news starter traded ahead of the roster file (Cousins LV -> MIN) belongs to the news team
 try:
     _nw = json.load(open(f"news_overrides_wk{WEEK}.json"))
     _nm = players.drop_duplicates("gsis_id"); _nm = _nm.assign(k=_nm.display_name.str.lower().str.replace(r"\b(jr|sr|ii|iii|iv)\b\.?", "", regex=True).str.replace(r"[^a-z ]", "", regex=True).str.replace(r"\s+", " ", regex=True).str.strip())
@@ -128,7 +129,7 @@ try:
         if pr >= 0.97: q_play.pop(_p, None); q_lbl.pop(_p, None)
     for tm, n in _nw.get("qb_start", {}).items():
         _p = _find(n)
-        if _p is not None: starters[tm] = _p; starter_ids.add(_p); QB_BACKUP.pop(tm, None); q_play.pop(_p, None); q_lbl.pop(_p, None)
+        if _p is not None: starters[tm] = _p; starter_ids.add(_p); QB_BACKUP.pop(tm, None); q_play.pop(_p, None); q_lbl.pop(_p, None); NEWS_QB_TEAM[_p] = tm
     # uncertain starter: {"BAL": {"starter": "Lamar Jackson", "backup": "Tyler Huntley", "p": 0.35, "note": "..."}} - exactly one plays each run
     for tm, u in _nw.get("qb_uncertain", {}).items():
         _s, _b = _find(u["starter"]), _find(u["backup"])
@@ -203,7 +204,7 @@ for _, g in games.iterrows():
         back |= traded_in | _act
         last_seen = tg.groupby("pid").game_id.last().map({gid: i for i, gid in enumerate(order)})
         for pid in pool | {p for p in back if p in roster_team.index or p in NEWS_ACTIVE}:
-            if pid in unavailable or (NEWS_ACTIVE.get(pid) or roster_team.get(pid, tm)) != tm:
+            if pid in unavailable or (NEWS_ACTIVE.get(pid) or NEWS_QB_TEAM.get(pid) or roster_team.get(pid, tm)) != tm:
                 continue
             missed = 0 if pid in traded_in else len(order) - 1 - last_seen[pid] if pid in last_seen.index else len(order)
             rows.append(dict(game_id=g.game_id, posteam=tm, pid=pid, gameday=pd.to_datetime(g.gameday),

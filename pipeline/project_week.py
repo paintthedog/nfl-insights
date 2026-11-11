@@ -26,6 +26,9 @@ qb, tg, ctx = M.build_tables(pbp, sched)
 recent = qb[qb.is_starter].merge(ctx[["game_id", "gameday"]].drop_duplicates(), on="game_id")
 last = recent.sort_values("gameday").groupby("posteam").tail(1).set_index("posteam")
 names = qb.drop_duplicates("passer_player_id").set_index("passer_player_id").name
+# Nov 11: a news starter with no NFL pass attempts yet (Kyle McCord) is not in the passer table; fall back to the player file
+_allq = pd.read_parquet("data/players.parquet", columns=["gsis_id", "display_name"]).drop_duplicates("gsis_id").set_index("gsis_id").display_name
+names = pd.concat([names, _allq[_allq.index.isin(set(OVERRIDES.values()) - set(names.index))]])
 games = sched[(sched.season == SEASON) & (sched.week == WEEK) & sched.result.isna()]   # unplayed games only
 rows = []
 for _, g in games.iterrows():

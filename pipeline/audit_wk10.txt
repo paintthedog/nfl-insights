@@ -1,7 +1,3 @@
-Staleness audit, week 10: 6 item(s)
-  [ROSTER] Deshaun Watson (CLE) projected 14.7 pts but roster status INA (A01)
-  [ROSTER] George Pickens (DAL) projected 10.4 pts but roster status INA (A01)
-  [ROSTER] MarShawn Lloyd (GB) projected 4.6 pts but roster status INA (A01)
-  [ROSTER] Cam Skattebo (NYG) projected 7.0 pts but roster status INA (A01)
-  [INJURY] no week 10 injury report in the feed yet (normal before Wednesday)
+Staleness audit, week 10: 2 item(s)
+  [TEAM] Kirk Cousins projected for MIN but roster lists LV
   [DFS] no dk_salaries_wk10.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

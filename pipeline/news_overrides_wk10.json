@@ -1,10 +1,9 @@
 {
- "asof": "2026-11-10T09:30 ET",
+ "asof": "2026-11-11T10:30 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
   "David Montgomery",
-  "Deebo Samuel",
   "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Kyle Monangai",
@@ -51,15 +50,25 @@
   "Mack Hollins",
   "Demarcus Robinson",
   "Jaylen Wright",
-  "Sam Darnold"
+  "Sam Darnold",
+  "Gardner Minshew",
+  "Malik Willis",
+  "Puka Nacua",
+  "Michael Wilson",
+  "Jake Ferguson",
+  "Tyler Goodson"
  ],
  "p_play": {},
  "qb_start": {
   "PHI": "Joe Milton III",
   "NYG": "J.J. McCarthy",
   "BAL": "Jacoby Brissett",
-  "ARI": "Gardner Minshew",
-  "SEA": "Drew Lock"
+  "ARI": "Carson Beck",
+  "SEA": "Drew Lock",
+  "CLE": "Shedeur Sanders",
+  "MIN": "Kirk Cousins",
+  "MIA": "Kyle McCord",
+  "LV": "Fernando Mendoza"
  },
  "next_man": {},
  "ol_out": [
@@ -72,19 +81,21 @@
  "team_notes": {
   "BAL": "Jacoby Brissett (trade from ARI finalized Nov 6) slated to start Monday vs LAC (Ravens.com). Huntley out for season, Lamar on IR.",
   "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
-  "CLE": "Browns plan to start Watson vs HOU (ESPN source, Nov 9); Monken not confirmed. Sanders 297 yds in Wk9.",
-  "MIN": "Murray Grade 2 hamstring, questionable at best (SI, Nov 10); Wentz benched late Wk9 for Brosmer; trade deadline Tue.",
-  "KC": "Mahomes (right elbow) finished Wk9; MRI showed no major injury, more tests (Nov 8).",
-  "LA": "Puka Nacua (knee) MRI after Wk9 (Nov 8).",
+  "CLE": "Shedeur Sanders named starter vs HOU over Watson (Akron Beacon Journal, Nov 11).",
+  "MIN": "Vikings reacquired Kirk Cousins from LV (3rd-rd pick, Nov 10); expected to start at GB (Schefter via The Viking Age, Nov 10). Murray Grade 2 hamstring, week-to-week.",
+  "KC": "Mahomes (right elbow) day-to-day; Reid: MRI 'more positive news than negative' (Nov 9-10).",
+  "LA": "Puka Nacua (knee MCL/PCL sprain) out, likely IR, at least a month (CBS/DK Network, Nov 10-11).",
   "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
   "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
   "NE": "Stevenson (knee) imaging; A.J. Brown expected to travel to Germany, no decision; RG Ben Brown not traveling (Vrabel, Nov 9).",
-  "DAL": "Jake Ferguson (knee) tests Monday (Nov 9).",
+  "DAL": "Jake Ferguson (knee) out; Tyler Goodson (knee) out multiple weeks, Javonte Williams the only other healthy back; Pickens (hamstring) has a chance (DK Network, Nov 10).",
   "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
-  "ARI": "Jeremiyah Love on IR; Allgeier leads (17 of 18 carries Wk9). Minshew starts; Brissett traded to BAL.",
+  "ARI": "Minshew (elbow) and Michael Wilson (neck) to IR (Nov 10, AP); rookie Carson Beck starts. Love on IR; Allgeier leads.",
   "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
-  "NYG": "McCarthy (hip pointer) expected to play Thu; Skattebo (hamstring) 'should be full go' (Harbaugh, Nov 9)."
+  "NYG": "McCarthy (hip pointer) expected to play Thu; Skattebo (hamstring) 'should be full go' (Harbaugh, Nov 9).",
+  "MIA": "Malik Willis (groin) to IR; Kyle McCord starts (ESPN, Nov 10).",
+  "LV": "Cousins traded to MIN; rookie Fernando Mendoza named starter vs SEA (Raiders.com, Nov 10)."
  },
  "back": [
   "Jalen Nailor",
@@ -107,20 +118,7 @@
   "Tre Harris",
   "Cam Skattebo"
  ],
- "qb_uncertain": {
-  "CLE": {
-   "starter": "Deshaun Watson",
-   "backup": "Shedeur Sanders",
-   "p": 0.85,
-   "note": "Browns plan to start Watson vs HOU (ESPN/Fowler source, Nov 9); Monken hasn't confirmed"
-  },
-  "MIN": {
-   "starter": "Kyler Murray",
-   "backup": "Carson Wentz",
-   "p": 0.35,
-   "note": "Murray Grade 2 hamstring, 'questionable at best' (SI, Nov 10); Wentz benched late Wk9 for Brosmer"
-  }
- },
+ "qb_uncertain": {},
  "lead_back": {
   "HOU": [
    "Woody Marks",
@@ -155,6 +153,11 @@
    "expected",
    "2026-11-09",
    "Harbaugh: 'should be full go' Thu (NFL.com)"
+  ],
+  "J.J. McCarthy": [
+   "expected",
+   "2026-11-09",
+   "Harbaugh: expected to play Thu (NY Daily News via DK Network Nov 10)"
   ]
  }
 }

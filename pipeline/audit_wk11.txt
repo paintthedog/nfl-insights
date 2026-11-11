@@ -1,0 +1,4 @@
+Staleness audit, week 11: 3 item(s)
+  [TEAM] Kirk Cousins projected for MIN but roster lists LV
+  [INJURY] no week 11 injury report in the feed yet (normal before Wednesday)
+  [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
