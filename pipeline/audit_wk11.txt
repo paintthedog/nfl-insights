@@ -1,4 +1,4 @@
 Staleness audit, week 11: 3 item(s)
-  [TEAM] Kirk Cousins projected for MIN but roster lists LV
+  [QB-CONFLICT] BAL: qb_start says Jacoby Brissett (dated 2026-11-09) but the schedule feed lists Tyler Huntley - search the news; keep only with a dated source
   [INJURY] no week 11 injury report in the feed yet (normal before Wednesday)
   [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

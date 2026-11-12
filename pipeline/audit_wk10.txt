@@ -1,3 +1,3 @@
 Staleness audit, week 10: 2 item(s)
-  [TEAM] Kirk Cousins projected for MIN but roster lists LV
+  [CARRYOVER] Deebo Samuel was out last week, now projected 8.2 pts with no Week 10 status — confirm he's back
   [DFS] no dk_salaries_wk10.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

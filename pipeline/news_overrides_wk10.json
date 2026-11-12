@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-11T10:30 ET",
+ "asof": "2026-11-12T09:30 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
@@ -56,7 +56,9 @@
   "Puka Nacua",
   "Michael Wilson",
   "Jake Ferguson",
-  "Tyler Goodson"
+  "Tyler Goodson",
+  "Rhamondre Stevenson",
+  "Josh Jacobs"
  ],
  "p_play": {},
  "qb_start": {
@@ -83,17 +85,17 @@
   "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
   "CLE": "Shedeur Sanders named starter vs HOU over Watson (Akron Beacon Journal, Nov 11).",
   "MIN": "Vikings reacquired Kirk Cousins from LV (3rd-rd pick, Nov 10); expected to start at GB (Schefter via The Viking Age, Nov 10). Murray Grade 2 hamstring, week-to-week.",
-  "KC": "Mahomes (right elbow) day-to-day; Reid: MRI 'more positive news than negative' (Nov 9-10).",
+  "KC": "Mahomes (right elbow strain/sprain) day-to-day; practice managed this week, Fields gets reps (Rapoport/Reid, Nov 9).",
   "LA": "Puka Nacua (knee MCL/PCL sprain) out, likely IR, at least a month (CBS/DK Network, Nov 10-11).",
   "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
-  "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
-  "NE": "Stevenson (knee) imaging; A.J. Brown expected to travel to Germany, no decision; RG Ben Brown not traveling (Vrabel, Nov 9).",
+  "GB": "Josh Jacobs fractured finger, surgery; LaFleur: 'I don't think he could' play (ESPN/TSN Nov 9). Kaleb Johnson and Pierre Strong share; Lloyd (knee) unclear.",
+  "NE": "Stevenson (plantaris) out next few weeks (Rapoport, Nov 9); Henderson out (medical emergency). Corey Kiner expected lead back, Lan Larison behind (RotoWire Nov 10). Game in Munich.",
   "DAL": "Jake Ferguson (knee) out; Tyler Goodson (knee) out multiple weeks, Javonte Williams the only other healthy back; Pickens (hamstring) has a chance (DK Network, Nov 10).",
   "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
   "ARI": "Minshew (elbow) and Michael Wilson (neck) to IR (Nov 10, AP); rookie Carson Beck starts. Love on IR; Allgeier leads.",
   "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
-  "NYG": "McCarthy (hip pointer) expected to play Thu; Skattebo (hamstring) 'should be full go' (Harbaugh, Nov 9).",
+  "NYG": "McCarthy and Skattebo off the final injury report (Giants.com, Nov 11); both play Thu.",
   "MIA": "Malik Willis (groin) to IR; Kyle McCord starts (ESPN, Nov 10).",
   "LV": "Cousins traded to MIN; rookie Fernando Mendoza named starter vs SEA (Raiders.com, Nov 10)."
  },
@@ -143,10 +145,15 @@
   "NYJ": [
    "Breece Hall",
    0.6
+  ],
+  "NE": [
+   "Corey Kiner",
+   0.65
   ]
  },
  "committee": [
-  "SEA"
+  "SEA",
+  "GB"
  ],
  "news_q": {
   "Cam Skattebo": [
