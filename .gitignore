@@ -5,3 +5,5 @@ pipeline/daily.log
 pipeline/refresh.log
 pipeline/replay/out/
 pipeline/replay/data_extra/
+pipeline/ao.log
+pipeline/refresh2.log
