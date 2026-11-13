@@ -1,18 +1,18 @@
 team,ol_missing_pred,who
-ARI,3,Isaac Seumalo; Hjalte Froholdt; Jon Gaines II
-ATL,0,
+ARI,2,Hjalte Froholdt; Jon Gaines II
+ATL,1,Jawaan Taylor
 BAL,0,
-BUF,0,
+BUF,1,Spencer Brown
 CAR,1,Taylor Moton
 CHI,0,
 CIN,0,
-CLE,1,Elgton Jenkins
+CLE,0,
 DAL,0,
 DEN,0,
 DET,1,Cade Mays
 GB,1,Sean Rhyan
 HOU,1,Keylan Rutledge
-IND,1,Jalen Travis
+IND,2,Quenton Nelson; Jalen Travis
 JAX,1,Anton Harrison
 KC,1,Jaylon Moore
 LA,1,Steve Avila
@@ -26,8 +26,8 @@ NYG,0,
 NYJ,0,
 PHI,0,
 PIT,0,
-SEA,0,
-SF,1,Trent Williams
+SEA,1,Quenton Nelson
+SF,0,
 TB,0,
 TEN,1,Peter Skoronski
 WAS,1,Lucas Patrick

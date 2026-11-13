@@ -1,9 +1,8 @@
 {
- "asof": "2026-11-12T09:30 ET",
+ "asof": "2026-11-13T11:15 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
-  "David Montgomery",
   "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Kyle Monangai",
@@ -45,7 +44,6 @@
   "Terrance Ferguson",
   "Josh Whyle",
   "David Njoku",
-  "Bam Knight",
   "Jordyn Tyson",
   "Mack Hollins",
   "Demarcus Robinson",
@@ -81,23 +79,25 @@
   "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "BAL": "Jacoby Brissett (trade from ARI finalized Nov 6) slated to start Monday vs LAC (Ravens.com). Huntley out for season, Lamar on IR.",
-  "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
+  "BAL": "Jacoby Brissett named starter vs LAC Monday (Jamison Hensley via RotoBaller, Nov 8). Lamar (thumb) IR, Huntley (toe) out.",
+  "SEA": "Darnold (quad) out Wk10 (SIC Nov 12); Lock (elbow/oblique, limited Wed/Thu) starts, Milroe backup.",
   "CLE": "Shedeur Sanders named starter vs HOU over Watson (Akron Beacon Journal, Nov 11).",
   "MIN": "Vikings reacquired Kirk Cousins from LV (3rd-rd pick, Nov 10); expected to start at GB (Schefter via The Viking Age, Nov 10). Murray Grade 2 hamstring, week-to-week.",
-  "KC": "Mahomes (right elbow strain/sprain) day-to-day; practice managed this week, Fields gets reps (Rapoport/Reid, Nov 9).",
+  "KC": "Mahomes (right elbow) full practice Wed and Thu, on track to play Sunday (SIC, Nov 12).",
   "LA": "Puka Nacua (knee MCL/PCL sprain) out, likely IR, at least a month (CBS/DK Network, Nov 10-11).",
   "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
   "GB": "Josh Jacobs fractured finger, surgery; LaFleur: 'I don't think he could' play (ESPN/TSN Nov 9). Kaleb Johnson and Pierre Strong share; Lloyd (knee) unclear.",
   "NE": "Stevenson (plantaris) out next few weeks (Rapoport, Nov 9); Henderson out (medical emergency). Corey Kiner expected lead back, Lan Larison behind (RotoWire Nov 10). Game in Munich.",
   "DAL": "Jake Ferguson (knee) out; Tyler Goodson (knee) out multiple weeks, Javonte Williams the only other healthy back; Pickens (hamstring) has a chance (DK Network, Nov 10).",
-  "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
+  "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
-  "ARI": "Minshew (elbow) and Michael Wilson (neck) to IR (Nov 10, AP); rookie Carson Beck starts. Love on IR; Allgeier leads.",
+  "ARI": "Rookie Carson Beck starts (Minshew, M. Wilson IR). Allgeier had all 17 RB carries in Wk9; Bam Knight (concussion) full practice Thu (SIC, Nov 12).",
   "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
   "NYG": "McCarthy and Skattebo off the final injury report (Giants.com, Nov 11); both play Thu.",
   "MIA": "Malik Willis (groin) to IR; Kyle McCord starts (ESPN, Nov 10).",
-  "LV": "Cousins traded to MIN; rookie Fernando Mendoza named starter vs SEA (Raiders.com, Nov 10)."
+  "LV": "Cousins traded to MIN; rookie Fernando Mendoza named starter vs SEA (Raiders.com, Nov 10).",
+  "HOU": "Woody Marks (knee) limited Wed, DNP Thu; David Montgomery (groin) limited Thu, may return (SIC/FantasyFootballers, Nov 12). Backfield left to the official report.",
+  "SF": "Deebo Samuel (hamstring) limited Wed/Thu, working toward a return vs DAL (SIC, Nov 12); Mike Evans DNP Wed/Thu, week-to-week."
  },
  "back": [
   "Jalen Nailor",
@@ -122,10 +122,6 @@
  ],
  "qb_uncertain": {},
  "lead_back": {
-  "HOU": [
-   "Woody Marks",
-   0.65
-  ],
   "DEN": [
    "Jonah Coleman",
    0.65
@@ -152,8 +148,9 @@
   ]
  },
  "committee": [
-  "SEA",
-  "GB"
+  "GB",
+  "HOU",
+  "SEA"
  ],
  "news_q": {
   "Cam Skattebo": [
@@ -165,6 +162,11 @@
    "expected",
    "2026-11-09",
    "Harbaugh: expected to play Thu (NY Daily News via DK Network Nov 10)"
+  ],
+  "Patrick Mahomes": [
+   "expected",
+   "2026-11-12",
+   "Full practice Wed/Thu, on track to play (SIC Pro Football Doc Nov 12)"
   ]
  }
 }

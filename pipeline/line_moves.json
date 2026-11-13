@@ -945,17 +945,39 @@
    "gap": 1.7,
    "move": -3.0,
    "result": "away"
+  },
+  {
+   "week": 10,
+   "game_id": "2026_10_WAS_NYG",
+   "market": "spread",
+   "model": -0.5,
+   "line_then": 1.5,
+   "close": 2.5,
+   "gap": -2.0,
+   "move": 1.0,
+   "result": "away"
+  },
+  {
+   "week": 10,
+   "game_id": "2026_10_WAS_NYG",
+   "market": "total",
+   "model": 43.2,
+   "line_then": 44.5,
+   "close": 40.5,
+   "gap": -1.3,
+   "move": -4.0,
+   "result": "toward"
   }
  ],
  "spread": {
-  "n": 30,
+  "n": 31,
   "toward": 8,
-  "away": 11,
+  "away": 12,
   "still": 11
  },
  "total": {
-  "n": 33,
-  "toward": 11,
+  "n": 34,
+  "toward": 12,
   "away": 11,
   "still": 11
  }

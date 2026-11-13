@@ -1,9 +1,8 @@
 {
- "asof": "2026-11-10T09:30 ET",
+ "asof": "2026-11-13T11:15 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
-  "David Montgomery",
   "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Kyle Monangai",
@@ -45,7 +44,6 @@
   "Terrance Ferguson",
   "Josh Whyle",
   "David Njoku",
-  "Bam Knight",
   "Jordyn Tyson",
   "Mack Hollins",
   "Demarcus Robinson",
@@ -78,7 +76,7 @@
   "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "BAL": "Jacoby Brissett (trade from ARI finalized Nov 6) slated to start Monday vs LAC (Ravens.com). Huntley out for season, Lamar on IR.",
+  "BAL": "Jacoby Brissett named starter vs LAC Monday (Jamison Hensley via RotoBaller, Nov 8). Lamar (thumb) IR, Huntley (toe) out.",
   "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
   "CLE": "Browns plan to start Watson vs HOU (ESPN source, Nov 9); Monken not confirmed. Sanders 297 yds in Wk9.",
   "MIN": "Murray Grade 2 hamstring, questionable at best (SI, Nov 10); Wentz benched late Wk9 for Brosmer; trade deadline Tue.",
@@ -88,11 +86,12 @@
   "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
   "NE": "Stevenson (knee) imaging; A.J. Brown expected to travel to Germany, no decision; RG Ben Brown not traveling (Vrabel, Nov 9).",
   "DAL": "Jake Ferguson (knee) tests Monday (Nov 9).",
-  "DEN": "Rookie Jonah Coleman started over Dobbins in Wk9 (17 carries to 4) (Denver Gazette, Nov 8). Waddle concussion.",
+  "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
-  "ARI": "Jeremiyah Love on IR; Allgeier leads (17 of 18 carries Wk9). Minshew starts; Brissett traded to BAL.",
+  "ARI": "Rookie Carson Beck starts (Minshew, M. Wilson IR). Allgeier had all 17 RB carries in Wk9; Bam Knight (concussion) full practice Thu (SIC, Nov 12).",
   "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
-  "NYG": "McCarthy (hip pointer) expected to play Thu; Skattebo (hamstring) 'should be full go' (Harbaugh, Nov 9)."
+  "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
+  "HOU": "Woody Marks (knee) limited Wed, DNP Thu; David Montgomery (groin) limited Thu, may return (SIC/FantasyFootballers, Nov 12). Backfield left to the official report."
  },
  "back": [
   "Jalen Nailor",
@@ -117,10 +116,6 @@
  ],
  "qb_uncertain": {},
  "lead_back": {
-  "HOU": [
-   "Woody Marks",
-   0.65
-  ],
   "DEN": [
    "Jonah Coleman",
    0.65
@@ -129,10 +124,6 @@
    "Tyler Allgeier",
    0.65
   ],
-  "NYG": [
-   "Devin Singletary",
-   0.6
-  ],
   "SF": [
    "Christian McCaffrey",
    0.65
@@ -140,8 +131,14 @@
   "NYJ": [
    "Breece Hall",
    0.6
+  ],
+  "NYG": [
+   "Cam Skattebo",
+   0.65
   ]
  },
- "committee": [],
+ "committee": [
+  "HOU"
+ ],
  "news_q": {}
 }

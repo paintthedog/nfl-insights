@@ -1,3 +1,6 @@
-Staleness audit, week 10: 2 item(s)
-  [CARRYOVER] Deebo Samuel was out last week, now projected 8.2 pts with no Week 10 status — confirm he's back
+Staleness audit, week 10: 5 item(s)
+  [CARRYOVER] David Montgomery was out last week, now projected 8.6 pts with no Week 10 status — confirm he's back
+  [CARRYOVER] Deebo Samuel was out last week, now projected 8.3 pts with no Week 10 status — confirm he's back
+  [CARRYOVER] Bam Knight was out last week, now projected 5.9 pts with no Week 10 status — confirm he's back
+  [STALE] lead_back NYG set 2026-11-09 (4 days ago) - re-verify or remove
   [DFS] no dk_salaries_wk10.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
