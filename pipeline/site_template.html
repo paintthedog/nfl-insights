@@ -1034,7 +1034,7 @@ LN.games.forEach((g, i) => {
   g.name = `${g.away_name} at ${g.home_name}`; g.short = `${g.away} at ${g.home}`;
 });
 TT.forEach(x => { const g = LN.games.find(g => g.home === x.team || g.away === x.team), sg = x.home ? 1 : -1;
-  x.win = ncdf(sg * g.bm / LN.sd_margin); x.rawwin = ncdf(sg * g.m_margin / LN.sd_margin); x.mwin = g.spread == null ? null : ncdf(sg * g.spread / LN.sd_margin); x.diff = x.mkt == null ? null : x.model - x.mkt; });
+  x.win = ncdf(sg * g.bm / (LN.sd_win || LN.sd_margin)); x.rawwin = ncdf(sg * g.m_margin / LN.sd_margin); x.mwin = g.spread == null ? null : ncdf(sg * g.spread / (LN.sd_win || LN.sd_margin)); x.diff = x.mkt == null ? null : x.model - x.mkt; });
 const STRONG = 0.55;   // calibrated (Oct 16): the model-vs-line gap is worth little; only flag what history backs
 const leanCell = (txt, p, gap) => txt ? `<span class="num ${p != null && p >= STRONG ? "move" : ""}" style="white-space:nowrap">${esc(txt)} ${pct(p)}</span>` : dash;
 function slateFacts() {

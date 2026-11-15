@@ -21,12 +21,12 @@ TYPE_A, TYPE_B = "Same-game stacks: favorite + lead RB", "Same-game stacks: top 
 TYPE_C = "Same-game stacks: QB yards + WR1 catches"
 
 
-def anchored_home_win(g, SDM):
+def anchored_home_win(g, SDM, SDW=None):
     """Oct 21: the site's best-estimate home win chance: DK's spread moved only as far as the calibrated cover chance allows
     (same number as the game cards). Falls back to the model margin when there is no line."""
     from scipy.stats import norm as _n
     if g.get("spread") is None or g.get("p_home_cover") is None: return Phi(g["m_margin"] / SDM)
-    return Phi((g["spread"] + SDM * float(_n.ppf(min(max(g["p_home_cover"], 1e-6), 1 - 1e-6)))) / SDM)
+    return Phi((g["spread"] + SDM * float(_n.ppf(min(max(g["p_home_cover"], 1e-6), 1 - 1e-6)))) / (SDW or SDM))   # Nov 14: SDW = lines "sd_win" (win chance has its own sd)
 
 
 TYPES_DOG = {TYPE_A: "Same-game stacks (underdog): win + lead RB", TYPE_B: "Same-game stacks (underdog): top two pass catchers",

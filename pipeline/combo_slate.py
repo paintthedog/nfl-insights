@@ -79,7 +79,7 @@ def build(W, now=None, D=None, only=None):
     games = sorted([g for g in L["games"] if g["game_id"] in sw.index and kick(g["game_id"]) > now and (only is None or g["game_id"] in only)],
                    key=lambda g: (str(sw.loc[g["game_id"]].gameday), str(sw.loc[g["game_id"]].gametime), g["game_id"]))
     for g in games:
-        gid = g["game_id"]; ph = anchored_home_win(g, SDM)
+        gid = g["game_id"]; ph = anchored_home_win(g, SDM, L.get("sd_win"))
         fav, pw = (g["home"], ph) if ph >= .5 else (g["away"], 1 - ph)
         win = dict(gid=gid, player=fav, team=fav, stat="ml", line=None, p=round(float(pw), 4), label="WIN")
         dog = g["away"] if fav == g["home"] else g["home"]; R = {}
@@ -200,6 +200,8 @@ def grade():
     pl = pd.read_parquet("data/players.parquet", columns=["gsis_id", "display_name"]); NM = {}
     for g, n in zip(pl.gsis_id, pl.display_name): NM.setdefault(norm(n), []).append(g)
     byg = {gid: d for gid, d in pbp[pbp.game_id.isin(done)].groupby("game_id")}
+    _sn = pd.read_parquet("data/snaps.parquet", columns=["game_id", "gsis_id", "offense_snaps"])
+    ON = set(map(tuple, _sn[_sn.offense_snaps.fillna(0) > 0][["game_id", "gsis_id"]].values))
 
     def leg_result(l):
         gid = l["gid"]
@@ -209,7 +211,11 @@ def grade():
             return "void" if m == 0 else "hit" if m > 0 else "miss"
         gm = byg[gid]; ids = set(gm.passer_player_id.dropna()) | set(gm.rusher_player_id.dropna()) | set(gm.receiver_player_id.dropna()) | set(gm.td_player_id.dropna())
         c = [x for x in NM.get(norm(l["player"]), []) if x in ids]
-        if not c: return "void"                                    # didn't touch the ball: the leg is dropped, like a scratched player
+        if not c:
+            # Nov 14: a player who was on the field but never touched the ball had a 0 day, and the leg missed (it was dropped before,
+            # which flattered the hit rate). Only a player with no offensive snap is dropped, like a scratched player.
+            if any((gid, x) in ON for x in NM.get(norm(l["player"]), [])): return "miss"
+            return "void"
         p = c[0]
         if l["stat"] == "atd": return "hit" if (gm.touchdown.eq(1) & gm.td_player_id.eq(p)).any() else "miss"
         v = float(gm[gm.receiver_player_id.eq(p)].complete_pass.sum() if l["stat"] == "rec" else

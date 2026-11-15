@@ -42,6 +42,15 @@ hist = g[~g._pred & g.result.notna() & g.spread_line.notna() & (g.min_games >= 3
 mm, mt = L.fit(hist)
 bt = pd.read_pickle("lines_backtest.pkl")
 sd_m, sd_t = float(np.std(bt.result - bt.m_margin)), float(np.std(bt.total - bt.m_total))
+# Nov 14 (Clinton: underdogs overrated): the win chance uses its own spread of outcomes. Margins have fat tails, so turning a point
+# spread into a win chance with the margin's sd (13) undersells favorites: 2016-25 closing spreads said 65-80% and won 72-84%.
+# sd_win is the value that best matches spread -> winner on every finished regular-season game since 2010 (about 11.1; walk-forward
+# fits 10.1-11.8 every season, TEST_LEDGER). Cover and total chances still use sd_margin / sd_total.
+from scipy.optimize import minimize_scalar as _msc
+from scipy.stats import norm as _nrm
+_w = played[(played.game_type == "REG") & (played.season >= 2010) & played.spread_line.notna() & (played.result != 0)]
+_pw = lambda sd: np.clip(np.where(_w.result > 0, _nrm.cdf(_w.spread_line / sd), 1 - _nrm.cdf(_w.spread_line / sd)), 1e-9, 1)
+sd_w = float(_msc(lambda sd: -np.log(_pw(sd)).mean(), bounds=(8, 18), method="bounded").x) if len(_w) > 500 else sd_m
 fut = L.predict(g[g._pred].copy(), mm, mt)
 
 # ---- game cards
@@ -159,7 +168,7 @@ combos = _rows([("Favorite of 7+ and total under 42", (gm.sp >= 7) & (gm.total_l
 for r, (label, mask) in zip(combos, [(0, (gm.sp >= 7) & (gm.total_line < 42)), (0, (gm.sp >= 7) & (gm.total_line >= 48)), (0, (gm.sp < 3) & (gm.total_line < 42)), (0, (gm.sp < 3) & (gm.total_line >= 48))]):
     yr = gm[mask & (gm.season < SEASON)].groupby("season").over.agg(lambda x: (x > 0).sum() / max(((x > 0) | (x < 0)).sum(), 1))
     r["over_seasons"] = int((yr > 0.5).sum()); r["n_seasons"] = int(len(yr))
-json.dump(dict(by_spread=by_spread, by_total=by_total, combos=combos, games=games, teams=team_rows, situations=sit_rows, league_ou=lg, summary=summary, sd_margin=round(sd_m, 1), sd_total=round(sd_t, 1)),
+json.dump(dict(by_spread=by_spread, by_total=by_total, combos=combos, games=games, teams=team_rows, situations=sit_rows, league_ou=lg, summary=summary, sd_margin=round(sd_m, 1), sd_total=round(sd_t, 1), sd_win=round(sd_w, 1)),
           open(f"lines_{SEASON}_wk{WEEK}.json", "w"))
 print(f"{len(games)} games; model vs market:")
 for x in games: print(f"  {x['away']}@{x['home']}: line {x['spread']} / model {x['m_margin']:+.1f} | total {x['total']} / model {x['m_total']}")

@@ -100,14 +100,26 @@ for c in REC_S + RUSH_S:
 # multiplied by (carries / team median)^(K-1); the team totals below then put the volume back, so K > 1 moves carries from fringe
 # backs to the regulars without changing any team total. Replay 2024-25: K = 1.4 for carries (RB carries MAE -7%, rush yds -2.5%,
 # with sim_model.CAR_OVERDISP 5.0 so rushing ceilings stay ~11%). Receiving stays at 1.0 (tested 1.3: no RMSE gain, ceilings slip).
+# Nov 14 (replay 2024-25, TEST_LEDGER): receiving K 1.0 -> 1.1. Regular pass catchers (4-8 targets) ran 4-8% under and fringe players
+# 25% over, which is why "70%" catches legs hit 74%. K 1.1: catches MAE -1%, RMSE down or flat both seasons, 70% legs hit 72%.
+# K 1.15 over-projects the 8+ target players (0.93), so 1.1.
 # Teams with a news lead_back are skipped: that share is already set by hand.
-SHARE_K = {"rec": float(__import__("os").environ.get("SHARE_K_REC", 1.0)), "car": float(__import__("os").environ.get("SHARE_K_CAR", 1.4))}
+SHARE_K = {"rec": float(__import__("os").environ.get("SHARE_K_REC", 1.1)), "car": float(__import__("os").environ.get("SHARE_K_CAR", 1.4))}
 _lb_teams = set(_lb) if "_lb" in dir() else set()
+# Nov 14: the carry concentration is worked out among a team's running backs only. Done over every non-QB it took the receivers'
+# few carries too (a WR's end-around share was cut to about half of what happens; replay, TEST_LEDGER).
+CAR_RB_ONLY = __import__("os").environ.get("SHARE_K_CAR_RB_ONLY", "1") == "1"
 for _k, _base, _cols in (("rec", "p_tgt", REC_S), ("car", "p_car", RUSH_S)):
     if SHARE_K[_k] != 1.0:
         _sel = nq & ~f.posteam.isin(_lb_teams if _k == "car" else set())
+        if _k == "car" and CAR_RB_ONLY: _sel = _sel & (f.pos == "RB")
         _b = f.loc[_sel, _base].clip(lower=0.05); _mult = (_b / _b.groupby(f.loc[_sel, "posteam"]).transform("median")) ** (SHARE_K[_k] - 1)
+        _old = {c: (f.loc[_sel, c] * f.loc[_sel, "p_play"]).groupby(f.loc[_sel, "posteam"]).transform("sum") for c in _cols} if _k == "car" and CAR_RB_ONLY else None
         for c in _cols: f.loc[_sel, c] = f.loc[_sel, c] * _mult
+        if _old:        # the backs keep the same total as before; only the split among them changes
+            for c in _cols:
+                _new = (f.loc[_sel, c] * f.loc[_sel, "p_play"]).groupby(f.loc[_sel, "posteam"]).transform("sum")
+                f.loc[_sel, c] = f.loc[_sel, c] * (_old[c] / _new.where(_new > 0)).fillna(1.0)
 # ---- make each team add up: the pool gets POOL_FRAC of the team (the rest goes to players who aren't listed), counting
 #      a Questionable player at his chance of playing. p_* stay "if he plays" numbers.
 _q = f[f.pos == "QB"]     # a team with an uncertain starter has two quarterbacks: the team's passing line is their chance-weighted mix

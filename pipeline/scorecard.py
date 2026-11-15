@@ -157,7 +157,7 @@ for wk in weeks:
             # Nov 3: grade the win chance the site shows (line-anchored: the spread moved only as far as the calibrated cover chance
             # allows, same formula as the Games tab), not the raw team-model margin
             bmw = g["spread"] + sd * _qn(min(max(g["p_home_cover"], 0.01), 0.99)) if g.get("spread") is not None and g.get("p_home_cover") is not None else g["m_margin"]
-            ph = Phi(bmw / sd)
+            ph = Phi(bmw / (D["lines"].get("sd_win") or sd))   # Nov 14: the site shows the win chance with sd_win once the archive carries it
             PR.append(dict(wk=wk, mkt="Model's favorite wins", p=max(ph, 1 - ph), y=float((mg > 0) == (ph > 0.5)) if mg != 0 else 0.5, dk=None))
 
 # games published before the snapshot archive existed (Weeks 4-5): the odds pulls logged the model's TD chance next to DK's price before kickoff

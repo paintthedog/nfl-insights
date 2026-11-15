@@ -150,3 +150,27 @@ Role decides most of it (actual played, by final practice): starters 60%+ snaps 
 Model: logistic on practice status + mean snap share over his last 3 games + no-game-yet + missed last week. Fit 2019-23, test 2024-25 (n=679): Brier 0.249 (table) -> 0.214, log loss 0.702 -> 0.617; better in every leave-one-season-out fold 2021-25 (e.g. 2023 0.246 -> 0.206). Slightly over-confident on the 2024-25 test (0.75-0.9 bin said 82%, 78% played). Shipped with the full 2019-25 fit.
 Replay 2025 weeks 3-18 (live chain, Q_MODEL 0 vs 1): Questionable players whose chance changed (n=251) play-chance Brier 0.218 -> 0.202; their expected PPR (chance x if-he-plays) MAE 4.13 -> 4.02, receiving yards 18.2 -> 17.8; teammates and all players unchanged (PPR MAE 4.067 -> 4.060). 2025 is inside the shipped fit, so the held-out numbers above are the real test.
 QBs keep the flat table (242 cases, not fit). Not yet used: the Wed/Thu/Fri practice trend (nflverse keeps only the final practice) and coach quotes.
+
+## Nov 14-15: season critique follow-ups (Clinton: "do all of those"). Replay 2024-25 Weeks 2-18 (34 weeks, 11,425 listed player-games)
+Four proposals from the season critique, each tested before anything shipped. Two were adopted as proposed in substance, two were wrong and replaced by what the test showed.
+
+**1. Catch thresholds too cautious - ADOPTED: receiving concentration `SHARE_K_REC` 1.0 -> 1.1 (proj_project.py).**
+Cause found with `replay/legs.py` (the combos' own threshold rule on every replayed player): it is the means, not the simulator's spread. Regular pass catchers (4-8 projected targets) got 104-108% of their projection, fringe players (1-2.5 targets) 74-78%, so results sat above the published median 56% of the time for regulars.
+| | 70% catches legs (2,830) | 50% legs | catches RMSE all listed 2024 / 2025 | rec yds MAE on field | by band (act/proj: <1, 1-2.5, 2.5-4, 4-6, 6-8, 8+ targets) |
+| K 1.0 (old) | 73.8% | 56.7% | 1.761 / 1.643 | 16.45 | 0.71 0.74 0.99 1.04 1.08 1.02 |
+| K 1.1 (adopted) | 72.3% | 54.4% | 1.747 / 1.639 | 16.31 | 0.78 0.81 0.99 1.01 1.03 0.96 |
+| K 1.15 | 71.1% | 52.9% | 1.743 / 1.640 | 16.26 | 0.84 0.85 1.00 1.01 1.01 0.93 |
+K 1.15 fixes the regulars' lean completely but over-projects the 8+ target players by 7% and 2025 on-field RMSE slips; 1.1 is the safe step. About 2 points of under-confidence remain at 70% (live read was 78% on 230 legs, part of it luck). Also fixed in combo grading: a player on the field with no touch now counts as a miss (was dropped), +4 legs.
+
+**2. Interception model -> base rate - NOT ADOPTED; the proposal was wrong (tests/t_int_base.py).**
+Walk-forward by season 2019-2026 (fit on earlier seasons, 4,126 starts): Brier model 0.2470 vs constant 0.2501, by-spread base rate 0.2488, attempts x league rate 0.2503, attempts x QB rate 0.2494. The model wins 7 of 8 seasons (z 3.1 vs constant) and is calibrated (said 50.4%, happened 50.4%). The live 0.252 over 85 QBs is noise. The edge is small (1.2% better than a coin) - it is a weak signal, not a broken one.
+
+**3. Rushing ceilings too low - widening NOT ADOPTED; the real cause fixed instead: carry concentration among running backs only (`SHARE_K_CAR_RB_ONLY`, default on).**
+Real backs (4+ projected carries) are fine or slightly wide: replay above-ceiling 7.3%, live Week 9 (the first week after the Nov 3 fix) 6%; Weeks 7-8 (16-20%) predate that fix. The excess came from players with almost no rushing projection: WR/TE rows beat their ceiling 26% of the time because the Nov 3 concentration, taken over every non-QB, cut receivers' carries to about half of what happens (0.31 projected vs 0.50). Concentrating among RBs only (RB total kept, split unchanged):
+| | all rushing rows above ceiling | WR/TE above | RB carries MAE / RMSE | RB rush yds MAE | RB 4+ proj vs actual yds |
+| old | 13.2% | 26.1% | 3.245 / 4.424 | 19.46 | 50.5 / 48.5 |
+| RB only (adopted) | 10.4% | 12.8% | 3.212 / 4.398 | 19.25 | 49.4 / 48.9 |
+Still open: 16+ carry backs over-projected in replay (81.7 vs 77.2 yds; replay has no hand lead_back), fringe backs under 4 carries beat the ceiling 14%.
+
+**4. Underdog win chances - ADOPTED (small): the win chance uses its own sd, `sd_win` (lines_project.py, about 11.1; cover/total chances unchanged).**
+tests/t_win_sd.py, closing spreads 2016-2026 walk-forward: with the margin's sd (13) favorites were said 65.1% and won 66.7% (70-80% bucket: said 73.7, won 77.9). The best-fitting sd is 10.1-11.8 in every fold, never near 13 (margins have fat tails). Gain is small and not significant on its own (Brier 0.21103 -> 0.21056, z 1.2; better in 7 of 11 seasons), and at sd 11.1 small favorites read slightly high (56.6 said, 53.4 won). A 7-point underdog goes 29.5% -> 26.5%. This does NOT explain the live upset-combo miss (14% vs 29%, 43 combos): favorites have won 35 of 44 since Week 7 against ~29 expected, which is mostly a run. Used by the Games tab win bar, the market win chance, combo win legs and the scorecard (archives before Nov 15 are graded with the sd they showed). paper_lines' moneyline rule still uses the raw model margin with sd_margin (pre-registered).
