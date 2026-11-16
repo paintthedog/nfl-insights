@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-15T09:05 ET",
+ "asof": "2026-11-16T10:30 ET",
  "source": "Seeded 2026-11-04 from week 9 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 10 reports.",
  "out": [
   "Carter Runyon",
@@ -78,13 +78,13 @@
   "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "BAL": "Jacoby Brissett named starter vs LAC Monday (Jamison Hensley via RotoBaller, Nov 8). Lamar (thumb) IR, Huntley (toe) out.",
+  "BAL": "Jacoby Brissett starts vs LAC tonight (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Lamar (thumb) IR, Huntley (toe) out.",
   "SEA": "Darnold (quad) out Wk10 (SIC Nov 12); Lock (elbow/oblique, limited Wed/Thu) starts, Milroe backup.",
   "CLE": "Deshaun Watson starts vs HOU (Monken, AP Nov 11; Cabot/cleveland.com Nov 11). Earlier Sanders report superseded.",
   "MIN": "Kirk Cousins starts at GB (ESPN Nov 14). Hockenson (chest/wrist) out; Addison (thumb) Q, game-time decision (CBS).",
   "KC": "Kenneth Walker III (groin) ruled out (Schultz, Falcons Wire Nov 14); rookie Emmett Johnson leads. Mahomes full practice Wed/Thu.",
   "LA": "Puka Nacua (knee MCL/PCL sprain) out, likely IR, at least a month (CBS/DK Network, Nov 10-11).",
-  "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
+  "LAC": "Herbert (finger) status uncertain per WagerTalk (Nov 16); listed Questionable (SI Nov 11). DJ Uiagalelei would start if he can't. No confirmation found; model keeps Herbert.",
   "GB": "Josh Jacobs fractured finger, surgery; LaFleur: 'I don't think he could' play (ESPN/TSN Nov 9). Kaleb Johnson and Pierre Strong share; Lloyd (knee) unclear.",
   "NE": "Stevenson and A.J. Brown active in Munich (CBS inactives tracker, Nov 15); Henderson IR. Stevenson back from knee: NE set to committee with Kiner.",
   "DAL": "Jake Ferguson (knee) out; Tyler Goodson (knee) out multiple weeks, Javonte Williams the only other healthy back; Pickens (hamstring) has a chance (DK Network, Nov 10).",

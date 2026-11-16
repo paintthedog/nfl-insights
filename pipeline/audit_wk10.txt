@@ -1,3 +1,7 @@
-Staleness audit, week 10: 2 item(s)
-  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
-  [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
+Staleness audit, week 10: 6 item(s)
+  [QB] NE: feed lists Drake Maye, last starter T.DeVito — confirm and set qb_start
+  [QB] NYJ: feed lists Geno Smith, last starter C.Klubnik — confirm and set qb_start
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+  [TRADE] Kirk Cousins moved LV -> MIN (22 targets+carries with LV) and is not in the MIN projections
+  [TRADE] Josh Downs moved IND -> KC (58 targets+carries with IND) and is not in the KC projections
+  [TRADE] Keenan Allen moved IND -> SF (58 targets+carries with IND) and is not in the SF projections

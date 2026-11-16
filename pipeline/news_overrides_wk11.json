@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-13T11:15 ET",
+ "asof": "2026-11-16T11:30 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
@@ -76,11 +76,11 @@
   "Alijah Vera-Tucker"
  ],
  "team_notes": {
-  "BAL": "Jacoby Brissett named starter vs LAC Monday (Jamison Hensley via RotoBaller, Nov 8). Lamar (thumb) IR, Huntley (toe) out.",
+  "BAL": "Jacoby Brissett starts while Lamar (thumb, IR) and Huntley (toe) are out (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Feed still lists Huntley until Brissett's first game is played.",
   "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
   "CLE": "Browns plan to start Watson vs HOU (ESPN source, Nov 9); Monken not confirmed. Sanders 297 yds in Wk9.",
   "MIN": "Murray Grade 2 hamstring, questionable at best (SI, Nov 10); Wentz benched late Wk9 for Brosmer; trade deadline Tue.",
-  "KC": "Mahomes (right elbow) finished Wk9; MRI showed no major injury, more tests (Nov 8).",
+  "KC": "Kenneth Walker III (groin) expected to play Wk11, 'minor ... precautionary' (Rapoport via CBS/RotoWire Nov 15); resumes lead role over rookie Emmett Johnson. Kelce (ankle) limped off Wk10 but returned (SIC Nov 15).",
   "LA": "Puka Nacua (knee) MRI after Wk9 (Nov 8).",
   "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
   "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
@@ -89,9 +89,10 @@
   "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "Monangai out until Wk11; Luther Burden concussion (Nov 8).",
   "ARI": "Rookie Carson Beck starts (Minshew, M. Wilson IR). Allgeier had all 17 RB carries in Wk9; Bam Knight (concussion) full practice Thu (SIC, Nov 12).",
-  "NYJ": "Breece Hall led Wk9 (15 carries to Braelon Allen's 8); Garrett Wilson concussion.",
+  "NYJ": "Geno Smith (left ankle) left Wk10 after X-rays; Glenn: availability 'determined during the week' (NYJets.com/ESPN Nov 15). Rookie Cade Klubnik starts if Smith can't. Omar Cooper Jr. (ankle) left Wk10.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
-  "HOU": "Woody Marks (knee) limited Wed, DNP Thu; David Montgomery (groin) limited Thu, may return (SIC/FantasyFootballers, Nov 12). Backfield left to the official report."
+  "HOU": "Woody Marks (concussion, Wk10) unlikely for TNF (Ryans, RotoWire Nov 15); Montgomery (groin) ramping up, Ryans 'not certain' (ESPN/RotoWire Nov 15). Demercado/Ogunbowale behind. Backfield left to the official report.",
+  "LV": "Brock Bowers (ankle) left Wk10, re-evaluated Monday (Kubiak via PFT Nov 15). Mendoza starts."
  },
  "back": [
   "Jalen Nailor",
@@ -112,7 +113,8 @@
   "Emeka Egbuka",
   "Zach Charbonnet",
   "Tre Harris",
-  "Cam Skattebo"
+  "Cam Skattebo",
+  "Kenneth Walker III"
  ],
  "qb_uncertain": {},
  "lead_back": {
@@ -135,10 +137,20 @@
   "NYG": [
    "Cam Skattebo",
    0.65
+  ],
+  "KC": [
+   "Kenneth Walker III",
+   0.6
   ]
  },
  "committee": [
   "HOU"
  ],
- "news_q": {}
+ "news_q": {
+  "Woody Marks": [
+   "unlikely",
+   "2026-11-15",
+   "Concussion Wk10; Ryans: 'Just not enough time for him to turn it around that quickly' for Thu (RotoWire/ESPN Nov 15)"
+  ]
+ }
 }

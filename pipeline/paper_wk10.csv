@@ -24,8 +24,6 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 10,"Game totals, model differs 3+ pts",2026_10_MIN_GB,MIN@GB,game_total,Over,42.5,1.952,0.5892,,2026-11-15T15:16Z,nflverse
 10,"Game totals, model differs 3+ pts",2026_10_LA_ARI,LA@ARI,game_total,Over,38.5,1.926,0.7625,,2026-11-15T15:16Z,nflverse
 10,Trend unders: prime time,2026_10_PIT_CIN,PIT@CIN,game_total,Under,49.5,1.87,0.563,,2026-11-15T15:16Z,nflverse
-10,"Moneyline, model differs 4+ pts",2026_10_LAC_BAL,LAC,ml,ML,,2.85,0.4058,,2026-11-15T15:16Z,nflverse
-10,Trend unders: prime time,2026_10_LAC_BAL,LAC@BAL,game_total,Under,38.5,1.909,0.563,,2026-11-15T15:16Z,nflverse
 10,"Teasers: small underdogs +6, 2 legs",,CAR +7.5 + MIN +8.5,parlay,All,,1.8,0.5995,"[{""gid"": ""2026_10_CAR_NO"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +7.5""}, {""gid"": ""2026_10_MIN_GB"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""MIN +8.5""}]",2026-11-15T15:16Z,nflverse
 10,Teaser legs: small underdogs +6,2026_10_CAR_NO,CAR +7.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_10_CAR_NO"", ""player"": ""CAR"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""CAR +7.5""}]",2026-11-15T15:16Z,nflverse
 10,Teaser legs: small underdogs +6,2026_10_MIN_GB,MIN +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_10_MIN_GB"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""MIN +8.5""}]",2026-11-15T15:16Z,nflverse
@@ -35,3 +33,6 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 10,Control: random,2026_10_LA_ARI,LA@ARI,game_total,Over,38.5,1.926,0.7625,,2026-11-15T15:16Z,nflverse
 10,Control: random,2026_10_SF_DAL,SF@DAL,game_total,Under,55.5,1.98,0.509,,2026-11-15T15:16Z,nflverse
 10,Control: random,2026_10_HOU_CLE,HOU@CLE,game_total,Over,40.5,1.893,0.5834,,2026-11-15T15:16Z,nflverse
+10,"Moneyline, model differs 4+ pts",2026_10_LAC_BAL,LAC,ml,ML,,2.85,0.4058,,2026-11-16T14:45Z,nflverse
+10,Trend unders: prime time,2026_10_LAC_BAL,LAC@BAL,game_total,Under,38.5,1.952,0.563,,2026-11-16T14:45Z,nflverse
+10,Control: random,2026_10_LAC_BAL,LAC@BAL,game_total,Over,38.5,1.87,0.503,,2026-11-16T14:45Z,nflverse
