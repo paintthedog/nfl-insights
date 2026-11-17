@@ -1231,11 +1231,33 @@
    "gap": -0.1,
    "move": 2.0,
    "result": "no gap"
+  },
+  {
+   "week": 10,
+   "game_id": "2026_10_LAC_BAL",
+   "market": "spread",
+   "model": 5.1,
+   "line_then": -1.5,
+   "close": 4.5,
+   "gap": 6.6,
+   "move": 6.0,
+   "result": "toward"
+  },
+  {
+   "week": 10,
+   "game_id": "2026_10_LAC_BAL",
+   "market": "total",
+   "model": 37.6,
+   "line_then": 37.5,
+   "close": 38.5,
+   "gap": 0.1,
+   "move": 1.0,
+   "result": "no gap"
   }
  ],
  "spread": {
-  "n": 39,
-  "toward": 12,
+  "n": 40,
+  "toward": 13,
   "away": 14,
   "still": 13
  },

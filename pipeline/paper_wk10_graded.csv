@@ -33,6 +33,6 @@ week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_s
 10,Control: random,2026_10_LA_ARI,LA@ARI,game_total,Over,38.5,1.926,0.7625,,2026-11-15T15:16Z,nflverse,win,40.0,,0.9259999999999999,,0.0
 10,Control: random,2026_10_SF_DAL,SF@DAL,game_total,Under,55.5,1.98,0.509,,2026-11-15T15:16Z,nflverse,loss,86.0,,-1.0,,0.0
 10,Control: random,2026_10_HOU_CLE,HOU@CLE,game_total,Over,40.5,1.893,0.5834,,2026-11-15T15:16Z,nflverse,win,51.0,,0.893,,0.0
-10,"Moneyline, model differs 4+ pts",2026_10_LAC_BAL,LAC,ml,ML,,2.85,0.4058,,2026-11-16T14:45Z,nflverse,pending,,,0.0,,
-10,Trend unders: prime time,2026_10_LAC_BAL,LAC@BAL,game_total,Under,38.5,1.952,0.563,,2026-11-16T14:45Z,nflverse,pending,,,0.0,,
-10,Control: random,2026_10_LAC_BAL,LAC@BAL,game_total,Over,38.5,1.87,0.503,,2026-11-16T14:45Z,nflverse,pending,,,0.0,,
+10,"Moneyline, model differs 4+ pts",2026_10_LAC_BAL,LAC,ml,ML,,2.85,0.4058,,2026-11-16T14:45Z,nflverse,win,3.0,,1.85,0.0,
+10,Trend unders: prime time,2026_10_LAC_BAL,LAC@BAL,game_total,Under,38.5,1.952,0.563,,2026-11-16T14:45Z,nflverse,loss,43.0,,-1.0,,-1.0
+10,Control: random,2026_10_LAC_BAL,LAC@BAL,game_total,Over,38.5,1.87,0.503,,2026-11-16T14:45Z,nflverse,win,43.0,,0.8700000000000001,,1.0

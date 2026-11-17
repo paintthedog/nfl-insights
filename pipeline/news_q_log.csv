@@ -10,3 +10,5 @@ season,week,name,pid,cat,date,source,p_model,p_news
 2026,10,Omar Cooper Jr.,00-0041511,expected,2026-11-14,Expected to play vs BUF (Zenitz/CBS via FantasyPros Nov 14); Glenn: 'I see that happening' (Nov 13),0.916,0.98
 2026,10,Adonai Mitchell,00-0039890,expected,2026-11-14,Expected to play vs BUF (Zenitz/CBS via FantasyPros Nov 14); Glenn: 'I see that happening' (Nov 13),0.892,0.974
 2026,11,Woody Marks,00-0040583,unlikely,2026-11-15,Concussion Wk10; Ryans: 'Just not enough time for him to turn it around that quickly' for Thu (RotoWire/ESPN Nov 15),0.97,0.878
+2026,11,David Montgomery,00-0035685,gtd,2026-11-16,"Groin; full practice Fri and Mon, Ryans 'not certain' he plays Thu (Forbes Nov 16)",0.52,0.51
+2026,11,Kenneth Walker III,00-0038134,gtd,2026-11-16,"Groin; Rapoport Nov 15 'expected to play', Schefter Nov 16 'wouldn't be surprised' if he misses Wk11 (Forbes Nov 16)",0.97,0.85
