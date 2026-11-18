@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-17T09:30 ET",
+ "asof": "2026-11-18T09:45 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
@@ -54,7 +54,9 @@
   "Michael Wilson",
   "Jake Ferguson",
   "Tyler Goodson",
-  "Jordan Addison"
+  "Jordan Addison",
+  "Woody Marks",
+  "Wan'Dale Robinson"
  ],
  "p_play": {},
  "qb_start": {
@@ -92,11 +94,13 @@
   "ARI": "Rookie Carson Beck starts (started Wk10; Minshew IR). Allgeier and Bam Knight split RB carries 5-5 in Wk10 (box score): committee.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
-  "HOU": "Woody Marks (concussion) not expected to clear for TNF (Ryans). Montgomery (groin) full Fri/Mon practice, Ryans 'not certain' (Forbes Nov 16). Backfield left to the official report.",
-  "LV": "Brock Bowers (ankle) not believed major, day-to-day; more tests (Rapoport via Forbes Nov 16; Big Lead Nov 17). Mendoza starts.",
+  "HOU": "Woody Marks (concussion) ruled out for TNF (Aaron Wilson via FantasyPros Nov 17). Montgomery (groin) full participant, 'on track to return' (PFT Nov 17); Demercado led the backfield after Marks' injury. Harrison Jr. (hamstring) not expected to play.",
+  "LV": "Brock Bowers (ankle) day-to-day: 'not as bad as we thought, but still a significant injury' (Kubiak, Nov 16). Mendoza starts.",
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
   "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17).",
-  "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17)."
+  "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
+  "TB": "Baker Mayfield (foot) trending toward sitting vs DET; Jalon Daniels likely starts (Rapoport via ESPN Nov 17). Modeled as 30% Mayfield / 70% Daniels until the practice report decides.",
+  "TEN": "Wan'Dale Robinson (ankle) placed on IR (ESPN Nov 17). Carnell Tate (shoulder) hopeful for Wk11 (Saleh, Nov 16)."
  },
  "back": [
   "Jalen Nailor",
@@ -119,9 +123,17 @@
   "Tre Harris",
   "Cam Skattebo",
   "Kenneth Walker III",
-  "Kyle Monangai"
+  "Kyle Monangai",
+  "David Montgomery"
  ],
- "qb_uncertain": {},
+ "qb_uncertain": {
+  "TB": {
+   "starter": "Baker Mayfield",
+   "backup": "Jalon Daniels",
+   "p": 0.3,
+   "note": "Foot; Rapoport: 'trending' toward sitting vs DET, Daniels likely starts (ESPN Nov 17)"
+  }
+ },
  "lead_back": {
   "DEN": [
    "Jonah Coleman",
@@ -149,20 +161,20 @@
   "HOU"
  ],
  "news_q": {
-  "Woody Marks": [
-   "unlikely",
-   "2026-11-15",
-   "Concussion Wk10; Ryans: 'Just not enough time for him to turn it around that quickly' for Thu (RotoWire/ESPN Nov 15)"
-  ],
   "David Montgomery": [
-   "gtd",
-   "2026-11-16",
-   "Groin; full practice Fri and Mon, Ryans 'not certain' he plays Thu (Forbes Nov 16)"
+   "expected",
+   "2026-11-17",
+   "Groin; full participant Mon estimate, 'on track to return' and 'feeling and moving a lot better' (PFT Nov 17; Aaron Wilson via FantasyPros Nov 17)"
   ],
   "Kenneth Walker III": [
    "gtd",
    "2026-11-16",
    "Groin; Rapoport Nov 15 'expected to play', Schefter Nov 16 'wouldn't be surprised' if he misses Wk11 (Forbes Nov 16)"
+  ],
+  "Marvin Harrison Jr.": [
+   "unlikely",
+   "2026-11-17",
+   "Hamstring; not expected to play Wk11, still sidelined (Aaron Wilson via FantasyPros Nov 17)"
   ]
  }
 }
