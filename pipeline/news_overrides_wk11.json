@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-18T09:45 ET",
+ "asof": "2026-11-19T09:30 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
@@ -56,7 +56,9 @@
   "Tyler Goodson",
   "Jordan Addison",
   "Woody Marks",
-  "Wan'Dale Robinson"
+  "Wan'Dale Robinson",
+  "Marvin Harrison Jr.",
+  "Brevin Jordan"
  ],
  "p_play": {},
  "qb_start": {
@@ -73,7 +75,6 @@
  "next_man": {},
  "ol_out": [
   "Josh Simmons",
-  "Kayode Awosika",
   "Teven Jenkins",
   "Trevor Penning",
   "Alijah Vera-Tucker"
@@ -82,8 +83,8 @@
   "BAL": "Jacoby Brissett starts while Lamar (thumb, IR) and Huntley (toe) are out (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Feed still lists Huntley until Brissett's first game is played.",
   "SEA": "Darnold (quad/ribs) won't play Wk10 (Macdonald, Nov 9); Lock (elbow/oblique) expected to start, Milroe backup. Darnold targets Nov 29 after the bye.",
   "CLE": "Browns plan to start Watson vs HOU (ESPN source, Nov 9); Monken not confirmed. Sanders 297 yds in Wk9.",
-  "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson expected to progress for Sunday.",
-  "KC": "Kenneth Walker III (groin): Rapoport Nov 15 expected to play, Schefter Nov 16 'wouldn't be surprised' if he misses Wk11; Emmett Johnson had 22 carries in Wk10. Kelce (ankle) returned in Wk10.",
+  "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson limited Wed Nov 18, expected to progress for Sunday (Forbes Nov 16).",
+  "KC": "Kenneth Walker III (groin) DNP Wed Nov 18 (NFL.com report); Rapoport Nov 15 expected to play, Schefter Nov 16 'wouldn't be surprised' if he misses. Emmett Johnson had 22 carries in Wk10.",
   "LA": "Puka Nacua (knee) MRI after Wk9 (Nov 8).",
   "LAC": "Herbert avoided a finger fracture (NFL.com, Nov 9); McConkey scratched Wk9 (back).",
   "GB": "Josh Jacobs fractured a finger (right hand) in Wk9 (Nov 8).",
@@ -94,13 +95,13 @@
   "ARI": "Rookie Carson Beck starts (started Wk10; Minshew IR). Allgeier and Bam Knight split RB carries 5-5 in Wk10 (box score): committee.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
-  "HOU": "Woody Marks (concussion) ruled out for TNF (Aaron Wilson via FantasyPros Nov 17). Montgomery (groin) full participant, 'on track to return' (PFT Nov 17); Demercado led the backfield after Marks' injury. Harrison Jr. (hamstring) not expected to play.",
+  "HOU": "Official TNF report (NFL.com, Nov 19): Woody Marks (concussion), Harrison Jr. (hamstring), Brevin Jordan (TE) OUT; David Montgomery no designation (full practice), Tank Dell full. Stroud starts.",
   "LV": "Brock Bowers (ankle) day-to-day: 'not as bad as we thought, but still a significant injury' (Kubiak, Nov 16). Mendoza starts.",
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
-  "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17).",
+  "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17). TNF report (NFL.com Nov 19): LT Raimann (concussion), T Jalen Travis, TE Will Mallory OUT; T Charlie Heck questionable (personal).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
-  "TB": "Baker Mayfield (foot) trending toward sitting vs DET; Jalon Daniels likely starts (Rapoport via ESPN Nov 17). Modeled as 30% Mayfield / 70% Daniels until the practice report decides.",
-  "TEN": "Wan'Dale Robinson (ankle) placed on IR (ESPN Nov 17). Carnell Tate (shoulder) hopeful for Wk11 (Saleh, Nov 16)."
+  "TB": "Baker Mayfield (foot) DNP Wed Nov 18 (NFL.com report); 'at best 50/50' (SI Nov 17); Jalon Daniels likely starts (Rapoport via ESPN Nov 17). Modeled 30% Mayfield / 70% Daniels until the Friday report.",
+  "TEN": "Wan'Dale Robinson (ankle) placed on IR (ESPN Nov 17). Carnell Tate (shoulder) limited Wed Nov 18 (NFL.com report), hopeful for Wk11 (Saleh, Nov 16). Tyjae Spears DNP Wed."
  },
  "back": [
   "Jalen Nailor",
@@ -124,14 +125,16 @@
   "Cam Skattebo",
   "Kenneth Walker III",
   "Kyle Monangai",
-  "David Montgomery"
+  "David Montgomery",
+  "T.J. Hockenson",
+  "Carnell Tate"
  ],
  "qb_uncertain": {
   "TB": {
    "starter": "Baker Mayfield",
    "backup": "Jalon Daniels",
    "p": 0.3,
-   "note": "Foot; Rapoport: 'trending' toward sitting vs DET, Daniels likely starts (ESPN Nov 17)"
+   "note": "Foot/lower leg; DNP Wed Nov 18 (NFL.com injury report); 'at best 50/50' (SI Nov 17); Rapoport: trending toward sitting, Daniels likely starts (ESPN Nov 17)"
   }
  },
  "lead_back": {
@@ -160,21 +163,5 @@
   "ARI",
   "HOU"
  ],
- "news_q": {
-  "David Montgomery": [
-   "expected",
-   "2026-11-17",
-   "Groin; full participant Mon estimate, 'on track to return' and 'feeling and moving a lot better' (PFT Nov 17; Aaron Wilson via FantasyPros Nov 17)"
-  ],
-  "Kenneth Walker III": [
-   "gtd",
-   "2026-11-16",
-   "Groin; Rapoport Nov 15 'expected to play', Schefter Nov 16 'wouldn't be surprised' if he misses Wk11 (Forbes Nov 16)"
-  ],
-  "Marvin Harrison Jr.": [
-   "unlikely",
-   "2026-11-17",
-   "Hamstring; not expected to play Wk11, still sidelined (Aaron Wilson via FantasyPros Nov 17)"
-  ]
- }
+ "news_q": {}
 }

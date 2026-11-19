@@ -1,21 +1,24 @@
 week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_src
-11,"Moneyline, model differs 4+ pts",2026_11_IND_HOU,IND,ml,ML,,6.25,0.3389,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_IND_HOU,IND@HOU,game_total,Over,44.5,1.952,0.6296,,2026-11-18T14:16Z,nflverse
-11,Trend unders: prime time,2026_11_IND_HOU,IND@HOU,game_total,Under,44.5,1.87,0.563,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_ARI_KC,ARI@KC,game_total,Over,41.5,1.926,0.6096,,2026-11-18T14:16Z,nflverse
-11,"Moneyline, model differs 4+ pts",2026_11_JAX_NYG,JAX,ml,ML,,1.377,0.7434,,2026-11-18T14:16Z,nflverse
-11,"Moneyline, model differs 4+ pts",2026_11_NO_CHI,NO,ml,ML,,5.55,0.2255,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_NO_CHI,NO@CHI,game_total,Under,48.5,1.952,0.6268,,2026-11-18T14:16Z,nflverse
-11,"Moneyline, model differs 4+ pts",2026_11_TB_DET,TB,ml,ML,,3.75,0.3417,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_TEN_DAL,TEN@DAL,game_total,Under,54.5,2.0,0.6038,,2026-11-18T14:16Z,nflverse
-11,"Moneyline, model differs 4+ pts",2026_11_NYJ_LAC,NYJ,ml,ML,,2.54,0.5337,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_PIT_PHI,PIT@PHI,game_total,Over,38.5,1.926,0.598,,2026-11-18T14:16Z,nflverse
-11,"Moneyline, model differs 4+ pts",2026_11_MIN_SF,SF,ml,ML,,1.617,0.7652,,2026-11-18T14:16Z,nflverse
-11,Trend unders: prime time,2026_11_MIN_SF,MIN@SF,game_total,Under,45.5,1.926,0.563,,2026-11-18T14:16Z,nflverse
-11,"Game totals, model differs 3+ pts",2026_11_CIN_WAS,CIN@WAS,game_total,Under,54.5,1.87,0.6324,,2026-11-18T14:16Z,nflverse
-11,Trend unders: prime time,2026_11_CIN_WAS,CIN@WAS,game_total,Under,54.5,1.87,0.563,,2026-11-18T14:16Z,nflverse
-11,Teaser legs: small underdogs +6,2026_11_BAL_CAR,BAL +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_11_BAL_CAR"", ""player"": ""BAL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""BAL +8.5""}]",2026-11-18T14:16Z,nflverse
-11,"Teasers (wide): underdogs +1 to +3, all pairs",,BAL +8.5 + MIN +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_11_BAL_CAR"", ""player"": ""BAL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""BAL +8.5""}, {""gid"": ""2026_11_MIN_SF"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-18T14:16Z,nflverse
-11,Control: random,2026_11_CIN_WAS,CIN@WAS,game_total,Over,54.5,1.952,0.3676,,2026-11-18T14:16Z,nflverse
-11,Control: random,2026_11_NYJ_LAC,NYJ@LAC,game_total,Under,41.5,1.87,0.494,,2026-11-18T14:16Z,nflverse
-11,Control: random,2026_11_TEN_DAL,TEN@DAL,game_total,Over,54.5,1.833,0.3962,,2026-11-18T14:16Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_IND_HOU,IND,ml,ML,,6.25,0.3305,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_IND_HOU,IND@HOU,game_total,Over,43.5,1.847,0.6465,,2026-11-19T14:21Z,nflverse
+11,Trend unders: prime time,2026_11_IND_HOU,IND@HOU,game_total,Under,43.5,1.98,0.563,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_ARI_KC,ARI@KC,game_total,Over,40.5,1.847,0.6409,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_JAX_NYG,JAX,ml,ML,,1.377,0.7409,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_NO_CHI,NO,ml,ML,,5.55,0.2163,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_NO_CHI,NO@CHI,game_total,Under,48.5,1.952,0.5892,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_TB_DET,TB,ml,ML,,3.7,0.3503,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_TB_DET,TB@DET,game_total,Over,43.5,1.847,0.6038,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_NYJ_LAC,NYJ,ml,ML,,2.36,0.5429,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_LV_DEN,LV,ml,ML,,5.55,0.2232,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_PIT_PHI,PIT@PHI,game_total,Over,37.5,1.893,0.6604,,2026-11-19T14:21Z,nflverse
+11,"Moneyline, model differs 4+ pts",2026_11_MIN_SF,SF,ml,ML,,1.617,0.7459,,2026-11-19T14:21Z,nflverse
+11,Trend unders: prime time,2026_11_MIN_SF,MIN@SF,game_total,Under,46.5,1.952,0.563,,2026-11-19T14:21Z,nflverse
+11,"Game totals, model differs 3+ pts",2026_11_CIN_WAS,CIN@WAS,game_total,Under,53.5,1.952,0.6038,,2026-11-19T14:21Z,nflverse
+11,Trend unders: prime time,2026_11_CIN_WAS,CIN@WAS,game_total,Under,53.5,1.952,0.563,,2026-11-19T14:21Z,nflverse
+11,Teaser legs: small underdogs +6,2026_11_BAL_CAR,BAL +8.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_11_BAL_CAR"", ""player"": ""BAL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""BAL +8.5""}]",2026-11-19T14:21Z,nflverse
+11,"Teasers (wide): underdogs +1 to +3, all pairs",,BAL +8.5 + NYJ +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_11_BAL_CAR"", ""player"": ""BAL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""BAL +8.5""}, {""gid"": ""2026_11_NYJ_LAC"", ""player"": ""NYJ"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""NYJ +9""}]",2026-11-19T14:21Z,nflverse
+11,"Teasers (wide): underdogs +1 to +3, all pairs",,BAL +8.5 + MIN +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_11_BAL_CAR"", ""player"": ""BAL"", ""stat"": ""spread"", ""line"": 8.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""BAL +8.5""}, {""gid"": ""2026_11_MIN_SF"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-19T14:21Z,nflverse
+11,"Teasers (wide): underdogs +1 to +3, all pairs",,NYJ +9 + MIN +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_11_NYJ_LAC"", ""player"": ""NYJ"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""NYJ +9""}, {""gid"": ""2026_11_MIN_SF"", ""player"": ""MIN"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""MIN +9""}]",2026-11-19T14:21Z,nflverse
+11,Control: random,2026_11_CIN_WAS,CIN@WAS,game_total,Over,53.5,1.87,0.3962,,2026-11-19T14:21Z,nflverse
+11,Control: random,2026_11_NYJ_LAC,NYJ@LAC,game_total,Under,41.5,1.926,0.47,,2026-11-19T14:21Z,nflverse
+11,Control: random,2026_11_TEN_DAL,TEN@DAL,game_total,Over,54.5,1.833,0.4521,,2026-11-19T14:21Z,nflverse
