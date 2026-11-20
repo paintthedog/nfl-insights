@@ -94,7 +94,7 @@
    "rows": [
     {
      "label": "Touchdown chances",
-     "pct": 41.4,
+     "pct": 41.3,
      "swing": 1.27
     },
     {
@@ -144,8 +144,8 @@
     },
     {
      "label": "Touchdown chances",
-     "pct": 23.0,
-     "swing": 1.13
+     "pct": 23.1,
+     "swing": 1.14
     },
     {
      "label": "Snap share",
@@ -154,7 +154,7 @@
     },
     {
      "label": "Efficiency (yards per play, catch rate)",
-     "pct": 5.0,
+     "pct": 4.9,
      "swing": 0.24
     },
     {

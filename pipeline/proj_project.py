@@ -69,6 +69,10 @@ f = f[(f.pos != "QB") | f.pid.isin(_qb_ok)].copy()
 # ---- injuries: returning players are eased back in; Questionable players sit some of the time (the simulation plays that out)
 _inj = td.drop_duplicates("pid").set_index("pid")
 f["p_play"] = f.pid.map(_inj.p_play).fillna(1.0); f["back_mult"] = f.pid.map(_inj.back_mult).fillna(1.0)
+# Nov 19: a news lead_back is not eased back in (td_project does the same); the hand-set share is his role this week.
+_lb_pid = {players[players.display_name.str.lower() == _n.lower()].gsis_id.iloc[0] for _n, _s in (_lb.values() if "_lb" in dir() else [])
+           if (players.display_name.str.lower() == _n.lower()).any()}
+f.loc[f.pid.isin(_lb_pid), "back_mult"] = 1.0
 # Nov 3 (replay test, ADOPTED; P_ACTIVE=0 turns it off): a listed non-QB with no injury designation is still sometimes a healthy scratch or
 # never sees the field (replay 2024: 66% took a snap when his last-game snap share was under 10%, 88% at 10-20%). P_ACTIVE folds
 # that chance into the share-out and the simulation (the shown p_play and "if he plays" numbers are unchanged).

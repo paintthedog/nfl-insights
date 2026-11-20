@@ -1,0 +1,10 @@
+team,wind,temp,precip,source
+KC,14,49,1,MySportsWeather Nov 19 (gusts 22; NBM 14 g22 18%); Covers Nov 20 15.9
+CAR,12,65,14,MySportsWeather Nov 19 (gusts 22); Covers Nov 20 12.3 (19%)
+BUF,6,64,2,MySportsWeather Nov 19 (gusts 13; NBM 6 g13); Covers Nov 20 10.3 (>3 mph apart)
+CHI,15,56,56,MySportsWeather Nov 19 (gusts 21; front with rain and gusts 20-25 - timing uncertain); Covers Nov 20 13.1 (71% rain)
+PHI,5,62,65,MySportsWeather Nov 19 (gusts 13; NBM 6 g14 41%); Covers Nov 20 7.5 (43%)
+NYG,6,60,58,MySportsWeather Nov 19 (gusts 12); Covers Nov 20 7.6 (58% rain)
+DEN,5,47,0,MySportsWeather Nov 19 (gusts 10; NBM 5 g10); Covers Nov 20 4.2
+SF,2,66,17,MySportsWeather Nov 19 (Mexico City); Covers Nov 20 2.3 (74% rain)
+WAS,10,52,0,MySportsWeather Nov 19 (gusts 14); Covers Nov 20 12.1

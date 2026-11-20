@@ -1,5 +1,3 @@
-auto_overrides: week 11 ok, 124 entries, 0 cleaned
-auto_overrides: week 12 ok, 106 entries, 0 cleaned
 2026 ok
 ftn 2026 ok
 schedule ok
@@ -55,7 +53,7 @@ Situational, 2019-2026 (home-cover rate; 50% = market is fair):
   wind 15+           n= 134  home covers  56.0%   overs  45.9%
   dome               n= 616  home covers  46.4%   overs  52.2%
   division game      n= 708  home covers  47.0%   overs  49.9%
-history: 451 rows, 179 games; appended 10 changes at 2026-11-20T00:01Z
+history: 451 rows, 179 games; appended 0 changes at 2026-11-20T00:27Z
 team pos     tdpg  rank       lg
  HOU  QB 0.444444     1 0.179514
  NYJ  QB 0.400000     2 0.179514
@@ -75,18 +73,18 @@ qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 13 games; model vs market:
   IND@HOU: line 12.5 / model +5.7 | total 44.5 / model 48.5
-  MIA@BUF: line 16.5 / model +15.6 | total 44.5 / model 47.1
-  BAL@CAR: line 3.0 / model +1.2 | total 43.5 / model 45.4
-  NO@CHI: line 11.5 / model +10.2 | total 48.5 / model 45.5
+  MIA@BUF: line 16.5 / model +15.5 | total 44.5 / model 47.7
+  BAL@CAR: line 3.0 / model +1.4 | total 43.5 / model 44.2
+  NO@CHI: line 11.5 / model +10.5 | total 48.5 / model 43.5
   TEN@DAL: line 8.5 / model +9.4 | total 55.5 / model 52.9
   TB@DET: line 6.0 / model +5.0 | total 45.5 / model 47.0
-  ARI@KC: line 16.5 / model +15.4 | total 40.5 / model 45.3
-  JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.0
+  ARI@KC: line 16.5 / model +15.7 | total 40.5 / model 43.5
+  JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.6
   NYJ@LAC: line 3.0 / model -1.4 | total 41.5 / model 42.5
-  LV@DEN: line 10.0 / model +9.9 | total 40.5 / model 42.1
-  PIT@PHI: line -4.5 / model -6.0 | total 38.5 / model 43.0
-  MIN@SF: line 3.5 / model +8.6 | total 46.5 / model 47.8
-  CIN@WAS: line -6.0 / model -6.9 | total 53.5 / model 50.0
+  LV@DEN: line 10.0 / model +9.8 | total 40.5 / model 42.9
+  PIT@PHI: line -4.5 / model -6.1 | total 38.5 / model 43.9
+  MIN@SF: line 3.5 / model +8.4 | total 46.5 / model 49.6
+  CIN@WAS: line -6.0 / model -6.8 | total 53.5 / model 49.4
 qb_start (news): PHI -> Joe Milton III
 qb_start (news): NYG -> J.J. McCarthy
 qb_start (news): BAL -> Jacoby Brissett
@@ -159,10 +157,10 @@ lead_back: HOU David Montgomery 60%
 6         Chuba Hubbard  RB     CAR  BAL     23.2    18.1     4.4  0.568     -131.0                                                                              
 7         Ja'Marr Chase  WR     CIN  WAS     29.8     0.0    11.2  0.545     -120.0                                                                              
 8        George Pickens  WR     DAL  TEN     32.0     0.0     9.5  0.509     -104.0                                                                              
-9          Nico Collins  WR     HOU  IND     28.5     0.2     8.1  0.483      107.0                                                                              
+9    Kenneth Walker III  RB      KC  ARI     28.5    18.9     4.1  0.506     -102.0                                 lead back · 60% of the backfield per the news
 10        Jonah Coleman  RB     DEN   LV     25.2    12.4     3.7  0.481      108.0                                 lead back · 65% of the backfield per the news
-11          Chase Brown  RB     CIN  WAS     29.8    11.8     6.2  0.472      112.0                                                                              
-12   Kenneth Walker III  RB      KC  ARI     28.5    18.9     4.1  0.468      114.0                                 lead back · 60% of the backfield per the news
+11         Nico Collins  WR     HOU  IND     28.5     0.2     8.1  0.474      111.0                                                                              
+12          Chase Brown  RB     CIN  WAS     29.8    11.8     6.2  0.472      112.0                                                                              
 13       Bhayshul Tuten  RB     JAX  NYG     26.2    15.8     2.1  0.458      118.0    limited practice this week (ankle) · 66% to play · numbers assume he plays
 14        Derrick Henry  RB     BAL  CAR     20.2    16.5     2.0  0.457      119.0                                                                              
 15  Christian McCaffrey  RB      SF  MIN     25.0    13.6     5.3  0.455      120.0                                 lead back · 55% of the backfield per the news
@@ -175,14 +173,14 @@ lead_back: HOU David Montgomery 60%
 22      Jonathan Taylor  RB     IND  HOU     16.0    16.2     4.1  0.394      154.0                                                                              
 23    Parker Washington  WR     JAX  NYG     26.2     0.3     7.3  0.389      157.0                                                                              
 24         Cam Skattebo  RB     NYG  JAX     20.2    16.0     2.8  0.386      159.0                                 lead back · 65% of the backfield per the news
-25    Xavier Hutchinson  WR     HOU  IND     28.5     0.4     6.1  0.383      161.0                                                                              
-26        George Kittle  TE      SF  MIN     25.0     0.0     7.4  0.376      166.0                                                                              
+25        George Kittle  TE      SF  MIN     25.0     0.0     7.4  0.376      166.0                                                                              
+26    Xavier Hutchinson  WR     HOU  IND     28.5     0.4     6.1  0.375      167.0                                                                              
 27        Jaylen Warren  RB     PIT  PHI     21.5    13.6     4.2  0.369      171.0                                                                              
 28     Colston Loveland  TE     CHI   NO     30.0     0.0     7.5  0.366      173.0                                                                              
 29    Luther Burden III  WR     CHI   NO     30.0     0.7     7.5  0.359      179.0  full practice this week (concussion) · 88% to play · numbers assume he plays
 
 teams most rescaled (scale < 0.85 or > 1.15 means the pool was thin or crowded):
-{'NO': 1.17, 'DAL': 1.18}
+{'KC': 0.85, 'NO': 1.17, 'DAL': 1.18}
 team  ol_missing_pred                                      who
   NO                3 Erik McCoy; Asim Richards; Taliese Fuaga
  IND                2           Bernhard Raimann; Jalen Travis
@@ -203,64 +201,64 @@ lead_back (proj): NYJ Breece Hall 60% of 0.79 carry share
 lead_back (proj): NYG Cam Skattebo 65% of 0.48 carry share
 lead_back (proj): KC Kenneth Walker III 60% of 0.49 carry share
 lead_back (proj): HOU David Montgomery 60% of 0.36 carry share
-/home/claude/nfl-insights/pipeline/proj_project.py:94: RuntimeWarning: invalid value encountered in divide
+/home/claude/nfl-insights/pipeline/proj_project.py:98: RuntimeWarning: invalid value encountered in divide
   (np.abs(f[c].to_numpy() / _before[c].to_numpy() - 1)[_before[c].to_numpy() > 0.5]).mean() * 100 for c in ["p_pass_yds", "p_tgt", "p_rec_yds"]))
 success-rate layer: median |change| pass_yds 2.4%, tgt 3.1%, rec_yds 3.5%
-team scale ranges: receiving 0.82 - 1.13 | carries 0.84 - 2.12
+team scale ranges: receiving 0.82 - 1.13 | carries 0.84 - 1.91
 steady: 197 rated, 99 role flags
-anytime-TD blend (sim weight 0.75): 305 players, mean 0.183 -> 0.171
+anytime-TD blend (sim weight 0.75): 305 players, mean 0.183 -> 0.172
 simulated 13 games x 6000
 
 QB
            name team opp  pass_yds  pass_td  ints  rush_yds  fp_legends  fp_std
-     Joe Burrow  CIN WAS     303.4      2.4   0.6      11.9        29.0    22.3
-   Dak Prescott  DAL TEN     308.2      2.4   0.9      14.2        28.8    22.2
-     Josh Allen  BUF MIA     220.9      1.8   0.5      32.6        27.8    20.2
-    C.J. Stroud  HOU IND     265.6      2.2   0.6      15.0        26.0    20.7
- Caleb Williams  CHI  NO     242.2      1.9   0.6      20.5        24.7    19.0
-Patrick Mahomes   KC ARI     236.1      2.0   0.4      15.2        24.5    19.0
- Jayden Daniels  WAS CIN     218.8      1.6   0.6      33.2        24.0    18.8
-         Bo Nix  DEN  LV     214.5      1.7   0.6      24.9        23.5    17.5
+   Dak Prescott  DAL TEN     311.4      2.4   0.9      14.9        28.8    22.5
+     Joe Burrow  CIN WAS     301.7      2.4   0.6      11.8        28.7    22.2
+     Josh Allen  BUF MIA     220.0      1.9   0.5      32.6        27.8    20.3
+    C.J. Stroud  HOU IND     265.1      2.2   0.6      15.6        26.0    20.7
+ Caleb Williams  CHI  NO     230.6      2.0   0.6      20.6        24.1    18.7
+Patrick Mahomes   KC ARI     226.9      2.0   0.4      15.3        23.9    18.5
+ Jayden Daniels  WAS CIN     215.2      1.6   0.6      33.4        23.8    18.7
+         Bo Nix  DEN  LV     216.7      1.7   0.6      24.2        23.7    17.7
 
 RB
             name team opp  car  rush_yds  rec  rec_yds  fp_legends  fp_ppr
-    Jahmyr Gibbs  DET  TB 20.7      94.0  3.6     29.6        28.9    23.2
-      James Cook  BUF MIA 21.3     101.3  1.6     12.5        25.6    21.5
-Javonte Williams  DAL TEN 21.4      87.8  2.3     15.1        24.8    20.3
-   Chuba Hubbard  CAR BAL 17.3      66.6  3.6     25.6        23.6    18.8
-  Bhayshul Tuten  JAX NYG 17.5      75.1  1.9     15.0        23.1    16.2
-    Tony Pollard  TEN DAL 16.7      80.5  2.7     16.8        22.9    18.4
-     Chase Brown  CIN WAS 12.9      52.9  4.2     30.0        21.0    17.4
-   D'Andre Swift  CHI  NO 15.2      61.2  2.2     16.4        19.7    16.6
+    Jahmyr Gibbs  DET  TB 20.7      93.7  3.7     29.5        28.9    23.2
+      James Cook  BUF MIA 21.3     101.4  1.6     12.5        25.6    21.4
+Javonte Williams  DAL TEN 21.3      86.4  2.3     15.2        24.8    20.2
+   Chuba Hubbard  CAR BAL 17.3      67.2  3.6     25.3        23.6    18.8
+  Bhayshul Tuten  JAX NYG 17.4      74.6  1.9     14.8        23.1    16.1
+    Tony Pollard  TEN DAL 16.6      80.5  2.6     16.8        22.9    18.4
+     Chase Brown  CIN WAS 13.0      53.2  4.3     30.6        21.0    17.6
+   D'Andre Swift  CHI  NO 15.3      62.5  2.2     16.6        19.7    16.6
 
 WR
              name team opp  tgt  rec  rec_yds  fp_legends  fp_ppr
-      CeeDee Lamb  DAL TEN 12.5  8.6    111.5        31.6    26.9
-    Ja'Marr Chase  CIN WAS 10.9  8.2    103.4        28.7    25.0
-   George Pickens  DAL TEN  9.6  6.3     90.2        24.1    19.6
-Amon-Ra St. Brown  DET  TB  8.5  6.4     78.5        21.5    18.3
-      Tee Higgins  CIN WAS  8.0  5.7     77.2        21.2    17.2
-     Nico Collins  HOU IND  8.0  5.4     73.7        20.7    17.6
-      Chris Olave   NO CHI  9.9  6.4     75.4        20.1    17.1
- Justin Jefferson  MIN  SF  9.0  5.8     76.4        19.9    17.3
+      CeeDee Lamb  DAL TEN 12.6  8.7    112.0        31.6    27.0
+    Ja'Marr Chase  CIN WAS 10.9  8.2    102.9        28.3    25.1
+   George Pickens  DAL TEN  9.7  6.4     90.6        24.1    19.8
+Amon-Ra St. Brown  DET  TB  8.4  6.4     77.9        21.5    18.3
+      Tee Higgins  CIN WAS  8.0  5.6     76.9        20.9    17.1
+ Justin Jefferson  MIN  SF  9.2  6.0     80.4        20.5    17.9
+     Nico Collins  HOU IND  7.9  5.3     72.9        20.4    17.4
+      Chris Olave   NO CHI  9.8  6.3     72.4        19.3    16.6
 
 TE
             name team opp  tgt  rec  rec_yds  fp_legends
-   George Kittle   SF MIN  6.8  5.2     67.2        18.3
-    Tyler Warren  IND HOU  8.0  5.7     54.9        15.6
-    Trey McBride  ARI  KC  7.9  5.3     55.4        15.2
-Colston Loveland  CHI  NO  7.1  4.5     53.3        15.1
-   Isaiah Likely  NYG JAX  6.8  4.6     50.6        14.5
-     Sam LaPorta  DET  TB  5.0  3.7     40.4        11.8
-    Chig Okonkwo  WAS CIN  5.2  3.6     38.1        11.5
-  Dallas Goedert  PHI PIT  5.3  3.7     39.7        11.1
+   George Kittle   SF MIN  6.9  5.3     68.3        18.5
+    Tyler Warren  IND HOU  7.9  5.6     53.5        15.6
+    Trey McBride  ARI  KC  7.7  5.1     53.3        14.8
+Colston Loveland  CHI  NO  6.9  4.3     51.2        14.8
+   Isaiah Likely  NYG JAX  6.8  4.6     51.0        14.6
+     Sam LaPorta  DET  TB  5.0  3.7     40.1        11.8
+    Chig Okonkwo  WAS CIN  5.2  3.6     37.6        11.4
+  Dallas Goedert  PHI PIT  5.3  3.7     40.0        11.2
 
 305 players; team check after scaling (QB pass yds vs sum of receivers), 3 teams:
          qb  receivers
 team                  
-ARI   166.0      167.0
-BAL   206.0      208.0
-BUF   221.0      258.0
+ARI   158.0      159.0
+BAL   203.0      205.0
+BUF   220.0      257.0
 qb_start override: PHI -> Joe Milton III
 qb_start override: NYG -> J.J. McCarthy
 qb_start override: BAL -> Jacoby Brissett
@@ -271,18 +269,18 @@ qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 13 games; model vs market:
   IND@HOU: line 12.5 / model +5.7 | total 44.5 / model 48.5
-  MIA@BUF: line 16.5 / model +15.6 | total 44.5 / model 47.1
-  BAL@CAR: line 3.0 / model +1.2 | total 43.5 / model 45.4
-  NO@CHI: line 11.5 / model +10.2 | total 48.5 / model 45.5
+  MIA@BUF: line 16.5 / model +15.5 | total 44.5 / model 47.7
+  BAL@CAR: line 3.0 / model +1.4 | total 43.5 / model 44.2
+  NO@CHI: line 11.5 / model +10.5 | total 48.5 / model 43.5
   TEN@DAL: line 8.5 / model +9.4 | total 55.5 / model 52.9
   TB@DET: line 6.0 / model +5.0 | total 45.5 / model 47.0
-  ARI@KC: line 16.5 / model +15.4 | total 40.5 / model 45.3
-  JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.0
+  ARI@KC: line 16.5 / model +15.7 | total 40.5 / model 43.5
+  JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.6
   NYJ@LAC: line 3.0 / model -1.4 | total 41.5 / model 42.5
-  LV@DEN: line 10.0 / model +9.9 | total 40.5 / model 42.1
-  PIT@PHI: line -4.5 / model -6.0 | total 38.5 / model 43.0
-  MIN@SF: line 3.5 / model +8.6 | total 46.5 / model 47.8
-  CIN@WAS: line -6.0 / model -6.9 | total 53.5 / model 50.0
+  LV@DEN: line 10.0 / model +9.8 | total 40.5 / model 42.9
+  PIT@PHI: line -4.5 / model -6.1 | total 38.5 / model 43.9
+  MIN@SF: line 3.5 / model +8.4 | total 46.5 / model 49.6
+  CIN@WAS: line -6.0 / model -6.8 | total 53.5 / model 49.4
 qb_start override: PHI -> Joe Milton III
 qb_start override: NYG -> J.J. McCarthy
 qb_start override: BAL -> Jacoby Brissett
@@ -397,18 +395,18 @@ lead_back: KC Kenneth Walker III 60%
 18          Breece Hall  RB     NYJ  MIA     22.2    14.6     3.3  0.431      132.0  lead back · 60% of the backfield per the news
 19        Derrick Henry  RB     BAL  HOU     19.2    16.5     2.0  0.424      136.0                                               
 20       Bijan Robinson  RB     ATL  MIN     17.8    17.8     4.6  0.419      139.0                                               
-21    Parker Washington  WR     JAX  TEN     31.0     0.3     7.3  0.412      143.0                                               
-22    Amon-Ra St. Brown  WR     DET  CHI     26.5     0.2     9.4  0.399      151.0                                               
-23     Justin Jefferson  WR     MIN  ATL     24.8     0.1     9.0  0.393      154.0                                               
-24          Aaron Jones  RB     MIN  ATL     24.8    11.9     2.3  0.392      155.0                                               
-25        Jonah Coleman  RB     DEN  PIT     21.0    12.4     3.7  0.392      155.0  lead back · 65% of the backfield per the news
-26         Nico Collins  WR     HOU  BAL     25.2     0.2     8.1  0.388      158.0                                               
-27   Kenneth Walker III  RB      KC  BUF     23.8    18.9     4.1  0.383      161.0  lead back · 60% of the backfield per the news
+21   Kenneth Walker III  RB      KC  BUF     23.8    18.9     4.1  0.417      140.0  lead back · 60% of the backfield per the news
+22    Parker Washington  WR     JAX  TEN     31.0     0.3     7.3  0.412      143.0                                               
+23    Amon-Ra St. Brown  WR     DET  CHI     26.5     0.2     9.4  0.399      151.0                                               
+24     Justin Jefferson  WR     MIN  ATL     24.8     0.1     9.0  0.393      154.0                                               
+25          Aaron Jones  RB     MIN  ATL     24.8    11.9     2.3  0.392      155.0                                               
+26        Jonah Coleman  RB     DEN  PIT     21.0    12.4     3.7  0.392      155.0  lead back · 65% of the backfield per the news
+27         Nico Collins  WR     HOU  BAL     25.2     0.2     8.1  0.388      158.0                                               
 28         Tony Pollard  RB     TEN  JAX     16.5    16.3     4.0  0.375      167.0                                               
 29           Josh Allen  QB     BUF   KC     26.8     5.9     0.1  0.370      171.0                                               
 
 teams most rescaled (scale < 0.85 or > 1.15 means the pool was thin or crowded):
-{'BUF': 0.82, 'NYJ': 0.83, 'KC': 0.84, 'LV': 0.85, 'NO': 1.17, 'NE': 1.22}
+{'KC': 0.82, 'BUF': 0.82, 'NYJ': 0.83, 'LV': 0.85, 'NO': 1.17, 'NE': 1.22}
 team  ol_missing_pred             who
  PIT                1 Mason McCormick
  TEN                1 Peter Skoronski
@@ -418,7 +416,7 @@ lead_back (proj): SF Christian McCaffrey 55% of 0.57 carry share
 lead_back (proj): NYJ Breece Hall 60% of 0.79 carry share
 lead_back (proj): NYG Cam Skattebo 65% of 0.48 carry share
 lead_back (proj): KC Kenneth Walker III 60% of 0.49 carry share
-/home/claude/nfl-insights/pipeline/proj_project.py:94: RuntimeWarning: invalid value encountered in divide
+/home/claude/nfl-insights/pipeline/proj_project.py:98: RuntimeWarning: invalid value encountered in divide
   (np.abs(f[c].to_numpy() / _before[c].to_numpy() - 1)[_before[c].to_numpy() > 0.5]).mean() * 100 for c in ["p_pass_yds", "p_tgt", "p_rec_yds"]))
 success-rate layer: median |change| pass_yds 2.4%, tgt 3.1%, rec_yds 3.4%
 team scale ranges: receiving 0.74 - 1.26 | carries 0.69 - 1.93
@@ -428,10 +426,10 @@ simulated 16 games x 6000
 
 QB
            name team opp  pass_yds  pass_td  ints  rush_yds  fp_legends  fp_std
-     Joe Burrow  CIN  NO     303.5      2.6   0.6      12.2        29.9    23.0
-Trevor Lawrence  JAX TEN     253.6      2.3   0.7      14.2        26.0    20.0
-   Dak Prescott  DAL PHI     284.1      2.0   0.8      14.8        25.9    19.8
- Jayden Daniels  WAS ARI     227.0      1.6   0.5      35.2        25.3    19.8
+     Joe Burrow  CIN  NO     307.2      2.6   0.6      12.7        29.9    23.2
+Trevor Lawrence  JAX TEN     253.5      2.3   0.7      14.0        26.0    20.0
+   Dak Prescott  DAL PHI     283.0      2.0   0.8      14.3        25.9    19.7
+ Jayden Daniels  WAS ARI     227.8      1.6   0.5      34.3        25.3    19.7
      Josh Allen  BUF  KC     220.8      1.5   0.6      27.4        24.8    18.1
  Caleb Williams  CHI DET     255.3      1.8   0.7      18.4        24.3    18.8
      Jared Goff  DET CHI     289.4      1.7   0.6       6.7        24.0    18.3
@@ -441,32 +439,32 @@ RB
             name team opp  car  rush_yds  rec  rec_yds  fp_legends  fp_ppr
     Jahmyr Gibbs  DET CHI 18.7      89.9  3.7     31.9        29.1    23.2
   Bijan Robinson  ATL MIN 20.7      96.9  2.8     21.4        24.3    19.0
-Javonte Williams  DAL PHI 22.1      90.1  2.2     13.4        23.7    19.1
-     Chase Brown  CIN  NO 13.6      56.3  4.2     30.2        21.9    18.2
- Jonathan Taylor  IND NYG 14.0      61.9  3.6     26.4        21.5    17.4
+Javonte Williams  DAL PHI 22.2      90.0  2.3     13.5        23.7    19.1
+     Chase Brown  CIN  NO 13.5      55.8  4.3     31.0        21.9    18.3
+ Jonathan Taylor  IND NYG 13.9      63.1  3.6     26.8        21.5    17.5
       James Cook  BUF  KC 18.9      83.9  1.4     10.4        20.7    17.6
- Ollie Gordon II  MIA NYJ 21.4      90.2  1.4      9.8        20.1    15.9
+ Ollie Gordon II  MIA NYJ 21.6      89.8  1.4      9.4        20.1    15.8
    Chuba Hubbard  CAR  TB 16.3      64.6  2.9     19.8        20.1    16.1
 
 WR
               name team opp  tgt  rec  rec_yds  fp_legends  fp_ppr
-     Ja'Marr Chase  CIN  NO 10.7  8.0    103.0        28.8    25.1
-       CeeDee Lamb  DAL PHI 11.6  8.2    100.2        28.2    23.9
-Jaxon Smith-Njigba  SEA  SF 10.1  6.5     88.2        23.0    20.9
+     Ja'Marr Chase  CIN  NO 10.8  8.1    103.9        28.8    25.3
+       CeeDee Lamb  DAL PHI 11.6  8.2     99.2        28.2    23.8
+Jaxon Smith-Njigba  SEA  SF 10.0  6.4     88.2        23.0    20.9
  Amon-Ra St. Brown  DET CHI  8.6  6.6     85.0        22.6    19.2
-    George Pickens  DAL PHI  9.0  6.0     80.2        21.6    17.5
-       Chris Olave   NO CIN 10.0  6.7     79.7        21.4    18.1
-       Tee Higgins  CIN  NO  8.0  5.5     77.2        21.2    17.4
+    George Pickens  DAL PHI  9.0  6.0     80.1        21.6    17.4
+       Chris Olave   NO CIN 10.0  6.7     80.4        21.4    18.3
+       Tee Higgins  CIN  NO  8.0  5.6     77.5        21.2    17.5
   Justin Jefferson  MIN ATL  9.0  5.9     81.2        21.2    18.5
 
 TE
              name team opp  tgt  rec  rec_yds  fp_legends
-    George Kittle   SF SEA  6.8  5.3     64.2        18.0
-     Trey McBride  ARI WAS  8.0  5.6     62.0        17.3
-     Tyler Warren  IND NYG  7.8  5.6     52.9        15.9
+    George Kittle   SF SEA  6.9  5.3     64.3        18.0
+     Trey McBride  ARI WAS  8.0  5.6     62.5        17.3
+     Tyler Warren  IND NYG  7.7  5.6     53.0        15.9
     Isaiah Likely  NYG IND  6.8  4.7     56.1        15.8
  Colston Loveland  CHI DET  7.0  4.5     52.3        15.0
-Harold Fannin Jr.  CLE  LV  5.5  3.9     45.1        12.8
+Harold Fannin Jr.  CLE  LV  5.5  4.0     45.5        12.8
       Sam LaPorta  DET CHI  5.1  3.8     43.9        12.5
      Tyler Higbee   LA  GB  5.2  3.8     42.0        11.8
 
@@ -502,27 +500,27 @@ qb_start override: NYJ -> Geno Smith
   SEA@SF: line 2.5 / model +7.4 | total 46.5 / model 47.3
   NE@LAC: line 4.5 / model -1.0 | total 39.5 / model 40.1
   CAR@TB: line 2.5 / model +5.6 | total 43.5 / model 43.4
-paper_wk11.csv: 19 game-line paper bets for 13 games not yet started: Moneyline, model differs 4+ pts 7, Game totals, model differs 3+ pts 5, Trend unders: prime time 3, Control: random 3, Teasers (wide): underdogs +1 to +3, all pairs 1
+paper_wk11.csv: 24 game-line paper bets for 13 games not yet started: Game totals, model differs 3+ pts 7, Moneyline, model differs 4+ pts 6, Trend unders: wind 10–19 mph 4, Trend unders: prime time 3, Control: random 3, Teasers (wide): underdogs +1 to +3, all pairs 1
 paper_wk12.csv: 46 game-line paper bets for 16 games not yet started: Teasers (wide): underdogs +1 to +3, all pairs 15, Moneyline, model differs 4+ pts 13, Game totals, model differs 3+ pts 5, Trend unders: prime time 4, Teaser legs: small underdogs +6 4, Control: random 3, Teasers: small underdogs +6, 2 legs 2
 weeks [4, 5, 6, 7, 8, 9, 10] snap [7, 8, 9, 10]
    week  fp_mae  fp_bias  below  above  td_said  td_hap  td_n  td_brier  td_brier_dk  margin_model  margin_line  n_games  snapshot
 0     4     NaN      NaN    NaN    NaN      3.9       5    19    0.1682       0.1638           NaN          NaN        0     False
 1     5     NaN      NaN    NaN    NaN     57.1      62   264    0.1512       0.1484           NaN          NaN        0     False
 2     6     NaN      NaN    NaN    NaN     50.6      46   220    0.1553       0.1564           NaN          NaN        0     False
-3     7    4.48    -0.01  0.122  0.112     52.6      58   248    0.1588       0.1592          12.0         10.2       14      True
-4     8    4.49    -0.13  0.142  0.119     51.3      62   241    0.1650          NaN          10.5         10.9       14      True
-5     9    4.26    -0.31  0.096  0.104     53.0      55   257    0.1566          NaN           9.2          8.6       15      True
-6    10    4.99     0.24  0.149  0.140     48.5      61   241    0.1816          NaN          10.1         10.6       14      True
+3     7    4.46     0.07  0.120  0.116     52.5      58   250    0.1574       0.1592          11.8         10.1       14      True
+4     8    4.44    -0.11  0.141  0.119     51.2      62   243    0.1637          NaN          10.5         10.9       14      True
+5     9    4.27    -0.34  0.096  0.100     53.2      55   257    0.1570          NaN           9.2          8.6       15      True
+6    10    4.97     0.23  0.143  0.141     48.6      61   244    0.1803          NaN          10.0         10.5       14      True
               stat    n  model     dk  closer         weeks
 0       Receptions  405   1.61   1.60   0.501  [4, 5, 6, 7]
 1  Receiving yards  166  22.17  20.90   0.470        [4, 5]
 2    Rushing yards   91  20.87  20.24   0.418        [4, 5]
 3    Passing yards   32  57.67  52.81   0.375        [4, 5]
-Anytime TD 1490 0.213 0.234 0.1614 0.1547 None
-QB throws an interception 110 0.498 0.582 0.2495 None None
-Spread: home team covers 57 0.485 0.351 0.2465 None 0.25
-Game goes over the total 57 0.495 0.526 0.2476 None 0.25
-Model's favorite wins 57 0.644 0.754 0.185 None None
+Anytime TD 1497 0.212 0.233 0.1608 0.1547 None
+QB throws an interception 110 0.498 0.582 0.2493 None None
+Spread: home team covers 57 0.485 0.351 0.2464 None 0.25
+Game goes over the total 57 0.495 0.544 0.2472 None 0.25
+Model's favorite wins 57 0.647 0.754 0.1829 None None
 margin
     29.1%  ±1.91  Defense ratings
     28.3%  ±1.86  Offense ratings
@@ -558,7 +556,7 @@ td
      1.3%  ±0.2  Red-zone targets
      1.1%  ±0.1  Opponent's TDs allowed to position
 QB (n=32)
-    41.4%  ±1.27  Touchdown chances
+    41.3%  ±1.27  Touchdown chances
     25.6%  ±0.79  Usage (targets, carries, QB attempts)
     11.9%  ±0.37  Efficiency (yards per play, catch rate)
      8.5%  ±0.26  Opponent defense
@@ -568,9 +566,9 @@ QB (n=32)
      0.0%  ±0.00  Quarterback change
 RB (n=55)
     48.6%  ±2.40  Usage (targets, carries, QB attempts)
-    23.0%  ±1.13  Touchdown chances
+    23.1%  ±1.14  Touchdown chances
     10.8%  ±0.53  Snap share
-     5.0%  ±0.24  Efficiency (yards per play, catch rate)
+     4.9%  ±0.24  Efficiency (yards per play, catch rate)
      4.0%  ±0.20  Opponent defense
      2.4%  ±0.12  Vegas total & spread
      2.3%  ±0.11  Team's recent play volume
@@ -598,7 +596,7 @@ TE (n=35)
      2.4%  ±0.10  Opponent defense
 site/data_wk11.json: 13 games, 26 QBs, 308 TD players
 site/data_wk12.json: 16 games, 32 QBs, 379 TD players
-combos_wk11.csv: 213 combos logged for games not yet started (0 kept)
+combos_wk11.csv: 209 combos logged for games not yet started (0 kept)
 combos_wk12.csv: 273 combos logged for games not yet started (0 kept)
 trends.json: {'lines': 3, 'teasers': 3, 'teams': 6, 'people': 5, 'spots': 5, 'players': 2}
   [ref] Most common winning margins, 2016–2025: 14.4% of games are decided by exactly 3 and 8.5% by 7. Half a point is worth the most around those two numbers.
@@ -769,19 +767,18 @@ PLAYERS 156
    6 Todd Monken CLE  5.1 move 2 3/5 {'wins': 8.8, 'prevw': 5.0, 'gainw': 3.8, 'mpg': -3.3} [10, 10, 9, 9, 7, 4, 7, 8, 6]
    7 Dan Campbell DET  4.6 move 3 1/5 {'wins': 11.8, 'prevw': 9.0, 'gainw': 2.8, 'mpg': 5.2} [15, 11, 15, 10, 11, 11, 10, 10, 7]
    bench: {'wins': {'now': 11.5, 'lo': 10.3, 'hi': 12.8, 'final': 12.4}, 'prevw': {'now': 6.7, 'lo': 4.0, 'hi': 11.7, 'final': 6.7}, 'gainw': {'now': 4.8, 'lo': 1.1, 'hi': 8.6, 'final': 5.7}, 'mpg': {'now': 5.2, 'lo': -1.3, 'hi': 10.1, 'final': 6.0}}
-site/paydirt.html: weeks [11, 12], 2024 KB
+site/paydirt.html: weeks [11, 12], 2025 KB
 docs/index.html written (GitHub Pages)
-Staleness audit, week 11: 7 item(s)
+Staleness audit, week 11: 6 item(s)
   [QB-CONFLICT] BAL: qb_start says Jacoby Brissett (dated 2026-11-17) but the schedule feed lists Tyler Huntley - search the news; keep only with a dated source
   [QB-CONFLICT] ARI: qb_start says Carson Beck (dated 2026-11-17) but the schedule feed lists Gardner Minshew - search the news; keep only with a dated source
   [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
   [INJURY] Kenneth Walker III (KC) practice 'Did Not Participate In Practice' but projected as healthy (p_play 1.00)
   [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm
   [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
-  [WEATHER] 7 outdoor game(s) kick off within 72h and forecasts_wk11.csv is missing: fetch MySportsWeather + Covers
 Staleness audit, week 12: 6 item(s)
   [ROSTER] Pierre Strong (GB) projected 4.3 pts but roster status INA (A01)
-  [ROSTER] Emanuel Wilson (SEA) projected 7.1 pts but roster status INA (A01)
+  [ROSTER] Emanuel Wilson (SEA) projected 7.2 pts but roster status INA (A01)
   [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
   [LEAD] Emanuel Wilson (SEA) returns after missing week 10 (was the lead back) and SEA has no lead_back - set it from the news (or list SEA under 'committee' if the news says shared)
   [FRESHNESS] overrides asof 2026-11-17T09:30 ET is older than 48h

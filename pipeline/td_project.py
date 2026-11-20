@@ -312,6 +312,13 @@ f = f[(f.usage >= MIN_USAGE) | (f.pos == "QB")]
 f["missed"] = f.pid.map(pred.drop_duplicates("pid").set_index("pid").missed).fillna(0)
 f.loc[f.pos == "QB", "missed"] = 0
 f["back_mult"] = f.missed.map(J.back_mult)
+# Nov 19 (Montgomery, HOU): a back the news names as lead_back is not eased back in; the share set by hand already is his role.
+# Before, a returning lead back set at 60% was cut by the 0.775 ease-in and the rest went to the backup (Montgomery 52%, Demercado 48%).
+try:
+    _lb_pids = {_find(_n) for _n, _s in (_nw.get("lead_back", {}) or {}).values()} - {None}
+    f.loc[f.pid.isin(_lb_pids), "back_mult"] = 1.0
+except NameError:
+    pass
 f["p_play"] = f.pid.map(q_play).fillna(1.0)
 avail = f.p_play * f.back_mult            # expected share of his usual role: sits some of the time, eased back in after an absence
 f["lam"] = f.lam * avail; f["lam_rush"] = f.lam_rush * avail; f["lam_rec"] = f.lam_rec * avail
