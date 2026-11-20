@@ -445,11 +445,11 @@
    "game_id": "2026_08_LV_NYJ",
    "market": "spread",
    "model": 2.2,
-   "line_then": -1.5,
+   "line_then": 1.5,
    "close": 1.5,
-   "gap": 3.7,
-   "move": 3.0,
-   "result": "toward"
+   "gap": 0.7,
+   "move": 0.0,
+   "result": "no move"
   },
   {
    "week": 8,
@@ -1256,8 +1256,8 @@
   }
  ],
  "spread": {
-  "n": 40,
-  "toward": 13,
+  "n": 39,
+  "toward": 12,
   "away": 14,
   "still": 13
  },

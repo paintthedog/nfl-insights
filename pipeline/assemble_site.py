@@ -47,4 +47,4 @@ os.makedirs("archive", exist_ok=True)
 for w in weeks:
     src = f"site/data_wk{w}.json"; prev = sorted(glob.glob(f"archive/data_wk{w}_*.json"))
     if prev and filecmp.cmp(src, prev[-1], shallow=False): continue
-    shutil.copy(src, f"archive/data_wk{w}_{_dt.datetime.now().strftime('%Y%m%d_%H%M')}.json")
+    shutil.copy(src, f"archive/data_wk{w}_{_dt.datetime.now(__import__('zoneinfo').ZoneInfo('America/New_York')).strftime('%Y%m%d_%H%M')}.json")   # Nov 19: Eastern time (was the container's UTC clock; readers assume ET)
