@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-17T09:30 ET",
+ "asof": "2026-11-20T10:30 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
@@ -30,8 +30,6 @@
   "Brian Robinson",
   "TreVeyon Henderson",
   "Jeremy McNichols",
-  "DeVonta Smith",
-  "Dontayvion Wicks",
   "A.J. Brown",
   "Garrett Wilson",
   "Mike Evans",
@@ -47,7 +45,6 @@
   "Mack Hollins",
   "Demarcus Robinson",
   "Jaylen Wright",
-  "Sam Darnold",
   "Gardner Minshew",
   "Malik Willis",
   "Puka Nacua",
@@ -62,7 +59,6 @@
   "NYG": "J.J. McCarthy",
   "BAL": "Jacoby Brissett",
   "ARI": "Carson Beck",
-  "SEA": "Drew Lock",
   "MIN": "Kirk Cousins",
   "MIA": "Kyle McCord",
   "LV": "Fernando Mendoza",
@@ -71,7 +67,6 @@
  "next_man": {},
  "ol_out": [
   "Josh Simmons",
-  "Kayode Awosika",
   "Teven Jenkins",
   "Trevor Penning",
   "Alijah Vera-Tucker"
@@ -89,7 +84,8 @@
   "LV": "Brock Bowers (ankle) not believed major, day-to-day; more tests (Rapoport via Forbes Nov 16; Big Lead Nov 17). Mendoza starts.",
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
   "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17).",
-  "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17)."
+  "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
+  "SEA": "Darnold 'on track to return' after the Wk11 bye and keeps the job over Lock (RotoBaller Nov 20); Lock override removed."
  },
  "back": [
   "Jalen Nailor",
@@ -111,7 +107,6 @@
   "Zach Charbonnet",
   "Tre Harris",
   "Cam Skattebo",
-  "Kenneth Walker III",
   "Kyle Monangai"
  ],
  "qb_uncertain": {},

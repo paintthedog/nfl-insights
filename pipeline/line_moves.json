@@ -1253,18 +1253,40 @@
    "gap": 0.1,
    "move": 1.0,
    "result": "no gap"
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_IND_HOU",
+   "market": "spread",
+   "model": 6.8,
+   "line_then": 10.0,
+   "close": 12.5,
+   "gap": -3.2,
+   "move": 2.5,
+   "result": "away"
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_IND_HOU",
+   "market": "total",
+   "model": 46.8,
+   "line_then": 44.5,
+   "close": 44.5,
+   "gap": 2.3,
+   "move": 0.0,
+   "result": "no move"
   }
  ],
  "spread": {
-  "n": 39,
+  "n": 40,
   "toward": 12,
-  "away": 14,
+  "away": 15,
   "still": 13
  },
  "total": {
-  "n": 40,
+  "n": 41,
   "toward": 15,
   "away": 13,
-  "still": 12
+  "still": 13
  }
 }

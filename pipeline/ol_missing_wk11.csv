@@ -1,11 +1,11 @@
 team,ol_missing_pred,who
-ARI,1,Isaac Seumalo
+ARI,0,
 ATL,0,
 BAL,0,
-BUF,1,O'Cyrus Torrence
+BUF,0,
 CAR,0,
 CHI,0,
-CIN,0,
+CIN,1,Dalton Risner
 CLE,0,
 DAL,1,Tyler Booker
 DEN,0,
@@ -17,8 +17,8 @@ JAX,1,Robert Hainsey
 KC,2,Jaylon Moore; Trey Smith
 LA,0,
 LAC,0,
-LV,0,
-MIA,1,Aaron Brewer
+LV,1,Trey Zuhn III
+MIA,0,
 MIN,0,
 NE,0,
 NO,3,Erik McCoy; Asim Richards; Taliese Fuaga
@@ -27,7 +27,7 @@ NYJ,0,
 PHI,0,
 PIT,1,Mason McCormick
 SEA,0,
-SF,1,Trent Williams
+SF,0,
 TB,0,
 TEN,1,Peter Skoronski
 WAS,0,
