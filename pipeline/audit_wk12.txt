@@ -1,6 +1,6 @@
 Staleness audit, week 12: 6 item(s)
-  [ROSTER] Pierre Strong (GB) projected 4.4 pts but roster status INA (A01)
-  [ROSTER] Emanuel Wilson (SEA) projected 7.2 pts but roster status INA (A01)
+  [ROSTER] Pierre Strong (GB) projected 4.3 pts but roster status INA (A01)
+  [ROSTER] Emanuel Wilson (SEA) projected 7.1 pts but roster status INA (A01)
   [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
   [LEAD] Emanuel Wilson (SEA) returns after missing week 10 (was the lead back) and SEA has no lead_back - set it from the news (or list SEA under 'committee' if the news says shared)
   [FRESHNESS] overrides asof 2026-11-17T09:30 ET is older than 48h

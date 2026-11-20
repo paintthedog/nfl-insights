@@ -4,7 +4,7 @@ auto_overrides: week 12 ok, 106 entries, 0 cleaned
 ftn 2026 ok
 schedule ok
 retractable-roof games set to closed: 19
-depth charts saved: 2026-11-19 07:12:47+00:00
+depth charts saved: 2026-11-19 16:30:49+00:00
 pbp games by week: {1: 16, 2: 16, 3: 16, 4: 16, 5: 15, 6: 14, 7: 14, 8: 14, 9: 15, 10: 14}
 rosters weeks: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11)] | injury weeks: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11)] | snaps weeks: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10)]
 5118 team-games | {0.0: 1863, 1.0: 2215, 2.0: 853, 3.0: 164, 4.0: 16, 5.0: 7}
@@ -55,7 +55,7 @@ Situational, 2019-2026 (home-cover rate; 50% = market is fair):
   wind 15+           n= 134  home covers  56.0%   overs  45.9%
   dome               n= 616  home covers  46.4%   overs  52.2%
   division game      n= 708  home covers  47.0%   overs  49.9%
-history: 441 rows, 179 games; appended 0 changes at 2026-11-19T14:19Z
+history: 451 rows, 179 games; appended 10 changes at 2026-11-20T00:01Z
 team pos     tdpg  rank       lg
  HOU  QB 0.444444     1 0.179514
  NYJ  QB 0.400000     2 0.179514
@@ -74,19 +74,19 @@ qb_start override: MIA -> Kyle McCord
 qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 13 games; model vs market:
-  IND@HOU: line 12.5 / model +5.7 | total 43.5 / model 48.5
-  MIA@BUF: line 16.5 / model +15.6 | total 45.5 / model 47.1
-  BAL@CAR: line 2.5 / model +1.2 | total 43.5 / model 45.4
+  IND@HOU: line 12.5 / model +5.7 | total 44.5 / model 48.5
+  MIA@BUF: line 16.5 / model +15.6 | total 44.5 / model 47.1
+  BAL@CAR: line 3.0 / model +1.2 | total 43.5 / model 45.4
   NO@CHI: line 11.5 / model +10.2 | total 48.5 / model 45.5
-  TEN@DAL: line 8.5 / model +9.4 | total 54.5 / model 52.9
-  TB@DET: line 7.0 / model +5.0 | total 43.5 / model 47.0
-  ARI@KC: line 15.5 / model +15.4 | total 40.5 / model 45.3
+  TEN@DAL: line 8.5 / model +9.4 | total 55.5 / model 52.9
+  TB@DET: line 6.0 / model +5.0 | total 45.5 / model 47.0
+  ARI@KC: line 16.5 / model +15.4 | total 40.5 / model 45.3
   JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.0
   NYJ@LAC: line 3.0 / model -1.4 | total 41.5 / model 42.5
   LV@DEN: line 10.0 / model +9.9 | total 40.5 / model 42.1
-  PIT@PHI: line -4.5 / model -6.0 | total 37.5 / model 43.0
-  MIN@SF: line 3.0 / model +8.6 | total 46.5 / model 47.8
-  CIN@WAS: line -6.5 / model -6.9 | total 53.5 / model 50.0
+  PIT@PHI: line -4.5 / model -6.0 | total 38.5 / model 43.0
+  MIN@SF: line 3.5 / model +8.6 | total 46.5 / model 47.8
+  CIN@WAS: line -6.0 / model -6.9 | total 53.5 / model 50.0
 qb_start (news): PHI -> Joe Milton III
 qb_start (news): NYG -> J.J. McCarthy
 qb_start (news): BAL -> Jacoby Brissett
@@ -98,31 +98,31 @@ qb_start (news): LV -> Fernando Mendoza
 qb_start (news): NYJ -> Geno Smith
           name matchup  qb_int_pct  qb_iw_pct  qb_pd_pct  hist_p_at_spread  p_int  qb_vs_spread_hist  fair_over  fair_under
 0   J.McCarthy  vs JAX        2.78       4.82      10.89             0.549  0.657              0.108     -192.0       192.0
-1     K.McCord   @ BUF        2.17       3.16      10.94             0.629  0.638              0.009     -176.0       176.0
-2      D.Jones   @ HOU        2.46       4.32      11.21             0.629  0.601             -0.028     -150.0       150.0
-3   D.Prescott  vs TEN        2.02       3.35      11.61             0.427  0.597              0.170     -148.0       148.0
+1     K.McCord   @ BUF        2.17       3.16      10.94             0.629  0.635              0.006     -174.0       174.0
+2      D.Jones   @ HOU        2.46       4.32      11.21             0.629  0.603             -0.025     -152.0       152.0
+3   D.Prescott  vs TEN        2.02       3.35      11.61             0.427  0.599              0.172     -149.0       149.0
 4     T.Shough   @ CHI        2.12       2.80      10.05             0.629  0.575             -0.054     -135.0       135.0
-5       C.Beck    @ KC        2.54       4.40       9.90             0.629  0.557             -0.071     -126.0       126.0
+5       C.Beck    @ KC        2.54       4.40       9.90             0.629  0.561             -0.067     -128.0       128.0
 6   T.Lawrence   @ NYG        2.30       3.73      11.71             0.472  0.555              0.083     -125.0       125.0
-7    K.Cousins    @ SF        2.35       3.55      11.38             0.547  0.543             -0.004     -119.0       119.0
-8      B.Purdy  vs MIN        2.49       3.83      10.33             0.498  0.542              0.044     -118.0       118.0
-9   B.Mayfield   @ DET        2.39       3.47      11.31             0.526  0.537              0.011     -116.0       116.0
+7    K.Cousins    @ SF        2.35       3.55      11.38             0.549  0.545             -0.004     -120.0       120.0
+8      B.Purdy  vs MIN        2.49       3.83      10.33             0.498  0.539              0.042     -117.0       117.0
+9   B.Mayfield   @ DET        2.39       3.47      11.31             0.549  0.538             -0.011     -116.0       116.0
 10   F.Mendoza   @ DEN        2.15       3.07       9.92             0.526  0.535              0.009     -115.0       115.0
-11  J.Brissett   @ CAR        1.94       2.69      10.80             0.547  0.517             -0.030     -107.0       107.0
+11  J.Brissett   @ CAR        1.94       2.69      10.80             0.547  0.519             -0.028     -108.0       108.0
 12     G.Smith   @ LAC        2.31       3.56      10.71             0.547  0.514             -0.033     -106.0       106.0
-13    J.Milton  vs PIT        2.28       3.40       9.94             0.549  0.507             -0.042     -103.0       103.0
-14      C.Ward   @ DAL        1.95       2.75      10.23             0.526  0.505             -0.021     -102.0       102.0
-15   J.Daniels  vs CIN        1.88       2.57       9.67             0.526  0.479             -0.046      109.0      -109.0
-16    J.Burrow   @ WAS        1.92       2.33      10.19             0.472  0.471             -0.001      112.0      -112.0
-17    C.Stroud  vs IND        2.03       3.29      10.55             0.449  0.471              0.021      113.0      -113.0
+13    J.Milton  vs PIT        2.28       3.40       9.94             0.549  0.510             -0.040     -104.0       104.0
+14      C.Ward   @ DAL        1.95       2.75      10.23             0.526  0.507             -0.019     -103.0       103.0
+15   J.Daniels  vs CIN        1.88       2.57       9.67             0.549  0.477             -0.072      109.0      -109.0
+16    J.Burrow   @ WAS        1.92       2.33      10.19             0.472  0.473              0.001      111.0      -111.0
+17    C.Stroud  vs IND        2.03       3.29      10.55             0.449  0.473              0.024      112.0      -112.0
 18  C.Williams   vs NO        2.05       3.11       9.49             0.449  0.447             -0.002      124.0      -124.0
 19       B.Nix   vs LV        1.94       3.31      10.36             0.427  0.437              0.010      129.0      -129.0
-20     B.Young  vs BAL        2.14       2.42       9.50             0.498  0.432             -0.066      131.0      -131.0
-21   J.Herbert  vs NYJ        2.37       3.62      10.49             0.498  0.432             -0.066      132.0      -132.0
-22     J.Allen  vs MIA        2.24       3.67       9.37             0.449  0.415             -0.034      141.0      -141.0
-23   A.Rodgers   @ PHI        1.85       2.51       9.85             0.472  0.412             -0.061      143.0      -143.0
-24      J.Goff   vs TB        1.90       2.47       8.59             0.427  0.412             -0.015      143.0      -143.0
-25   P.Mahomes  vs ARI        1.98       2.87       8.28             0.449  0.318             -0.131      215.0      -215.0
+20   J.Herbert  vs NYJ        2.37       3.62      10.49             0.498  0.432             -0.066      132.0      -132.0
+21     B.Young  vs BAL        2.14       2.42       9.50             0.498  0.430             -0.067      132.0      -132.0
+22      J.Goff   vs TB        1.90       2.47       8.59             0.472  0.419             -0.053      138.0      -138.0
+23   A.Rodgers   @ PHI        1.85       2.51       9.85             0.472  0.414             -0.059      142.0      -142.0
+24     J.Allen  vs MIA        2.24       3.67       9.37             0.449  0.412             -0.037      143.0      -143.0
+25   P.Mahomes  vs ARI        1.98       2.87       8.28             0.449  0.315             -0.134      218.0      -218.0
 
 INT model coefficients:
  const             2.6284
@@ -138,7 +138,7 @@ exp_margin       -0.0115
 dtype: float64
 qb_uncertain: TB Baker Mayfield 30% / Jalon Daniels
 news activates: David Sills TB
-news overrides applied: 2026-11-19T09:30 ET | out: 57 | p_play: 0
+news overrides applied: 2026-11-19T19:00 ET | out: 57 | p_play: 0
 pool add: MIA Jared Wayne (traded in)
 pool add: TB David Sills (activated by news)
 pool add: LV Dont'e Thornton Jr. (activated by news)
@@ -147,37 +147,38 @@ lead_back: SF Christian McCaffrey 55%
 lead_back: NYJ Breece Hall 60%
 lead_back: NYG Cam Skattebo 65%
 lead_back: KC Kenneth Walker III 60%
-308 players projected; team exp TDs range 1.12-3.70
+lead_back: HOU David Montgomery 60%
+308 players projected; team exp TDs range 1.06-3.77
                    name pos posteam  opp  implied  pr_car  pr_tgt   p_td  fair_odds                                                                          flag
-0            James Cook  RB     BUF  MIA     31.0    21.3     1.9  0.648     -184.0                                                                              
-1      Javonte Williams  RB     DAL  TEN     31.5    17.8     2.5  0.630     -170.0                                                                              
-2           CeeDee Lamb  WR     DAL  TEN     31.5     0.1    12.4  0.616     -160.0                                                                              
-3          Jahmyr Gibbs  RB     DET   TB     25.2    21.2     5.6  0.615     -160.0                                                                              
+0            James Cook  RB     BUF  MIA     30.5    21.3     1.9  0.640     -178.0                                                                              
+1      Javonte Williams  RB     DAL  TEN     32.0    17.8     2.5  0.638     -176.0                                                                              
+2          Jahmyr Gibbs  RB     DET   TB     25.8    21.2     5.6  0.624     -166.0                                                                              
+3           CeeDee Lamb  WR     DAL  TEN     32.0     0.1    12.4  0.623     -165.0                                                                              
 4         D'Andre Swift  RB     CHI   NO     30.0    17.1     2.9  0.580     -138.0                                                                              
-5         Chuba Hubbard  RB     CAR  BAL     23.0    18.1     4.4  0.563     -129.0                                                                              
-6          Tony Pollard  RB     TEN  DAL     23.0    16.3     4.0  0.558     -126.0                                                                              
-7         Ja'Marr Chase  WR     CIN  WAS     30.0     0.0    11.2  0.549     -122.0                                                                              
-8        George Pickens  WR     DAL  TEN     31.5     0.0     9.5  0.502     -101.0                                                                              
-9         Jonah Coleman  RB     DEN   LV     25.2    12.4     3.7  0.481      108.0                                 lead back · 65% of the backfield per the news
-10         Nico Collins  WR     HOU  IND     28.0     0.2     8.1  0.478      109.0                                                                              
-11          Chase Brown  RB     CIN  WAS     30.0    11.8     6.2  0.476      110.0                                                                              
-12        Derrick Henry  RB     BAL  CAR     20.5    16.5     2.0  0.462      116.0                                                                              
-13   Kenneth Walker III  RB      KC  ARI     28.0    18.9     4.1  0.460      117.0                                 lead back · 60% of the backfield per the news
-14       Bhayshul Tuten  RB     JAX  NYG     26.2    15.8     2.1  0.458      118.0    limited practice this week (ankle) · 66% to play · numbers assume he plays
-15           Josh Allen  QB     BUF  MIA     31.0     5.9     0.1  0.458      118.0                                                                              
-16  Christian McCaffrey  RB      SF  MIN     24.8    13.6     5.3  0.451      122.0                                 lead back · 55% of the backfield per the news
-17          Tee Higgins  WR     CIN  WAS     30.0     0.0     7.6  0.440      127.0                                                                              
+5          Tony Pollard  RB     TEN  DAL     23.5    16.3     4.0  0.568     -131.0                                                                              
+6         Chuba Hubbard  RB     CAR  BAL     23.2    18.1     4.4  0.568     -131.0                                                                              
+7         Ja'Marr Chase  WR     CIN  WAS     29.8     0.0    11.2  0.545     -120.0                                                                              
+8        George Pickens  WR     DAL  TEN     32.0     0.0     9.5  0.509     -104.0                                                                              
+9          Nico Collins  WR     HOU  IND     28.5     0.2     8.1  0.483      107.0                                                                              
+10        Jonah Coleman  RB     DEN   LV     25.2    12.4     3.7  0.481      108.0                                 lead back · 65% of the backfield per the news
+11          Chase Brown  RB     CIN  WAS     29.8    11.8     6.2  0.472      112.0                                                                              
+12   Kenneth Walker III  RB      KC  ARI     28.5    18.9     4.1  0.468      114.0                                 lead back · 60% of the backfield per the news
+13       Bhayshul Tuten  RB     JAX  NYG     26.2    15.8     2.1  0.458      118.0    limited practice this week (ankle) · 66% to play · numbers assume he plays
+14        Derrick Henry  RB     BAL  CAR     20.2    16.5     2.0  0.457      119.0                                                                              
+15  Christian McCaffrey  RB      SF  MIN     25.0    13.6     5.3  0.455      120.0                                 lead back · 55% of the backfield per the news
+16           Josh Allen  QB     BUF  MIA     30.5     5.9     0.1  0.451      122.0                                                                              
+17          Tee Higgins  WR     CIN  WAS     29.8     0.0     7.6  0.436      129.0                                                                              
 18          Breece Hall  RB     NYJ  LAC     19.2    14.6     3.3  0.422      137.0                                 lead back · 60% of the backfield per the news
-19      Omarion Hampton  RB     LAC  NYJ     22.2    13.8     2.0  0.398      152.0                                                                              
-20    Amon-Ra St. Brown  WR     DET   TB     25.2     0.2     9.4  0.389      157.0                                                                              
-21    Parker Washington  WR     JAX  NYG     26.2     0.3     7.3  0.389      157.0                                                                              
-22         Cam Skattebo  RB     NYG  JAX     20.2    16.0     2.8  0.386      159.0                                 lead back · 65% of the backfield per the news
-23      Jonathan Taylor  RB     IND  HOU     15.5    16.2     4.1  0.382      162.0                                                                              
-24    Xavier Hutchinson  WR     HOU  IND     28.0     0.4     6.1  0.379      164.0                                                                              
-25        George Kittle  TE      SF  MIN     24.8     0.0     7.4  0.372      169.0                                                                              
-26         Bucky Irving  RB      TB  DET     18.2    20.2     2.8  0.369      171.0                                                                              
-27     Colston Loveland  TE     CHI   NO     30.0     0.0     7.5  0.366      173.0                                                                              
-28        Jaylen Warren  RB     PIT  PHI     21.0    13.6     4.2  0.360      178.0                                                                              
+19         Bucky Irving  RB      TB  DET     19.8    20.2     2.8  0.399      150.0                                                                              
+20      Omarion Hampton  RB     LAC  NYJ     22.2    13.8     2.0  0.398      152.0                                                                              
+21    Amon-Ra St. Brown  WR     DET   TB     25.8     0.2     9.4  0.397      152.0                                                                              
+22      Jonathan Taylor  RB     IND  HOU     16.0    16.2     4.1  0.394      154.0                                                                              
+23    Parker Washington  WR     JAX  NYG     26.2     0.3     7.3  0.389      157.0                                                                              
+24         Cam Skattebo  RB     NYG  JAX     20.2    16.0     2.8  0.386      159.0                                 lead back · 65% of the backfield per the news
+25    Xavier Hutchinson  WR     HOU  IND     28.5     0.4     6.1  0.383      161.0                                                                              
+26        George Kittle  TE      SF  MIN     25.0     0.0     7.4  0.376      166.0                                                                              
+27        Jaylen Warren  RB     PIT  PHI     21.5    13.6     4.2  0.369      171.0                                                                              
+28     Colston Loveland  TE     CHI   NO     30.0     0.0     7.5  0.366      173.0                                                                              
 29    Luther Burden III  WR     CHI   NO     30.0     0.7     7.5  0.359      179.0  full practice this week (concussion) · 88% to play · numbers assume he plays
 
 teams most rescaled (scale < 0.85 or > 1.15 means the pool was thin or crowded):
@@ -195,70 +196,71 @@ team  ol_missing_pred                                      who
  PIT                1                          Mason McCormick
   SF                1                           Trent Williams
  TEN                1                          Peter Skoronski
-seeded next-man-up: ['00-0033280', '00-0038120', '00-0038134', '00-0040715', '00-0041496']
+seeded next-man-up: ['00-0033280', '00-0035685', '00-0038120', '00-0038134', '00-0040715', '00-0041496']
 lead_back (proj): DEN Jonah Coleman 65% of 0.53 carry share
 lead_back (proj): SF Christian McCaffrey 55% of 0.57 carry share
 lead_back (proj): NYJ Breece Hall 60% of 0.79 carry share
 lead_back (proj): NYG Cam Skattebo 65% of 0.48 carry share
 lead_back (proj): KC Kenneth Walker III 60% of 0.49 carry share
+lead_back (proj): HOU David Montgomery 60% of 0.36 carry share
 /home/claude/nfl-insights/pipeline/proj_project.py:94: RuntimeWarning: invalid value encountered in divide
   (np.abs(f[c].to_numpy() / _before[c].to_numpy() - 1)[_before[c].to_numpy() > 0.5]).mean() * 100 for c in ["p_pass_yds", "p_tgt", "p_rec_yds"]))
 success-rate layer: median |change| pass_yds 2.4%, tgt 3.1%, rec_yds 3.5%
-team scale ranges: receiving 0.82 - 1.13 | carries 0.84 - 1.91
+team scale ranges: receiving 0.82 - 1.13 | carries 0.84 - 2.12
 steady: 197 rated, 99 role flags
-anytime-TD blend (sim weight 0.75): 305 players, mean 0.182 -> 0.170
+anytime-TD blend (sim weight 0.75): 305 players, mean 0.183 -> 0.171
 simulated 13 games x 6000
 
 QB
            name team opp  pass_yds  pass_td  ints  rush_yds  fp_legends  fp_std
-     Joe Burrow  CIN WAS     307.0      2.4   0.6      12.0        29.2    22.5
-   Dak Prescott  DAL TEN     310.1      2.4   0.9      14.2        28.6    22.1
-     Josh Allen  BUF MIA     223.5      1.9   0.5      32.4        28.0    20.5
-    C.J. Stroud  HOU IND     264.1      2.2   0.6      16.1        25.8    20.7
- Caleb Williams  CHI  NO     241.5      2.0   0.6      20.4        24.7    19.2
-Patrick Mahomes   KC ARI     236.1      2.0   0.4      15.3        24.3    18.8
- Jayden Daniels  WAS CIN     219.6      1.6   0.6      33.1        23.9    18.7
-         Bo Nix  DEN  LV     215.1      1.7   0.6      24.0        23.5    17.5
+     Joe Burrow  CIN WAS     303.4      2.4   0.6      11.9        29.0    22.3
+   Dak Prescott  DAL TEN     308.2      2.4   0.9      14.2        28.8    22.2
+     Josh Allen  BUF MIA     220.9      1.8   0.5      32.6        27.8    20.2
+    C.J. Stroud  HOU IND     265.6      2.2   0.6      15.0        26.0    20.7
+ Caleb Williams  CHI  NO     242.2      1.9   0.6      20.5        24.7    19.0
+Patrick Mahomes   KC ARI     236.1      2.0   0.4      15.2        24.5    19.0
+ Jayden Daniels  WAS CIN     218.8      1.6   0.6      33.2        24.0    18.8
+         Bo Nix  DEN  LV     214.5      1.7   0.6      24.9        23.5    17.5
 
 RB
             name team opp  car  rush_yds  rec  rec_yds  fp_legends  fp_ppr
-    Jahmyr Gibbs  DET  TB 21.2      96.7  3.7     29.9        28.9    23.5
-      James Cook  BUF MIA 21.5     102.5  1.6     12.9        25.7    21.6
-Javonte Williams  DAL TEN 21.4      87.6  2.4     15.2        24.8    20.3
-   Chuba Hubbard  CAR BAL 17.2      66.8  3.6     25.6        23.5    18.7
-  Bhayshul Tuten  JAX NYG 17.4      74.5  1.9     15.0        23.1    16.0
-    Tony Pollard  TEN DAL 16.7      79.8  2.7     16.7        22.8    18.2
-     Chase Brown  CIN WAS 12.7      52.1  4.3     30.6        21.1    17.5
-   D'Andre Swift  CHI  NO 15.2      61.4  2.2     16.6        19.7    16.6
+    Jahmyr Gibbs  DET  TB 20.7      94.0  3.6     29.6        28.9    23.2
+      James Cook  BUF MIA 21.3     101.3  1.6     12.5        25.6    21.5
+Javonte Williams  DAL TEN 21.4      87.8  2.3     15.1        24.8    20.3
+   Chuba Hubbard  CAR BAL 17.3      66.6  3.6     25.6        23.6    18.8
+  Bhayshul Tuten  JAX NYG 17.5      75.1  1.9     15.0        23.1    16.2
+    Tony Pollard  TEN DAL 16.7      80.5  2.7     16.8        22.9    18.4
+     Chase Brown  CIN WAS 12.9      52.9  4.2     30.0        21.0    17.4
+   D'Andre Swift  CHI  NO 15.2      61.2  2.2     16.4        19.7    16.6
 
 WR
              name team opp  tgt  rec  rec_yds  fp_legends  fp_ppr
-      CeeDee Lamb  DAL TEN 12.4  8.6    112.1        31.4    26.8
-    Ja'Marr Chase  CIN WAS 11.0  8.3    105.9        28.8    25.4
-   George Pickens  DAL TEN  9.7  6.4     90.1        24.0    19.5
-Amon-Ra St. Brown  DET  TB  8.4  6.4     77.2        21.3    18.1
-      Tee Higgins  CIN WAS  8.1  5.7     77.7        21.2    17.3
-     Nico Collins  HOU IND  8.0  5.4     73.5        20.8    17.4
-      Chris Olave   NO CHI 10.0  6.5     76.4        20.1    17.2
- Justin Jefferson  MIN  SF  9.1  5.9     75.6        20.0    17.4
+      CeeDee Lamb  DAL TEN 12.5  8.6    111.5        31.6    26.9
+    Ja'Marr Chase  CIN WAS 10.9  8.2    103.4        28.7    25.0
+   George Pickens  DAL TEN  9.6  6.3     90.2        24.1    19.6
+Amon-Ra St. Brown  DET  TB  8.5  6.4     78.5        21.5    18.3
+      Tee Higgins  CIN WAS  8.0  5.7     77.2        21.2    17.2
+     Nico Collins  HOU IND  8.0  5.4     73.7        20.7    17.6
+      Chris Olave   NO CHI  9.9  6.4     75.4        20.1    17.1
+ Justin Jefferson  MIN  SF  9.0  5.8     76.4        19.9    17.3
 
 TE
             name team opp  tgt  rec  rec_yds  fp_legends
-   George Kittle   SF MIN  6.8  5.2     65.7        18.2
-    Tyler Warren  IND HOU  8.0  5.7     54.0        15.5
-    Trey McBride  ARI  KC  7.9  5.3     55.3        15.3
-Colston Loveland  CHI  NO  6.9  4.4     52.1        15.1
-   Isaiah Likely  NYG JAX  6.7  4.6     50.6        14.5
-     Sam LaPorta  DET  TB  5.0  3.8     40.6        11.8
-    Chig Okonkwo  WAS CIN  5.3  3.7     38.7        11.4
-  Dallas Goedert  PHI PIT  5.2  3.7     39.0        11.0
+   George Kittle   SF MIN  6.8  5.2     67.2        18.3
+    Tyler Warren  IND HOU  8.0  5.7     54.9        15.6
+    Trey McBride  ARI  KC  7.9  5.3     55.4        15.2
+Colston Loveland  CHI  NO  7.1  4.5     53.3        15.1
+   Isaiah Likely  NYG JAX  6.8  4.6     50.6        14.5
+     Sam LaPorta  DET  TB  5.0  3.7     40.4        11.8
+    Chig Okonkwo  WAS CIN  5.2  3.6     38.1        11.5
+  Dallas Goedert  PHI PIT  5.3  3.7     39.7        11.1
 
 305 players; team check after scaling (QB pass yds vs sum of receivers), 3 teams:
          qb  receivers
 team                  
-ARI   165.0      167.0
-BAL   208.0      210.0
-BUF   224.0      260.0
+ARI   166.0      167.0
+BAL   206.0      208.0
+BUF   221.0      258.0
 qb_start override: PHI -> Joe Milton III
 qb_start override: NYG -> J.J. McCarthy
 qb_start override: BAL -> Jacoby Brissett
@@ -268,19 +270,19 @@ qb_start override: MIA -> Kyle McCord
 qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 13 games; model vs market:
-  IND@HOU: line 12.5 / model +5.7 | total 43.5 / model 48.5
-  MIA@BUF: line 16.5 / model +15.6 | total 45.5 / model 47.1
-  BAL@CAR: line 2.5 / model +1.2 | total 43.5 / model 45.4
+  IND@HOU: line 12.5 / model +5.7 | total 44.5 / model 48.5
+  MIA@BUF: line 16.5 / model +15.6 | total 44.5 / model 47.1
+  BAL@CAR: line 3.0 / model +1.2 | total 43.5 / model 45.4
   NO@CHI: line 11.5 / model +10.2 | total 48.5 / model 45.5
-  TEN@DAL: line 8.5 / model +9.4 | total 54.5 / model 52.9
-  TB@DET: line 7.0 / model +5.0 | total 43.5 / model 47.0
-  ARI@KC: line 15.5 / model +15.4 | total 40.5 / model 45.3
+  TEN@DAL: line 8.5 / model +9.4 | total 55.5 / model 52.9
+  TB@DET: line 6.0 / model +5.0 | total 45.5 / model 47.0
+  ARI@KC: line 16.5 / model +15.4 | total 40.5 / model 45.3
   JAX@NYG: line -6.0 / model -8.4 | total 46.5 / model 46.0
   NYJ@LAC: line 3.0 / model -1.4 | total 41.5 / model 42.5
   LV@DEN: line 10.0 / model +9.9 | total 40.5 / model 42.1
-  PIT@PHI: line -4.5 / model -6.0 | total 37.5 / model 43.0
-  MIN@SF: line 3.0 / model +8.6 | total 46.5 / model 47.8
-  CIN@WAS: line -6.5 / model -6.9 | total 53.5 / model 50.0
+  PIT@PHI: line -4.5 / model -6.0 | total 38.5 / model 43.0
+  MIN@SF: line 3.5 / model +8.6 | total 46.5 / model 47.8
+  CIN@WAS: line -6.0 / model -6.9 | total 53.5 / model 50.0
 qb_start override: PHI -> Joe Milton III
 qb_start override: NYG -> J.J. McCarthy
 qb_start override: BAL -> Jacoby Brissett
@@ -292,7 +294,7 @@ qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 16 games; model vs market:
   GB@LA: line 3.5 / model +9.5 | total 45.5 / model 49.4
-  CHI@DET: line -2.5 / model +0.2 | total 54.5 / model 51.8
+  CHI@DET: line -2.5 / model +0.2 | total 55.5 / model 51.8
   PHI@DAL: line 8.5 / model +10.4 | total 47.5 / model 48.1
   KC@BUF: line 3.0 / model +1.0 | total 50.5 / model 48.8
   DEN@PIT: line -1.5 / model +2.8 | total 40.5 / model 45.6
@@ -332,10 +334,10 @@ qb_start (news): NYJ -> Geno Smith
 12      C.Beck  vs WAS        2.54       4.40       9.90             0.526  0.514             -0.012     -106.0       106.0
 13    T.DeVito   @ LAC        2.08       2.67      10.84             0.549  0.513             -0.037     -105.0       105.0
 14     B.Purdy  vs SEA        2.49       3.83      10.33             0.498  0.512              0.014     -105.0       105.0
-15      D.Lock    @ SF        2.35       4.03      10.66             0.547  0.510             -0.037     -104.0       104.0
-16    K.McCord  vs NYJ        2.17       3.16      10.94             0.547  0.510             -0.037     -104.0       104.0
-17    C.Stroud  vs BAL        2.03       3.29      10.55             0.472  0.509              0.037     -104.0       104.0
-18  C.Williams   @ DET        2.05       3.11       9.49             0.498  0.509              0.011     -104.0       104.0
+15  C.Williams   @ DET        2.05       3.11       9.49             0.498  0.511              0.013     -104.0       104.0
+16      D.Lock    @ SF        2.35       4.03      10.66             0.547  0.510             -0.037     -104.0       104.0
+17    K.McCord  vs NYJ        2.17       3.16      10.94             0.547  0.510             -0.037     -104.0       104.0
+18    C.Stroud  vs BAL        2.03       3.29      10.55             0.472  0.509              0.037     -104.0       104.0
 19   F.Mendoza   @ CLE        2.15       3.07       9.92             0.549  0.501             -0.048     -100.0       100.0
 20  B.Mayfield  vs CAR        2.39       3.47      11.31             0.498  0.494             -0.004      102.0      -102.0
 21   K.Cousins  vs ATL        2.35       3.55      11.38             0.427  0.487              0.060      105.0      -105.0
@@ -346,7 +348,7 @@ qb_start (news): NYJ -> Geno Smith
 26     J.Allen   vs KC        2.24       3.67       9.37             0.498  0.460             -0.038      117.0      -117.0
 27    D.Watson   vs LV        1.93       3.37       9.69             0.472  0.460             -0.012      117.0      -117.0
 28    J.Burrow   vs NO        1.92       2.33      10.19             0.427  0.455              0.028      120.0      -120.0
-29      J.Goff  vs CHI        1.90       2.47       8.59             0.547  0.436             -0.111      129.0      -129.0
+29      J.Goff  vs CHI        1.90       2.47       8.59             0.547  0.438             -0.109      128.0      -128.0
 30   P.Mahomes   @ BUF        1.98       2.87       8.28             0.547  0.434             -0.113      131.0      -131.0
 31   J.Daniels   @ ARI        1.88       2.57       9.67             0.472  0.385             -0.087      160.0      -160.0
 
@@ -374,11 +376,11 @@ lead_back: NYG Cam Skattebo 65%
 lead_back: KC Kenneth Walker III 60%
 379 players projected; team exp TDs range 1.60-3.66
                    name pos posteam  opp  implied  pr_car  pr_tgt   p_td  fair_odds                                           flag
-0          Jahmyr Gibbs  RB     DET  CHI     26.0    21.2     5.6  0.636     -175.0                                               
+0          Jahmyr Gibbs  RB     DET  CHI     26.5    21.2     5.6  0.645     -182.0                                               
 1         Ja'Marr Chase  WR     CIN   NO     31.2     0.0    11.2  0.566     -130.0                                               
 2      Javonte Williams  RB     DAL  PHI     28.0    17.8     2.5  0.558     -126.0                                               
 3           CeeDee Lamb  WR     DAL  PHI     28.0     0.1    12.4  0.548     -121.0                                               
-4         D'Andre Swift  RB     CHI  DET     28.5    17.1     2.9  0.536     -116.0                                               
+4         D'Andre Swift  RB     CHI  DET     29.0    17.1     2.9  0.544     -119.0                                               
 5            James Cook  RB     BUF   KC     26.8    21.3     1.9  0.531     -113.0                                               
 6           Chase Brown  RB     CIN   NO     31.2    11.8     6.2  0.498      101.0                                               
 7       Jonathan Taylor  RB     IND  NYG     20.5    16.2     4.1  0.486      106.0                                               
@@ -396,10 +398,10 @@ lead_back: KC Kenneth Walker III 60%
 19        Derrick Henry  RB     BAL  HOU     19.2    16.5     2.0  0.424      136.0                                               
 20       Bijan Robinson  RB     ATL  MIN     17.8    17.8     4.6  0.419      139.0                                               
 21    Parker Washington  WR     JAX  TEN     31.0     0.3     7.3  0.412      143.0                                               
-22     Justin Jefferson  WR     MIN  ATL     24.8     0.1     9.0  0.393      154.0                                               
-23          Aaron Jones  RB     MIN  ATL     24.8    11.9     2.3  0.392      155.0                                               
-24        Jonah Coleman  RB     DEN  PIT     21.0    12.4     3.7  0.392      155.0  lead back · 65% of the backfield per the news
-25    Amon-Ra St. Brown  WR     DET  CHI     26.0     0.2     9.4  0.391      156.0                                               
+22    Amon-Ra St. Brown  WR     DET  CHI     26.5     0.2     9.4  0.399      151.0                                               
+23     Justin Jefferson  WR     MIN  ATL     24.8     0.1     9.0  0.393      154.0                                               
+24          Aaron Jones  RB     MIN  ATL     24.8    11.9     2.3  0.392      155.0                                               
+25        Jonah Coleman  RB     DEN  PIT     21.0    12.4     3.7  0.392      155.0  lead back · 65% of the backfield per the news
 26         Nico Collins  WR     HOU  BAL     25.2     0.2     8.1  0.388      158.0                                               
 27   Kenneth Walker III  RB      KC  BUF     23.8    18.9     4.1  0.383      161.0  lead back · 60% of the backfield per the news
 28         Tony Pollard  RB     TEN  JAX     16.5    16.3     4.0  0.375      167.0                                               
@@ -421,57 +423,57 @@ lead_back (proj): KC Kenneth Walker III 60% of 0.49 carry share
 success-rate layer: median |change| pass_yds 2.4%, tgt 3.1%, rec_yds 3.4%
 team scale ranges: receiving 0.74 - 1.26 | carries 0.69 - 1.93
 steady: 197 rated, 116 role flags
-anytime-TD blend (sim weight 0.75): 375 players, mean 0.177 -> 0.166
+anytime-TD blend (sim weight 0.75): 375 players, mean 0.177 -> 0.167
 simulated 16 games x 6000
 
 QB
            name team opp  pass_yds  pass_td  ints  rush_yds  fp_legends  fp_std
-     Joe Burrow  CIN  NO     305.8      2.6   0.6      12.7        29.9    23.2
-Trevor Lawrence  JAX TEN     256.7      2.4   0.7      14.0        26.0    20.2
-   Dak Prescott  DAL PHI     285.6      2.0   0.8      14.7        25.9    19.8
- Jayden Daniels  WAS ARI     226.5      1.6   0.5      34.3        25.3    19.6
-     Josh Allen  BUF  KC     220.3      1.5   0.6      26.8        24.8    17.9
- Caleb Williams  CHI DET     253.4      1.8   0.7      18.5        24.1    18.5
-     Jared Goff  DET CHI     290.8      1.7   0.6       6.5        23.8    18.2
+     Joe Burrow  CIN  NO     303.5      2.6   0.6      12.2        29.9    23.0
+Trevor Lawrence  JAX TEN     253.6      2.3   0.7      14.2        26.0    20.0
+   Dak Prescott  DAL PHI     284.1      2.0   0.8      14.8        25.9    19.8
+ Jayden Daniels  WAS ARI     227.0      1.6   0.5      35.2        25.3    19.8
+     Josh Allen  BUF  KC     220.8      1.5   0.6      27.4        24.8    18.1
+ Caleb Williams  CHI DET     255.3      1.8   0.7      18.4        24.3    18.8
+     Jared Goff  DET CHI     289.4      1.7   0.6       6.7        24.0    18.3
     C.J. Stroud  HOU BAL     258.8      2.0   0.7      14.8        23.7    18.9
 
 RB
             name team opp  car  rush_yds  rec  rec_yds  fp_legends  fp_ppr
-    Jahmyr Gibbs  DET CHI 18.9      89.6  3.7     31.4        29.0    23.0
+    Jahmyr Gibbs  DET CHI 18.7      89.9  3.7     31.9        29.1    23.2
   Bijan Robinson  ATL MIN 20.7      96.9  2.8     21.4        24.3    19.0
-Javonte Williams  DAL PHI 22.0      89.9  2.2     13.5        23.7    19.0
-     Chase Brown  CIN  NO 13.5      56.2  4.3     30.4        21.9    18.3
- Jonathan Taylor  IND NYG 13.9      61.9  3.6     26.1        21.5    17.3
-      James Cook  BUF  KC 19.0      84.1  1.4     10.6        20.7    17.8
+Javonte Williams  DAL PHI 22.1      90.1  2.2     13.4        23.7    19.1
+     Chase Brown  CIN  NO 13.6      56.3  4.2     30.2        21.9    18.2
+ Jonathan Taylor  IND NYG 14.0      61.9  3.6     26.4        21.5    17.4
+      James Cook  BUF  KC 18.9      83.9  1.4     10.4        20.7    17.6
  Ollie Gordon II  MIA NYJ 21.4      90.2  1.4      9.8        20.1    15.9
    Chuba Hubbard  CAR  TB 16.3      64.6  2.9     19.8        20.1    16.1
 
 WR
               name team opp  tgt  rec  rec_yds  fp_legends  fp_ppr
-     Ja'Marr Chase  CIN  NO 10.8  8.1    103.6        28.8    25.3
-       CeeDee Lamb  DAL PHI 11.6  8.2     99.4        28.2    23.8
-Jaxon Smith-Njigba  SEA  SF 10.0  6.4     87.8        23.0    20.6
- Amon-Ra St. Brown  DET CHI  8.5  6.5     83.8        22.4    18.9
-    George Pickens  DAL PHI  9.0  6.0     80.3        21.6    17.6
-       Chris Olave   NO CIN 10.1  6.7     80.6        21.4    18.3
-       Tee Higgins  CIN  NO  8.0  5.6     77.0        21.2    17.4
+     Ja'Marr Chase  CIN  NO 10.7  8.0    103.0        28.8    25.1
+       CeeDee Lamb  DAL PHI 11.6  8.2    100.2        28.2    23.9
+Jaxon Smith-Njigba  SEA  SF 10.1  6.5     88.2        23.0    20.9
+ Amon-Ra St. Brown  DET CHI  8.6  6.6     85.0        22.6    19.2
+    George Pickens  DAL PHI  9.0  6.0     80.2        21.6    17.5
+       Chris Olave   NO CIN 10.0  6.7     79.7        21.4    18.1
+       Tee Higgins  CIN  NO  8.0  5.5     77.2        21.2    17.4
   Justin Jefferson  MIN ATL  9.0  5.9     81.2        21.2    18.5
 
 TE
              name team opp  tgt  rec  rec_yds  fp_legends
-    George Kittle   SF SEA  6.9  5.4     65.4        18.0
-     Trey McBride  ARI WAS  8.1  5.6     62.4        17.3
-     Tyler Warren  IND NYG  7.8  5.6     53.4        15.9
-    Isaiah Likely  NYG IND  6.8  4.7     56.3        15.8
- Colston Loveland  CHI DET  6.9  4.5     52.0        14.9
-Harold Fannin Jr.  CLE  LV  5.5  4.0     46.0        12.8
-      Sam LaPorta  DET CHI  5.2  3.9     45.2        12.4
+    George Kittle   SF SEA  6.8  5.3     64.2        18.0
+     Trey McBride  ARI WAS  8.0  5.6     62.0        17.3
+     Tyler Warren  IND NYG  7.8  5.6     52.9        15.9
+    Isaiah Likely  NYG IND  6.8  4.7     56.1        15.8
+ Colston Loveland  CHI DET  7.0  4.5     52.3        15.0
+Harold Fannin Jr.  CLE  LV  5.5  3.9     45.1        12.8
+      Sam LaPorta  DET CHI  5.1  3.8     43.9        12.5
      Tyler Higbee   LA  GB  5.2  3.8     42.0        11.8
 
 375 players; team check after scaling (QB pass yds vs sum of receivers), 3 teams:
          qb  receivers
 team                  
-ARI   187.0      189.0
+ARI   188.0      190.0
 ATL   209.0      209.0
 BAL   226.0      227.0
 qb_start override: PHI -> Joe Milton III
@@ -485,7 +487,7 @@ qb_start override: LV -> Fernando Mendoza
 qb_start override: NYJ -> Geno Smith
 16 games; model vs market:
   GB@LA: line 3.5 / model +9.5 | total 45.5 / model 49.4
-  CHI@DET: line -2.5 / model +0.2 | total 54.5 / model 51.8
+  CHI@DET: line -2.5 / model +0.2 | total 55.5 / model 51.8
   PHI@DAL: line 8.5 / model +10.4 | total 47.5 / model 48.1
   KC@BUF: line 3.0 / model +1.0 | total 50.5 / model 48.8
   DEN@PIT: line -1.5 / model +2.8 | total 40.5 / model 45.6
@@ -500,8 +502,8 @@ qb_start override: NYJ -> Geno Smith
   SEA@SF: line 2.5 / model +7.4 | total 46.5 / model 47.3
   NE@LAC: line 4.5 / model -1.0 | total 39.5 / model 40.1
   CAR@TB: line 2.5 / model +5.6 | total 43.5 / model 43.4
-paper_wk11.csv: 23 game-line paper bets for 13 games not yet started: Moneyline, model differs 4+ pts 7, Game totals, model differs 3+ pts 6, Trend unders: prime time 3, Teasers (wide): underdogs +1 to +3, all pairs 3, Control: random 3, Teaser legs: small underdogs +6 1
-paper_wk12.csv: 45 game-line paper bets for 16 games not yet started: Teasers (wide): underdogs +1 to +3, all pairs 15, Moneyline, model differs 4+ pts 13, Game totals, model differs 3+ pts 4, Trend unders: prime time 4, Teaser legs: small underdogs +6 4, Control: random 3, Teasers: small underdogs +6, 2 legs 2
+paper_wk11.csv: 19 game-line paper bets for 13 games not yet started: Moneyline, model differs 4+ pts 7, Game totals, model differs 3+ pts 5, Trend unders: prime time 3, Control: random 3, Teasers (wide): underdogs +1 to +3, all pairs 1
+paper_wk12.csv: 46 game-line paper bets for 16 games not yet started: Teasers (wide): underdogs +1 to +3, all pairs 15, Moneyline, model differs 4+ pts 13, Game totals, model differs 3+ pts 5, Trend unders: prime time 4, Teaser legs: small underdogs +6 4, Control: random 3, Teasers: small underdogs +6, 2 legs 2
 weeks [4, 5, 6, 7, 8, 9, 10] snap [7, 8, 9, 10]
    week  fp_mae  fp_bias  below  above  td_said  td_hap  td_n  td_brier  td_brier_dk  margin_model  margin_line  n_games  snapshot
 0     4     NaN      NaN    NaN    NaN      3.9       5    19    0.1682       0.1638           NaN          NaN        0     False
@@ -537,8 +539,8 @@ total
      3.3%  ±0.23  How often both teams pass
      0.1%  ±0.01  Pace
 int
-    21.4%  ±2.6  Passes broken up
-    18.0%  ±2.2  Expected pass attempts
+    21.3%  ±2.6  Passes broken up
+    18.1%  ±2.2  Expected pass attempts
     17.4%  ±2.1  Game script (spread)
     12.5%  ±1.5  Opposing defense's INT rate
     10.4%  ±1.3  Throw depth
@@ -547,19 +549,19 @@ int
      2.4%  ±0.3  Pass rush (both sides)
      1.6%  ±0.2  Wind
 td
-    35.0%  ±4.5  Target share
-    25.2%  ±3.2  Team's implied points (Vegas)
-    17.7%  ±2.2  Carry share
-     9.2%  ±1.2  Team's run/pass TD split
-     5.9%  ±0.8  Goal-line carries (inside the 10)
+    35.1%  ±4.5  Target share
+    25.3%  ±3.2  Team's implied points (Vegas)
+    17.6%  ±2.2  Carry share
+     9.1%  ±1.2  Team's run/pass TD split
+     5.8%  ±0.8  Goal-line carries (inside the 10)
      4.6%  ±0.6  Past touchdown share
      1.3%  ±0.2  Red-zone targets
      1.1%  ±0.1  Opponent's TDs allowed to position
 QB (n=32)
-    41.1%  ±1.26  Touchdown chances
-    25.8%  ±0.79  Usage (targets, carries, QB attempts)
+    41.4%  ±1.27  Touchdown chances
+    25.6%  ±0.79  Usage (targets, carries, QB attempts)
     11.9%  ±0.37  Efficiency (yards per play, catch rate)
-     8.6%  ±0.26  Opponent defense
+     8.5%  ±0.26  Opponent defense
      4.6%  ±0.14  Team's recent play volume
      4.5%  ±0.14  Interceptions
      3.5%  ±0.11  Vegas total & spread
@@ -577,12 +579,12 @@ RB (n=55)
 WR (n=75)
     41.4%  ±2.59  Usage (targets, carries, QB attempts)
     16.7%  ±1.04  WOPR
-    11.1%  ±0.69  Snap share
+    11.1%  ±0.70  Snap share
     10.7%  ±0.67  Touchdown chances
      6.7%  ±0.42  Efficiency (yards per play, catch rate)
      5.2%  ±0.33  Team's recent play volume
      3.9%  ±0.25  Quarterback change
-     2.8%  ±0.18  Vegas total & spread
+     2.9%  ±0.18  Vegas total & spread
      1.4%  ±0.09  Opponent defense
 TE (n=35)
     45.1%  ±1.87  Usage (targets, carries, QB attempts)
@@ -592,7 +594,7 @@ TE (n=35)
      4.9%  ±0.20  Team's recent play volume
      4.6%  ±0.19  Quarterback change
      4.2%  ±0.18  Efficiency (yards per play, catch rate)
-     2.6%  ±0.11  Vegas total & spread
+     2.7%  ±0.11  Vegas total & spread
      2.4%  ±0.10  Opponent defense
 site/data_wk11.json: 13 games, 26 QBs, 308 TD players
 site/data_wk12.json: 16 games, 32 QBs, 379 TD players
@@ -625,14 +627,14 @@ trends.json: {'lines': 3, 'teasers': 3, 'teams': 6, 'people': 5, 'spots': 5, 'pl
   [ref] Reaching 100 yards, by season average coming in: A back averaging 85 to 99 rushing yards reaches 100 in 31.0% of games. A season average is nearer a coin flip than a floor.
 {'teaser_dog': {'w': 451, 'l': 141, 'p': 13, 'pct': 76.2, 'be': 73.9}, 'fav7_low': {'w': 88, 'l': 54, 'p': 1, 'pct': 62.0, 'be': 52.4}, 'fav7_high': {'w': 113, 'l': 76, 'p': 2, 'pct': 59.8, 'be': 52.4}, 'close_low': {'w': 83, 'l': 58, 'p': 1, 'pct': 58.9, 'be': 52.4}, 'wind': {'w': 304, 'l': 221, 'p': 4, 'pct': 57.9, 'be': 52.4}, 'prime': {'w': 202, 'l': 157, 'p': 6, 'pct': 56.3, 'be': 52.4}, 'bigdog': {'ret': '-20%', 'n': 328, 'win': '13.7%'}, 'prime_games': ['2026_11_CIN_WAS', '2026_11_MIN_SF', '2026_12_CAR_TB', '2026_12_LV_CLE', '2026_13_DAL_SEA', '2026_13_HOU_PIT', '2026_14_BUF_GB', '2026_14_PIT_JAX', '2026_15_DET_MIN', '2026_15_NE_KC', '2026_16_JAX_DAL', '2026_16_NYG_DET', '2026_17_HOU_GB', '2026_17_PHI_SF'], 'up_spots': {'2026_11_MIA_BUF': {'BUF': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}, {'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}], 'MIA': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_11_CIN_WAS': {'CIN': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}], 'WAS': [{'label': 'After a win as an underdog', 'ats': {'w': 411, 'l': 397, 'p': 23, 'pct': 50.9, 'be': 52.4}, 'ou': {'w': 360, 'l': 397, 'p': 8, 'pct': 47.6, 'be': 52.4}}]}, '2026_11_TB_DET': {'DET': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}], 'TB': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}]}, '2026_11_JAX_NYG': {'JAX': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}, {'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Third straight road game', 'ats': {'w': 18, 'l': 19, 'p': 1, 'pct': 48.6, 'be': 52.4}, 'ou': {'w': 20, 'l': 18, 'p': 0, 'pct': 52.6, 'be': 52.4}}], 'NYG': [{'label': 'After a loss as a favorite', 'ats': {'w': 425, 'l': 382, 'p': 24, 'pct': 52.7, 'be': 52.4}, 'ou': {'w': 369, 'l': 390, 'p': 4, 'pct': 48.6, 'be': 52.4}}]}, '2026_11_ARI_KC': {'KC': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}], 'ARI': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}, {'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_12_GB_LA': {'LA': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}, {'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}], 'GB': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}, {'label': 'After a loss as a favorite', 'ats': {'w': 425, 'l': 382, 'p': 24, 'pct': 52.7, 'be': 52.4}, 'ou': {'w': 369, 'l': 390, 'p': 4, 'pct': 48.6, 'be': 52.4}}]}, '2026_11_MIN_SF': {'MIN': [{'label': 'After winning by 17+', 'ats': {'w': 308, 'l': 301, 'p': 10, 'pct': 50.6, 'be': 52.4}, 'ou': {'w': 289, 'l': 282, 'p': 7, 'pct': 50.6, 'be': 52.4}}, {'label': 'After a win as an underdog', 'ats': {'w': 411, 'l': 397, 'p': 23, 'pct': 50.9, 'be': 52.4}, 'ou': {'w': 360, 'l': 397, 'p': 8, 'pct': 47.6, 'be': 52.4}}, {'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_12_ATL_MIN': {'ATL': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}, {'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}], 'MIN': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_12_NE_LAC': {'NE': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}, {'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}]}, '2026_11_NYJ_LAC': {'NYJ': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}], 'LAC': [{'label': 'After a win as an underdog', 'ats': {'w': 411, 'l': 397, 'p': 23, 'pct': 50.9, 'be': 52.4}, 'ou': {'w': 360, 'l': 397, 'p': 8, 'pct': 47.6, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_11_PIT_PHI': {'PIT': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}, {'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_11_TEN_DAL': {'TEN': [{'label': 'After losing by 17+', 'ats': {'w': 312, 'l': 297, 'p': 10, 'pct': 51.2, 'be': 52.4}, 'ou': {'w': 275, 'l': 295, 'p': 4, 'pct': 48.2, 'be': 52.4}}]}, '2026_11_BAL_CAR': {'BAL': [{'label': 'After a loss as a favorite', 'ats': {'w': 425, 'l': 382, 'p': 24, 'pct': 52.7, 'be': 52.4}, 'ou': {'w': 369, 'l': 390, 'p': 4, 'pct': 48.6, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}], 'CAR': [{'label': 'After a win as an underdog', 'ats': {'w': 411, 'l': 397, 'p': 23, 'pct': 50.9, 'be': 52.4}, 'ou': {'w': 360, 'l': 397, 'p': 8, 'pct': 47.6, 'be': 52.4}}]}, '2026_11_IND_HOU': {'HOU': [{'label': 'After a loss as a favorite', 'ats': {'w': 425, 'l': 382, 'p': 24, 'pct': 52.7, 'be': 52.4}, 'ou': {'w': 369, 'l': 390, 'p': 4, 'pct': 48.6, 'be': 52.4}}, {'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'IND': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}, {'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_11_NO_CHI': {'NO': [{'label': 'After a loss as a favorite', 'ats': {'w': 425, 'l': 382, 'p': 24, 'pct': 52.7, 'be': 52.4}, 'ou': {'w': 369, 'l': 390, 'p': 4, 'pct': 48.6, 'be': 52.4}}]}, '2026_12_LV_CLE': {'CLE': [{'label': 'After a win as an underdog', 'ats': {'w': 411, 'l': 397, 'p': 23, 'pct': 50.9, 'be': 52.4}, 'ou': {'w': 360, 'l': 397, 'p': 8, 'pct': 47.6, 'be': 52.4}}], 'LV': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_15_ATL_WAS': {'ATL': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_12_BAL_HOU': {'BAL': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_14_BUF_GB': {'BUF': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'GB': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_17_BUF_MIA': {'BUF': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'MIA': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_13_CAR_MIN': {'CAR': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_15_CHI_BUF': {'CHI': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'BUF': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_16_CIN_IND': {'CIN': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'IND': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_16_CLE_BAL': {'CLE': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'BAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_15_DAL_LA': {'DAL': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}]}, '2026_15_DEN_LV': {'DEN': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'LV': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_DET_GB': {'DET': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'GB': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_13_GB_NO': {'GB': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'NO': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_14_HOU_WAS': {'HOU': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'WAS': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_17_HOU_GB': {'HOU': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_15_IND_TEN': {'IND': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'TEN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_16_JAX_DAL': {'JAX': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'DAL': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_13_KC_LA': {'KC': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_14_KC_CIN': {'KC': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Third straight road game', 'ats': {'w': 18, 'l': 19, 'p': 1, 'pct': 48.6, 'be': 52.4}, 'ou': {'w': 20, 'l': 18, 'p': 0, 'pct': 52.6, 'be': 52.4}}]}, '2026_17_LA_TB': {'LA': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_14_LAC_LV': {'LAC': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'LV': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_LV_KC': {'LV': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'KC': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_16_NE_NYJ': {'NE': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NYJ': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_12_NO_CIN': {'NO': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'CIN': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_15_NO_TB': {'NO': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_17_NYG_DAL': {'NYG': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'DAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_12_NYJ_MIA': {'NYJ': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'MIA': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_13_PHI_ARI': {'PHI': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}]}, '2026_18_PHI_NYG': {'PHI': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NYG': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_PIT_BAL': {'PIT': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'BAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_12_SEA_SF': {'SEA': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}, {'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}], 'SF': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_SEA_LA': {'SEA': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'LA': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_16_SF_KC': {'SF': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'KC': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_12_TEN_JAX': {'TEN': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'JAX': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_13_WAS_TEN': {'WAS': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'TEN': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_17_WAS_JAX': {'WAS': [{'label': 'Second straight road game', 'ats': {'w': 364, 'l': 365, 'p': 18, 'pct': 49.9, 'be': 52.4}, 'ou': {'w': 339, 'l': 402, 'p': 6, 'pct': 45.7, 'be': 52.4}}], 'JAX': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_16_TB_ATL': {'ATL': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'TB': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_14_TB_BAL': {'BAL': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_18_NYJ_BUF': {'BUF': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NYJ': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_14_NO_CAR': {'CAR': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NO': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_16_GB_CHI': {'CHI': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'GB': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_17_BAL_CIN': {'CIN': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'BAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}, {'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_17_IND_CLE': {'CLE': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_16_BUF_DEN': {'DEN': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_15_JAX_HOU': {'HOU': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'JAX': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_TEN_HOU': {'HOU': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'TEN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_15_NE_KC': {'KC': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_15_SF_LAC': {'LAC': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}], 'SF': [{'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_13_BUF_NE': {'NE': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'BUF': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_17_DEN_NE': {'NE': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_16_ARI_NO': {'NO': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}], 'ARI': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_14_DEN_NYJ': {'NYJ': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_14_IND_PHI': {'PHI': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}], 'IND': [{'label': 'Off a bye, on the road', 'ats': {'w': 79, 'l': 76, 'p': 3, 'pct': 51.0, 'be': 52.4}, 'ou': {'w': 69, 'l': 89, 'p': 0, 'pct': 43.7, 'be': 52.4}}]}, '2026_12_DEN_PIT': {'PIT': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_13_DAL_SEA': {'SEA': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_17_PHI_SF': {'SF': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}]}, '2026_12_CAR_TB': {'TB': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'CAR': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_DAL_WAS': {'WAS': [{'label': 'Home after two straight on the road', 'ats': {'w': 316, 'l': 331, 'p': 18, 'pct': 48.8, 'be': 52.4}, 'ou': {'w': 313, 'l': 350, 'p': 2, 'pct': 47.2, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'DAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_13_LAC_TB': {'LAC': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}], 'TB': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_16_LAC_MIA': {'LAC': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_18_LAC_DEN': {'LAC': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'DEN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_17_SEA_CAR': {'SEA': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_13_SF_NYG': {'SF': [{'label': 'West Coast team, early kickoff on the road', 'ats': {'w': 115, 'l': 106, 'p': 5, 'pct': 52.0, 'be': 52.4}, 'ou': {'w': 109, 'l': 114, 'p': 3, 'pct': 48.9, 'be': 52.4}}]}, '2026_17_DET_CHI': {'DET': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}, {'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'CHI': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_15_BAL_PIT': {'PIT': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_14_NYG_SEA': {'SEA': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_12_WAS_ARI': {'WAS': [{'label': 'Game after Monday night', 'ats': {'w': 185, 'l': 183, 'p': 6, 'pct': 50.3, 'be': 52.4}, 'ou': {'w': 174, 'l': 192, 'p': 2, 'pct': 47.5, 'be': 52.4}}]}, '2026_18_SF_ARI': {'ARI': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'SF': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_17_NO_ATL': {'ATL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NO': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_ATL_CAR': {'ATL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'CAR': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_CHI_MIN': {'CHI': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'MIN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_CLE_CIN': {'CIN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'CLE': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_12_PHI_DAL': {'DAL': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'PHI': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}, {'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_15_DET_MIN': {'DET': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'MIN': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_JAX_IND': {'IND': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'JAX': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_17_KC_LAC': {'KC': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'LAC': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_14_LA_SF': {'LA': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'SF': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_MIA_NE': {'MIA': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'NE': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_18_TB_NO': {'NO': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}], 'TB': [{'label': 'Second meeting with a division rival', 'ats': {'w': 470, 'l': 470, 'p': 20, 'pct': 50.0, 'be': 52.4}, 'ou': {'w': 253, 'l': 222, 'p': 5, 'pct': 53.3, 'be': 52.4}}]}, '2026_12_CHI_DET': {'CHI': [{'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_16_HOU_PHI': {'HOU': [{'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_12_KC_BUF': {'KC': [{'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}, '2026_14_MIN_NE': {'MIN': [{'label': 'Thursday road team', 'ats': {'w': 74, 'l': 80, 'p': 6, 'pct': 48.1, 'be': 52.4}, 'ou': {'w': 81, 'l': 79, 'p': 0, 'pct': 50.6, 'be': 52.4}}]}}, 'facts': {'DEN': {'rec': '7-2', 'woe': 2.2, 'one': '6-0', 'tom': 7, 'rz': '62.5%', 'rz_rank': 18, 'h1': -0.3, 'h1_rank': 16, 'h2': 1.3, 'h2_rank': 14, 'coach': 'Sean Payton', 'coach_n': 157, 'coach_ats': {'w': 90, 'l': 65, 'p': 2, 'pct': 58.1, 'be': 52.4}, 'o_all': {'rank': 16, 'epa': -0.004, 'ypp': 4.9, 'n': 517}, 'o_pass': {'rank': 19, 'epa': 0.019, 'ypp': 5.6, 'n': 302}, 'o_run': {'rank': 20, 'epa': -0.037, 'ypp': 3.9, 'n': 215}, 'd_all': {'rank': 14, 'epa': 0.002, 'ypp': 5.3, 'n': 608}, 'd_pass': {'rank': 10, 'epa': -0.016, 'ypp': 5.7, 'n': 365}, 'd_run': {'rank': 28, 'epa': 0.029, 'ypp': 4.6, 'n': 243}, 'home_edge': 4.2}, 'CLE': {'rec': '6-4', 'woe': 1.9, 'one': '6-2', 'tom': -1, 'rz': '51.4%', 'rz_rank': 28, 'h1': -3.8, 'h1_rank': 26, 'h2': 0.7, 'h2_rank': 18, 'coach': 'Todd Monken', 'coach_n': 10, 'coach_ats': {'w': 7, 'l': 3, 'p': 0, 'pct': 70.0, 'be': 52.4}, 'o_all': {'rank': 23, 'epa': -0.05, 'ypp': 5.2, 'n': 613}, 'o_pass': {'rank': 22, 'epa': -0.016, 'ypp': 5.9, 'n': 366}, 'o_run': {'rank': 26, 'epa': -0.099, 'ypp': 4.0, 'n': 247}, 'd_all': {'rank': 10, 'epa': -0.013, 'ypp': 5.2, 'n': 630}, 'd_pass': {'rank': 8, 'epa': -0.028, 'ypp': 5.6, 'n': 361}, 'd_run': {'rank': 24, 'epa': 0.007, 'ypp': 4.7, 'n': 269}, 'home_edge': 4.3}, 'BUF': {'rec': '8-1', 'woe': 1.7, 'one': '4-1', 'tom': 2, 'rz': '70.2%', 'rz_rank': 6, 'h1': 5.1, 'h1_rank': 3, 'h2': 4.3, 'h2_rank': 3, 'coach': 'Joe Brady', 'coach_n': 9, 'coach_ats': {'w': 7, 'l': 2, 'p': 0, 'pct': 77.8, 'be': 52.4}, 'o_all': {'rank': 4, 'epa': 0.135, 'ypp': 6.3, 'n': 555}, 'o_pass': {'rank': 5, 'epa': 0.154, 'ypp': 7.6, 'n': 279}, 'o_run': {'rank': 1, 'epa': 0.116, 'ypp': 5.0, 'n': 276}, 'd_all': {'rank': 12, 'epa': -0.01, 'ypp': 5.3, 'n': 572}, 'd_pass': {'rank': 13, 'epa': 0.001, 'ypp': 6.0, 'n': 363}, 'd_run': {'rank': 18, 'epa': -0.031, 'ypp': 4.0, 'n': 209}, 'home_edge': 2.5}, 'SF': {'rec': '8-1', 'woe': 1.7, 'one': '4-0', 'tom': 5, 'rz': '83.3%', 'rz_rank': 1, 'h1': 6.8, 'h1_rank': 2, 'h2': 2.7, 'h2_rank': 8, 'coach': 'Kyle Shanahan', 'coach_n': 158, 'coach_ats': {'w': 81, 'l': 76, 'p': 1, 'pct': 51.6, 'be': 52.4}, 'o_all': {'rank': 1, 'epa': 0.195, 'ypp': 6.8, 'n': 530}, 'o_pass': {'rank': 1, 'epa': 0.274, 'ypp': 8.3, 'n': 277}, 'o_run': {'rank': 2, 'epa': 0.109, 'ypp': 5.2, 'n': 253}, 'd_all': {'rank': 9, 'epa': -0.018, 'ypp': 5.0, 'n': 558}, 'd_pass': {'rank': 17, 'epa': 0.035, 'ypp': 5.9, 'n': 344}, 'd_run': {'rank': 1, 'epa': -0.105, 'ypp': 3.5, 'n': 214}, 'home_edge': 1.1}, 'DET': {'rec': '7-2', 'woe': 1.2, 'one': '4-1', 'tom': 2, 'rz': '66.7%', 'rz_rank': 10, 'h1': 3.7, 'h1_rank': 7, 'h2': 2.7, 'h2_rank': 9, 'coach': 'Dan Campbell', 'coach_n': 94, 'coach_ats': {'w': 58, 'l': 33, 'p': 3, 'pct': 63.7, 'be': 52.4}, 'o_all': {'rank': 6, 'epa': 0.107, 'ypp': 6.1, 'n': 582}, 'o_pass': {'rank': 4, 'epa': 0.191, 'ypp': 7.1, 'n': 327}, 'o_run': {'rank': 13, 'epa': 0.0, 'ypp': 4.8, 'n': 255}, 'd_all': {'rank': 24, 'epa': 0.041, 'ypp': 5.2, 'n': 573}, 'd_pass': {'rank': 24, 'epa': 0.093, 'ypp': 5.8, 'n': 374}, 'd_run': {'rank': 9, 'epa': -0.057, 'ypp': 4.1, 'n': 199}, 'home_edge': 3.9}, 'CHI': {'rec': '7-2', 'woe': 1.1, 'one': '3-1', 'tom': -8, 'rz': '57.4%', 'rz_rank': 24, 'h1': 5.0, 'h1_rank': 4, 'h2': 1.3, 'h2_rank': 13, 'coach': 'Ben Johnson', 'coach_n': 26, 'coach_ats': {'w': 15, 'l': 10, 'p': 1, 'pct': 60.0, 'be': 52.4}, 'o_all': {'rank': 10, 'epa': 0.039, 'ypp': 5.5, 'n': 624}, 'o_pass': {'rank': 14, 'epa': 0.059, 'ypp': 6.6, 'n': 331}, 'o_run': {'rank': 9, 'epa': 0.016, 'ypp': 4.4, 'n': 293}, 'd_all': {'rank': 8, 'epa': -0.023, 'ypp': 5.9, 'n': 473}, 'd_pass': {'rank': 9, 'epa': -0.02, 'ypp': 6.9, 'n': 289}, 'd_run': {'rank': 20, 'epa': -0.028, 'ypp': 4.5, 'n': 184}, 'home_edge': 4.6}, 'PIT': {'rec': '6-3', 'woe': 1.1, 'one': '4-1', 'tom': 3, 'rz': '55.9%', 'rz_rank': 25, 'h1': -2.4, 'h1_rank': 22, 'h2': 3.4, 'h2_rank': 7, 'coach': 'Mike McCarthy', 'coach_n': 137, 'coach_ats': {'w': 70, 'l': 64, 'p': 3, 'pct': 52.2, 'be': 52.4}, 'o_all': {'rank': 18, 'epa': -0.011, 'ypp': 5.2, 'n': 552}, 'o_pass': {'rank': 24, 'epa': -0.079, 'ypp': 5.2, 'n': 346}, 'o_run': {'rank': 3, 'epa': 0.103, 'ypp': 5.1, 'n': 206}, 'd_all': {'rank': 11, 'epa': -0.012, 'ypp': 5.3, 'n': 549}, 'd_pass': {'rank': 14, 'epa': 0.021, 'ypp': 6.2, 'n': 349}, 'd_run': {'rank': 6, 'epa': -0.07, 'ypp': 3.8, 'n': 200}, 'home_edge': 2.8}, 'GB': {'rec': '6-4', 'woe': 0.9, 'one': '3-1', 'tom': 5, 'rz': '59.1%', 'rz_rank': 21, 'h1': 2.6, 'h1_rank': 11, 'h2': -2.4, 'h2_rank': 25, 'coach': 'Matt LaFleur', 'coach_n': 127, 'coach_ats': {'w': 68, 'l': 57, 'p': 2, 'pct': 54.4, 'be': 52.4}, 'o_all': {'rank': 14, 'epa': 0.012, 'ypp': 5.5, 'n': 609}, 'o_pass': {'rank': 9, 'epa': 0.121, 'ypp': 6.8, 'n': 396}, 'o_run': {'rank': 32, 'epa': -0.192, 'ypp': 3.2, 'n': 213}, 'd_all': {'rank': 7, 'epa': -0.039, 'ypp': 4.9, 'n': 656}, 'd_pass': {'rank': 7, 'epa': -0.038, 'ypp': 5.4, 'n': 388}, 'd_run': {'rank': 12, 'epa': -0.041, 'ypp': 4.2, 'n': 268}, 'home_edge': 2.5}, 'MIN': {'rec': '7-2', 'woe': 0.8, 'one': '4-1', 'tom': 8, 'rz': '53.8%', 'rz_rank': 26, 'h1': 2.1, 'h1_rank': 12, 'h2': 3.4, 'h2_rank': 6, 'coach': "Kevin O'Connell", 'coach_n': 77, 'coach_ats': {'w': 39, 'l': 33, 'p': 5, 'pct': 54.2, 'be': 52.4}, 'o_all': {'rank': 29, 'epa': -0.1, 'ypp': 4.8, 'n': 511}, 'o_pass': {'rank': 26, 'epa': -0.089, 'ypp': 5.2, 'n': 282}, 'o_run': {'rank': 29, 'epa': -0.113, 'ypp': 4.3, 'n': 229}, 'd_all': {'rank': 1, 'epa': -0.128, 'ypp': 4.6, 'n': 535}, 'd_pass': {'rank': 1, 'epa': -0.164, 'ypp': 4.9, 'n': 299}, 'd_run': {'rank': 5, 'epa': -0.082, 'ypp': 4.3, 'n': 236}, 'home_edge': 2.1}, 'NYG': {'rec': '5-3-1', 'woe': 0.8, 'one': '4-2', 'tom': 0, 'rz': '64.5%', 'rz_rank': 15, 'h1': -0.8, 'h1_rank': 18, 'h2': 0.9, 'h2_rank': 17, 'coach': 'John Harbaugh', 'coach_n': 174, 'coach_ats': {'w': 91, 'l': 80, 'p': 3, 'pct': 53.2, 'be': 52.4}, 'o_all': {'rank': 12, 'epa': 0.017, 'ypp': 5.3, 'n': 582}, 'o_pass': {'rank': 13, 'epa': 0.06, 'ypp': 6.2, 'n': 330}, 'o_run': {'rank': 21, 'epa': -0.039, 'ypp': 4.1, 'n': 252}, 'd_all': {'rank': 13, 'epa': -0.003, 'ypp': 5.1, 'n': 540}, 'd_pass': {'rank': 11, 'epa': -0.015, 'ypp': 5.5, 'n': 303}, 'd_run': {'rank': 25, 'epa': 0.011, 'ypp': 4.7, 'n': 237}, 'home_edge': 1.9}, 'CIN': {'rec': '7-2', 'woe': 0.7, 'one': '3-2', 'tom': 4, 'rz': '70.2%', 'rz_rank': 7, 'h1': 5.0, 'h1_rank': 5, 'h2': 3.7, 'h2_rank': 5, 'coach': 'Zac Taylor', 'coach_n': 125, 'coach_ats': {'w': 67, 'l': 54, 'p': 4, 'pct': 55.4, 'be': 52.4}, 'o_all': {'rank': 2, 'epa': 0.158, 'ypp': 6.3, 'n': 547}, 'o_pass': {'rank': 3, 'epa': 0.26, 'ypp': 7.6, 'n': 355}, 'o_run': {'rank': 17, 'epa': -0.03, 'ypp': 4.0, 'n': 192}, 'd_all': {'rank': 15, 'epa': 0.004, 'ypp': 5.6, 'n': 550}, 'd_pass': {'rank': 12, 'epa': -0.013, 'ypp': 5.9, 'n': 331}, 'd_run': {'rank': 27, 'epa': 0.029, 'ypp': 5.1, 'n': 219}, 'home_edge': 0.7}, 'NE': {'rec': '5-5', 'woe': 0.5, 'one': '3-2', 'tom': -10, 'rz': '66.7%', 'rz_rank': 11, 'h1': -1.6, 'h1_rank': 20, 'h2': -0.5, 'h2_rank': 20, 'coach': 'Mike Vrabel', 'coach_n': 126, 'coach_ats': {'w': 64, 'l': 57, 'p': 5, 'pct': 52.9, 'be': 52.4}, 'o_all': {'rank': 13, 'epa': 0.016, 'ypp': 5.8, 'n': 601}, 'o_pass': {'rank': 15, 'epa': 0.052, 'ypp': 7.0, 'n': 335}, 'o_run': {'rank': 16, 'epa': -0.029, 'ypp': 4.3, 'n': 266}, 'd_all': {'rank': 25, 'epa': 0.06, 'ypp': 5.8, 'n': 600}, 'd_pass': {'rank': 26, 'epa': 0.125, 'ypp': 6.9, 'n': 346}, 'd_run': {'rank': 21, 'epa': -0.027, 'ypp': 4.2, 'n': 254}, 'home_edge': 1.5}, 'ARI': {'rec': '3-7', 'woe': 0.4, 'one': '2-1', 'tom': -3, 'rz': '45.9%', 'rz_rank': 32, 'h1': -6.4, 'h1_rank': 31, 'h2': -4.4, 'h2_rank': 29, 'coach': 'Mike LaFleur', 'coach_n': 10, 'coach_ats': {'w': 4, 'l': 6, 'p': 0, 'pct': 40.0, 'be': 52.4}, 'o_all': {'rank': 24, 'epa': -0.053, 'ypp': 4.7, 'n': 634}, 'o_pass': {'rank': 23, 'epa': -0.059, 'ypp': 5.1, 'n': 400}, 'o_run': {'rank': 22, 'epa': -0.044, 'ypp': 4.1, 'n': 234}, 'd_all': {'rank': 31, 'epa': 0.092, 'ypp': 5.7, 'n': 607}, 'd_pass': {'rank': 32, 'epa': 0.218, 'ypp': 7.1, 'n': 307}, 'd_run': {'rank': 13, 'epa': -0.037, 'ypp': 4.4, 'n': 300}, 'home_edge': -1.1}, 'KC': {'rec': '7-2', 'woe': 0.4, 'one': '2-1', 'tom': 8, 'rz': '72.5%', 'rz_rank': 4, 'h1': 3.4, 'h1_rank': 10, 'h2': 5.2, 'h2_rank': 2, 'coach': 'Andy Reid', 'coach_n': 174, 'coach_ats': {'w': 85, 'l': 84, 'p': 5, 'pct': 50.3, 'be': 52.4}, 'o_all': {'rank': 5, 'epa': 0.124, 'ypp': 6.5, 'n': 548}, 'o_pass': {'rank': 6, 'epa': 0.154, 'ypp': 7.4, 'n': 311}, 'o_run': {'rank': 4, 'epa': 0.085, 'ypp': 5.2, 'n': 237}, 'd_all': {'rank': 6, 'epa': -0.081, 'ypp': 5.0, 'n': 568}, 'd_pass': {'rank': 6, 'epa': -0.08, 'ypp': 5.8, 'n': 335}, 'd_run': {'rank': 4, 'epa': -0.083, 'ypp': 3.8, 'n': 233}, 'home_edge': 2.1}, 'BAL': {'rec': '4-6', 'woe': 0.2, 'one': '3-3', 'tom': -4, 'rz': '63.9%', 'rz_rank': 16, 'h1': 3.5, 'h1_rank': 8, 'h2': -9.2, 'h2_rank': 31, 'coach': 'Jesse Minter', 'coach_n': 10, 'coach_ats': {'w': 2, 'l': 7, 'p': 1, 'pct': 22.2, 'be': 52.4}, 'o_all': {'rank': 15, 'epa': -0.004, 'ypp': 5.6, 'n': 593}, 'o_pass': {'rank': 18, 'epa': 0.02, 'ypp': 6.4, 'n': 319}, 'o_run': {'rank': 18, 'epa': -0.031, 'ypp': 4.6, 'n': 274}, 'd_all': {'rank': 19, 'epa': 0.019, 'ypp': 5.4, 'n': 607}, 'd_pass': {'rank': 22, 'epa': 0.074, 'ypp': 6.7, 'n': 327}, 'd_run': {'rank': 10, 'epa': -0.045, 'ypp': 3.8, 'n': 280}, 'home_edge': -0.3}, 'CAR': {'rec': '4-5', 'woe': -0.1, 'one': '2-3', 'tom': 5, 'rz': '67.6%', 'rz_rank': 9, 'h1': -3.3, 'h1_rank': 24, 'h2': 1.4, 'h2_rank': 12, 'coach': 'Dave Canales', 'coach_n': 43, 'coach_ats': {'w': 22, 'l': 21, 'p': 0, 'pct': 51.2, 'be': 52.4}, 'o_all': {'rank': 11, 'epa': 0.029, 'ypp': 5.4, 'n': 589}, 'o_pass': {'rank': 16, 'epa': 0.035, 'ypp': 6.1, 'n': 372}, 'o_run': {'rank': 8, 'epa': 0.017, 'ypp': 4.2, 'n': 217}, 'd_all': {'rank': 17, 'epa': 0.007, 'ypp': 5.2, 'n': 579}, 'd_pass': {'rank': 18, 'epa': 0.036, 'ypp': 5.7, 'n': 330}, 'd_run': {'rank': 19, 'epa': -0.031, 'ypp': 4.5, 'n': 249}, 'home_edge': 1.7}, 'LV': {'rec': '4-6', 'woe': -0.2, 'one': '2-3', 'tom': 3, 'rz': '58.7%', 'rz_rank': 22, 'h1': -3.3, 'h1_rank': 25, 'h2': -0.5, 'h2_rank': 21, 'coach': 'Klint Kubiak', 'coach_n': 10, 'coach_ats': {'w': 6, 'l': 4, 'p': 0, 'pct': 60.0, 'be': 52.4}, 'o_all': {'rank': 21, 'epa': -0.023, 'ypp': 5.2, 'n': 608}, 'o_pass': {'rank': 11, 'epa': 0.081, 'ypp': 6.6, 'n': 372}, 'o_run': {'rank': 31, 'epa': -0.187, 'ypp': 3.1, 'n': 236}, 'd_all': {'rank': 30, 'epa': 0.087, 'ypp': 6.3, 'n': 610}, 'd_pass': {'rank': 29, 'epa': 0.164, 'ypp': 7.3, 'n': 319}, 'd_run': {'rank': 23, 'epa': 0.003, 'ypp': 5.3, 'n': 291}, 'home_edge': 2.7}, 'JAX': {'rec': '7-2', 'woe': -0.3, 'one': '2-2', 'tom': 9, 'rz': '73.2%', 'rz_rank': 3, 'h1': 10.0, 'h1_rank': 1, 'h2': 3.9, 'h2_rank': 4, 'coach': 'Liam Coen', 'coach_n': 26, 'coach_ats': {'w': 18, 'l': 8, 'p': 0, 'pct': 69.2, 'be': 52.4}, 'o_all': {'rank': 3, 'epa': 0.141, 'ypp': 6.1, 'n': 534}, 'o_pass': {'rank': 2, 'epa': 0.272, 'ypp': 7.9, 'n': 275}, 'o_run': {'rank': 12, 'epa': 0.002, 'ypp': 4.1, 'n': 259}, 'd_all': {'rank': 4, 'epa': -0.091, 'ypp': 5.5, 'n': 523}, 'd_pass': {'rank': 5, 'epa': -0.094, 'ypp': 6.5, 'n': 317}, 'd_run': {'rank': 3, 'epa': -0.086, 'ypp': 4.0, 'n': 206}, 'home_edge': 3.2}, 'WAS': {'rec': '3-5-1', 'woe': -0.3, 'one': '2-3', 'tom': 7, 'rz': '66.7%', 'rz_rank': 12, 'h1': -0.8, 'h1_rank': 19, 'h2': -2.2, 'h2_rank': 24, 'coach': 'Dan Quinn', 'coach_n': 112, 'coach_ats': {'w': 53, 'l': 59, 'p': 0, 'pct': 47.3, 'be': 52.4}, 'o_all': {'rank': 19, 'epa': -0.012, 'ypp': 5.3, 'n': 556}, 'o_pass': {'rank': 21, 'epa': -0.008, 'ypp': 5.9, 'n': 319}, 'o_run': {'rank': 15, 'epa': -0.017, 'ypp': 4.5, 'n': 237}, 'd_all': {'rank': 22, 'epa': 0.034, 'ypp': 5.4, 'n': 579}, 'd_pass': {'rank': 15, 'epa': 0.031, 'ypp': 6.3, 'n': 349}, 'd_run': {'rank': 31, 'epa': 0.039, 'ypp': 4.1, 'n': 230}, 'home_edge': 0.6}, 'SEA': {'rec': '6-4', 'woe': -0.4, 'one': '3-3', 'tom': -7, 'rz': '61.0%', 'rz_rank': 19, 'h1': -0.5, 'h1_rank': 17, 'h2': 5.6, 'h2_rank': 1, 'coach': 'Mike Macdonald', 'coach_n': 44, 'coach_ats': {'w': 22, 'l': 20, 'p': 2, 'pct': 52.4, 'be': 52.4}, 'o_all': {'rank': 20, 'epa': -0.015, 'ypp': 5.5, 'n': 611}, 'o_pass': {'rank': 12, 'epa': 0.067, 'ypp': 6.7, 'n': 327}, 'o_run': {'rank': 28, 'epa': -0.109, 'ypp': 4.1, 'n': 284}, 'd_all': {'rank': 5, 'epa': -0.082, 'ypp': 4.0, 'n': 585}, 'd_pass': {'rank': 4, 'epa': -0.099, 'ypp': 4.5, 'n': 334}, 'd_run': {'rank': 8, 'epa': -0.059, 'ypp': 3.5, 'n': 251}, 'home_edge': -0.3}, 'IND': {'rec': '3-7', 'woe': -0.5, 'one': '2-4', 'tom': -12, 'rz': '63.3%', 'rz_rank': 17, 'h1': -2.3, 'h1_rank': 21, 'h2': -3.7, 'h2_rank': 27, 'coach': 'Shane Steichen', 'coach_n': 61, 'coach_ats': {'w': 32, 'l': 29, 'p': 0, 'pct': 52.5, 'be': 52.4}, 'o_all': {'rank': 30, 'epa': -0.106, 'ypp': 4.6, 'n': 628}, 'o_pass': {'rank': 30, 'epa': -0.194, 'ypp': 4.7, 'n': 351}, 'o_run': {'rank': 11, 'epa': 0.007, 'ypp': 4.4, 'n': 277}, 'd_all': {'rank': 23, 'epa': 0.038, 'ypp': 6.1, 'n': 586}, 'd_pass': {'rank': 19, 'epa': 0.036, 'ypp': 7.0, 'n': 319}, 'd_run': {'rank': 32, 'epa': 0.04, 'ypp': 4.9, 'n': 267}, 'home_edge': 2.3}, 'PHI': {'rec': '2-7', 'woe': -0.5, 'one': '2-3', 'tom': -6, 'rz': '72.0%', 'rz_rank': 5, 'h1': 1.4, 'h1_rank': 13, 'h2': -9.6, 'h2_rank': 32, 'coach': 'Nick Sirianni', 'coach_n': 94, 'coach_ats': {'w': 45, 'l': 46, 'p': 3, 'pct': 49.5, 'be': 52.4}, 'o_all': {'rank': 31, 'epa': -0.106, 'ypp': 4.3, 'n': 544}, 'o_pass': {'rank': 28, 'epa': -0.121, 'ypp': 4.7, 'n': 332}, 'o_run': {'rank': 25, 'epa': -0.082, 'ypp': 3.8, 'n': 212}, 'd_all': {'rank': 28, 'epa': 0.078, 'ypp': 5.4, 'n': 590}, 'd_pass': {'rank': 25, 'epa': 0.114, 'ypp': 6.4, 'n': 318}, 'd_run': {'rank': 29, 'epa': 0.036, 'ypp': 4.2, 'n': 272}, 'home_edge': 0.0}, 'ATL': {'rec': '3-7', 'woe': -0.6, 'one': '0-3', 'tom': -7, 'rz': '58.3%', 'rz_rank': 23, 'h1': -4.1, 'h1_rank': 28, 'h2': -0.9, 'h2_rank': 22, 'coach': 'Kevin Stefanski', 'coach_n': 111, 'coach_ats': {'w': 45, 'l': 64, 'p': 2, 'pct': 41.3, 'be': 52.4}, 'o_all': {'rank': 27, 'epa': -0.08, 'ypp': 5.6, 'n': 591}, 'o_pass': {'rank': 29, 'epa': -0.154, 'ypp': 6.1, 'n': 320}, 'o_run': {'rank': 10, 'epa': 0.007, 'ypp': 5.0, 'n': 271}, 'd_all': {'rank': 20, 'epa': 0.029, 'ypp': 5.7, 'n': 636}, 'd_pass': {'rank': 23, 'epa': 0.074, 'ypp': 6.4, 'n': 374}, 'd_run': {'rank': 15, 'epa': -0.036, 'ypp': 4.6, 'n': 262}, 'home_edge': 1.1}, 'LA': {'rec': '6-4', 'woe': -0.6, 'one': '2-3', 'tom': -3, 'rz': '66.0%', 'rz_rank': 13, 'h1': 3.8, 'h1_rank': 6, 'h2': 2.6, 'h2_rank': 10, 'coach': 'Sean McVay', 'coach_n': 159, 'coach_ats': {'w': 87, 'l': 68, 'p': 4, 'pct': 56.1, 'be': 52.4}, 'o_all': {'rank': 8, 'epa': 0.071, 'ypp': 5.8, 'n': 666}, 'o_pass': {'rank': 10, 'epa': 0.093, 'ypp': 6.5, 'n': 388}, 'o_run': {'rank': 5, 'epa': 0.04, 'ypp': 4.8, 'n': 278}, 'd_all': {'rank': 3, 'epa': -0.112, 'ypp': 4.9, 'n': 582}, 'd_pass': {'rank': 3, 'epa': -0.123, 'ypp': 5.6, 'n': 335}, 'd_run': {'rank': 2, 'epa': -0.096, 'ypp': 3.9, 'n': 247}, 'home_edge': 0.6}, 'NO': {'rec': '3-6', 'woe': -0.7, 'one': '3-4', 'tom': -6, 'rz': '69.7%', 'rz_rank': 8, 'h1': -4.9, 'h1_rank': 29, 'h2': 1.1, 'h2_rank': 15, 'coach': 'Kellen Moore', 'coach_n': 26, 'coach_ats': {'w': 12, 'l': 14, 'p': 0, 'pct': 46.2, 'be': 52.4}, 'o_all': {'rank': 22, 'epa': -0.041, 'ypp': 4.8, 'n': 590}, 'o_pass': {'rank': 20, 'epa': -0.002, 'ypp': 5.5, 'n': 366}, 'o_run': {'rank': 27, 'epa': -0.104, 'ypp': 3.6, 'n': 224}, 'd_all': {'rank': 21, 'epa': 0.034, 'ypp': 5.7, 'n': 573}, 'd_pass': {'rank': 21, 'epa': 0.047, 'ypp': 6.6, 'n': 315}, 'd_run': {'rank': 26, 'epa': 0.018, 'ypp': 4.6, 'n': 258}, 'home_edge': 0.4}, 'DAL': {'rec': '4-6', 'woe': -1.1, 'one': '2-5', 'tom': -3, 'rz': '73.3%', 'rz_rank': 2, 'h1': -0.2, 'h1_rank': 15, 'h2': 0.9, 'h2_rank': 16, 'coach': 'Brian Schottenheimer', 'coach_n': 27, 'coach_ats': {'w': 10, 'l': 16, 'p': 1, 'pct': 38.5, 'be': 52.4}, 'o_all': {'rank': 7, 'epa': 0.097, 'ypp': 5.6, 'n': 662}, 'o_pass': {'rank': 7, 'epa': 0.137, 'ypp': 6.5, 'n': 406}, 'o_run': {'rank': 6, 'epa': 0.034, 'ypp': 4.0, 'n': 256}, 'd_all': {'rank': 32, 'epa': 0.119, 'ypp': 6.3, 'n': 630}, 'd_pass': {'rank': 30, 'epa': 0.189, 'ypp': 7.0, 'n': 342}, 'd_run': {'rank': 30, 'epa': 0.036, 'ypp': 5.4, 'n': 288}, 'home_edge': 1.8}, 'LAC': {'rec': '1-8', 'woe': -1.1, 'one': '1-3', 'tom': -5, 'rz': '50.0%', 'rz_rank': 29, 'h1': -6.1, 'h1_rank': 30, 'h2': -4.4, 'h2_rank': 28, 'coach': 'Jim Harbaugh', 'coach_n': 43, 'coach_ats': {'w': 23, 'l': 19, 'p': 1, 'pct': 54.8, 'be': 52.4}, 'o_all': {'rank': 32, 'epa': -0.176, 'ypp': 4.8, 'n': 551}, 'o_pass': {'rank': 32, 'epa': -0.203, 'ypp': 5.3, 'n': 293}, 'o_run': {'rank': 30, 'epa': -0.145, 'ypp': 4.2, 'n': 258}, 'd_all': {'rank': 18, 'epa': 0.009, 'ypp': 5.8, 'n': 538}, 'd_pass': {'rank': 20, 'epa': 0.046, 'ypp': 7.1, 'n': 296}, 'd_run': {'rank': 14, 'epa': -0.036, 'ypp': 4.2, 'n': 242}, 'home_edge': 0.4}, 'MIA': {'rec': '1-8', 'woe': -1.5, 'one': '1-4', 'tom': -2, 'rz': '53.6%', 'rz_rank': 27, 'h1': -3.9, 'h1_rank': 27, 'h2': -4.6, 'h2_rank': 30, 'coach': 'Jeff Hafley', 'coach_n': 9, 'coach_ats': {'w': 4, 'l': 4, 'p': 1, 'pct': 50.0, 'be': 52.4}, 'o_all': {'rank': 25, 'epa': -0.062, 'ypp': 5.0, 'n': 509}, 'o_pass': {'rank': 25, 'epa': -0.086, 'ypp': 5.7, 'n': 270}, 'o_run': {'rank': 19, 'epa': -0.035, 'ypp': 4.3, 'n': 239}, 'd_all': {'rank': 27, 'epa': 0.067, 'ypp': 5.7, 'n': 509}, 'd_pass': {'rank': 28, 'epa': 0.163, 'ypp': 7.1, 'n': 257}, 'd_run': {'rank': 17, 'epa': -0.031, 'ypp': 4.3, 'n': 252}, 'home_edge': 4.5}, 'NYJ': {'rec': '2-8', 'woe': -1.5, 'one': '1-5', 'tom': 1, 'rz': '47.2%', 'rz_rank': 31, 'h1': -3.0, 'h1_rank': 23, 'h2': -2.7, 'h2_rank': 26, 'coach': 'Aaron Glenn', 'coach_n': 27, 'coach_ats': {'w': 11, 'l': 15, 'p': 1, 'pct': 42.3, 'be': 52.4}, 'o_all': {'rank': 17, 'epa': -0.009, 'ypp': 5.4, 'n': 593}, 'o_pass': {'rank': 17, 'epa': 0.028, 'ypp': 6.1, 'n': 346}, 'o_run': {'rank': 23, 'epa': -0.061, 'ypp': 4.3, 'n': 247}, 'd_all': {'rank': 26, 'epa': 0.066, 'ypp': 5.4, 'n': 614}, 'd_pass': {'rank': 27, 'epa': 0.132, 'ypp': 6.3, 'n': 314}, 'd_run': {'rank': 22, 'epa': -0.003, 'ypp': 4.6, 'n': 300}, 'home_edge': 2.4}, 'TEN': {'rec': '1-8', 'woe': -1.7, 'one': '1-5', 'tom': -1, 'rz': '59.3%', 'rz_rank': 20, 'h1': -7.7, 'h1_rank': 32, 'h2': 0.4, 'h2_rank': 19, 'coach': 'Robert Saleh', 'coach_n': 77, 'coach_ats': {'w': 30, 'l': 46, 'p': 1, 'pct': 39.5, 'be': 52.4}, 'o_all': {'rank': 26, 'epa': -0.064, 'ypp': 4.9, 'n': 509}, 'o_pass': {'rank': 27, 'epa': -0.099, 'ypp': 5.3, 'n': 303}, 'o_run': {'rank': 14, 'epa': -0.014, 'ypp': 4.4, 'n': 206}, 'd_all': {'rank': 29, 'epa': 0.087, 'ypp': 5.9, 'n': 594}, 'd_pass': {'rank': 31, 'epa': 0.191, 'ypp': 7.3, 'n': 327}, 'd_run': {'rank': 11, 'epa': -0.041, 'ypp': 4.2, 'n': 267}, 'home_edge': 2.4}, 'HOU': {'rec': '3-6', 'woe': -1.8, 'one': '1-5', 'tom': 4, 'rz': '65.8%', 'rz_rank': 14, 'h1': 3.4, 'h1_rank': 9, 'h2': -1.2, 'h2_rank': 23, 'coach': 'DeMeco Ryans', 'coach_n': 60, 'coach_ats': {'w': 28, 'l': 31, 'p': 1, 'pct': 47.5, 'be': 52.4}, 'o_all': {'rank': 9, 'epa': 0.048, 'ypp': 5.7, 'n': 552}, 'o_pass': {'rank': 8, 'epa': 0.128, 'ypp': 7.0, 'n': 337}, 'o_run': {'rank': 24, 'epa': -0.076, 'ypp': 3.7, 'n': 215}, 'd_all': {'rank': 16, 'epa': 0.006, 'ypp': 5.3, 'n': 578}, 'd_pass': {'rank': 16, 'epa': 0.032, 'ypp': 6.2, 'n': 350}, 'd_run': {'rank': 16, 'epa': -0.034, 'ypp': 4.1, 'n': 228}, 'home_edge': -0.2}, 'TB': {'rec': '3-6', 'woe': -2.2, 'one': '1-6', 'tom': 5, 'rz': '48.6%', 'rz_rank': 30, 'h1': 1.2, 'h1_rank': 14, 'h2': 2.2, 'h2_rank': 11, 'coach': 'Todd Bowles', 'coach_n': 125, 'coach_ats': {'w': 54, 'l': 67, 'p': 4, 'pct': 44.6, 'be': 52.4}, 'o_all': {'rank': 28, 'epa': -0.081, 'ypp': 5.0, 'n': 556}, 'o_pass': {'rank': 31, 'epa': -0.2, 'ypp': 4.8, 'n': 267}, 'o_run': {'rank': 7, 'epa': 0.029, 'ypp': 5.1, 'n': 289}, 'd_all': {'rank': 2, 'epa': -0.123, 'ypp': 5.2, 'n': 515}, 'd_pass': {'rank': 2, 'epa': -0.155, 'ypp': 6.0, 'n': 323}, 'd_run': {'rank': 7, 'epa': -0.068, 'ypp': 3.8, 'n': 192}, 'home_edge': 1.1}}, 'lg_rz': 63, 'luck_ats': {'w': 246, 'l': 259, 'p': 14, 'pct': 48.7, 'be': 52.4}, 'unluck_ats': {'w': 255, 'l': 242, 'p': 15, 'pct': 51.3, 'be': 52.4}}
 TEAMS {'n': 288, 'seasons': '2017–2025', 'model': 1.24, 'pace': 1.42, 'half': 1.3, 'cover': 86} home edge 2.11 weights [ 0.65  0.58 -0.07]
-   BUF 8-1 13.6 12-15 rating 6.8 div 0.991 playoffs 0.999 1 seed 0.425 sos 20
-   SF 8-1 13.3 11-15 rating 5.4 div 0.894 playoffs 0.983 1 seed 0.553 sos 19
-   CIN 7-2 12.9 11-15 rating 6.6 div 0.872 playoffs 0.994 1 seed 0.217 sos 32
-   JAX 7-2 12.6 11-14 rating 6.9 div 0.987 playoffs 0.995 1 seed 0.163 sos 28
-   DEN 7-2 12.0 10-14 rating 3.0 div 0.506 playoffs 0.973 1 seed 0.094 sos 31
-   KC 7-2 12.0 10-14 rating 5.6 div 0.491 playoffs 0.976 1 seed 0.092 sos 5
-   DET 7-2 11.8 10-14 rating 3.8 div 0.359 playoffs 0.897 1 seed 0.149 sos 16
-   MIN 7-2 11.8 10-14 rating 3.4 div 0.355 playoffs 0.907 1 seed 0.172 sos 14
+   BUF 8-1 13.6 12-15 rating 6.7 div 0.991 playoffs 0.999 1 seed 0.424 sos 20
+   SF 8-1 13.3 11-15 rating 5.4 div 0.895 playoffs 0.984 1 seed 0.556 sos 19
+   CIN 7-2 12.9 11-14 rating 6.6 div 0.871 playoffs 0.994 1 seed 0.215 sos 32
+   JAX 7-2 12.6 11-14 rating 6.9 div 0.987 playoffs 0.995 1 seed 0.164 sos 28
+   DEN 7-2 12.0 10-14 rating 3.0 div 0.504 playoffs 0.973 1 seed 0.094 sos 31
+   KC 7-2 12.0 10-14 rating 5.6 div 0.493 playoffs 0.977 1 seed 0.094 sos 5
+   DET 7-2 11.8 10-14 rating 3.8 div 0.356 playoffs 0.895 1 seed 0.147 sos 16
+   MIN 7-2 11.8 10-14 rating 3.4 div 0.356 playoffs 0.907 1 seed 0.171 sos 14
 PLAYERS 156
    {'label': 'Quarterback passing yards', 'n': 264, 'model': 443.5, 'pace': 502.6, 'last': 1212.7, 'avg': 3435}
    {'label': 'Quarterback passing touchdowns', 'n': 264, 'model': 3.7, 'pace': 4.2, 'last': 9.8, 'avg': 22}
@@ -644,8 +646,8 @@ PLAYERS 156
    Rushing yards [('Jahmyr Gibbs', 0.463, 1728), ('James Cook', 0.395, 1705), ('Bijan Robinson', 0.094, 1537), ('Kenneth Walker III', 0.031, 1435)]
    Receiving yards [('Jaxon Smith-Njigba', 0.818, 1868), ('CeeDee Lamb', 0.089, 1590), ("Ja'Marr Chase", 0.079, 1581)]
    Receptions [('Jaxon Smith-Njigba', 0.308, 126), ('CeeDee Lamb', 0.258, 125), ('Trey McBride', 0.195, 122), ("Ja'Marr Chase", 0.125, 120)]
-   Rushing + receiving touchdowns [('Jahmyr Gibbs', 0.347, 20), ('Christian McCaffrey', 0.244, 19), ('Kenneth Walker III', 0.076, 16), ('James Cook', 0.055, 15)]
-   Yards from scrimmage [('Jahmyr Gibbs', 0.64, 2371), ('Bijan Robinson', 0.124, 1985), ('James Cook', 0.086, 1935), ('Jaxon Smith-Njigba', 0.036, 1912)]
+   Rushing + receiving touchdowns [('Jahmyr Gibbs', 0.348, 20), ('Christian McCaffrey', 0.242, 19), ('Kenneth Walker III', 0.075, 16), ('James Cook', 0.055, 15)]
+   Yards from scrimmage [('Jahmyr Gibbs', 0.64, 2370), ('Bijan Robinson', 0.124, 1985), ('James Cook', 0.086, 1935), ('Jaxon Smith-Njigba', 0.036, 1912)]
    Jahmyr Gibbs RB 432.4 350 519 [['1,000 rush yds', 1.0], ['10 TDs', 1.0]]
    Jaxon Smith-Njigba WR 403.5 347 453 [['1,000 rec yds', 1.0], ['100 catches', 0.961]]
    Josh Allen QB 381.6 313 438 [['4,000 pass yds', 0.466], ['30 pass TDs', 0.073]]
@@ -663,12 +665,12 @@ PLAYERS 156
    8/10 threw 10 or fewer interceptions
    leans on: [('wp', 0.97), ('tot_td', 0.88), ('epa_db', 0.78), ('int_rate', -0.28), ('pass_td', 0.25), ('tot_yds', 0.11)] 
    rank at wk 10 {2016: 2, 2017: 2, 2018: 1, 2019: 6, 2020: 2, 2021: 7, 2022: 1, 2023: 11, 2024: 2, 2025: 1}
-   1 Joe Burrow CIN QB 41.3 move 0 5/6 {'wins': 12.9, 'pass_yds': 4787.0, 'tot_td': 47.0, 'ints': 11.0, 'epa_db': 0.23} [14, 10, 11, 8, 8, 3, 2, 1, 1]
+   1 Joe Burrow CIN QB 41.2 move 0 5/6 {'wins': 12.9, 'pass_yds': 4787.0, 'tot_td': 47.0, 'ints': 11.0, 'epa_db': 0.23} [14, 10, 11, 8, 8, 3, 2, 1, 1]
    2 Trevor Lawrence JAX QB 15.1 move 0 5/6 {'wins': 12.6, 'pass_yds': 4281.0, 'tot_td': 39.0, 'ints': 10.0, 'epa_db': 0.23} [9, 6, 5, 4, 4, 5, 3, 2, 2]
-   3 Brock Purdy SF QB 14.6 move 0 3/6 {'wins': 13.3, 'pass_yds': 4078.0, 'tot_td': 36.0, 'ints': 9.0, 'epa_db': 0.24} [3, 1, 1, 2, 1, 2, 6, 3, 3]
+   3 Brock Purdy SF QB 14.7 move 0 3/6 {'wins': 13.3, 'pass_yds': 4078.0, 'tot_td': 36.0, 'ints': 9.0, 'epa_db': 0.24} [3, 1, 1, 2, 1, 2, 6, 3, 3]
    4 Josh Allen BUF QB 8.4 move 0 3/6 {'wins': 13.6, 'pass_yds': 3884.0, 'tot_td': 41.0, 'ints': 12.0, 'epa_db': 0.17} [1, 3, 3, 3, 3, 4, 4, 4, 4]
    5 Jared Goff DET QB 5.2 move 0 1/6 {'wins': 11.8, 'pass_yds': 4470.0, 'tot_td': 33.0, 'ints': 9.0, 'epa_db': 0.17} [2, 2, 2, 1, 2, 1, 1, 5, 5]
-   6 Patrick Mahomes KC QB 4.3 move 2 2/6 {'wins': 12.0, 'pass_yds': 4243.0, 'tot_td': 35.0, 'ints': 9.0, 'epa_db': 0.13} [5, 4, 4, 5, 7, 8, 8, 8, 6]
+   6 Patrick Mahomes KC QB 4.4 move 2 2/6 {'wins': 12.0, 'pass_yds': 4243.0, 'tot_td': 35.0, 'ints': 9.0, 'epa_db': 0.13} [5, 4, 4, 5, 7, 8, 8, 8, 6]
    7 Kirk Cousins MIN QB 3.8 move 0 1/6 {'wins': 11.8, 'pass_yds': 4138.0, 'tot_td': 37.0, 'ints': 13.0, 'epa_db': 0.14} [17, 11, 9, 9, 5, 6, 5, 7, 7]
    bench: {'wins': {'now': 12.3, 'lo': 10.2, 'hi': 13.9, 'final': 13.2}, 'pass_yds': {'now': 4116.0, 'lo': 2842.0, 'hi': 5321.0, 'final': 4352.0}, 'tot_td': {'now': 36.0, 'lo': 24.0, 'hi': 45.0, 'final': 42.0}, 'ints': {'now': 8.0, 'lo': 5.0, 'hi': 14.0, 'final': 8.0}, 'epa_db': {'now': 0.19, 'lo': 0.04, 'hi': 0.31, 'final': 0.24}}
 
@@ -682,13 +684,13 @@ PLAYERS 156
    10/10 played for a team with a winning record
    leans on: [('scrim', 0.95), ('wp', 0.74), ('rec_yds', 0.72), ('pass_td', 0.66), ('pass_yds', 0.46), ('td', 0.3), ('rush_yds', 0.24), ('is_qb', 0.19)] 
    rank at wk 10 {2016: 53, 2017: 1, 2018: 23, 2019: 4, 2020: 16, 2021: 1, 2022: 1, 2023: 4, 2024: 1, 2025: 3}
-   1 Jahmyr Gibbs DET RB 23.2 move 0 5/5 {'scrim': 2371.0, 'td': 20.0, 'rec_yds': 643.0, 'rush_yds': 1728.0, 'pass_yds': 0.0, 'wins': 11.8} [2, 1, 2, 1, 1, 2, 1, 1, 1]
+   1 Jahmyr Gibbs DET RB 23.1 move 0 5/5 {'scrim': 2370.0, 'td': 20.0, 'rec_yds': 643.0, 'rush_yds': 1728.0, 'pass_yds': 0.0, 'wins': 11.8} [2, 1, 2, 1, 1, 2, 1, 1, 1]
    2 Jaxon Smith-Njigba SEA WR 11.0 move 0 5/5 {'scrim': 1912.0, 'td': 14.0, 'rec_yds': 1868.0, 'rush_yds': 44.0, 'pass_yds': 17.0, 'wins': 10.1} [1, 2, 1, 2, 2, 1, 2, 2, 2]
    3 Christian McCaffrey SF RB 7.4 move 3 3/5 {'scrim': 1700.0, 'td': 19.0, 'rec_yds': 729.0, 'rush_yds': 971.0, 'pass_yds': 0.0, 'wins': 13.3} [10, 7, 6, 5, 5, 5, 6, 6, 3]
    4 Ja'Marr Chase CIN WR 6.8 move 3 2/5 {'scrim': 1588.0, 'td': 12.0, 'rec_yds': 1581.0, 'rush_yds': 7.0, 'pass_yds': 0.0, 'wins': 12.9} [20, 17, 26, 22, 24, 21, 10, 7, 4]
    5 James Cook BUF RB 6.1 move 0 4/5 {'scrim': 1935.0, 'td': 15.0, 'rec_yds': 230.0, 'rush_yds': 1705.0, 'pass_yds': 0.0, 'wins': 13.6} [12, 8, 12, 8, 6, 6, 7, 5, 5]
    6 Josh Allen BUF QB 3.8 move -2 2/5 {'scrim': 513.0, 'td': 17.0, 'rec_yds': 1.0, 'rush_yds': 512.0, 'pass_yds': 3884.0, 'wins': 13.6} [4, 3, 4, 3, 4, 4, 3, 4, 6]
-   7 Kenneth Walker III KC RB 2.9 move -4 4/5 {'scrim': 1729.0, 'td': 16.0, 'rec_yds': 295.0, 'rush_yds': 1435.0, 'pass_yds': 0.0, 'wins': 12.0} [3, 4, 3, 4, 3, 3, 4, 3, 7]
+   7 Kenneth Walker III KC RB 3.0 move -4 4/5 {'scrim': 1730.0, 'td': 16.0, 'rec_yds': 295.0, 'rush_yds': 1435.0, 'pass_yds': 0.0, 'wins': 12.0} [3, 4, 3, 4, 3, 3, 4, 3, 7]
    bench: {'scrim': {'now': 1808.0, 'lo': 1594.0, 'hi': 2045.0, 'final': 1985.0}, 'td': {'now': 13.0, 'lo': 7.0, 'hi': 19.0, 'final': 14.0}, 'rec_yds': {'now': 1079.0, 'lo': 170.0, 'hi': 1873.0, 'final': 1127.0}, 'rush_yds': {'now': 729.0, 'lo': -7.0, 'hi': 1727.0, 'final': 858.0}, 'pass_yds': {'now': 4.0, 'lo': 0.0, 'hi': 29.0, 'final': 4.0}, 'wins': {'now': 11.7, 'lo': 10.0, 'hi': 13.2, 'final': 12.8}}
 
 == Defensive Player of the Year: at wk10 top3/top1/top5 winner-only (6, 3, 6) vs top-five voting (6, 3, 6) of 10 -> voting | season's end top1/3 4/6 | unmatched [] []
@@ -708,7 +710,7 @@ PLAYERS 156
    2 Will Anderson Jr. HOU Edge rusher 17.8 move 0 5/6 {'sacks': 16.7, 'qbh': 32.0, 'tfl': 21.0, 'dint': 0.0, 'pd': 2.0, 'tkl': 67.0} [7, 5, 4, 2, 2, 3, 2, 2, 2]
    3 George Karlaftis KC Edge rusher 7.6 move 0 4/6 {'sacks': 8.8, 'qbh': 35.0, 'tfl': 16.0, 'dint': 1.0, 'pd': 14.0, 'tkl': 60.0} [25, 23, 10, 8, 6, 6, 6, 3, 3]
    4 Andrew Van Ginkel MIN Edge rusher 7.4 move 0 5/6 {'sacks': 13.1, 'qbh': 28.0, 'tfl': 14.0, 'dint': 1.0, 'pd': 3.0, 'tkl': 51.0} [9, 7, 11, 9, 7, 8, 7, 4, 4]
-   5 Dallas Turner MIN Edge rusher 5.2 move 1 6/6 {'sacks': 12.6, 'qbh': 35.0, 'tfl': 12.0, 'dint': 0.0, 'pd': 5.0, 'tkl': 50.0} [3, 3, 2, 4, 3, 4, 4, 6, 5]
+   5 Dallas Turner MIN Edge rusher 5.1 move 1 6/6 {'sacks': 12.6, 'qbh': 35.0, 'tfl': 12.0, 'dint': 0.0, 'pd': 5.0, 'tkl': 50.0} [3, 3, 2, 4, 3, 4, 4, 6, 5]
    6 T.J. Watt PIT Edge rusher 2.6 move -1 3/6 {'sacks': 11.7, 'qbh': 21.0, 'tfl': 14.0, 'dint': 2.0, 'pd': 7.0, 'tkl': 38.0} [5, 8, 7, 7, 9, 7, 3, 5, 6]
    7 Aidan Hutchinson DET Edge rusher 1.5 move 0 4/6 {'sacks': 10.7, 'qbh': 33.0, 'tfl': 11.0, 'dint': 0.0, 'pd': 2.0, 'tkl': 45.0} [2, 2, 5, 5, 5, 2, 5, 7, 7]
    bench: {'sacks': {'now': 15.0, 'lo': 7.9, 'hi': 19.9, 'final': 16.8}, 'qbh': {'now': 31.0, 'lo': 23.0, 'hi': 41.0, 'final': 35.0}, 'tfl': {'now': 18.0, 'lo': 12.0, 'hi': 27.0, 'final': 20.0}, 'dint': {'now': 0.0, 'lo': 0.0, 'hi': 0.0, 'final': 0.0}, 'pd': {'now': 2.0, 'lo': 0.0, 'hi': 7.0, 'final': 2.0}, 'tkl': {'now': 54.0, 'lo': 39.0, 'hi': 69.0, 'final': 54.0}}
@@ -759,24 +761,27 @@ PLAYERS 156
    5/9 were in their first year with the team
    leans on: [('gain', 0.8), ('wp', 0.73), ('newc', 0.49), ('mpg', 0.31)] 
    rank at wk 10 {2016: None, 2017: 1, 2018: 1, 2019: 5, 2020: 3, 2021: 7, 2022: 3, 2023: 4, 2024: 5, 2025: 1}
-   1 Zac Taylor CIN  19.3 move 0 4/5 {'wins': 12.9, 'prevw': 6.0, 'gainw': 6.9, 'mpg': 9.0} [4, 5, 5, 4, 4, 1, 1, 1, 1]
-   2 Joe Brady BUF  18.0 move 0 2/5 {'wins': 13.6, 'prevw': 12.0, 'gainw': 1.6, 'mpg': 8.6} [5, 4, 6, 5, 2, 3, 2, 2, 2]
-   3 Andy Reid KC  11.0 move 1 4/5 {'wins': 12.0, 'prevw': 6.0, 'gainw': 6.0, 'mpg': 6.9} [3, 3, 1, 1, 1, 2, 5, 4, 3]
+   1 Zac Taylor CIN  19.2 move 0 4/5 {'wins': 12.9, 'prevw': 6.0, 'gainw': 6.9, 'mpg': 9.0} [4, 5, 5, 4, 4, 1, 1, 1, 1]
+   2 Joe Brady BUF  17.9 move 0 2/5 {'wins': 13.6, 'prevw': 12.0, 'gainw': 1.6, 'mpg': 8.5} [5, 4, 6, 5, 2, 3, 2, 2, 2]
+   3 Andy Reid KC  11.1 move 1 4/5 {'wins': 12.0, 'prevw': 6.0, 'gainw': 6.0, 'mpg': 6.9} [3, 3, 1, 1, 1, 2, 5, 4, 3]
    4 John Harbaugh NYG  6.5 move -1 3/5 {'wins': 8.6, 'prevw': 4.0, 'gainw': 4.6, 'mpg': -1.4} [6, 6, 4, 6, 9, 6, 3, 3, 4]
    5 Kyle Shanahan SF  5.3 move 2 1/5 {'wins': 13.3, 'prevw': 12.0, 'gainw': 1.3, 'mpg': 7.7} [12, 9, 8, 7, 8, 10, 9, 7, 5]
    6 Todd Monken CLE  5.1 move 2 3/5 {'wins': 8.8, 'prevw': 5.0, 'gainw': 3.8, 'mpg': -3.3} [10, 10, 9, 9, 7, 4, 7, 8, 6]
-   7 Dan Campbell DET  4.7 move 3 1/5 {'wins': 11.8, 'prevw': 9.0, 'gainw': 2.8, 'mpg': 5.2} [15, 11, 15, 10, 11, 11, 10, 10, 7]
+   7 Dan Campbell DET  4.6 move 3 1/5 {'wins': 11.8, 'prevw': 9.0, 'gainw': 2.8, 'mpg': 5.2} [15, 11, 15, 10, 11, 11, 10, 10, 7]
    bench: {'wins': {'now': 11.5, 'lo': 10.3, 'hi': 12.8, 'final': 12.4}, 'prevw': {'now': 6.7, 'lo': 4.0, 'hi': 11.7, 'final': 6.7}, 'gainw': {'now': 4.8, 'lo': 1.1, 'hi': 8.6, 'final': 5.7}, 'mpg': {'now': 5.2, 'lo': -1.3, 'hi': 10.1, 'final': 6.0}}
 site/paydirt.html: weeks [11, 12], 2024 KB
 docs/index.html written (GitHub Pages)
-Staleness audit, week 11: 4 item(s)
+Staleness audit, week 11: 7 item(s)
+  [QB-CONFLICT] BAL: qb_start says Jacoby Brissett (dated 2026-11-17) but the schedule feed lists Tyler Huntley - search the news; keep only with a dated source
+  [QB-CONFLICT] ARI: qb_start says Carson Beck (dated 2026-11-17) but the schedule feed lists Gardner Minshew - search the news; keep only with a dated source
   [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
   [INJURY] Kenneth Walker III (KC) practice 'Did Not Participate In Practice' but projected as healthy (p_play 1.00)
   [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm
   [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
+  [WEATHER] 7 outdoor game(s) kick off within 72h and forecasts_wk11.csv is missing: fetch MySportsWeather + Covers
 Staleness audit, week 12: 6 item(s)
-  [ROSTER] Pierre Strong (GB) projected 4.4 pts but roster status INA (A01)
-  [ROSTER] Emanuel Wilson (SEA) projected 7.2 pts but roster status INA (A01)
+  [ROSTER] Pierre Strong (GB) projected 4.3 pts but roster status INA (A01)
+  [ROSTER] Emanuel Wilson (SEA) projected 7.1 pts but roster status INA (A01)
   [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
   [LEAD] Emanuel Wilson (SEA) returns after missing week 10 (was the lead back) and SEA has no lead_back - set it from the news (or list SEA under 'committee' if the news says shared)
   [FRESHNESS] overrides asof 2026-11-17T09:30 ET is older than 48h

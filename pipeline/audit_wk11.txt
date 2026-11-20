@@ -1,5 +1,8 @@
-Staleness audit, week 11: 4 item(s)
+Staleness audit, week 11: 7 item(s)
+  [QB-CONFLICT] BAL: qb_start says Jacoby Brissett (dated 2026-11-17) but the schedule feed lists Tyler Huntley - search the news; keep only with a dated source
+  [QB-CONFLICT] ARI: qb_start says Carson Beck (dated 2026-11-17) but the schedule feed lists Gardner Minshew - search the news; keep only with a dated source
   [TRADE] Marvin Harrison Jr. moved ARI -> HOU (13 targets+carries with ARI) and is not in the HOU projections
   [INJURY] Kenneth Walker III (KC) practice 'Did Not Participate In Practice' but projected as healthy (p_play 1.00)
   [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm
   [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
+  [WEATHER] 7 outdoor game(s) kick off within 72h and forecasts_wk11.csv is missing: fetch MySportsWeather + Covers

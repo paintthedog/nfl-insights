@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-19T09:30 ET",
+ "asof": "2026-11-19T19:00 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
@@ -95,7 +95,7 @@
   "ARI": "Rookie Carson Beck starts (started Wk10; Minshew IR). Allgeier and Bam Knight split RB carries 5-5 in Wk10 (box score): committee.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
-  "HOU": "Official TNF report (NFL.com, Nov 19): Woody Marks (concussion), Harrison Jr. (hamstring), Brevin Jordan (TE) OUT; David Montgomery no designation (full practice), Tank Dell full. Stroud starts.",
+  "HOU": "Official TNF report (NFL.com, Nov 19): Woody Marks (concussion), Harrison Jr. (hamstring), Brevin Jordan (TE) OUT; David Montgomery no designation (full practice), Tank Dell full. Stroud starts. Montgomery the lead back: Ryans 'trending toward playing' (Houston Chronicle via FantasyFootballers Nov 17); Demercado 'expected to serve as the top complement to David Montgomery' (FantasyFootballers news, Nov 19).",
   "LV": "Brock Bowers (ankle) day-to-day: 'not as bad as we thought, but still a significant injury' (Kubiak, Nov 16). Mendoza starts.",
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
   "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17). TNF report (NFL.com Nov 19): LT Raimann (concussion), T Jalen Travis, TE Will Mallory OUT; T Charlie Heck questionable (personal).",
@@ -157,11 +157,18 @@
   "KC": [
    "Kenneth Walker III",
    0.6
+  ],
+  "HOU": [
+   "David Montgomery",
+   0.6
   ]
  },
  "committee": [
-  "ARI",
-  "HOU"
+  "ARI"
  ],
- "news_q": {}
+ "news_q": {},
+ "confirmed": [
+  "Jacoby Brissett",
+  "Carson Beck"
+ ]
 }
