@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-20T10:30 ET",
+ "asof": "2026-11-20T11:30 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
@@ -85,7 +85,7 @@
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
   "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
-  "SEA": "Darnold 'on track to return' after the Wk11 bye and keeps the job over Lock (RotoBaller Nov 20); Lock override removed."
+  "SEA": "Darnold 'on track to return' after the Wk11 bye and keeps the job over Lock (RotoBaller Nov 20); Lock override removed. Zach Charbonnet the lead back (Clinton, Nov 20)."
  },
  "back": [
   "Jalen Nailor",
@@ -130,6 +130,10 @@
   "KC": [
    "Kenneth Walker III",
    0.6
+  ],
+  "SEA": [
+   "Zach Charbonnet",
+   0.65
   ]
  },
  "committee": [],

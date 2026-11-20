@@ -1,6 +1,10 @@
-Staleness audit, week 12: 5 item(s)
+Staleness audit, week 12: 9 item(s)
+  [QB-CONFLICT] BAL: qb_start says Jacoby Brissett (dated 2026-11-17) but the schedule feed lists Tyler Huntley - search the news; keep only with a dated source
+  [QB] IND: feed lists Anthony Richardson, last starter D.Jones — confirm and set qb_start
+  [QB-CONFLICT] ARI: qb_start says Carson Beck (dated 2026-11-17) but the schedule feed lists Gardner Minshew - search the news; keep only with a dated source
+  [QB] SEA: feed lists Sam Darnold, last starter D.Lock — confirm and set qb_start
+  [QB] NE: feed lists Drake Maye, last starter T.DeVito — confirm and set qb_start
   [ROSTER] Pierre Strong (GB) projected 4.5 pts but roster status INA (A01)
-  [ROSTER] Emanuel Wilson (SEA) projected 7.2 pts but roster status INA (A01)
+  [ROSTER] Emanuel Wilson (SEA) projected 4.0 pts but roster status INA (A01)
   [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
-  [LEAD] Emanuel Wilson (SEA) returns after missing week 10 (was the lead back) and SEA has no lead_back - set it from the news (or list SEA under 'committee' if the news says shared)
   [DFS] no dk_salaries_wk12.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
