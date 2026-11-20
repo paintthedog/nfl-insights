@@ -51,6 +51,8 @@ The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydi
 
 - **Nov 19 replay (TEST_LEDGER): ranges and TD chances NOT changed.** Widening ranges would fix the coverage number (rec yds/PPR ~77.5% inside in replay, 75% live) but makes the forecasts slightly worse overall (pinball loss up both seasons for rec yds; PPR +0.1% better, too small). TD recalibration fit on 2024 hurt 2025. Watch: live TD chances run ~2 pts low (z ~2); recheck at 3,000 player-games.
 
+- **Nov 20 (Clinton caught it): Charbonnet, not Wilson, is SEA's lead back.** Charbonnet had 36 of SEA's 68 carries in Weeks 9-10; Wilson hasn't carried since Week 7. Without lead_back the Week 12 model gave Wilson more carries (9.2 vs 8.6). The audit's [LEAD] flag did fire and the daily run deferred it as "9 days out". Two fixes: (1) audit_stale.py now also flags [LEAD] when the back who led the team's last 2 games is not the projection's carry leader (tested on this morning's archive: catches SEA, no false flags in Week 11); (2) resolve every [LEAD] item on every run, for W+1 too: never defer one because the game is days away.
+
 ## Daily update (what the scheduled task does)
 Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; **on every Thu–Mon run fetch MySportsWeather + Covers and rewrite `forecasts_wk{W}.csv` (checklist step 4; required, not optional)**; resolve `audit_wk{W}.txt`; rebuild; `node check_page.js ../docs/index.html` must print OK; commit (including `docs/index.html`) and push to main, which publishes the site; send a short digest.
 

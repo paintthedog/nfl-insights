@@ -90,6 +90,25 @@ try:
             m = P[(P.pid == pid) & (P.p_play >= 0.5)]
             if len(m): flag("LEAD", f"{m.name.iloc[0]} ({tm}) returns after missing week {int(_lastwk)} (was the lead back) and {tm} has no lead_back - set it from the news (or list {tm} under 'committee' if the news says shared)")
 except Exception as e: flag("LEAD", f"returning-back check skipped: {e}")
+# 4a2. (Nov 20, Clinton: Charbonnet) the back who led the team's last 2 games must also lead the projection,
+#      unless news says otherwise (lead_back / committee). Catches a returning ex-starter outranking the current lead.
+try:
+    _car = {r.pid: (r.mean or {}).get("car", 0) for r in P.itertuples() if r.pos == "RB" and (r.p_play or 0) >= 0.5}
+    for tm in set(sw.home_team) | set(sw.away_team):
+        _t = _pb[_pb.posteam == tm]
+        if _t.empty or tm in (ov.get("committee") or []): continue
+        _w2 = sorted(_t.week.unique())[-2:]
+        _r = _t[_t.week.isin(_w2)].groupby(["rusher_player_id", "rusher_player_name"]).size().sort_values(ascending=False)
+        if _r.empty: continue
+        (lpid, lname), lc = _r.index[0], int(_r.iloc[0])
+        if lc / _r.sum() < 0.40 or lpid not in _car: continue          # no clear recent lead, or he isn't projected to play
+        _tm_rb = {pid: c for pid, c in _car.items() if pid in set(P[P.team == tm].pid)}
+        top = max(_tm_rb, key=_tm_rb.get)
+        lb = (_lb.get(tm) or [None])[0]
+        if top != lpid and lb is None:
+            tn = P[P.pid == top].name.iloc[0]
+            flag("LEAD", f"{tm}: {lname} led the team's last 2 games ({lc} of {int(_r.sum())} carries) but the model projects {tn} for more carries ({_tm_rb[top]:.1f} vs {_tm_rb[lpid]:.1f}) - set lead_back from the news")
+except Exception as e: flag("LEAD", f"recent-lead check skipped: {e}")
 # 4c. (Nov 8, Joe Alt / Ben Brown) an ol_out lineman who is active on the roster and absent from this week's injury report
 try:
     _ros = ro.sort_values("week").drop_duplicates("gsis_id", keep="last")
