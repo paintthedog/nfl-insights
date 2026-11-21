@@ -1,10 +1,10 @@
 team,wind,temp,precip,source
-KC,14,49,1,MySportsWeather Nov 20 (gusts 22; NBM 14 g22 18%); Covers Nov 20 15.9
-CAR,12,65,14,MySportsWeather Nov 20 (gusts 22); Covers Nov 20 12.3 (19%)
-BUF,6,64,2,MySportsWeather Nov 20 (gusts 13; NBM 6 g13); Covers Nov 20 10.3 (>3 mph apart)
-CHI,15,56,56,MySportsWeather Nov 20 (gusts 21; front with rain and gusts 20-25 - timing uncertain); Covers Nov 20 13.1 (71% rain)
-PHI,5,62,65,MySportsWeather Nov 20 (gusts 13; NBM 6 g14 41%); Covers Nov 20 7.5 (43%)
-NYG,6,60,58,MySportsWeather Nov 20 (gusts 12); Covers Nov 20 7.6 (58% rain)
-DEN,5,47,0,MySportsWeather Nov 20 (gusts 10; NBM 5 g10); Covers Nov 20 4.2
-SF,2,66,17,MySportsWeather Nov 20 (Mexico City); Covers Nov 20 2.3 (74% rain)
-WAS,10,52,0,MySportsWeather Nov 20 (gusts 14 at 8 PM); Covers Nov 20 12.1
+BUF,6,64,5,MySportsWeather Nov 21 (gusts 13; NBM 7 g14 0%); Covers stale (Oct 2025 page) - not used
+CAR,8,64,24,MySportsWeather Nov 21 (gusts 18; NBM 8 g17 51%); Covers stale - not used
+CHI,15,59,84,MySportsWeather Nov 21 (gusts 20; NBM 9 g16 66%); Covers stale - not used
+KC,15,48,2,MySportsWeather Nov 21 (gusts 25; NBM 16 g25 9%); Covers stale - not used
+NYG,9,61,68,MySportsWeather Nov 21 (gusts 13; NBM 8 g17 86%; 94% rain by 6-7 PM); Covers stale - not used
+DEN,5,46,0,MySportsWeather Nov 21 (gusts 10; NBM 5 g10); Covers stale - not used
+PHI,10,62,84,MySportsWeather Nov 21 (gusts 16; NBM 7 g14 49%); Covers stale - not used
+SF,3,65,18,MySportsWeather Nov 21 (Mexico City); Covers stale - not used
+WAS,8,53,3,MySportsWeather Nov 21 (gusts 12 at 8 PM); Covers stale - not used

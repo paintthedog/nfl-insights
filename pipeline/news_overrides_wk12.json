@@ -1,17 +1,14 @@
 {
- "asof": "2026-11-20T11:30 ET",
+ "asof": "2026-11-21T09:40 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
   "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Marcus Mariota",
-  "Michael Pittman",
   "Raheim Sanders",
-  "Roman Wilson",
   "Skyy Moore",
   "Tank Bigsby",
-  "Will Shipley",
   "Davante Adams",
   "Terry McLaurin",
   "Elijah Arroyo",
@@ -32,7 +29,6 @@
   "Jeremy McNichols",
   "A.J. Brown",
   "Garrett Wilson",
-  "Mike Evans",
   "Christian Kirk",
   "Rashid Shaheed",
   "Treylon Burks",
@@ -41,7 +37,6 @@
   "Terrance Ferguson",
   "Josh Whyle",
   "David Njoku",
-  "Jordyn Tyson",
   "Mack Hollins",
   "Demarcus Robinson",
   "Jaylen Wright",
@@ -51,7 +46,10 @@
   "Michael Wilson",
   "Jake Ferguson",
   "Tyler Goodson",
-  "Jordan Addison"
+  "Jordan Addison",
+  "Drake Maye",
+  "Dontayvion Wicks",
+  "Kyler Murray"
  ],
  "p_play": {},
  "qb_start": {
@@ -62,7 +60,10 @@
   "MIN": "Kirk Cousins",
   "MIA": "Kyle McCord",
   "LV": "Fernando Mendoza",
-  "NYJ": "Geno Smith"
+  "NYJ": "Geno Smith",
+  "NE": "Tommy DeVito",
+  "IND": "Anthony Richardson",
+  "SEA": "Sam Darnold"
  },
  "next_man": {},
  "ol_out": [
@@ -74,18 +75,19 @@
  "team_notes": {
   "BAL": "Jacoby Brissett starts while Lamar (thumb, IR) and Huntley (toe) are out (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Feed still lists Huntley until Brissett's first game is played.",
   "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson expected to progress for Sunday.",
-  "KC": "Kenneth Walker III (groin): Rapoport Nov 15 expected to play, Schefter Nov 16 'wouldn't be surprised' if he misses Wk11; Emmett Johnson had 22 carries in Wk10. Kelce (ankle) returned in Wk10.",
+  "KC": "Walker (groin) missed Wk10-11; status for Wk12 in question (AP Nov 20). Emmett Johnson set as lead back until Walker practices.",
   "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "Kyle Monangai (thumb/toe) says he's 'on track' to return Wk11 after five missed games (Forbes Nov 16); Burden (concussion) practiced Mon (Big Lead Nov 17).",
-  "ARI": "Rookie Carson Beck starts (started Wk10; Minshew IR). Allgeier and Bam Knight split RB carries 5-5 in Wk10 (box score): committee.",
+  "ARI": "Beck (back spasms) expected out Wk11, Josh Johnson starting (Cards Wire Nov 20); Beck kept as Wk12 starter pending his status. Minshew on IR.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
   "HOU": "Woody Marks (concussion) not expected to clear for TNF (Ryans). Montgomery (groin) full Fri/Mon practice, Ryans 'not certain' (Forbes Nov 16). Backfield left to the official report.",
   "LV": "Brock Bowers (ankle) not believed major, day-to-day; more tests (Rapoport via Forbes Nov 16; Big Lead Nov 17). Mendoza starts.",
   "PIT": "Michael Pittman Jr. (foot, IR) practice window not open as of Nov 13; Post-Gazette: 'a little bit better feeling' for the Eagles game, more likely around Thanksgiving (Yardbarker Nov 13).",
-  "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17).",
+  "IND": "Daniel Jones released; Anthony Richardson named starter (Colts.com).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
-  "SEA": "Darnold 'on track to return' after the Wk11 bye and keeps the job over Lock (RotoBaller Nov 20); Lock override removed. Zach Charbonnet the lead back (Clinton, Nov 20)."
+  "SEA": "Darnold returns from the bye as the starter (RotoBaller Nov 20). Charbonnet lead back.",
+  "NE": "Drake Maye fractured fibula, may miss the rest of the season (ESPN/Boston Globe Nov 20). Tommy DeVito 'leader in the clubhouse' to start after the bye (SI Nov 16). A.J. Brown out multiple weeks (hamstring)."
  },
  "back": [
   "Jalen Nailor",
@@ -107,7 +109,8 @@
   "Zach Charbonnet",
   "Tre Harris",
   "Cam Skattebo",
-  "Kyle Monangai"
+  "Kyle Monangai",
+  "Sam Darnold"
  ],
  "qb_uncertain": {},
  "lead_back": {
@@ -128,7 +131,7 @@
    0.65
   ],
   "KC": [
-   "Kenneth Walker III",
+   "Emmett Johnson",
    0.6
   ],
   "SEA": [
