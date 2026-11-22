@@ -32,6 +32,7 @@
 "lead_back|NYG|[\"Cam Skattebo\", 0.65]": "2026-11-21",
 "lead_back|NYJ|[\"Breece Hall\", 0.6]": "2026-11-21",
 "lead_back|SF|[\"Christian McCaffrey\", 0.55]": "2026-11-21",
+"lead_back|WAS|[\"Jacory Croskey-Merritt\", 0.5]": "2026-11-22",
 "news_q|Jacory Croskey-Merritt|[\"expected\", \"2026-11-21\", \"trending toward playing Monday vs CIN (NFL.com Saturday roundup Nov 21)\"]": "2026-11-21",
 "news_q|Mike Evans|[\"expected\", \"2026-11-21\", \"Garafolo (NFL Network) Sat: expected to play vs MIN (NFL.com Nov 21)\"]": "2026-11-21",
 "news_q|Rachaad White|[\"expected\", \"2026-11-21\", \"Dan Quinn: expected to be good for Monday (NFL.com Saturday roundup Nov 21)\"]": "2026-11-21",
@@ -132,5 +133,5 @@
 "team_notes|SF|\"Mike Evans (Achilles tendinitis) Questionable, expected to play (Garafolo, NFL.com Sat Nov 21). Game in Mexico City.\"": "2026-11-21",
 "team_notes|TB|\"Mayfield (foot/thumb) Questionable after limited Thu and Fri; Bowles: 'trending in the right direction' (NFL.com Nov 20). Modeled 60% Mayfield / 40% Jalon Daniels. Winfield Jr. OUT. Sat Nov 21: Mayfield expected to play (Pelissero via Yahoo live blog); modeled 85/15.\"": "2026-11-21",
 "team_notes|TEN|\"Wan'Dale Robinson (ankle) on IR, out for the season (Saleh Nov 18). Carnell Tate (shoulder) and Tyjae Spears limited Thu Nov 19 (official report). Tyjae Spears (knee) placed on IR Nov 21; Carnell Tate expected back (full Fri; Yahoo Nov 21); RB Michael Carter elevated (NFL.com Nov 21).\"": "2026-11-21",
-"team_notes|WAS|\"Rachaad White (heel) expected to be good for Monday (Quinn); Croskey-Merritt (groin) trending toward playing (NFL.com Saturday roundup Nov 21).\"": "2026-11-21"
+"team_notes|WAS|\"Rachaad White (heel) expected to be good for Monday (Quinn); Croskey-Merritt (groin) trending toward playing (NFL.com Saturday roundup Nov 21). Croskey-Merritt expected back from IR as the 'preferred top option' in a committee with White and Ekeler (Yahoo/Heavy Nov 21); White's role 'will likely shrink' (RotoWire Nov 21). lead_back 0.50.\"": "2026-11-22"
 }

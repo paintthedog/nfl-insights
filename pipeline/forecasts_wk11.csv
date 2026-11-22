@@ -1,10 +1,10 @@
 team,wind,temp,precip,source
-BUF,6,64,5,MySportsWeather Nov 21 (rechecked evening) (gusts 13; NBM 7 g14 0%); Covers stale (Oct 2025 page) - not used
-CAR,8,64,24,MySportsWeather Nov 21 (rechecked evening) (gusts 18; NBM 8 g17 51%); Covers stale - not used
-CHI,15,59,84,MySportsWeather Nov 21 (rechecked evening) (gusts 20; NBM 9 g16 66%); Covers stale - not used
-KC,15,48,2,MySportsWeather Nov 21 (rechecked evening) (gusts 25; NBM 16 g25 9%); Covers stale - not used
-NYG,9,61,94,MySportsWeather Nov 21 evening (gusts 13 in table; text says moderate-heavy rain and gusts near 30 late); Covers stale (2025 page) - not used
-DEN,5,46,0,MySportsWeather Nov 21 (rechecked evening) (gusts 10; NBM 5 g10); Covers stale - not used
-PHI,10,62,84,MySportsWeather Nov 21 (rechecked evening) (gusts 16; NBM 7 g14 49%); Covers stale - not used
-SF,3,65,18,MySportsWeather Nov 21 (rechecked evening) (Mexico City); Covers stale - not used
-WAS,8,53,3,MySportsWeather Nov 21 (rechecked evening) (gusts 12 at 8 PM); Covers stale - not used
+BUF,7,66,1,MySportsWeather Nov 22 (gusts 14; NBM 7 g15 1%); Covers not reachable
+CAR,8,59,39,MySportsWeather Nov 22 (gusts 17; NBM 8 g17 30%); Covers not reachable
+CHI,15,56,91,MySportsWeather Nov 22 (gusts 24; NBM 10 g17 75%; rain band near kickoff); Covers not reachable
+KC,15,48,0,MySportsWeather Nov 22 (gusts 24; NBM 15 g24 0%); Covers not reachable
+NYG,7,61,71,MySportsWeather Nov 22 (gusts 14; NBM 7 g14 30%; scattered showers); Covers not reachable
+DEN,5,43,0,MySportsWeather Nov 22 (gusts 7; NBM 5 g10 0%); Covers not reachable
+PHI,5,64,34,MySportsWeather Nov 22 (gusts 13; NBM 6 g12 5%; rain trending later); Covers not reachable
+SF,2,66,17,MySportsWeather Nov 22 (Mexico City); Covers not reachable
+WAS,9,54,0,MySportsWeather Nov 22 (gusts 18 at 8 PM Mon; NBM 10 g19 0%); Covers not reachable

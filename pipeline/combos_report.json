@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-21 19:24 ET",
+ "asof": "2026-11-22 09:27 ET",
  "types": [
   {
    "type": "Combo: win + lead RB yards",
@@ -5661,8 +5661,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CAR wins + Chuba Hubbard 40+ rush yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.4709,
-   "indep_p": 0.4312,
+   "model_p": 0.4735,
+   "indep_p": 0.4342,
    "status": "pending",
    "legs": [
     {
@@ -5680,8 +5680,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Bryce Young 175+ pass yds + Tetairoa McMillan 3+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.5677,
-   "indep_p": 0.526,
+   "model_p": 0.6008,
+   "indep_p": 0.5628,
    "status": "pending",
    "legs": [
     {
@@ -5699,8 +5699,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Tetairoa McMillan 3+ catches + Jalen Coker 3+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.4543,
-   "indep_p": 0.4531,
+   "model_p": 0.4854,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -5716,14 +5716,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Jacoby Brissett 150+ pass yds + Zay Flowers 4+ catches",
+   "subject": "Jacoby Brissett 175+ pass yds + Zay Flowers 4+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.5553,
-   "indep_p": 0.5137,
+   "model_p": 0.4864,
+   "indep_p": 0.4377,
    "status": "pending",
    "legs": [
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     },
     {
@@ -5756,8 +5756,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Chuba Hubbard 40+ rush yds + Zay Flowers 4+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.4955,
-   "indep_p": 0.4957,
+   "model_p": 0.499,
+   "indep_p": 0.4992,
    "status": "pending",
    "legs": [
     {
@@ -5775,8 +5775,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Bryce Young 175+ pass yds + Mitchell Evans 1+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.489,
-   "indep_p": 0.4534,
+   "model_p": 0.4894,
+   "indep_p": 0.4539,
    "status": "pending",
    "legs": [
     {
@@ -5794,8 +5794,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Chuba Hubbard 40+ rush yds + Bryce Young 175+ pass yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.5211,
-   "indep_p": 0.5328,
+   "model_p": 0.5255,
+   "indep_p": 0.537,
    "status": "pending",
    "legs": [
     {
@@ -5811,14 +5811,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Jacoby Brissett 150+ pass yds + Mark Andrews 2+ catches",
+   "subject": "Jacoby Brissett 175+ pass yds + Mark Andrews 2+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.5817,
-   "indep_p": 0.5518,
+   "model_p": 0.5051,
+   "indep_p": 0.4701,
    "status": "pending",
    "legs": [
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     },
     {
@@ -5830,10 +5830,10 @@
   {
    "week": 11,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Derrick Henry 50+ rush yds + Jacoby Brissett 150+ pass yds",
+   "subject": "Derrick Henry 50+ rush yds + Jacoby Brissett 175+ pass yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.5389,
-   "indep_p": 0.55,
+   "model_p": 0.4634,
+   "indep_p": 0.4765,
    "status": "pending",
    "legs": [
     {
@@ -5841,7 +5841,7 @@
      "r": "pending"
     },
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     }
    ]
@@ -5849,10 +5849,10 @@
   {
    "week": 11,
    "type": "Combo: shootout, both QBs' yards",
-   "subject": "Bryce Young 175+ pass yds + Jacoby Brissett 150+ pass yds",
+   "subject": "Bryce Young 175+ pass yds + Jacoby Brissett 175+ pass yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.564,
-   "indep_p": 0.5522,
+   "model_p": 0.4849,
+   "indep_p": 0.4709,
    "status": "pending",
    "legs": [
     {
@@ -5860,7 +5860,7 @@
      "r": "pending"
     },
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     }
    ]
@@ -5870,8 +5870,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Chuba Hubbard 40+ rush yds + Derrick Henry 50+ rush yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.518,
-   "indep_p": 0.5307,
+   "model_p": 0.5312,
+   "indep_p": 0.5435,
    "status": "pending",
    "legs": [
     {
@@ -5889,8 +5889,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "BAL wins + Derrick Henry 50+ rush yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.3372,
-   "indep_p": 0.2983,
+   "model_p": 0.3413,
+   "indep_p": 0.3034,
    "status": "pending",
    "legs": [
     {
@@ -5906,10 +5906,10 @@
   {
    "week": 11,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "CAR wins + Chuba Hubbard 40+ rush yds + Jacoby Brissett 150+ pass yds",
+   "subject": "CAR wins + Chuba Hubbard 40+ rush yds + Jacoby Brissett 175+ pass yds",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.3484,
-   "indep_p": 0.3282,
+   "model_p": 0.295,
+   "indep_p": 0.2816,
    "status": "pending",
    "legs": [
     {
@@ -5921,7 +5921,7 @@
      "r": "pending"
     },
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     }
    ]
@@ -5931,8 +5931,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "Tetairoa McMillan 3+ catches + Zay Flowers 4+ catches",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.4947,
-   "indep_p": 0.4894,
+   "model_p": 0.5279,
+   "indep_p": 0.5231,
    "status": "pending",
    "legs": [
     {
@@ -5950,8 +5950,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CAR wins + Chuba Hubbard scores a TD",
    "games": "2026_11_BAL_CAR",
-   "model_p": 0.3312,
-   "indep_p": 0.3312,
+   "model_p": 0.3412,
+   "indep_p": 0.3412,
    "status": "pending",
    "legs": [
     {
@@ -5969,8 +5969,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "J.J. McCarthy 150+ pass yds + Malik Nabers 5+ catches",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5068,
-   "indep_p": 0.4617,
+   "model_p": 0.5199,
+   "indep_p": 0.4769,
    "status": "pending",
    "legs": [
     {
@@ -5986,10 +5986,10 @@
   {
    "week": 11,
    "type": "Combo: top two pass catchers",
-   "subject": "Malik Nabers 5+ catches + Malachi Fields 2+ catches",
+   "subject": "Malik Nabers 5+ catches + Malachi Fields 3+ catches",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.4854,
-   "indep_p": 0.4844,
+   "model_p": 0.3919,
+   "indep_p": 0.3906,
    "status": "pending",
    "legs": [
     {
@@ -5997,7 +5997,7 @@
      "r": "pending"
     },
     {
-     "t": "Malachi Fields 2+ catches",
+     "t": "Malachi Fields 3+ catches",
      "r": "pending"
     }
    ]
@@ -6007,8 +6007,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "JAX wins + Bhayshul Tuten 40+ rush yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5675,
-   "indep_p": 0.5323,
+   "model_p": 0.5698,
+   "indep_p": 0.5348,
    "status": "pending",
    "legs": [
     {
@@ -6026,8 +6026,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Trevor Lawrence 175+ pass yds + Parker Washington 3+ catches",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5221,
-   "indep_p": 0.4763,
+   "model_p": 0.5244,
+   "indep_p": 0.4788,
    "status": "pending",
    "legs": [
     {
@@ -6064,8 +6064,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Bhayshul Tuten 40+ rush yds + Malik Nabers 5+ catches",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.4584,
-   "indep_p": 0.4586,
+   "model_p": 0.4605,
+   "indep_p": 0.4607,
    "status": "pending",
    "legs": [
     {
@@ -6083,8 +6083,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Trevor Lawrence 175+ pass yds + Brenton Strange 2+ catches",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5445,
-   "indep_p": 0.5116,
+   "model_p": 0.547,
+   "indep_p": 0.5143,
    "status": "pending",
    "legs": [
     {
@@ -6102,8 +6102,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Bhayshul Tuten 40+ rush yds + Trevor Lawrence 175+ pass yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5056,
-   "indep_p": 0.5177,
+   "model_p": 0.511,
+   "indep_p": 0.523,
    "status": "pending",
    "legs": [
     {
@@ -6121,8 +6121,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Cam Skattebo 40+ rush yds + J.J. McCarthy 150+ pass yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5255,
-   "indep_p": 0.5371,
+   "model_p": 0.5401,
+   "indep_p": 0.5512,
    "status": "pending",
    "legs": [
     {
@@ -6140,8 +6140,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Trevor Lawrence 175+ pass yds + J.J. McCarthy 150+ pass yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.534,
-   "indep_p": 0.5212,
+   "model_p": 0.5534,
+   "indep_p": 0.5413,
    "status": "pending",
    "legs": [
     {
@@ -6159,8 +6159,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Bhayshul Tuten 40+ rush yds + Cam Skattebo 40+ rush yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.5209,
-   "indep_p": 0.5335,
+   "model_p": 0.5198,
+   "indep_p": 0.5325,
    "status": "pending",
    "legs": [
     {
@@ -6178,8 +6178,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "NYG wins + Cam Skattebo 40+ rush yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.2313,
-   "indep_p": 0.1996,
+   "model_p": 0.2303,
+   "indep_p": 0.1983,
    "status": "pending",
    "legs": [
     {
@@ -6197,8 +6197,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "JAX wins + Bhayshul Tuten 40+ rush yds + J.J. McCarthy 150+ pass yds",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.4104,
-   "indep_p": 0.3932,
+   "model_p": 0.4264,
+   "indep_p": 0.4081,
    "status": "pending",
    "legs": [
     {
@@ -6239,8 +6239,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "JAX wins + Bhayshul Tuten scores a TD",
    "games": "2026_11_JAX_NYG",
-   "model_p": 0.37,
-   "indep_p": 0.37,
+   "model_p": 0.3598,
+   "indep_p": 0.3598,
    "status": "pending",
    "legs": [
     {
@@ -6258,8 +6258,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "BUF wins + James Cook 70+ rush yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.6496,
-   "indep_p": 0.633,
+   "model_p": 0.6668,
+   "indep_p": 0.6505,
    "status": "pending",
    "legs": [
     {
@@ -6277,8 +6277,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Josh Allen 175+ pass yds + DJ Moore 2+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.6008,
-   "indep_p": 0.5629,
+   "model_p": 0.5948,
+   "indep_p": 0.5564,
    "status": "pending",
    "legs": [
     {
@@ -6315,8 +6315,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Kyle McCord 150+ pass yds + Caleb Douglas 3+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.5806,
-   "indep_p": 0.5402,
+   "model_p": 0.5402,
+   "indep_p": 0.4965,
    "status": "pending",
    "legs": [
     {
@@ -6334,8 +6334,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Caleb Douglas 3+ catches + Malik Washington 3+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.4543,
-   "indep_p": 0.4531,
+   "model_p": 0.4231,
+   "indep_p": 0.4219,
    "status": "pending",
    "legs": [
     {
@@ -6353,8 +6353,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "James Cook 70+ rush yds + Caleb Douglas 3+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.4959,
-   "indep_p": 0.4961,
+   "model_p": 0.4744,
+   "indep_p": 0.4747,
    "status": "pending",
    "legs": [
     {
@@ -6370,10 +6370,10 @@
   {
    "week": 11,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Josh Allen 175+ pass yds + Dawson Knox 2+ catches",
+   "subject": "Josh Allen 175+ pass yds + Dawson Knox 1+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.4895,
-   "indep_p": 0.4539,
+   "model_p": 0.6178,
+   "indep_p": 0.5923,
    "status": "pending",
    "legs": [
     {
@@ -6381,7 +6381,7 @@
      "r": "pending"
     },
     {
-     "t": "Dawson Knox 2+ catches",
+     "t": "Dawson Knox 1+ catches",
      "r": "pending"
     }
    ]
@@ -6391,8 +6391,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "James Cook 70+ rush yds + Josh Allen 175+ pass yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.4843,
-   "indep_p": 0.497,
+   "model_p": 0.4923,
+   "indep_p": 0.5048,
    "status": "pending",
    "legs": [
     {
@@ -6410,8 +6410,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Kyle McCord 150+ pass yds + Greg Dulcich 2+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.5711,
-   "indep_p": 0.5402,
+   "model_p": 0.5647,
+   "indep_p": 0.5333,
    "status": "pending",
    "legs": [
     {
@@ -6429,8 +6429,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Ollie Gordon II 50+ rush yds + Kyle McCord 150+ pass yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.5246,
-   "indep_p": 0.5362,
+   "model_p": 0.5101,
+   "indep_p": 0.5221,
    "status": "pending",
    "legs": [
     {
@@ -6448,8 +6448,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Josh Allen 175+ pass yds + Kyle McCord 150+ pass yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.5534,
-   "indep_p": 0.5412,
+   "model_p": 0.5407,
+   "indep_p": 0.5281,
    "status": "pending",
    "legs": [
     {
@@ -6467,8 +6467,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "James Cook 70+ rush yds + Ollie Gordon II 50+ rush yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.4785,
-   "indep_p": 0.4924,
+   "model_p": 0.4854,
+   "indep_p": 0.4991,
    "status": "pending",
    "legs": [
     {
@@ -6486,8 +6486,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "MIA wins + Ollie Gordon II 50+ rush yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.0663,
-   "indep_p": 0.054,
+   "model_p": 0.0659,
+   "indep_p": 0.0532,
    "status": "pending",
    "legs": [
     {
@@ -6505,8 +6505,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "BUF wins + James Cook 70+ rush yds + Kyle McCord 150+ pass yds",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.48,
-   "indep_p": 0.4716,
+   "model_p": 0.4863,
+   "indep_p": 0.4785,
    "status": "pending",
    "legs": [
     {
@@ -6528,8 +6528,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "DJ Moore 2+ catches + Caleb Douglas 3+ catches",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.5663,
-   "indep_p": 0.5619,
+   "model_p": 0.5279,
+   "indep_p": 0.5231,
    "status": "pending",
    "legs": [
     {
@@ -6547,8 +6547,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "BUF wins + James Cook scores a TD",
    "games": "2026_11_MIA_BUF",
-   "model_p": 0.6512,
-   "indep_p": 0.6512,
+   "model_p": 0.642,
+   "indep_p": 0.642,
    "status": "pending",
    "legs": [
     {
@@ -6566,8 +6566,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CHI wins + D'Andre Swift 40+ rush yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.5906,
-   "indep_p": 0.5621,
+   "model_p": 0.5936,
+   "indep_p": 0.5652,
    "status": "pending",
    "legs": [
     {
@@ -6583,14 +6583,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Caleb Williams 200+ pass yds + Luther Burden III 4+ catches",
+   "subject": "Caleb Williams 175+ pass yds + Luther Burden III 4+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4539,
-   "indep_p": 0.4027,
+   "model_p": 0.5154,
+   "indep_p": 0.4717,
    "status": "pending",
    "legs": [
     {
-     "t": "Caleb Williams 200+ pass yds",
+     "t": "Caleb Williams 175+ pass yds",
      "r": "pending"
     },
     {
@@ -6604,8 +6604,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Colston Loveland 3+ catches + Luther Burden III 4+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4567,
-   "indep_p": 0.4531,
+   "model_p": 0.4876,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -6623,8 +6623,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Tyler Shough 175+ pass yds + Chris Olave 4+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.5297,
-   "indep_p": 0.4848,
+   "model_p": 0.526,
+   "indep_p": 0.4807,
    "status": "pending",
    "legs": [
     {
@@ -6661,8 +6661,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "D'Andre Swift 40+ rush yds + Chris Olave 4+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4522,
-   "indep_p": 0.4524,
+   "model_p": 0.4547,
+   "indep_p": 0.4549,
    "status": "pending",
    "legs": [
     {
@@ -6678,14 +6678,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Caleb Williams 200+ pass yds + Colston Loveland 3+ catches",
+   "subject": "Caleb Williams 175+ pass yds + Colston Loveland 3+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.5023,
-   "indep_p": 0.4672,
+   "model_p": 0.6125,
+   "indep_p": 0.5849,
    "status": "pending",
    "legs": [
     {
-     "t": "Caleb Williams 200+ pass yds",
+     "t": "Caleb Williams 175+ pass yds",
      "r": "pending"
     },
     {
@@ -6697,10 +6697,10 @@
   {
    "week": 11,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "D'Andre Swift 40+ rush yds + Caleb Williams 200+ pass yds",
+   "subject": "D'Andre Swift 40+ rush yds + Caleb Williams 175+ pass yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4173,
-   "indep_p": 0.4319,
+   "model_p": 0.4964,
+   "indep_p": 0.5086,
    "status": "pending",
    "legs": [
     {
@@ -6708,7 +6708,7 @@
      "r": "pending"
     },
     {
-     "t": "Caleb Williams 200+ pass yds",
+     "t": "Caleb Williams 175+ pass yds",
      "r": "pending"
     }
    ]
@@ -6718,8 +6718,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Tyler Shough 175+ pass yds + Juwan Johnson 2+ catches",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.5193,
-   "indep_p": 0.4848,
+   "model_p": 0.5155,
+   "indep_p": 0.4807,
    "status": "pending",
    "legs": [
     {
@@ -6737,8 +6737,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Audric Estime 30+ rush yds + Tyler Shough 175+ pass yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4817,
-   "indep_p": 0.4946,
+   "model_p": 0.4758,
+   "indep_p": 0.4888,
    "status": "pending",
    "legs": [
     {
@@ -6754,14 +6754,14 @@
   {
    "week": 11,
    "type": "Combo: shootout, both QBs' yards",
-   "subject": "Caleb Williams 200+ pass yds + Tyler Shough 175+ pass yds",
+   "subject": "Caleb Williams 175+ pass yds + Tyler Shough 175+ pass yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4771,
-   "indep_p": 0.4628,
+   "model_p": 0.5497,
+   "indep_p": 0.5374,
    "status": "pending",
    "legs": [
     {
-     "t": "Caleb Williams 200+ pass yds",
+     "t": "Caleb Williams 175+ pass yds",
      "r": "pending"
     },
     {
@@ -6775,8 +6775,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "D'Andre Swift 40+ rush yds + Audric Estime 30+ rush yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4466,
-   "indep_p": 0.4615,
+   "model_p": 0.4476,
+   "indep_p": 0.4626,
    "status": "pending",
    "legs": [
     {
@@ -6794,8 +6794,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "NO wins + Audric Estime 30+ rush yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.1351,
-   "indep_p": 0.1111,
+   "model_p": 0.1349,
+   "indep_p": 0.1107,
    "status": "pending",
    "legs": [
     {
@@ -6813,8 +6813,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "CHI wins + D'Andre Swift 40+ rush yds + Tyler Shough 175+ pass yds",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.4179,
-   "indep_p": 0.4037,
+   "model_p": 0.4163,
+   "indep_p": 0.4025,
    "status": "pending",
    "legs": [
     {
@@ -6855,8 +6855,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CHI wins + D'Andre Swift scores a TD",
    "games": "2026_11_NO_CHI",
-   "model_p": 0.5275,
-   "indep_p": 0.5275,
+   "model_p": 0.5233,
+   "indep_p": 0.5233,
    "status": "pending",
    "legs": [
     {
@@ -6874,8 +6874,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "DET wins + Jahmyr Gibbs 60+ rush yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5022,
-   "indep_p": 0.4629,
+   "model_p": 0.483,
+   "indep_p": 0.4434,
    "status": "pending",
    "legs": [
     {
@@ -6893,8 +6893,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Jared Goff 225+ pass yds + Amon-Ra St. Brown 5+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5292,
-   "indep_p": 0.4844,
+   "model_p": 0.5266,
+   "indep_p": 0.4817,
    "status": "pending",
    "legs": [
     {
@@ -6929,10 +6929,10 @@
   {
    "week": 11,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Baker Mayfield 175+ pass yds + Chris Godwin Jr. 3+ catches",
+   "subject": "Baker Mayfield 175+ pass yds + Chris Godwin Jr. 4+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5521,
-   "indep_p": 0.5113,
+   "model_p": 0.4563,
+   "indep_p": 0.4053,
    "status": "pending",
    "legs": [
     {
@@ -6940,7 +6940,7 @@
      "r": "pending"
     },
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Chris Godwin Jr. 4+ catches",
      "r": "pending"
     }
    ]
@@ -6948,14 +6948,14 @@
   {
    "week": 11,
    "type": "Combo: top two pass catchers",
-   "subject": "Chris Godwin Jr. 3+ catches + Emeka Egbuka 2+ catches",
+   "subject": "Chris Godwin Jr. 4+ catches + Emeka Egbuka 2+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.6015,
-   "indep_p": 0.6006,
+   "model_p": 0.4854,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Chris Godwin Jr. 4+ catches",
      "r": "pending"
     },
     {
@@ -6967,10 +6967,10 @@
   {
    "week": 11,
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
-   "subject": "Jahmyr Gibbs 60+ rush yds + Chris Godwin Jr. 3+ catches",
+   "subject": "Jahmyr Gibbs 60+ rush yds + Chris Godwin Jr. 4+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5613,
-   "indep_p": 0.5615,
+   "model_p": 0.4564,
+   "indep_p": 0.4566,
    "status": "pending",
    "legs": [
     {
@@ -6978,7 +6978,7 @@
      "r": "pending"
     },
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Chris Godwin Jr. 4+ catches",
      "r": "pending"
     }
    ]
@@ -6988,8 +6988,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Jared Goff 225+ pass yds + Sam LaPorta 3+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.4879,
-   "indep_p": 0.451,
+   "model_p": 0.4854,
+   "indep_p": 0.4485,
    "status": "pending",
    "legs": [
     {
@@ -7007,8 +7007,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jahmyr Gibbs 60+ rush yds + Jared Goff 225+ pass yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.471,
-   "indep_p": 0.4841,
+   "model_p": 0.4724,
+   "indep_p": 0.4854,
    "status": "pending",
    "legs": [
     {
@@ -7026,8 +7026,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Baker Mayfield 175+ pass yds + Cade Otton 2+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5426,
-   "indep_p": 0.5113,
+   "model_p": 0.5342,
+   "indep_p": 0.5026,
    "status": "pending",
    "legs": [
     {
@@ -7045,8 +7045,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Bucky Irving 40+ rush yds + Baker Mayfield 175+ pass yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.4684,
-   "indep_p": 0.4814,
+   "model_p": 0.4581,
+   "indep_p": 0.4715,
    "status": "pending",
    "legs": [
     {
@@ -7064,8 +7064,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Jared Goff 225+ pass yds + Baker Mayfield 175+ pass yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.4559,
-   "indep_p": 0.4408,
+   "model_p": 0.4461,
+   "indep_p": 0.4309,
    "status": "pending",
    "legs": [
     {
@@ -7083,8 +7083,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Jahmyr Gibbs 60+ rush yds + Bucky Irving 40+ rush yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.516,
-   "indep_p": 0.5287,
+   "model_p": 0.5185,
+   "indep_p": 0.5311,
    "status": "pending",
    "legs": [
     {
@@ -7102,8 +7102,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "TB wins + Bucky Irving 40+ rush yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.2999,
-   "indep_p": 0.2635,
+   "model_p": 0.3237,
+   "indep_p": 0.2858,
    "status": "pending",
    "legs": [
     {
@@ -7121,8 +7121,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "DET wins + Jahmyr Gibbs 60+ rush yds + Baker Mayfield 175+ pass yds",
    "games": "2026_11_TB_DET",
-   "model_p": 0.3201,
-   "indep_p": 0.3054,
+   "model_p": 0.3015,
+   "indep_p": 0.2875,
    "status": "pending",
    "legs": [
     {
@@ -7142,10 +7142,10 @@
   {
    "week": 11,
    "type": "Combo: WR1 duel, both top receivers' catches",
-   "subject": "Amon-Ra St. Brown 5+ catches + Chris Godwin Jr. 3+ catches",
+   "subject": "Amon-Ra St. Brown 5+ catches + Chris Godwin Jr. 4+ catches",
    "games": "2026_11_TB_DET",
-   "model_p": 0.5663,
-   "indep_p": 0.5619,
+   "model_p": 0.4587,
+   "indep_p": 0.4531,
    "status": "pending",
    "legs": [
     {
@@ -7153,7 +7153,7 @@
      "r": "pending"
     },
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Chris Godwin Jr. 4+ catches",
      "r": "pending"
     }
    ]
@@ -7163,8 +7163,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "DET wins + Jahmyr Gibbs scores a TD",
    "games": "2026_11_TB_DET",
-   "model_p": 0.4249,
-   "indep_p": 0.4249,
+   "model_p": 0.3945,
+   "indep_p": 0.3945,
    "status": "pending",
    "legs": [
     {
@@ -7182,8 +7182,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "DAL wins + Javonte Williams 60+ rush yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5567,
-   "indep_p": 0.5208,
+   "model_p": 0.5611,
+   "indep_p": 0.5255,
    "status": "pending",
    "legs": [
     {
@@ -7201,8 +7201,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Dak Prescott 250+ pass yds + CeeDee Lamb 7+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5641,
-   "indep_p": 0.522,
+   "model_p": 0.5627,
+   "indep_p": 0.5205,
    "status": "pending",
    "legs": [
     {
@@ -7239,8 +7239,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Cam Ward 175+ pass yds + Carnell Tate 4+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5314,
-   "indep_p": 0.4867,
+   "model_p": 0.4975,
+   "indep_p": 0.451,
    "status": "pending",
    "legs": [
     {
@@ -7258,8 +7258,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Carnell Tate 4+ catches + Elic Ayomanor 2+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4905,
-   "indep_p": 0.4894,
+   "model_p": 0.4543,
+   "indep_p": 0.4531,
    "status": "pending",
    "legs": [
     {
@@ -7277,8 +7277,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Javonte Williams 60+ rush yds + Carnell Tate 4+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4749,
-   "indep_p": 0.4751,
+   "model_p": 0.4437,
+   "indep_p": 0.4439,
    "status": "pending",
    "legs": [
     {
@@ -7296,8 +7296,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Dak Prescott 250+ pass yds + Brevyn Spann-Ford 2+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4859,
-   "indep_p": 0.45,
+   "model_p": 0.4847,
+   "indep_p": 0.4487,
    "status": "pending",
    "legs": [
     {
@@ -7315,8 +7315,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Javonte Williams 60+ rush yds + Dak Prescott 250+ pass yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4942,
-   "indep_p": 0.5067,
+   "model_p": 0.4974,
+   "indep_p": 0.5099,
    "status": "pending",
    "legs": [
     {
@@ -7334,8 +7334,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Cam Ward 175+ pass yds + Gunnar Helm 2+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5549,
-   "indep_p": 0.5227,
+   "model_p": 0.5553,
+   "indep_p": 0.5232,
    "status": "pending",
    "legs": [
     {
@@ -7353,8 +7353,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Tony Pollard 50+ rush yds + Cam Ward 175+ pass yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5286,
-   "indep_p": 0.54,
+   "model_p": 0.5243,
+   "indep_p": 0.5359,
    "status": "pending",
    "legs": [
     {
@@ -7372,8 +7372,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Dak Prescott 250+ pass yds + Cam Ward 175+ pass yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.532,
-   "indep_p": 0.5191,
+   "model_p": 0.531,
+   "indep_p": 0.518,
    "status": "pending",
    "legs": [
     {
@@ -7391,8 +7391,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Javonte Williams 60+ rush yds + Tony Pollard 50+ rush yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.5144,
-   "indep_p": 0.5271,
+   "model_p": 0.5146,
+   "indep_p": 0.5274,
    "status": "pending",
    "legs": [
     {
@@ -7410,8 +7410,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "TEN wins + Tony Pollard 50+ rush yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.2239,
-   "indep_p": 0.1947,
+   "model_p": 0.2227,
+   "indep_p": 0.1931,
    "status": "pending",
    "legs": [
     {
@@ -7429,8 +7429,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "DAL wins + Javonte Williams 60+ rush yds + Cam Ward 175+ pass yds",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.3928,
-   "indep_p": 0.3755,
+   "model_p": 0.3963,
+   "indep_p": 0.3792,
    "status": "pending",
    "legs": [
     {
@@ -7452,8 +7452,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "CeeDee Lamb 7+ catches + Carnell Tate 4+ catches",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4947,
-   "indep_p": 0.4894,
+   "model_p": 0.4587,
+   "indep_p": 0.4531,
    "status": "pending",
    "legs": [
     {
@@ -7471,8 +7471,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "DAL wins + Javonte Williams scores a TD",
    "games": "2026_11_TEN_DAL",
-   "model_p": 0.4973,
-   "indep_p": 0.4973,
+   "model_p": 0.4958,
+   "indep_p": 0.4958,
    "status": "pending",
    "legs": [
     {
@@ -7490,8 +7490,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "LAC wins + Omarion Hampton 40+ rush yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.4279,
-   "indep_p": 0.3838,
+   "model_p": 0.4268,
+   "indep_p": 0.3826,
    "status": "pending",
    "legs": [
     {
@@ -7507,14 +7507,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Justin Herbert 175+ pass yds + Tre Harris 3+ catches",
+   "subject": "Justin Herbert 150+ pass yds + Tre Harris 3+ catches",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.4835,
-   "indep_p": 0.4346,
+   "model_p": 0.5521,
+   "indep_p": 0.51,
    "status": "pending",
    "legs": [
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     },
     {
@@ -7547,8 +7547,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Geno Smith 175+ pass yds + Adonai Mitchell 3+ catches",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.5497,
-   "indep_p": 0.5073,
+   "model_p": 0.549,
+   "indep_p": 0.5065,
    "status": "pending",
    "legs": [
     {
@@ -7585,8 +7585,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Omarion Hampton 40+ rush yds + Adonai Mitchell 3+ catches",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.448,
-   "indep_p": 0.4482,
+   "model_p": 0.4466,
+   "indep_p": 0.4468,
    "status": "pending",
    "legs": [
     {
@@ -7602,14 +7602,14 @@
   {
    "week": 11,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Justin Herbert 175+ pass yds + Oronde Gadsden II 1+ catches",
+   "subject": "Justin Herbert 150+ pass yds + Oronde Gadsden II 1+ catches",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.5307,
-   "indep_p": 0.4989,
+   "model_p": 0.6132,
+   "indep_p": 0.5856,
    "status": "pending",
    "legs": [
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     },
     {
@@ -7621,10 +7621,10 @@
   {
    "week": 11,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Omarion Hampton 40+ rush yds + Justin Herbert 175+ pass yds",
+   "subject": "Omarion Hampton 40+ rush yds + Justin Herbert 150+ pass yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.4127,
-   "indep_p": 0.4275,
+   "model_p": 0.4878,
+   "indep_p": 0.5001,
    "status": "pending",
    "legs": [
     {
@@ -7632,7 +7632,7 @@
      "r": "pending"
     },
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     }
    ]
@@ -7642,8 +7642,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Geno Smith 175+ pass yds + Mason Taylor 3+ catches",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.5754,
-   "indep_p": 0.5449,
+   "model_p": 0.5746,
+   "indep_p": 0.544,
    "status": "pending",
    "legs": [
     {
@@ -7661,8 +7661,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Breece Hall 40+ rush yds + Geno Smith 175+ pass yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.474,
-   "indep_p": 0.4867,
+   "model_p": 0.4723,
+   "indep_p": 0.485,
    "status": "pending",
    "legs": [
     {
@@ -7678,14 +7678,14 @@
   {
    "week": 11,
    "type": "Combo: shootout, both QBs' yards",
-   "subject": "Justin Herbert 175+ pass yds + Geno Smith 175+ pass yds",
+   "subject": "Justin Herbert 150+ pass yds + Geno Smith 175+ pass yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.4973,
-   "indep_p": 0.4839,
+   "model_p": 0.5784,
+   "indep_p": 0.567,
    "status": "pending",
    "legs": [
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     },
     {
@@ -7699,8 +7699,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Omarion Hampton 40+ rush yds + Breece Hall 40+ rush yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.4141,
-   "indep_p": 0.4299,
+   "model_p": 0.4119,
+   "indep_p": 0.4278,
    "status": "pending",
    "legs": [
     {
@@ -7718,8 +7718,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "NYJ wins + Breece Hall 40+ rush yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.3171,
-   "indep_p": 0.2732,
+   "model_p": 0.3166,
+   "indep_p": 0.2727,
    "status": "pending",
    "legs": [
     {
@@ -7737,8 +7737,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "LAC wins + Omarion Hampton 40+ rush yds + Geno Smith 175+ pass yds",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.3122,
-   "indep_p": 0.2885,
+   "model_p": 0.3108,
+   "indep_p": 0.2871,
    "status": "pending",
    "legs": [
     {
@@ -7779,8 +7779,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "LAC wins + Omarion Hampton scores a TD",
    "games": "2026_11_NYJ_LAC",
-   "model_p": 0.2688,
-   "indep_p": 0.2688,
+   "model_p": 0.2601,
+   "indep_p": 0.2601,
    "status": "pending",
    "legs": [
     {
@@ -7798,8 +7798,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "DEN wins + Jonah Coleman 40+ rush yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.6018,
-   "indep_p": 0.5718,
+   "model_p": 0.6044,
+   "indep_p": 0.5745,
    "status": "pending",
    "legs": [
     {
@@ -7817,8 +7817,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Bo Nix 175+ pass yds + Courtland Sutton 3+ catches",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4837,
-   "indep_p": 0.4354,
+   "model_p": 0.4877,
+   "indep_p": 0.4399,
    "status": "pending",
    "legs": [
     {
@@ -7855,8 +7855,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Fernando Mendoza 150+ pass yds + Tre Tucker 2+ catches",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.5874,
-   "indep_p": 0.5478,
+   "model_p": 0.5896,
+   "indep_p": 0.5503,
    "status": "pending",
    "legs": [
     {
@@ -7893,8 +7893,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Jonah Coleman 40+ rush yds + Tre Tucker 2+ catches",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.508,
-   "indep_p": 0.5082,
+   "model_p": 0.5104,
+   "indep_p": 0.5106,
    "status": "pending",
    "legs": [
     {
@@ -7912,8 +7912,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Bo Nix 175+ pass yds + Evan Engram 2+ catches",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.5059,
-   "indep_p": 0.4703,
+   "model_p": 0.5103,
+   "indep_p": 0.4751,
    "status": "pending",
    "legs": [
     {
@@ -7931,8 +7931,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jonah Coleman 40+ rush yds + Bo Nix 175+ pass yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4753,
-   "indep_p": 0.4884,
+   "model_p": 0.4828,
+   "indep_p": 0.4957,
    "status": "pending",
    "legs": [
     {
@@ -7950,8 +7950,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Fernando Mendoza 150+ pass yds + Michael Mayer 2+ catches",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.6132,
-   "indep_p": 0.5856,
+   "model_p": 0.6156,
+   "indep_p": 0.5882,
    "status": "pending",
    "legs": [
     {
@@ -7969,8 +7969,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Ashton Jeanty 20+ rush yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4902,
-   "indep_p": 0.5025,
+   "model_p": 0.49,
+   "indep_p": 0.5022,
    "status": "pending",
    "legs": [
     {
@@ -7988,8 +7988,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Bo Nix 175+ pass yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.5389,
-   "indep_p": 0.5264,
+   "model_p": 0.5465,
+   "indep_p": 0.5342,
    "status": "pending",
    "legs": [
     {
@@ -8007,8 +8007,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Jonah Coleman 40+ rush yds + Ashton Jeanty 20+ rush yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4514,
-   "indep_p": 0.4662,
+   "model_p": 0.4513,
+   "indep_p": 0.466,
    "status": "pending",
    "legs": [
     {
@@ -8026,8 +8026,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "LV wins + Ashton Jeanty 20+ rush yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.1501,
-   "indep_p": 0.1226,
+   "model_p": 0.1496,
+   "indep_p": 0.122,
    "status": "pending",
    "legs": [
     {
@@ -8045,8 +8045,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "DEN wins + Jonah Coleman 40+ rush yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4482,
-   "indep_p": 0.4321,
+   "model_p": 0.4522,
+   "indep_p": 0.436,
    "status": "pending",
    "legs": [
     {
@@ -8087,8 +8087,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "DEN wins + Jonah Coleman scores a TD",
    "games": "2026_11_LV_DEN",
-   "model_p": 0.4274,
-   "indep_p": 0.4274,
+   "model_p": 0.4282,
+   "indep_p": 0.4282,
    "status": "pending",
    "legs": [
     {
@@ -8106,8 +8106,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Joe Milton III 150+ pass yds + DeVonta Smith 2+ catches",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.5701,
-   "indep_p": 0.5302,
+   "model_p": 0.5926,
+   "indep_p": 0.554,
    "status": "pending",
    "legs": [
     {
@@ -8144,8 +8144,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "PIT wins + Jaylen Warren 30+ rush yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4789,
-   "indep_p": 0.4371,
+   "model_p": 0.4763,
+   "indep_p": 0.4343,
    "status": "pending",
    "legs": [
     {
@@ -8163,8 +8163,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Aaron Rodgers 175+ pass yds + DK Metcalf 3+ catches",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4833,
-   "indep_p": 0.4343,
+   "model_p": 0.5041,
+   "indep_p": 0.4566,
    "status": "pending",
    "legs": [
     {
@@ -8201,8 +8201,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Jaylen Warren 30+ rush yds + DeVonta Smith 2+ catches",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.5243,
-   "indep_p": 0.5245,
+   "model_p": 0.5202,
+   "indep_p": 0.5203,
    "status": "pending",
    "legs": [
     {
@@ -8220,8 +8220,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Aaron Rodgers 175+ pass yds + Pat Freiermuth 2+ catches",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.5016,
-   "indep_p": 0.4665,
+   "model_p": 0.4931,
+   "indep_p": 0.4566,
    "status": "pending",
    "legs": [
     {
@@ -8239,8 +8239,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jaylen Warren 30+ rush yds + Aaron Rodgers 175+ pass yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4209,
-   "indep_p": 0.4355,
+   "model_p": 0.4402,
+   "indep_p": 0.4542,
    "status": "pending",
    "legs": [
     {
@@ -8258,8 +8258,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Joe Milton III 150+ pass yds + Dallas Goedert 2+ catches",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.5298,
-   "indep_p": 0.496,
+   "model_p": 0.5508,
+   "indep_p": 0.5183,
    "status": "pending",
    "legs": [
     {
@@ -8277,8 +8277,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Saquon Barkley 40+ rush yds + Joe Milton III 150+ pass yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4945,
-   "indep_p": 0.5068,
+   "model_p": 0.5057,
+   "indep_p": 0.5179,
    "status": "pending",
    "legs": [
     {
@@ -8296,8 +8296,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Aaron Rodgers 175+ pass yds + Joe Milton III 150+ pass yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4551,
-   "indep_p": 0.4401,
+   "model_p": 0.4975,
+   "indep_p": 0.4836,
    "status": "pending",
    "legs": [
     {
@@ -8315,8 +8315,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Jaylen Warren 30+ rush yds + Saquon Barkley 40+ rush yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.4879,
-   "indep_p": 0.5014,
+   "model_p": 0.4723,
+   "indep_p": 0.4864,
    "status": "pending",
    "legs": [
     {
@@ -8334,8 +8334,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "PHI wins + Saquon Barkley 40+ rush yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.2976,
-   "indep_p": 0.2624,
+   "model_p": 0.2922,
+   "indep_p": 0.2558,
    "status": "pending",
    "legs": [
     {
@@ -8353,8 +8353,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "PIT wins + Jaylen Warren 30+ rush yds + Joe Milton III 150+ pass yds",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.3175,
-   "indep_p": 0.299,
+   "model_p": 0.3309,
+   "indep_p": 0.3105,
    "status": "pending",
    "legs": [
     {
@@ -8395,8 +8395,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "PIT wins + Jaylen Warren scores a TD",
    "games": "2026_11_PIT_PHI",
-   "model_p": 0.2402,
-   "indep_p": 0.2402,
+   "model_p": 0.2368,
+   "indep_p": 0.2368,
    "status": "pending",
    "legs": [
     {
@@ -8414,8 +8414,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "SF wins + Christian McCaffrey 30+ rush yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4664,
-   "indep_p": 0.4241,
+   "model_p": 0.4607,
+   "indep_p": 0.418,
    "status": "pending",
    "legs": [
     {
@@ -8433,8 +8433,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Brock Purdy 200+ pass yds + Keenan Allen 3+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4793,
-   "indep_p": 0.4305,
+   "model_p": 0.485,
+   "indep_p": 0.4369,
    "status": "pending",
    "legs": [
     {
@@ -8452,8 +8452,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "George Kittle 4+ catches + Keenan Allen 3+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.3947,
-   "indep_p": 0.3906,
+   "model_p": 0.4257,
+   "indep_p": 0.4219,
    "status": "pending",
    "legs": [
     {
@@ -8471,8 +8471,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Kirk Cousins 200+ pass yds + Justin Jefferson 5+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.486,
-   "indep_p": 0.4372,
+   "model_p": 0.496,
+   "indep_p": 0.4479,
    "status": "pending",
    "legs": [
     {
@@ -8490,8 +8490,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Justin Jefferson 5+ catches + T.J. Hockenson 3+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4257,
-   "indep_p": 0.4219,
+   "model_p": 0.4593,
+   "indep_p": 0.4556,
    "status": "pending",
    "legs": [
     {
@@ -8509,8 +8509,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Christian McCaffrey 30+ rush yds + Justin Jefferson 5+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4604,
-   "indep_p": 0.4606,
+   "model_p": 0.4545,
+   "indep_p": 0.4547,
    "status": "pending",
    "legs": [
     {
@@ -8528,8 +8528,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Brock Purdy 200+ pass yds + George Kittle 4+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4681,
-   "indep_p": 0.4305,
+   "model_p": 0.5073,
+   "indep_p": 0.4718,
    "status": "pending",
    "legs": [
     {
@@ -8547,8 +8547,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Christian McCaffrey 30+ rush yds + Brock Purdy 200+ pass yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4564,
-   "indep_p": 0.47,
+   "model_p": 0.4574,
+   "indep_p": 0.4709,
    "status": "pending",
    "legs": [
     {
@@ -8566,8 +8566,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Kirk Cousins 200+ pass yds + T.J. Hockenson 3+ catches",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4441,
-   "indep_p": 0.4048,
+   "model_p": 0.4849,
+   "indep_p": 0.4479,
    "status": "pending",
    "legs": [
     {
@@ -8585,8 +8585,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jordan Mason 25+ rush yds + Kirk Cousins 200+ pass yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.445,
-   "indep_p": 0.4588,
+   "model_p": 0.4499,
+   "indep_p": 0.4636,
    "status": "pending",
    "legs": [
     {
@@ -8604,8 +8604,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Brock Purdy 200+ pass yds + Kirk Cousins 200+ pass yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.461,
-   "indep_p": 0.4461,
+   "model_p": 0.4783,
+   "indep_p": 0.4639,
    "status": "pending",
    "legs": [
     {
@@ -8623,8 +8623,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Christian McCaffrey 30+ rush yds + Jordan Mason 25+ rush yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.4691,
-   "indep_p": 0.4833,
+   "model_p": 0.456,
+   "indep_p": 0.4706,
    "status": "pending",
    "legs": [
     {
@@ -8642,8 +8642,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "MIN wins + Jordan Mason 25+ rush yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.3067,
-   "indep_p": 0.2681,
+   "model_p": 0.3045,
+   "indep_p": 0.2652,
    "status": "pending",
    "legs": [
     {
@@ -8661,8 +8661,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "SF wins + Christian McCaffrey 30+ rush yds + Kirk Cousins 200+ pass yds",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.2911,
-   "indep_p": 0.2747,
+   "model_p": 0.2951,
+   "indep_p": 0.2774,
    "status": "pending",
    "legs": [
     {
@@ -8703,8 +8703,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "SF wins + Christian McCaffrey scores a TD",
    "games": "2026_11_MIN_SF",
-   "model_p": 0.2915,
-   "indep_p": 0.2915,
+   "model_p": 0.2903,
+   "indep_p": 0.2903,
    "status": "pending",
    "legs": [
     {
@@ -8722,8 +8722,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Jayden Daniels 175+ pass yds + Stefon Diggs 4+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4888,
-   "indep_p": 0.4412,
+   "model_p": 0.4848,
+   "indep_p": 0.4366,
    "status": "pending",
    "legs": [
     {
@@ -8760,8 +8760,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CIN wins + Chase Brown 30+ rush yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.5443,
-   "indep_p": 0.5072,
+   "model_p": 0.5402,
+   "indep_p": 0.5029,
    "status": "pending",
    "legs": [
     {
@@ -8779,8 +8779,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Joe Burrow 250+ pass yds + Ja'Marr Chase 7+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.5096,
-   "indep_p": 0.4626,
+   "model_p": 0.5083,
+   "indep_p": 0.4612,
    "status": "pending",
    "legs": [
     {
@@ -8796,10 +8796,10 @@
   {
    "week": 11,
    "type": "Combo: top two pass catchers",
-   "subject": "Ja'Marr Chase 7+ catches + Tee Higgins 4+ catches",
+   "subject": "Ja'Marr Chase 7+ catches + Tee Higgins 5+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4905,
-   "indep_p": 0.4894,
+   "model_p": 0.4231,
+   "indep_p": 0.4219,
    "status": "pending",
    "legs": [
     {
@@ -8807,7 +8807,7 @@
      "r": "pending"
     },
     {
-     "t": "Tee Higgins 4+ catches",
+     "t": "Tee Higgins 5+ catches",
      "r": "pending"
     }
    ]
@@ -8817,8 +8817,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Chase Brown 30+ rush yds + Stefon Diggs 4+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4397,
-   "indep_p": 0.4399,
+   "model_p": 0.4347,
+   "indep_p": 0.4349,
    "status": "pending",
    "legs": [
     {
@@ -8836,8 +8836,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Joe Burrow 250+ pass yds + Mike Gesicki 1+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.592,
-   "indep_p": 0.5655,
+   "model_p": 0.5903,
+   "indep_p": 0.5637,
    "status": "pending",
    "legs": [
     {
@@ -8855,8 +8855,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Chase Brown 30+ rush yds + Joe Burrow 250+ pass yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4692,
-   "indep_p": 0.4825,
+   "model_p": 0.4621,
+   "indep_p": 0.4755,
    "status": "pending",
    "legs": [
     {
@@ -8874,8 +8874,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Jayden Daniels 175+ pass yds + Chig Okonkwo 3+ catches",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4779,
-   "indep_p": 0.4412,
+   "model_p": 0.4737,
+   "indep_p": 0.4366,
    "status": "pending",
    "legs": [
     {
@@ -8891,14 +8891,14 @@
   {
    "week": 11,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Jacory Croskey-Merritt 20+ rush yds + Jayden Daniels 175+ pass yds",
+   "subject": "Jacory Croskey-Merritt 25+ rush yds + Jayden Daniels 175+ pass yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.5019,
-   "indep_p": 0.5142,
+   "model_p": 0.457,
+   "indep_p": 0.4706,
    "status": "pending",
    "legs": [
     {
-     "t": "Jacory Croskey-Merritt 20+ rush yds",
+     "t": "Jacory Croskey-Merritt 25+ rush yds",
      "r": "pending"
     },
     {
@@ -8912,8 +8912,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Joe Burrow 250+ pass yds + Jayden Daniels 175+ pass yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4977,
-   "indep_p": 0.4838,
+   "model_p": 0.4914,
+   "indep_p": 0.4774,
    "status": "pending",
    "legs": [
     {
@@ -8929,10 +8929,10 @@
   {
    "week": 11,
    "type": "Combo: ground battle, both lead RBs' yards",
-   "subject": "Chase Brown 30+ rush yds + Jacory Croskey-Merritt 20+ rush yds",
+   "subject": "Chase Brown 30+ rush yds + Jacory Croskey-Merritt 25+ rush yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.4994,
-   "indep_p": 0.5127,
+   "model_p": 0.454,
+   "indep_p": 0.4688,
    "status": "pending",
    "legs": [
     {
@@ -8940,7 +8940,7 @@
      "r": "pending"
     },
     {
-     "t": "Jacory Croskey-Merritt 20+ rush yds",
+     "t": "Jacory Croskey-Merritt 25+ rush yds",
      "r": "pending"
     }
    ]
@@ -8948,10 +8948,10 @@
   {
    "week": 11,
    "type": "Combo: upset, underdog wins + its RB yards",
-   "subject": "WAS wins + Jacory Croskey-Merritt 20+ rush yds",
+   "subject": "WAS wins + Jacory Croskey-Merritt 25+ rush yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.2354,
-   "indep_p": 0.2035,
+   "model_p": 0.222,
+   "indep_p": 0.1869,
    "status": "pending",
    "legs": [
     {
@@ -8959,7 +8959,7 @@
      "r": "pending"
     },
     {
-     "t": "Jacory Croskey-Merritt 20+ rush yds",
+     "t": "Jacory Croskey-Merritt 25+ rush yds",
      "r": "pending"
     }
    ]
@@ -8969,8 +8969,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "CIN wins + Chase Brown 30+ rush yds + Jayden Daniels 175+ pass yds",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.3751,
-   "indep_p": 0.3581,
+   "model_p": 0.3683,
+   "indep_p": 0.3513,
    "status": "pending",
    "legs": [
     {
@@ -9011,8 +9011,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CIN wins + Ja'Marr Chase scores a TD",
    "games": "2026_11_CIN_WAS",
-   "model_p": 0.459,
-   "indep_p": 0.459,
+   "model_p": 0.4552,
+   "indep_p": 0.4552,
    "status": "pending",
    "legs": [
     {
@@ -9030,8 +9030,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Josh Downs 2+ catches + Derrick Henry 50+ rush yds",
    "games": "2026_11_ARI_KC,2026_11_BAL_CAR",
-   "model_p": 0.5239,
-   "indep_p": 0.5239,
+   "model_p": 0.5328,
+   "indep_p": 0.5328,
    "status": "pending",
    "legs": [
     {
@@ -9049,8 +9049,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Bhayshul Tuten 40+ rush yds + James Cook 70+ rush yds",
    "games": "2026_11_JAX_NYG,2026_11_MIA_BUF",
-   "model_p": 0.5021,
-   "indep_p": 0.5021,
+   "model_p": 0.5184,
+   "indep_p": 0.5184,
    "status": "pending",
    "legs": [
     {
@@ -9068,8 +9068,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Rome Odunze 2+ catches + Jahmyr Gibbs 60+ rush yds",
    "games": "2026_11_NO_CHI,2026_11_TB_DET",
-   "model_p": 0.5253,
-   "indep_p": 0.5253,
+   "model_p": 0.5297,
+   "indep_p": 0.5297,
    "status": "pending",
    "legs": [
     {
@@ -9085,10 +9085,10 @@
   {
    "week": 11,
    "type": "Combo: steady pair across games",
-   "subject": "Ryan Flournoy 4+ catches + Justin Herbert 175+ pass yds",
+   "subject": "Ryan Flournoy 4+ catches + Justin Herbert 150+ pass yds",
    "games": "2026_11_TEN_DAL,2026_11_NYJ_LAC",
-   "model_p": 0.4024,
-   "indep_p": 0.4024,
+   "model_p": 0.4723,
+   "indep_p": 0.4723,
    "status": "pending",
    "legs": [
     {
@@ -9096,7 +9096,7 @@
      "r": "pending"
     },
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     }
    ]
@@ -9125,8 +9125,8 @@
    "type": "Combo: steady pair across games",
    "subject": "George Kittle 4+ catches + Joe Burrow 250+ pass yds",
    "games": "2026_11_MIN_SF,2026_11_CIN_WAS",
-   "model_p": 0.4284,
-   "indep_p": 0.4284,
+   "model_p": 0.4612,
+   "indep_p": 0.4612,
    "status": "pending",
    "legs": [
     {
@@ -9144,8 +9144,8 @@
    "type": "Combo: steady trio across games",
    "subject": "Josh Downs 2+ catches + Derrick Henry 50+ rush yds + Bhayshul Tuten 40+ rush yds",
    "games": "2026_11_ARI_KC,2026_11_BAL_CAR,2026_11_JAX_NYG",
-   "model_p": 0.3844,
-   "indep_p": 0.3844,
+   "model_p": 0.3928,
+   "indep_p": 0.3928,
    "status": "pending",
    "legs": [
     {
@@ -9167,8 +9167,8 @@
    "type": "Combo: steady trio across games",
    "subject": "James Cook 70+ rush yds + Rome Odunze 2+ catches + Jahmyr Gibbs 60+ rush yds",
    "games": "2026_11_MIA_BUF,2026_11_NO_CHI,2026_11_TB_DET",
-   "model_p": 0.3594,
-   "indep_p": 0.3594,
+   "model_p": 0.3725,
+   "indep_p": 0.3725,
    "status": "pending",
    "legs": [
     {
@@ -9188,10 +9188,10 @@
   {
    "week": 11,
    "type": "Combo: steady trio across games",
-   "subject": "Ryan Flournoy 4+ catches + Justin Herbert 175+ pass yds + Courtland Sutton 3+ catches",
+   "subject": "Ryan Flournoy 4+ catches + Justin Herbert 150+ pass yds + Courtland Sutton 3+ catches",
    "games": "2026_11_TEN_DAL,2026_11_NYJ_LAC,2026_11_LV_DEN",
-   "model_p": 0.2515,
-   "indep_p": 0.2515,
+   "model_p": 0.2952,
+   "indep_p": 0.2952,
    "status": "pending",
    "legs": [
     {
@@ -9199,7 +9199,7 @@
      "r": "pending"
     },
     {
-     "t": "Justin Herbert 175+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     },
     {
@@ -9213,8 +9213,8 @@
    "type": "Combo: steady trio across games",
    "subject": "DeVonta Smith 2+ catches + George Kittle 4+ catches + Joe Burrow 250+ pass yds",
    "games": "2026_11_PIT_PHI,2026_11_MIN_SF,2026_11_CIN_WAS",
-   "model_p": 0.332,
-   "indep_p": 0.332,
+   "model_p": 0.3575,
+   "indep_p": 0.3575,
    "status": "pending",
    "legs": [
     {
@@ -9236,8 +9236,8 @@
    "type": "Control: random pair across games",
    "subject": "Baker Mayfield 175+ pass yds + Gunnar Helm 2+ catches",
    "games": "2026_11_TB_DET,2026_11_TEN_DAL",
-   "model_p": 0.4783,
-   "indep_p": 0.4783,
+   "model_p": 0.4702,
+   "indep_p": 0.4702,
    "status": "pending",
    "legs": [
     {
@@ -9253,14 +9253,14 @@
   {
    "week": 11,
    "type": "Control: random pair across games",
-   "subject": "Jacoby Brissett 150+ pass yds + Greg Dulcich 2+ catches",
+   "subject": "Jacoby Brissett 175+ pass yds + Greg Dulcich 2+ catches",
    "games": "2026_11_BAL_CAR,2026_11_MIA_BUF",
-   "model_p": 0.5518,
-   "indep_p": 0.5518,
+   "model_p": 0.4701,
+   "indep_p": 0.4701,
    "status": "pending",
    "legs": [
     {
-     "t": "Jacoby Brissett 150+ pass yds",
+     "t": "Jacoby Brissett 175+ pass yds",
      "r": "pending"
     },
     {
@@ -9293,8 +9293,8 @@
    "type": "Control: random pair across games",
    "subject": "Amon-Ra St. Brown 5+ catches + Alvin Kamara 10+ rush yds",
    "games": "2026_11_TB_DET,2026_11_NO_CHI",
-   "model_p": 0.4976,
-   "indep_p": 0.4976,
+   "model_p": 0.5042,
+   "indep_p": 0.5042,
    "status": "pending",
    "legs": [
     {
@@ -9312,8 +9312,8 @@
    "type": "Control: random pair across games",
    "subject": "Aaron Rodgers 175+ pass yds + Brenton Strange 2+ catches",
    "games": "2026_11_PIT_PHI,2026_11_JAX_NYG",
-   "model_p": 0.4665,
-   "indep_p": 0.4665,
+   "model_p": 0.4905,
+   "indep_p": 0.4905,
    "status": "pending",
    "legs": [
     {
@@ -9331,8 +9331,8 @@
    "type": "Control: random pair across games",
    "subject": "Brenton Strange 2+ catches + D'Andre Swift 40+ rush yds",
    "games": "2026_11_JAX_NYG,2026_11_NO_CHI",
-   "model_p": 0.4859,
-   "indep_p": 0.4859,
+   "model_p": 0.4886,
+   "indep_p": 0.4886,
    "status": "pending",
    "legs": [
     {
@@ -9348,14 +9348,14 @@
   {
    "week": 11,
    "type": "Control: random pair across games",
-   "subject": "Chris Godwin Jr. 3+ catches + Marvin Mims Jr. 1+ catches",
+   "subject": "Chris Godwin Jr. 4+ catches + Marvin Mims Jr. 1+ catches",
    "games": "2026_11_TB_DET,2026_11_LV_DEN",
-   "model_p": 0.6394,
-   "indep_p": 0.6394,
+   "model_p": 0.5156,
+   "indep_p": 0.5156,
    "status": "pending",
    "legs": [
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Chris Godwin Jr. 4+ catches",
      "r": "pending"
     },
     {
@@ -9369,8 +9369,8 @@
    "type": "Control: random pair across games",
    "subject": "Tez Johnson 1+ catches + Kyle McCord 150+ pass yds",
    "games": "2026_11_TB_DET,2026_11_MIA_BUF",
-   "model_p": 0.5775,
-   "indep_p": 0.5775,
+   "model_p": 0.5701,
+   "indep_p": 0.5701,
    "status": "pending",
    "legs": [
     {
@@ -9388,8 +9388,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "LA wins + Kyren Williams 25+ rush yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.464,
-   "indep_p": 0.4221,
+   "model_p": 0.4611,
+   "indep_p": 0.419,
    "status": "pending",
    "legs": [
     {
@@ -9407,8 +9407,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Matthew Stafford 225+ pass yds + Konata Mumpfield 2+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4719,
-   "indep_p": 0.4223,
+   "model_p": 0.4734,
+   "indep_p": 0.4239,
    "status": "pending",
    "legs": [
     {
@@ -9426,8 +9426,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Tyler Higbee 3+ catches + Colby Parkinson 3+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4597,
-   "indep_p": 0.4556,
+   "model_p": 0.4262,
+   "indep_p": 0.4219,
    "status": "pending",
    "legs": [
     {
@@ -9445,8 +9445,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Jordan Love 225+ pass yds + Matthew Golden 4+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.5178,
-   "indep_p": 0.4724,
+   "model_p": 0.5232,
+   "indep_p": 0.4781,
    "status": "pending",
    "legs": [
     {
@@ -9483,8 +9483,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Kyren Williams 25+ rush yds + Matthew Golden 4+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.5053,
-   "indep_p": 0.5055,
+   "model_p": 0.5016,
+   "indep_p": 0.5018,
    "status": "pending",
    "legs": [
     {
@@ -9502,8 +9502,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Matthew Stafford 225+ pass yds + Tyler Higbee 3+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4926,
-   "indep_p": 0.4561,
+   "model_p": 0.4943,
+   "indep_p": 0.4579,
    "status": "pending",
    "legs": [
     {
@@ -9521,8 +9521,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Kyren Williams 25+ rush yds + Matthew Stafford 225+ pass yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4576,
-   "indep_p": 0.4712,
+   "model_p": 0.4558,
+   "indep_p": 0.4695,
    "status": "pending",
    "legs": [
     {
@@ -9540,8 +9540,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Jordan Love 225+ pass yds + Tucker Kraft 3+ catches",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4464,
-   "indep_p": 0.4073,
+   "model_p": 0.4511,
+   "indep_p": 0.4122,
    "status": "pending",
    "legs": [
     {
@@ -9559,8 +9559,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Kaleb Johnson 15+ rush yds + Jordan Love 225+ pass yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4422,
-   "indep_p": 0.4561,
+   "model_p": 0.4441,
+   "indep_p": 0.458,
    "status": "pending",
    "legs": [
     {
@@ -9578,8 +9578,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Matthew Stafford 225+ pass yds + Jordan Love 225+ pass yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.4553,
-   "indep_p": 0.4403,
+   "model_p": 0.4622,
+   "indep_p": 0.4473,
    "status": "pending",
    "legs": [
     {
@@ -9597,8 +9597,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Kyren Williams 25+ rush yds + Kaleb Johnson 15+ rush yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.474,
-   "indep_p": 0.4881,
+   "model_p": 0.4662,
+   "indep_p": 0.4806,
    "status": "pending",
    "legs": [
     {
@@ -9616,8 +9616,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "GB wins + Kaleb Johnson 15+ rush yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.3161,
-   "indep_p": 0.2762,
+   "model_p": 0.3142,
+   "indep_p": 0.274,
    "status": "pending",
    "legs": [
     {
@@ -9635,8 +9635,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "LA wins + Kyren Williams 25+ rush yds + Jordan Love 225+ pass yds",
    "games": "2026_12_GB_LA",
-   "model_p": 0.291,
-   "indep_p": 0.2751,
+   "model_p": 0.293,
+   "indep_p": 0.2763,
    "status": "pending",
    "legs": [
     {
@@ -9677,8 +9677,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "LA wins + Kyren Williams scores a TD",
    "games": "2026_12_GB_LA",
-   "model_p": 0.2742,
-   "indep_p": 0.2742,
+   "model_p": 0.273,
+   "indep_p": 0.273,
    "status": "pending",
    "legs": [
     {
@@ -9694,14 +9694,14 @@
   {
    "week": 12,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Jared Goff 225+ pass yds + Amon-Ra St. Brown 5+ catches",
+   "subject": "Jared Goff 250+ pass yds + Amon-Ra St. Brown 5+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5835,
-   "indep_p": 0.5435,
+   "model_p": 0.5183,
+   "indep_p": 0.4729,
    "status": "pending",
    "legs": [
     {
-     "t": "Jared Goff 225+ pass yds",
+     "t": "Jared Goff 250+ pass yds",
      "r": "pending"
     },
     {
@@ -9715,8 +9715,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Amon-Ra St. Brown 5+ catches + Jameson Williams 3+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.4905,
-   "indep_p": 0.4894,
+   "model_p": 0.5267,
+   "indep_p": 0.5256,
    "status": "pending",
    "legs": [
     {
@@ -9734,8 +9734,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CHI wins + D'Andre Swift 30+ rush yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.4776,
-   "indep_p": 0.4378,
+   "model_p": 0.4789,
+   "indep_p": 0.4393,
    "status": "pending",
    "legs": [
     {
@@ -9753,8 +9753,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Caleb Williams 200+ pass yds + Luther Burden III 4+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5449,
-   "indep_p": 0.5018,
+   "model_p": 0.5424,
+   "indep_p": 0.499,
    "status": "pending",
    "legs": [
     {
@@ -9791,8 +9791,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "D'Andre Swift 30+ rush yds + Amon-Ra St. Brown 5+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5295,
-   "indep_p": 0.5297,
+   "model_p": 0.5312,
+   "indep_p": 0.5314,
    "status": "pending",
    "legs": [
     {
@@ -9810,8 +9810,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Caleb Williams 200+ pass yds + Colston Loveland 4+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.4991,
-   "indep_p": 0.4646,
+   "model_p": 0.4968,
+   "indep_p": 0.4621,
    "status": "pending",
    "legs": [
     {
@@ -9829,8 +9829,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "D'Andre Swift 30+ rush yds + Caleb Williams 200+ pass yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5318,
-   "indep_p": 0.5431,
+   "model_p": 0.5305,
+   "indep_p": 0.5419,
    "status": "pending",
    "legs": [
     {
@@ -9846,14 +9846,14 @@
   {
    "week": 12,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Jared Goff 225+ pass yds + Sam LaPorta 3+ catches",
+   "subject": "Jared Goff 250+ pass yds + Sam LaPorta 3+ catches",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5386,
-   "indep_p": 0.506,
+   "model_p": 0.4777,
+   "indep_p": 0.4403,
    "status": "pending",
    "legs": [
     {
-     "t": "Jared Goff 225+ pass yds",
+     "t": "Jared Goff 250+ pass yds",
      "r": "pending"
     },
     {
@@ -9865,10 +9865,10 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Jahmyr Gibbs 60+ rush yds + Jared Goff 225+ pass yds",
+   "subject": "Jahmyr Gibbs 60+ rush yds + Jared Goff 250+ pass yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.545,
-   "indep_p": 0.556,
+   "model_p": 0.4714,
+   "indep_p": 0.4843,
    "status": "pending",
    "legs": [
     {
@@ -9876,7 +9876,7 @@
      "r": "pending"
     },
     {
-     "t": "Jared Goff 225+ pass yds",
+     "t": "Jared Goff 250+ pass yds",
      "r": "pending"
     }
    ]
@@ -9884,10 +9884,10 @@
   {
    "week": 12,
    "type": "Combo: shootout, both QBs' yards",
-   "subject": "Caleb Williams 200+ pass yds + Jared Goff 225+ pass yds",
+   "subject": "Caleb Williams 200+ pass yds + Jared Goff 250+ pass yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.569,
-   "indep_p": 0.5573,
+   "model_p": 0.4959,
+   "indep_p": 0.4822,
    "status": "pending",
    "legs": [
     {
@@ -9895,7 +9895,7 @@
      "r": "pending"
     },
     {
-     "t": "Jared Goff 225+ pass yds",
+     "t": "Jared Goff 250+ pass yds",
      "r": "pending"
     }
    ]
@@ -9905,8 +9905,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "D'Andre Swift 30+ rush yds + Jahmyr Gibbs 60+ rush yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.5296,
-   "indep_p": 0.5419,
+   "model_p": 0.5319,
+   "indep_p": 0.5442,
    "status": "pending",
    "legs": [
     {
@@ -9924,8 +9924,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "DET wins + Jahmyr Gibbs 60+ rush yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.3342,
-   "indep_p": 0.2972,
+   "model_p": 0.3344,
+   "indep_p": 0.2975,
    "status": "pending",
    "legs": [
     {
@@ -9941,10 +9941,10 @@
   {
    "week": 12,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "CHI wins + D'Andre Swift 30+ rush yds + Jared Goff 225+ pass yds",
+   "subject": "CHI wins + D'Andre Swift 30+ rush yds + Jared Goff 250+ pass yds",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.3479,
-   "indep_p": 0.3282,
+   "model_p": 0.3005,
+   "indep_p": 0.2865,
    "status": "pending",
    "legs": [
     {
@@ -9956,7 +9956,7 @@
      "r": "pending"
     },
     {
-     "t": "Jared Goff 225+ pass yds",
+     "t": "Jared Goff 250+ pass yds",
      "r": "pending"
     }
    ]
@@ -9985,8 +9985,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CHI wins + Jahmyr Gibbs scores a TD",
    "games": "2026_12_CHI_DET",
-   "model_p": 0.4081,
-   "indep_p": 0.4081,
+   "model_p": 0.4009,
+   "indep_p": 0.4009,
    "status": "pending",
    "legs": [
     {
@@ -10004,8 +10004,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "DAL wins + Javonte Williams 60+ rush yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.5945,
-   "indep_p": 0.5619,
+   "model_p": 0.5938,
+   "indep_p": 0.5612,
    "status": "pending",
    "legs": [
     {
@@ -10023,8 +10023,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Dak Prescott 225+ pass yds + CeeDee Lamb 7+ catches",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.5383,
-   "indep_p": 0.4944,
+   "model_p": 0.543,
+   "indep_p": 0.4996,
    "status": "pending",
    "legs": [
     {
@@ -10061,8 +10061,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Joe Milton III 175+ pass yds + DeVonta Smith 3+ catches",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.454,
-   "indep_p": 0.4029,
+   "model_p": 0.461,
+   "indep_p": 0.4104,
    "status": "pending",
    "legs": [
     {
@@ -10099,8 +10099,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Javonte Williams 60+ rush yds + DeVonta Smith 3+ catches",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.4563,
-   "indep_p": 0.4565,
+   "model_p": 0.4557,
+   "indep_p": 0.4559,
    "status": "pending",
    "legs": [
     {
@@ -10118,8 +10118,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Dak Prescott 225+ pass yds + Brevyn Spann-Ford 2+ catches",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.4929,
-   "indep_p": 0.4578,
+   "model_p": 0.4973,
+   "indep_p": 0.4626,
    "status": "pending",
    "legs": [
     {
@@ -10137,8 +10137,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Javonte Williams 60+ rush yds + Dak Prescott 225+ pass yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.5233,
-   "indep_p": 0.5349,
+   "model_p": 0.5285,
+   "indep_p": 0.54,
    "status": "pending",
    "legs": [
     {
@@ -10156,8 +10156,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Joe Milton III 175+ pass yds + Dallas Goedert 2+ catches",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.5024,
-   "indep_p": 0.4673,
+   "model_p": 0.5109,
+   "indep_p": 0.4761,
    "status": "pending",
    "legs": [
     {
@@ -10175,8 +10175,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Saquon Barkley 50+ rush yds + Joe Milton III 175+ pass yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.4304,
-   "indep_p": 0.4446,
+   "model_p": 0.4423,
+   "indep_p": 0.4563,
    "status": "pending",
    "legs": [
     {
@@ -10194,8 +10194,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Dak Prescott 225+ pass yds + Joe Milton III 175+ pass yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.486,
-   "indep_p": 0.4721,
+   "model_p": 0.4996,
+   "indep_p": 0.4861,
    "status": "pending",
    "legs": [
     {
@@ -10213,8 +10213,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Javonte Williams 60+ rush yds + Saquon Barkley 50+ rush yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.4903,
-   "indep_p": 0.5038,
+   "model_p": 0.4934,
+   "indep_p": 0.5069,
    "status": "pending",
    "legs": [
     {
@@ -10232,8 +10232,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "PHI wins + Saquon Barkley 50+ rush yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.1898,
-   "indep_p": 0.1591,
+   "model_p": 0.1907,
+   "indep_p": 0.1603,
    "status": "pending",
    "legs": [
     {
@@ -10251,8 +10251,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "DAL wins + Javonte Williams 60+ rush yds + Joe Milton III 175+ pass yds",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.374,
-   "indep_p": 0.3622,
+   "model_p": 0.3809,
+   "indep_p": 0.3685,
    "status": "pending",
    "legs": [
     {
@@ -10293,8 +10293,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "DAL wins + Javonte Williams scores a TD",
    "games": "2026_12_PHI_DAL",
-   "model_p": 0.4739,
-   "indep_p": 0.4739,
+   "model_p": 0.4777,
+   "indep_p": 0.4777,
    "status": "pending",
    "legs": [
     {
@@ -10310,10 +10310,10 @@
   {
    "week": 12,
    "type": "Combo: win + lead RB yards",
-   "subject": "BUF wins + James Cook 50+ rush yds",
+   "subject": "BUF wins + James Cook 60+ rush yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.4762,
-   "indep_p": 0.4375,
+   "model_p": 0.4312,
+   "indep_p": 0.3871,
    "status": "pending",
    "legs": [
     {
@@ -10321,7 +10321,7 @@
      "r": "pending"
     },
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     }
    ]
@@ -10329,33 +10329,14 @@
   {
    "week": 12,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Josh Allen 175+ pass yds + Khalil Shakir 3+ catches",
+   "subject": "Josh Allen 175+ pass yds + DJ Moore 2+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.52,
-   "indep_p": 0.4741,
+   "model_p": 0.5791,
+   "indep_p": 0.5396,
    "status": "pending",
    "legs": [
     {
      "t": "Josh Allen 175+ pass yds",
-     "r": "pending"
-    },
-    {
-     "t": "Khalil Shakir 3+ catches",
-     "r": "pending"
-    }
-   ]
-  },
-  {
-   "week": 12,
-   "type": "Combo: top two pass catchers",
-   "subject": "Khalil Shakir 3+ catches + DJ Moore 2+ catches",
-   "games": "2026_12_KC_BUF",
-   "model_p": 0.5241,
-   "indep_p": 0.5231,
-   "status": "pending",
-   "legs": [
-    {
-     "t": "Khalil Shakir 3+ catches",
      "r": "pending"
     },
     {
@@ -10366,11 +10347,30 @@
   },
   {
    "week": 12,
+   "type": "Combo: top two pass catchers",
+   "subject": "DJ Moore 2+ catches + Khalil Shakir 3+ catches",
+   "games": "2026_12_KC_BUF",
+   "model_p": 0.5241,
+   "indep_p": 0.5231,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "DJ Moore 2+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Khalil Shakir 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Patrick Mahomes 200+ pass yds + Rashee Rice 4+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.5103,
-   "indep_p": 0.4634,
+   "model_p": 0.5179,
+   "indep_p": 0.4718,
    "status": "pending",
    "legs": [
     {
@@ -10405,14 +10405,14 @@
   {
    "week": 12,
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
-   "subject": "James Cook 50+ rush yds + Rashee Rice 4+ catches",
+   "subject": "James Cook 60+ rush yds + Rashee Rice 4+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.5047,
-   "indep_p": 0.5049,
+   "model_p": 0.4465,
+   "indep_p": 0.4467,
    "status": "pending",
    "legs": [
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     },
     {
@@ -10426,8 +10426,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Josh Allen 175+ pass yds + Dawson Knox 1+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.6054,
-   "indep_p": 0.5794,
+   "model_p": 0.6006,
+   "indep_p": 0.5744,
    "status": "pending",
    "legs": [
     {
@@ -10443,14 +10443,14 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "James Cook 50+ rush yds + Josh Allen 175+ pass yds",
+   "subject": "James Cook 60+ rush yds + Josh Allen 175+ pass yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.5135,
-   "indep_p": 0.5253,
+   "model_p": 0.447,
+   "indep_p": 0.4608,
    "status": "pending",
    "legs": [
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     },
     {
@@ -10464,8 +10464,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Patrick Mahomes 200+ pass yds + Travis Kelce 2+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.5314,
-   "indep_p": 0.4977,
+   "model_p": 0.5399,
+   "indep_p": 0.5067,
    "status": "pending",
    "legs": [
     {
@@ -10483,8 +10483,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Emmett Johnson 50+ rush yds + Patrick Mahomes 200+ pass yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.4489,
-   "indep_p": 0.4627,
+   "model_p": 0.456,
+   "indep_p": 0.4696,
    "status": "pending",
    "legs": [
     {
@@ -10502,8 +10502,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Josh Allen 175+ pass yds + Patrick Mahomes 200+ pass yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.4961,
-   "indep_p": 0.4821,
+   "model_p": 0.5005,
+   "indep_p": 0.4866,
    "status": "pending",
    "legs": [
     {
@@ -10519,14 +10519,14 @@
   {
    "week": 12,
    "type": "Combo: ground battle, both lead RBs' yards",
-   "subject": "James Cook 50+ rush yds + Emmett Johnson 50+ rush yds",
+   "subject": "James Cook 60+ rush yds + Emmett Johnson 50+ rush yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.4908,
-   "indep_p": 0.5042,
+   "model_p": 0.4292,
+   "indep_p": 0.4447,
    "status": "pending",
    "legs": [
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     },
     {
@@ -10540,8 +10540,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "KC wins + Emmett Johnson 50+ rush yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.322,
-   "indep_p": 0.2798,
+   "model_p": 0.3212,
+   "indep_p": 0.2789,
    "status": "pending",
    "legs": [
     {
@@ -10557,10 +10557,10 @@
   {
    "week": 12,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "BUF wins + James Cook 50+ rush yds + Patrick Mahomes 200+ pass yds",
+   "subject": "BUF wins + James Cook 60+ rush yds + Patrick Mahomes 200+ pass yds",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.3152,
-   "indep_p": 0.3003,
+   "model_p": 0.291,
+   "indep_p": 0.2705,
    "status": "pending",
    "legs": [
     {
@@ -10568,7 +10568,7 @@
      "r": "pending"
     },
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     },
     {
@@ -10580,14 +10580,14 @@
   {
    "week": 12,
    "type": "Combo: WR1 duel, both top receivers' catches",
-   "subject": "Khalil Shakir 3+ catches + Rashee Rice 4+ catches",
+   "subject": "DJ Moore 2+ catches + Rashee Rice 4+ catches",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.4614,
-   "indep_p": 0.4556,
+   "model_p": 0.5279,
+   "indep_p": 0.5231,
    "status": "pending",
    "legs": [
     {
-     "t": "Khalil Shakir 3+ catches",
+     "t": "DJ Moore 2+ catches",
      "r": "pending"
     },
     {
@@ -10601,8 +10601,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "BUF wins + James Cook scores a TD",
    "games": "2026_12_KC_BUF",
-   "model_p": 0.3732,
-   "indep_p": 0.3732,
+   "model_p": 0.3702,
+   "indep_p": 0.3702,
    "status": "pending",
    "legs": [
     {
@@ -10620,8 +10620,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Aaron Rodgers 175+ pass yds + DK Metcalf 3+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.5204,
-   "indep_p": 0.4751,
+   "model_p": 0.5544,
+   "indep_p": 0.5137,
    "status": "pending",
    "legs": [
     {
@@ -10639,8 +10639,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "DK Metcalf 3+ catches + Germie Bernard 4+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4543,
-   "indep_p": 0.4531,
+   "model_p": 0.4854,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -10658,8 +10658,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "DEN wins + Jonah Coleman 30+ rush yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4648,
-   "indep_p": 0.4239,
+   "model_p": 0.4574,
+   "indep_p": 0.4155,
    "status": "pending",
    "legs": [
     {
@@ -10677,8 +10677,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Bo Nix 175+ pass yds + Courtland Sutton 3+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4699,
-   "indep_p": 0.4201,
+   "model_p": 0.4677,
+   "indep_p": 0.4177,
    "status": "pending",
    "legs": [
     {
@@ -10715,8 +10715,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Jonah Coleman 30+ rush yds + DK Metcalf 3+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.5185,
-   "indep_p": 0.5187,
+   "model_p": 0.5433,
+   "indep_p": 0.5435,
    "status": "pending",
    "legs": [
     {
@@ -10734,8 +10734,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Bo Nix 175+ pass yds + Evan Engram 2+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4904,
-   "indep_p": 0.4537,
+   "model_p": 0.4879,
+   "indep_p": 0.4511,
    "status": "pending",
    "legs": [
     {
@@ -10753,8 +10753,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jonah Coleman 30+ rush yds + Bo Nix 175+ pass yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4677,
-   "indep_p": 0.4809,
+   "model_p": 0.4551,
+   "indep_p": 0.4687,
    "status": "pending",
    "legs": [
     {
@@ -10772,8 +10772,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Aaron Rodgers 175+ pass yds + Pat Freiermuth 2+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.5099,
-   "indep_p": 0.4751,
+   "model_p": 0.5151,
+   "indep_p": 0.4805,
    "status": "pending",
    "legs": [
     {
@@ -10791,8 +10791,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jaylen Warren 25+ rush yds + Aaron Rodgers 175+ pass yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4424,
-   "indep_p": 0.4563,
+   "model_p": 0.4539,
+   "indep_p": 0.4675,
    "status": "pending",
    "legs": [
     {
@@ -10810,8 +10810,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Bo Nix 175+ pass yds + Aaron Rodgers 175+ pass yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4555,
-   "indep_p": 0.4405,
+   "model_p": 0.4579,
+   "indep_p": 0.4429,
    "status": "pending",
    "legs": [
     {
@@ -10829,8 +10829,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Jonah Coleman 30+ rush yds + Jaylen Warren 25+ rush yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4844,
-   "indep_p": 0.4981,
+   "model_p": 0.4807,
+   "indep_p": 0.4946,
    "status": "pending",
    "legs": [
     {
@@ -10848,8 +10848,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "PIT wins + Jaylen Warren 25+ rush yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.3243,
-   "indep_p": 0.2837,
+   "model_p": 0.3274,
+   "indep_p": 0.2874,
    "status": "pending",
    "legs": [
     {
@@ -10867,8 +10867,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "DEN wins + Jonah Coleman 30+ rush yds + Aaron Rodgers 175+ pass yds",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.293,
-   "indep_p": 0.2778,
+   "model_p": 0.2918,
+   "indep_p": 0.2754,
    "status": "pending",
    "legs": [
     {
@@ -10890,8 +10890,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "Courtland Sutton 3+ catches + DK Metcalf 3+ catches",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.4587,
-   "indep_p": 0.4531,
+   "model_p": 0.4894,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -10909,8 +10909,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "DEN wins + Jonah Coleman scores a TD",
    "games": "2026_12_DEN_PIT",
-   "model_p": 0.2654,
-   "indep_p": 0.2654,
+   "model_p": 0.2619,
+   "indep_p": 0.2619,
    "status": "pending",
    "legs": [
     {
@@ -11544,8 +11544,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CIN wins + Chase Brown 30+ rush yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.628,
-   "indep_p": 0.599,
+   "model_p": 0.629,
+   "indep_p": 0.6,
    "status": "pending",
    "legs": [
     {
@@ -11563,8 +11563,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Joe Burrow 250+ pass yds + Ja'Marr Chase 7+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4891,
-   "indep_p": 0.4415,
+   "model_p": 0.5261,
+   "indep_p": 0.4808,
    "status": "pending",
    "legs": [
     {
@@ -11582,8 +11582,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Ja'Marr Chase 7+ catches + Tee Higgins 5+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.3919,
-   "indep_p": 0.3906,
+   "model_p": 0.4231,
+   "indep_p": 0.4219,
    "status": "pending",
    "legs": [
     {
@@ -11601,8 +11601,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Tyler Shough 200+ pass yds + Chris Olave 4+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.5391,
-   "indep_p": 0.495,
+   "model_p": 0.5359,
+   "indep_p": 0.4916,
    "status": "pending",
    "legs": [
     {
@@ -11639,8 +11639,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Chase Brown 30+ rush yds + Chris Olave 4+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.537,
-   "indep_p": 0.5372,
+   "model_p": 0.538,
+   "indep_p": 0.5382,
    "status": "pending",
    "legs": [
     {
@@ -11658,8 +11658,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Joe Burrow 250+ pass yds + Mike Gesicki 2+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4782,
-   "indep_p": 0.4415,
+   "model_p": 0.4815,
+   "indep_p": 0.4452,
    "status": "pending",
    "legs": [
     {
@@ -11677,8 +11677,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Chase Brown 30+ rush yds + Joe Burrow 250+ pass yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.5115,
-   "indep_p": 0.5234,
+   "model_p": 0.5169,
+   "indep_p": 0.5287,
    "status": "pending",
    "legs": [
     {
@@ -11696,8 +11696,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Tyler Shough 200+ pass yds + Juwan Johnson 2+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.5289,
-   "indep_p": 0.495,
+   "model_p": 0.4941,
+   "indep_p": 0.4577,
    "status": "pending",
    "legs": [
     {
@@ -11715,8 +11715,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Audric Estime 30+ rush yds + Tyler Shough 200+ pass yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4822,
-   "indep_p": 0.495,
+   "model_p": 0.476,
+   "indep_p": 0.489,
    "status": "pending",
    "legs": [
     {
@@ -11734,8 +11734,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Joe Burrow 250+ pass yds + Tyler Shough 200+ pass yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4963,
-   "indep_p": 0.4823,
+   "model_p": 0.4969,
+   "indep_p": 0.483,
    "status": "pending",
    "legs": [
     {
@@ -11753,8 +11753,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Chase Brown 30+ rush yds + Audric Estime 30+ rush yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.5248,
-   "indep_p": 0.5372,
+   "model_p": 0.5227,
+   "indep_p": 0.5353,
    "status": "pending",
    "legs": [
     {
@@ -11772,8 +11772,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "NO wins + Audric Estime 30+ rush yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.1642,
-   "indep_p": 0.139,
+   "model_p": 0.1637,
+   "indep_p": 0.1382,
    "status": "pending",
    "legs": [
     {
@@ -11791,8 +11791,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "CIN wins + Chase Brown 30+ rush yds + Tyler Shough 200+ pass yds",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4208,
-   "indep_p": 0.409,
+   "model_p": 0.4184,
+   "indep_p": 0.4069,
    "status": "pending",
    "legs": [
     {
@@ -11814,8 +11814,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "Ja'Marr Chase 7+ catches + Chris Olave 4+ catches",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.4587,
-   "indep_p": 0.4531,
+   "model_p": 0.4947,
+   "indep_p": 0.4894,
    "status": "pending",
    "legs": [
     {
@@ -11833,8 +11833,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CIN wins + Ja'Marr Chase scores a TD",
    "games": "2026_12_NO_CIN",
-   "model_p": 0.5117,
-   "indep_p": 0.5117,
+   "model_p": 0.5125,
+   "indep_p": 0.5125,
    "status": "pending",
    "legs": [
     {
@@ -11852,8 +11852,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Anthony Richardson 150+ pass yds + Laquon Treadwell 1+ catches",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.5281,
-   "indep_p": 0.4864,
+   "model_p": 0.5361,
+   "indep_p": 0.4947,
    "status": "pending",
    "legs": [
     {
@@ -11890,8 +11890,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "NYG wins + Cam Skattebo 50+ rush yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.5481,
-   "indep_p": 0.5114,
+   "model_p": 0.543,
+   "indep_p": 0.506,
    "status": "pending",
    "legs": [
     {
@@ -11909,8 +11909,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "J.J. McCarthy 175+ pass yds + Malik Nabers 4+ catches",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4837,
-   "indep_p": 0.4354,
+   "model_p": 0.4815,
+   "indep_p": 0.4329,
    "status": "pending",
    "legs": [
     {
@@ -11947,8 +11947,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Cam Skattebo 50+ rush yds + Laquon Treadwell 1+ catches",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.543,
-   "indep_p": 0.5432,
+   "model_p": 0.5373,
+   "indep_p": 0.5375,
    "status": "pending",
    "legs": [
     {
@@ -11966,8 +11966,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "J.J. McCarthy 175+ pass yds + Isaiah Likely 4+ catches",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4726,
-   "indep_p": 0.4354,
+   "model_p": 0.4703,
+   "indep_p": 0.4329,
    "status": "pending",
    "legs": [
     {
@@ -11985,8 +11985,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Cam Skattebo 50+ rush yds + J.J. McCarthy 175+ pass yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4752,
-   "indep_p": 0.4882,
+   "model_p": 0.4671,
+   "indep_p": 0.4804,
    "status": "pending",
    "legs": [
     {
@@ -12004,8 +12004,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Anthony Richardson 150+ pass yds + Tyler Warren 3+ catches",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4323,
-   "indep_p": 0.3923,
+   "model_p": 0.4386,
+   "indep_p": 0.3989,
    "status": "pending",
    "legs": [
     {
@@ -12023,8 +12023,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Jonathan Taylor 40+ rush yds + Anthony Richardson 150+ pass yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4056,
-   "indep_p": 0.4205,
+   "model_p": 0.4151,
+   "indep_p": 0.4298,
    "status": "pending",
    "legs": [
     {
@@ -12042,8 +12042,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "J.J. McCarthy 175+ pass yds + Anthony Richardson 150+ pass yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4521,
-   "indep_p": 0.4372,
+   "model_p": 0.457,
+   "indep_p": 0.4422,
    "status": "pending",
    "legs": [
     {
@@ -12061,8 +12061,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Cam Skattebo 50+ rush yds + Jonathan Taylor 40+ rush yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4549,
-   "indep_p": 0.4696,
+   "model_p": 0.4522,
+   "indep_p": 0.4669,
    "status": "pending",
    "legs": [
     {
@@ -12080,8 +12080,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "IND wins + Jonathan Taylor 40+ rush yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.2159,
-   "indep_p": 0.1811,
+   "model_p": 0.2167,
+   "indep_p": 0.182,
    "status": "pending",
    "legs": [
     {
@@ -12099,8 +12099,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "NYG wins + Cam Skattebo 50+ rush yds + Anthony Richardson 150+ pass yds",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.3341,
-   "indep_p": 0.321,
+   "model_p": 0.337,
+   "indep_p": 0.323,
    "status": "pending",
    "legs": [
     {
@@ -12141,8 +12141,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "NYG wins + Cam Skattebo scores a TD",
    "games": "2026_12_NYG_IND",
-   "model_p": 0.4079,
-   "indep_p": 0.4079,
+   "model_p": 0.4035,
+   "indep_p": 0.4035,
    "status": "pending",
    "legs": [
     {
@@ -12158,14 +12158,14 @@
   {
    "week": 12,
    "type": "Combo: QB yards + WR1 catches",
-   "subject": "Kyle McCord 175+ pass yds + Caleb Douglas 3+ catches",
+   "subject": "Kyle McCord 150+ pass yds + Caleb Douglas 3+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4851,
-   "indep_p": 0.4363,
+   "model_p": 0.5159,
+   "indep_p": 0.4723,
    "status": "pending",
    "legs": [
     {
-     "t": "Kyle McCord 175+ pass yds",
+     "t": "Kyle McCord 150+ pass yds",
      "r": "pending"
     },
     {
@@ -12179,8 +12179,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Caleb Douglas 3+ catches + Malik Washington 2+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.5241,
-   "indep_p": 0.5231,
+   "model_p": 0.4854,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -12198,8 +12198,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "NYJ wins + Breece Hall 40+ rush yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4689,
-   "indep_p": 0.4269,
+   "model_p": 0.4697,
+   "indep_p": 0.4278,
    "status": "pending",
    "legs": [
     {
@@ -12217,8 +12217,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Geno Smith 175+ pass yds + Adonai Mitchell 2+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.5831,
-   "indep_p": 0.5439,
+   "model_p": 0.588,
+   "indep_p": 0.5491,
    "status": "pending",
    "legs": [
     {
@@ -12255,8 +12255,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Breece Hall 40+ rush yds + Caleb Douglas 3+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4646,
-   "indep_p": 0.4648,
+   "model_p": 0.431,
+   "indep_p": 0.4312,
    "status": "pending",
    "legs": [
     {
@@ -12274,8 +12274,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Geno Smith 175+ pass yds + Mason Taylor 3+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4755,
-   "indep_p": 0.4386,
+   "model_p": 0.4794,
+   "indep_p": 0.4428,
    "status": "pending",
    "legs": [
     {
@@ -12293,8 +12293,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Breece Hall 40+ rush yds + Geno Smith 175+ pass yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4701,
-   "indep_p": 0.4833,
+   "model_p": 0.4758,
+   "indep_p": 0.4889,
    "status": "pending",
    "legs": [
     {
@@ -12310,14 +12310,14 @@
   {
    "week": 12,
    "type": "Combo: QB yards + top TE catches",
-   "subject": "Kyle McCord 175+ pass yds + Greg Dulcich 2+ catches",
+   "subject": "Kyle McCord 150+ pass yds + Greg Dulcich 2+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4739,
-   "indep_p": 0.4363,
+   "model_p": 0.5423,
+   "indep_p": 0.51,
    "status": "pending",
    "legs": [
     {
-     "t": "Kyle McCord 175+ pass yds",
+     "t": "Kyle McCord 150+ pass yds",
      "r": "pending"
     },
     {
@@ -12329,10 +12329,10 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Ollie Gordon II 60+ rush yds + Kyle McCord 175+ pass yds",
+   "subject": "Ollie Gordon II 60+ rush yds + Kyle McCord 150+ pass yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4605,
-   "indep_p": 0.4737,
+   "model_p": 0.5421,
+   "indep_p": 0.5532,
    "status": "pending",
    "legs": [
     {
@@ -12340,7 +12340,7 @@
      "r": "pending"
     },
     {
-     "t": "Kyle McCord 175+ pass yds",
+     "t": "Kyle McCord 150+ pass yds",
      "r": "pending"
     }
    ]
@@ -12348,10 +12348,10 @@
   {
    "week": 12,
    "type": "Combo: shootout, both QBs' yards",
-   "subject": "Geno Smith 175+ pass yds + Kyle McCord 175+ pass yds",
+   "subject": "Geno Smith 175+ pass yds + Kyle McCord 150+ pass yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4682,
-   "indep_p": 0.4536,
+   "model_p": 0.5477,
+   "indep_p": 0.5353,
    "status": "pending",
    "legs": [
     {
@@ -12359,7 +12359,7 @@
      "r": "pending"
     },
     {
-     "t": "Kyle McCord 175+ pass yds",
+     "t": "Kyle McCord 150+ pass yds",
      "r": "pending"
     }
    ]
@@ -12369,8 +12369,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Breece Hall 40+ rush yds + Ollie Gordon II 60+ rush yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.4913,
-   "indep_p": 0.5047,
+   "model_p": 0.4917,
+   "indep_p": 0.5051,
    "status": "pending",
    "legs": [
     {
@@ -12388,8 +12388,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "MIA wins + Ollie Gordon II 60+ rush yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.3154,
-   "indep_p": 0.2785,
+   "model_p": 0.3152,
+   "indep_p": 0.2782,
    "status": "pending",
    "legs": [
     {
@@ -12405,10 +12405,10 @@
   {
    "week": 12,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "NYJ wins + Breece Hall 40+ rush yds + Kyle McCord 175+ pass yds",
+   "subject": "NYJ wins + Breece Hall 40+ rush yds + Kyle McCord 150+ pass yds",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.292,
-   "indep_p": 0.2759,
+   "model_p": 0.3456,
+   "indep_p": 0.3232,
    "status": "pending",
    "legs": [
     {
@@ -12420,7 +12420,7 @@
      "r": "pending"
     },
     {
-     "t": "Kyle McCord 175+ pass yds",
+     "t": "Kyle McCord 150+ pass yds",
      "r": "pending"
     }
    ]
@@ -12430,8 +12430,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "Adonai Mitchell 2+ catches + Caleb Douglas 3+ catches",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.5279,
-   "indep_p": 0.5231,
+   "model_p": 0.4894,
+   "indep_p": 0.4844,
    "status": "pending",
    "legs": [
     {
@@ -12449,8 +12449,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "NYJ wins + Breece Hall scores a TD",
    "games": "2026_12_NYJ_MIA",
-   "model_p": 0.2864,
-   "indep_p": 0.2864,
+   "model_p": 0.2883,
+   "indep_p": 0.2883,
    "status": "pending",
    "legs": [
     {
@@ -12468,8 +12468,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "JAX wins + Bhayshul Tuten 40+ rush yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.679,
-   "indep_p": 0.6595,
+   "model_p": 0.6817,
+   "indep_p": 0.6624,
    "status": "pending",
    "legs": [
     {
@@ -12487,8 +12487,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Trevor Lawrence 200+ pass yds + Parker Washington 3+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5296,
-   "indep_p": 0.4847,
+   "model_p": 0.5286,
+   "indep_p": 0.4836,
    "status": "pending",
    "legs": [
     {
@@ -12506,8 +12506,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Parker Washington 3+ catches + Jakobi Meyers 3+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.4231,
-   "indep_p": 0.4219,
+   "model_p": 0.4568,
+   "indep_p": 0.4556,
    "status": "pending",
    "legs": [
     {
@@ -12525,8 +12525,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Cam Ward 150+ pass yds + Elic Ayomanor 2+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.557,
-   "indep_p": 0.5143,
+   "model_p": 0.5507,
+   "indep_p": 0.5075,
    "status": "pending",
    "legs": [
     {
@@ -12544,8 +12544,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Elic Ayomanor 2+ catches + Gunnar Helm 2+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5288,
-   "indep_p": 0.5256,
+   "model_p": 0.5647,
+   "indep_p": 0.5619,
    "status": "pending",
    "legs": [
     {
@@ -12563,8 +12563,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Bhayshul Tuten 40+ rush yds + Elic Ayomanor 2+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5312,
-   "indep_p": 0.5314,
+   "model_p": 0.5336,
+   "indep_p": 0.5337,
    "status": "pending",
    "legs": [
     {
@@ -12582,8 +12582,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Trevor Lawrence 200+ pass yds + Brenton Strange 2+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5529,
-   "indep_p": 0.5205,
+   "model_p": 0.5846,
+   "indep_p": 0.5552,
    "status": "pending",
    "legs": [
     {
@@ -12601,8 +12601,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Bhayshul Tuten 40+ rush yds + Trevor Lawrence 200+ pass yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5144,
-   "indep_p": 0.5263,
+   "model_p": 0.5156,
+   "indep_p": 0.5274,
    "status": "pending",
    "legs": [
     {
@@ -12620,8 +12620,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Cam Ward 150+ pass yds + Gunnar Helm 2+ catches",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.547,
-   "indep_p": 0.5143,
+   "model_p": 0.5726,
+   "indep_p": 0.5425,
    "status": "pending",
    "legs": [
     {
@@ -12639,8 +12639,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Tony Pollard 40+ rush yds + Cam Ward 150+ pass yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5032,
-   "indep_p": 0.5155,
+   "model_p": 0.4904,
+   "indep_p": 0.503,
    "status": "pending",
    "legs": [
     {
@@ -12658,8 +12658,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Trevor Lawrence 200+ pass yds + Cam Ward 150+ pass yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5225,
-   "indep_p": 0.5093,
+   "model_p": 0.5149,
+   "indep_p": 0.5015,
    "status": "pending",
    "legs": [
     {
@@ -12677,8 +12677,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Bhayshul Tuten 40+ rush yds + Tony Pollard 40+ rush yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.52,
-   "indep_p": 0.5326,
+   "model_p": 0.5163,
+   "indep_p": 0.529,
    "status": "pending",
    "legs": [
     {
@@ -12696,8 +12696,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "TEN wins + Tony Pollard 40+ rush yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.0883,
-   "indep_p": 0.0729,
+   "model_p": 0.0878,
+   "indep_p": 0.0721,
    "status": "pending",
    "legs": [
     {
@@ -12715,8 +12715,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "JAX wins + Bhayshul Tuten 40+ rush yds + Cam Ward 150+ pass yds",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.4764,
-   "indep_p": 0.4678,
+   "model_p": 0.4719,
+   "indep_p": 0.4637,
    "status": "pending",
    "legs": [
     {
@@ -12757,8 +12757,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "JAX wins + Bhayshul Tuten scores a TD",
    "games": "2026_12_TEN_JAX",
-   "model_p": 0.5182,
-   "indep_p": 0.5182,
+   "model_p": 0.5245,
+   "indep_p": 0.5245,
    "status": "pending",
    "legs": [
     {
@@ -12774,10 +12774,10 @@
   {
    "week": 12,
    "type": "Combo: win + lead RB yards",
-   "subject": "LAC wins + Omarion Hampton 30+ rush yds",
+   "subject": "LAC wins + Omarion Hampton 40+ rush yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5086,
-   "indep_p": 0.4708,
+   "model_p": 0.4264,
+   "indep_p": 0.3816,
    "status": "pending",
    "legs": [
     {
@@ -12785,7 +12785,7 @@
      "r": "pending"
     },
     {
-     "t": "Omarion Hampton 30+ rush yds",
+     "t": "Omarion Hampton 40+ rush yds",
      "r": "pending"
     }
    ]
@@ -12795,8 +12795,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Justin Herbert 150+ pass yds + Tre Harris 3+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.556,
-   "indep_p": 0.5145,
+   "model_p": 0.549,
+   "indep_p": 0.5065,
    "status": "pending",
    "legs": [
     {
@@ -12812,10 +12812,10 @@
   {
    "week": 12,
    "type": "Combo: top two pass catchers",
-   "subject": "Tre Harris 3+ catches + Quentin Johnston 2+ catches",
+   "subject": "Tre Harris 3+ catches + Quentin Johnston 1+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.4231,
-   "indep_p": 0.4219,
+   "model_p": 0.5577,
+   "indep_p": 0.5569,
    "status": "pending",
    "legs": [
     {
@@ -12823,7 +12823,7 @@
      "r": "pending"
     },
     {
-     "t": "Quentin Johnston 2+ catches",
+     "t": "Quentin Johnston 1+ catches",
      "r": "pending"
     }
    ]
@@ -12833,8 +12833,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Tommy DeVito 150+ pass yds + DeMario Douglas 3+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.4864,
-   "indep_p": 0.4376,
+   "model_p": 0.4776,
+   "indep_p": 0.4283,
    "status": "pending",
    "legs": [
     {
@@ -12869,14 +12869,14 @@
   {
    "week": 12,
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
-   "subject": "Omarion Hampton 30+ rush yds + DeMario Douglas 3+ catches",
+   "subject": "Omarion Hampton 40+ rush yds + DeMario Douglas 3+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5061,
-   "indep_p": 0.5063,
+   "model_p": 0.4322,
+   "indep_p": 0.4325,
    "status": "pending",
    "legs": [
     {
-     "t": "Omarion Hampton 30+ rush yds",
+     "t": "Omarion Hampton 40+ rush yds",
      "r": "pending"
     },
     {
@@ -12890,8 +12890,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Justin Herbert 150+ pass yds + Oronde Gadsden II 1+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.6179,
-   "indep_p": 0.5907,
+   "model_p": 0.6094,
+   "indep_p": 0.5816,
    "status": "pending",
    "legs": [
     {
@@ -12907,14 +12907,14 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Omarion Hampton 30+ rush yds + Justin Herbert 150+ pass yds",
+   "subject": "Omarion Hampton 40+ rush yds + Justin Herbert 150+ pass yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5612,
-   "indep_p": 0.5716,
+   "model_p": 0.468,
+   "indep_p": 0.4808,
    "status": "pending",
    "legs": [
     {
-     "t": "Omarion Hampton 30+ rush yds",
+     "t": "Omarion Hampton 40+ rush yds",
      "r": "pending"
     },
     {
@@ -12928,8 +12928,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Tommy DeVito 150+ pass yds + Hunter Henry 2+ catches",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5341,
-   "indep_p": 0.5024,
+   "model_p": 0.5237,
+   "indep_p": 0.4917,
    "status": "pending",
    "legs": [
     {
@@ -12945,14 +12945,14 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Corey Kiner 25+ rush yds + Tommy DeVito 150+ pass yds",
+   "subject": "Corey Kiner 30+ rush yds + Tommy DeVito 150+ pass yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.462,
-   "indep_p": 0.4751,
+   "model_p": 0.4157,
+   "indep_p": 0.4303,
    "status": "pending",
    "legs": [
     {
-     "t": "Corey Kiner 25+ rush yds",
+     "t": "Corey Kiner 30+ rush yds",
      "r": "pending"
     },
     {
@@ -12966,8 +12966,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Justin Herbert 150+ pass yds + Tommy DeVito 150+ pass yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5072,
-   "indep_p": 0.4941,
+   "model_p": 0.4897,
+   "indep_p": 0.4761,
    "status": "pending",
    "legs": [
     {
@@ -12983,18 +12983,18 @@
   {
    "week": 12,
    "type": "Combo: ground battle, both lead RBs' yards",
-   "subject": "Omarion Hampton 30+ rush yds + Corey Kiner 25+ rush yds",
+   "subject": "Omarion Hampton 40+ rush yds + Corey Kiner 30+ rush yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.5376,
-   "indep_p": 0.5497,
+   "model_p": 0.4188,
+   "indep_p": 0.4345,
    "status": "pending",
    "legs": [
     {
-     "t": "Omarion Hampton 30+ rush yds",
+     "t": "Omarion Hampton 40+ rush yds",
      "r": "pending"
     },
     {
-     "t": "Corey Kiner 25+ rush yds",
+     "t": "Corey Kiner 30+ rush yds",
      "r": "pending"
     }
    ]
@@ -13002,10 +13002,10 @@
   {
    "week": 12,
    "type": "Combo: upset, underdog wins + its RB yards",
-   "subject": "NE wins + Corey Kiner 25+ rush yds",
+   "subject": "NE wins + Corey Kiner 30+ rush yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.3094,
-   "indep_p": 0.2728,
+   "model_p": 0.3159,
+   "indep_p": 0.2743,
    "status": "pending",
    "legs": [
     {
@@ -13013,7 +13013,7 @@
      "r": "pending"
     },
     {
-     "t": "Corey Kiner 25+ rush yds",
+     "t": "Corey Kiner 30+ rush yds",
      "r": "pending"
     }
    ]
@@ -13021,10 +13021,10 @@
   {
    "week": 12,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "LAC wins + Omarion Hampton 30+ rush yds + Tommy DeVito 150+ pass yds",
+   "subject": "LAC wins + Omarion Hampton 40+ rush yds + Tommy DeVito 150+ pass yds",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.3179,
-   "indep_p": 0.3053,
+   "model_p": 0.2598,
+   "indep_p": 0.2421,
    "status": "pending",
    "legs": [
     {
@@ -13032,7 +13032,7 @@
      "r": "pending"
     },
     {
-     "t": "Omarion Hampton 30+ rush yds",
+     "t": "Omarion Hampton 40+ rush yds",
      "r": "pending"
     },
     {
@@ -13065,8 +13065,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "LAC wins + Omarion Hampton scores a TD",
    "games": "2026_12_NE_LAC",
-   "model_p": 0.2731,
-   "indep_p": 0.2731,
+   "model_p": 0.2579,
+   "indep_p": 0.2579,
    "status": "pending",
    "legs": [
     {
@@ -13084,8 +13084,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "SF wins + Christian McCaffrey 25+ rush yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4513,
-   "indep_p": 0.4092,
+   "model_p": 0.426,
+   "indep_p": 0.3832,
    "status": "pending",
    "legs": [
     {
@@ -13103,8 +13103,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Brock Purdy 200+ pass yds + Keenan Allen 3+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4539,
-   "indep_p": 0.4027,
+   "model_p": 0.4907,
+   "indep_p": 0.4423,
    "status": "pending",
    "legs": [
     {
@@ -13122,8 +13122,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "George Kittle 4+ catches + Keenan Allen 3+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4257,
-   "indep_p": 0.4219,
+   "model_p": 0.4593,
+   "indep_p": 0.4556,
    "status": "pending",
    "legs": [
     {
@@ -13141,8 +13141,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Sam Darnold 175+ pass yds + Jaxon Smith-Njigba 6+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.5428,
-   "indep_p": 0.4994,
+   "model_p": 0.5714,
+   "indep_p": 0.53,
    "status": "pending",
    "legs": [
     {
@@ -13160,8 +13160,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Jaxon Smith-Njigba 6+ catches + AJ Barner 2+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.5262,
-   "indep_p": 0.5231,
+   "model_p": 0.5647,
+   "indep_p": 0.5619,
    "status": "pending",
    "legs": [
     {
@@ -13179,8 +13179,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Christian McCaffrey 25+ rush yds + Jaxon Smith-Njigba 6+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4713,
-   "indep_p": 0.4716,
+   "model_p": 0.5026,
+   "indep_p": 0.5028,
    "status": "pending",
    "legs": [
     {
@@ -13198,8 +13198,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Brock Purdy 200+ pass yds + George Kittle 4+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4726,
-   "indep_p": 0.435,
+   "model_p": 0.4796,
+   "indep_p": 0.4423,
    "status": "pending",
    "legs": [
     {
@@ -13217,8 +13217,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Christian McCaffrey 25+ rush yds + Brock Purdy 200+ pass yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4361,
-   "indep_p": 0.4502,
+   "model_p": 0.4404,
+   "indep_p": 0.4544,
    "status": "pending",
    "legs": [
     {
@@ -13236,8 +13236,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Sam Darnold 175+ pass yds + AJ Barner 2+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.6018,
-   "indep_p": 0.5734,
+   "model_p": 0.5954,
+   "indep_p": 0.5666,
    "status": "pending",
    "legs": [
     {
@@ -13255,8 +13255,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Zach Charbonnet 40+ rush yds + Sam Darnold 175+ pass yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4896,
-   "indep_p": 0.5021,
+   "model_p": 0.4875,
+   "indep_p": 0.5001,
    "status": "pending",
    "legs": [
     {
@@ -13274,8 +13274,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Brock Purdy 200+ pass yds + Sam Darnold 175+ pass yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4905,
-   "indep_p": 0.4768,
+   "model_p": 0.4928,
+   "indep_p": 0.479,
    "status": "pending",
    "legs": [
     {
@@ -13293,8 +13293,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Christian McCaffrey 25+ rush yds + Zach Charbonnet 40+ rush yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4595,
-   "indep_p": 0.4741,
+   "model_p": 0.4599,
+   "indep_p": 0.4744,
    "status": "pending",
    "legs": [
     {
@@ -13312,8 +13312,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "SEA wins + Zach Charbonnet 40+ rush yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.323,
-   "indep_p": 0.2811,
+   "model_p": 0.3485,
+   "indep_p": 0.3061,
    "status": "pending",
    "legs": [
     {
@@ -13331,8 +13331,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "SF wins + Christian McCaffrey 25+ rush yds + Sam Darnold 175+ pass yds",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.3239,
-   "indep_p": 0.3027,
+   "model_p": 0.3011,
+   "indep_p": 0.2802,
    "status": "pending",
    "legs": [
     {
@@ -13354,8 +13354,8 @@
    "type": "Combo: WR1 duel, both top receivers' catches",
    "subject": "Keenan Allen 3+ catches + Jaxon Smith-Njigba 6+ catches",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.4279,
-   "indep_p": 0.4219,
+   "model_p": 0.4947,
+   "indep_p": 0.4894,
    "status": "pending",
    "legs": [
     {
@@ -13373,8 +13373,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "SF wins + Jaxon Smith-Njigba scores a TD",
    "games": "2026_12_SEA_SF",
-   "model_p": 0.3128,
-   "indep_p": 0.3128,
+   "model_p": 0.3023,
+   "indep_p": 0.3023,
    "status": "pending",
    "legs": [
     {
@@ -13409,10 +13409,10 @@
   {
    "week": 12,
    "type": "Combo: win + lead RB yards",
-   "subject": "WAS wins + Rachaad White 25+ rush yds",
+   "subject": "WAS wins + Austin Ekeler 25+ rush yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.5494,
-   "indep_p": 0.5128,
+   "model_p": 0.5762,
+   "indep_p": 0.5419,
    "status": "pending",
    "legs": [
     {
@@ -13420,7 +13420,7 @@
      "r": "pending"
     },
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     }
    ]
@@ -13430,8 +13430,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Jayden Daniels 175+ pass yds + Stefon Diggs 4+ catches",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.5045,
-   "indep_p": 0.4591,
+   "model_p": 0.55,
+   "indep_p": 0.5076,
    "status": "pending",
    "legs": [
     {
@@ -13449,8 +13449,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "Stefon Diggs 4+ catches + Chig Okonkwo 3+ catches",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.4257,
-   "indep_p": 0.4219,
+   "model_p": 0.4593,
+   "indep_p": 0.4556,
    "status": "pending",
    "legs": [
     {
@@ -13468,8 +13468,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Jayden Daniels 175+ pass yds + Chig Okonkwo 3+ catches",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.5294,
-   "indep_p": 0.4958,
+   "model_p": 0.5401,
+   "indep_p": 0.5076,
    "status": "pending",
    "legs": [
     {
@@ -13485,14 +13485,14 @@
   {
    "week": 12,
    "type": "Combo: lead RB yards + own QB yards",
-   "subject": "Rachaad White 25+ rush yds + Jayden Daniels 175+ pass yds",
+   "subject": "Austin Ekeler 25+ rush yds + Jayden Daniels 175+ pass yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.504,
-   "indep_p": 0.5162,
+   "model_p": 0.5369,
+   "indep_p": 0.5481,
    "status": "pending",
    "legs": [
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     },
     {
@@ -13506,8 +13506,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Carson Beck 150+ pass yds + Trey McBride 5+ catches",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.4819,
-   "indep_p": 0.4456,
+   "model_p": 0.4777,
+   "indep_p": 0.441,
    "status": "pending",
    "legs": [
     {
@@ -13525,8 +13525,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Tyler Allgeier 25+ rush yds + Carson Beck 150+ pass yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.4832,
-   "indep_p": 0.496,
+   "model_p": 0.478,
+   "indep_p": 0.491,
    "status": "pending",
    "legs": [
     {
@@ -13544,8 +13544,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Jayden Daniels 175+ pass yds + Carson Beck 150+ pass yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.5364,
-   "indep_p": 0.5237,
+   "model_p": 0.5431,
+   "indep_p": 0.5306,
    "status": "pending",
    "legs": [
     {
@@ -13561,14 +13561,14 @@
   {
    "week": 12,
    "type": "Combo: ground battle, both lead RBs' yards",
-   "subject": "Rachaad White 25+ rush yds + Tyler Allgeier 25+ rush yds",
+   "subject": "Austin Ekeler 25+ rush yds + Tyler Allgeier 25+ rush yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.4748,
-   "indep_p": 0.4889,
+   "model_p": 0.4936,
+   "indep_p": 0.5071,
    "status": "pending",
    "legs": [
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     },
     {
@@ -13582,8 +13582,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "ARI wins + Tyler Allgeier 25+ rush yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.2214,
-   "indep_p": 0.188,
+   "model_p": 0.2108,
+   "indep_p": 0.1785,
    "status": "pending",
    "legs": [
     {
@@ -13599,10 +13599,10 @@
   {
    "week": 12,
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
-   "subject": "WAS wins + Rachaad White 25+ rush yds + Carson Beck 150+ pass yds",
+   "subject": "WAS wins + Austin Ekeler 25+ rush yds + Carson Beck 150+ pass yds",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.3829,
-   "indep_p": 0.3657,
+   "model_p": 0.3976,
+   "indep_p": 0.3823,
    "status": "pending",
    "legs": [
     {
@@ -13610,7 +13610,7 @@
      "r": "pending"
     },
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     },
     {
@@ -13624,8 +13624,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "WAS wins + Trey McBride scores a TD",
    "games": "2026_12_WAS_ARI",
-   "model_p": 0.3101,
-   "indep_p": 0.3101,
+   "model_p": 0.3063,
+   "indep_p": 0.3063,
    "status": "pending",
    "legs": [
     {
@@ -13643,8 +13643,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "CLE wins + Quinshon Judkins 30+ rush yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5292,
-   "indep_p": 0.4923,
+   "model_p": 0.5278,
+   "indep_p": 0.4907,
    "status": "pending",
    "legs": [
     {
@@ -13662,8 +13662,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Deshaun Watson 175+ pass yds + KC Concepcion 3+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.548,
-   "indep_p": 0.5054,
+   "model_p": 0.5493,
+   "indep_p": 0.5068,
    "status": "pending",
    "legs": [
     {
@@ -13681,8 +13681,8 @@
    "type": "Combo: top two pass catchers",
    "subject": "KC Concepcion 3+ catches + Harold Fannin Jr. 3+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.4593,
-   "indep_p": 0.4556,
+   "model_p": 0.4928,
+   "indep_p": 0.4894,
    "status": "pending",
    "legs": [
     {
@@ -13700,8 +13700,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Fernando Mendoza 150+ pass yds + Tre Tucker 2+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5686,
-   "indep_p": 0.527,
+   "model_p": 0.5728,
+   "indep_p": 0.5316,
    "status": "pending",
    "legs": [
     {
@@ -13738,8 +13738,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Quinshon Judkins 30+ rush yds + Tre Tucker 2+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5444,
-   "indep_p": 0.5446,
+   "model_p": 0.5427,
+   "indep_p": 0.5429,
    "status": "pending",
    "legs": [
     {
@@ -13757,8 +13757,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Deshaun Watson 175+ pass yds + Harold Fannin Jr. 3+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5381,
-   "indep_p": 0.5054,
+   "model_p": 0.5749,
+   "indep_p": 0.5443,
    "status": "pending",
    "legs": [
     {
@@ -13776,8 +13776,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Quinshon Judkins 30+ rush yds + Deshaun Watson 175+ pass yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5517,
-   "indep_p": 0.5624,
+   "model_p": 0.5514,
+   "indep_p": 0.5622,
    "status": "pending",
    "legs": [
     {
@@ -13795,8 +13795,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Fernando Mendoza 150+ pass yds + Michael Mayer 2+ catches",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5923,
-   "indep_p": 0.5633,
+   "model_p": 0.5969,
+   "indep_p": 0.5682,
    "status": "pending",
    "legs": [
     {
@@ -13814,8 +13814,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Ashton Jeanty 20+ rush yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5034,
-   "indep_p": 0.5157,
+   "model_p": 0.5151,
+   "indep_p": 0.527,
    "status": "pending",
    "legs": [
     {
@@ -13833,8 +13833,8 @@
    "type": "Combo: shootout, both QBs' yards",
    "subject": "Deshaun Watson 175+ pass yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5564,
-   "indep_p": 0.5442,
+   "model_p": 0.5624,
+   "indep_p": 0.5505,
    "status": "pending",
    "legs": [
     {
@@ -13852,8 +13852,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Quinshon Judkins 30+ rush yds + Ashton Jeanty 20+ rush yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.5203,
-   "indep_p": 0.5329,
+   "model_p": 0.5258,
+   "indep_p": 0.5382,
    "status": "pending",
    "legs": [
     {
@@ -13871,8 +13871,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "LV wins + Ashton Jeanty 20+ rush yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.2816,
-   "indep_p": 0.2445,
+   "model_p": 0.2842,
+   "indep_p": 0.2478,
    "status": "pending",
    "legs": [
     {
@@ -13890,8 +13890,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "CLE wins + Quinshon Judkins 30+ rush yds + Fernando Mendoza 150+ pass yds",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.3745,
-   "indep_p": 0.3578,
+   "model_p": 0.3769,
+   "indep_p": 0.3598,
    "status": "pending",
    "legs": [
     {
@@ -13932,8 +13932,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "CLE wins + Quinshon Judkins scores a TD",
    "games": "2026_12_LV_CLE",
-   "model_p": 0.3178,
-   "indep_p": 0.3178,
+   "model_p": 0.3257,
+   "indep_p": 0.3257,
    "status": "pending",
    "legs": [
     {
@@ -13951,8 +13951,8 @@
    "type": "Combo: win + lead RB yards",
    "subject": "TB wins + Bucky Irving 50+ rush yds",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.4365,
-   "indep_p": 0.3933,
+   "model_p": 0.4346,
+   "indep_p": 0.3912,
    "status": "pending",
    "legs": [
     {
@@ -13989,8 +13989,8 @@
    "type": "Combo: QB yards + WR1 catches",
    "subject": "Bryce Young 175+ pass yds + Tetairoa McMillan 4+ catches",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.494,
-   "indep_p": 0.447,
+   "model_p": 0.4984,
+   "indep_p": 0.4521,
    "status": "pending",
    "legs": [
     {
@@ -14027,8 +14027,8 @@
    "type": "Combo: favorite's RB yards + underdog's WR1 catches",
    "subject": "Bucky Irving 50+ rush yds + Tetairoa McMillan 4+ catches",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.4261,
-   "indep_p": 0.4264,
+   "model_p": 0.4239,
+   "indep_p": 0.4241,
    "status": "pending",
    "legs": [
     {
@@ -14046,8 +14046,8 @@
    "type": "Combo: QB yards + top TE catches",
    "subject": "Bryce Young 175+ pass yds + Mitchell Evans 1+ catches",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.5174,
-   "indep_p": 0.4828,
+   "model_p": 0.5225,
+   "indep_p": 0.4882,
    "status": "pending",
    "legs": [
     {
@@ -14065,8 +14065,8 @@
    "type": "Combo: lead RB yards + own QB yards",
    "subject": "Chuba Hubbard 40+ rush yds + Bryce Young 175+ pass yds",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.4942,
-   "indep_p": 0.5067,
+   "model_p": 0.5079,
+   "indep_p": 0.52,
    "status": "pending",
    "legs": [
     {
@@ -14084,8 +14084,8 @@
    "type": "Combo: ground battle, both lead RBs' yards",
    "subject": "Bucky Irving 50+ rush yds + Chuba Hubbard 40+ rush yds",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.4691,
-   "indep_p": 0.4833,
+   "model_p": 0.4738,
+   "indep_p": 0.4878,
    "status": "pending",
    "legs": [
     {
@@ -14103,8 +14103,8 @@
    "type": "Combo: upset, underdog wins + its RB yards",
    "subject": "CAR wins + Chuba Hubbard 40+ rush yds",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.3403,
-   "indep_p": 0.3,
+   "model_p": 0.3439,
+   "indep_p": 0.3045,
    "status": "pending",
    "legs": [
     {
@@ -14122,8 +14122,8 @@
    "type": "Combo: blowout, favorite wins + its RB yards + underdog QB yards",
    "subject": "TB wins + Bucky Irving 50+ rush yds + Bryce Young 175+ pass yds",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.3018,
-   "indep_p": 0.2813,
+   "model_p": 0.3042,
+   "indep_p": 0.283,
    "status": "pending",
    "legs": [
     {
@@ -14164,8 +14164,8 @@
    "type": "Combo: win + likeliest TD scorer",
    "subject": "TB wins + Bucky Irving scores a TD",
    "games": "2026_12_CAR_TB",
-   "model_p": 0.3171,
-   "indep_p": 0.3171,
+   "model_p": 0.3107,
+   "indep_p": 0.3107,
    "status": "pending",
    "legs": [
     {
@@ -14200,10 +14200,10 @@
   {
    "week": 12,
    "type": "Combo: steady pair across games",
-   "subject": "DeVonta Smith 3+ catches + James Cook 50+ rush yds",
+   "subject": "DeVonta Smith 3+ catches + James Cook 60+ rush yds",
    "games": "2026_12_PHI_DAL,2026_12_KC_BUF",
-   "model_p": 0.4675,
-   "indep_p": 0.4675,
+   "model_p": 0.4136,
+   "indep_p": 0.4136,
    "status": "pending",
    "legs": [
     {
@@ -14211,7 +14211,7 @@
      "r": "pending"
     },
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     }
    ]
@@ -14259,8 +14259,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Jonathan Taylor 40+ rush yds + Bhayshul Tuten 40+ rush yds",
    "games": "2026_12_NYG_IND,2026_12_TEN_JAX",
-   "model_p": 0.4911,
-   "indep_p": 0.4911,
+   "model_p": 0.4957,
+   "indep_p": 0.4957,
    "status": "pending",
    "legs": [
     {
@@ -14278,8 +14278,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Justin Herbert 150+ pass yds + George Kittle 4+ catches",
    "games": "2026_12_NE_LAC,2026_12_SEA_SF",
-   "model_p": 0.5145,
-   "indep_p": 0.5145,
+   "model_p": 0.5065,
+   "indep_p": 0.5065,
    "status": "pending",
    "legs": [
     {
@@ -14297,8 +14297,8 @@
    "type": "Combo: steady pair across games",
    "subject": "Jayden Daniels 175+ pass yds + Deshaun Watson 175+ pass yds",
    "games": "2026_12_WAS_ARI,2026_12_LV_CLE",
-   "model_p": 0.5499,
-   "indep_p": 0.5499,
+   "model_p": 0.5646,
+   "indep_p": 0.5646,
    "status": "pending",
    "legs": [
     {
@@ -14337,14 +14337,14 @@
   {
    "week": 12,
    "type": "Combo: steady trio across games",
-   "subject": "James Cook 50+ rush yds + Courtland Sutton 3+ catches + Kirk Cousins 200+ pass yds",
+   "subject": "James Cook 60+ rush yds + Courtland Sutton 3+ catches + Kirk Cousins 200+ pass yds",
    "games": "2026_12_KC_BUF,2026_12_DEN_PIT,2026_12_ATL_MIN",
-   "model_p": 0.328,
-   "indep_p": 0.328,
+   "model_p": 0.2902,
+   "indep_p": 0.2902,
    "status": "pending",
    "legs": [
     {
-     "t": "James Cook 50+ rush yds",
+     "t": "James Cook 60+ rush yds",
      "r": "pending"
     },
     {
@@ -14362,8 +14362,8 @@
    "type": "Combo: steady trio across games",
    "subject": "Derrick Henry 50+ rush yds + Chris Olave 4+ catches + Jonathan Taylor 40+ rush yds",
    "games": "2026_12_BAL_HOU,2026_12_NO_CIN,2026_12_NYG_IND",
-   "model_p": 0.3451,
-   "indep_p": 0.3451,
+   "model_p": 0.3468,
+   "indep_p": 0.3468,
    "status": "pending",
    "legs": [
     {
@@ -14385,8 +14385,8 @@
    "type": "Combo: steady trio across games",
    "subject": "Bhayshul Tuten 40+ rush yds + Justin Herbert 150+ pass yds + George Kittle 4+ catches",
    "games": "2026_12_TEN_JAX,2026_12_NE_LAC,2026_12_SEA_SF",
-   "model_p": 0.3771,
-   "indep_p": 0.3771,
+   "model_p": 0.3729,
+   "indep_p": 0.3729,
    "status": "pending",
    "legs": [
     {
@@ -14408,8 +14408,8 @@
    "type": "Combo: steady trio across games",
    "subject": "Jayden Daniels 175+ pass yds + Deshaun Watson 175+ pass yds + Chuba Hubbard 40+ rush yds",
    "games": "2026_12_WAS_ARI,2026_12_LV_CLE,2026_12_CAR_TB",
-   "model_p": 0.3896,
-   "indep_p": 0.3896,
+   "model_p": 0.4059,
+   "indep_p": 0.4059,
    "status": "pending",
    "legs": [
     {
@@ -14431,8 +14431,8 @@
    "type": "Control: random pair across games",
    "subject": "Bucky Irving 50+ rush yds + Tee Higgins 5+ catches",
    "games": "2026_12_CAR_TB,2026_12_NO_CIN",
-   "model_p": 0.4264,
-   "indep_p": 0.4264,
+   "model_p": 0.4241,
+   "indep_p": 0.4241,
    "status": "pending",
    "legs": [
     {
@@ -14448,14 +14448,14 @@
   {
    "week": 12,
    "type": "Control: random pair across games",
-   "subject": "Rachaad White 25+ rush yds + Drake London 3+ catches",
+   "subject": "Austin Ekeler 25+ rush yds + Drake London 3+ catches",
    "games": "2026_12_WAS_ARI,2026_12_ATL_MIN",
-   "model_p": 0.5447,
-   "indep_p": 0.5447,
+   "model_p": 0.5648,
+   "indep_p": 0.5648,
    "status": "pending",
    "legs": [
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     },
     {
@@ -14469,8 +14469,8 @@
    "type": "Control: random pair across games",
    "subject": "Seth McGowan 10+ rush yds + Pat Freiermuth 2+ catches",
    "games": "2026_12_NYG_IND,2026_12_DEN_PIT",
-   "model_p": 0.4195,
-   "indep_p": 0.4195,
+   "model_p": 0.4205,
+   "indep_p": 0.4205,
    "status": "pending",
    "legs": [
     {
@@ -14486,10 +14486,10 @@
   {
    "week": 12,
    "type": "Control: random pair across games",
-   "subject": "Evan Engram 2+ catches + Rachaad White 25+ rush yds",
+   "subject": "Evan Engram 2+ catches + Austin Ekeler 25+ rush yds",
    "games": "2026_12_DEN_PIT,2026_12_WAS_ARI",
-   "model_p": 0.4744,
-   "indep_p": 0.4744,
+   "model_p": 0.4919,
+   "indep_p": 0.4919,
    "status": "pending",
    "legs": [
     {
@@ -14497,7 +14497,7 @@
      "r": "pending"
     },
     {
-     "t": "Rachaad White 25+ rush yds",
+     "t": "Austin Ekeler 25+ rush yds",
      "r": "pending"
     }
    ]
@@ -14507,8 +14507,8 @@
    "type": "Control: random pair across games",
    "subject": "Adonai Mitchell 2+ catches + Bucky Irving 50+ rush yds",
    "games": "2026_12_NYJ_MIA,2026_12_CAR_TB",
-   "model_p": 0.5287,
-   "indep_p": 0.5287,
+   "model_p": 0.5259,
+   "indep_p": 0.5259,
    "status": "pending",
    "legs": [
     {
@@ -14526,8 +14526,8 @@
    "type": "Control: random pair across games",
    "subject": "Jaxon Smith-Njigba 6+ catches + Austin Hooper 1+ catches",
    "games": "2026_12_SEA_SF,2026_12_ATL_MIN",
-   "model_p": 0.3881,
-   "indep_p": 0.3881,
+   "model_p": 0.4169,
+   "indep_p": 0.4169,
    "status": "pending",
    "legs": [
     {
@@ -14564,8 +14564,8 @@
    "type": "Control: random pair across games",
    "subject": "Joe Milton III 175+ pass yds + Cam Ward 150+ pass yds",
    "games": "2026_12_PHI_DAL,2026_12_TEN_JAX",
-   "model_p": 0.4573,
-   "indep_p": 0.4573,
+   "model_p": 0.4597,
+   "indep_p": 0.4597,
    "status": "pending",
    "legs": [
     {
