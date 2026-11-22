@@ -1,9 +1,8 @@
 {
- "asof": "2026-11-21T09:40 ET",
+ "asof": "2026-11-21T19:10 ET",
  "source": "Seeded 2026-11-11 from week 10 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 11 reports.",
  "out": [
   "Carter Runyon",
-  "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Marcus Mariota",
   "Raheim Sanders",
@@ -55,7 +54,11 @@
   "Dontayvion Wicks",
   "Kenneth Walker III",
   "Omar Cooper Jr.",
-  "Kyler Murray"
+  "Kyler Murray",
+  "Michael Pittman Jr.",
+  "Tyjae Spears",
+  "Jonathon Brooks",
+  "Carson Beck"
  ],
  "p_play": {},
  "qb_start": {
@@ -89,20 +92,21 @@
   "DAL": "Jake Ferguson (knee) tests Monday (Nov 9).",
   "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "Kyle Monangai (thumb/toe) says he's 'on track' to return Wk11 after five missed games (Forbes Nov 16); Burden (concussion) practiced Mon (Big Lead Nov 17).",
-  "ARI": "Josh Johnson (40) expected to start vs KC: LaFleur 'we're going to proceed as if Josh is going to be starting'; Beck (back spasms) DNP Fri, 'doesn't sound hopeful' (Cards Wire Nov 20). Allgeier/Knight committee.",
+  "ARI": "Josh Johnson (40) expected to start vs KC: LaFleur 'we're going to proceed as if Josh is going to be starting'; Beck (back spasms) DNP Fri, 'doesn't sound hopeful' (Cards Wire Nov 20). Allgeier/Knight committee. Beck downgraded to OUT Sat; Josh Johnson starts (NFL.com Nov 21).",
   "NYJ": "Geno Smith full Friday, cleared to start at LAC (CBS Nov 20). Omar Cooper Jr. OUT.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
   "HOU": "Official TNF report (NFL.com, Nov 19): Woody Marks (concussion), Harrison Jr. (hamstring), Brevin Jordan (TE) OUT; David Montgomery no designation (full practice), Tank Dell full. Stroud starts. Montgomery the lead back: Ryans 'trending toward playing' (Houston Chronicle via FantasyFootballers Nov 17); Demercado 'expected to serve as the top complement to David Montgomery' (FantasyFootballers news, Nov 19).",
   "LV": "Brock Bowers (ankle) DNP Wed, limited Thu Nov 19 (ESPN via RotoWire); Kubiak Nov 18: doesn't need to practice to play. Mendoza starts.",
-  "PIT": "Michael Pittman Jr. (foot) Questionable, practiced fully per Ball Exclusives/Yardbarker Nov 20; Roman Wilson (hand) Questionable.",
+  "PIT": "Michael Pittman Jr. (foot) remains on IR, not expected vs PHI (ESPN via NFL.com Saturday roundup Nov 21) - supersedes the Nov 20 Questionable note. Roman Wilson (hand) activated from IR Nov 21.",
   "IND": "Keenan Allen and Josh Downs traded; Treadwell de facto WR1 (RotoBaller Nov 17). TNF report (NFL.com Nov 19): LT Raimann (concussion), T Jalen Travis, TE Will Mallory OUT; T Charlie Heck questionable (personal).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
-  "TB": "Mayfield (foot/thumb) Questionable after limited Thu and Fri; Bowles: 'trending in the right direction' (NFL.com Nov 20). Modeled 60% Mayfield / 40% Jalon Daniels. Winfield Jr. OUT.",
-  "TEN": "Wan'Dale Robinson (ankle) on IR, out for the season (Saleh Nov 18). Carnell Tate (shoulder) and Tyjae Spears limited Thu Nov 19 (official report).",
-  "PHI": "Joe Milton III starts vs PIT. DeVonta Smith full all week, no designation; Wicks OUT; LB Zack Baun OUT (Nov 20 report).",
-  "SF": "Mike Evans (Achilles tendinitis) Questionable; Shanahan decides after Saturday walkthrough (CBS Nov 20). Game in Mexico City.",
+  "TB": "Mayfield (foot/thumb) Questionable after limited Thu and Fri; Bowles: 'trending in the right direction' (NFL.com Nov 20). Modeled 60% Mayfield / 40% Jalon Daniels. Winfield Jr. OUT. Sat Nov 21: Mayfield expected to play (Pelissero via Yahoo live blog); modeled 85/15.",
+  "TEN": "Wan'Dale Robinson (ankle) on IR, out for the season (Saleh Nov 18). Carnell Tate (shoulder) and Tyjae Spears limited Thu Nov 19 (official report). Tyjae Spears (knee) placed on IR Nov 21; Carnell Tate expected back (full Fri; Yahoo Nov 21); RB Michael Carter elevated (NFL.com Nov 21).",
+  "PHI": "Joe Milton III starts vs PIT. DeVonta Smith full all week, no designation; Wicks OUT; LB Zack Baun OUT (Nov 20 report). Sat Nov 21: Wicks and Baun to IR, Will Shipley activated (Garafolo via ClutchPoints).",
+  "SF": "Mike Evans (Achilles tendinitis) Questionable, expected to play (Garafolo, NFL.com Sat Nov 21). Game in Mexico City.",
   "BUF": "TE Dalton Kincaid (thumb/ankle) Doubtful, DNP all week (Nov 20 report).",
-  "WAS": "Rachaad White (heel) added to report Friday as Questionable (Ball Exclusives Nov 20)."
+  "WAS": "Rachaad White (heel) expected to be good for Monday (Quinn); Croskey-Merritt (groin) trending toward playing (NFL.com Saturday roundup Nov 21). Croskey-Merritt expected back from IR as the 'preferred top option' in a committee with White and Ekeler (Yahoo/Heavy Nov 21); White's role 'will likely shrink' (RotoWire Nov 21). lead_back 0.50.",
+  "CAR": "Jonathon Brooks not activated, OUT vs BAL; Canales: ball goes to Chuba Hubbard (Panthers Wire Nov 21)."
  },
  "back": [
   "Jalen Nailor",
@@ -128,14 +132,16 @@
   "David Montgomery",
   "T.J. Hockenson",
   "Carnell Tate",
-  "DeVonta Smith"
+  "DeVonta Smith",
+  "Roman Wilson",
+  "Jacory Croskey-Merritt"
  ],
  "qb_uncertain": {
   "TB": {
    "starter": "Baker Mayfield",
    "backup": "Jalon Daniels",
-   "p": 0.6,
-   "note": "Foot/right thumb; limited Thu and Fri, officially Questionable (Bucs report Nov 20). Bowles Fri: 'trending in the right direction', decision pending (NFL.com Nov 20). Jalon Daniels starts if Mayfield inactive."
+   "p": 0.85,
+   "note": "Foot/right thumb; limited Thu and Fri, officially Questionable (Bucs report Nov 20). Bowles Fri: 'trending in the right direction', decision pending (NFL.com Nov 20). Jalon Daniels starts if Mayfield inactive. Sat Nov 21: expected to play Sunday with a plantar fascia injury, special orthotic (Tom Pelissero via Yahoo live blog Nov 21). Raised to 85%."
   }
  },
  "lead_back": {
@@ -162,6 +168,10 @@
   "HOU": [
    "David Montgomery",
    0.6
+  ],
+  "WAS": [
+   "Jacory Croskey-Merritt",
+   0.5
   ]
  },
  "committee": [
@@ -169,9 +179,19 @@
  ],
  "news_q": {
   "Mike Evans": [
-   "gtd",
-   "2026-11-20",
-   "Shanahan: decision after Saturday walkthrough (CBS Nov 20)"
+   "expected",
+   "2026-11-21",
+   "Garafolo (NFL Network) Sat: expected to play vs MIN (NFL.com Nov 21)"
+  ],
+  "Jacory Croskey-Merritt": [
+   "expected",
+   "2026-11-21",
+   "trending toward playing Monday vs CIN (NFL.com Saturday roundup Nov 21)"
+  ],
+  "Rachaad White": [
+   "expected",
+   "2026-11-21",
+   "Dan Quinn: expected to be good for Monday (NFL.com Saturday roundup Nov 21)"
   ]
  }
 }

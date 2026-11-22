@@ -1,6 +1,6 @@
 Staleness audit, week 11: 5 item(s)
   [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
-  [CARRYOVER] Mike Evans was out last week, now projected 8.0 pts with no Week 11 status — confirm he's back
+  [CARRYOVER] Mike Evans was out last week, now projected 8.1 pts with no Week 11 status — confirm he's back
   [CARRYOVER] Jordyn Tyson was out last week, now projected 12.3 pts with no Week 11 status — confirm he's back
   [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm
   [DFS] no dk_salaries_wk11.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
