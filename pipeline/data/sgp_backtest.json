@@ -1,0 +1,567 @@
+{
+ "seasons": [
+  2024,
+  2025
+ ],
+ "games": 448,
+ "all": [
+  {
+   "story": "cover_rb",
+   "n": 254,
+   "hits": 139,
+   "hit_rate": 0.547,
+   "said": 0.507,
+   "said_indep": 0.468,
+   "z": 1.27,
+   "brier_joint": 0.2496,
+   "brier_indep": 0.2542,
+   "units": 20.2
+  },
+  {
+   "story": "qb_wr1",
+   "n": 575,
+   "hits": 329,
+   "hit_rate": 0.572,
+   "said": 0.497,
+   "said_indep": 0.447,
+   "z": 3.63,
+   "brier_joint": 0.2502,
+   "brier_indep": 0.2601,
+   "units": 87.8
+  },
+  {
+   "story": "top2",
+   "n": 785,
+   "hits": 449,
+   "hit_rate": 0.572,
+   "said": 0.496,
+   "said_indep": 0.493,
+   "z": 4.28,
+   "brier_joint": 0.2507,
+   "brier_indep": 0.2511,
+   "units": 121.4
+  },
+  {
+   "story": "over_qb_wr1",
+   "n": 782,
+   "hits": 450,
+   "hit_rate": 0.575,
+   "said": 0.51,
+   "said_indep": 0.434,
+   "z": 3.65,
+   "brier_joint": 0.2481,
+   "brier_indep": 0.2639,
+   "units": 99.3
+  },
+  {
+   "story": "qb_te1",
+   "n": 524,
+   "hits": 293,
+   "hit_rate": 0.559,
+   "said": 0.495,
+   "said_indep": 0.461,
+   "z": 2.94,
+   "brier_joint": 0.2487,
+   "brier_indep": 0.2542,
+   "units": 66.2
+  },
+  {
+   "story": "over_qbs",
+   "n": 352,
+   "hits": 200,
+   "hit_rate": 0.568,
+   "said": 0.507,
+   "said_indep": 0.443,
+   "z": 2.3,
+   "brier_joint": 0.248,
+   "brier_indep": 0.2602,
+   "units": 41.9
+  },
+  {
+   "story": "under_rb",
+   "n": 253,
+   "hits": 145,
+   "hit_rate": 0.573,
+   "said": 0.501,
+   "said_indep": 0.481,
+   "z": 2.29,
+   "brier_joint": 0.2494,
+   "brier_indep": 0.2529,
+   "units": 36.3
+  },
+  {
+   "story": "all",
+   "n": 3525,
+   "hits": 2005,
+   "hit_rate": 0.569,
+   "said": 0.501,
+   "said_indep": 0.46,
+   "z": 8.02,
+   "brier_joint": 0.2493,
+   "brier_indep": 0.2571,
+   "units": 473.2
+  }
+ ],
+ "shown": [
+  {
+   "story": "cover_rb",
+   "n": 254,
+   "hits": 139,
+   "hit_rate": 0.547,
+   "said": 0.507,
+   "said_indep": 0.468,
+   "z": 1.27,
+   "brier_joint": 0.2496,
+   "brier_indep": 0.2542,
+   "units": 20.2
+  },
+  {
+   "story": "qb_wr1",
+   "n": 380,
+   "hits": 219,
+   "hit_rate": 0.576,
+   "said": 0.502,
+   "said_indep": 0.453,
+   "z": 2.9,
+   "brier_joint": 0.2493,
+   "brier_indep": 0.2589,
+   "units": 56.3
+  },
+  {
+   "story": "top2",
+   "n": 434,
+   "hits": 251,
+   "hit_rate": 0.578,
+   "said": 0.506,
+   "said_indep": 0.504,
+   "z": 3.01,
+   "brier_joint": 0.2487,
+   "brier_indep": 0.2491,
+   "units": 61.7
+  },
+  {
+   "story": "over_qb_wr1",
+   "n": 214,
+   "hits": 126,
+   "hit_rate": 0.589,
+   "said": 0.515,
+   "said_indep": 0.439,
+   "z": 2.17,
+   "brier_joint": 0.2463,
+   "brier_indep": 0.2627,
+   "units": 30.4
+  },
+  {
+   "story": "qb_te1",
+   "n": 17,
+   "hits": 9,
+   "hit_rate": 0.529,
+   "said": 0.5,
+   "said_indep": 0.466,
+   "z": 0.24,
+   "brier_joint": 0.2492,
+   "brier_indep": 0.2522,
+   "units": 1.0
+  },
+  {
+   "story": "over_qbs",
+   "n": 3,
+   "hits": 2,
+   "hit_rate": 0.667,
+   "said": 0.495,
+   "said_indep": 0.429,
+   "z": 0.59,
+   "brier_joint": 0.2503,
+   "brier_indep": 0.2759,
+   "units": 1.0
+  },
+  {
+   "story": "under_rb",
+   "n": 2,
+   "hits": 1,
+   "hit_rate": 0.5,
+   "said": 0.504,
+   "said_indep": 0.486,
+   "z": -0.01,
+   "brier_joint": 0.2336,
+   "brier_indep": 0.232,
+   "units": -0.1
+  },
+  {
+   "story": "all",
+   "n": 1304,
+   "hits": 747,
+   "hit_rate": 0.573,
+   "said": 0.506,
+   "said_indep": 0.471,
+   "z": 4.8,
+   "brier_joint": 0.2486,
+   "brier_indep": 0.2553,
+   "units": 170.5
+  }
+ ],
+ "by_season": {
+  "2024": [
+   {
+    "story": "cover_rb",
+    "n": 126,
+    "hits": 76,
+    "hit_rate": 0.603,
+    "said": 0.506,
+    "said_indep": 0.468,
+    "z": 2.17,
+    "brier_joint": 0.2491,
+    "brier_indep": 0.2582,
+    "units": 24.2
+   },
+   {
+    "story": "qb_wr1",
+    "n": 279,
+    "hits": 170,
+    "hit_rate": 0.609,
+    "said": 0.496,
+    "said_indep": 0.447,
+    "z": 3.79,
+    "brier_joint": 0.2508,
+    "brier_indep": 0.2645,
+    "units": 64.0
+   },
+   {
+    "story": "top2",
+    "n": 395,
+    "hits": 247,
+    "hit_rate": 0.625,
+    "said": 0.497,
+    "said_indep": 0.495,
+    "z": 5.1,
+    "brier_joint": 0.2506,
+    "brier_indep": 0.2511,
+    "units": 102.0
+   },
+   {
+    "story": "over_qb_wr1",
+    "n": 394,
+    "hits": 233,
+    "hit_rate": 0.591,
+    "said": 0.511,
+    "said_indep": 0.434,
+    "z": 3.21,
+    "brier_joint": 0.248,
+    "brier_indep": 0.2663,
+    "units": 62.3
+   },
+   {
+    "story": "qb_te1",
+    "n": 266,
+    "hits": 150,
+    "hit_rate": 0.564,
+    "said": 0.495,
+    "said_indep": 0.461,
+    "z": 2.24,
+    "brier_joint": 0.248,
+    "brier_indep": 0.2536,
+    "units": 35.6
+   },
+   {
+    "story": "over_qbs",
+    "n": 182,
+    "hits": 105,
+    "hit_rate": 0.577,
+    "said": 0.507,
+    "said_indep": 0.443,
+    "z": 1.89,
+    "brier_joint": 0.2482,
+    "brier_indep": 0.2615,
+    "units": 24.9
+   },
+   {
+    "story": "under_rb",
+    "n": 125,
+    "hits": 78,
+    "hit_rate": 0.624,
+    "said": 0.5,
+    "said_indep": 0.479,
+    "z": 2.78,
+    "brier_joint": 0.2502,
+    "brier_indep": 0.2558,
+    "units": 31.2
+   },
+   {
+    "story": "all",
+    "n": 1767,
+    "hits": 1059,
+    "hit_rate": 0.599,
+    "said": 0.502,
+    "said_indep": 0.46,
+    "z": 8.23,
+    "brier_joint": 0.2493,
+    "brier_indep": 0.2589,
+    "units": 344.2
+   }
+  ],
+  "2025": [
+   {
+    "story": "cover_rb",
+    "n": 128,
+    "hits": 63,
+    "hit_rate": 0.492,
+    "said": 0.508,
+    "said_indep": 0.469,
+    "z": -0.36,
+    "brier_joint": 0.25,
+    "brier_indep": 0.2504,
+    "units": -4.0
+   },
+   {
+    "story": "qb_wr1",
+    "n": 296,
+    "hits": 159,
+    "hit_rate": 0.537,
+    "said": 0.497,
+    "said_indep": 0.448,
+    "z": 1.38,
+    "brier_joint": 0.2496,
+    "brier_indep": 0.2559,
+    "units": 23.8
+   },
+   {
+    "story": "top2",
+    "n": 390,
+    "hits": 202,
+    "hit_rate": 0.518,
+    "said": 0.494,
+    "said_indep": 0.492,
+    "z": 0.94,
+    "brier_joint": 0.2509,
+    "brier_indep": 0.2511,
+    "units": 19.4
+   },
+   {
+    "story": "over_qb_wr1",
+    "n": 388,
+    "hits": 217,
+    "hit_rate": 0.559,
+    "said": 0.51,
+    "said_indep": 0.434,
+    "z": 1.94,
+    "brier_joint": 0.2482,
+    "brier_indep": 0.2615,
+    "units": 37.0
+   },
+   {
+    "story": "qb_te1",
+    "n": 258,
+    "hits": 143,
+    "hit_rate": 0.554,
+    "said": 0.495,
+    "said_indep": 0.46,
+    "z": 1.91,
+    "brier_joint": 0.2495,
+    "brier_indep": 0.2548,
+    "units": 30.6
+   },
+   {
+    "story": "over_qbs",
+    "n": 170,
+    "hits": 95,
+    "hit_rate": 0.559,
+    "said": 0.507,
+    "said_indep": 0.443,
+    "z": 1.35,
+    "brier_joint": 0.2479,
+    "brier_indep": 0.2588,
+    "units": 17.0
+   },
+   {
+    "story": "under_rb",
+    "n": 128,
+    "hits": 67,
+    "hit_rate": 0.523,
+    "said": 0.502,
+    "said_indep": 0.483,
+    "z": 0.48,
+    "brier_joint": 0.2487,
+    "brier_indep": 0.2501,
+    "units": 5.1
+   },
+   {
+    "story": "all",
+    "n": 1758,
+    "hits": 946,
+    "hit_rate": 0.538,
+    "said": 0.501,
+    "said_indep": 0.46,
+    "z": 3.1,
+    "brier_joint": 0.2494,
+    "brier_indep": 0.2554,
+    "units": 128.9
+   }
+  ]
+ },
+ "legs": [
+  {
+   "kind": "pass_yds",
+   "n": 1408,
+   "hit_rate": 0.739,
+   "said": 0.721
+  },
+  {
+   "kind": "rec",
+   "n": 2080,
+   "hit_rate": 0.756,
+   "said": 0.698
+  },
+  {
+   "kind": "rec_yds",
+   "n": 811,
+   "hit_rate": 0.811,
+   "said": 0.765
+  },
+  {
+   "kind": "rush_yds",
+   "n": 505,
+   "hit_rate": 0.816,
+   "said": 0.769
+  },
+  {
+   "kind": "spread",
+   "n": 387,
+   "hit_rate": 0.734,
+   "said": 0.693
+  },
+  {
+   "kind": "total",
+   "n": 1123,
+   "hit_rate": 0.81,
+   "said": 0.776
+  }
+ ],
+ "legs_by_band": [
+  {
+   "kind": "pass_yds",
+   "band": "(0.599, 0.7]",
+   "n": 538,
+   "hit_rate": 0.673,
+   "said": 0.649
+  },
+  {
+   "kind": "pass_yds",
+   "band": "(0.7, 0.8]",
+   "n": 665,
+   "hit_rate": 0.77,
+   "said": 0.749
+  },
+  {
+   "kind": "pass_yds",
+   "band": "(0.8, 0.9]",
+   "n": 205,
+   "hit_rate": 0.81,
+   "said": 0.817
+  },
+  {
+   "kind": "rec",
+   "band": "(0.599, 0.7]",
+   "n": 1115,
+   "hit_rate": 0.723,
+   "said": 0.651
+  },
+  {
+   "kind": "rec",
+   "band": "(0.7, 0.8]",
+   "n": 868,
+   "hit_rate": 0.788,
+   "said": 0.744
+  },
+  {
+   "kind": "rec",
+   "band": "(0.8, 0.9]",
+   "n": 97,
+   "hit_rate": 0.845,
+   "said": 0.825
+  },
+  {
+   "kind": "rec_yds",
+   "band": "(0.599, 0.7]",
+   "n": 8,
+   "hit_rate": 1.0,
+   "said": 0.673
+  },
+  {
+   "kind": "rec_yds",
+   "band": "(0.7, 0.8]",
+   "n": 699,
+   "hit_rate": 0.798,
+   "said": 0.758
+  },
+  {
+   "kind": "rec_yds",
+   "band": "(0.8, 0.9]",
+   "n": 104,
+   "hit_rate": 0.885,
+   "said": 0.82
+  },
+  {
+   "kind": "rush_yds",
+   "band": "(0.599, 0.7]",
+   "n": 112,
+   "hit_rate": 0.723,
+   "said": 0.672
+  },
+  {
+   "kind": "rush_yds",
+   "band": "(0.7, 0.8]",
+   "n": 196,
+   "hit_rate": 0.796,
+   "said": 0.743
+  },
+  {
+   "kind": "rush_yds",
+   "band": "(0.8, 0.9]",
+   "n": 197,
+   "hit_rate": 0.888,
+   "said": 0.85
+  },
+  {
+   "kind": "spread",
+   "band": "(0.599, 0.7]",
+   "n": 233,
+   "hit_rate": 0.708,
+   "said": 0.661
+  },
+  {
+   "kind": "spread",
+   "band": "(0.7, 0.8]",
+   "n": 149,
+   "hit_rate": 0.772,
+   "said": 0.739
+  },
+  {
+   "kind": "spread",
+   "band": "(0.8, 0.9]",
+   "n": 5,
+   "hit_rate": 0.8,
+   "said": 0.805
+  },
+  {
+   "kind": "total",
+   "band": "(0.599, 0.7]",
+   "n": 5,
+   "hit_rate": 1.0,
+   "said": 0.697
+  },
+  {
+   "kind": "total",
+   "band": "(0.7, 0.8]",
+   "n": 840,
+   "hit_rate": 0.796,
+   "said": 0.752
+  },
+  {
+   "kind": "total",
+   "band": "(0.8, 0.9]",
+   "n": 278,
+   "hit_rate": 0.849,
+   "said": 0.85
+  }
+ ]
+}

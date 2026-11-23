@@ -1,0 +1,1664 @@
+{
+ "asof": "2026-11-23 15:44 ET",
+ "stories": [
+  {
+   "key": "cover_rb",
+   "name": "Favorite wins (alt spread) + its lead RB yards",
+   "legs": 2
+  },
+  {
+   "key": "qb_wr1",
+   "name": "QB yards + WR1 catches",
+   "legs": 2
+  },
+  {
+   "key": "top2",
+   "name": "Top two pass catchers' catches",
+   "legs": 2
+  },
+  {
+   "key": "over_qb_wr1",
+   "name": "Over + QB yards + WR1 yards",
+   "legs": 3
+  },
+  {
+   "key": "qb_te1",
+   "name": "QB yards + top TE catches",
+   "legs": 2
+  },
+  {
+   "key": "over_qbs",
+   "name": "Shootout: over + both QBs' yards",
+   "legs": 3
+  },
+  {
+   "key": "under_rb",
+   "name": "Under + favorite wins (alt spread) + its RB yards",
+   "legs": 3
+  }
+ ],
+ "all": [],
+ "shown": [],
+ "legs": [],
+ "combos": [
+  {
+   "week": 11,
+   "game_id": "2026_11_CIN_WAS",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "CIN -0.5 + Chase Brown 30+ rush yds",
+   "model_p": 0.5235,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "CIN -0.5",
+     "r": "pending"
+    },
+    {
+     "t": "Chase Brown 30+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_CIN_WAS",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Joe Burrow 250+ pass yds + Ja'Marr Chase 7+ catches",
+   "model_p": 0.5171,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Joe Burrow 250+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Ja'Marr Chase 7+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_CIN_WAS",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Ja'Marr Chase 7+ catches + Tee Higgins 4+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Ja'Marr Chase 7+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Tee Higgins 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_GB_LA",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Jordan Love 225+ pass yds + Matthew Golden 4+ catches",
+   "model_p": 0.5105,
+   "fair": 1.96,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Jordan Love 225+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Matthew Golden 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_GB_LA",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Matthew Golden 3+ catches + Tucker Kraft 3+ catches",
+   "model_p": 0.5185,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Matthew Golden 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Tucker Kraft 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_GB_LA",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 36.5 + Matthew Stafford 200+ pass yds + Konata Mumpfield 10+ rec yds",
+   "model_p": 0.5183,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 36.5",
+     "r": "pending"
+    },
+    {
+     "t": "Matthew Stafford 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Konata Mumpfield 10+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CHI_DET",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Jared Goff 250+ pass yds + Amon-Ra St. Brown 5+ catches",
+   "model_p": 0.499,
+   "fair": 2.0,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Jared Goff 250+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Amon-Ra St. Brown 5+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CHI_DET",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Amon-Ra St. Brown 5+ catches + Jameson Williams 3+ catches",
+   "model_p": 0.491,
+   "fair": 2.04,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Amon-Ra St. Brown 5+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Jameson Williams 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CHI_DET",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 46.5 + Caleb Williams 175+ pass yds + Luther Burden III 25+ rec yds",
+   "model_p": 0.5187,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 46.5",
+     "r": "pending"
+    },
+    {
+     "t": "Caleb Williams 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Luther Burden III 25+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_PHI_DAL",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "DAL -3.5 + Javonte Williams 50+ rush yds",
+   "model_p": 0.5106,
+   "fair": 1.96,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "DAL -3.5",
+     "r": "pending"
+    },
+    {
+     "t": "Javonte Williams 50+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_PHI_DAL",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Dak Prescott 250+ pass yds + CeeDee Lamb 6+ catches",
+   "model_p": 0.5245,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Dak Prescott 250+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "CeeDee Lamb 6+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_PHI_DAL",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "CeeDee Lamb 6+ catches + George Pickens 5+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "CeeDee Lamb 6+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "George Pickens 5+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_KC_BUF",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Patrick Mahomes 200+ pass yds + Rashee Rice 4+ catches",
+   "model_p": 0.5154,
+   "fair": 1.94,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Patrick Mahomes 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Rashee Rice 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_KC_BUF",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "DJ Moore 3+ catches + Khalil Shakir 2+ catches",
+   "model_p": 0.5169,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "DJ Moore 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Khalil Shakir 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_KC_BUF",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 41.5 + Patrick Mahomes 175+ pass yds + Rashee Rice 25+ rec yds",
+   "model_p": 0.5211,
+   "fair": 1.92,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 41.5",
+     "r": "pending"
+    },
+    {
+     "t": "Patrick Mahomes 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Rashee Rice 25+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_DEN_PIT",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Aaron Rodgers 175+ pass yds + Germie Bernard 3+ catches",
+   "model_p": 0.4916,
+   "fair": 2.03,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Aaron Rodgers 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Germie Bernard 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_DEN_PIT",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Germie Bernard 3+ catches + DK Metcalf 2+ catches",
+   "model_p": 0.491,
+   "fair": 2.04,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Germie Bernard 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "DK Metcalf 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_DEN_PIT",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 29.5 + Bo Nix 150+ pass yds + Jaylen Waddle 20+ rec yds",
+   "model_p": 0.5255,
+   "fair": 1.9,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 29.5",
+     "r": "pending"
+    },
+    {
+     "t": "Bo Nix 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Jaylen Waddle 20+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NO_CIN",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "CIN -5.5 + Chase Brown 30+ rush yds",
+   "model_p": 0.521,
+   "fair": 1.92,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "CIN -5.5",
+     "r": "pending"
+    },
+    {
+     "t": "Chase Brown 30+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NO_CIN",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Tyler Shough 200+ pass yds + Chris Olave 5+ catches",
+   "model_p": 0.5076,
+   "fair": 1.97,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Tyler Shough 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Chris Olave 5+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NO_CIN",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Chris Olave 5+ catches + Devaughn Vele 3+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Chris Olave 5+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Devaughn Vele 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_LV_CLE",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "CLE -0.5 + Quinshon Judkins 30+ rush yds",
+   "model_p": 0.4986,
+   "fair": 2.01,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "CLE -0.5",
+     "r": "pending"
+    },
+    {
+     "t": "Quinshon Judkins 30+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_LV_CLE",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Deshaun Watson 175+ pass yds + KC Concepcion 3+ catches",
+   "model_p": 0.5106,
+   "fair": 1.96,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Deshaun Watson 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "KC Concepcion 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_LV_CLE",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "KC Concepcion 3+ catches + Harold Fannin Jr. 3+ catches",
+   "model_p": 0.4569,
+   "fair": 2.19,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "KC Concepcion 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Harold Fannin Jr. 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_BAL_HOU",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "HOU -1.5 + David Montgomery 30+ rush yds",
+   "model_p": 0.5166,
+   "fair": 1.94,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "HOU -1.5",
+     "r": "pending"
+    },
+    {
+     "t": "David Montgomery 30+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_BAL_HOU",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "C.J. Stroud 225+ pass yds + Nico Collins 3+ catches",
+   "model_p": 0.4878,
+   "fair": 2.05,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "C.J. Stroud 225+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Nico Collins 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_BAL_HOU",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Nico Collins 3+ catches + Dalton Schultz 2+ catches",
+   "model_p": 0.4569,
+   "fair": 2.19,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Nico Collins 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Dalton Schultz 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYG_IND",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "NYG -2.5 + Cam Skattebo 40+ rush yds",
+   "model_p": 0.5049,
+   "fair": 1.98,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "NYG -2.5",
+     "r": "pending"
+    },
+    {
+     "t": "Cam Skattebo 40+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYG_IND",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "J.J. McCarthy 175+ pass yds + Malik Nabers 4+ catches",
+   "model_p": 0.5134,
+   "fair": 1.95,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "J.J. McCarthy 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Malik Nabers 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYG_IND",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Malik Nabers 4+ catches + Isaiah Likely 3+ catches",
+   "model_p": 0.4929,
+   "fair": 2.03,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Malik Nabers 4+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Isaiah Likely 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYJ_MIA",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "NYJ -0.5 + Breece Hall 40+ rush yds",
+   "model_p": 0.4904,
+   "fair": 2.04,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "NYJ -0.5",
+     "r": "pending"
+    },
+    {
+     "t": "Breece Hall 40+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYJ_MIA",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Geno Smith 175+ pass yds + Adonai Mitchell 2+ catches",
+   "model_p": 0.5027,
+   "fair": 1.99,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Geno Smith 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Adonai Mitchell 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NYJ_MIA",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 33.5 + Geno Smith 150+ pass yds + Adonai Mitchell 15+ rec yds",
+   "model_p": 0.5206,
+   "fair": 1.92,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 33.5",
+     "r": "pending"
+    },
+    {
+     "t": "Geno Smith 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Adonai Mitchell 15+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_ATL_MIN",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "MIN -1.5 + Jordan Mason 30+ rush yds",
+   "model_p": 0.5138,
+   "fair": 1.95,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "MIN -1.5",
+     "r": "pending"
+    },
+    {
+     "t": "Jordan Mason 30+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_ATL_MIN",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Kirk Cousins 200+ pass yds + Justin Jefferson 5+ catches",
+   "model_p": 0.4876,
+   "fair": 2.05,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Kirk Cousins 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Justin Jefferson 5+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_ATL_MIN",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Justin Jefferson 4+ catches + Tai Felton 2+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Justin Jefferson 4+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Tai Felton 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_TEN_JAX",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "JAX -8.5 + Bhayshul Tuten 40+ rush yds",
+   "model_p": 0.5067,
+   "fair": 1.97,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "JAX -8.5",
+     "r": "pending"
+    },
+    {
+     "t": "Bhayshul Tuten 40+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_TEN_JAX",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Cam Ward 150+ pass yds + Carnell Tate 4+ catches",
+   "model_p": 0.4957,
+   "fair": 2.02,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Cam Ward 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Carnell Tate 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_TEN_JAX",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Carnell Tate 4+ catches + Chimere Dike 2+ catches",
+   "model_p": 0.4548,
+   "fair": 2.2,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Carnell Tate 4+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Chimere Dike 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_WAS_ARI",
+   "story": "cover_rb",
+   "story_name": "Favorite wins (alt spread) + its lead RB yards",
+   "subject": "WAS -1.5 + Austin Ekeler 25+ rush yds",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "WAS -1.5",
+     "r": "pending"
+    },
+    {
+     "t": "Austin Ekeler 25+ rush yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_WAS_ARI",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Jayden Daniels 200+ pass yds + Stefon Diggs 4+ catches",
+   "model_p": 0.4815,
+   "fair": 2.08,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Jayden Daniels 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Stefon Diggs 4+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_WAS_ARI",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Stefon Diggs 4+ catches + Antonio Williams 2+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Stefon Diggs 4+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Antonio Williams 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_SEA_SF",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Sam Darnold 200+ pass yds + Jaxon Smith-Njigba 6+ catches",
+   "model_p": 0.5076,
+   "fair": 1.97,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Sam Darnold 200+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Jaxon Smith-Njigba 6+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_SEA_SF",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Jaxon Smith-Njigba 5+ catches + Cooper Kupp 2+ catches",
+   "model_p": 0.5169,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Jaxon Smith-Njigba 5+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Cooper Kupp 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_SEA_SF",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 37.5 + Sam Darnold 175+ pass yds + Jaxon Smith-Njigba 60+ rec yds",
+   "model_p": 0.5215,
+   "fair": 1.92,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 37.5",
+     "r": "pending"
+    },
+    {
+     "t": "Sam Darnold 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Jaxon Smith-Njigba 60+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NE_LAC",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Tommy DeVito 150+ pass yds + DeMario Douglas 3+ catches",
+   "model_p": 0.4741,
+   "fair": 2.11,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Tommy DeVito 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "DeMario Douglas 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NE_LAC",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "DeMario Douglas 2+ catches + Efton Chism III 2+ catches",
+   "model_p": 0.5169,
+   "fair": 1.93,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "DeMario Douglas 2+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Efton Chism III 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_NE_LAC",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 22.5 + Tommy DeVito 150+ pass yds + DeMario Douglas 20+ rec yds",
+   "model_p": 0.5022,
+   "fair": 1.99,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 22.5",
+     "r": "pending"
+    },
+    {
+     "t": "Tommy DeVito 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "DeMario Douglas 20+ rec yds",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CAR_TB",
+   "story": "qb_wr1",
+   "story_name": "QB yards + WR1 catches",
+   "subject": "Baker Mayfield 175+ pass yds + Chris Godwin Jr. 3+ catches",
+   "model_p": 0.4611,
+   "fair": 2.17,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Baker Mayfield 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Chris Godwin Jr. 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CAR_TB",
+   "story": "top2",
+   "story_name": "Top two pass catchers' catches",
+   "subject": "Chris Godwin Jr. 3+ catches + Cade Otton 2+ catches",
+   "model_p": 0.4929,
+   "fair": 2.03,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Chris Godwin Jr. 3+ catches",
+     "r": "pending"
+    },
+    {
+     "t": "Cade Otton 2+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_CAR_TB",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 34.5 + Baker Mayfield 150+ pass yds + Chris Godwin Jr. 15+ rec yds",
+   "model_p": 0.5204,
+   "fair": 1.92,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 34.5",
+     "r": "pending"
+    },
+    {
+     "t": "Baker Mayfield 150+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Chris Godwin Jr. 15+ rec yds",
+     "r": "pending"
+    }
+   ]
+  }
+ ],
+ "backtest": {
+  "seasons": [
+   2024,
+   2025
+  ],
+  "games": 448,
+  "all": [
+   {
+    "story": "cover_rb",
+    "n": 254,
+    "hits": 139,
+    "hit_rate": 0.547,
+    "said": 0.507,
+    "said_indep": 0.468,
+    "z": 1.27,
+    "brier_joint": 0.2496,
+    "brier_indep": 0.2542,
+    "units": 20.2
+   },
+   {
+    "story": "qb_wr1",
+    "n": 575,
+    "hits": 329,
+    "hit_rate": 0.572,
+    "said": 0.497,
+    "said_indep": 0.447,
+    "z": 3.63,
+    "brier_joint": 0.2502,
+    "brier_indep": 0.2601,
+    "units": 87.8
+   },
+   {
+    "story": "top2",
+    "n": 785,
+    "hits": 449,
+    "hit_rate": 0.572,
+    "said": 0.496,
+    "said_indep": 0.493,
+    "z": 4.28,
+    "brier_joint": 0.2507,
+    "brier_indep": 0.2511,
+    "units": 121.4
+   },
+   {
+    "story": "over_qb_wr1",
+    "n": 782,
+    "hits": 450,
+    "hit_rate": 0.575,
+    "said": 0.51,
+    "said_indep": 0.434,
+    "z": 3.65,
+    "brier_joint": 0.2481,
+    "brier_indep": 0.2639,
+    "units": 99.3
+   },
+   {
+    "story": "qb_te1",
+    "n": 524,
+    "hits": 293,
+    "hit_rate": 0.559,
+    "said": 0.495,
+    "said_indep": 0.461,
+    "z": 2.94,
+    "brier_joint": 0.2487,
+    "brier_indep": 0.2542,
+    "units": 66.2
+   },
+   {
+    "story": "over_qbs",
+    "n": 352,
+    "hits": 200,
+    "hit_rate": 0.568,
+    "said": 0.507,
+    "said_indep": 0.443,
+    "z": 2.3,
+    "brier_joint": 0.248,
+    "brier_indep": 0.2602,
+    "units": 41.9
+   },
+   {
+    "story": "under_rb",
+    "n": 253,
+    "hits": 145,
+    "hit_rate": 0.573,
+    "said": 0.501,
+    "said_indep": 0.481,
+    "z": 2.29,
+    "brier_joint": 0.2494,
+    "brier_indep": 0.2529,
+    "units": 36.3
+   },
+   {
+    "story": "all",
+    "n": 3525,
+    "hits": 2005,
+    "hit_rate": 0.569,
+    "said": 0.501,
+    "said_indep": 0.46,
+    "z": 8.02,
+    "brier_joint": 0.2493,
+    "brier_indep": 0.2571,
+    "units": 473.2
+   }
+  ],
+  "shown": [
+   {
+    "story": "cover_rb",
+    "n": 254,
+    "hits": 139,
+    "hit_rate": 0.547,
+    "said": 0.507,
+    "said_indep": 0.468,
+    "z": 1.27,
+    "brier_joint": 0.2496,
+    "brier_indep": 0.2542,
+    "units": 20.2
+   },
+   {
+    "story": "qb_wr1",
+    "n": 380,
+    "hits": 219,
+    "hit_rate": 0.576,
+    "said": 0.502,
+    "said_indep": 0.453,
+    "z": 2.9,
+    "brier_joint": 0.2493,
+    "brier_indep": 0.2589,
+    "units": 56.3
+   },
+   {
+    "story": "top2",
+    "n": 434,
+    "hits": 251,
+    "hit_rate": 0.578,
+    "said": 0.506,
+    "said_indep": 0.504,
+    "z": 3.01,
+    "brier_joint": 0.2487,
+    "brier_indep": 0.2491,
+    "units": 61.7
+   },
+   {
+    "story": "over_qb_wr1",
+    "n": 214,
+    "hits": 126,
+    "hit_rate": 0.589,
+    "said": 0.515,
+    "said_indep": 0.439,
+    "z": 2.17,
+    "brier_joint": 0.2463,
+    "brier_indep": 0.2627,
+    "units": 30.4
+   },
+   {
+    "story": "qb_te1",
+    "n": 17,
+    "hits": 9,
+    "hit_rate": 0.529,
+    "said": 0.5,
+    "said_indep": 0.466,
+    "z": 0.24,
+    "brier_joint": 0.2492,
+    "brier_indep": 0.2522,
+    "units": 1.0
+   },
+   {
+    "story": "over_qbs",
+    "n": 3,
+    "hits": 2,
+    "hit_rate": 0.667,
+    "said": 0.495,
+    "said_indep": 0.429,
+    "z": 0.59,
+    "brier_joint": 0.2503,
+    "brier_indep": 0.2759,
+    "units": 1.0
+   },
+   {
+    "story": "under_rb",
+    "n": 2,
+    "hits": 1,
+    "hit_rate": 0.5,
+    "said": 0.504,
+    "said_indep": 0.486,
+    "z": -0.01,
+    "brier_joint": 0.2336,
+    "brier_indep": 0.232,
+    "units": -0.1
+   },
+   {
+    "story": "all",
+    "n": 1304,
+    "hits": 747,
+    "hit_rate": 0.573,
+    "said": 0.506,
+    "said_indep": 0.471,
+    "z": 4.8,
+    "brier_joint": 0.2486,
+    "brier_indep": 0.2553,
+    "units": 170.5
+   }
+  ],
+  "by_season": {
+   "2024": [
+    {
+     "story": "cover_rb",
+     "n": 126,
+     "hits": 76,
+     "hit_rate": 0.603,
+     "said": 0.506,
+     "said_indep": 0.468,
+     "z": 2.17,
+     "brier_joint": 0.2491,
+     "brier_indep": 0.2582,
+     "units": 24.2
+    },
+    {
+     "story": "qb_wr1",
+     "n": 279,
+     "hits": 170,
+     "hit_rate": 0.609,
+     "said": 0.496,
+     "said_indep": 0.447,
+     "z": 3.79,
+     "brier_joint": 0.2508,
+     "brier_indep": 0.2645,
+     "units": 64.0
+    },
+    {
+     "story": "top2",
+     "n": 395,
+     "hits": 247,
+     "hit_rate": 0.625,
+     "said": 0.497,
+     "said_indep": 0.495,
+     "z": 5.1,
+     "brier_joint": 0.2506,
+     "brier_indep": 0.2511,
+     "units": 102.0
+    },
+    {
+     "story": "over_qb_wr1",
+     "n": 394,
+     "hits": 233,
+     "hit_rate": 0.591,
+     "said": 0.511,
+     "said_indep": 0.434,
+     "z": 3.21,
+     "brier_joint": 0.248,
+     "brier_indep": 0.2663,
+     "units": 62.3
+    },
+    {
+     "story": "qb_te1",
+     "n": 266,
+     "hits": 150,
+     "hit_rate": 0.564,
+     "said": 0.495,
+     "said_indep": 0.461,
+     "z": 2.24,
+     "brier_joint": 0.248,
+     "brier_indep": 0.2536,
+     "units": 35.6
+    },
+    {
+     "story": "over_qbs",
+     "n": 182,
+     "hits": 105,
+     "hit_rate": 0.577,
+     "said": 0.507,
+     "said_indep": 0.443,
+     "z": 1.89,
+     "brier_joint": 0.2482,
+     "brier_indep": 0.2615,
+     "units": 24.9
+    },
+    {
+     "story": "under_rb",
+     "n": 125,
+     "hits": 78,
+     "hit_rate": 0.624,
+     "said": 0.5,
+     "said_indep": 0.479,
+     "z": 2.78,
+     "brier_joint": 0.2502,
+     "brier_indep": 0.2558,
+     "units": 31.2
+    },
+    {
+     "story": "all",
+     "n": 1767,
+     "hits": 1059,
+     "hit_rate": 0.599,
+     "said": 0.502,
+     "said_indep": 0.46,
+     "z": 8.23,
+     "brier_joint": 0.2493,
+     "brier_indep": 0.2589,
+     "units": 344.2
+    }
+   ],
+   "2025": [
+    {
+     "story": "cover_rb",
+     "n": 128,
+     "hits": 63,
+     "hit_rate": 0.492,
+     "said": 0.508,
+     "said_indep": 0.469,
+     "z": -0.36,
+     "brier_joint": 0.25,
+     "brier_indep": 0.2504,
+     "units": -4.0
+    },
+    {
+     "story": "qb_wr1",
+     "n": 296,
+     "hits": 159,
+     "hit_rate": 0.537,
+     "said": 0.497,
+     "said_indep": 0.448,
+     "z": 1.38,
+     "brier_joint": 0.2496,
+     "brier_indep": 0.2559,
+     "units": 23.8
+    },
+    {
+     "story": "top2",
+     "n": 390,
+     "hits": 202,
+     "hit_rate": 0.518,
+     "said": 0.494,
+     "said_indep": 0.492,
+     "z": 0.94,
+     "brier_joint": 0.2509,
+     "brier_indep": 0.2511,
+     "units": 19.4
+    },
+    {
+     "story": "over_qb_wr1",
+     "n": 388,
+     "hits": 217,
+     "hit_rate": 0.559,
+     "said": 0.51,
+     "said_indep": 0.434,
+     "z": 1.94,
+     "brier_joint": 0.2482,
+     "brier_indep": 0.2615,
+     "units": 37.0
+    },
+    {
+     "story": "qb_te1",
+     "n": 258,
+     "hits": 143,
+     "hit_rate": 0.554,
+     "said": 0.495,
+     "said_indep": 0.46,
+     "z": 1.91,
+     "brier_joint": 0.2495,
+     "brier_indep": 0.2548,
+     "units": 30.6
+    },
+    {
+     "story": "over_qbs",
+     "n": 170,
+     "hits": 95,
+     "hit_rate": 0.559,
+     "said": 0.507,
+     "said_indep": 0.443,
+     "z": 1.35,
+     "brier_joint": 0.2479,
+     "brier_indep": 0.2588,
+     "units": 17.0
+    },
+    {
+     "story": "under_rb",
+     "n": 128,
+     "hits": 67,
+     "hit_rate": 0.523,
+     "said": 0.502,
+     "said_indep": 0.483,
+     "z": 0.48,
+     "brier_joint": 0.2487,
+     "brier_indep": 0.2501,
+     "units": 5.1
+    },
+    {
+     "story": "all",
+     "n": 1758,
+     "hits": 946,
+     "hit_rate": 0.538,
+     "said": 0.501,
+     "said_indep": 0.46,
+     "z": 3.1,
+     "brier_joint": 0.2494,
+     "brier_indep": 0.2554,
+     "units": 128.9
+    }
+   ]
+  },
+  "legs": [
+   {
+    "kind": "pass_yds",
+    "n": 1408,
+    "hit_rate": 0.739,
+    "said": 0.721
+   },
+   {
+    "kind": "rec",
+    "n": 2080,
+    "hit_rate": 0.756,
+    "said": 0.698
+   },
+   {
+    "kind": "rec_yds",
+    "n": 811,
+    "hit_rate": 0.811,
+    "said": 0.765
+   },
+   {
+    "kind": "rush_yds",
+    "n": 505,
+    "hit_rate": 0.816,
+    "said": 0.769
+   },
+   {
+    "kind": "spread",
+    "n": 387,
+    "hit_rate": 0.734,
+    "said": 0.693
+   },
+   {
+    "kind": "total",
+    "n": 1123,
+    "hit_rate": 0.81,
+    "said": 0.776
+   }
+  ],
+  "legs_by_band": [
+   {
+    "kind": "pass_yds",
+    "band": "(0.599, 0.7]",
+    "n": 538,
+    "hit_rate": 0.673,
+    "said": 0.649
+   },
+   {
+    "kind": "pass_yds",
+    "band": "(0.7, 0.8]",
+    "n": 665,
+    "hit_rate": 0.77,
+    "said": 0.749
+   },
+   {
+    "kind": "pass_yds",
+    "band": "(0.8, 0.9]",
+    "n": 205,
+    "hit_rate": 0.81,
+    "said": 0.817
+   },
+   {
+    "kind": "rec",
+    "band": "(0.599, 0.7]",
+    "n": 1115,
+    "hit_rate": 0.723,
+    "said": 0.651
+   },
+   {
+    "kind": "rec",
+    "band": "(0.7, 0.8]",
+    "n": 868,
+    "hit_rate": 0.788,
+    "said": 0.744
+   },
+   {
+    "kind": "rec",
+    "band": "(0.8, 0.9]",
+    "n": 97,
+    "hit_rate": 0.845,
+    "said": 0.825
+   },
+   {
+    "kind": "rec_yds",
+    "band": "(0.599, 0.7]",
+    "n": 8,
+    "hit_rate": 1.0,
+    "said": 0.673
+   },
+   {
+    "kind": "rec_yds",
+    "band": "(0.7, 0.8]",
+    "n": 699,
+    "hit_rate": 0.798,
+    "said": 0.758
+   },
+   {
+    "kind": "rec_yds",
+    "band": "(0.8, 0.9]",
+    "n": 104,
+    "hit_rate": 0.885,
+    "said": 0.82
+   },
+   {
+    "kind": "rush_yds",
+    "band": "(0.599, 0.7]",
+    "n": 112,
+    "hit_rate": 0.723,
+    "said": 0.672
+   },
+   {
+    "kind": "rush_yds",
+    "band": "(0.7, 0.8]",
+    "n": 196,
+    "hit_rate": 0.796,
+    "said": 0.743
+   },
+   {
+    "kind": "rush_yds",
+    "band": "(0.8, 0.9]",
+    "n": 197,
+    "hit_rate": 0.888,
+    "said": 0.85
+   },
+   {
+    "kind": "spread",
+    "band": "(0.599, 0.7]",
+    "n": 233,
+    "hit_rate": 0.708,
+    "said": 0.661
+   },
+   {
+    "kind": "spread",
+    "band": "(0.7, 0.8]",
+    "n": 149,
+    "hit_rate": 0.772,
+    "said": 0.739
+   },
+   {
+    "kind": "spread",
+    "band": "(0.8, 0.9]",
+    "n": 5,
+    "hit_rate": 0.8,
+    "said": 0.805
+   },
+   {
+    "kind": "total",
+    "band": "(0.599, 0.7]",
+    "n": 5,
+    "hit_rate": 1.0,
+    "said": 0.697
+   },
+   {
+    "kind": "total",
+    "band": "(0.7, 0.8]",
+    "n": 840,
+    "hit_rate": 0.796,
+    "said": 0.752
+   },
+   {
+    "kind": "total",
+    "band": "(0.8, 0.9]",
+    "n": 278,
+    "hit_rate": 0.849,
+    "said": 0.85
+   }
+  ]
+ }
+}

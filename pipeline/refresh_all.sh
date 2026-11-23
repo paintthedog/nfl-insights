@@ -22,6 +22,8 @@ NFL_WEEK=${@: -1} python explain_weights.py
 for W in "$@"; do python build_site.py $W; done
 for W in "$@"; do python combo_slate.py $W; done   # Oct 31: odds-free combination predictions (logged until kickoff)
 python combo_slate.py grade > /dev/null           # -> combos_report.json (graded + this week's combos for the Record tab)
+for W in "$@"; do python sgp_gen.py $W; done      # Nov 23: same-game parlay ideas (fair price ~2.0), logged until kickoff
+python sgp_gen.py grade > /dev/null              # -> sgp_report.json (game cards + Record tab)
 python trends.py
 python season.py
 python awards.py

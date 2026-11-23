@@ -728,6 +728,11 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
       <div class="controls"><div class="seg sm" role="group" aria-label="Period" id="rec-period"></div></div>
       <div id="rec-fam"></div>
     </div></details>
+    <details class="tcard" id="sgp"><summary><span class="tg"></span><span class="ttl">SGP generator</span><span class="vd" id="sg-vd">Do the same-game ideas hit as often as the model says?</span><span class="op" aria-hidden="true"></span></summary><div class="tbody">
+      <p class="wnote">Since Nov 23: for every game, fixed rules build 2- and 3-leg same-game parlays from player thresholds, alternate spreads and alternate totals, keeping the ones whose fair price (1 / the model's chance) is 1.90–2.30, with the most balanced legs. The three on each game card are graded here. No sportsbook prices: the question is whether "50%" combos hit 50%. The backtest reran the model on 2024–25 games with only what was known that morning. Exploratory until 150 graded per story.</p>
+      <div class="tablebox"><table id="sg-sum"></table></div>
+      <div id="sg-list"></div>
+    </div></details>
     <details class="tcard" id="combos"><summary><span class="tg"></span><span class="ttl">Combos</span><span class="vd" id="cb-vd">When the model says these all happen, do they?</span><span class="op" aria-hidden="true"></span></summary><div class="tbody">
       <p class="wnote">No odds involved. Before each game, fixed rules pair the model's predictions into 2- and 3-part combos at round, bettable thresholds (50+ rush yds, 4+ catches, 225+ pass yds), each leg picked where the model gives it about a 70% chance. A combo's chance accounts for how its parts move together in the same game (a QB's big day lifts his top receiver). A combo with a scratched player is set aside. The random pairs are the control. Exploratory: a type means little before about 150 graded combos.</p>
       <div class="tablebox"><table id="cb-sum"></table></div>
@@ -1536,6 +1541,7 @@ function gameCards() {
         <div class="${g.tp != null && g.tp >= STRONG ? "move" : ""}"><span class="lab">Model on the total</span><span>${g.tflip ? `<b>No edge</b> <span class="q">model ${g.m_total.toFixed(1)}</span>` : g.tl ? `<b>${g.tl} ${g.total}</b> ${pct(g.tp)}` : `${g.m_total.toFixed(1)} expected`}</span></div></div>
       <div class="gc-sides">${side(g, g.away, false)}${side(g, g.home, true)}</div>
       ${projPanel(g)}
+      ${sgpPanel(g)}
       ${gl.length ? `<div class="gc-game"><h4>Game notes</h4>${gl.sort(thinFirst).map(o => o.html).join("")}</div>` : ""}</article>`; }).join("");
 }
 
@@ -1554,6 +1560,16 @@ function projPanel(g) {
   const dark = document.documentElement.dataset.theme === "dark" || (document.documentElement.dataset.theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
   const [ca, ch] = teamPair(g.away, g.home, dark);
   return `<details class="gc-proj"><summary><span>Player projections</span><span class="op" aria-hidden="true"></span></summary><div class="gp-body">${team(g.away, ca)}${team(g.home, ch)}</div><p class="gp-note">Averages across the game simulations, if the player plays. Full ranges and every player are on the Projections tab.</p></details>`;
+}
+// Nov 23 (Clinton): same-game parlay ideas from sgp_gen.py: 2-3 legs whose MODEL fair price is about 2.0. No sportsbook prices.
+function sgpPanel(g) {
+  const SG = ALL.sgp; if (!SG || !SG.combos) return "";
+  const rows = SG.combos.filter(c => c.game_id === g.game_id); if (!rows.length) return "";
+  const mark = r => r === "hit" ? `<span class="pos-ev">✓</span>` : r === "miss" ? `<span class="fpd-dn">✗</span>` : r === "void" ? `<span class="dim">–</span>` : "•";
+  return `<details class="gc-proj"><summary><span>Same-game parlay ideas <span class="q">fair price about 2.0</span></span><span class="op" aria-hidden="true"></span></summary><div class="gp-body" style="display:block">${rows.map(c =>
+    `<div class="gp-r" style="padding:6px 0"><div class="gp-a"><span class="player" style="white-space:normal">${esc(c.story_name)}</span><span class="gp-n"><span data-tip="The model's chance that every leg hits, counting how they move together">${pct(c.model_p)}</span><b data-tip="Fair price = 1 / the model's chance. Only a sportsbook price above this is worth it.">${c.fair.toFixed(2)}</b></span></div>
+      <div class="gp-l">${c.legs.map(l => `${mark(l.r)} ${esc(l.t)}`).join("<br>")}</div></div>`).join("")}</div>
+    <p class="gp-note">Built by fixed rules from the model's own numbers: player thresholds plus alternate spreads and totals, legs at 60–90% each, the combo's chance counting how the legs move together. The right column is the model's fair decimal price; bet only if the sportsbook's same-game price is higher, and remember it prices these links too. Exploratory: see the Record tab.</p></details>`;
 }
 // ---------- THIS WEEK: the front page
 function renderHome() {
@@ -1909,6 +1925,27 @@ function renderCombos() {
     legs, cbSt.l, renderCombos);
 }
 renderCombos();
+// ---------- SGP generator (Nov 23): graded live picks + the 2024-25 replay backtest per story
+const SGR = ALL.sgp; const sgSt = { key: "ord", dir: 1 };
+function renderSgp() {
+  if (!SGR) { $("#sg-sum").innerHTML = ""; $("#sg-list").innerHTML = `<p class="wnote">No SGP ideas logged yet.</p>`; return; }
+  const P = x => x == null ? dash : `<span class="num">${Math.round(x * 100)}%</span>`;
+  const live = Object.fromEntries((SGR.shown || []).map(r => [r.story, r])), bt = SGR.backtest ? Object.fromEntries((SGR.backtest.shown || []).map(r => [r.story, r])) : {};
+  const rows = (SGR.stories || []).map((s, i) => ({ ord: i, key: s.key, name: s.name, live: live[s.key], bt: bt[s.key] })).filter(r => r.live || r.bt);
+  const cell = x => x ? `<span class="num pts">${Math.round(x.hit_rate * 100)}%</span><span class="sub">${x.hits} of ${x.n} · said ${Math.round(x.said * 100)}%</span>` : dash;
+  colTable($("#sg-sum"), [
+    { k: "name", label: "Story", asc: 1, sv: r => r.ord, cell: r => `<span class="player" style="white-space:normal">${esc(r.name)}</span>` },
+    { k: "live", label: "This season", sv: r => r.live ? r.live.n : -1, cell: r => cell(r.live) },
+    { k: "bt", label: "Backtest 2024–25", sv: r => r.bt ? r.bt.n : -1, cell: r => cell(r.bt) }], rows, sgSt, renderSgp);
+  const all = (SGR.combos || []), done = all.filter(c => c.status === "hit" || c.status === "miss"), h = done.filter(c => c.status === "hit").length;
+  if (done.length) $("#sg-vd").textContent = `Do the same-game ideas hit as often as the model says? ${h} of ${done.length} hit (${Math.round(h / done.length * 100)}%) vs ${Math.round(done.reduce((a, c) => a + c.model_p, 0) / done.length * 100)}% said`;
+  const mark = r => r === "hit" ? `<span class="pos-ev">✓</span>` : r === "miss" ? `<span class="fpd-dn">✗</span>` : r === "void" ? `<span class="dim">–</span>` : "";
+  const weeks = [...new Set(all.map(c => c.week))].sort((a, b) => b - a);
+  $("#sg-list").innerHTML = weeks.map(w => { const rs = all.filter(c => c.week === w), d = rs.filter(c => c.status === "hit" || c.status === "miss");
+    return `<details class="fam"><summary><span class="player">Week ${w}</span><span class="n">${d.length ? `${d.filter(c => c.status === "hit").length} of ${d.length} <span class="q">hit</span>` : `<span class="q">${rs.length} pending</span>`}</span></summary><div class="tbody">${rs.map(c =>
+      `<div class="tr" style="display:block;padding:4px 0"><b>${esc(c.game_id.split("_").slice(2).join(" @ "))}</b> <span class="q">${esc(c.story_name)} · model ${Math.round(c.model_p * 100)}% · fair ${c.fair.toFixed(2)} · ${c.status === "pending" ? "pending" : c.status === "void" ? "set aside" : c.status}</span><br>${c.legs.map(l => `${mark(l.r)} ${esc(l.t)}`).join("<br>")}</div>`).join("")}</div></details>`; }).join("");
+}
+renderSgp();
 // Angles tested lives on the Model tab now
 (() => { const cls = l => l === "Earning trust" || l === "Model about right" ? "trust" : l === "Don't bet" || l === "Model too optimistic" ? "dont" : "";
   $("#rec-verdicts").innerHTML = RC ? RC.verdicts.map(v => `<div class="vcard"><span class="vlab ${cls(v.label)}">${esc(v.label)}</span><h4>${esc(v.name)}</h4><p>${esc(v.note)}</p></div>`).join("") : ""; })();

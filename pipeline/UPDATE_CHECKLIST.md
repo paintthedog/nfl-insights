@@ -64,6 +64,7 @@ Cadence: daily Wed–Sat; Sunday morning = full run + odds pull; Tuesday = paper
 ## 7. Publish & digest
 - [ ] Publish: commit `docs/index.html` (written by assemble_site.py) and push to main; GitHub Pages serves it at https://paintthedog.github.io/nfl-insights/ within a minute or two (Oct 31: replaces the claude.ai artifact)
 - [ ] Post a short digest: new outs/returns, projection moves >1.5 pts or >15% ATD swing, forecast changes, line moves, anything that touches open paper bets
+- [ ] (Nov 23) Digest also lists the first SGP idea per game kicking off within 72 hours (sgpgen_wk{W}.csv rows with shown=1, story order): legs, model chance, fair decimal price. Say "fair price; compare DK's same-game price" and never call it an edge.
 
 ## 8. ~~Odds pull~~ — STOPPED Oct 25 (Clinton's decision; reference only). Game-line paper bets now log automatically: `paper_lines.py` runs inside refresh_all.sh
 ### (old step 8) ⚑ Odds pull — game mornings only (Sun ~7am; Thu/Mon if betting those)

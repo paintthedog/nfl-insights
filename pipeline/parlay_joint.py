@@ -22,17 +22,20 @@ def scores(o, sched):
         x[f"{rl} {st}"] = norm.ppf((r.rank(method="average") - 0.5) / len(r))          # percentile of 'actual vs projection' -> normal score
         x = x[["game_id", "posteam", "season", f"{rl} {st}"]]
         T = x if T is None else T.merge(x, on=["game_id", "posteam", "season"], how="inner")
-    s = sched[["game_id", "home_team", "away_team", "result"]]
+    s = sched[["game_id", "home_team", "away_team", "result", "total", "spread_line", "total_line"]]
     T = T.merge(s, on="game_id"); home = T.posteam == T.home_team
     T["WIN"] = np.where(home, T.result, -T.result)                       # margin; normal score below
-    T["WIN"] = norm.ppf((T.WIN.rank(method="average") - 0.5) / len(T))
+    T["COV"] = np.where(home, T.result - T.spread_line, T.spread_line - T.result)   # Nov 23 (SGP generator): margin vs the closing spread
+    T["TOT"] = T.total - T.total_line                                    # Nov 23: game points vs the closing total (same for both teams)
+    for c in ("WIN", "COV", "TOT"): T[c] = norm.ppf((T[c].rank(method="average") - 0.5) / len(T))
     T["opp"] = np.where(home, T.away_team, T.home_team)
-    cols = [f"{rl} {st}" for rl, st in LEGS] + ["WIN"]
-    O = T[["game_id", "posteam"] + cols].rename(columns={**{c: "OPP " + c for c in cols}, "posteam": "opp"})
+    cols = [f"{rl} {st}" for rl, st in LEGS] + ["WIN", "COV", "TOT"]
+    oc = [c for c in cols if c != "TOT"]
+    O = T[["game_id", "posteam"] + oc].rename(columns={**{c: "OPP " + c for c in oc}, "posteam": "opp"})
     return T.merge(O, on=["game_id", "opp"], how="inner"), cols
 
 def fit(T, cols):
-    allc = cols + ["OPP " + c for c in cols]
+    allc = cols + ["OPP " + c for c in cols if c != "TOT"]
     C = T[allc].corr(method="spearman")
     C = 2 * np.sin(np.pi * C / 6)          # spearman -> pearson for normal scores
     return {"labels": allc, "corr": C.round(4).values.tolist(), "n": int(len(T))}
@@ -50,8 +53,24 @@ def joint(legs, corr=None):
     # P(all z_i > th_i) = P(all -z_i < -th_i)
     return float(multivariate_normal(mean=np.zeros(len(legs)), cov=S, allow_singular=True).cdf(-th))
 
-if __name__ == "__main__" and sys.argv[1:] == ["fit"]:
+def joint_signed(legs, corr=None):
+    """Nov 23 (SGP generator): legs [(label, p, sign)]; sign -1 = the leg hits when the stat comes in LOW (an under, the other side
+    of a spread). Same copula as joint(); the sign flips that leg's correlations."""
+    global _C
+    if corr is None:
+        if _C is None: _C = json.load(open("data/joint_corr.json"))
+        corr = _C
+    lab = corr["labels"]; M = np.array(corr["corr"])
+    idx = [lab.index(l) for l, _, _ in legs]; sg = np.array([s for _, _, s in legs], float)
+    S = M[np.ix_(idx, idx)] * np.outer(sg, sg)
+    th = np.array([norm.ppf(1 - p) for _, p, _ in legs])
+    return float(multivariate_normal(mean=np.zeros(len(legs)), cov=S, allow_singular=True).cdf(-th))
+
+if __name__ == "__main__" and sys.argv[1:2] == ["fit"]:
+    # python parlay_joint.py fit [max_season out.json]: the backtest fits on seasons before the ones it tests (no look-ahead)
     o = pd.read_pickle("tests/_wf_proj.pkl"); sched = pd.read_parquet("data/sched.parquet")
-    T, cols = scores(o, sched); out = fit(T, cols); json.dump(out, open("data/joint_corr.json", "w"))
+    dest = "data/joint_corr.json"
+    if len(sys.argv) > 2: o = o[o.season <= int(sys.argv[2])]; dest = sys.argv[3]
+    T, cols = scores(o, sched); out = fit(T, cols); json.dump(out, open(dest, "w"))
     lab = out["labels"]; M = pd.DataFrame(out["corr"], index=lab, columns=lab)
     print(f"fit on {out['n']} team-games"); print(M.loc[cols, cols].round(2).to_string())

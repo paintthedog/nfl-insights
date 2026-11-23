@@ -183,3 +183,17 @@ Test: widen every published quantile around the median by s (q' = med + s(q - me
 - Rushing yards: already on target; widening worsens pinball. NO CHANGE.
 TD chances (replay/td_check.py, td_recal.py, untagged = current config; p_td = the shown blend): 2024 said 18.4% / scored 20.0%, 2025 18.8% / 19.2%. The 10-30% band runs ~2 pts low in both seasons, 40%+ runs ~3 pts high (z -1.6). Logistic recalibration fit on 2024 (a +0.03, b 0.934) helps 2024 (in-sample) but is worse on 2025 (Brier 0.13627 -> 0.13633). NOT ADOPTED. The live gap (21.3% said vs 23.4%, z ~2) is in the same direction as the replay's low band; recheck at 3,000 live player-games.
 Lead back (same day, not replay-testable): a news lead_back now keeps back_mult 1.0 (the return ease-in had cut Montgomery's set 60% to 52%). The 17 earlier lead_back cases (Weeks 7-10) landed at their set share (mean 0.69 vs set 0.64; actual 0.72), so only returning backs change.
+
+
+## Nov 23: SGP generator backtest (sgp_gen.py; replay 2024-25 Weeks 4-18, 448 games; copula fitted on 2019-2023 only)
+Rules fixed before the test: legs 60-90%, fair price 1.90-2.30, most balanced legs, favorite's spread leg lays points. Alt spread/total chances = the site's anchored chance carried along the 2014-2023 (margin - spread) and (points - total) distributions.
+| story (all combos) | n | hit | said (joint) | legs multiplied | z |
+| Favorite wins (alt spread) + lead RB yds | 254 | 54.7% | 50.7% | 46.8% | 1.3 |
+| QB yds + WR1 catches | 575 | 57.2% | 49.7% | 44.7% | 3.6 |
+| Top two pass catchers | 785 | 57.2% | 49.6% | 49.3% | 4.3 |
+| Over + QB yds + WR1 yds | 782 | 57.5% | 51.0% | 43.4% | 3.7 |
+| QB yds + TE1 catches | 524 | 55.9% | 49.5% | 46.1% | 2.9 |
+| Over + both QBs' yds | 352 | 56.8% | 50.7% | 44.3% | 2.3 |
+| Under + favorite wins + RB yds | 253 | 57.3% | 50.1% | 48.1% | 2.3 |
+| All | 3,525 | 56.9% | 50.1% | 46.0% | 8.0 |
+The three shown per game: 57.3% vs 50.6% (1,304). By season 59.9% (2024) / 53.8% (2025). Legs ran under-confident in replay (catches 75.6% vs 69.8% said, rush yds 81.6 vs 76.9, rec yds 81.1 vs 76.5, pass yds 73.9 vs 72.1, alt spreads 73.4 vs 69.3, alt totals 81.0 vs 77.6). Live 2026 combos legs are calibrated (70-72% vs ~70% said) and live same-game 2-leg combos hit 48.7% vs 47.2% said, so the replay's gap is partly replay-only (actual starting QB known, no scratches). NOT recalibrated; watch the live sgp_report.json. A blowout story (favorite covers the closing spread + RB + other QB) can't reach a 2.0 fair price and was dropped. No sportsbook prices: nothing here says DK's same-game prices are beatable.
