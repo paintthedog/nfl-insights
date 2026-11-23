@@ -1,8 +1,8 @@
 Staleness audit, week 12: 7 item(s)
-  [ROSTER] Sam Darnold (SEA) projected 14.8 pts but roster status INA (A01)
-  [ROSTER] Pierre Strong (GB) projected 4.6 pts but roster status INA (A01)
+  [ROSTER] Sam Darnold (SEA) projected 15.0 pts but roster status INA (A01)
+  [ROSTER] Pierre Strong (GB) projected 4.5 pts but roster status INA (A01)
   [ROSTER] Emanuel Wilson (SEA) projected 4.2 pts but roster status INA (A01)
+  [ROSTER] Brock Bowers (LV) projected 6.5 pts but roster status INA (A01)
+  [ROSTER] Audric Estime (NO) projected 10.7 pts but roster status INA (A01)
   [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
-  [CARRYOVER] Tyjae Spears was out last week, now projected 4.4 pts with no Week 12 status — confirm he's back
-  [CARRYOVER] Carson Beck was out last week, now projected 12.2 pts with no Week 12 status — confirm he's back
   [DFS] no dk_salaries_wk12.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

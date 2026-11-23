@@ -1,5 +1,7 @@
-Staleness audit, week 11: 4 item(s)
-  [TRADE] Jared Wayne moved HOU -> MIA (12 targets+carries with HOU) and is not in the MIA projections
-  [CARRYOVER] Mike Evans was out last week, now projected 8.1 pts with no Week 11 status — confirm he's back
-  [CARRYOVER] Jordyn Tyson was out last week, now projected 12.2 pts with no Week 11 status — confirm he's back
+Staleness audit, week 11: 6 item(s)
+  [TRADE] Kaytron Allen moved WAS -> MIA (12 targets+carries with WAS) and is not in the MIA projections
+  [TRADE] Kirk Cousins moved LV -> MIN (22 targets+carries with LV) and is not in the MIN projections
+  [TRADE] Jacoby Brissett moved ARI -> BAL (30 targets+carries with ARI) and is not in the BAL projections
+  [TRADE] Keenan Allen moved IND -> SF (58 targets+carries with IND) and is not in the SF projections
+  [TRADE] Josh Downs moved IND -> KC (58 targets+carries with IND) and is not in the KC projections
   [CARRYOVER] OL Kayode Awosika was out last week, not listed this week — confirm

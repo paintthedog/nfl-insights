@@ -1,9 +1,8 @@
 {
- "asof": "2026-11-21T09:40 ET",
+ "asof": "2026-11-23T10:00 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
-  "Jacory Croskey-Merritt",
   "Jalen Hurts",
   "Marcus Mariota",
   "Raheim Sanders",
@@ -56,7 +55,7 @@
   "PHI": "Joe Milton III",
   "NYG": "J.J. McCarthy",
   "BAL": "Jacoby Brissett",
-  "ARI": "Carson Beck",
+  "ARI": "Josh Johnson",
   "MIN": "Kirk Cousins",
   "MIA": "Kyle McCord",
   "LV": "Fernando Mendoza",
@@ -77,8 +76,8 @@
   "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson expected to progress for Sunday.",
   "KC": "Walker (groin) missed Wk10-11; status for Wk12 in question (AP Nov 20). Emmett Johnson set as lead back until Walker practices.",
   "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
-  "CHI": "Kyle Monangai (thumb/toe) says he's 'on track' to return Wk11 after five missed games (Forbes Nov 16); Burden (concussion) practiced Mon (Big Lead Nov 17).",
-  "ARI": "Beck (back spasms) expected out Wk11, Josh Johnson starting (Cards Wire Nov 20); Beck kept as Wk12 starter pending his status. Minshew on IR.",
+  "CHI": "RB Roschon Johnson (ankle) ruled out during Wk11 vs NO (NFL.com Nov 22).",
+  "ARI": "Josh Johnson started Wk11 (Beck back spasms, OUT; Minshew IR). SI starting-QB list (modified Nov 20): Arizona will start Josh Johnson in Week 12. Beck status for Wk12 pending.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
   "HOU": "Woody Marks (concussion) not expected to clear for TNF (Ryans). Montgomery (groin) full Fri/Mon practice, Ryans 'not certain' (Forbes Nov 16). Backfield left to the official report.",
@@ -87,7 +86,10 @@
   "IND": "Daniel Jones released; Anthony Richardson named starter (Colts.com).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
   "SEA": "Darnold returns from the bye as the starter (RotoBaller Nov 20). Charbonnet lead back.",
-  "NE": "Drake Maye fractured fibula, may miss the rest of the season (ESPN/Boston Globe Nov 20). Tommy DeVito 'leader in the clubhouse' to start after the bye (SI Nov 16). A.J. Brown out multiple weeks (hamstring)."
+  "NE": "Drake Maye fractured fibula/ankle, likely out for the season (Rapoport via EssentiallySports Nov 18; SI Nov 20). Tommy DeVito starts.",
+  "LAC": "Justin Herbert in concussion protocol after the Wk11 loss to the Jets (NFL.com Nov 22). Status for Wk12 vs NE pending; still modeled as the starter.",
+  "WAS": "Croskey-Merritt (groin) full practice all week, Questionable for MNF, trending toward playing (Commanders.com Nov 21); 'preferred top option' in a committee with White and Ekeler (Yahoo/Heavy Nov 21). lead_back 0.50 carried from Wk11; re-check after MNF.",
+  "LA": "Puka Nacua MCL surgery, out months (CBS Nov 22). Kyren Williams (toe) limited Sunday."
  },
  "back": [
   "Jalen Nailor",
@@ -137,6 +139,10 @@
   "SEA": [
    "Zach Charbonnet",
    0.65
+  ],
+  "WAS": [
+   "Jacory Croskey-Merritt",
+   0.5
   ]
  },
  "committee": [],
