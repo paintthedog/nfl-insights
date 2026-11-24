@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-23 15:44 ET",
+ "asof": "2026-11-24 09:31 ET",
  "stories": [
   {
    "key": "cover_rb",
@@ -37,9 +37,192 @@
    "legs": 3
   }
  ],
- "all": [],
- "shown": [],
- "legs": [],
+ "all": [
+  {
+   "story": "cover_rb",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.523,
+   "said_indep": 0.485,
+   "z": -1.05,
+   "brier_joint": 0.2741,
+   "brier_indep": 0.2354,
+   "units": -1.0
+  },
+  {
+   "story": "qb_wr1",
+   "n": 2,
+   "hits": 1,
+   "hit_rate": 0.5,
+   "said": 0.505,
+   "said_indep": 0.458,
+   "z": -0.01,
+   "brier_joint": 0.262,
+   "brier_indep": 0.2641,
+   "units": 0.0
+  },
+  {
+   "story": "top2",
+   "n": 2,
+   "hits": 1,
+   "hit_rate": 0.5,
+   "said": 0.506,
+   "said_indep": 0.504,
+   "z": -0.02,
+   "brier_joint": 0.2688,
+   "brier_indep": 0.2697,
+   "units": 0.0
+  },
+  {
+   "story": "over_qb_wr1",
+   "n": 2,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.516,
+   "said_indep": 0.446,
+   "z": -1.46,
+   "brier_joint": 0.2663,
+   "brier_indep": 0.1985,
+   "units": -2.0
+  },
+  {
+   "story": "qb_te1",
+   "n": 1,
+   "hits": 1,
+   "hit_rate": 1.0,
+   "said": 0.482,
+   "said_indep": 0.446,
+   "z": 1.04,
+   "brier_joint": 0.2678,
+   "brier_indep": 0.3072,
+   "units": 1.1
+  },
+  {
+   "story": "over_qbs",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.507,
+   "said_indep": 0.443,
+   "z": -1.01,
+   "brier_joint": 0.2569,
+   "brier_indep": 0.1966,
+   "units": -1.0
+  },
+  {
+   "story": "under_rb",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.502,
+   "said_indep": 0.481,
+   "z": -1.0,
+   "brier_joint": 0.252,
+   "brier_indep": 0.2312,
+   "units": -1.0
+  },
+  {
+   "story": "all",
+   "n": 10,
+   "hits": 3,
+   "hit_rate": 0.3,
+   "said": 0.507,
+   "said_indep": 0.467,
+   "z": -1.31,
+   "brier_joint": 0.2645,
+   "brier_indep": 0.2435,
+   "units": -3.9
+  }
+ ],
+ "shown": [
+  {
+   "story": "cover_rb",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.523,
+   "said_indep": 0.485,
+   "z": -1.05,
+   "brier_joint": 0.2741,
+   "brier_indep": 0.2354,
+   "units": -1.0
+  },
+  {
+   "story": "qb_wr1",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.517,
+   "said_indep": 0.47,
+   "z": -1.03,
+   "brier_joint": 0.2674,
+   "brier_indep": 0.221,
+   "units": -1.0
+  },
+  {
+   "story": "top2",
+   "n": 1,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.525,
+   "said_indep": 0.523,
+   "z": -1.05,
+   "brier_joint": 0.2752,
+   "brier_indep": 0.2736,
+   "units": -1.0
+  },
+  {
+   "story": "all",
+   "n": 3,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "said": 0.522,
+   "said_indep": 0.493,
+   "z": -1.81,
+   "brier_joint": 0.2722,
+   "brier_indep": 0.2433,
+   "units": -3.0
+  }
+ ],
+ "legs": [
+  {
+   "kind": "pass_yds",
+   "n": 4,
+   "hit_rate": 1.0,
+   "said": 0.758
+  },
+  {
+   "kind": "rec",
+   "n": 5,
+   "hit_rate": 0.6,
+   "said": 0.695
+  },
+  {
+   "kind": "rec_yds",
+   "n": 2,
+   "hit_rate": 0.5,
+   "said": 0.746
+  },
+  {
+   "kind": "rush_yds",
+   "n": 2,
+   "hit_rate": 0.0,
+   "said": 0.77
+  },
+  {
+   "kind": "spread",
+   "n": 1,
+   "hit_rate": 0.0,
+   "said": 0.687
+  },
+  {
+   "kind": "total",
+   "n": 4,
+   "hit_rate": 0.25,
+   "said": 0.773
+  }
+ ],
  "combos": [
   {
    "week": 11,
@@ -49,15 +232,15 @@
    "subject": "CIN -0.5 + Chase Brown 30+ rush yds",
    "model_p": 0.5235,
    "fair": 1.91,
-   "status": "pending",
+   "status": "miss",
    "legs": [
     {
      "t": "CIN -0.5",
-     "r": "pending"
+     "r": "miss"
     },
     {
      "t": "Chase Brown 30+ rush yds",
-     "r": "pending"
+     "r": "miss"
     }
    ]
   },
@@ -69,15 +252,15 @@
    "subject": "Joe Burrow 250+ pass yds + Ja'Marr Chase 7+ catches",
    "model_p": 0.5171,
    "fair": 1.93,
-   "status": "pending",
+   "status": "miss",
    "legs": [
     {
      "t": "Joe Burrow 250+ pass yds",
-     "r": "pending"
+     "r": "hit"
     },
     {
      "t": "Ja'Marr Chase 7+ catches",
-     "r": "pending"
+     "r": "miss"
     }
    ]
   },
@@ -89,15 +272,15 @@
    "subject": "Ja'Marr Chase 7+ catches + Tee Higgins 4+ catches",
    "model_p": 0.5246,
    "fair": 1.91,
-   "status": "pending",
+   "status": "miss",
    "legs": [
     {
      "t": "Ja'Marr Chase 7+ catches",
-     "r": "pending"
+     "r": "miss"
     },
     {
      "t": "Tee Higgins 4+ catches",
-     "r": "pending"
+     "r": "miss"
     }
    ]
   },
@@ -106,17 +289,17 @@
    "game_id": "2026_12_GB_LA",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "Jordan Love 225+ pass yds + Matthew Golden 4+ catches",
-   "model_p": 0.5105,
-   "fair": 1.96,
+   "subject": "Matthew Stafford 200+ pass yds + Konata Mumpfield 2+ catches",
+   "model_p": 0.5228,
+   "fair": 1.91,
    "status": "pending",
    "legs": [
     {
-     "t": "Jordan Love 225+ pass yds",
+     "t": "Matthew Stafford 200+ pass yds",
      "r": "pending"
     },
     {
-     "t": "Matthew Golden 4+ catches",
+     "t": "Konata Mumpfield 2+ catches",
      "r": "pending"
     }
    ]
@@ -126,17 +309,17 @@
    "game_id": "2026_12_GB_LA",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "Matthew Golden 3+ catches + Tucker Kraft 3+ catches",
-   "model_p": 0.5185,
-   "fair": 1.93,
+   "subject": "Konata Mumpfield 2+ catches + Tutu Atwell 1+ catches",
+   "model_p": 0.4859,
+   "fair": 2.06,
    "status": "pending",
    "legs": [
     {
-     "t": "Matthew Golden 3+ catches",
+     "t": "Konata Mumpfield 2+ catches",
      "r": "pending"
     },
     {
-     "t": "Tucker Kraft 3+ catches",
+     "t": "Tutu Atwell 1+ catches",
      "r": "pending"
     }
    ]
@@ -146,13 +329,13 @@
    "game_id": "2026_12_GB_LA",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 36.5 + Matthew Stafford 200+ pass yds + Konata Mumpfield 10+ rec yds",
-   "model_p": 0.5183,
-   "fair": 1.93,
+   "subject": "Over 35.5 + Matthew Stafford 200+ pass yds + Konata Mumpfield 10+ rec yds",
+   "model_p": 0.5201,
+   "fair": 1.92,
    "status": "pending",
    "legs": [
     {
-     "t": "Over 36.5",
+     "t": "Over 35.5",
      "r": "pending"
     },
     {
@@ -171,8 +354,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Jared Goff 250+ pass yds + Amon-Ra St. Brown 5+ catches",
-   "model_p": 0.499,
-   "fair": 2.0,
+   "model_p": 0.5087,
+   "fair": 1.97,
    "status": "pending",
    "legs": [
     {
@@ -211,8 +394,8 @@
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
    "subject": "Over 46.5 + Caleb Williams 175+ pass yds + Luther Burden III 25+ rec yds",
-   "model_p": 0.5187,
-   "fair": 1.93,
+   "model_p": 0.5166,
+   "fair": 1.94,
    "status": "pending",
    "legs": [
     {
@@ -235,8 +418,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "DAL -3.5 + Javonte Williams 50+ rush yds",
-   "model_p": 0.5106,
-   "fair": 1.96,
+   "model_p": 0.5126,
+   "fair": 1.95,
    "status": "pending",
    "legs": [
     {
@@ -254,17 +437,17 @@
    "game_id": "2026_12_PHI_DAL",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "Dak Prescott 250+ pass yds + CeeDee Lamb 6+ catches",
-   "model_p": 0.5245,
-   "fair": 1.91,
+   "subject": "Joe Milton III 150+ pass yds + DeVonta Smith 4+ catches",
+   "model_p": 0.5083,
+   "fair": 1.97,
    "status": "pending",
    "legs": [
     {
-     "t": "Dak Prescott 250+ pass yds",
+     "t": "Joe Milton III 150+ pass yds",
      "r": "pending"
     },
     {
-     "t": "CeeDee Lamb 6+ catches",
+     "t": "DeVonta Smith 4+ catches",
      "r": "pending"
     }
    ]
@@ -294,13 +477,13 @@
    "game_id": "2026_12_KC_BUF",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "Patrick Mahomes 200+ pass yds + Rashee Rice 4+ catches",
-   "model_p": 0.5154,
-   "fair": 1.94,
+   "subject": "Patrick Mahomes 175+ pass yds + Rashee Rice 4+ catches",
+   "model_p": 0.5174,
+   "fair": 1.93,
    "status": "pending",
    "legs": [
     {
-     "t": "Patrick Mahomes 200+ pass yds",
+     "t": "Patrick Mahomes 175+ pass yds",
      "r": "pending"
     },
     {
@@ -314,17 +497,17 @@
    "game_id": "2026_12_KC_BUF",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "DJ Moore 3+ catches + Khalil Shakir 2+ catches",
-   "model_p": 0.5169,
-   "fair": 1.93,
+   "subject": "DJ Moore 2+ catches + Khalil Shakir 3+ catches",
+   "model_p": 0.4859,
+   "fair": 2.06,
    "status": "pending",
    "legs": [
     {
-     "t": "DJ Moore 3+ catches",
+     "t": "DJ Moore 2+ catches",
      "r": "pending"
     },
     {
-     "t": "Khalil Shakir 2+ catches",
+     "t": "Khalil Shakir 3+ catches",
      "r": "pending"
     }
    ]
@@ -334,13 +517,13 @@
    "game_id": "2026_12_KC_BUF",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 41.5 + Patrick Mahomes 175+ pass yds + Rashee Rice 25+ rec yds",
-   "model_p": 0.5211,
+   "subject": "Over 38.5 + Patrick Mahomes 175+ pass yds + Rashee Rice 20+ rec yds",
+   "model_p": 0.5219,
    "fair": 1.92,
    "status": "pending",
    "legs": [
     {
-     "t": "Over 41.5",
+     "t": "Over 38.5",
      "r": "pending"
     },
     {
@@ -348,7 +531,7 @@
      "r": "pending"
     },
     {
-     "t": "Rashee Rice 25+ rec yds",
+     "t": "Rashee Rice 20+ rec yds",
      "r": "pending"
     }
    ]
@@ -359,8 +542,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Aaron Rodgers 175+ pass yds + Germie Bernard 3+ catches",
-   "model_p": 0.4916,
-   "fair": 2.03,
+   "model_p": 0.4972,
+   "fair": 2.01,
    "status": "pending",
    "legs": [
     {
@@ -398,9 +581,9 @@
    "game_id": "2026_12_DEN_PIT",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 29.5 + Bo Nix 150+ pass yds + Jaylen Waddle 20+ rec yds",
-   "model_p": 0.5255,
-   "fair": 1.9,
+   "subject": "Over 29.5 + Aaron Rodgers 150+ pass yds + Germie Bernard 20+ rec yds",
+   "model_p": 0.5045,
+   "fair": 1.98,
    "status": "pending",
    "legs": [
     {
@@ -408,11 +591,11 @@
      "r": "pending"
     },
     {
-     "t": "Bo Nix 150+ pass yds",
+     "t": "Aaron Rodgers 150+ pass yds",
      "r": "pending"
     },
     {
-     "t": "Jaylen Waddle 20+ rec yds",
+     "t": "Germie Bernard 20+ rec yds",
      "r": "pending"
     }
    ]
@@ -422,13 +605,13 @@
    "game_id": "2026_12_NO_CIN",
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
-   "subject": "CIN -5.5 + Chase Brown 30+ rush yds",
-   "model_p": 0.521,
-   "fair": 1.92,
+   "subject": "CIN -4.5 + Chase Brown 30+ rush yds",
+   "model_p": 0.4917,
+   "fair": 2.03,
    "status": "pending",
    "legs": [
     {
-     "t": "CIN -5.5",
+     "t": "CIN -4.5",
      "r": "pending"
     },
     {
@@ -443,7 +626,7 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Tyler Shough 200+ pass yds + Chris Olave 5+ catches",
-   "model_p": 0.5076,
+   "model_p": 0.5068,
    "fair": 1.97,
    "status": "pending",
    "legs": [
@@ -483,8 +666,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "CLE -0.5 + Quinshon Judkins 30+ rush yds",
-   "model_p": 0.4986,
-   "fair": 2.01,
+   "model_p": 0.5111,
+   "fair": 1.96,
    "status": "pending",
    "legs": [
     {
@@ -502,17 +685,17 @@
    "game_id": "2026_12_LV_CLE",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "Deshaun Watson 175+ pass yds + KC Concepcion 3+ catches",
-   "model_p": 0.5106,
-   "fair": 1.96,
+   "subject": "Fernando Mendoza 175+ pass yds + Tre Tucker 2+ catches",
+   "model_p": 0.5165,
+   "fair": 1.94,
    "status": "pending",
    "legs": [
     {
-     "t": "Deshaun Watson 175+ pass yds",
+     "t": "Fernando Mendoza 175+ pass yds",
      "r": "pending"
     },
     {
-     "t": "KC Concepcion 3+ catches",
+     "t": "Tre Tucker 2+ catches",
      "r": "pending"
     }
    ]
@@ -522,9 +705,9 @@
    "game_id": "2026_12_LV_CLE",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "KC Concepcion 3+ catches + Harold Fannin Jr. 3+ catches",
-   "model_p": 0.4569,
-   "fair": 2.19,
+   "subject": "KC Concepcion 3+ catches + Denzel Boston 2+ catches",
+   "model_p": 0.4859,
+   "fair": 2.06,
    "status": "pending",
    "legs": [
     {
@@ -532,7 +715,7 @@
      "r": "pending"
     },
     {
-     "t": "Harold Fannin Jr. 3+ catches",
+     "t": "Denzel Boston 2+ catches",
      "r": "pending"
     }
    ]
@@ -542,13 +725,13 @@
    "game_id": "2026_12_BAL_HOU",
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
-   "subject": "HOU -1.5 + David Montgomery 30+ rush yds",
-   "model_p": 0.5166,
-   "fair": 1.94,
+   "subject": "HOU -0.5 + David Montgomery 30+ rush yds",
+   "model_p": 0.5223,
+   "fair": 1.91,
    "status": "pending",
    "legs": [
     {
-     "t": "HOU -1.5",
+     "t": "HOU -0.5",
      "r": "pending"
     },
     {
@@ -562,17 +745,17 @@
    "game_id": "2026_12_BAL_HOU",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "C.J. Stroud 225+ pass yds + Nico Collins 3+ catches",
-   "model_p": 0.4878,
+   "subject": "Jacoby Brissett 200+ pass yds + Zay Flowers 4+ catches",
+   "model_p": 0.4876,
    "fair": 2.05,
    "status": "pending",
    "legs": [
     {
-     "t": "C.J. Stroud 225+ pass yds",
+     "t": "Jacoby Brissett 200+ pass yds",
      "r": "pending"
     },
     {
-     "t": "Nico Collins 3+ catches",
+     "t": "Zay Flowers 4+ catches",
      "r": "pending"
     }
    ]
@@ -603,8 +786,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "NYG -2.5 + Cam Skattebo 40+ rush yds",
-   "model_p": 0.5049,
-   "fair": 1.98,
+   "model_p": 0.5014,
+   "fair": 1.99,
    "status": "pending",
    "legs": [
     {
@@ -623,8 +806,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "J.J. McCarthy 175+ pass yds + Malik Nabers 4+ catches",
-   "model_p": 0.5134,
-   "fair": 1.95,
+   "model_p": 0.5176,
+   "fair": 1.93,
    "status": "pending",
    "legs": [
     {
@@ -663,8 +846,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "NYJ -0.5 + Breece Hall 40+ rush yds",
-   "model_p": 0.4904,
-   "fair": 2.04,
+   "model_p": 0.4854,
+   "fair": 2.06,
    "status": "pending",
    "legs": [
     {
@@ -683,8 +866,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Geno Smith 175+ pass yds + Adonai Mitchell 2+ catches",
-   "model_p": 0.5027,
-   "fair": 1.99,
+   "model_p": 0.4972,
+   "fair": 2.01,
    "status": "pending",
    "legs": [
     {
@@ -702,13 +885,13 @@
    "game_id": "2026_12_NYJ_MIA",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 33.5 + Geno Smith 150+ pass yds + Adonai Mitchell 15+ rec yds",
-   "model_p": 0.5206,
+   "subject": "Over 32.5 + Geno Smith 150+ pass yds + Adonai Mitchell 15+ rec yds",
+   "model_p": 0.5216,
    "fair": 1.92,
    "status": "pending",
    "legs": [
     {
-     "t": "Over 33.5",
+     "t": "Over 32.5",
      "r": "pending"
     },
     {
@@ -727,8 +910,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "MIN -1.5 + Jordan Mason 30+ rush yds",
-   "model_p": 0.5138,
-   "fair": 1.95,
+   "model_p": 0.5187,
+   "fair": 1.93,
    "status": "pending",
    "legs": [
     {
@@ -747,8 +930,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Kirk Cousins 200+ pass yds + Justin Jefferson 5+ catches",
-   "model_p": 0.4876,
-   "fair": 2.05,
+   "model_p": 0.4911,
+   "fair": 2.04,
    "status": "pending",
    "legs": [
     {
@@ -787,8 +970,8 @@
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
    "subject": "JAX -8.5 + Bhayshul Tuten 40+ rush yds",
-   "model_p": 0.5067,
-   "fair": 1.97,
+   "model_p": 0.5023,
+   "fair": 1.99,
    "status": "pending",
    "legs": [
     {
@@ -807,8 +990,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Cam Ward 150+ pass yds + Carnell Tate 4+ catches",
-   "model_p": 0.4957,
-   "fair": 2.02,
+   "model_p": 0.4926,
+   "fair": 2.03,
    "status": "pending",
    "legs": [
     {
@@ -826,17 +1009,17 @@
    "game_id": "2026_12_TEN_JAX",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "Carnell Tate 4+ catches + Chimere Dike 2+ catches",
-   "model_p": 0.4548,
-   "fair": 2.2,
+   "subject": "Carnell Tate 3+ catches + Elic Ayomanor 2+ catches",
+   "model_p": 0.4859,
+   "fair": 2.06,
    "status": "pending",
    "legs": [
     {
-     "t": "Carnell Tate 4+ catches",
+     "t": "Carnell Tate 3+ catches",
      "r": "pending"
     },
     {
-     "t": "Chimere Dike 2+ catches",
+     "t": "Elic Ayomanor 2+ catches",
      "r": "pending"
     }
    ]
@@ -846,9 +1029,9 @@
    "game_id": "2026_12_WAS_ARI",
    "story": "cover_rb",
    "story_name": "Favorite wins (alt spread) + its lead RB yards",
-   "subject": "WAS -1.5 + Austin Ekeler 25+ rush yds",
-   "model_p": 0.5246,
-   "fair": 1.91,
+   "subject": "WAS -1.5 + Jacory Croskey-Merritt 25+ rush yds",
+   "model_p": 0.5169,
+   "fair": 1.93,
    "status": "pending",
    "legs": [
     {
@@ -856,27 +1039,7 @@
      "r": "pending"
     },
     {
-     "t": "Austin Ekeler 25+ rush yds",
-     "r": "pending"
-    }
-   ]
-  },
-  {
-   "week": 12,
-   "game_id": "2026_12_WAS_ARI",
-   "story": "qb_wr1",
-   "story_name": "QB yards + WR1 catches",
-   "subject": "Jayden Daniels 200+ pass yds + Stefon Diggs 4+ catches",
-   "model_p": 0.4815,
-   "fair": 2.08,
-   "status": "pending",
-   "legs": [
-    {
-     "t": "Jayden Daniels 200+ pass yds",
-     "r": "pending"
-    },
-    {
-     "t": "Stefon Diggs 4+ catches",
+     "t": "Jacory Croskey-Merritt 25+ rush yds",
      "r": "pending"
     }
    ]
@@ -886,17 +1049,41 @@
    "game_id": "2026_12_WAS_ARI",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "Stefon Diggs 4+ catches + Antonio Williams 2+ catches",
+   "subject": "Stefon Diggs 3+ catches + Antonio Williams 3+ catches",
    "model_p": 0.5246,
    "fair": 1.91,
    "status": "pending",
    "legs": [
     {
-     "t": "Stefon Diggs 4+ catches",
+     "t": "Stefon Diggs 3+ catches",
      "r": "pending"
     },
     {
-     "t": "Antonio Williams 2+ catches",
+     "t": "Antonio Williams 3+ catches",
+     "r": "pending"
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_WAS_ARI",
+   "story": "over_qb_wr1",
+   "story_name": "Over + QB yards + WR1 yards",
+   "subject": "Over 35.5 + Jayden Daniels 175+ pass yds + Stefon Diggs 25+ rec yds",
+   "model_p": 0.514,
+   "fair": 1.95,
+   "status": "pending",
+   "legs": [
+    {
+     "t": "Over 35.5",
+     "r": "pending"
+    },
+    {
+     "t": "Jayden Daniels 175+ pass yds",
+     "r": "pending"
+    },
+    {
+     "t": "Stefon Diggs 25+ rec yds",
      "r": "pending"
     }
    ]
@@ -907,8 +1094,8 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Sam Darnold 200+ pass yds + Jaxon Smith-Njigba 6+ catches",
-   "model_p": 0.5076,
-   "fair": 1.97,
+   "model_p": 0.4967,
+   "fair": 2.01,
    "status": "pending",
    "legs": [
     {
@@ -946,13 +1133,13 @@
    "game_id": "2026_12_SEA_SF",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 37.5 + Sam Darnold 175+ pass yds + Jaxon Smith-Njigba 60+ rec yds",
-   "model_p": 0.5215,
-   "fair": 1.92,
+   "subject": "Over 36.5 + Sam Darnold 175+ pass yds + Jaxon Smith-Njigba 60+ rec yds",
+   "model_p": 0.5149,
+   "fair": 1.94,
    "status": "pending",
    "legs": [
     {
-     "t": "Over 37.5",
+     "t": "Over 36.5",
      "r": "pending"
     },
     {
@@ -971,7 +1158,7 @@
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
    "subject": "Tommy DeVito 150+ pass yds + DeMario Douglas 3+ catches",
-   "model_p": 0.4741,
+   "model_p": 0.4737,
    "fair": 2.11,
    "status": "pending",
    "legs": [
@@ -1010,21 +1197,21 @@
    "game_id": "2026_12_NE_LAC",
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
-   "subject": "Over 22.5 + Tommy DeVito 150+ pass yds + DeMario Douglas 20+ rec yds",
-   "model_p": 0.5022,
+   "subject": "Over 27.5 + Justin Herbert 150+ pass yds + Ladd McConkey 15+ rec yds",
+   "model_p": 0.5025,
    "fair": 1.99,
    "status": "pending",
    "legs": [
     {
-     "t": "Over 22.5",
+     "t": "Over 27.5",
      "r": "pending"
     },
     {
-     "t": "Tommy DeVito 150+ pass yds",
+     "t": "Justin Herbert 150+ pass yds",
      "r": "pending"
     },
     {
-     "t": "DeMario Douglas 20+ rec yds",
+     "t": "Ladd McConkey 15+ rec yds",
      "r": "pending"
     }
    ]
@@ -1034,17 +1221,17 @@
    "game_id": "2026_12_CAR_TB",
    "story": "qb_wr1",
    "story_name": "QB yards + WR1 catches",
-   "subject": "Baker Mayfield 175+ pass yds + Chris Godwin Jr. 3+ catches",
-   "model_p": 0.4611,
-   "fair": 2.17,
+   "subject": "Bryce Young 175+ pass yds + Tetairoa McMillan 4+ catches",
+   "model_p": 0.4983,
+   "fair": 2.01,
    "status": "pending",
    "legs": [
     {
-     "t": "Baker Mayfield 175+ pass yds",
+     "t": "Bryce Young 175+ pass yds",
      "r": "pending"
     },
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Tetairoa McMillan 4+ catches",
      "r": "pending"
     }
    ]
@@ -1054,17 +1241,17 @@
    "game_id": "2026_12_CAR_TB",
    "story": "top2",
    "story_name": "Top two pass catchers' catches",
-   "subject": "Chris Godwin Jr. 3+ catches + Cade Otton 2+ catches",
-   "model_p": 0.4929,
-   "fair": 2.03,
+   "subject": "Tetairoa McMillan 3+ catches + Jalen Coker 3+ catches",
+   "model_p": 0.5246,
+   "fair": 1.91,
    "status": "pending",
    "legs": [
     {
-     "t": "Chris Godwin Jr. 3+ catches",
+     "t": "Tetairoa McMillan 3+ catches",
      "r": "pending"
     },
     {
-     "t": "Cade Otton 2+ catches",
+     "t": "Jalen Coker 3+ catches",
      "r": "pending"
     }
    ]
@@ -1075,8 +1262,8 @@
    "story": "over_qb_wr1",
    "story_name": "Over + QB yards + WR1 yards",
    "subject": "Over 34.5 + Baker Mayfield 150+ pass yds + Chris Godwin Jr. 15+ rec yds",
-   "model_p": 0.5204,
-   "fair": 1.92,
+   "model_p": 0.523,
+   "fair": 1.91,
    "status": "pending",
    "legs": [
     {

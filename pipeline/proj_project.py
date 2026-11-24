@@ -37,7 +37,9 @@ try:
     for _tm, (_nm, _sh) in _lb.items():
         _ids = td[(td.posteam == _tm) if "posteam" in td else (td.team == _tm)] if False else None
         _pid = players[players.display_name.str.lower() == _nm.lower()].gsis_id
-        _pid = _pid.iloc[0] if len(_pid) else None
+        # Nov 24: two players can share a name (two Kaleb Johnsons); take the one in this team's pool
+        _inpool = [x for x in _pid if (d._pred & (d.posteam == _tm) & (d.pid == x)).any()]
+        _pid = _inpool[0] if _inpool else (_pid.iloc[0] if len(_pid) else None)
         _me = d._pred & (d.posteam == _tm) & (d.pid == _pid); _m = d._pred & (d.posteam == _tm) & d.pos.isin(["RB", "FB"]) & (d.pid != _pid)
         if _pid is None or not _me.any(): print("lead_back (proj): not in pool", _tm, _nm); continue
         _tot = d.loc[_m, "pr_car_sh"].fillna(0).sum() + d.loc[_me, "pr_car_sh"].fillna(0).sum(); _rest = d.loc[_m, "pr_car_sh"].fillna(0).sum()

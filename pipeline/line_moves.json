@@ -1517,18 +1517,40 @@
    "gap": -4.8,
    "move": 0.0,
    "result": "no move"
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_CIN_WAS",
+   "market": "spread",
+   "model": -6.9,
+   "line_then": -3.5,
+   "close": -6.0,
+   "gap": -3.4,
+   "move": -2.5,
+   "result": "toward"
+  },
+  {
+   "week": 11,
+   "game_id": "2026_11_CIN_WAS",
+   "market": "total",
+   "model": 49.1,
+   "line_then": 51.5,
+   "close": 54.5,
+   "gap": -2.4,
+   "move": 3.0,
+   "result": "away"
   }
  ],
  "spread": {
-  "n": 49,
-  "toward": 13,
+  "n": 50,
+  "toward": 14,
   "away": 18,
   "still": 18
  },
  "total": {
-  "n": 47,
+  "n": 48,
   "toward": 15,
-  "away": 16,
+  "away": 17,
   "still": 16
  }
 }
