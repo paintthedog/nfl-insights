@@ -1,3 +1,2 @@
-Staleness audit, week 12: 2 item(s)
-  [INJURY] no week 12 injury report in the feed yet (normal before Wednesday)
+Staleness audit, week 12: 1 item(s)
   [DFS] no dk_salaries_wk12.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate

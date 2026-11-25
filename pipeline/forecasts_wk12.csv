@@ -1,2 +1,8 @@
 team,wind,temp,precip,source
-BUF,15,38,88,MySportsWeather and Covers not returned by search Nov 24; Bleacher Report Nov 23 (Weather Channel: winds 10-20 mph heavy rain low 38); PFT Nov 24 (88% evening rain high 40 low 36)
+BUF,10,37,99,MySportsWeather Nov 25 (gusts 26; rain); Covers not returned by search; Yahoo/Athlon Nov 24 Weather Channel 15-25 mph 80% rain (>3 mph apart); Fantasy Nerds 25
+PIT,20,43,81,MySportsWeather Nov 25 (gusts 31; rain); Covers not returned by search; Fantasy Nerds Nov 25 13 (>3 mph apart)
+CIN,10,53,29,MySportsWeather Nov 25 (gusts 18); Fantasy Nerds 12
+CLE,13,45,40,MySportsWeather Nov 25 (gusts 21); Fantasy Nerds 15
+MIA,8,76,40,MySportsWeather Nov 25 (gusts 15); Fantasy Nerds 4
+JAX,5,64,12,MySportsWeather Nov 25 (gusts 8); Fantasy Nerds 9
+SF,12,62,80,MySportsWeather Nov 25 (gusts 23; rain); Fantasy Nerds 8 (>3 mph apart)

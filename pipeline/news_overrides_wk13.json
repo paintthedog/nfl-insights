@@ -1,0 +1,153 @@
+{
+ "asof": "2026-11-24T09:40 ET",
+ "source": "Seeded 2026-11-25 from week 12 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 13 reports.",
+ "out": [
+  "Carter Runyon",
+  "Jalen Hurts",
+  "Marcus Mariota",
+  "Raheim Sanders",
+  "Skyy Moore",
+  "Tank Bigsby",
+  "Davante Adams",
+  "Terry McLaurin",
+  "Elijah Arroyo",
+  "KaVontae Turpin",
+  "Tyler Badie",
+  "Romeo Doubs",
+  "Najee Harris",
+  "Dameon Pierce",
+  "Lamar Jackson",
+  "Kendrick Bourne",
+  "RJ Harvey",
+  "Jeremiyah Love",
+  "Tyrone Tracy Jr.",
+  "Travis Etienne",
+  "CJ Donaldson",
+  "Brian Robinson",
+  "TreVeyon Henderson",
+  "Jeremy McNichols",
+  "A.J. Brown",
+  "Garrett Wilson",
+  "Christian Kirk",
+  "Rashid Shaheed",
+  "Treylon Burks",
+  "Dyami Brown",
+  "Zachariah Branch",
+  "Terrance Ferguson",
+  "Josh Whyle",
+  "David Njoku",
+  "Mack Hollins",
+  "Demarcus Robinson",
+  "Jaylen Wright",
+  "Gardner Minshew",
+  "Malik Willis",
+  "Puka Nacua",
+  "Michael Wilson",
+  "Jake Ferguson",
+  "Tyler Goodson",
+  "Jordan Addison",
+  "Drake Maye",
+  "Dontayvion Wicks",
+  "Kyler Murray",
+  "Josh Jacobs"
+ ],
+ "p_play": {},
+ "qb_start": {
+  "PHI": "Joe Milton III",
+  "NYG": "J.J. McCarthy",
+  "BAL": "Jacoby Brissett",
+  "ARI": "Josh Johnson",
+  "MIN": "Kirk Cousins",
+  "MIA": "Kyle McCord",
+  "LV": "Fernando Mendoza",
+  "NYJ": "Geno Smith",
+  "NE": "Tommy DeVito",
+  "IND": "Anthony Richardson",
+  "SEA": "Sam Darnold",
+  "PIT": "Mason Rudolph"
+ },
+ "next_man": {},
+ "ol_out": [
+  "Josh Simmons",
+  "Teven Jenkins",
+  "Trevor Penning",
+  "Alijah Vera-Tucker"
+ ],
+ "team_notes": {
+  "KC": "Kenneth Walker III (groin) DNP Monday after missing Wk10-11 (A to Z Sports Nov 23). Emmett Johnson lead back until Walker practices. Official status Wednesday for the Thursday game at BUF.",
+  "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
+  "CHI": "RB Roschon Johnson (ankle) ruled out during Wk11 vs NO (NFL.com Nov 22).",
+  "ARI": "Josh Johnson started Wk11 (Beck back spasms, OUT; Minshew IR). SI starting-QB list (modified Nov 20): Arizona will start Josh Johnson in Week 12. Beck status for Wk12 pending.",
+  "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
+  "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
+  "IND": "Daniel Jones released; Anthony Richardson named starter (Colts.com).",
+  "SEA": "Darnold (quad) expected back from the bye as the starter vs SF (RotoBaller Nov 20; Seahawks 'optimistic' per FOX 13; Yahoo Nov 23 'a shot to get back'). Lock starts if not. Charbonnet lead back (36 of 68 carries Wk9-10).",
+  "NE": "Drake Maye fractured fibula, out at least six weeks (Yahoo Nov 23); Tommy DeVito starts (SI Nov 20). A.J. Brown (hamstring) likely out (Yahoo Nov 23).",
+  "LAC": "Justin Herbert in concussion protocol after the Wk11 loss to the Jets (NFL.com Nov 22). Status for Wk12 vs NE pending; still modeled as the starter.",
+  "WAS": "Croskey-Merritt (groin) played MNF Wk11: 13 of 20 RB carries (Ekeler 7, White 0; box score). Roster feed still lists him reserve, so he is listed under back. lead_back 0.50 kept (committee with Ekeler).",
+  "LA": "Puka Nacua MCL surgery, out months (CBS Nov 22). Kyren Williams (toe) limited Sunday.",
+  "GB": "Josh Jacobs (finger surgery Nov 13) 'unlikely to play in Week 12' (Yahoo Nov 23) and 'not expected to play' (Fantasy Alarm Nov 23); Kaleb Johnson the lead back. Re-check Wednesday's report before the 8 p.m. kickoff.",
+  "PIT": "Rodgers benched for Rudolph in Wk12 (NFL.com Nov 25); Rudolph carried to Wk13 pending news."
+ },
+ "back": [
+  "Jalen Nailor",
+  "Lane Johnson",
+  "Quentin Johnston",
+  "Tanor Bortolini",
+  "Tank Dell",
+  "David Sills",
+  "AJ Dillon",
+  "Dont'e Thornton",
+  "Cam Jurgens",
+  "Monroe Freeling",
+  "Dylan Parham",
+  "Andrew Vorhees",
+  "Aaron Banks",
+  "Jonah Jackson",
+  "Tyler Warren",
+  "Emeka Egbuka",
+  "Zach Charbonnet",
+  "Tre Harris",
+  "Cam Skattebo",
+  "Kyle Monangai",
+  "Sam Darnold",
+  "Jacory Croskey-Merritt"
+ ],
+ "qb_uncertain": {},
+ "lead_back": {
+  "DEN": [
+   "Jonah Coleman",
+   0.65
+  ],
+  "SF": [
+   "Christian McCaffrey",
+   0.55
+  ],
+  "NYJ": [
+   "Breece Hall",
+   0.6
+  ],
+  "NYG": [
+   "Cam Skattebo",
+   0.65
+  ],
+  "KC": [
+   "Emmett Johnson",
+   0.6
+  ],
+  "SEA": [
+   "Zach Charbonnet",
+   0.65
+  ],
+  "WAS": [
+   "Jacory Croskey-Merritt",
+   0.5
+  ],
+  "GB": [
+   "Kaleb Johnson",
+   0.55
+  ]
+ },
+ "committee": [],
+ "news_q": {}
+}
