@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-25T10:45 ET",
+ "asof": "2026-11-25T12:30 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
@@ -50,11 +50,10 @@
   "Dontayvion Wicks",
   "Kyler Murray",
   "Josh Jacobs",
-  "J.K. Dobbins"
+  "J.K. Dobbins",
+  "Kenneth Walker III"
  ],
- "p_play": {
-  "Kenneth Walker III": 0.6
- },
+ "p_play": {},
  "qb_start": {
   "PHI": "Joe Milton III",
   "NYG": "J.J. McCarthy",
@@ -79,7 +78,7 @@
  "team_notes": {
   "BAL": "Jacoby Brissett starts while Lamar (thumb, IR) and Huntley (toe) are out (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Feed still lists Huntley until Brissett's first game is played.",
   "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson expected to progress for Sunday.",
-  "KC": "Kenneth Walker III (groin) DNP Mon then limited Tue; Reid 'We'll see... not anticipating a ton of work' (A to Z Sports/Yardbarker Nov 24). Emmett Johnson stays the lead back; Walker modeled as a game-time decision. RT Jaylon Moore DNP; Ezeudu expected to start.",
+  "KC": "Kenneth Walker III (groin) ruled out for Thanksgiving at BUF (PFT/Fox4KC Nov 25). Emmett Johnson the lead back. RT Jaylon Moore DNP; Ezeudu expected to start.",
   "DEN": "Jonah Coleman the lead back (24 of 34 RB carries Wk11); Harvey IR; J.K. Dobbins out (suspended; CBS/Footballguys Nov 24); Badie (thumb) questionable.",
   "CHI": "RB Roschon Johnson (ankle) ruled out during Wk11 vs NO (NFL.com Nov 22).",
   "ARI": "Josh Johnson started Wk11 (Beck back spasms, OUT; Minshew IR). SI starting-QB list (modified Nov 20): Arizona will start Josh Johnson in Week 12. Beck status for Wk12 pending.",
@@ -157,11 +156,5 @@
   ]
  },
  "committee": [],
- "news_q": {
-  "Kenneth Walker III": [
-   "gtd",
-   "2026-11-24",
-   "Reid Nov 24: 'We'll see' and 'not anticipating a ton of work' (A to Z Sports; Yardbarker)"
-  ]
- }
+ "news_q": {}
 }

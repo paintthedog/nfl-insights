@@ -1,4 +1,5 @@
-Staleness audit, week 13: 3 item(s)
+Staleness audit, week 13: 4 item(s)
   [INJURY] no week 13 injury report in the feed yet (normal before Wednesday)
   [CARRYOVER] J.K. Dobbins was out last week, now projected 5.3 pts with no Week 13 status — confirm he's back
+  [CARRYOVER] Kenneth Walker III was out last week, now projected 8.6 pts with no Week 13 status — confirm he's back
   [DFS] no dk_salaries_wk13.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
