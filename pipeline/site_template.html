@@ -610,6 +610,7 @@ th, tr.grp th { font-family: var(--f-data); font-weight: 700; font-size: 10.5px;
       <button class="chip" data-ppos="WR" aria-pressed="false">WR</button>
       <button class="chip" data-ppos="TE" aria-pressed="false">TE</button>
       <button class="chip" data-ppos="FLEX" aria-pressed="false">Flex</button>
+      <select id="proj-game" aria-label="Game"><option value="">All games</option></select>
       <input id="proj-q" type="search" placeholder="Search player or team" aria-label="Search player or team">
       <button class="chip" id="proj-steady" aria-pressed="false" data-tip="Only players with a steadiness score of 60+ and no role change this week">Steady 60+</button>
       <span class="sep" aria-hidden="true"></span>
@@ -1288,17 +1289,21 @@ function steadyCell(p) {
   if (s.score == null) return `<span class="num" tabindex="0" data-tip="${esc(steadyTip(p))}">—</span>${fl}`;
   return `<span class="num ${s.score >= 67 ? "fpd-up" : s.score <= 33 ? "fpd-dn" : ""}" tabindex="0" data-tip="${esc(steadyTip(p))}">${s.score}</span>${fl}`;
 }
-let pSteady = false;
-const inPos = p => (!pSteady || (p.stdy >= 60 && !(p.steady.flags && p.steady.flags.length))) && (pPos === "ALL" || p.pos === pPos || (pPos === "FLEX" && p.pos !== "QB"));
+let pSteady = false, pGame = "";
+const gKey = (a, b) => [a, b].sort().join("-");   // Nov 26 (Clinton): game selector on the Projections tab
+(() => { const sel = $("#proj-game"), have = new Set(PJ.players.map(p => gKey(p.team, p.opp)));
+  (LN.games || []).filter(g => have.has(gKey(g.away, g.home))).forEach(g => { const o = document.createElement("option");
+    o.value = gKey(g.away, g.home); o.textContent = `${g.away} @ ${g.home} · ${g.day}`; sel.appendChild(o); }); })();
+const inPos = p => (!pGame || gKey(p.team, p.opp) === pGame) && (!pSteady || (p.stdy >= 60 && !(p.steady.flags && p.steady.flags.length))) && (pPos === "ALL" || p.pos === pPos || (pPos === "FLEX" && p.pos !== "QB"));
 function renderProj() {
   press("[data-ppos]", "ppos", pPos); press("[data-pcols]", "pcols", pCols); $("#proj-steady").setAttribute("aria-pressed", String(pSteady));
   const q = pQ.trim().toLowerCase(), pool = PJ.players.filter(inPos);
   const rows = pool.filter(p => !q || p.name.toLowerCase().includes(q) || p.team.toLowerCase() === q || p.opp.toLowerCase() === q);
   const cols = projCols();
   if (!cols.some(c => c.k === pSt.key)) { pSt.key = pCols === "dk" ? "dkval" : "ppr"; pSt.dir = -1; }
-  colTable($("#proj-table"), cols, rows, pSt, renderProj, pAll || q ? 0 : 50);
+  colTable($("#proj-table"), cols, rows, pSt, renderProj, pAll || q || pGame ? 0 : 50);
   const more = $("#proj-more");
-  more.hidden = !!q || rows.length <= 50; more.textContent = pAll ? "Show top 50" : `Show all ${rows.length} players`;
+  more.hidden = !!q || !!pGame || rows.length <= 50; more.textContent = pAll ? "Show top 50" : `Show all ${rows.length} players`;
   const pw = pPos === "ALL" ? "player" : pPos === "FLEX" ? "flex player" : posWord[pPos].replace(/s$/, ""), solid = pool.filter(p => p.ppr >= 8), flagged = pool.filter(p => p.flag && p.p_play < 1);
   ansBox("#proj-ans", [
     [`Top projected ${pw}s`, topN(pool, p => p.ppr).map(p => who(p, p.ppr.toFixed(1))).join("<br>")],
@@ -1311,6 +1316,7 @@ function renderProj() {
 $$("[data-ppos]").forEach(b => b.addEventListener("click", () => { pPos = b.dataset.ppos; renderProj(); }));
 $$("[data-pcols]").forEach(b => b.addEventListener("click", () => { pCols = b.dataset.pcols; store.set("pp-cols", pCols); renderProj(); }));
 $("#proj-q").addEventListener("input", e => { pQ = e.target.value; renderProj(); });
+$("#proj-game").addEventListener("change", e => { pGame = e.target.value; renderProj(); });
 $("#proj-steady").addEventListener("click", () => { pSteady = !pSteady; renderProj(); });
 $("#proj-more").addEventListener("click", () => { pAll = !pAll; renderProj(); });
 renderProj();

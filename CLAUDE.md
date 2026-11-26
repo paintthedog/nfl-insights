@@ -57,6 +57,8 @@ The site is **Tron's NFL Model** (renamed Oct 31; formerly NFL Insights / "Paydi
 
 - **Nov 24 (daily run): duplicate names broke lead_back in proj_project.py.** Two "Kaleb Johnson"s (PHI guard, GB back): the projection layer took the first id and skipped GB's lead_back ("not in pool"), so Lloyd out-carried Johnson. It now takes the id in the team's pool (td_project already did). Also: a back activated ahead of the roster file (Croskey-Merritt, still RSR) needs to be listed under `back` or his lead_back is skipped. Grep refresh.log for "not in pool" on every run.
 
+- **Nov 26 (Clinton): game selector on the Projections tab** (site_template.html `#proj-game`): a dropdown of the week's games ("AWAY @ HOME · day") that shows both teams' players and works with the position, search and Steady filters; selecting a game shows every row (no top-50 cut).
+
 ## Daily update (what the scheduled task does)
 Follow `pipeline/UPDATE_CHECKLIST.md` steps 1–7 (never the odds pull, which is manual). In short: run `bash pipeline/daily.sh`; read the role feeds and fix `news_overrides_wk{W}.json`; **on every Thu–Mon run fetch MySportsWeather + Covers and rewrite `forecasts_wk{W}.csv` (checklist step 4; required, not optional)**; resolve `audit_wk{W}.txt`; rebuild; `node check_page.js ../docs/index.html` must print OK; commit (including `docs/index.html`) and push to main, which publishes the site; send a short digest (since Nov 23 it includes the first SGP idea per game for games in the next 72 hours: legs, model chance, fair price).
 
