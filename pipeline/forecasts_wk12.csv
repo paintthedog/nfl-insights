@@ -1,8 +1,9 @@
 team,wind,temp,precip,source
-BUF,10,37,99,MySportsWeather Nov 25 (gusts 26; rain); Covers not returned by search; Yahoo/Athlon Nov 24 Weather Channel 15-25 mph 80% rain (>3 mph apart); Fantasy Nerds 25
-PIT,20,43,81,MySportsWeather Nov 25 (gusts 31; rain); Covers not returned by search; Fantasy Nerds Nov 25 13 (>3 mph apart)
-CIN,10,53,29,MySportsWeather Nov 25 (gusts 18); Fantasy Nerds 12
-CLE,13,45,40,MySportsWeather Nov 25 (gusts 21); Fantasy Nerds 15
-MIA,8,76,40,MySportsWeather Nov 25 (gusts 15); Fantasy Nerds 4
-JAX,5,64,12,MySportsWeather Nov 25 (gusts 8); Fantasy Nerds 9
-SF,12,62,80,MySportsWeather Nov 25 (gusts 23; rain); Fantasy Nerds 8 (>3 mph apart)
+BUF,13,37,100,MySportsWeather Nov 26 (gusts 29-35; rain); Covers Nov 26 NWS 10-12 (Covers model ~20); NFLWeather 18
+PIT,17,44,95,MySportsWeather Nov 26 (gusts 26; rain); Covers Nov 25 13-14; NFLWeather 14
+CIN,12,54,64,MySportsWeather Nov 26 (gusts 21); NFLWeather 10
+CLE,15,47,71,MySportsWeather Nov 26 (gusts 23; rain); NFLWeather 14
+MIA,8,75,29,MySportsWeather Nov 26 (gusts 14); NFLWeather 8
+JAX,6,67,5,MySportsWeather Nov 26 (gusts 10); NFLWeather 5
+SF,12,63,68,MySportsWeather Nov 26 (gusts 30; rain); NFLWeather 9
+TB,3,67,22,MySportsWeather Nov 26 (gusts 9); NFLWeather 3

@@ -1,1 +1,4 @@
-Staleness audit, week 12: 0 item(s)
+Staleness audit, week 12: 3 item(s)
+  [INJURY] Stefon Diggs (WAS) practice 'Did Not Participate In Practice' but projected as healthy (p_play 1.00)
+  [CARRYOVER] Woody Marks was out last week, now projected 5.3 pts with no Week 12 status — confirm he's back
+  [CARRYOVER] Marvin Harrison Jr. was out last week, now projected 5.2 pts with no Week 12 status — confirm he's back

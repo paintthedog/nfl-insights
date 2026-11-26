@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-24T09:40 ET",
+ "asof": "2026-11-26T10:30 ET",
  "source": "Seeded 2026-11-25 from week 12 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 13 reports.",
  "out": [
   "Carter Runyon",
@@ -77,7 +77,7 @@
   "KC": "Kenneth Walker III (groin) DNP Monday after missing Wk10-11 (A to Z Sports Nov 23). Emmett Johnson lead back until Walker practices. Official status Wednesday for the Thursday game at BUF.",
   "DEN": "Jonah Coleman the clear lead back after 58 of 75 snaps in Wk9 (Draft Sharks, Nov 9); Harvey and Badie on IR. Wk10 bye.",
   "CHI": "RB Roschon Johnson (ankle) ruled out during Wk11 vs NO (NFL.com Nov 22).",
-  "ARI": "Josh Johnson started Wk11 (Beck back spasms, OUT; Minshew IR). SI starting-QB list (modified Nov 20): Arizona will start Josh Johnson in Week 12. Beck status for Wk12 pending.",
+  "ARI": "Carson Beck (back spasms) DNP Wed, day-to-day; Josh Johnson in line for a second straight start (azcardinals.com Nov 25). Minshew IR.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
   "IND": "Daniel Jones released; Anthony Richardson named starter (Colts.com).",
@@ -87,7 +87,8 @@
   "WAS": "Croskey-Merritt (groin) played MNF Wk11: 13 of 20 RB carries (Ekeler 7, White 0; box score). Roster feed still lists him reserve, so he is listed under back. lead_back 0.50 kept (committee with Ekeler).",
   "LA": "Puka Nacua MCL surgery, out months (CBS Nov 22). Kyren Williams (toe) limited Sunday.",
   "GB": "Josh Jacobs (finger surgery Nov 13) 'unlikely to play in Week 12' (Yahoo Nov 23) and 'not expected to play' (Fantasy Alarm Nov 23); Kaleb Johnson the lead back. Re-check Wednesday's report before the 8 p.m. kickoff.",
-  "PIT": "Rodgers benched for Rudolph in Wk12 (NFL.com Nov 25); Rudolph carried to Wk13 pending news."
+  "PIT": "Rodgers benched for Rudolph in Wk12 (NFL.com Nov 25); Rudolph carried to Wk13 pending news.",
+  "HOU": "Woody Marks (concussion) full practice Wed, trending toward playing (RotoWire Nov 25); NBC Nov 25: No. 2 behind David Montgomery (26 carries Wk11). Marvin Harrison Jr. (hamstring) resumed practice (NBC Nov 25)."
  },
  "back": [
   "Jalen Nailor",
@@ -145,6 +146,10 @@
   ],
   "GB": [
    "Kaleb Johnson",
+   0.55
+  ],
+  "HOU": [
+   "David Montgomery",
    0.55
   ]
  },

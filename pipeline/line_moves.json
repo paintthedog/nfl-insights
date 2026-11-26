@@ -1539,18 +1539,40 @@
    "gap": -2.4,
    "move": 3.0,
    "result": "away"
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_GB_LA",
+   "market": "spread",
+   "model": 9.5,
+   "line_then": 3.5,
+   "close": 2.5,
+   "gap": 6.0,
+   "move": -1.0,
+   "result": "away"
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_GB_LA",
+   "market": "total",
+   "model": 49.4,
+   "line_then": 46.5,
+   "close": 43.5,
+   "gap": 2.9,
+   "move": -3.0,
+   "result": "away"
   }
  ],
  "spread": {
-  "n": 50,
+  "n": 51,
   "toward": 14,
-  "away": 18,
+  "away": 19,
   "still": 18
  },
  "total": {
-  "n": 48,
+  "n": 49,
   "toward": 15,
-  "away": 17,
+  "away": 18,
   "still": 16
  }
 }
