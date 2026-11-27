@@ -29,7 +29,7 @@
 "lead_back|NYJ|[\"Breece Hall\", 0.6]": "2026-11-25",
 "lead_back|SEA|[\"Zach Charbonnet\", 0.65]": "2026-11-24",
 "lead_back|SF|[\"Christian McCaffrey\", 0.55]": "2026-11-25",
-"lead_back|WAS|[\"Jacory Croskey-Merritt\", 0.5]": "2026-11-23",
+"lead_back|WAS|[\"Jacory Croskey-Merritt\", 0.5]": "2026-11-27",
 "ol_out|Alijah Vera-Tucker": "2026-10-22",
 "ol_out|Josh Simmons": "2026-10-22",
 "ol_out|Teven Jenkins": "2026-10-22",
@@ -88,7 +88,7 @@
 "qb_start|LV|\"Fernando Mendoza\"": "2026-11-11",
 "qb_start|MIA|\"Kyle McCord\"": "2026-11-14",
 "qb_start|MIN|\"Kirk Cousins\"": "2026-11-11",
-"qb_start|NE|\"Tommy DeVito\"": "2026-11-24",
+"qb_start|NE|\"Tommy DeVito\"": "2026-11-27",
 "qb_start|NYG|\"J.J. McCarthy\"": "2026-11-10",
 "qb_start|NYJ|\"Geno Smith\"": "2026-11-17",
 "qb_start|PHI|\"Joe Milton III\"": "2026-11-09",
@@ -108,5 +108,5 @@
 "team_notes|NYJ|\"Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.\"": "2026-11-25",
 "team_notes|PIT|\"Rodgers benched for Rudolph in Wk12 (NFL.com Nov 25); Rudolph carried to Wk13 pending news.\"": "2026-11-25",
 "team_notes|SEA|\"Darnold (quad) expected back from the bye as the starter vs SF (RotoBaller Nov 20; Seahawks 'optimistic' per FOX 13; Yahoo Nov 23 'a shot to get back'). Lock starts if not. Charbonnet lead back (36 of 68 carries Wk9-10).\"": "2026-11-24",
-"team_notes|WAS|\"Croskey-Merritt (groin) played MNF Wk11: 13 of 20 RB carries (Ekeler 7, White 0; box score). Roster feed still lists him reserve, so he is listed under back. lead_back 0.50 kept (committee with Ekeler).\"": "2026-11-24"
+"team_notes|WAS|\"Croskey-Merritt (groin) played MNF Wk11: 13 of 20 RB carries (Ekeler 7, White 0; box score). Roster feed still lists him reserve, so he is listed under back. lead_back 0.50 kept (committee with Ekeler).\"": "2026-11-27"
 }

@@ -1,26 +1,25 @@
 week,type,game_id,subject,market,side,line,price,model_p,legs,placed_at,market_src
-13,"Moneyline, model differs 4+ pts",2026_13_KC_LA,LA,ml,ML,,1.909,0.5768,,2026-11-26T14:29Z,nflverse
-13,"Game totals, model differs 3+ pts",2026_13_KC_LA,KC@LA,game_total,Over,44.5,1.909,0.6861,,2026-11-26T14:29Z,nflverse
-13,Trend unders: prime time,2026_13_KC_LA,KC@LA,game_total,Under,44.5,1.909,0.563,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_DET_ATL,DET,ml,ML,,1.524,0.7375,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_GB_NO,NO,ml,ML,,2.89,0.4081,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_JAX_CHI,JAX,ml,ML,,2.3,0.5401,,2026-11-26T14:29Z,nflverse
-13,"Game totals, model differs 3+ pts",2026_13_JAX_CHI,JAX@CHI,game_total,Under,49.5,1.962,0.6191,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_SF_NYG,SF,ml,ML,,1.339,0.8074,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_WAS_TEN,TEN,ml,ML,,2.92,0.3694,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_MIA_DEN,MIA,ml,ML,,8.1,0.1991,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_PHI_ARI,ARI,ml,ML,,2.31,0.6099,,2026-11-26T14:29Z,nflverse
-13,"Game totals, model differs 3+ pts",2026_13_PHI_ARI,PHI@ARI,game_total,Over,36.5,1.87,0.7451,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_BUF_NE,NE,ml,ML,,6.49,0.2146,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_CAR_MIN,CAR,ml,ML,,3.09,0.402,,2026-11-26T14:29Z,nflverse
-13,Trend unders: prime time,2026_13_HOU_PIT,HOU@PIT,game_total,Under,41.5,1.917,0.563,,2026-11-26T14:29Z,nflverse
-13,"Moneyline, model differs 4+ pts",2026_13_DAL_SEA,DAL,ml,ML,,3.18,0.4969,,2026-11-26T14:29Z,nflverse
-13,"Game totals, model differs 3+ pts",2026_13_DAL_SEA,DAL@SEA,game_total,Under,50.5,1.917,0.6334,,2026-11-26T14:29Z,nflverse
-13,Trend unders: prime time,2026_13_DAL_SEA,DAL@SEA,game_total,Under,50.5,1.917,0.563,,2026-11-26T14:29Z,nflverse
-13,Teaser legs: small underdogs +6,2026_13_KC_LA,KC +7.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}]",2026-11-26T14:29Z,nflverse
-13,"Teasers (wide): underdogs +1 to +3, all pairs",,KC +7.5 + JAX +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}, {""gid"": ""2026_13_JAX_CHI"", ""player"": ""JAX"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""JAX +9""}]",2026-11-26T14:29Z,nflverse
-13,"Teasers (wide): underdogs +1 to +3, all pairs",,KC +7.5 + ARI +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}, {""gid"": ""2026_13_PHI_ARI"", ""player"": ""ARI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ARI +9""}]",2026-11-26T14:29Z,nflverse
-13,"Teasers (wide): underdogs +1 to +3, all pairs",,JAX +9 + ARI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_13_JAX_CHI"", ""player"": ""JAX"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""JAX +9""}, {""gid"": ""2026_13_PHI_ARI"", ""player"": ""ARI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ARI +9""}]",2026-11-26T14:29Z,nflverse
-13,Control: random,2026_13_MIA_DEN,MIA@DEN,game_total,Under,39.5,1.917,0.4131,,2026-11-26T14:29Z,nflverse
-13,Control: random,2026_13_GB_NO,GB@NO,game_total,Under,46.5,1.87,0.5091,,2026-11-26T14:29Z,nflverse
-13,Control: random,2026_13_LAC_TB,LAC@TB,game_total,Under,40.5,1.909,0.5272,,2026-11-26T14:29Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_KC_LA,LA,ml,ML,,1.917,0.5829,,2026-11-27T14:20Z,nflverse
+13,"Game totals, model differs 3+ pts",2026_13_KC_LA,KC@LA,game_total,Over,44.5,1.935,0.6713,,2026-11-27T14:20Z,nflverse
+13,Trend unders: prime time,2026_13_KC_LA,KC@LA,game_total,Under,44.5,1.893,0.563,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_DET_ATL,DET,ml,ML,,1.524,0.74,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_GB_NO,NO,ml,ML,,2.89,0.4081,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_JAX_CHI,JAX,ml,ML,,2.3,0.5309,,2026-11-27T14:20Z,nflverse
+13,"Game totals, model differs 3+ pts",2026_13_JAX_CHI,JAX@CHI,game_total,Under,49.5,1.962,0.6009,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_SF_NYG,SF,ml,ML,,1.339,0.8074,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_MIA_DEN,MIA,ml,ML,,8.1,0.1991,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_PHI_ARI,ARI,ml,ML,,2.41,0.5768,,2026-11-27T14:20Z,nflverse
+13,"Game totals, model differs 3+ pts",2026_13_PHI_ARI,PHI@ARI,game_total,Over,37.5,1.943,0.7531,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_BUF_NE,NE,ml,ML,,6.57,0.2379,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_CAR_MIN,CAR,ml,ML,,3.01,0.402,,2026-11-27T14:20Z,nflverse
+13,Trend unders: prime time,2026_13_HOU_PIT,HOU@PIT,game_total,Under,41.5,1.909,0.563,,2026-11-27T14:20Z,nflverse
+13,"Moneyline, model differs 4+ pts",2026_13_DAL_SEA,DAL,ml,ML,,3.23,0.4876,,2026-11-27T14:20Z,nflverse
+13,"Game totals, model differs 3+ pts",2026_13_DAL_SEA,DAL@SEA,game_total,Under,51.5,1.909,0.6604,,2026-11-27T14:20Z,nflverse
+13,Trend unders: prime time,2026_13_DAL_SEA,DAL@SEA,game_total,Under,51.5,1.909,0.563,,2026-11-27T14:20Z,nflverse
+13,Teaser legs: small underdogs +6,2026_13_KC_LA,KC +7.5,parlay,All,,1.342,0.7743,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}]",2026-11-27T14:20Z,nflverse
+13,"Teasers (wide): underdogs +1 to +3, all pairs",,KC +7.5 + JAX +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}, {""gid"": ""2026_13_JAX_CHI"", ""player"": ""JAX"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""JAX +9""}]",2026-11-27T14:20Z,nflverse
+13,"Teasers (wide): underdogs +1 to +3, all pairs",,KC +7.5 + ARI +9,parlay,All,,1.8,0.5821,"[{""gid"": ""2026_13_KC_LA"", ""player"": ""KC"", ""stat"": ""spread"", ""line"": 7.5, ""price"": 1.3416, ""p"": 0.7743, ""label"": ""KC +7.5""}, {""gid"": ""2026_13_PHI_ARI"", ""player"": ""ARI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ARI +9""}]",2026-11-27T14:20Z,nflverse
+13,"Teasers (wide): underdogs +1 to +3, all pairs",,JAX +9 + ARI +9,parlay,All,,1.8,0.5652,"[{""gid"": ""2026_13_JAX_CHI"", ""player"": ""JAX"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""JAX +9""}, {""gid"": ""2026_13_PHI_ARI"", ""player"": ""ARI"", ""stat"": ""spread"", ""line"": 9.0, ""price"": 1.3416, ""p"": 0.7518, ""label"": ""ARI +9""}]",2026-11-27T14:20Z,nflverse
+13,Control: random,2026_13_MIA_DEN,MIA@DEN,game_total,Under,39.5,1.917,0.4137,,2026-11-27T14:20Z,nflverse
+13,Control: random,2026_13_GB_NO,GB@NO,game_total,Under,46.5,1.87,0.506,,2026-11-27T14:20Z,nflverse
+13,Control: random,2026_13_LAC_TB,LAC@TB,game_total,Under,40.5,1.909,0.527,,2026-11-27T14:20Z,nflverse

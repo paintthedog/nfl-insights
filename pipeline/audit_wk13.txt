@@ -1,5 +1,9 @@
-Staleness audit, week 13: 4 item(s)
+Staleness audit, week 13: 8 item(s)
+  [QB-CONFLICT] NE: qb_start says Tommy DeVito (dated 2026-11-24) but the schedule feed lists Drake Maye - search the news; keep only with a dated source
   [INJURY] no week 13 injury report in the feed yet (normal before Wednesday)
   [CARRYOVER] OL Jaylon Moore was out last week, not listed this week — confirm
   [CARRYOVER] OL Tyler Booker was out last week, not listed this week — confirm
+  [CARRYOVER] OL Gennings Dunker was out last week, not listed this week — confirm
+  [CARRYOVER] OL Abraham Lucas was out last week, not listed this week — confirm
+  [CARRYOVER] OL Quenton Nelson was out last week, not listed this week — confirm
   [DFS] no dk_salaries_wk13.csv - ask Clinton to attach DraftKings' salary CSV for the Sunday main slate
