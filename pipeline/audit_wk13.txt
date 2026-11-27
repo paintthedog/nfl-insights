@@ -1,5 +1,4 @@
-Staleness audit, week 13: 8 item(s)
-  [QB-CONFLICT] NE: qb_start says Tommy DeVito (dated 2026-11-24) but the schedule feed lists Drake Maye - search the news; keep only with a dated source
+Staleness audit, week 13: 7 item(s)
   [INJURY] no week 13 injury report in the feed yet (normal before Wednesday)
   [CARRYOVER] OL Jaylon Moore was out last week, not listed this week — confirm
   [CARRYOVER] OL Tyler Booker was out last week, not listed this week — confirm
