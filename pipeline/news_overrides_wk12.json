@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-27T09:40 ET",
+ "asof": "2026-11-28T09:40 ET",
  "source": "Seeded 2026-11-18 from week 11 by auto_overrides.py (out/lead_back/qb_start/ol_out carried; chances dropped). Re-verify against week 12 reports.",
  "out": [
   "Carter Runyon",
@@ -53,7 +53,23 @@
   "J.K. Dobbins",
   "Kenneth Walker III",
   "Roschon Johnson",
-  "Jonathan Mingo"
+  "Jonathan Mingo",
+  "Brock Purdy",
+  "Justin Herbert",
+  "Juwan Johnson",
+  "Kayshon Boutte",
+  "Brevin Jordan",
+  "Will Mallory",
+  "Seth McGowan",
+  "Parker Washington",
+  "Bhayshul Tuten",
+  "Jared Wayne",
+  "Jahan Dotson",
+  "Omar Cooper Jr.",
+  "Keaton Mitchell",
+  "Jordan Watkins",
+  "Brenen Thompson",
+  "Carson Beck"
  ],
  "p_play": {},
  "qb_start": {
@@ -68,7 +84,9 @@
   "NE": "Tommy DeVito",
   "IND": "Anthony Richardson",
   "SEA": "Sam Darnold",
-  "PIT": "Mason Rudolph"
+  "PIT": "Mason Rudolph",
+  "SF": "Mac Jones",
+  "LAC": "DJ Uiagalelei"
  },
  "next_man": {},
  "ol_out": [
@@ -80,31 +98,42 @@
   "Tyler Booker",
   "Gennings Dunker",
   "Abraham Lucas",
-  "Quenton Nelson"
+  "Quenton Nelson",
+  "Dalton Risner",
+  "Vega Ioane",
+  "Keylan Rutledge",
+  "Jalen Travis",
+  "Patrick Mekari",
+  "Matthew Bergeron",
+  "Christian Darrisaw",
+  "Jon Gaines II",
+  "Jackson Powers-Johnson"
  ],
  "team_notes": {
   "BAL": "Jacoby Brissett starts while Lamar (thumb, IR) and Huntley (toe) are out (Hensley via RotoBaller Nov 8; WagerTalk Nov 16). Feed still lists Huntley until Brissett's first game is played.",
-  "MIN": "Jordan Addison (thumb) out 'for the next few weeks' (Forbes Nov 16). Hockenson expected to progress for Sunday.",
+  "MIN": "Jordan Addison (thumb) and LT Christian Darrisaw out (Yahoo Nov 27). Cousins starts.",
   "KC": "Kenneth Walker III (groin) OUT at BUF (NFL.com/AtoZ Nov 25); Emmett Johnson lead back. RT Jaylon Moore OUT. Noah Gray questionable (full practice).",
   "DEN": "Jonah Coleman the lead back (24 of 34 RB carries Wk11); Harvey IR; J.K. Dobbins out (suspended; CBS/Footballguys Nov 24); Badie (thumb) questionable.",
   "CHI": "RB Roschon Johnson (ankle) OUT for Thanksgiving at DET (NFL.com Wk12 report).",
-  "ARI": "Carson Beck (back spasms) DNP Wed, day-to-day; Josh Johnson in line for a second straight start (azcardinals.com Nov 25). Minshew IR.",
+  "ARI": "Carson Beck (back) OUT; Josh Johnson starts again (Yahoo Nov 27; SI Nov 28). OL Jon Gaines out.",
   "NYJ": "Geno Smith (left ankle) avoided major injury in tests; Glenn: 'Geno's our starter', starts vs LAC if healthy (ESPN Nov 16; Yardbarker Nov 17). Klubnik if not. Omar Cooper Jr. (ankle) tests.",
   "NYG": "Skattebo had all 18 RB carries in the Wk10 TNF game (box score, Nov 12).",
-  "HOU": "Woody Marks (concussion) full practice Wed, trending toward playing (RotoWire Nov 25); NBC Nov 25: No. 2 behind David Montgomery (26 carries Wk11). Marvin Harrison Jr. (hamstring) resumed practice (NBC Nov 25).",
-  "LV": "Brock Bowers (ankle) not believed major, day-to-day; more tests (Rapoport via Forbes Nov 16; Big Lead Nov 17). Mendoza starts.",
+  "HOU": "Woody Marks cleared concussion protocol and returns; splits with David Montgomery (SI Nov 28: 'not a sure thing' who leads). Boutte, Brevin Jordan and C Rutledge out. Montgomery 0.55 kept (26 carries Wk11).",
+  "LV": "Brock Bowers (ankle) questionable; missed Friday practice, game-time call (SI Nov 28). C Powers-Johnson out. Mendoza starts.",
   "PIT": "Mason Rudolph starts vs DEN today (Rodgers released; NFL.com Nov 25). G Gennings Dunker OUT (Steelers final report). WR Michael Pittman activated off IR, no designation; expected to play (NFL.com roundup Nov 26; NBC Nov 25). Listed under back until the roster file moves him.",
   "IND": "Daniel Jones released; Anthony Richardson named starter (Colts.com).",
   "DET": "Aidan Hutchinson torn ACL, out for the season (Big Lead Nov 17).",
-  "SEA": "Darnold full practice Wed-Thu, expected to start vs SF (NFL.com roundup Nov 26). OT Abraham Lucas and G Quenton Nelson ruled out. Charbonnet lead back.",
+  "SEA": "Darnold off the injury report and starts vs SF (SI Nov 28). OT Abraham Lucas and G Quenton Nelson out. Charbonnet lead back. Charbonnet 20 carries Wk10 (box score; Wk11 bye).",
   "NE": "Drake Maye fractured fibula, out at least six weeks (Yahoo Nov 23); did not participate Thu (NFL.com roundup Nov 26). Tommy DeVito starts (SI Nov 20). A.J. Brown (hamstring) DNP.",
-  "LAC": "Justin Herbert (concussion protocol) DNP Wed and Thu (NFL.com roundup Nov 26); no starter named. Harbaugh: DJ Uiagalelei next man up, then Jake Browning (signed to active roster Nov 26; chargers.com Nov 24). Still modeled as the starter; recheck Friday report/Saturday.",
-  "WAS": "Croskey-Merritt had 13 of 20 RB carries in Wk11 (box score); lead_back 0.50 kept (committee with Ekeler; no game since). Rachaad White (heel) full; Diggs off the injury report (RotoWire Nov 26).",
+  "LAC": "Justin Herbert (concussion) OUT; DJ Uiagalelei starts vs NE (Yahoo Nov 27; SI Nov 28). RB Keaton Mitchell out; WR Brenen Thompson doubtful; Njoku questionable.",
+  "WAS": "Croskey-Merritt had 13 of 20 RB carries in Wk11 (box score); lead_back 0.50 kept (committee with Ekeler; no game since). Rachaad White (heel) full; Diggs off the injury report (RotoWire Nov 26). Diggs not among the final report's offensive designations (Yahoo Nov 27).",
   "LA": "Puka Nacua and Davante Adams out (IR); TE Terrance Ferguson out. Kyren Williams (toe) no designation on the final report (SI Nov 24). LG Avila and C Shelton out.",
   "GB": "Josh Jacobs (finger) questionable but LaFleur said 'I would say so' when asked if he was unlikely to play (SI/ClutchPoints Nov 24); Kaleb Johnson the lead back. Jayden Reed and Luke Musgrave (neck) out.",
   "DAL": "TE Jake Ferguson, WR Jonathan Mingo, G Tyler Booker OUT vs PHI (NFL.com Wk12 report; CBS Nov 25). Prescott full all week.",
   "BUF": "Dalton Kincaid (thumb/ankle), G O'Cyrus Torrence questionable, limited all week (CBS Nov 25).",
-  "SF": "Brock Purdy (low ankle sprain) DNP Wed and Thu (NFL.com roundup Nov 26); Mac Jones starts if he can't (Gridiron Heroics/Yahoo Nov 27). McCaffrey DNP Thu. Still modeled with Purdy; recheck Friday report/Saturday. LT Trent Williams DNP."
+  "SF": "Brock Purdy (ankle) OUT; Mac Jones starts vs SEA (Yahoo injury tracker Nov 27; SI Nov 28). WR Jordan Watkins out; Mike Evans (Achilles) questionable. LT Trent Williams DNP early week.",
+  "JAX": "RB Bhayshul Tuten (foot/ankle) and WR Parker Washington (shoulder) OUT; Chris Rodriguez Jr. expected to start (Yahoo Nov 27; SI Nov 28). G Mekari out.",
+  "CIN": "Tee Higgins (hamstring) questionable after missing Friday; Taylor: 'he should be fine' (Yahoo Nov 27). G Dalton Risner out."
  },
  "back": [
   "Jalen Nailor",
@@ -129,7 +158,9 @@
   "Kyle Monangai",
   "Sam Darnold",
   "Jacory Croskey-Merritt",
-  "Michael Pittman"
+  "Michael Pittman",
+  "Woody Marks",
+  "Marvin Harrison Jr."
  ],
  "qb_uncertain": {},
  "lead_back": {
@@ -161,21 +192,26 @@
    "Jacory Croskey-Merritt",
    0.5
   ],
-  "GB": [
-   "Kaleb Johnson",
-   0.55
-  ],
   "HOU": [
    "David Montgomery",
    0.55
+  ],
+  "JAX": [
+   "Chris Rodriguez Jr.",
+   0.65
   ]
  },
  "committee": [],
  "news_q": {
-  "Sam Darnold": [
+  "Tee Higgins": [
    "expected",
-   "2026-11-25",
-   "Macdonald 'on track to start' (CBS Nov 25)"
+   "2026-11-27",
+   "Zac Taylor 'he should be fine' (Yahoo Nov 27)"
+  ],
+  "Brock Bowers": [
+   "gtd",
+   "2026-11-28",
+   "missed Fri practice; game-time call (SI via Yahoo Nov 28)"
   ]
  }
 }

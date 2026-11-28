@@ -1627,18 +1627,40 @@
    "gap": -1.7,
    "move": -5.0,
    "result": "toward"
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_DEN_PIT",
+   "market": "spread",
+   "model": 2.8,
+   "line_then": -1.5,
+   "close": -4.5,
+   "gap": 4.3,
+   "move": -3.0,
+   "result": "away"
+  },
+  {
+   "week": 12,
+   "game_id": "2026_12_DEN_PIT",
+   "market": "total",
+   "model": 45.6,
+   "line_then": 41.5,
+   "close": 36.5,
+   "gap": 4.1,
+   "move": -5.0,
+   "result": "away"
   }
  ],
  "spread": {
-  "n": 54,
+  "n": 55,
   "toward": 14,
-  "away": 19,
+  "away": 20,
   "still": 21
  },
  "total": {
-  "n": 51,
+  "n": 52,
   "toward": 16,
-  "away": 19,
+  "away": 20,
   "still": 16
  }
 }

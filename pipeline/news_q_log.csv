@@ -20,3 +20,5 @@ season,week,name,pid,cat,date,source,p_model,p_news
 2026,11,Rachaad White,00-0037256,expected,2026-11-21,Dan Quinn: expected to be good for Monday (NFL.com Saturday roundup Nov 21),0.475,0.802
 2026,12,Kenneth Walker III,00-0038134,gtd,2026-11-24,Reid Nov 24: 'We'll see' and 'not anticipating a ton of work' (A to Z Sports; Yardbarker),0.6,0.551
 2026,12,Sam Darnold,00-0034869,expected,2026-11-25,Macdonald 'on track to start' (CBS Nov 25),0.97,0.993
+2026,12,Tee Higgins,00-0036410,expected,2026-11-27,Zac Taylor 'he should be fine' (Yahoo Nov 27),0.648,0.892
+2026,12,Brock Bowers,00-0039338,gtd,2026-11-28,missed Fri practice; game-time call (SI via Yahoo Nov 28),0.415,0.457

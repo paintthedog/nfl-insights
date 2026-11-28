@@ -1,9 +1,9 @@
 team,wind,temp,precip,source
 BUF,13,37,100,MySportsWeather Nov 26 (gusts 29-35; rain); Covers Nov 26 NWS 10-12 (Covers model ~20); NFLWeather 18
 PIT,18,43,65,MySportsWeather Nov 27 (gusts 28; NBM 17); NFLWeather Nov 27 14 (>3 mph apart); Covers not fetched
-CIN,10,52,93,MySportsWeather Nov 27 (gusts 18; rain); NFLWeather Nov 27 9; Covers not fetched
-CLE,13,46,93,MySportsWeather Nov 27 (gusts 21; rain); NFLWeather Nov 27 11; Covers not fetched
-MIA,6,77,21,MySportsWeather Nov 27 (gusts 12); NFLWeather Nov 27 6; Covers not fetched
-JAX,7,65,0,MySportsWeather Nov 27 (gusts 10); NFLWeather Nov 27 7; Covers not fetched
-SF,14,64,74,MySportsWeather Nov 27 (gusts 28; rain); NFLWeather Nov 27 8 (>3 mph apart); Covers not fetched
-TB,3,67,28,MySportsWeather Nov 27 (gusts 8); NFLWeather Nov 27 3; Covers not fetched
+CIN,12,50,57,MySportsWeather Nov 28 (gusts 22; rain likely 86% window); NFLWeather Nov 28 13; Covers not returned by search
+JAX,7,62,0,MySportsWeather Nov 28 (gusts 12); NFLWeather Nov 28 5; Covers not returned by search
+MIA,7,78,0,MySportsWeather Nov 28 (gusts 14); NFLWeather Nov 28 6; Covers not returned by search
+SF,17,65,30,MySportsWeather Nov 28 (gusts 32; rain 73% window); NFLWeather Nov 28 10 (>3 mph apart); Covers not returned by search
+CLE,9,47,100,MySportsWeather Nov 28 (gusts 18 - near 35 possible ahead of front; rain); NFLWeather Nov 28 10; Covers not returned by search
+TB,3,67,25,MySportsWeather Nov 28 (gusts 9); NFLWeather Nov 28 5; Covers not returned by search
